@@ -1,14 +1,8 @@
-# Turborepo starter
+# Turborepo template
 
-This is an official starter Turborepo.
+This is a template created based on official starter Turborepo.
 
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
+Simply click on Use this template button to use and customize this template for your next JavaSctipt / TypeScript / React / Vue / Next.js library or project.
 
 ## What's inside?
 
@@ -22,7 +16,7 @@ This Turborepo includes the following packages/apps:
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Each package/example is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
@@ -79,3 +73,15 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+### 🤩 Don't forger to start this repo!
+
+Want handson course for getting started with Turborepo? Check out [React and Next.js with TypeScript](https://www.udemy.com/course/react-and-next-js-with-typescript/?referralCode=7202184A1E57C3DCA8B2)
+
+## License
+
+Licensed as MIT open source.
+
+<hr />
+
+<p align="center" style="text-align:center">with 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a></p>

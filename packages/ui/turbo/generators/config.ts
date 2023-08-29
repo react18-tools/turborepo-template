@@ -22,7 +22,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
 			},
 		],
 		actions: data => {
-			const root = data?.isClient ? "" : "server/";
+			const root = data?.isClient ? "src/client/" : "src/server/";
 			return [
 				{
 					type: "add",

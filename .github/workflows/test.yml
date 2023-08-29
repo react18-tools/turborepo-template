@@ -1,0 +1,25 @@
+name: test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm i -g pnpm && pnpm i
+        name: Install dependencies
+      - name: Run unit tests
+        run: pnpm test
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          directory: ./packages/ui
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: fork-me

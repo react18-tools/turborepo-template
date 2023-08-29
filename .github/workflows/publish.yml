@@ -1,0 +1,42 @@
+name: Publish (NPM & GPR)
+
+# publish only when package json has changed - assuming version upgrade
+on:
+  push:
+    paths: "packages/ui/package.json"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+
+    defaults:
+      run:
+        working-directory: ./packages/ui
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org
+      - run: npm i -g pnpm && pnpm i
+        name: Install dependencies
+      - name: Test
+        run: pnpm test
+      - name: Publish to NPM
+        run: pnpm build && pnpm publish-package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+      - uses: actions/setup-node@v3
+        with:
+          registry-url: https://npm.pkg.github.com/
+      - name: Publish to GitHub Public Repository
+        run: pnpm publish-package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -4,7 +4,14 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export const {{ pascalCase name }} = ({ children }: Props) => {
+/**
+ * # {{ pascalCase name }}
+ * {{ description }}
+ * 
+ * @param {React.ReactNode} [props.children]
+ * @returns {React.ReactElement}
+ */
+export function {{ pascalCase name }}({ children }: Props) {
   return (
     <div>
       <h1>{{ name }}</h1>

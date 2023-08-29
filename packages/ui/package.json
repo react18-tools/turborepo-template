@@ -1,13 +1,25 @@
 {
 	"name": "@mayank1513/fork-me",
+	"author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
 	"private": false,
 	"version": "0.0.0",
+	"description": "An intuitive React.js fork me ribbon component for promoting open source project forks.",
 	"main": "./index.tsx",
 	"types": "./index.tsx",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mayank1513/turbo-template.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mayank1513/turbo-template/issues"
+	},
+	"homepage": "https://github.com/mayank1513/turbo-template/tree/main/packages/ui#readme",
+	"sideEffects": false,
 	"license": "MIT",
 	"scripts": {
 		"test": "vitest run --coverage",
-		"build": "tsup src --dts",
+		"build": "tsup src --dts && node touchup.js",
+		"publish-package": "cd dist && npm publish",
 		"lint": "eslint ."
 	},
 	"devDependencies": {
@@ -27,5 +39,31 @@
 		"typescript": "^4.5.2",
 		"vite-tsconfig-paths": "^4.2.0",
 		"vitest": "^0.34.3"
-	}
+	},
+	"peerDependencies": {
+		"@types/react": "^16.8 || ^17 || ^18",
+		"next": "^8",
+		"react": "^16.8 || ^17 || ^18"
+	},
+	"peerDependenciesMeta": {
+		"next": {
+			"optional": true
+		}
+	},
+	"funding": {
+		"type": "github",
+		"url": "https://github.com/sponsors/mayank1513"
+	},
+	"keywords": [
+		"fork me",
+		"fork-me",
+		"nextjs",
+		"nextjs13",
+		"react",
+		"react18",
+		"react-server-components",
+		"react-client-components",
+		"typescript",
+		"javascript"
+	]
 }

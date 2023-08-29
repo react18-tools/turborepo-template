@@ -34,12 +34,12 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
 					path: root + "{{kebabCase name}}/index.tsx",
 					template: `${
 						data?.isClient ? '"use client";\n\n' : ""
-					}export * from "./{{kebabCase name}}\n";`,
+					}export * from "./{{kebabCase name}}";\n`,
 				},
 				{
 					type: "append",
 					path: root + "index.tsx",
-					pattern: /(?<insertion>\/\/ component exports)/g,
+					pattern: /(?<insertion> component exports)/g,
 					template: 'export * from "./{{kebabCase name}}";',
 				},
 			];

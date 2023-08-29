@@ -18,10 +18,7 @@ Following features make it really cool and useful
   - just run `yarn turbo gen` and follow the propts to auto generate your new component with test file and dependency linking
   - follow best practices automatically
 - As a small extra gift Fork Me component is already added in UI
-
-### Coming soon
-
-- github actions/workflows to auto publish your packages
+- github actions/workflows to auto publish your package when version changes
 
 ## What's inside?
 

@@ -4,19 +4,26 @@ This is a template created based on official starter Turborepo.
 
 Simply click on Use this template button to use and customize this template for your next JavaSctipt / TypeScript / React / Vue / Next.js library or project.
 
+## What's different from scaffolding turbo-repo by `create-turbo`
+
+The default scafold from `create-turbo` just gives some stubs for sharing packages across projects/apps within current monorepo.
+
+This template is targeted for sharing packages across organizations/repos publically or privately.
+
+Following features make it really cool and useful
+
+- Unit tests with `vitest`
+- Build setup with `tsup` and `esbuild-react18-useclient` Supports React Server components out of the box
+- **Automatic file generation**
+  - just run `yarn turbo gen` and follow the propts to auto generate your new component with test file and dependency linking
+  - follow best practices automatically
+- As a small extra gift Fork Me component is already added in UI
+
+### Coming soon
+
+- github actions/workflows to auto publish your packages
+
 ## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/example is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
@@ -25,6 +32,18 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+
+### Apps and Packages
+
+This Turborepo includes the following packages/apps:
+
+- `nextjs`: a [Next.js](https://nextjs.org/) app
+- `docs`: another [Next.js](https://nextjs.org/) app
+- `ui`: a React component library shared by both `nextjs` and `docs` examples
+- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+
+Each package/example is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Build
 

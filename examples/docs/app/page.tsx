@@ -1,10 +1,5 @@
-import { Button, Header } from "ui";
+import { ForkMe } from "ui/server";
 
 export default function Page(): JSX.Element {
-	return (
-		<>
-			<Header text="Docs" />
-			<Button />
-		</>
-	);
+	return <ForkMe href="https://github.com/mayank1513/turbo-template" />;
 }

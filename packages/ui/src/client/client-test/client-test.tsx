@@ -5,16 +5,16 @@ interface Props {
 }
 
 /**
- * # {{ pascalCase name }}
- * {{ description }}
+ * # ClientTest
+ * 
  *
  * @param {React.ReactNode} [props.children]
  * @returns {React.ReactElement}
  */
-export function {{ pascalCase name }}({ children }: Props) {
+export function ClientTest({ children }: Props) {
 	return (
 		<div>
-			<h1 data-testid="{{ kebabCase name }}-h1">{{ name }}</h1>
+			<h1 data-testid="client-test-h1">client test</h1>
 			{children}
 		</div>
 	);

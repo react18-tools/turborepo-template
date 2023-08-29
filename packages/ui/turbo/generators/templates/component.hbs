@@ -1,21 +1,21 @@
 import * as React from "react";
 
 interface Props {
-  children?: React.ReactNode;
+	children?: React.ReactNode;
 }
 
 /**
  * # {{ pascalCase name }}
  * {{ description }}
- * 
+ *
  * @param {React.ReactNode} [props.children]
  * @returns {React.ReactElement}
  */
 export function {{ pascalCase name }}({ children }: Props) {
-  return (
-    <div>
-      <h1>{{ name }}</h1>
-      {children}
-    </div>
-  );
-};
+	return (
+		<div>
+			<h1 data-testid="{{ kebabCase name }}-h1">{{ name }}</h1>
+			{children}
+		</div>
+	);
+}

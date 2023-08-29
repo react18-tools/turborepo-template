@@ -31,6 +31,11 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
 				},
 				{
 					type: "add",
+					path: root + "{{kebabCase name}}/{{kebabCase name}}.test.tsx",
+					templateFile: "templates/component.test.hbs",
+				},
+				{
+					type: "add",
 					path: root + "{{kebabCase name}}/index.tsx",
 					template: `${
 						data?.isClient ? '"use client";\n\n' : ""

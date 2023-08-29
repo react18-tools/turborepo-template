@@ -19,7 +19,7 @@
 	"scripts": {
 		"test": "vitest run --coverage",
 		"build": "tsup src --dts && node touchup.js",
-		"publish-package": "cd dist && npm publish",
+		"publish-package": "cd dist && npm publish --access public",
 		"lint": "eslint ."
 	},
 	"devDependencies": {

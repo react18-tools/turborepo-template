@@ -5,8 +5,16 @@ import { ForkMe } from "./fork-me";
 describe.concurrent("fork-me", () => {
 	afterEach(cleanup);
 
-	test("check if h1 heading exists", async ({ expect }) => {
-		render(<ForkMe />);
-		expect(screen.getByTestId("fork-me-h1").textContent).toBe("fork me");
+	test("Smoke test", async ({ expect }) => {
+		const component = render(<ForkMe href="https://github.com/mayank1513/turbo-template" />);
+		expect(component.container.textContent).toBe("Fork Me on GitHub");
+	});
+
+	test("Custom text", async ({ expect }) => {
+		const text = "Star me on GitHub";
+		const component = render(
+			<ForkMe href="https://github.com/mayank1513/turbo-template" text={text} />,
+		);
+		expect(component.container.textContent).toBe(text);
 	});
 });

@@ -1,4 +1,4 @@
-# Turborepo template
+# Turborepo template [![codecov](https://codecov.io/gh/mayank1513/turbo-template/graph/badge.svg?token=8LX1NLNVRV)](https://codecov.io/gh/mayank1513/turbo-template)
 
 This is a template created based on official starter Turborepo.
 

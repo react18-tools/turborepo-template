@@ -24,7 +24,7 @@
 		}
 	],
 	"editor.tabSize": 2,
-	"editor.wordWrap": "bounded",
+	"editor.wordWrap": "on",
 	"editor.formatOnSave": true,
 	"editor.formatOnPaste": true,
 	"editor.formatOnSaveMode": "modifications"

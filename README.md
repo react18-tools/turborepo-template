@@ -1,4 +1,4 @@
-# Turborepo template [![codecov](https://codecov.io/gh/mayank1513/turbo-template/graph/badge.svg?token=8LX1NLNVRV)](https://codecov.io/gh/mayank1513/turbo-template)
+# Turborepo template [![test](https://github.com/mayank1513/turbo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turbo-template/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/mayank1513/turbo-template/graph/badge.svg?token=8LX1NLNVRV)](https://codecov.io/gh/mayank1513/turbo-template) [![Version](https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/@mayank1513/fork-me.svg)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Unit Tests](https://github.com/mayank1513/turbo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turbo-template/actions/workflows/test.yml) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me)
 
 This is a template created based on official starter Turborepo.
 

@@ -42,7 +42,11 @@ export function ForkMe({ href, text, width, height, bgColor, textColor }: Props)
 	};
 
 	return (
-		<a href={href} target="_blank" rel="noopener noreferrer" style={style}>
+		<a
+			href={href.endsWith("fork") ? href : `${href}/fork`}
+			target="_blank"
+			rel="noopener noreferrer"
+			style={style}>
 			{text || "Fork Me on GitHub"}
 		</a>
 	);

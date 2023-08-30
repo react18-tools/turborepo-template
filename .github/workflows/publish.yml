@@ -39,17 +39,21 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: Publish Scoped package to NPM
-        # Check & skip if it is already scoped
-        if: ! grep -q "@${{ github.event.repository.owner.id }}" package.json
+        # continue on error - expecing npm to trow error if scoping is done twice
+        continue-on-error: true
+        id: publish_scoped
         run: |
           cd dist          
-          sed -i -e "s/\"name\": \"/\"name\": \"@${{ github.event.repository.owner.id }}\//" package.json
+          sed -i -e "s/\"name\": \"/\"name\": \"@${{ github.event.repository.owner.login }}\//" package.json
           sed -i -e "s/pnpm add /pnpm add @mayank1513\//" README.md
           sed -i -e "s/npm install /npm install @mayank1513\//" README.md
           sed -i -e "s/yarn add /yan add @mayank1513\//" README.md
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: Fix double scoping
+        if: steps.publish_scoped.outcome == 'failure'
+        run: cd dist && sed -i -e "s/@${{ github.event.repository.owner.login }}\/@/@/" package.json
       - uses: actions/setup-node@v3
         with:
           registry-url: https://npm.pkg.github.com/

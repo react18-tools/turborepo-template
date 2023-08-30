@@ -4,17 +4,18 @@ name: Publish (NPM & GPR)
 on:
   push:
     branches: [main]
-    paths: "packages/ui/package.json"
+    paths: "packages/fork-me/package.json"
 
 jobs:
   publish:
+    if: github.run_number != 1
     runs-on: ubuntu-latest
     permissions:
       packages: write
 
     defaults:
       run:
-        working-directory: ./packages/ui
+        working-directory: ./packages/fork-me
 
     steps:
       - uses: actions/checkout@v3

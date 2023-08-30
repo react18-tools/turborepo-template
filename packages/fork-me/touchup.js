@@ -7,7 +7,6 @@ const packageJson = require(path.resolve(__dirname, "package.json"));
 delete packageJson.devDependencies;
 delete packageJson.scripts;
 
-packageJson.name = "@mayank1513/fork-me";
 packageJson.main = "index.js";
 packageJson.types = "index.d.ts";
 

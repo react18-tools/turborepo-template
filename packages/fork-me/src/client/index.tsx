@@ -5,4 +5,4 @@
  * */
 
 // client component exports
-export * from "./client-test";
+export * from "./star-me";

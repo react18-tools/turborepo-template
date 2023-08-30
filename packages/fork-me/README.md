@@ -15,7 +15,7 @@ $ yarn add @mayank1513/fork-me
 ## Add on your page
 
 ```ts
-<ForkMe href="https://github.com/mayank1513/turbo-template" />
+<ForkMe href="https://github.com/mayank1513/turborepo-template" />
 ```
 
 ## Optional parameters

@@ -10,18 +10,18 @@ Open [http://localhost:3001](http://localhost:3001) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-To create [API routes](https://nextjs.org/docs/app/building-your-application/routing/router-handlers) add an `api/` directory to the `app/` directory with a `route.ts` file. For individual endpoints, create a subfolder in the `api` directory, like `api/hello/route.ts` would map to [http://localhost:3001/api/hello](http://localhost:3001/api/hello).
+To create [API routes](https://nextjs.org/docs/app/building-your-application/routing/router-handlers) add an `api/` directory to the `app/` directory with a `route.ts` file. For individual endpoints, create a subfolder in the `api` directory, as `api/hello/route.ts` would map to [http://localhost:3001/api/hello](http://localhost:3001/api/hello).
 
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
 - [Learn Next.js](https://www.udemy.com/course/react-and-next-js-with-typescript/?referralCode=7202184A1E57C3DCA8B2) - an interactive Next.js course.
 
-You can check out [the Turbo Template GitHub repository](https://github.com/mayank1513/turbo-template/) - your feedback and contributions are welcome!
+You can check out [the Turbo Template GitHub repository](https://github.com/mayank1513/turborepo-template/) - your feedback and contributions are welcome!
 
-### 🤩 Don't forger to start this repo!
+### 🤩 Don't forget to start this repo!
 
 <hr />
 

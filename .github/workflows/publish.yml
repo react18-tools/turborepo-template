@@ -8,6 +8,7 @@ on:
 
 jobs:
   publish:
+    # Don't run just after creating repo from template
     if: github.run_number != 1
     runs-on: ubuntu-latest
     permissions:
@@ -28,13 +29,27 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: npm i -g pnpm && pnpm i
         name: Install dependencies
+        # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
       - name: Publish to NPM
         run: pnpm build && pnpm publish-package
+        # continue on error to publish scoped package name <- by default repo is setup for a non-scoped + scoped package name
+        continue-on-error: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-
+      - name: Publish Scoped package to NPM
+        # Check & skip if it is already scoped
+        if: ! grep -q "@${{ github.event.repository.owner.id }}" package.json
+        run: |
+          cd dist          
+          sed -i -e "s/\"name\": \"/\"name\": \"@${{ github.event.repository.owner.id }}\//" package.json
+          sed -i -e "s/pnpm add /pnpm add @mayank1513\//" README.md
+          sed -i -e "s/npm install /npm install @mayank1513\//" README.md
+          sed -i -e "s/yarn add /yan add @mayank1513\//" README.md
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - uses: actions/setup-node@v3
         with:
           registry-url: https://npm.pkg.github.com/

@@ -14,5 +14,5 @@
 		"turbo": "latest"
 	},
 	"packageManager": "pnpm@8.6.10",
-	"name": "turbo-template"
+	"name": "turborepo-template"
 }

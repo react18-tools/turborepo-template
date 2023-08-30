@@ -6,14 +6,14 @@ describe.concurrent("fork-me", () => {
 	afterEach(cleanup);
 
 	test("Smoke test", async ({ expect }) => {
-		const component = render(<ForkMe href="https://github.com/mayank1513/turbo-template" />);
+		const component = render(<ForkMe href="https://github.com/mayank1513/turborepo-template" />);
 		expect(component.container.textContent).toBe("Fork Me on GitHub");
 	});
 
 	test("Custom text", async ({ expect }) => {
 		const text = "Star me on GitHub";
 		const component = render(
-			<ForkMe href="https://github.com/mayank1513/turbo-template" text={text} />,
+			<ForkMe href="https://github.com/mayank1513/turborepo-template" text={text} />,
 		);
 		expect(component.container.textContent).toBe(text);
 	});

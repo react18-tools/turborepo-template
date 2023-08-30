@@ -1,5 +1,6 @@
 import { defineConfig } from "tsup";
 import reactUseClientPlugin from "esbuild-react18-useclient";
+import ignoretestsPlugin from "esbuild-plugin-ignoretests";
 
 export default defineConfig(options => ({
 	format: ["cjs", "esm"],
@@ -7,6 +8,6 @@ export default defineConfig(options => ({
 	sourcemap: false,
 	clean: true,
 	minify: !options.watch,
-	esbuildPlugins: [reactUseClientPlugin],
+	esbuildPlugins: [reactUseClientPlugin, ignoretestsPlugin()],
 	legacyOutput: true,
 }));

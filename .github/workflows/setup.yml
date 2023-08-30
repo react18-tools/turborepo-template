@@ -10,7 +10,24 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: ./setup.sh ${{ github.event.repository.owner }} ${{ github.event.repository.name }}
+      - name: Setup Git and create PR
+        run: |
+          git config --global user.name "Mayank Chaudhari<https://mayank-chaudhari.vercel.app>"
+          git config --global user.email "mayank-automate@noreply.github.com"
+          git fetch
+          git checkout main
+          git checkout -b setup-repo
+      - name: Set up repo
+        run: chmod +x ./setup.sh && ./setup.sh ${{ github.event.repository.owner.id }} ${{ github.event.repository.name }}
+      - name: Push changes back to repo
+        run: |
+          git add .
+          git commit -m 'Set up this repo\n\nwith 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a>'
+          git push origin setup-repo
+      - name: create pull request
+        run: gh pr create -B setup-repo -H main --title 'Merge setup-repo into main to Set up this Repo ' --body 'Created by Github action\n\nwith 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a>'

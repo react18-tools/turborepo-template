@@ -2,7 +2,7 @@
 	"name": "@mayank1513/fork-me",
 	"author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
 	"private": false,
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "An intuitive React.js fork me ribbon component for promoting open source project forks.",
 	"main": "./index.tsx",
 	"types": "./index.tsx",
@@ -66,6 +66,8 @@
 		"react-server-components",
 		"react-client-components",
 		"typescript",
-		"javascript"
+		"javascript",
+		"mayank1513",
+		"turborepo-trmplate"
 	]
 }

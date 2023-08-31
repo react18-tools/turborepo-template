@@ -4,6 +4,8 @@ This is a template created based on official starter Turborepo.
 
 Simply click on Use this template button to use and customize this template for your next JavaSctipt / TypeScript / React / Vue / Next.js library or project.
 
+> A quick tip: Delete all stale branches `git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d`
+
 ## What's different from scaffolding turbo-repo by `create-turbo`
 
 The default scafold from `create-turbo` just gives some stubs for sharing packages across projects/apps within current monorepo.

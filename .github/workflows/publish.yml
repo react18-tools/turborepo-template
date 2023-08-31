@@ -32,12 +32,16 @@ jobs:
         # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
-      - name: Publish to NPM
+      - name: Update tags and Publish to NPM
         run: pnpm build && pnpm publish-package
         # continue on error to publish scoped package name <- by default repo is setup for a non-scoped + scoped package name
         continue-on-error: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.event.repository.owner.login }}
+          REPO: ${{ github.event.repository.name }}
+
       - name: Publish Scoped package to NPM
         # continue on error - expecing npm to trow error if scoping is done twice
         continue-on-error: true

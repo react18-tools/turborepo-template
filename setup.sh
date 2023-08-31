@@ -21,7 +21,10 @@ cd ../docs
 sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\"/" package.json
 sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\t\"$2\"/" package.json
 
-# delete this file and the setup.yml workflow - no longer needed
+# rename fork-me to repo-name
 cd ../..
+mv packages/fork-me packages/$2
+
+# delete this file and the setup.yml workflow - no longer needed
 rm .github/workflows/setup.yml
 rm setup.sh

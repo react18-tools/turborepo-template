@@ -8,17 +8,17 @@ sed -i -e "s/Simply click on Use this template button to use and customize this 
 
 # Update package.json for all workspaces
 cd packages/fork-me
-sed -i -e "s/.*version.*/\"version\": \"0.0.0\"/" package.json
-sed -i -e "s/.*name.*/\"name\": \"$2\"/" package.json
+sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
+sed -i -e "s/.*name.*/\t\"name\": \"$2\",/" package.json
 # Update touchup.js to copy readme from root of the repo
 sed -i -e "s/__dirname, \"README.md\"/__dirname, \"..\", \"..\", \"README.md\"/" touchup.js
 
 cd ../../examples/nextjs
-sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\"/" package.json
+sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
 sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\t\"$2\"/" package.json
 
 cd ../docs
-sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\"/" package.json
+sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
 sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\t\"$2\"/" package.json
 
 # rename fork-me to repo-name

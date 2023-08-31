@@ -14,13 +14,14 @@ sed -i -e "s/.*name.*/\"name\": \"$2\"/" package.json
 sed -i -e "s/__dirname, \"README.md\"/__dirname, \"..\", \"..\", \"README.md\"/" touchup.js
 
 cd ../../examples/nextjs
-sed -i -e "s/.*version.*/\"version\": \"0.0.0\"/" package.json
-sed -i -e "s/.*@mayank1513\/fork-me\":.*/\"$2\": \"0.0.0\"/" package.json
+sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\"/" package.json
+sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\t\"$2\"/" package.json
 
 cd ../docs
-sed -i -e "s/.*version.*/\"version\": \"0.0.0\"/" package.json
-sed -i -e "s/.*@mayank1513\/fork-me\":.*/\"$2\": \"0.0.0\"/" package.json
+sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\"/" package.json
+sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\t\"$2\"/" package.json
 
 # delete this file and the setup.yml workflow - no longer needed
+cd ../..
 rm .github/workflows/setup.yml
 rm setup.sh

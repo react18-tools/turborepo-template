@@ -33,6 +33,8 @@ jobs:
           git push origin setup-repo
       - name: create pull request
         run: gh pr create -B main -H setup-repo --title 'Merge to Set up this Repo ' --body 'Created by Github action\n\nwith 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a>'
+        # this step fails because newly created repo does not have permission to create PR from workflow
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
           

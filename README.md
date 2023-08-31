@@ -2,9 +2,9 @@
 
 This is a template created based on official starter Turborepo.
 
-Simply click on Use this template button to use and customize this template for your next JavaSctipt / TypeScript / React / Vue / Next.js library or project.
-
 > A quick tip: Delete all stale branches `git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d`
+
+Simply click on `Use this template` button to use and customize this template for your next JavaSctipt / TypeScript / React / Vue / Next.js library or project.
 
 ## What's different from scaffolding turbo-repo by `create-turbo`
 
@@ -21,6 +21,27 @@ Following features make it really cool and useful
   - follow best practices automatically
 - As a small extra gift Fork Me component is already added in UI
 - github actions/workflows to auto publish your package when version changes
+
+## Checklist
+
+- [ ] Review and merge `setup-repo` branch to main
+  - We have created a new branch called `setup-repo`. This will automatically rename packages and update workflows, directories etc. with your repo's name
+  - [ ] Create PR from `setup-repo` to `main`
+  - [ ] Review changes and merge
+- [ ] Set up `CodeCov`
+  - If you merged changes from `setup-repo` branch, we have already updated the badges, however, codecov needs a token
+  - [ ] Visit codecov and setup your repo
+  - [ ] Update codecov badge in README
+  - [ ] Create repository secrets for `CODECOV_TOKEN`
+- [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate publishing package
+  - [ ] login to your `npm` account and create automation token
+  - [ ] Create a new repository secrets `NPM_AUTH_TOKEN`
+- [ ] Update description in `packages/@mayank1513/fork-me/package.json`
+- [ ] Create your library and update examples
+- [ ] Update README
+- [ ] Push your changes/Create PR and see your library being automatically tested and published
+- [ ] Optionally deploy your example(s) to Vercel.
+- [ ] You are most welcome to star this template, contribute, and/or sponsor the terbo-repo-template project / me
 
 ## What's inside?
 

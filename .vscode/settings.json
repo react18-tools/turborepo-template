@@ -27,5 +27,5 @@
 	"editor.wordWrap": "on",
 	"editor.formatOnSave": true,
 	"editor.formatOnPaste": true,
-	"editor.formatOnSaveMode": "modifications"
+	"editor.formatOnSaveMode": "file"
 }

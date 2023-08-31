@@ -32,7 +32,7 @@ jobs:
           git commit -m 'Set up this repo\n\nwith 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a>'
           git push origin setup-repo
       - name: create pull request
-        run: gh pr create -B setup-repo -H main --title 'Merge setup-repo into main to Set up this Repo ' --body 'Created by Github action\n\nwith 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a>'
+        run: gh pr create -B main -H setup-repo --title 'Merge to Set up this Repo ' --body 'Created by Github action\n\nwith 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a>'
         env:
           GH_TOKEN: ${{ github.token }}
           

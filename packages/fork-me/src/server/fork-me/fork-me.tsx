@@ -1,12 +1,13 @@
 import * as React from "react";
 
 interface Props {
-	href: string;
+	gitHubUrl: string;
 	text?: string;
 	width?: string | number;
 	height?: string | number;
 	bgColor?: string;
 	textColor?: string;
+	noAutoFork?: boolean;
 }
 
 /**
@@ -16,7 +17,7 @@ interface Props {
  * @param {React.ReactNode} [props.children]
  * @returns {React.ReactElement}
  */
-export function ForkMe({ href, text, width, height, bgColor, textColor }: Props) {
+export function ForkMe({ gitHubUrl, text, width, height, bgColor, textColor, noAutoFork }: Props) {
 	const w = (Number.isNaN(Number(width)) ? width : `${width}px`) || "15em";
 	const h = (Number.isNaN(Number(height)) ? height : `${height}px`) || "35px";
 	const bgC = bgColor || "#aaa";
@@ -41,12 +42,9 @@ export function ForkMe({ href, text, width, height, bgColor, textColor }: Props)
 		outline: `4px solid ${bgC}`,
 	};
 
+	const url = noAutoFork ? gitHubUrl : gitHubUrl.endsWith("fork") ? gitHubUrl : `${gitHubUrl}/fork`;
 	return (
-		<a
-			href={href.endsWith("fork") ? href : `${href}/fork`}
-			target="_blank"
-			rel="noopener noreferrer"
-			style={style}>
+		<a href={url} target="_blank" rel="noopener noreferrer" style={style}>
 			{text || "Fork Me on GitHub"}
 		</a>
 	);

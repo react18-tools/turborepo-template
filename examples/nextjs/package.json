@@ -9,10 +9,11 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@mayank1513/fork-me": "workspace:*",
 		"next": "^13.4.19",
+		"nextjs-themes": "^0.4.0",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"@mayank1513/fork-me": "workspace:*"
+		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
 		"@next/eslint-plugin-next": "^13.4.19",

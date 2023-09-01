@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write 
+      pull-requests: write
     steps:
       - uses: actions/checkout@v3
         with:
@@ -25,7 +25,9 @@ jobs:
           git checkout main
           git checkout -b setup-repo
       - name: Set up repo
-        run: chmod +x ./setup.sh && ./setup.sh ${{ github.event.repository.owner.login }} ${{ github.event.repository.name }}
+        run: |
+          chmod +x ./setup.sh && ./setup.sh ${{ github.event.repository.owner.login }} ${{ github.event.repository.name }}
+          npm i -g pnpm && pnpm i && pnpm update --latest -r
       - name: Push changes back to repo
         run: |
           git add .
@@ -37,4 +39,3 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-          

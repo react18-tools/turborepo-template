@@ -21,7 +21,10 @@ if (process.env.TOKEN) {
 	octokit.request("GET /repos/{owner}/{repo}/topics", octoOptions).then(({ data }) => {
 		octoOptions.names = [...new Set([...data.names, ...packageJson.keywords])];
 		if (octoOptions.names.length != data.names.length)
-			octokit.request("PUT /repos/{owner}/{repo}/topics", octoOptions);
+			octokit
+				.request("PUT /repos/{owner}/{repo}/topics", octoOptions)
+				.then(console.log)
+				.catch(console.error);
 	});
 }
 delete packageJson.devDependencies;

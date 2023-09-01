@@ -1,5 +1,10 @@
 # Turborepo template [![test](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/mayank1513/turborepo-template/graph/badge.svg?token=8LX1NLNVRV)](https://codecov.io/gh/mayank1513/turborepo-template) [![Version](https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/@mayank1513/fork-me.svg)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Unit Tests](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me)
 
+- ✅ Fully Treeshakable (`import from @mayank1513/fork-me/client/component`)
+- ✅ Full TypeScript Support
+- ✅ Unleash the full power of React18 Server components
+- ✅ Works with all build systems/tools/frameworks for React18
+
 This is a template created based on official starter Turborepo.
 
 > A quick tip: Delete all stale branches `git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d`
@@ -24,6 +29,7 @@ Following features make it really cool and useful
 
 ## Checklist
 
+- [ ] Clone this repo
 - [ ] Review and merge `setup-repo` branch to main
   - We have created a new branch called `setup-repo`. This will automatically rename packages and update workflows, directories etc. with your repo's name
   - [ ] Create PR from `setup-repo` to `main`
@@ -37,6 +43,7 @@ Following features make it really cool and useful
   - [ ] login to your `npm` account and create automation token
   - [ ] Create a new repository secrets `NPM_AUTH_TOKEN`
 - [ ] Update description in `packages/@mayank1513/fork-me/package.json`
+- [ ] Imp - update publish workflow - replace `fork-me` with `@mayank1513/fork-me`
 - [ ] Create your library and update examples
 - [ ] Update README
 - [ ] Push your changes/Create PR and see your library being automatically tested and published

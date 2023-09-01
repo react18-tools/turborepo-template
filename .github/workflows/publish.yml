@@ -12,8 +12,7 @@ jobs:
     # Also avoid running after merging set-up PR
     if: github.run_number > 2
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
+    permissions: write-all
 
     defaults:
       run:
@@ -33,7 +32,7 @@ jobs:
         # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
-      - name: Update tags and Publish to NPM
+      - name: Update topics and Publish to NPM
         run: pnpm build && pnpm publish-package
         # continue on error to publish scoped package name <- by default repo is setup for a non-scoped + scoped package name
         continue-on-error: true

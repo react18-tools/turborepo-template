@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import { ThemeSwitcher } from "react18-themes";
 import { ForkMe } from "@mayank1513/fork-me/server";
+import { StarMe } from "@mayank1513/fork-me";
 import "./App.css";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
 					Edit <code>src/App.tsx</code> and save to test HMR
 				</p>
 			</div>
+			<StarMe gitHubUrl="https://github.com/mayank1513/turborepo-template" />
 			<p className="read-the-docs">Click on the Vite and React logos to learn more</p>
 			<ForkMe gitHubUrl="https://github.com/mayank1513/turborepo-template" />
 		</>

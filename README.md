@@ -34,6 +34,8 @@ Following features make it really cool and useful
   - We have created a new branch called `setup-repo`. This will automatically rename packages and update workflows, directories etc. with your repo's name
   - [ ] Create PR from `setup-repo` to `main`
   - [ ] Review changes and merge
+- [ ] **Imp** - update publish workflow - replace `fork-me` with `@mayank1513/fork-me` in `.github/workflows/publish.yml` file.
+- [ ] **Imp** - update test workflow - replace `fork-me` with `@mayank1513/fork-me` in `.github/workflows/test.yml` file
 - [ ] Set up `CodeCov`
   - If you merged changes from `setup-repo` branch, we have already updated the badges, however, codecov needs a token
   - [ ] Visit codecov and setup your repo
@@ -43,7 +45,6 @@ Following features make it really cool and useful
   - [ ] login to your `npm` account and create automation token
   - [ ] Create a new repository secrets `NPM_AUTH_TOKEN`
 - [ ] Update description in `packages/@mayank1513/fork-me/package.json`
-- [ ] Imp - update publish workflow - replace `fork-me` with `@mayank1513/fork-me`
 - [ ] Create your library and update examples
 - [ ] Update README
 - [ ] Push your changes/Create PR and see your library being automatically tested and published

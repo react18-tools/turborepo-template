@@ -12,7 +12,8 @@ jobs:
     # Also avoid running after merging set-up PR
     if: github.run_number > 2
     runs-on: ubuntu-latest
-    permissions: write-all
+    permissions:
+      packages: write
 
     defaults:
       run:
@@ -47,6 +48,11 @@ jobs:
         continue-on-error: true
         id: publish_scoped
         run: cd dist && node ../scope.js && npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.event.repository.owner.login }}
+          REPO: ${{ github.event.repository.name }}
       - uses: actions/setup-node@v3
         with:
           registry-url: https://npm.pkg.github.com/

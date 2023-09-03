@@ -39,7 +39,6 @@ Following features make it really cool and useful
 - [ ] Set up `CodeCov`
   - If you merged changes from `setup-repo` branch, we have already updated the badges, however, codecov needs a token
   - [ ] Visit codecov and setup your repo
-  - [ ] Update codecov badge in README
   - [ ] Create repository secrets for `CODECOV_TOKEN`
 - [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate publishing package
   - [ ] login to your `npm` account and create automation token

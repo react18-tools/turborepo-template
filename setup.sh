@@ -6,7 +6,7 @@ sed -i -e "s/@mayank1513\/fork-me/$2/g" README.md
 sed -i -e "s/This is a template created based on official starter Turborepo./## Install\n\n\`\`\`bash\n$ pnpm add $2\n# or\n$ npm install $2\n# or\n$ yarn add $2\n\`\`\`/" README.md
 sed -i -e "s/Simply click on \`Use this template\` .*//" README.md
 sed -i -e "s/.*Clone this repo.*//" README.md
-
+sed -i -e "s/# Turborepo template/# $2/" README.md
 # Update forkme link in examples
 sed -i -e "s/turbo-template/$2/g" examples/nextjs/app/layout.tsx
 sed -i -e "s/turbo-template/$2/g" examples/nextjs/app/page.tsx

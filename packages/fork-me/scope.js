@@ -8,6 +8,10 @@ const packageJson = require(path.resolve(process.cwd(), "package.json"));
 const ref = packageJson.name;
 if (!ref.startsWith(`@${owner}`)) {
 	packageJson.name = `@${owner}/${packageJson.name}`;
+	fs.writeFileSync(
+		path.resolve(process.cwd(), "package.json"),
+		JSON.stringify(packageJson, null, 2),
+	);
 	const readMePath = path.resolve(process.cwd(), "README.md");
 	let readMe = fs.readFileSync(readMePath, { encoding: "utf8" });
 	const tmp = "!--|--!";

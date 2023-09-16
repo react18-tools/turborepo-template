@@ -24,12 +24,12 @@
 	},
 	"devDependencies": {
 		"@testing-library/react": "^14.0.0",
-		"@turbo/gen": "^1.10.13",
-		"@types/node": "^20.5.7",
+		"@turbo/gen": "^1.10.14",
+		"@types/node": "^20.6.2",
 		"@types/react": "^18.2.21",
 		"@types/react-dom": "^18.2.7",
 		"@vitejs/plugin-react": "^4.0.4",
-		"@vitest/coverage-v8": "^0.34.3",
+		"@vitest/coverage-v8": "^0.34.4",
 		"esbuild-plugin-ignoretests": "^0.0.3",
 		"esbuild-react18-useclient": "^1.0.5",
 		"eslint-config-custom": "workspace:*",
@@ -39,8 +39,8 @@
 		"tsconfig": "workspace:*",
 		"tsup": "^7.2.0",
 		"typescript": "^5.2.2",
-		"vite-tsconfig-paths": "^4.2.0",
-		"vitest": "^0.34.3"
+		"vite-tsconfig-paths": "^4.2.1",
+		"vitest": "^0.34.4"
 	},
 	"peerDependencies": {
 		"@types/react": "^16.8 || ^17 || ^18",

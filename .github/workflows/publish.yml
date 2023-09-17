@@ -1,4 +1,4 @@
-name: Publish (NPM & GPR)
+name: Publish to NPM
 
 # publish only when package json has changed - assuming version upgrade
 on:
@@ -53,10 +53,3 @@ jobs:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.event.repository.owner.login }}
           REPO: ${{ github.event.repository.name }}
-      - uses: actions/setup-node@v3
-        with:
-          registry-url: https://npm.pkg.github.com/
-      - name: Publish to GitHub Public Repository
-        run: pnpm publish-package
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: write
+      contents: write
 
     defaults:
       run:
@@ -28,7 +29,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org
-      - run: npm i -g pnpm && pnpm i
+      - run: npm i -g pnpm && pnpm i --ignore-scripts
         name: Install dependencies
         # fail and not publish if any of the unit tests are failing
       - name: Test

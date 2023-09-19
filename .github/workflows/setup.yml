@@ -26,7 +26,7 @@ jobs:
       - name: Set up repo
         run: |
           chmod +x ./setup.sh && ./setup.sh ${{ github.event.repository.owner.login }} ${{ github.event.repository.name }}
-          npm i -g pnpm && pnpm i && pnpm update --latest -r
+          npm i -g pnpm && pnpm i --ignore-scripts && pnpm update --latest -r
       - name: Push changes back to repo
         run: |
           git add .

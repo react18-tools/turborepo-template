@@ -11,6 +11,7 @@
 		"eslint": "^8.49.0",
 		"prettier": "^3.0.3",
 		"tsconfig": "workspace:*",
+		"@changesets/cli": "^2.26.2",
 		"turbo": "^1.10.14"
 	},
 	"packageManager": "pnpm@8.6.10",

@@ -37,6 +37,7 @@ Following features make it really cool and useful
   - [ ] login to your `npm` account and create automation token
   - [ ] Create a new repository secrets `NPM_AUTH_TOKEN`
 - [ ] Update description in `packages/@mayank1513/fork-me/package.json`
+- [ ] Update Repo Stats by visiting and setting up [repobeats](https://repobeats.axiom.co/)
 - [ ] Create your library and update examples
 - [ ] Update README
 - [ ] Push your changes/Create PR and see your library being automatically tested and published

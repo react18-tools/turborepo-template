@@ -7,8 +7,6 @@
 
 This is a template created based on official starter Turborepo.
 
-> A quick tip: Delete all stale branches `git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d`
-
 Simply click on `Use this template` button to use and customize this template for your next JavaSctipt / TypeScript / React / Vue / Next.js library or project.
 
 ## What's different from scaffolding turbo-repo by `create-turbo`
@@ -24,7 +22,6 @@ Following features make it really cool and useful
 - **Automatic file generation**
   - just run `yarn turbo gen` and follow the propts to auto generate your new component with test file and dependency linking
   - follow best practices automatically
-- As a small extra gift Fork Me component is already added in UI
 - github actions/workflows to auto publish your package when version changes
 
 ## Checklist
@@ -82,25 +79,6 @@ To develop all apps and packages, run the following command:
 ```
 cd my-turborepo
 pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
 ```
 
 ## Useful Links

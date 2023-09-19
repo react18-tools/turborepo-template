@@ -20,10 +20,9 @@ jobs:
       - name: Setup Git and create PR
         run: |
           git config --global user.name "Mayank Chaudhari<https://mayank-chaudhari.vercel.app>"
-          git config --global user.email "mayank-automate@noreply.github.com"
+          git config --global user.email "mayank.srmu@gmail.com"
           git fetch
           git checkout main
-          git checkout -b setup-repo
       - name: Set up repo
         run: |
           chmod +x ./setup.sh && ./setup.sh ${{ github.event.repository.owner.login }} ${{ github.event.repository.name }}
@@ -31,11 +30,5 @@ jobs:
       - name: Push changes back to repo
         run: |
           git add .
-          git commit -m 'Set up this repo\n\nwith 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a>'
-          git push origin setup-repo
-      - name: create pull request
-        run: gh pr create -B main -H setup-repo --title 'Merge to Set up this Repo ' --body 'Created by Github action\n\nwith 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a>'
-        # this step fails because newly created repo does not have permission to create PR from workflow
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
+          git commit -m 'Set up this repo\n\nwith 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]'
+          git push origin main

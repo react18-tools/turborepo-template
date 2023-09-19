@@ -1,4 +1,4 @@
-# Turborepo template [![test](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/mayank1513/turborepo-template/graph/badge.svg?token=8LX1NLNVRV)](https://codecov.io/gh/mayank1513/turborepo-template) [![Version](https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/@mayank1513/fork-me.svg)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Unit Tests](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me)
+# Turborepo template [![test](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/mayank1513/turborepo-template/graph/badge.svg)](https://codecov.io/gh/mayank1513/turborepo-template) [![Version](https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/@mayank1513/fork-me.svg)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Unit Tests](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me)
 
 - ✅ Fully Treeshakable (`import from @mayank1513/fork-me/client/component`)
 - ✅ Full TypeScript Support
@@ -30,14 +30,7 @@ Following features make it really cool and useful
 ## Checklist
 
 - [ ] Clone this repo
-- [ ] Review and merge `setup-repo` branch to main
-  - We have created a new branch called `setup-repo`. This will automatically rename packages and update workflows, directories etc. with your repo's name
-  - [ ] Create PR from `setup-repo` to `main`
-  - [ ] Review changes and merge
-- [ ] **Imp** - update publish workflow - replace `fork-me` with `@mayank1513/fork-me` in `.github/workflows/publish.yml` file.
-- [ ] **Imp** - update test workflow - replace `fork-me` with `@mayank1513/fork-me` in `.github/workflows/test.yml` file
 - [ ] Set up `CodeCov`
-  - If you merged changes from `setup-repo` branch, we have already updated the badges, however, codecov needs a token
   - [ ] Visit codecov and setup your repo
   - [ ] Create repository secrets for `CODECOV_TOKEN`
 - [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate publishing package
@@ -48,7 +41,7 @@ Following features make it really cool and useful
 - [ ] Update README
 - [ ] Push your changes/Create PR and see your library being automatically tested and published
 - [ ] Optionally deploy your example(s) to Vercel.
-- [ ] You are most welcome to star this template, contribute, and/or sponsor the terbo-repo-template project / me
+- [ ] You are most welcome to star this template, contribute, and/or sponsor the `terbo-repo-template` project or my other open-source work
 
 ## What's inside?
 
@@ -62,11 +55,11 @@ This Turborepo has some additional tools already setup for you:
 
 ### Apps and Packages
 
-This Turborepo includes the following packages/apps:
+This Turborepo includes the following packages/examples:
 
 - `nextjs`: a [Next.js](https://nextjs.org/) app
-- `docs`: another [Next.js](https://nextjs.org/) app
-- `ui`: a React component library shared by both `nextjs` and `docs` examples
+- `vite`: a [Vite.js](https://vitest.dev) app
+- `fork-me`: a React component library shared by both `nextjs` and `vite` examples
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 

@@ -6,7 +6,7 @@
 		"test": "turbo run test",
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,css,scss}\"",
-		"preinstall": "chmod +x ./preinstall.sh && ./preinstall.sh"
+		"preinstall": "chmod +x ./preinstall.sh && preinstall.sh"
 	},
 	"devDependencies": {
 		"eslint": "^8.49.0",

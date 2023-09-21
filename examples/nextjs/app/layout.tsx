@@ -1,11 +1,11 @@
 import { ForkMe } from "@mayank1513/fork-me/server";
 import "./globals.css";
 import { ThemeSwitcher } from "nextjs-themes";
-import { SSCWrapper } from "nextjs-themes/server/nextjs";
+import { ServerSideWrapper } from "nextjs-themes/server/nextjs";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<SSCWrapper tag="html" lang="en">
+		<ServerSideWrapper tag="html" lang="en">
 			<body>
 				<ThemeSwitcher />
 				<div className="container">{children}</div>
@@ -16,13 +16,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					</a>
 				</footer>
 				<ForkMe
-					gitHubUrl="https://github.com/mayank1513/turbo-template"
 					bgColor="var(--text-color)"
-					textColor="var(--bg-color)"
+					gitHubUrl="https://github.com/mayank1513/turbo-template"
 					noAutoFork
 					text="Use this Template"
+					textColor="var(--bg-color)"
 				/>
 			</body>
-		</SSCWrapper>
+		</ServerSideWrapper>
 	);
 }

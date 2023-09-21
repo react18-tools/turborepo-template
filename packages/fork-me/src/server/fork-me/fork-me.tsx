@@ -1,4 +1,5 @@
 import * as React from "react";
+import cssClasses from "./fork-me.module.css";
 
 interface ForkMeProps {
 	gitHubUrl: string;
@@ -52,7 +53,12 @@ export function ForkMe({
 
 	const url = noAutoFork ? gitHubUrl : gitHubUrl.endsWith("fork") ? gitHubUrl : `${gitHubUrl}/fork`; // eslint-disable-line no-nested-ternary -- inteded
 	return (
-		<a href={url} rel="noopener noreferrer" style={style} target="_blank">
+		<a
+			className={cssClasses.fork}
+			href={url}
+			rel="noopener noreferrer"
+			style={style}
+			target="_blank">
 			{text || "Fork Me on GitHub"}
 		</a>
 	);

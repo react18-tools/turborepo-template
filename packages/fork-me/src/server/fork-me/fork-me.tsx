@@ -1,6 +1,6 @@
 import * as React from "react";
 
-interface Props {
+interface ForkMeProps {
 	gitHubUrl: string;
 	text?: string;
 	width?: string | number;
@@ -14,10 +14,18 @@ interface Props {
  * # ForkMe
  * Fork me ribbon
  *
- * @param {React.ReactNode} [props.children]
- * @returns {React.ReactElement}
+ * @param props - ForkMeProps
+ * @returns React.ReactElement
  */
-export function ForkMe({ gitHubUrl, text, width, height, bgColor, textColor, noAutoFork }: Props) {
+export function ForkMe({
+	gitHubUrl,
+	text,
+	width,
+	height,
+	bgColor,
+	textColor,
+	noAutoFork,
+}: ForkMeProps): React.ReactNode {
 	const w = (Number.isNaN(Number(width)) ? width : `${width}px`) || "15em";
 	const h = (Number.isNaN(Number(height)) ? height : `${height}px`) || "35px";
 	const bgC = bgColor || "#aaa";
@@ -25,7 +33,7 @@ export function ForkMe({ gitHubUrl, text, width, height, bgColor, textColor, noA
 	const style = {
 		"--w": w,
 		"--h": h,
-		position: "fixed" as "fixed",
+		position: "fixed" as const,
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "center",
@@ -42,9 +50,9 @@ export function ForkMe({ gitHubUrl, text, width, height, bgColor, textColor, noA
 		outline: `4px solid ${bgC}`,
 	};
 
-	const url = noAutoFork ? gitHubUrl : gitHubUrl.endsWith("fork") ? gitHubUrl : `${gitHubUrl}/fork`;
+	const url = noAutoFork ? gitHubUrl : gitHubUrl.endsWith("fork") ? gitHubUrl : `${gitHubUrl}/fork`; // eslint-disable-line no-nested-ternary -- inteded
 	return (
-		<a href={url} target="_blank" rel="noopener noreferrer" style={style}>
+		<a href={url} rel="noopener noreferrer" style={style} target="_blank">
 			{text || "Fork Me on GitHub"}
 		</a>
 	);

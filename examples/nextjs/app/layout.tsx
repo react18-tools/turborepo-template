@@ -5,7 +5,7 @@ import { ServerSideWrapper } from "nextjs-themes/server/nextjs";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<ServerSideWrapper tag="html" lang="en">
+		<ServerSideWrapper lang="en">
 			<body>
 				<ThemeSwitcher />
 				<div className="container">{children}</div>

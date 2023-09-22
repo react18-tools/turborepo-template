@@ -1,3 +1,4 @@
+/* eslint-disable -- no need - external file */
 "use strict";
 
 const fs = require("fs");
@@ -46,3 +47,16 @@ fs.writeFileSync(
 );
 
 fs.copyFileSync(path.resolve(__dirname, "README.md"), path.resolve(__dirname, "dist", "README.md"));
+
+const dirs = [path.resolve(__dirname, "dist")];
+
+while (dirs.length) {
+	const dir = dirs.shift();
+	fs.readdirSync(dir).forEach(f => {
+		const f1 = path.resolve(dir, f);
+		if (f.includes(".test.")) fs.unlink(f1, () => {});
+		else if (fs.lstatSync(f1).isDirectory()) {
+			dirs.push(f1);
+		}
+	});
+}

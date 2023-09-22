@@ -8,6 +8,7 @@ export default defineConfig(options => ({
 	target: "es2019",
 	sourcemap: false,
 	clean: true,
+	bundle: true,
 	minify: !options.watch,
 	esbuildPlugins: [reactUseClientPlugin, ignoretestsPlugin(), removeTestidPlugin()],
 	legacyOutput: true,

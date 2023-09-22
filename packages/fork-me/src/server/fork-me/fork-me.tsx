@@ -26,7 +26,7 @@ export function ForkMe({
 	bgColor,
 	textColor,
 	noAutoFork,
-}: ForkMeProps): React.ReactNode {
+}: ForkMeProps) {
 	const w = (Number.isNaN(Number(width)) ? width : `${width}px`) || "15em";
 	const h = (Number.isNaN(Number(height)) ? height : `${height}px`) || "35px";
 	const bgC = bgColor || "#aaa";

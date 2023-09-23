@@ -1,3 +1,4 @@
+/* eslint-disable -- no need - external file */
 "use strict";
 
 const fs = require("node:fs");

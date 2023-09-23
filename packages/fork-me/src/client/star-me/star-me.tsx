@@ -1,6 +1,6 @@
 import * as React from "react";
 
-interface Props extends React.HTMLAttributes<HTMLButtonElement> {
+interface StarMeProps extends React.HTMLAttributes<HTMLButtonElement> {
 	gitHubUrl: string;
 }
 
@@ -8,16 +8,14 @@ interface Props extends React.HTMLAttributes<HTMLButtonElement> {
  * # StarMe
  * Star repo in a popup window
  *
- * @param {React.ReactNode} [props.children]
- * @returns {React.ReactElement}
  */
-export function StarMe({ gitHubUrl, onClick, children, ...props }: Props) {
+export function StarMe({ gitHubUrl, onClick, children, ...props }: StarMeProps) {
 	const starMe = (e: React.MouseEvent<HTMLButtonElement>) => {
 		window.open(gitHubUrl, "_blank", "height: 400,width:1200,left:150,top:150");
 		onClick?.(e);
 	};
 	return (
-		<button data-testid="star-me-h1" onClick={starMe} {...props}>
+		<button data-testid="star-me-h1" onClick={starMe} type="button" {...props}>
 			{children || "Star Me"}
 		</button>
 	);

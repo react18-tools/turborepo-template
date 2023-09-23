@@ -2,7 +2,6 @@ import fs from "node:fs";
 import path from "node:path";
 import type { PlopTypes } from "@turbo/gen";
 
-// eslint-disable-next-line import/no-default-export -- export default is required for config files
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
 	// A simple generator to add a new React component to the internal UI library
 	plop.setGenerator("react-component", {

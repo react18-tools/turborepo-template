@@ -54,6 +54,7 @@ export function ForkMe({
 	const url = noAutoFork ? gitHubUrl : gitHubUrl.endsWith("fork") ? gitHubUrl : `${gitHubUrl}/fork`; // eslint-disable-line no-nested-ternary -- inteded
 	return (
 		<a
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access -- it's ok
 			className={cssClasses.fork}
 			href={url}
 			rel="noopener noreferrer"

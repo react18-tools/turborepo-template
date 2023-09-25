@@ -1,9 +1,9 @@
 # Turborepo template [![test](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/mayank1513/turborepo-template/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/mayank1513/turborepo-template/graph/badge.svg)](https://codecov.io/gh/mayank1513/turborepo-template) [![Version](https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/@mayank1513/fork-me.svg)](https://www.npmjs.com/package/@mayank1513/fork-me) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me)
 
-✅ Fully Treeshakable (`import from @mayank1513/fork-me/client/component`)
-✅ Full TypeScript Support
-✅ Unleash the full power of React18 Server components
-✅ Works with all build systems/tools/frameworks for React18
+✅ Fully Treeshakable (`import from @mayank1513/fork-me/client/component`)\
+✅ Full TypeScript Support\
+✅ Unleash the full power of React18 Server components\
+✅ Works with all build systems/tools/frameworks for React18\
 
 This is a template created based on official starter Turborepo.
 

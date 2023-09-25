@@ -7,6 +7,7 @@ interface ForkMeProps {
 	width?: string | number;
 	height?: string | number;
 	bgColor?: string;
+	shadowColor?: string;
 	textColor?: string;
 	noAutoFork?: boolean;
 }
@@ -24,6 +25,7 @@ export function ForkMe({
 	width,
 	height,
 	bgColor,
+	shadowColor,
 	textColor,
 	noAutoFork,
 }: ForkMeProps) {
@@ -34,21 +36,10 @@ export function ForkMe({
 	const style = {
 		"--w": w,
 		"--h": h,
-		position: "fixed" as const,
-		display: "flex",
-		alignItems: "center",
-		justifyContent: "center",
-		fontWeight: 700,
-		width: w,
-		height: h,
-		transform: "rotate(45deg)",
-		top: "calc(0.354 * var(--w) - var(--h))",
-		right: "calc(-0.14 * var(--w) - 0.5 * var(--h))",
-		color: tC,
-		backgroundColor: bgC,
-		textShadow: "0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7)",
-		border: "1px dashed gray",
-		outline: `4px solid ${bgC}`,
+		"--tc": tC,
+		"--bc": bgC,
+		"--sc": bgC || shadowColor,
+		outline: `4px solid ${bgC}`, // to satisfy typescript
 	};
 
 	const url = noAutoFork ? gitHubUrl : gitHubUrl.endsWith("fork") ? gitHubUrl : `${gitHubUrl}/fork`; // eslint-disable-line no-nested-ternary -- inteded

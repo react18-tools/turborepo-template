@@ -1,5 +1,27 @@
 # Contributing to fork-me
 
+## What's inside?
+
+### Utilities
+
+This Turborepo has some additional tools already setup for you:
+
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
+
+### Apps and Packages
+
+This Turborepo includes the following packages/examples:
+
+- `nextjs`: a [Next.js](https://nextjs.org/) app
+- `vite`: a [Vite.js](https://vitest.dev) app
+- `fork-me`: a React component library shared by both `nextjs` and `vite` examples
+- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+
+Each package/example is 100% [TypeScript](https://www.typescriptlang.org/).
+
 ## Automatic file generation
 
 - just run `yarn turbo gen` and follow the propts to auto generate your new component with test file and dependency linking

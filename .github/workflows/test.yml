@@ -38,5 +38,5 @@ jobs:
           git fetch
           git checkout main
       - name: Save upgraded packages back to repo
-        run: git add . && git git commit -m "upgrade deps" && git push origin main
+        run: git add . && git commit -m "upgrade deps" && git push origin main
         continue-on-error: true

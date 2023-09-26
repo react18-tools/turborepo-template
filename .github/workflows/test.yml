@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
   pull_request:
-
+  schedule:
+    - cron: "0 */8 * * *"
 jobs:
   test:
     if: github.run_number != 1
@@ -24,3 +25,18 @@ jobs:
           directory: ./packages/fork-me
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: fork-me
+      - run: pnpm update --latest --ignore-scripts -w
+        name: Update dependencies
+      - run: pnpm build
+        name: Build all apps to make sure it is not broken due to dependency upgrades
+      - name: Run unit tests
+        run: pnpm test
+      - name: Setup Git
+        run: |
+          git config --global user.name "mayank1513"
+          git config --global user.email "mayank.srmu@gmail.com"
+          git fetch
+          git checkout main
+      - name: Save upgraded packages back to repo
+        run: git add . && git git commit -m "upgrade deps" && git push origin main
+        continue-on-error: true

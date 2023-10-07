@@ -30,7 +30,7 @@
 		"@types/react-dom": "^18.2.11",
 		"@vitejs/plugin-react": "^4.1.0",
 		"@vitest/coverage-v8": "^0.34.6",
-		"esbuild-plugin-css-module": "^0.0.0",
+		"esbuild-plugin-css-module": "^0.0.1",
 		"esbuild-plugin-react18": "^0.0.4",
 		"eslint-config-custom": "workspace:*",
 		"jsdom": "^22.1.0",

@@ -9,6 +9,7 @@ sed -i -e "s/This is a template created based on official starter Turborepo./## 
 sed -i -e "s/Simply click on \`Use this template\` .*//" README.md
 sed -i -e "s/.*Clone this repo.*//" README.md
 sed -i -e "s/# Turborepo template/# $2/" README.md
+
 # Update forkme link in examples
 sed -i -e "s/turbo-template/$2/g" examples/nextjs/app/layout.tsx
 sed -i -e "s/turbo-template/$2/g" examples/nextjs/app/page.tsx
@@ -19,8 +20,9 @@ sed -i -e "s/turborepo-template/$2/" package.json
 cd packages/fork-me
 sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
 sed -i -e "s/.*name.*/\t\"name\": \"$2\",/" package.json
-sed -i -e "s/mayank1513\/turborepo-template/$1\/$2/"
-sed -i -e "s/\/tree\/main\/packages\/fork-me//"
+sed -i -e "s/mayank1513\/turborepo-template/$1\/$2/" package.json
+sed -i -e "s/\/tree\/main\/packages\/fork-me//" package.json
+
 # Update touchup.js to copy readme from root of the repo
 sed -i -e "s/__dirname, \"README.md\"/__dirname, \"..\", \"..\", \"README.md\"/" touchup.js
 
@@ -35,6 +37,9 @@ sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\
 # rename fork-me to repo-name
 cd ../..
 mv packages/fork-me packages/$2
+
+# Add preinstall scripts
+sed -i -e "s/echo setup/chmod +x ./preinstall.sh && preinstall.sh/" package.json
 
 # change working directory in publish workflow -- GitHub doesn't allow this
 # sed -i -e "s/fork-me/$2/g" .github/workflows/publish.yml

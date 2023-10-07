@@ -1,12 +1,13 @@
 {
 	"name": "nextjs-example",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"postinstall": "next telemetry disable"
 	},
 	"dependencies": {
 		"@mayank1513/fork-me": "workspace:^",

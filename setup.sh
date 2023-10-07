@@ -5,7 +5,7 @@ sed -i -e "s/mayank1513\/turborepo-template/$1\/$2/g" README.md
 sed -i -e "s/@mayank1513\/fork-me/$2/g" README.md
 sed -i -e "s/my-turborepo/$2/g" README.md
 sed -i -e "s/my-turborepo/$2/g" contributing.md
-sed -i -e "s/This is a template created based on official starter Turborepo./## Install\n\n\`\`\`bash\n$ pnpm add $2\n\`\`\`\n\nor\n\n\`\`\`\n$ npm install $2\n\`\`\`\n\nor\n\n\`\`\`\n$ yarn add $2\n\`\`\`\n\n\`\`\`/" README.md
+sed -i -e "s/This is a template created based on official starter Turborepo./## Install\n\n\`\`\`bash\n$ pnpm add $2\n\`\`\`\n\nor\n\n\`\`\`bash\n$ npm install $2\n\`\`\`\n\nor\n\n\`\`\`bash\n$ yarn add $2\n\`\`\`\n/" README.md
 sed -i -e "s/Simply click on \`Use this template\` .*//" README.md
 sed -i -e "s/.*Clone this repo.*//" README.md
 sed -i -e "s/# Turborepo template/# $2/" README.md
@@ -39,7 +39,7 @@ cd ../..
 mv packages/fork-me packages/$2
 
 # Add preinstall scripts
-sed -i -e "s/echo setup/chmod +x ./preinstall.sh && preinstall.sh/" package.json
+sed -i -e "s/echo setup/chmod +x preinstall.sh && preinstall.sh/" package.json
 
 # change working directory in publish workflow -- GitHub doesn't allow this
 # sed -i -e "s/fork-me/$2/g" .github/workflows/publish.yml

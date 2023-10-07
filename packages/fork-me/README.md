@@ -20,6 +20,12 @@ $ yarn add @mayank1513/fork-me
 <StarMe gitHubUrl="https://github.com/mayank1513/turborepo-template" />
 ```
 
+You need to import styles for ForkMe component
+
+```ts
+import "@mayank1513/fork-me/server/index.css";
+```
+
 ## Optional parameters
 
 ```ts

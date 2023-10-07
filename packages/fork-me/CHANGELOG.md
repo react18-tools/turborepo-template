@@ -1,5 +1,11 @@
 # @mayank1513/fork-me
 
+## 1.1.1
+
+### Patch Changes
+
+- Fix CSS modules
+
 ## 1.1.0
 
 ### Minor Changes

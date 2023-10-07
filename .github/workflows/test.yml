@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm i -g pnpm && pnpm i --ignore-scripts
+      - run: npm i -g pnpm && pnpm i
         name: Install dependencies
       - name: Run unit tests
         run: pnpm test
@@ -25,7 +25,7 @@ jobs:
           directory: ./packages/fork-me
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: fork-me
-      - run: pnpm update --latest --ignore-scripts -w
+      - run: pnpm update --latest -w
         name: Update dependencies
       - run: pnpm build
         name: Build all apps to make sure it is not broken due to dependency upgrades

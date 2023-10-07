@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org
-      - run: npm i -g pnpm && pnpm i --ignore-scripts
+      - run: npm i -g pnpm && pnpm i
         name: Install dependencies
         # fail and not publish if any of the unit tests are failing
       - name: Test

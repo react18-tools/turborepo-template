@@ -1,5 +1,11 @@
 # @mayank1513/fork-me
 
+## 1.1.2
+
+### Patch Changes
+
+- Add z-index to make sure ribbon is not covered
+
 ## 1.1.1
 
 ### Patch Changes

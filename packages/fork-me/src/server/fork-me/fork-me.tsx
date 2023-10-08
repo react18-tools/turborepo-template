@@ -54,6 +54,7 @@ export function ForkMe({
 		textShadow: "0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7)",
 		border: "1px dashed gray",
 		outline: `4px solid ${bgC}`, // to satisfy typescript
+		zIndex: 1000,
 	};
 
 	const url = noAutoFork ? gitHubUrl : gitHubUrl.endsWith("fork") ? gitHubUrl : `${gitHubUrl}/fork`; // eslint-disable-line no-nested-ternary -- inteded

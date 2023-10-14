@@ -29,7 +29,7 @@ jobs:
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageLocations: ./packages/react18-themes/coverage/*.xml:clover
+          coverageLocations: ./packages/fork-me/coverage/*.xml:clover
 
       - run: pnpm update --latest -w
         name: Update dependencies

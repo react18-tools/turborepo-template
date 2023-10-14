@@ -33,6 +33,11 @@ Following features make it really cool and useful
 - [ ] Set up `CodeCov`
   - [ ] Visit codecov and setup your repo
   - [ ] Create repository secrets for `CODECOV_TOKEN`
+- [ ] Set up `CodeClimate`
+  - [ ] Visit CodeClimate and setup your repo
+  - [ ] Create repository secrets for `CC_TEST_REPORTER_ID`
+  - [ ] add `*.test.*` to ignore patterns on the website
+  - [ ] update code climate badge
 - [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate publishing package
   - [ ] login to your `npm` account and create automation token
   - [ ] Create a new repository secrets `NPM_AUTH_TOKEN`

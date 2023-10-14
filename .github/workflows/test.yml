@@ -26,6 +26,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: fork-me
       - uses: paambaati/codeclimate-action@v5.0.0
+        continue-on-error: true
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:

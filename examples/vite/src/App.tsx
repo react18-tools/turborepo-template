@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import { ThemeSwitcher } from "react18-themes";
 import { ForkMe } from "@mayank1513/fork-me/server";
 import { StarMe } from "@mayank1513/fork-me";
@@ -12,15 +10,7 @@ function App() {
 	return (
 		<>
 			<ThemeSwitcher />
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://react.dev" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-			</div>
-			<h1>Vite + React</h1>
+			<h1>Vite + React + TS Example</h1>
 			<div className="card">
 				<button onClick={() => setCount(count => count + 1)}>count is {count}</button>
 				<p>
@@ -28,7 +18,6 @@ function App() {
 				</p>
 			</div>
 			<StarMe gitHubUrl="https://github.com/mayank1513/turborepo-template" />
-			<p className="read-the-docs">Click on the Vite and React logos to learn more</p>
 			<ForkMe gitHubUrl="https://github.com/mayank1513/turborepo-template" />
 		</>
 	);

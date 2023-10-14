@@ -10,7 +10,7 @@ export default defineConfig({
 		globals: true,
 		setupFiles: [],
 		coverage: {
-			reporter: ["text", "json", "html"],
+			reporter: ["text", "json", "clover", "html"],
 		},
 		threads: true,
 	},

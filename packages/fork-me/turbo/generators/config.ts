@@ -23,62 +23,97 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
 				message: "Describe your component. (This will be added as js-doc comment.)",
 			},
 		],
-		actions: data => {
-			let root = data?.isClient ? "src/client/" : "src/server/";
-			const _actions: PlopTypes.ActionType[] = [];
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call -- intentional
-			if (data?.name.includes("/")) {
-				const name = data.name as string;
-				const lastSlashInd = name.lastIndexOf("/") || name.lastIndexOf("\\");
-				data.name = name.slice(lastSlashInd + 1);
-				const dir = name.slice(0, lastSlashInd).split(/\/|\\/);
-				const r1 = root.split(/\/|\\/);
-				for (let i = 1; i <= dir.length; i++) {
-					const p = path.resolve(process.cwd(), "..", "..", ...r1, ...dir.slice(0, i), "index.ts");
-					if (!fs.existsSync(p)) {
-						const content = `${data.isClient ? '"use client";\n' : ""}// ${dir
-							.slice(0, i)
-							.join("/")} component exports\n`;
-						_actions.push({
-							type: "add",
-							path: `${root + dir.slice(0, i).join("/")}/index.ts`,
-							template: content,
-						});
-						_actions.push({
-							type: "append",
-							pattern: /(?<insertion> component exports)/g,
-							path: `${root + (i === 1 ? "" : `${dir.slice(0, i - 1).join("/")}/`)}index.ts`,
-							template: `export * from "./${dir[i - 1]}"`,
-						});
-					}
-				}
-				root = `${root + dir.join("/")}/`;
-			}
-			return _actions.concat([
-				{
-					type: "add",
-					path: `${root}{{kebabCase name}}/index.ts`,
-					template: `${
-						data?.isClient ? '"use client";\n\n' : ""
-					}export * from "./{{kebabCase name}}";\n`,
-				},
-				{
-					type: "add",
-					path: `${root}{{kebabCase name}}/{{kebabCase name}}.tsx`,
-					templateFile: "templates/component.hbs",
-				},
-				{
-					type: "add",
-					path: `${root}{{kebabCase name}}/{{kebabCase name}}.test.tsx`,
-					templateFile: "templates/component.test.hbs",
-				},
-				{
-					type: "append",
-					path: `${root}index.ts`,
-					pattern: /(?<insertion> component exports)/g,
-					template: 'export * from "./{{kebabCase name}}";',
-				},
-			]);
-		},
+		actions: data => (data ? getActions(data as InquirerDataType) : []),
 	});
+}
+
+interface InquirerDataType {
+	isClient: boolean;
+	name: string;
+}
+
+function getActions(data: InquirerDataType) {
+	const { nestedRouteActions, root } = getNestedRouteActions(data);
+	return nestedRouteActions.concat([
+		{
+			type: "add",
+			path: `${root}{{kebabCase name}}/index.ts`,
+			template: `${
+				data.isClient ? '"use client";\n\n' : ""
+			}export * from "./{{kebabCase name}}";\n`,
+		},
+		{
+			type: "add",
+			path: `${root}{{kebabCase name}}/{{kebabCase name}}.tsx`,
+			templateFile: "templates/component.hbs",
+		},
+		{
+			type: "add",
+			path: `${root}{{kebabCase name}}/{{kebabCase name}}.test.tsx`,
+			templateFile: "templates/component.test.hbs",
+		},
+		{
+			type: "append",
+			path: `${root}index.ts`,
+			pattern: /(?<insertion> component exports)/g,
+			template: 'export * from "./{{kebabCase name}}";',
+		},
+	]);
+}
+
+function getNestedRouteActions(data: InquirerDataType) {
+	const { isClient, name } = data;
+	const root = isClient ? "src/client/" : "src/server/";
+	const nestedRouteActions: PlopTypes.ActionType[] = [];
+
+	/** Return early if no nested routes */
+	if (!name.includes("/")) return { nestedRouteActions, root };
+
+	const lastSlashInd = name.lastIndexOf("/") || name.lastIndexOf("\\");
+	/** following is required to make sure appropreate name is used while creating components */
+	data.name = name.slice(lastSlashInd + 1);
+
+	const directories = name.slice(0, lastSlashInd).split(/\/|\\/);
+	const rootSegments = [...root.split(/\/|\\/)];
+
+	for (let i = 1; i <= directories.length; i++)
+		updateIndexFilesIfNeeded(nestedRouteActions, rootSegments, directories.slice(0, i), isClient);
+
+	return { nestedRouteActions, root: `${root + directories.join("/")}/` };
+}
+
+function updateIndexFilesIfNeeded(
+	nestedRouteActions: PlopTypes.ActionType[],
+	rootSegments: string[],
+	currentDirSegments: string[],
+	isClient: boolean,
+) {
+	const indexFilePath = path.resolve(
+		process.cwd(),
+		"..",
+		"..",
+		...rootSegments,
+		...currentDirSegments,
+		"index.ts",
+	);
+	const root = rootSegments.join("/");
+	if (!fs.existsSync(indexFilePath)) {
+		const content = `${isClient ? '"use client";\n' : ""}// ${currentDirSegments.join(
+			"/",
+		)} component exports\n`;
+		nestedRouteActions.push({
+			type: "add",
+			path: `${root + currentDirSegments.join("/")}/index.ts`,
+			template: content,
+		});
+		const length = currentDirSegments.length;
+		nestedRouteActions.push({
+			type: "append",
+			pattern: /(?<insertion> component exports)/g,
+			path: `${
+				root + (length === 1 ? "" : `${currentDirSegments.slice(0, length - 1).join("/")}/`)
+			}index.ts`,
+			template: `export * from "./${currentDirSegments[length - 1]}"`,
+		});
+	}
 }

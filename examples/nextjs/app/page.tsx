@@ -1,24 +1,24 @@
 import { Inter } from "next/font/google";
-import styles from "./page.module.css";
 import { StarMe } from "@mayank1513/fork-me";
+import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home(): JSX.Element {
 	return (
 		<main className={`${styles.main} ${inter.className}`}>
 			<div className={styles.description}>
 				<a
+					className={styles.logo}
 					href="https://github.com/mayank1513/turborepo-template"
-					target="_blank"
 					rel="noopener noreferrer"
-					className={styles.logo}>
+					target="_blank">
 					<p>
 						<code className={styles.code}>turborepo-template</code>
 					</p>
 				</a>
 				<div>
-					<a href="https://mayank-chaudhari.vercel.app" target="_blank" rel="noopener noreferrer">
+					<a href="https://mayank-chaudhari.vercel.app" rel="noopener noreferrer" target="_blank">
 						By Mayank
 					</a>
 				</div>
@@ -35,18 +35,18 @@ export default function Home() {
 
 			<div className={styles.cards}>
 				<a
-					href="https://github.com/mayank1513/turborepo-template"
 					className={styles.card}
-					target="_blank"
-					rel="noopener noreferrer">
+					href="https://github.com/mayank1513/turborepo-template"
+					rel="noopener noreferrer"
+					target="_blank">
 					<h2>
 						Use This Template <span>-&gt;</span>
 					</h2>
 					<p>Explore more on official GitHub Repo.</p>
 				</a>
 				<StarMe
-					gitHubUrl="https://github.com/mayank1513/turborepo-template"
-					className={styles.card}>
+					className={styles.card}
+					gitHubUrl="https://github.com/mayank1513/turborepo-template">
 					<h2>
 						Star this repo <span>-&gt;</span>
 					</h2>

@@ -25,6 +25,12 @@ jobs:
           directory: ./packages/fork-me
           token: ${{ secrets.CODECOV_TOKEN }}
           flags: fork-me
+      - uses: paambaati/codeclimate-action@v5.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageLocations: ./packages/react18-themes/coverage/*.xml:clover
+
       - run: pnpm update --latest -w
         name: Update dependencies
       - run: pnpm build

@@ -31,6 +31,7 @@ jobs:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
           coverageLocations: ./packages/fork-me/coverage/*.xml:clover
+      - run: git status
       - run: npx @turbo/codemod update . && pnpm update --latest -w
         name: Update dependencies
       - run: pnpm build

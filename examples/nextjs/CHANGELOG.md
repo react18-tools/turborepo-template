@@ -1,5 +1,13 @@
 # nextjs-example
 
+## 1.0.4
+
+### Patch Changes
+
+- Support Next.js 14
+- Updated dependencies
+  - @mayank1513/fork-me@2.0.0
+
 ## 1.0.3
 
 ### Patch Changes

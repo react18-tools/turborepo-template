@@ -1,5 +1,11 @@
 # @mayank1513/fork-me
 
+## 2.0.0
+
+### Major Changes
+
+- Support Next.js 14
+
 ## 1.1.2
 
 ### Patch Changes

@@ -44,7 +44,7 @@
 	},
 	"peerDependencies": {
 		"@types/react": "16.8 - 18",
-		"next": "10 - 13",
+		"next": "10 - 14",
 		"react": "16.8 - 18"
 	},
 	"peerDependenciesMeta": {

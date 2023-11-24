@@ -34,7 +34,7 @@ jobs:
         # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
-      - name: Update topics and Publish to NPM
+      - name: Create release and publish to NPM
         run: pnpm build && pnpm publish-package
         # continue on error to publish scoped package name <- by default repo is setup for a non-scoped + scoped package name
         continue-on-error: true

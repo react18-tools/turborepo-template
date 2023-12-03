@@ -37,12 +37,14 @@
 }
 
 /* dark themes */
-[data-theme="dark"] {
+[data-theme="dark"],
+[data-theme="dark"] ~ * {
 	--bg-color: #000;
 	--text-color: #fff;
 }
 
-[data-theme="dark"] {
+[data-theme="dark"],
+[data-theme="dark"] ~ * {
 	--primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
 	--secondary-glow: linear-gradient(
 		to bottom right,
@@ -66,28 +68,36 @@
 	);
 }
 
+/* light themes */
+
+[data-theme="white"],
+[data-theme="white"] ~ * {
+	--bg-color: #fff;
+	--text-color: #000;
+}
+
 html {
 	padding: 0;
 	margin: 0;
 }
 
-body {
+body,
+#root {
 	padding: 0;
 	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main,
+footer {
 	background: var(--bg-color);
 	color: var(--text-color);
 }
 
-.container {
-	max-width: var(--max-width);
-	min-height: calc(100vh - 100px);
-	margin: auto;
-}
-
-.container header {
-	display: flex;
-	gap: 20px;
-	align-items: center;
+main {
+	flex-grow: 1;
 }
 
 footer {
@@ -98,4 +108,8 @@ footer {
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+.grow {
+	flex-grow: 1;
 }

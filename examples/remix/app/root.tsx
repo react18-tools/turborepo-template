@@ -1,7 +1,7 @@
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
-import { ForkMe } from "@mayank1513/fork-me/server";
+import { SharedRootLayout } from "shared-ui";
 
 export const links: LinksFunction = () => [
 	...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -17,8 +17,9 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
-				<Outlet />
-				<ForkMe gitHubUrl="" />
+				<SharedRootLayout>
+					<Outlet />
+				</SharedRootLayout>
 				<ScrollRestoration />
 				<Scripts />
 				<LiveReload />

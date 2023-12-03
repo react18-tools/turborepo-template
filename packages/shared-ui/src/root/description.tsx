@@ -1,4 +1,4 @@
-import type { HTMLProps } from "react";
+import { ColorSwitch } from "react18-themes";
 import { Logo } from "../common/logo";
 import styles from "../root-layout.module.css";
 
@@ -14,10 +14,11 @@ export function Description() {
 					<Logo className={styles.code} />
 				</p>
 			</a>
-			<div>
+			<div className={styles.by}>
 				<a href="https://mayank-chaudhari.vercel.app" rel="noopener noreferrer" target="_blank">
 					By Mayank
 				</a>
+				<ColorSwitch />
 			</div>
 		</div>
 	);

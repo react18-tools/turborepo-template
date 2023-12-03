@@ -1,6 +1,6 @@
 import "./globals.css";
 import "react18-themes/styles.css";
-import { ColorSwitch, ThemeSwitcher } from "react18-themes";
+import { ThemeSwitcher } from "react18-themes";
 import { ForkMe } from "@mayank1513/fork-me/server"; // import directory not supported in remix
 import type { HTMLProps } from "react";
 import styles from "./root-layout.module.css";
@@ -19,7 +19,6 @@ export function SharedRootLayout({ children, className = "", ...props }: SharedR
 				<Description />
 				{children}
 				<Hero />
-				<ColorSwitch />
 				<Cards />
 			</main>
 			<Footer />

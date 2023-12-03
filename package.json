@@ -4,6 +4,7 @@
 		"build": "turbo run build",
 		"dev": "turbo run dev",
 		"test": "turbo run test",
+		"doc": "turbo run doc",
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,css,scss}\"",
 		"preinstall": "echo setup"

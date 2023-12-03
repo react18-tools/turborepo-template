@@ -7,7 +7,7 @@ export function Description() {
 		<div className={styles.description}>
 			<a
 				className={styles.logo}
-				href="https://github.com/react18-tools/react18-themes"
+				href="https://github.com/react18-tools/turborepo-template/"
 				rel="noopener noreferrer"
 				target="_blank">
 				<p>

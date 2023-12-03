@@ -2,6 +2,7 @@
 
 # Update README
 sed -i -e "s/mayank1513\/turborepo-template/$1\/$2/g" README.md
+sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" README.md
 sed -i -e "s/@mayank1513\/fork-me/$2/g" README.md
 sed -i -e "s/my-turborepo/$2/g" README.md
 sed -i -e "s/my-turborepo/$2/g" contributing.md
@@ -10,10 +11,17 @@ sed -i -e "s/Simply click on \`Use this template\` .*//" README.md
 sed -i -e "s/.*Clone this repo.*//" README.md
 sed -i -e "s/# Turborepo template/# $2/" README.md
 
-# Update forkme link in examples
-sed -i -e "s/turbo-template/$2/g" examples/nextjs/app/layout.tsx
-sed -i -e "s/turbo-template/$2/g" examples/nextjs/app/page.tsx
-sed -i -e "s/turbo-template/$2/g" examples/vite/src/App.tsx
+# Update links in shared-ui
+cd packages/shared-ui/src
+sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" root-layout.tsx
+sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" cards/star-me-card.tsx
+sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" cards/examples-card.tsx
+sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" cards/description.tsx
+
+sed -i -e "s/react18-tools/$1/g" cards/docs-card.tsx
+sed -i -e "s/turborepo-template/$2/g" cards/docs-card.tsx
+sed -i -e "s/turborepo-template/$2/g" common/logo.tsx
+cd ../../../
 
 # Update package.json for all workspaces
 sed -i -e "s/turborepo-template/$2/" package.json

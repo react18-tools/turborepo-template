@@ -4,7 +4,7 @@ export function DocsCard() {
 	return (
 		<a
 			className={styles.card}
-			href="https://react18-tools.github.io/react18-themes/"
+			href="https://react18-tools.github.io/turborepo-template/"
 			rel="noopener noreferrer"
 			target="_blank">
 			<h2>

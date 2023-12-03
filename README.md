@@ -7,6 +7,7 @@
 ✅ Unleash the full power of React18 Server components\
 ✅ Works with all build systems/tools/frameworks for React18\
 ✅ Powerful code generators - try `yarn turbo gen`\
+✅ Doccumented with [Typedoc](https://react18-tools.github.io/turborepo-template) ([Docs](https://react18-tools.github.io/turborepo-template))
 
 This is a template created based on official starter Turborepo.
 

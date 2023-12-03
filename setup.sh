@@ -38,6 +38,10 @@ cd ../remix
 sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
 sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\t\"$2\"/" package.json
 
+cd ../../packages/shared-ui
+sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
+sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\t\"$2\"/" package.json
+
 # rename fork-me to repo-name
 cd ../..
 mv packages/fork-me packages/$2

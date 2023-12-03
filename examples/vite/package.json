@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"@mayank1513/fork-me": "workspace:*",
+		"shared-ui": "workspace:*",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react18-themes": "^2.0.1"

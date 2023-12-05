@@ -22,6 +22,7 @@ jobs:
       - name: Run unit tests
         run: pnpm test
       - name: Upload coverage reports to Codecov
+        continue-on-error: true
         uses: codecov/codecov-action@v3
         with:
           directory: ./packages/fork-me

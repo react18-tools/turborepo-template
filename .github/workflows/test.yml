@@ -41,6 +41,8 @@ jobs:
         name: Build all apps to make sure it is not broken due to dependency upgrades
       - name: Run unit tests
         run: pnpm test
+      - name: Generate/update docs
+        run: pnpm doc
       - name: Setup Git
         run: |
           git config --global user.name "mayank1513"
@@ -48,5 +50,5 @@ jobs:
           git fetch
           git checkout main
       - name: Save upgraded packages back to repo
-        run: git add . && git commit -m "upgrade deps" && git push origin main
+        run: git add . && git commit -m "upgrade deps && docs" && git push origin main
         continue-on-error: true

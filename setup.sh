@@ -6,8 +6,8 @@ sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" README.md
 sed -i -e "s/@mayank1513\/fork-me/$2/g" README.md
 sed -i -e "s/my-turborepo/$2/g" README.md
 sed -i -e "s/my-turborepo/$2/g" contributing.md
-sed -i -e "s/This is a template created based on official starter Turborepo./## Install\n\n\`\`\`bash\n$ pnpm add $2\n\`\`\`\n\nor\n\n\`\`\`bash\n$ npm install $2\n\`\`\`\n\nor\n\n\`\`\`bash\n$ yarn add $2\n\`\`\`\n/" README.md
-sed -i -e "s/Simply click on \`Use this template\` .*//" README.md
+sed -i -e "s/## Introduction/## Install\n\n\`\`\`bash\n$ pnpm add $2\n\`\`\`\n\nor\n\n\`\`\`bash\n$ npm install $2\n\`\`\`\n\nor\n\n\`\`\`bash\n$ yarn add $2\n\`\`\`\n/" README.md
+sed -i -e "s/This template is based on the official.*//" README.md
 sed -i -e "s/.*Clone this repo.*//" README.md
 sed -i -e "s/# Turborepo template/# $2/" README.md
 

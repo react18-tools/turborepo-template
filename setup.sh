@@ -25,7 +25,7 @@ cd ../../../
 
 # Update package.json for all workspaces
 sed -i -e "s/turborepo-template/$2/" package.json
-cd packages/fork-me
+cd lib/fork-me
 sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
 sed -i -e "s/.*name.*/\t\"name\": \"$2\",/" package.json
 sed -i -e "s/mayank1513\/turborepo-template/$1\/$2/" package.json
@@ -52,7 +52,7 @@ sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\
 
 # rename fork-me to repo-name
 cd ../..
-mv packages/fork-me packages/$2
+mv lib/fork-me lib/$2
 
 # Add preinstall scripts
 sed -i -e "s/echo setup/chmod +x preinstall.sh \&\& preinstall.sh/" package.json

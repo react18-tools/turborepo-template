@@ -4,7 +4,7 @@ name: Publish to NPM
 on:
   push:
     branches: [main]
-    paths: "packages/fork-me/package.json"
+    paths: "lib/fork-me/package.json"
 
 jobs:
   publish:
@@ -18,7 +18,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./packages/fork-me
+        working-directory: ./lib/fork-me
 
     steps:
       - uses: actions/checkout@v3

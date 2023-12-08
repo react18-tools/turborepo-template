@@ -16,9 +16,12 @@ This Turborepo includes the following packages/examples:
 
 - `nextjs`: a [Next.js](https://nextjs.org/) app
 - `vite`: a [Vite.js](https://vitest.dev) app
-- `fork-me`: a React component library shared by both `nextjs` and `vite` examples
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
+
+To increase the visibility we have moved core library to lib
+
+- `fork-me`: a React component library shared by both `nextjs` and `vite` examples lives in `./lib/fork-me`
 
 Each package/example is 100% [TypeScript](https://www.typescriptlang.org/).
 

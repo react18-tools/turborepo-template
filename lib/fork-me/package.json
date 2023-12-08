@@ -13,7 +13,7 @@
 	"bugs": {
 		"url": "https://github.com/mayank1513/turborepo-template/issues"
 	},
-	"homepage": "https://github.com/mayank1513/turborepo-template/tree/main/packages/fork-me#readme",
+	"homepage": "https://github.com/mayank1513/turborepo-template/tree/main/lib/fork-me#readme",
 	"sideEffects": false,
 	"license": "MIT",
 	"scripts": {

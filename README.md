@@ -69,7 +69,7 @@ This Turborepo template includes pre-configured tools:
 
 ### Apps and Packages
 
-This Turborepo includes the following packages/examples:
+This Turborepo includes the following packages/examples/lib:
 
 - `nextjs`: a [Next.js](https://nextjs.org/) app
 - `vite`: a [Vite.js](https://vitest.dev) app

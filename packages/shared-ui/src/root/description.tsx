@@ -1,4 +1,4 @@
-import { ColorSwitch } from "react18-themes";
+import { ColorSwitch } from "nextjs-themes";
 import { Logo } from "../common/logo";
 import styles from "../root-layout.module.css";
 

@@ -37,14 +37,14 @@
 }
 
 /* dark themes */
-[data-theme="dark"],
-[data-theme="dark"] ~ * {
+.dark,
+.dark ~ * {
 	--bg-color: #000;
 	--text-color: #fff;
 }
 
-[data-theme="dark"],
-[data-theme="dark"] ~ * {
+.dark,
+.dark ~ * {
 	--primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
 	--secondary-glow: linear-gradient(
 		to bottom right,
@@ -70,8 +70,8 @@
 
 /* light themes */
 
-[data-theme="white"],
-[data-theme="white"] ~ * {
+.light,
+.light ~ * {
 	--bg-color: #fff;
 	--text-color: #000;
 }

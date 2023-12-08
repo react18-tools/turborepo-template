@@ -1,4 +1,4 @@
-import { NextJsSSGThemeSwitcher } from "react18-themes/server/nextjs";
+import { NextJsSSGThemeSwitcher } from "nextjs-themes/server/nextjs";
 import { Inter } from "next/font/google";
 import { SharedRootLayout } from "shared-ui";
 

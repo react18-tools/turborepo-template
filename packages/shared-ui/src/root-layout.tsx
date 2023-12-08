@@ -1,6 +1,6 @@
 import "./globals.css";
-import "react18-themes/styles.css";
-import { ThemeSwitcher } from "react18-themes";
+import "nextjs-themes/styles.css";
+import { ThemeSwitcher } from "nextjs-themes";
 import { ForkMe } from "@mayank1513/fork-me/server"; // todo: import directory not supported in remix
 import type { HTMLProps } from "react";
 import styles from "./root-layout.module.css";
@@ -14,7 +14,7 @@ export type SharedRootLayoutProps = HTMLProps<HTMLElement>;
 export function SharedRootLayout({ children, className = "", ...props }: SharedRootLayoutProps) {
 	return (
 		<>
-			<ThemeSwitcher />
+			<ThemeSwitcher themeTransition="all 0.3s ease-in-out 0s" />
 			<main className={`${styles.main} ${className}`} {...props}>
 				<Description />
 				{children}

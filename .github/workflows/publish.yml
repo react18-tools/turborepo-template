@@ -10,7 +10,7 @@ jobs:
   publish:
     # Don't run just after creating repo from template
     # Also avoid running after merging set-up PR
-    if: github.run_number > 2 && github.repository_owner.login == 'react18-tools'
+    if: github.run_number > 2 && github.event.repository.owner.login == 'react18-tools'
     runs-on: ubuntu-latest
     permissions:
       packages: write

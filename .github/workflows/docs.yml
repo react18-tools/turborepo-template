@@ -1,0 +1,45 @@
+name: Update dependencies and Docs
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 */8 * * *"
+jobs:
+  generate-docs:
+    if: github.event.repository.owner.login == 'react18-tools'
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v3
+        with:
+          registry-url: https://registry.npmjs.org
+          node-version: 20
+      - run: npm i -g pnpm && pnpm i
+        name: Install dependencies
+      - name: Test
+        run: npm test
+      - run: git status && git clean -f -d && git status
+        name: clean up working directory
+      - run: npx @turbo/codemod update . && pnpm update --latest -w
+        name: Update dependencies
+      - run: pnpm build
+        name: Build all apps to make sure it is not broken due to dependency upgrades
+      - name: Run unit tests
+        run: pnpm test
+      - name: Generate/update docs
+        run: pnpm doc
+      - name: Setup Git
+        run: |
+          git config --global user.name "mayank1513"
+          git config --global user.email "mayank.srmu@gmail.com"
+          git fetch
+          git checkout main
+      - name: Save upgraded packages back to repo
+        run: git add . && git commit -m "upgrade deps && docs" && git push origin main

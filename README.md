@@ -1,14 +1,49 @@
 # Turborepo template
 
-[![test](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/5585ecdd3ca2511eb9aa/maintainability)](https://codeclimate.com/github/mayank1513/turborepo-template/maintainability) [![codecov](https://codecov.io/gh/mayank1513/turborepo-template/graph/badge.svg)](https://codecov.io/gh/mayank1513/turborepo-template) [![Version](https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/@mayank1513/fork-me.svg)](https://www.npmjs.com/package/@mayank1513/fork-me) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
+[![test](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/aa896ec14c570f3bb274/maintainability)](https://codeclimate.com/github/react18-tools/turborepo-template/maintainability) [![codecov](https://codecov.io/gh/react18-tools/turborepo-template/graph/badge.svg)](https://codecov.io/gh/react18-tools/turborepo-template) [![Version](https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/@mayank1513/fork-me.svg)](https://www.npmjs.com/package/@mayank1513/fork-me) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
 ## Features
 
-✅ Fully Treeshakable (import from @mayank1513/fork-me/client/component)
-✅ Full TypeScript Support
-✅ Unleash the full power of React18 Server components
-✅ Works with all build systems/tools/frameworks for React18
+This template offers following pre-configured features. Additionally, your repo will automatically be rebranded with help of workflow and post install scripts.
+
+✅ Monorepo powered by turbo repo to build, test and deploy your library
+
+✅ Next.js, Vite and Remix examples to demonstrate how your library can be used (Feel free to remove Remix as it is still unstable when it comes to monorepo setup and importing from folders)
+
+✅ Examples pre-configured to use Light/Dark theme according to user preference
+
+✅ The examples provided are ready to be deployed to Vercel
+
+✅ Typedoc setup to automatically create documentation for your library based on tsdoc comments
+
+✅ Code of Conduct and contributing files that you can always update
+
+✅ Prettier and linter configured as per the modern best practices (Feel free to add your flavour)
+
+✅ Recommended VSCode extensions - Prettier and [Kanban board](https://github.com/mayank1513/vscode-extension-trello-kanban-board) to auto-format your code and manage your project priorities right within your IDE
+
 ✅ Powerful code generators - try yarn turbo gen
+
+✅ Test setup with Vitest - A modern and fast testing framework supporting Jest like APIs
+
+✅ Workflows to automate running tests on every pull-request or code push events
+
+✅ Workflow to automatically publish and create a GitHub release when you update your librari's `package.json` file.
+
+✅ Workflow to automatically rebrand entire template based on the name of the repo you create from this template. (As soon as you create a repo from this template, setup workflow is triggered which renames @mayank1513/fork-me to your repo name and does lots of other fixes to set you up and running.)
+
+✅ With all these features, this readme file contains a quick checklist for you to configure Codecov and other badges, setup your docs website on GitHub pages, etc. See [Checklist](https://github.com/react18-tools/turborepo-template/#checklist).
+
+#### Create a library that is
+
+✅ Fully Treeshakable (import from @mayank1513/fork-me/client/component)
+
+✅ Full TypeScript Support
+
+✅ Unleash the full power of React18 Server components
+
+✅ Works with all build systems/tools/frameworks for React18
+
 ✅ Doccumented with [Typedoc](https://react18-tools.github.io/turborepo-template) ([Docs](https://react18-tools.github.io/turborepo-template))
 
 ## Introduction

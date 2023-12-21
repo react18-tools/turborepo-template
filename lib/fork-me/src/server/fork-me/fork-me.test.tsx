@@ -7,7 +7,11 @@ describe.concurrent("fork-me", () => {
 
 	test("Smoke test", ({ expect }) => {
 		const component = render(
-			<ForkMe gitHubUrl="https://github.com/mayank1513/turborepo-template" />,
+			<ForkMe
+				bgColor="black"
+				gitHubUrl="https://github.com/mayank1513/turborepo-template"
+				noAutoFork
+			/>,
 		);
 		expect(component.container.textContent).toBe("Fork Me on GitHub");
 	});
@@ -15,7 +19,12 @@ describe.concurrent("fork-me", () => {
 	test("Custom text", ({ expect }) => {
 		const text = "Star me on GitHub";
 		const component = render(
-			<ForkMe gitHubUrl="https://github.com/mayank1513/turborepo-template" text={text} />,
+			<ForkMe
+				gitHubUrl="https://github.com/mayank1513/turborepo-template"
+				height={24}
+				text={text}
+				width={24}
+			/>,
 		);
 		expect(component.container.textContent).toBe(text);
 	});

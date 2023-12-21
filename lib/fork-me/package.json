@@ -25,12 +25,12 @@
 	},
 	"devDependencies": {
 		"@testing-library/react": "^14.1.2",
-		"@turbo/gen": "^1.11.1",
-		"@types/node": "^20.10.4",
-		"@types/react": "^18.2.42",
-		"@types/react-dom": "^18.2.17",
+		"@turbo/gen": "^1.11.2",
+		"@types/node": "^20.10.5",
+		"@types/react": "^18.2.45",
+		"@types/react-dom": "^18.2.18",
 		"@vitejs/plugin-react": "^4.2.1",
-		"@vitest/coverage-v8": "^1.0.2",
+		"@vitest/coverage-v8": "^1.1.0",
 		"esbuild-plugin-css-module": "^0.0.1",
 		"esbuild-plugin-react18": "^0.0.6",
 		"eslint-config-custom": "workspace:*",
@@ -42,7 +42,7 @@
 		"typedoc": "^0.25.4",
 		"typescript": "^5.3.3",
 		"vite-tsconfig-paths": "^4.2.2",
-		"vitest": "^1.0.2"
+		"vitest": "^1.1.0"
 	},
 	"peerDependencies": {
 		"@types/react": "16.8 - 18",

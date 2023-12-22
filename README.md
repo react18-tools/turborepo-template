@@ -66,9 +66,19 @@ Compared to the default scaffold from create-turbo, this template offers:
 - GitHub actions/workflows to auto publish your package when version changes
 - GitHub action/workflow + preinstall scripts to automatically rebrand your repo on creation
 
-## Checklist
+## Step by Step Instructions and Checklist
 
+- [ ] Star [this repo](https://github.com/react18-tools/turborepo-template/) so that you and others can find it more easily for your next projects. It also helps me understand that people are using this repo so that I can maintain the repo and the documentation well.
 - [ ] Clone this repo
+- [ ] Install and setup Node.js and IDE (I prefer VSCode)
+- [ ] Install the recommended VSCode extensions - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Trello Kanban](https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board)
+- [ ] Install dependencies using `pnpm`
+  - [ ] If you don't have `pnpm` installed, run `npm i -g pnpm` to install `pnpm` -> run `pnpm setup` to set up `pnpm` for global installations
+  - [ ] Run `pnpm i` to install dependencies and `preinstall` script will automatically touch up workflows and create a commit
+  - [ ] Run `pnpm i -g turbo` to install `turbo` globally (Sometime due to `TypeScript` and `Plop` version conflicts code generation requires global `turbo`).
+  - [ ] Run `turbo gen react-component`, and follow prompts to generate server or client components for your library
+    - [ ] Use `snake-case` for your component name - it will be automatically converted to `PascalCase`
+    - [ ] Your component and test files will be created in `**/src/client/` or `**/src/server/` directory depending on whether you choose `client` or `server` component
 - [ ] Set up `CodeCov`
   - [ ] Visit codecov and setup your repo
   - [ ] Create repository secrets for `CODECOV_TOKEN`

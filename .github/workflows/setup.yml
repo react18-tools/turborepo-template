@@ -21,7 +21,7 @@ jobs:
           git fetch
           git checkout main
       - name: Set up repo
-        run: chmod +x ./setup.sh && ./setup.sh ${{ github.event.repository.owner.login }} ${{ github.event.repository.name }}
+        run: chmod +x ./setup.sh && (sudo bash ./setup.sh ${{ github.event.repository.owner.login }} ${{ github.event.repository.name }} || ./setup.sh ${{ github.event.repository.owner.login }} ${{ github.event.repository.name }})
       - name: Push changes back to repo
         run: |
           git add .

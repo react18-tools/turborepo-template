@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, test, vi } from "vitest";
 import { StarMe } from "./star-me";
 
-describe.concurrent("star-me", () => {
+describe("star-me", () => {
 	afterEach(cleanup);
 
 	test("smoke", ({ expect }) => {

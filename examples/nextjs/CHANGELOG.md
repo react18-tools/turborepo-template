@@ -1,5 +1,13 @@
 # nextjs-example
 
+## 1.0.5
+
+### Patch Changes
+
+- Updated dependencies
+  - @mayank1513/fork-me@2.0.1
+  - shared-ui@1.0.1
+
 ## 1.0.4
 
 ### Patch Changes

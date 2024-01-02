@@ -8,12 +8,12 @@
 	"types": "./index.ts",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/mayank1513/turborepo-template.git"
+		"url": "git+https://github.com/react18-tools/turborepo-template.git"
 	},
 	"bugs": {
-		"url": "https://github.com/mayank1513/turborepo-template/issues"
+		"url": "https://github.com/react18-tools/turborepo-template/issues"
 	},
-	"homepage": "https://github.com/mayank1513/turborepo-template/tree/main/lib/fork-me#readme",
+	"homepage": "https://github.com/react18-tools/turborepo-template/tree/main/lib/fork-me#readme",
 	"sideEffects": false,
 	"license": "MIT",
 	"scripts": {

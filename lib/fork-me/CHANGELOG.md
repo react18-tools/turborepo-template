@@ -1,5 +1,11 @@
 # @mayank1513/fork-me
 
+## 2.0.1
+
+### Patch Changes
+
+- Add provenance
+
 ## 2.0.0
 
 ### Major Changes

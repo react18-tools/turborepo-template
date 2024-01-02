@@ -2,7 +2,7 @@
 	"name": "@mayank1513/fork-me",
 	"author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
 	"private": false,
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "An intuitive React.js fork me ribbon component for promoting open source project forks.",
 	"main": "./index.ts",
 	"types": "./index.ts",

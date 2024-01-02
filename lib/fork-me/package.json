@@ -20,7 +20,7 @@
 		"test": "vitest run --coverage",
 		"build": "tsup src && tsc -p tsconfig-build.json && node touchup.js",
 		"doc": "typedoc",
-		"publish-package": "cd dist && npm publish --access public",
+		"publish-package": "cd dist && npm publish --provenance --access public",
 		"lint": "eslint ."
 	},
 	"devDependencies": {

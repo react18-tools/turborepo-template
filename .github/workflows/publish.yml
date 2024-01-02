@@ -15,6 +15,7 @@ jobs:
     permissions:
       packages: write
       contents: write
+      id-token: write
 
     defaults:
       run:
@@ -48,7 +49,7 @@ jobs:
         # continue on error - expecing npm to trow error if scoping is done twice
         continue-on-error: true
         id: publish_scoped
-        run: cd dist && node ../scope.js && npm publish --access public
+        run: cd dist && node ../scope.js && npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}

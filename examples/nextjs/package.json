@@ -11,17 +11,17 @@
 	},
 	"dependencies": {
 		"@mayank1513/fork-me": "workspace:*",
-		"next": "^14.0.4",
-		"nextjs-themes": "^2.1.0",
+		"next": "^14.1.0",
+		"nextjs-themes": "^2.1.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"shared-ui": "workspace:*"
 	},
 	"devDependencies": {
-		"@next/eslint-plugin-next": "^14.0.4",
-		"@types/node": "^20.10.6",
-		"@types/react": "^18.2.46",
-		"@types/react-dom": "^18.2.18",
+		"@next/eslint-plugin-next": "^14.1.0",
+		"@types/node": "^20.11.19",
+		"@types/react": "^18.2.56",
+		"@types/react-dom": "^18.2.19",
 		"eslint-config-custom": "workspace:*",
 		"tsconfig": "workspace:*",
 		"typescript": "^5.3.3"

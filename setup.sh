@@ -28,7 +28,7 @@ sed -i -e "s/turborepo-template/$2/" package.json
 cd lib/fork-me
 sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
 sed -i -e "s/.*name.*/\t\"name\": \"$2\",/" package.json
-sed -i -e "s/mayank1513\/turborepo-template/$1\/$2/" package.json
+sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/" package.json
 sed -i -e "s/\/tree\/main\/packages\/fork-me//" package.json
 
 # Update touchup.js to copy readme from root of the repo

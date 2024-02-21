@@ -10,6 +10,7 @@ sed -i -e "s/## Introduction/## Install\n\n\`\`\`bash\n$ pnpm add $2\n\`\`\`\n\n
 sed -i -e "s/This template is based on the official.*//" README.md
 sed -i -e "s/.*Clone this repo.*//" README.md
 sed -i -e "s/# Turborepo template/# $2/" README.md
+sed -i -e "s/https:\/\/react18-tools.github.io\/turborepo-template/https:\/\/$1.github.io\/$2/" README.md
 
 # Update links in shared-ui
 cd packages/shared-ui/src

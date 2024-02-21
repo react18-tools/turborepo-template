@@ -90,7 +90,7 @@ Compared to the default scaffold from create-turbo, this template offers:
 - [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate publishing package
   - [ ] login to your `npm` account and create automation token
   - [ ] Create a new repository secrets `NPM_AUTH_TOKEN`
-- [ ] Update description in `packages/@mayank1513/fork-me/package.json`
+- [ ] Update description in `lib/@mayank1513/fork-me/package.json`
 - [ ] Update Repo Stats by visiting and setting up [repobeats](https://repobeats.axiom.co/)
 - [ ] Create your library and update examples
 - [ ] Update README

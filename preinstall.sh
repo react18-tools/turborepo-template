@@ -18,3 +18,5 @@ rm preinstall.sh
 # Create git commit
 git add .
 git commit -m "change working directory in publish workflow [skip ci]"
+turbo telemetry disable
+next telemetry disable

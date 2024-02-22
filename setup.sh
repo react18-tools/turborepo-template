@@ -16,11 +16,9 @@ sed -i -e "s/https:\/\/react18-tools.github.io\/turborepo-template/https:\/\/$1.
 cd packages/shared-ui/src
 sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" root-layout.tsx
 sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" cards/star-me-card.tsx
-sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" cards/examples-card.tsx
 sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" cards/description.tsx
-
-sed -i -e "s/react18-tools/$1/g" cards/docs-card.tsx
-sed -i -e "s/turborepo-template/$2/g" cards/docs-card.tsx
+sed -i -e "s/react18-tools/$1/g" cards/index.tsx
+sed -i -e "s/turborepo-template/$2/g" cards/index.tsx
 sed -i -e "s/turborepo-template/$2/g" common/logo.tsx
 cd ../../../
 

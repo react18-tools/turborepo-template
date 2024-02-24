@@ -1,12 +1,6 @@
 {
   "scope": "Workspace",
-  "tasks": {
-    "Psqc3IzjhOp-rwfwNXzX2": {
-      "id": "Psqc3IzjhOp-rwfwNXzX2",
-      "description": "Remove scoped packages",
-      "columnId": "column-doing"
-    }
-  },
+  "tasks": {},
   "columns": [
     {
       "id": "column-todo",
@@ -16,9 +10,7 @@
     {
       "id": "column-doing",
       "title": "Doing",
-      "tasksIds": [
-        "Psqc3IzjhOp-rwfwNXzX2"
-      ]
+      "tasksIds": []
     },
     {
       "id": "column-done",

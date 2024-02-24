@@ -12,8 +12,8 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm i -g pnpm && pnpm i
@@ -22,7 +22,7 @@ jobs:
         run: pnpm test
       - name: Upload coverage reports to Codecov
         continue-on-error: true
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           directory: ./lib/fork-me
           token: ${{ secrets.CODECOV_TOKEN }}

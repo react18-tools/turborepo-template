@@ -21,11 +21,11 @@ jobs:
         working-directory: ./lib/fork-me
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org
@@ -36,7 +36,6 @@ jobs:
         run: pnpm test
       - name: Create release and publish to NPM
         run: pnpm build && pnpm publish-package
-        # continue on error to publish scoped package name <- by default repo is setup for a non-scoped + scoped package name
         continue-on-error: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

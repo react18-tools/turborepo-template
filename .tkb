@@ -1,0 +1,21 @@
+{
+  "scope": "Workspace",
+  "tasks": {},
+  "columns": [
+    {
+      "id": "column-todo",
+      "title": "To do",
+      "tasksIds": []
+    },
+    {
+      "id": "column-doing",
+      "title": "Doing",
+      "tasksIds": []
+    },
+    {
+      "id": "column-done",
+      "title": "Done",
+      "tasksIds": []
+    }
+  ]
+}

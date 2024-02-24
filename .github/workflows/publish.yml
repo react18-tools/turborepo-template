@@ -13,7 +13,6 @@ jobs:
     if: github.run_number > 2 && github.event.repository.owner.login == 'react18-tools'
     runs-on: ubuntu-latest
     permissions:
-      packages: write
       contents: write
       id-token: write
 
@@ -39,17 +38,6 @@ jobs:
         run: pnpm build && pnpm publish-package
         # continue on error to publish scoped package name <- by default repo is setup for a non-scoped + scoped package name
         continue-on-error: true
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OWNER: ${{ github.event.repository.owner.login }}
-          REPO: ${{ github.event.repository.name }}
-
-      - name: Publish Scoped package to NPM
-        # continue on error - expecing npm to trow error if scoping is done twice
-        continue-on-error: true
-        id: publish_scoped
-        run: cd dist && node ../scope.js && npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}

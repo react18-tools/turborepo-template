@@ -4,9 +4,9 @@ import App from "./App.tsx";
 import { SharedRootLayout } from "shared-ui";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-	<React.StrictMode>
-		<SharedRootLayout>
-			<App />
-		</SharedRootLayout>
-	</React.StrictMode>,
+  <React.StrictMode>
+    <SharedRootLayout>
+      <App />
+    </SharedRootLayout>
+  </React.StrictMode>,
 );

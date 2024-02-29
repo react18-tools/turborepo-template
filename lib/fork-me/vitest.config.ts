@@ -4,15 +4,15 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react(), tsconfigPaths()],
-	test: {
-		environment: "jsdom",
-		globals: true,
-		setupFiles: [],
-		coverage: {
-			include: ["src/**"],
-			exclude: ["src/**/index.ts", "src/**/declaration.d.ts"],
-			reporter: ["text", "json", "clover", "html"],
-		},
-	},
+  plugins: [react(), tsconfigPaths()],
+  test: {
+    environment: "jsdom",
+    globals: true,
+    setupFiles: [],
+    coverage: {
+      include: ["src/**"],
+      exclude: ["src/**/index.ts", "src/**/declaration.d.ts"],
+      reporter: ["text", "json", "clover", "html"],
+    },
+  },
 });

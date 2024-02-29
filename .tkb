@@ -1,11 +1,19 @@
 {
   "scope": "Workspace",
-  "tasks": {},
+  "tasks": {
+    "task-s4lEpiwWC2i80_zfUhI5G": {
+      "id": "task-s4lEpiwWC2i80_zfUhI5G",
+      "description": "Move to nthul",
+      "columnId": "column-todo"
+    }
+  },
   "columns": [
     {
       "id": "column-todo",
       "title": "To do",
-      "tasksIds": []
+      "tasksIds": [
+        "task-s4lEpiwWC2i80_zfUhI5G"
+      ]
     },
     {
       "id": "column-doing",

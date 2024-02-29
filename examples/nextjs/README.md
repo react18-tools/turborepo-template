@@ -21,7 +21,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Turbo Template GitHub repository](https://github.com/mayank1513/turborepo-template/) - your feedback and contributions are welcome!
 
-### 🤩 Don't forget to start this repo!
+### 🤩 Don't forget to star this repo!
 
 <hr />
 

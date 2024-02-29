@@ -153,7 +153,7 @@ Learn more about the power of Turborepo:
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
 
-### 🤩 Don't forger to start [this repo](https://github.com/mayank1513/turborepo-template)!
+### 🤩 Don't forger to star [this repo](https://github.com/mayank1513/turborepo-template)!
 
 Want hands-on course for getting started with Turborepo? Check out [React and Next.js with TypeScript](https://mayank-chaudhari.vercel.app/courses/react-and-next-js-with-typescript) and [The Game of Chess with Next.js, React and TypeScrypt](https://www.udemy.com/course/game-of-chess-with-nextjs-react-and-typescrypt/?referralCode=851A28F10B254A8523FE)
 

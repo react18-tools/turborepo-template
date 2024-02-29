@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# Delete old changelogs
+rm -rf ./lib/fork-me/CHANGELOG.md
+rm -rf ./examples/nextjs/CHANGELOG.md
+rm -rf ./examples/remix/CHANGELOG.md
+rm -rf ./examples/vite/CHANGELOG.md
+
 # Update README
 sed -i -e "s/mayank1513\/turborepo-template/$1\/$2/g" README.md
 sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" README.md

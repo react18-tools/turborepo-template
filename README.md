@@ -69,7 +69,10 @@ Compared to the default scaffold from create-turbo, this template offers:
 ## Step by Step Instructions and Checklist
 
 - [ ] Star [this repo](https://github.com/react18-tools/turborepo-template/) so that you and others can find it more easily for your next projects. It also helps me understand that people are using this repo so that I can maintain the repo and the documentation well.
-- [ ] Clone this repo
+- [ ] Craete new GitHub repository using this template.
+  - [ ] Click `Use this template` button on top right -> `Create a new repository`
+  - [ ] Set your library name as repository name (This template has automation workflows to customize your repo assuming repo name as library name.)
+  - [ ] Click `Create repository` and wait for the setup workflow to finish rebranding your repo.
 - [ ] Install and setup Node.js and IDE (I prefer VSCode)
 - [ ] Install the recommended VSCode extensions - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Trello Kanban](https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board)
 - [ ] Install dependencies using `pnpm`

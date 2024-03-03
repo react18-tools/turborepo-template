@@ -14,7 +14,10 @@ sed -i -e "s/my-turborepo/$2/g" README.md
 sed -i -e "s/my-turborepo/$2/g" contributing.md
 sed -i -e "s/## Introduction/## Install\n\n\`\`\`bash\n$ pnpm add $2\n\`\`\`\n\nor\n\n\`\`\`bash\n$ npm install $2\n\`\`\`\n\nor\n\n\`\`\`bash\n$ yarn add $2\n\`\`\`\n/" README.md
 sed -i -e "s/This template is based on the official.*//" README.md
-sed -i -e "s/.*Clone this repo.*//" README.md
+sed -i -e "s/.*Craete new GitHub repository.*//" README.md
+sed -i -e "s/.*Click \`Use this template\`.*//" README.md
+sed -i -e "s/.*Set your library name as repository name.*//" README.md
+sed -i -e "s/.*Click \`Create repository\`.*//" README.md
 sed -i -e "s/# Turborepo template/# $2/" README.md
 sed -i -e "s/https:\/\/react18-tools.github.io\/turborepo-template/https:\/\/$1.github.io\/$2/g" README.md
 
@@ -54,6 +57,7 @@ sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\
 cd ../../packages/shared-ui
 sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
 sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\t\"$2\"/" package.json
+sed -i -e "s/\/tree\/main\/lib\/fork-me//" package.json
 
 # rename fork-me to repo-name
 cd ../..

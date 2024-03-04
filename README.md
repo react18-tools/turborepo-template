@@ -82,6 +82,9 @@ Compared to the default scaffold from create-turbo, this template offers:
   - [ ] Run `turbo gen react-component`, and follow prompts to generate server or client components for your library
     - [ ] Use `snake-case` for your component name - it will be automatically converted to `PascalCase`
     - [ ] Your component and test files will be created in `**/src/client/` or `**/src/server/` directory depending on whether you choose `client` or `server` component
+- [ ] run `node scope.js` from the root directory if you want to publish scoped pacckage.
+  - [ ] We assumed that your npm user name is same as your GitHub account or organization username.
+  - [ ] Please make sure `owner` is set to your <npmjs.com> username before running the above command.
 - [ ] Set up `CodeCov`
   - [ ] Visit codecov and setup your repo
   - [ ] Create [repository secret](https://github.com/react18-tools/turborepo-template/settings/secrets/actions) for `CODECOV_TOKEN`

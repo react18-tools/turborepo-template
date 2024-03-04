@@ -59,8 +59,12 @@ sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
 sed -i -e "s/\"@mayank1513\/fork-me\"/\"@mayank1513\/fork-me\": \"latest\",\n\t\t\"$2\"/" package.json
 sed -i -e "s/\/tree\/main\/lib\/fork-me//" package.json
 
-# rename fork-me to repo-name
+# update scope.js
 cd ../..
+sed -i -e "s/mayank1513/$1/" scope.js
+sed -i -e "s/fork-me/$2/" scope.js
+
+# rename fork-me to repo-name
 mv lib/fork-me lib/$2
 
 # Add preinstall scripts

@@ -44,6 +44,7 @@ sed -i -e "s/.*version.*/\t\"version\": \"0.0.0\",/" package.json
 sed -i -e "s/.*name.*/\t\"name\": \"$2\",/" package.json
 sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/" package.json
 sed -i -e "s/\/tree\/main\/packages\/fork-me//" package.json
+sed -i -e "s/\"doc\": \"typedoc\"/\"doc\": \"cp -f ..\/..\/README.md README.md \&\& typedoc\"/" package.json
 
 # Update touchup.js to copy readme from root of the repo
 sed -i -e "s/__dirname, \"README.md\"/__dirname, \"..\", \"..\", \"README.md\"/" touchup.js

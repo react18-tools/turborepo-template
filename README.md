@@ -84,14 +84,14 @@ Compared to the default scaffold from create-turbo, this template offers:
     - [ ] Your component and test files will be created in `**/src/client/` or `**/src/server/` directory depending on whether you choose `client` or `server` component
 - [ ] Set up `CodeCov`
   - [ ] Visit codecov and setup your repo
-  - [ ] Create repository secrets for `CODECOV_TOKEN`
+  - [ ] Create [repository secret](https://github.com/react18-tools/turborepo-template/settings/secrets/actions) for `CODECOV_TOKEN`
 - [ ] Set up `CodeClimate`
   - [ ] Visit CodeClimate and setup your repo
-  - [ ] Create repository secrets for `CC_TEST_REPORTER_ID`
+  - [ ] Create [repository secret](https://github.com/react18-tools/turborepo-template/settings/secrets/actions) for `CC_TEST_REPORTER_ID`
   - [ ] add `*.test.*` to ignore patterns on the website
   - [ ] update code climate badge
 - [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate publishing package
-  - [ ] login to your `npm` account and create automation token
+  - [ ] login to your [`npm` account](https://www.npmjs.com/login) and create automation token
   - [ ] Create a new repository secrets `NPM_AUTH_TOKEN`
 - [ ] Update description in `lib/@mayank1513/fork-me/package.json`
 - [ ] Update Repo Stats by visiting and setting up [repobeats](https://repobeats.axiom.co/)

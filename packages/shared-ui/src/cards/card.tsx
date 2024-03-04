@@ -1,6 +1,6 @@
 import styles from "./cards.module.css";
 
-interface CardProps {
+export interface CardProps {
   href: string;
   title: string;
   description: string;

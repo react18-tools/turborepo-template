@@ -1,9 +1,10 @@
 import styles from "./examples.module.css";
+import Featured from "./featured";
 
 export default function Examples() {
   return (
     <div className={styles.examples}>
-      <h1>Create examples for your library here.</h1>
+      <Featured />
     </div>
   );
 }

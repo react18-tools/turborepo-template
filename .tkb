@@ -3,7 +3,17 @@
   "tasks": {
     "task-s4lEpiwWC2i80_zfUhI5G": {
       "id": "task-s4lEpiwWC2i80_zfUhI5G",
-      "description": "Move to nthul",
+      "description": "Move to nthul -- may be",
+      "columnId": "column-todo"
+    },
+    "uUjYvxGR0oOu3Q1iJQler": {
+      "id": "uUjYvxGR0oOu3Q1iJQler",
+      "description": "Add use case for r18gs",
+      "columnId": "column-todo"
+    },
+    "hnmDBbQK5q6-GX3eIdtUP": {
+      "id": "hnmDBbQK5q6-GX3eIdtUP",
+      "description": "Create/feature a list of projects created from this template",
       "columnId": "column-todo"
     }
   },
@@ -12,7 +22,9 @@
       "id": "column-todo",
       "title": "To do",
       "tasksIds": [
-        "task-s4lEpiwWC2i80_zfUhI5G"
+        "task-s4lEpiwWC2i80_zfUhI5G",
+        "uUjYvxGR0oOu3Q1iJQler",
+        "hnmDBbQK5q6-GX3eIdtUP"
       ]
     },
     {

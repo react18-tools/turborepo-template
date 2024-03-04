@@ -8,3 +8,15 @@
   box-shadow: 0 0 5px gray;
   overflow: auto;
 }
+
+.examples hr {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.featured {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+}

@@ -29,6 +29,12 @@ sed -i -e "s/react18-tools\/turborepo-template/$1\/$2/g" cards/description.tsx
 sed -i -e "s/react18-tools/$1/g" cards/index.tsx
 sed -i -e "s/turborepo-template/$2/g" cards/index.tsx
 sed -i -e "s/turborepo-template/$2/g" common/logo.tsx
+
+# Clean up featured NPM packages
+sed -i -e "s/<Featured \/>/<h2>Create examples for your library here.<\/h2>/" examples/index.tsx
+sed -i -e "s/import Featured.*//" examples/index.tsx
+rm -rf examples/featured.const.ts
+rm -rf examples/featured.tsx
 cd ../../../
 
 # Update package.json for all workspaces

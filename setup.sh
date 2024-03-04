@@ -33,7 +33,7 @@ sed -i -e "s/turborepo-template/$2/g" common/logo.tsx
 # Clean up featured NPM packages
 sed -i -e "s/<Featured \/>/<h2>Create examples for your library here.<\/h2>/" examples/index.tsx
 sed -i -e "s/import Featured.*//" examples/index.tsx
-rm -rf examples/featured.const.ts
+rm -rf examples/featured.json
 rm -rf examples/featured.tsx
 cd ../../../
 

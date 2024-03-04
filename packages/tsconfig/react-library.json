@@ -4,6 +4,8 @@
   "extends": "./base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
     "lib": ["ES2015", "DOM"],
     "module": "ESNext",
     "target": "es6"

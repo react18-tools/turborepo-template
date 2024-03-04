@@ -14,7 +14,7 @@
     "hnmDBbQK5q6-GX3eIdtUP": {
       "id": "hnmDBbQK5q6-GX3eIdtUP",
       "description": "Create/feature a list of projects created from this template",
-      "columnId": "column-todo"
+      "columnId": "column-doing"
     }
   },
   "columns": [
@@ -23,14 +23,15 @@
       "title": "To do",
       "tasksIds": [
         "task-s4lEpiwWC2i80_zfUhI5G",
-        "uUjYvxGR0oOu3Q1iJQler",
-        "hnmDBbQK5q6-GX3eIdtUP"
+        "uUjYvxGR0oOu3Q1iJQler"
       ]
     },
     {
       "id": "column-doing",
       "title": "Doing",
-      "tasksIds": []
+      "tasksIds": [
+        "hnmDBbQK5q6-GX3eIdtUP"
+      ]
     },
     {
       "id": "column-done",

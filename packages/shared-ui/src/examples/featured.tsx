@@ -1,6 +1,6 @@
 import type { CardProps } from "../cards/card";
 import { Card } from "../cards/card";
-import * as featured from "./featured.json";
+import featured from "./featured.json";
 import styles from "./examples.module.css";
 
 export default function Featured() {

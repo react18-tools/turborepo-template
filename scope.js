@@ -17,7 +17,13 @@ if (!ref.startsWith(`@${owner}`)) {
   /** Update README */
   const readMePath = path.resolve(process.cwd(), "README.md");
   let readMe = fs.readFileSync(readMePath, { encoding: "utf8" });
-  readMe = readMe.replace(new RegExp(" " + ref, "g"), " " + packageJson.name);
+  const tmp = "!---!";
+  const tmp2 = "2---2";
+  readMe = readMe.replace(new RegExp(`${owner}/${ref}`, "g"), tmp);
+  readMe = readMe.replace(new RegExp(`github.io/${ref}`, "g"), tmp2);
+  readMe = readMe.replace(new RegExp(ref, "g"), packageJson.name);
+  readMe = readMe.replace(new RegExp(tmp, "g"), `${owner}/${ref}`);
+  readMe = readMe.replace(new RegExp(tmp2, "g"), `github.io/${ref}`);
   fs.writeFileSync(readMePath, readMe);
 
   /** Update examples */

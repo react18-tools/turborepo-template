@@ -68,7 +68,7 @@ sed -i -e "s/fork-me/$2/" scope.js
 mv lib/fork-me lib/$2
 
 # Add preinstall scripts
-sed -i -e "s/echo setup/node -e \\\\\"require('child_process').spawn('bash', ['.\/preinstall.sh'], { stdio: 'inherit'})\\\\\"/" package.json
+sed -i -e "s/echo setup/node preinstall.js/" package.json
 
 # change working directory in publish workflow -- GitHub doesn't allow this
 # sed -i -e "s/fork-me/$2/g" .github/workflows/publish.yml

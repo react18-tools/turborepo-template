@@ -107,6 +107,8 @@ Compared to the default scaffold from create-turbo, this template offers:
 - [ ] Push your changes/Create PR and see your library being automatically tested and published
 - [ ] Optionally deploy your example(s) to Vercel.
 - [ ] You are most welcome to star this template, contribute, and/or sponsor the `terbo-repo-template` project or my other open-source work
+- [ ] You can also fork the `terbo-repo-template` and add your package to `packages/shared-ui/src/examples/featured.json`
+  - [ ] If approved your package will be automatically added to FEATURED.md and also published on the home page of this repo.
 
 ## What's inside?
 

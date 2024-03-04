@@ -1,75 +1,75 @@
 {
-	"name": "@mayank1513/fork-me",
-	"author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
-	"private": false,
-	"version": "2.0.1",
-	"description": "An intuitive React.js fork me ribbon component for promoting open source project forks.",
-	"main": "./index.ts",
-	"types": "./index.ts",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/react18-tools/turborepo-template.git"
-	},
-	"bugs": {
-		"url": "https://github.com/react18-tools/turborepo-template/issues"
-	},
-	"homepage": "https://github.com/react18-tools/turborepo-template/tree/main/lib/fork-me#readme",
-	"sideEffects": false,
-	"license": "MIT",
-	"scripts": {
-		"test": "vitest run --coverage",
-		"build": "tsup src && tsc -p tsconfig-build.json && node touchup.js",
-		"doc": "typedoc",
-		"publish-package": "cd dist && npm publish --provenance --access public",
-		"lint": "eslint ."
-	},
-	"devDependencies": {
-		"@testing-library/react": "^14.2.1",
-		"@turbo/gen": "^1.12.4",
-		"@types/node": "^20.11.22",
-		"@types/react": "^18.2.60",
-		"@types/react-dom": "^18.2.19",
-		"@vitejs/plugin-react": "^4.2.1",
-		"@vitest/coverage-v8": "^1.3.1",
-		"esbuild-plugin-css-module": "^0.0.1",
-		"esbuild-plugin-react18": "^0.0.7",
-		"eslint-config-custom": "workspace:*",
-		"jsdom": "^24.0.0",
-		"octokit": "^3.1.2",
-		"react": "^18.2.0",
-		"tsconfig": "workspace:*",
-		"tsup": "^8.0.2",
-		"typedoc": "^0.25.9",
-		"typescript": "^5.3.3",
-		"vite-tsconfig-paths": "^4.3.1",
-		"vitest": "^1.3.1"
-	},
-	"peerDependencies": {
-		"@types/react": "16.8 - 18",
-		"next": "10 - 14",
-		"react": "16.8 - 18"
-	},
-	"peerDependenciesMeta": {
-		"next": {
-			"optional": true
-		}
-	},
-	"funding": {
-		"type": "github",
-		"url": "https://github.com/sponsors/mayank1513"
-	},
-	"keywords": [
-		"fork-me",
-		"GitHub",
-		"nextjs",
-		"nextjs13",
-		"react",
-		"react18",
-		"react-server-components",
-		"react-client-components",
-		"typescript",
-		"javascript",
-		"mayank1513",
-		"turborepo-trmplate"
-	]
+  "name": "@mayank1513/fork-me",
+  "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
+  "private": false,
+  "version": "2.0.1",
+  "description": "An intuitive React.js fork me ribbon component for promoting open source project forks.",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react18-tools/turborepo-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/react18-tools/turborepo-template/issues"
+  },
+  "homepage": "https://github.com/react18-tools/turborepo-template/tree/main/lib/fork-me#readme",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run --coverage",
+    "build": "tsup src && tsc -p tsconfig-build.json && node touchup.js",
+    "doc": "typedoc",
+    "publish-package": "cd dist && npm publish --provenance --access public",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.2.1",
+    "@turbo/gen": "^1.12.4",
+    "@types/node": "^20.11.22",
+    "@types/react": "^18.2.60",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.3.1",
+    "esbuild-plugin-css-module": "^0.0.1",
+    "esbuild-plugin-react18": "^0.0.7",
+    "eslint-config-custom": "workspace:*",
+    "jsdom": "^24.0.0",
+    "octokit": "^3.1.2",
+    "react": "^18.2.0",
+    "tsconfig": "workspace:*",
+    "tsup": "^8.0.2",
+    "typedoc": "^0.25.9",
+    "typescript": "^5.3.3",
+    "vite-tsconfig-paths": "^4.3.1",
+    "vitest": "^1.3.1"
+  },
+  "peerDependencies": {
+    "@types/react": "16.8 - 18",
+    "next": "10 - 14",
+    "react": "16.8 - 18"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/mayank1513"
+  },
+  "keywords": [
+    "fork-me",
+    "GitHub",
+    "nextjs",
+    "nextjs13",
+    "react",
+    "react18",
+    "react-server-components",
+    "react-client-components",
+    "typescript",
+    "javascript",
+    "mayank1513",
+    "turborepo-trmplate"
+  ]
 }

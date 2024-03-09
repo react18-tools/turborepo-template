@@ -5,7 +5,7 @@ import { ForkMe } from "@mayank1513/fork-me/server"; // todo: import directory n
 import type { HTMLProps } from "react";
 import styles from "./root-layout.module.css";
 import { Cards } from "./cards";
-import { Description } from "./root/description";
+import { Header } from "./root/header";
 import { Hero } from "./root/hero";
 import { Footer } from "./root/footer";
 import Examples from "./examples";
@@ -17,7 +17,7 @@ export function SharedRootLayout({ children, className = "", ...props }: SharedR
     <>
       <ThemeSwitcher themeTransition="all 0.3s ease-in-out 0s" />
       <main className={`${styles.main} ${className}`} {...props}>
-        <Description />
+        <Header />
         {children}
         <Hero />
         <Examples />

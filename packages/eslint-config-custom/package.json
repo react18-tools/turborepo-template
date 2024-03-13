@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "@vercel/style-guide": "^5.2.0",
-    "eslint-config-turbo": "^1.12.4"
+    "@vercel/style-guide": "^6.0.0",
+    "eslint-config-turbo": "^1.12.5"
   }
 }

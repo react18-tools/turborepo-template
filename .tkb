@@ -1,11 +1,6 @@
 {
   "scope": "Workspace",
   "tasks": {
-    "task-s4lEpiwWC2i80_zfUhI5G": {
-      "id": "task-s4lEpiwWC2i80_zfUhI5G",
-      "description": "Move to nthul -- may be",
-      "columnId": "column-todo"
-    },
     "uUjYvxGR0oOu3Q1iJQler": {
       "id": "uUjYvxGR0oOu3Q1iJQler",
       "description": "Add use case for r18gs",
@@ -19,6 +14,16 @@
     "5FPnfgSKUpHBbORBRtgui": {
       "id": "5FPnfgSKUpHBbORBRtgui",
       "description": "Optimise mobile view",
+      "columnId": "column-doing"
+    },
+    "MfiZXiLbzHnZ3GSE4SVe8": {
+      "id": "MfiZXiLbzHnZ3GSE4SVe8",
+      "description": "Update README - explain why we don't use sass. \n",
+      "columnId": "column-todo"
+    },
+    "3Jpxwcb60dUx093hDLZ6F": {
+      "id": "3Jpxwcb60dUx093hDLZ6F",
+      "description": "Add script to remove remix example and add sass \n- add keep-remix option",
       "columnId": "column-todo"
     }
   },
@@ -27,15 +32,17 @@
       "id": "column-todo",
       "title": "To do",
       "tasksIds": [
-        "task-s4lEpiwWC2i80_zfUhI5G",
         "uUjYvxGR0oOu3Q1iJQler",
-        "5FPnfgSKUpHBbORBRtgui"
+        "MfiZXiLbzHnZ3GSE4SVe8",
+        "3Jpxwcb60dUx093hDLZ6F"
       ]
     },
     {
       "id": "column-doing",
       "title": "Doing",
-      "tasksIds": []
+      "tasksIds": [
+        "5FPnfgSKUpHBbORBRtgui"
+      ]
     },
     {
       "id": "column-done",
@@ -43,6 +50,11 @@
       "tasksIds": [
         "hnmDBbQK5q6-GX3eIdtUP"
       ]
+    },
+    {
+      "id": "column-S6UGsrZqn5uTUGxNq5qGJ",
+      "title": "Will not do",
+      "tasksIds": []
     }
   ]
 }

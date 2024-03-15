@@ -20,6 +20,7 @@ sed -i -e "s/.*Set your library name as repository name.*//" README.md
 sed -i -e "s/.*Click \`Create repository\`.*//" README.md
 sed -i -e "s/# Turborepo template/# $2/" README.md
 sed -i -e "s/https:\/\/react18-tools.github.io\/turborepo-template/https:\/\/$1.github.io\/$2/g" README.md
+sed -i -e "s/terbo-repo/terborepo/" README.md
 
 # Update links in shared-ui
 cd packages/shared-ui/src

@@ -108,7 +108,7 @@ Compared to the default scaffold from create-turbo, this template offers:
 - [ ] Optionally deploy your example(s) to Vercel.
 - [ ] Update sponsorship urls.
 - [ ] You are most welcome to star this template, contribute, and/or sponsor the `terbo-repo-template` project or my other open-source work
-- [ ] You can also fork the `terbo-repo-template` and add your package to `packages/shared-ui/src/examples/featured.json`
+- [ ] You can also fork the [`terbo-repo-template`](https://github.com/react18-tools/turbo-repo-template/fork) and add your package to `packages/shared-ui/src/examples/featured.json`
   - [ ] If approved your package will be automatically added to FEATURED.md and also published on the home page of this repo.
 
 ## What's inside?

@@ -1,5 +1,11 @@
 # @mayank1513/fork-me
 
+## 2.1.0
+
+### Minor Changes
+
+- CSS ClassNames and files updated
+
 ## 2.0.1
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # vite-example
 
+## 0.0.6
+
+### Patch Changes
+
+- Updated dependencies
+  - @mayank1513/fork-me@2.1.0
+  - shared-ui@1.0.1
+
 ## 0.0.5
 
 ### Patch Changes

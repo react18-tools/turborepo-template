@@ -28,5 +28,10 @@
     "title": "React 18 Themes",
     "description": "🤟 👉 Unleash the Power of React Server Components",
     "href": "https://github.com/react18-tools/react18-themes"
+  },
+  {
+    "title": "esbuild-plugin-react18-css",
+    "description": "ESBuild plugin to handle CSS/SCSS modules, autoprefixer, etc.",
+    "href": "https://github.com/react18-tools/esbuild-plugin-react18-css"
   }
 ]

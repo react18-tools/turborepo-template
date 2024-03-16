@@ -36,7 +36,12 @@ sed -i -e "s/<Featured \/>/<h2>Create examples for your library here.<\/h2>/" ex
 sed -i -e "s/import Featured.*//" examples/index.tsx
 rm -rf examples/featured.json
 rm -rf examples/featured.tsx
-cd ../../../
+cd ..
+rm -rf doc-featured.js
+# Remove doc script from shared-ui/package.json
+sed -i "/doc/d" package.json
+sed -i -e "s/\"eslint \\.\",/\"eslint \\.\"/" package.json
+cd ../../
 
 # Update package.json for all workspaces
 sed -i -e "s/turborepo-template/$2/" package.json

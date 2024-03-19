@@ -36,7 +36,6 @@ jobs:
         run: pnpm test
       - name: Create release and publish to NPM
         run: pnpm build && pnpm publish-package
-        continue-on-error: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}

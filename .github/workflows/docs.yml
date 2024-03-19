@@ -10,7 +10,6 @@ jobs:
     if: github.event.repository.owner.login == 'react18-tools'
     runs-on: ubuntu-latest
     permissions:
-      packages: write
       contents: write
     steps:
       - uses: actions/checkout@v4
@@ -27,7 +26,7 @@ jobs:
         run: npm test
       - run: git status && git clean -f -d && git status
         name: clean up working directory
-      - run: npx @turbo/codemod update . && pnpm update --latest -w
+      - run: npx @turbo/codemod update . && pnpm update --latest -r
         name: Update dependencies
       - run: pnpm build
         name: Build all apps to make sure it is not broken due to dependency upgrades

@@ -55,10 +55,16 @@
       "optional": true
     }
   },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/mayank1513"
-  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/mayank1513"
+    },
+    {
+      "type": "individual",
+      "url": "https://pages.razorpay.com/mayank1513"
+    }
+  ],
   "keywords": [
     "fork-me",
     "GitHub",

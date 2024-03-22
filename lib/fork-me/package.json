@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^14.2.2",
-    "@turbo/gen": "^1.12.5",
+    "@turbo/gen": "^1.13.0",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.67",
     "@types/react-dom": "^18.2.22",

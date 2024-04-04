@@ -12,9 +12,9 @@
   },
   "devDependencies": {
     "@mayank1513/fork-me": "workspace:*",
-    "@types/node": "^20.12.3",
+    "@types/node": "^20.12.4",
     "@types/react": "^18.2.74",
-    "@types/react-dom": "^18.2.23",
+    "@types/react-dom": "^18.2.24",
     "eslint-config-custom": "workspace:*",
     "next": "^14.1.4",
     "nextjs-themes": "^3.1.0",

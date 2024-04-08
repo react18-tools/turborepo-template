@@ -4,6 +4,8 @@
 
 > [Featured packages built with this template.](./FEATURED.md)
 
+> We are happy to announce that we have launched a new course to help you understand this template better [Craft Next Gen UI Libraries for React 18 and Next.js 14](https://www.udemy.com/course/craft-next-gen-ui-libraries-for-react-18-and-nextjs-14/?referralCode=46B8C7845ECCEA99E0EF)
+
 ## Features
 
 This template offers following pre-configured features. Additionally, your repo will automatically be rebranded with help of workflow and post install scripts.
@@ -104,6 +106,7 @@ Compared to the default scaffold from create-turbo, this template offers:
 - [ ] Update README
 - [ ] Setup GitHub pages to deploy docs
   - [ ] Go to [repo settings](https://github.com/react18-tools/turborepo-template/settings/pages) -> pages (On left panel); Select deploy from a branch; Then Select `main` and `/docs`
+- [ ] (Optional) Set up [Deepsource](https://app.deepsource.com/login) for static code analysis
 - [ ] Push your changes/Create PR and see your library being automatically tested and published
 - [ ] Optionally deploy your example(s) to Vercel.
 - [ ] Update sponsorship urls.

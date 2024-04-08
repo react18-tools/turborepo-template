@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions -- intentionally allowed automatic type conversion*/
+/* eslint-disable @typescript-eslint/prefer-nullish-coalescing -- this is intentional to not allow empty strings */
 import * as React from "react";
 import cssClasses from "./fork-me.module.css";
 
@@ -29,13 +31,13 @@ export function ForkMe({
   textColor,
   noAutoFork,
 }: ForkMeProps) {
-  const w = (Number.isNaN(Number(width)) ? width : `${width}px`) || "15em";
-  const h = (Number.isNaN(Number(height)) ? height : `${height}px`) || "35px";
+  const finalWidth = (Number.isNaN(Number(width)) ? width : `${width}px`) || "15em";
+  const finalHeight = (Number.isNaN(Number(height)) ? height : `${height}px`) || "35px";
   const bgC = bgColor || "#aaa";
   const tC = textColor || "#555";
   const style = {
-    "--w": w,
-    "--h": h,
+    "--w": finalWidth,
+    "--h": finalHeight,
     "--tc": tC,
     "--bc": bgC,
     "--sc": bgC || shadowColor,
@@ -44,8 +46,8 @@ export function ForkMe({
     alignItems: "center",
     justifyContent: "center",
     fontWeight: 700,
-    width: w,
-    height: h,
+    width: finalWidth,
+    height: finalHeight,
     transform: "rotate(45deg)",
     top: "calc(0.354 * var(--w) - var(--h))",
     right: "calc(-0.14 * var(--w) - 0.5 * var(--h))",
@@ -68,7 +70,7 @@ export function ForkMe({
       rel="noopener noreferrer"
       style={style}
       target="_blank">
-      {text || "Fork Me on GitHub"}
+      {text ?? "Fork Me on GitHub"}
     </a>
   );
 }

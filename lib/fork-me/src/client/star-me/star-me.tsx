@@ -1,3 +1,4 @@
+// skipcq: This is intentional
 import * as React from "react";
 
 interface StarMeProps extends React.HTMLAttributes<HTMLButtonElement> {

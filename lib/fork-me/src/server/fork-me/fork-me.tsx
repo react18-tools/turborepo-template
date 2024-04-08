@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/restrict-template-expressions -- intentionally allowed automatic type conversion*/
 /* eslint-disable @typescript-eslint/prefer-nullish-coalescing -- this is intentional to not allow empty strings */
+
+// skipcq: JS-C1003 - This is intentional
 import * as React from "react";
 import cssClasses from "./fork-me.module.css";
 

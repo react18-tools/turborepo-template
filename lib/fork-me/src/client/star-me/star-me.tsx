@@ -1,4 +1,4 @@
-// skipcq: This is intentional
+// skipcq: JS-C1003 - This is intentional
 import * as React from "react";
 
 interface StarMeProps extends React.HTMLAttributes<HTMLButtonElement> {

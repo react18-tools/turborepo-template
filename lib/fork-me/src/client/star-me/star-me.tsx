@@ -19,7 +19,7 @@ export function StarMe({ gitHubUrl, onClick, children, ...props }: StarMeProps) 
     [gitHubUrl, onClick],
   );
   return (
-    <button data-testid="star-me-h1" onClick={starMe} type="button" {...props}>
+    <button data-testid="star-me" onClick={starMe} type="button" {...props}>
       {children ?? "Star Me"}
     </button>
   );

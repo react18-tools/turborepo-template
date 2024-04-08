@@ -2,6 +2,8 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, test, vi } from "vitest";
 import { StarMe } from "./star-me";
 
+const dummyOnClick = () => "";
+
 describe("star-me", () => {
   afterEach(cleanup);
 
@@ -26,7 +28,10 @@ describe("star-me", () => {
 
   test("test popup", ({ expect }) => {
     render(
-      <StarMe gitHubUrl="https://github.com/mayank1513/turborepo-template" onClick={() => ""} />,
+      <StarMe
+        gitHubUrl="https://github.com/mayank1513/turborepo-template"
+        onClick={dummyOnClick}
+      />,
     );
     const spy = vi.spyOn(window, "open");
     fireEvent.click(screen.getByTestId("star-me-h1"));

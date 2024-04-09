@@ -22,6 +22,7 @@
   "scripts": {
     "test": "vitest run --coverage",
     "build": "tsup src && tsc -p tsconfig-build.json && node touchup.js",
+    "dev": "tsup src --watch",
     "doc": "typedoc",
     "publish-package": "npm publish --provenance --access public",
     "lint": "eslint ."

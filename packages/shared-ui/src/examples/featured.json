@@ -21,7 +21,7 @@
   },
   {
     "title": "Persist-And-Sync",
-    "description": "Zustand middleware to easily persist and sync Zustand state between tabs / windows / iframes (Same Origin) ",
+    "description": "Zustand middleware to easily persist and sync Zustand state between tabs / windows / iframes (Same Origin)",
     "href": "https://github.com/react18-tools/persist-and-sync"
   },
   {

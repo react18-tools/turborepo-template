@@ -1,4 +1,5 @@
 import * as React from "react";
+import styles from "./{{ kebabCase name }}.module.scss";
 
 interface {{ pascalCase name }}Props {
 	children?: React.ReactNode;
@@ -10,7 +11,7 @@ interface {{ pascalCase name }}Props {
  */
 export function {{ pascalCase name }}({ children }: {{ pascalCase name }}Props) {
 	return (
-		<div>
+		<div className={styles.container}>
 			<h1 data-testid="{{ kebabCase name }}-h1">{{ name }}</h1>
 			{children}
 		</div>

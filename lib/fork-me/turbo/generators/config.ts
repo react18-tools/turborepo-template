@@ -53,6 +53,11 @@ function getActions(data: InquirerDataType) {
       templateFile: "templates/component.test.hbs",
     },
     {
+      type: "add",
+      path: `${root}{{kebabCase name}}/{{kebabCase name}}.module.scss`,
+      templateFile: "templates/component.module.hbs",
+    },
+    {
       type: "append",
       path: `${root}index.ts`,
       pattern: /(?<insertion> component exports)/g,

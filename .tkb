@@ -25,16 +25,19 @@
       "id": "3Jpxwcb60dUx093hDLZ6F",
       "description": "Add script to remove remix example and add sass \n- add keep-remix option",
       "columnId": "column-todo"
+    },
+    "iXE3kCY0L1r_4TD-zRgVh": {
+      "id": "iXE3kCY0L1r_4TD-zRgVh",
+      "description": "React Loaders\n- improve step by step --- incremental improvements\n- Purposes\n-- Provide a good demo - demonstrating the full potential of the setup\n-- Give learners opportunity to contribute to open source",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
   "columns": [
     {
-      "id": "column-todo",
-      "title": "To do",
+      "id": "column-rHWkySHomUOsd93fyS05p",
+      "title": "To do ",
       "tasksIds": [
-        "uUjYvxGR0oOu3Q1iJQler",
-        "MfiZXiLbzHnZ3GSE4SVe8",
-        "3Jpxwcb60dUx093hDLZ6F"
+        "iXE3kCY0L1r_4TD-zRgVh"
       ]
     },
     {
@@ -55,6 +58,15 @@
       "id": "column-S6UGsrZqn5uTUGxNq5qGJ",
       "title": "Will not do",
       "tasksIds": []
+    },
+    {
+      "id": "column-todo",
+      "title": "Archive",
+      "tasksIds": [
+        "uUjYvxGR0oOu3Q1iJQler",
+        "MfiZXiLbzHnZ3GSE4SVe8",
+        "3Jpxwcb60dUx093hDLZ6F"
+      ]
     }
   ]
 }

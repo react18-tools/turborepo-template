@@ -1,11 +1,14 @@
 {
-  "name": "@mayank1513/fork-me",
+  "name": "temp",
   "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
   "private": false,
-  "version": "2.1.0",
-  "description": "An intuitive React.js fork me ribbon component for promoting open source project forks.",
-  "main": "./index.ts",
-  "types": "./index.ts",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/react18-tools/turborepo-template.git"
@@ -20,7 +23,7 @@
     "test": "vitest run --coverage",
     "build": "tsup src && tsc -p tsconfig-build.json && node touchup.js",
     "doc": "typedoc",
-    "publish-package": "cd dist && npm publish --provenance --access public",
+    "publish-package": "npm publish --provenance --access public",
     "lint": "eslint ."
   },
   "devDependencies": {

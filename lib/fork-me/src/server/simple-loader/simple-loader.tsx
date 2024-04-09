@@ -12,7 +12,7 @@ interface SimpleLoaderProps {
 export function SimpleLoader({ children }: SimpleLoaderProps) {
   return (
     <div className={styles.container}>
-      <h1 data-testid="simple-loader-h1">simple-loader</h1>
+      <h1 data-testid="simple-loader-h1">Welcome to my simple loader</h1>
       {children}
     </div>
   );

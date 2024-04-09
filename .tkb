@@ -16,24 +16,14 @@
       "description": "Optimise mobile view",
       "columnId": "column-doing"
     },
-    "MfiZXiLbzHnZ3GSE4SVe8": {
-      "id": "MfiZXiLbzHnZ3GSE4SVe8",
-      "description": "Update README - explain why we don't use sass. \n",
-      "columnId": "column-todo"
-    },
-    "3Jpxwcb60dUx093hDLZ6F": {
-      "id": "3Jpxwcb60dUx093hDLZ6F",
-      "description": "Add script to remove remix example and add sass \n- add keep-remix option",
-      "columnId": "column-todo"
-    },
     "iXE3kCY0L1r_4TD-zRgVh": {
       "id": "iXE3kCY0L1r_4TD-zRgVh",
       "description": "React Loaders\n- improve step by step --- incremental improvements\n- Purposes\n  - Provide a good demo - demonstrating the full potential of the setup\n  - Give learners opportunity to contribute to open source",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
+      "columnId": "column-doing"
     },
     "jxGpRnHuqpR8FMho_53Je": {
       "id": "jxGpRnHuqpR8FMho_53Je",
-      "description": "Choose a name for the new library\n- react-loaders\n- ",
+      "description": "Choose a name for the new library\n- react-loaders",
       "columnId": "column-rHWkySHomUOsd93fyS05p"
     },
     "W5ouBV1q2_FExuUzGV0aP": {
@@ -52,7 +42,6 @@
       "id": "column-rHWkySHomUOsd93fyS05p",
       "title": "To do ",
       "tasksIds": [
-        "iXE3kCY0L1r_4TD-zRgVh",
         "jxGpRnHuqpR8FMho_53Je",
         "W5ouBV1q2_FExuUzGV0aP",
         "rRkFSIcteEvuq6MRX2BN0"
@@ -62,6 +51,7 @@
       "id": "column-doing",
       "title": "Doing",
       "tasksIds": [
+        "iXE3kCY0L1r_4TD-zRgVh",
         "5FPnfgSKUpHBbORBRtgui"
       ]
     },
@@ -81,9 +71,7 @@
       "id": "column-todo",
       "title": "Archive",
       "tasksIds": [
-        "uUjYvxGR0oOu3Q1iJQler",
-        "MfiZXiLbzHnZ3GSE4SVe8",
-        "3Jpxwcb60dUx093hDLZ6F"
+        "uUjYvxGR0oOu3Q1iJQler"
       ]
     }
   ]

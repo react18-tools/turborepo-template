@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@mayank1513/fork-me": "latest",
+    "react18-loaders": "workspace:*",
     "@types/node": "^20.12.5",
     "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",

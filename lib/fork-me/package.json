@@ -1,9 +1,9 @@
 {
-  "name": "temp",
+  "name": "react18-loaders",
   "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
   "private": false,
   "version": "0.0.0",
-  "description": "",
+  "description": "Lite weight React loader spinners compatible with server components",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [

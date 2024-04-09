@@ -9,6 +9,7 @@ import { Header } from "./root/header";
 import { Hero } from "./root/hero";
 import { Footer } from "./root/footer";
 import Examples from "./examples";
+import { SimpleLoader } from "react18-loaders/dist/server";
 
 export type SharedRootLayoutProps = HTMLProps<HTMLElement>;
 
@@ -19,6 +20,7 @@ export function SharedRootLayout({ children, className = "", ...props }: SharedR
       <main className={`${styles.main} ${className}`} {...props}>
         <Header />
         {children}
+        <SimpleLoader />
         <Hero />
         <Examples />
         <Cards />

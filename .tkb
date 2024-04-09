@@ -28,7 +28,22 @@
     },
     "iXE3kCY0L1r_4TD-zRgVh": {
       "id": "iXE3kCY0L1r_4TD-zRgVh",
-      "description": "React Loaders\n- improve step by step --- incremental improvements\n- Purposes\n-- Provide a good demo - demonstrating the full potential of the setup\n-- Give learners opportunity to contribute to open source",
+      "description": "React Loaders\n- improve step by step --- incremental improvements\n- Purposes\n  - Provide a good demo - demonstrating the full potential of the setup\n  - Give learners opportunity to contribute to open source",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "jxGpRnHuqpR8FMho_53Je": {
+      "id": "jxGpRnHuqpR8FMho_53Je",
+      "description": "Choose a name for the new library\n- react-loaders\n- ",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "W5ouBV1q2_FExuUzGV0aP": {
+      "id": "W5ouBV1q2_FExuUzGV0aP",
+      "description": "Update description\n",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "rRkFSIcteEvuq6MRX2BN0": {
+      "id": "rRkFSIcteEvuq6MRX2BN0",
+      "description": "Create 2 - 3 loaders",
       "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
@@ -37,7 +52,10 @@
       "id": "column-rHWkySHomUOsd93fyS05p",
       "title": "To do ",
       "tasksIds": [
-        "iXE3kCY0L1r_4TD-zRgVh"
+        "iXE3kCY0L1r_4TD-zRgVh",
+        "jxGpRnHuqpR8FMho_53Je",
+        "W5ouBV1q2_FExuUzGV0aP",
+        "rRkFSIcteEvuq6MRX2BN0"
       ]
     },
     {

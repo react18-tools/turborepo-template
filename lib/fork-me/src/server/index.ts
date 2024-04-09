@@ -5,4 +5,5 @@
  * */
 
 // server component exports
+export * from "./simple-loader";
 export * from "./fork-me";

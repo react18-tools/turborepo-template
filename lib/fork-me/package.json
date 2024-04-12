@@ -24,13 +24,13 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@testing-library/react": "^15.0.0",
+    "@testing-library/react": "^15.0.1",
     "@turbo/gen": "^1.13.2",
     "@types/node": "^20.12.7",
-    "@types/react": "^18.2.75",
-    "@types/react-dom": "^18.2.24",
+    "@types/react": "^18.2.77",
+    "@types/react-dom": "^18.2.25",
     "@vitejs/plugin-react": "^4.2.1",
-    "@vitest/coverage-v8": "^1.4.0",
+    "@vitest/coverage-v8": "^1.5.0",
     "esbuild-plugin-css-module": "^0.1.0",
     "esbuild-plugin-react18": "^0.1.0",
     "esbuild-plugin-react18-css": "^0.0.2",
@@ -43,7 +43,7 @@
     "typedoc": "^0.25.13",
     "typescript": "^5.4.5",
     "vite-tsconfig-paths": "^4.3.2",
-    "vitest": "^1.4.0"
+    "vitest": "^1.5.0"
   },
   "peerDependencies": {
     "@types/react": "16.8 - 18",

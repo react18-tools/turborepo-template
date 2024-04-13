@@ -24,10 +24,10 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@testing-library/react": "^15.0.1",
+    "@testing-library/react": "^15.0.2",
     "@turbo/gen": "^1.13.2",
     "@types/node": "^20.12.7",
-    "@types/react": "^18.2.77",
+    "@types/react": "^18.2.78",
     "@types/react-dom": "^18.2.25",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.5.0",

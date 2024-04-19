@@ -33,7 +33,7 @@
     "@vitest/coverage-v8": "^1.5.0",
     "esbuild-plugin-css-module": "^0.1.0",
     "esbuild-plugin-react18": "^0.1.0",
-    "esbuild-plugin-react18-css": "^0.0.2",
+    "esbuild-plugin-react18-css": "^0.0.3",
     "eslint-config-custom": "workspace:*",
     "jsdom": "^24.0.0",
     "octokit": "^3.2.0",

@@ -23,13 +23,13 @@
     },
     "jxGpRnHuqpR8FMho_53Je": {
       "id": "jxGpRnHuqpR8FMho_53Je",
-      "description": "Choose a name for the new library\n- react-loaders",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
+      "description": "Choose a name for the new library\n- react18-loaders",
+      "columnId": "column-done"
     },
     "W5ouBV1q2_FExuUzGV0aP": {
       "id": "W5ouBV1q2_FExuUzGV0aP",
       "description": "Update description\n",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
+      "columnId": "column-done"
     },
     "rRkFSIcteEvuq6MRX2BN0": {
       "id": "rRkFSIcteEvuq6MRX2BN0",
@@ -42,8 +42,6 @@
       "id": "column-rHWkySHomUOsd93fyS05p",
       "title": "To do ",
       "tasksIds": [
-        "jxGpRnHuqpR8FMho_53Je",
-        "W5ouBV1q2_FExuUzGV0aP",
         "rRkFSIcteEvuq6MRX2BN0"
       ]
     },
@@ -59,6 +57,8 @@
       "id": "column-done",
       "title": "Done",
       "tasksIds": [
+        "W5ouBV1q2_FExuUzGV0aP",
+        "jxGpRnHuqpR8FMho_53Je",
         "hnmDBbQK5q6-GX3eIdtUP"
       ]
     },

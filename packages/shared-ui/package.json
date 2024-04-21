@@ -2,7 +2,7 @@
   "name": "shared-ui",
   "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
   "private": true,
-  "version": "1.0.1",
+  "version": "0.0.0",
   "description": "Shared UI Package",
   "main": "./index.ts",
   "types": "./index.ts",

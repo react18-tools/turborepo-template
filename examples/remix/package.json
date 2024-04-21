@@ -11,13 +11,13 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@mayank1513/fork-me": "latest",
+    "@mayank1513/fork-me": "^2.1.2",
     "@remix-run/css-bundle": "^2.8.1",
     "@remix-run/node": "^2.8.1",
     "@remix-run/react": "^2.8.1",
     "@remix-run/serve": "^2.8.1",
     "isbot": "5.1.4",
-    "nextjs-themes": "^3.1.0",
+    "nextjs-themes": "^3.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "shared-ui": "workspace:*"
@@ -25,10 +25,10 @@
   "devDependencies": {
     "@remix-run/dev": "^2.8.1",
     "@remix-run/eslint-config": "^2.8.1",
-    "@types/react": "^18.2.75",
-    "@types/react-dom": "^18.2.24",
-    "eslint": "^9.0.0",
-    "typescript": "^5.4.4"
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "eslint": "^9.1.0",
+    "typescript": "^5.4.5"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -32,19 +32,5 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "pnpm": {
-    "packageExtensions": {
-      "@remix-run/dev": {
-        "peerDependencies": {
-          "react-dom": "18.2.0"
-        }
-      },
-      "@remix-run/serve": {
-        "peerDependencies": {
-          "react-dom": "18.2.0"
-        }
-      }
-    }
   }
 }

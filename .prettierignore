@@ -1,0 +1,6 @@
+*lock.*
+
+# ignore hbs files as prettier removes all spaces and makes it ugly
+*hbs
+docs
+.vscode

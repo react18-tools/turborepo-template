@@ -34,7 +34,7 @@ function updateIndexFilesIfNeeded(
     const length = currentDirSegments.length;
     nestedRouteActions.push({
       type: "append",
-      pattern: /(?<insertion> component exports)/g,
+      // pattern: /(?<insertion> component exports)/g,
       path: `${
         root + (length === 1 ? "" : `${currentDirSegments.slice(0, length - 1).join("/")}/`)
       }index.ts`,
@@ -43,8 +43,19 @@ function updateIndexFilesIfNeeded(
   }
 }
 
+function toKebabCase(str: string) {
+  return str
+    .trim()
+    .replace(/([a-z])([A-Z])/g, "$1-$2")
+    .toLowerCase()
+    .replace(/ +/g, "-");
+}
+
 function getNestedRouteActions(data: InquirerDataType) {
-  const { isClient, name } = data;
+  const { isClient } = data;
+  // remove multiple '/' and trailing '/' if any
+  const name = data.name.replace(/\/+/g, "/").replace(/\/$/, "").trim();
+
   const root = isClient ? "src/client/" : "src/server/";
   const nestedRouteActions: PlopTypes.ActionType[] = [];
 
@@ -63,50 +74,66 @@ function getNestedRouteActions(data: InquirerDataType) {
   }
 
   /** Return early if no nested routes */
-  if (!name.includes("/")) return { nestedRouteActions, root };
+  if (!name.includes("/")) return { nestedRouteActions, parentDir: root };
 
   const lastSlashInd = name.lastIndexOf("/") || name.lastIndexOf("\\");
   /** following is required to make sure appropreate name is used while creating components */
   data.name = name.slice(lastSlashInd + 1);
 
-  const directories = name.slice(0, lastSlashInd).split(/\/|\\/);
+  const directories = toKebabCase(name.slice(0, lastSlashInd)).split(/\/|\\/);
   const rootSegments = [...root.split(/\/|\\/)];
 
   for (let i = 1; i <= directories.length; i++)
     updateIndexFilesIfNeeded(nestedRouteActions, rootSegments, directories.slice(0, i), isClient);
 
-  return { nestedRouteActions, root: `${root + directories.join("/")}/` };
+  return { nestedRouteActions, parentDir: `${root + directories.join("/")}/` };
+}
+
+function getIndexAction(data: InquirerDataType, parentDir: string) {
+  const indFilePath = path.resolve(
+    __dirname,
+    "..",
+    "..",
+    parentDir,
+    toKebabCase(data.name),
+    "index.ts",
+  );
+  if (fs.existsSync(indFilePath))
+    return {
+      type: "append",
+      path: `${parentDir}{{kebabCase name}}/index.ts`,
+      template: 'export * from "./{{kebabCase name}}";',
+    };
+  return {
+    type: "add",
+    path: `${parentDir}{{kebabCase name}}/index.ts`,
+    template: `${data.isClient ? '"use client";\n\n' : ""}export * from "./{{kebabCase name}}";\n`,
+  };
 }
 
 function getActions(data: InquirerDataType) {
-  const { nestedRouteActions, root } = getNestedRouteActions(data);
+  const { nestedRouteActions, parentDir } = getNestedRouteActions(data);
+
   return nestedRouteActions.concat([
+    getIndexAction(data, parentDir),
     {
       type: "add",
-      path: `${root}{{kebabCase name}}/index.ts`,
-      template: `${
-        data.isClient ? '"use client";\n\n' : ""
-      }export * from "./{{kebabCase name}}";\n`,
-    },
-    {
-      type: "add",
-      path: `${root}{{kebabCase name}}/{{kebabCase name}}.tsx`,
+      path: `${parentDir}{{kebabCase name}}/{{kebabCase name}}.tsx`,
       templateFile: "templates/component.hbs",
     },
     {
       type: "add",
-      path: `${root}{{kebabCase name}}/{{kebabCase name}}.test.tsx`,
+      path: `${parentDir}{{kebabCase name}}/{{kebabCase name}}.test.tsx`,
       templateFile: "templates/component.test.hbs",
     },
     {
       type: "add",
-      path: `${root}{{kebabCase name}}/{{kebabCase name}}.module.scss`,
+      path: `${parentDir}{{kebabCase name}}/{{kebabCase name}}.module.scss`,
       templateFile: "templates/component.module.hbs",
     },
     {
       type: "append",
-      path: `${root}index.ts`,
-      pattern: /(?<insertion> component exports)/g,
+      path: `${parentDir}index.ts`,
       template: 'export * from "./{{kebabCase name}}";',
     },
   ]);

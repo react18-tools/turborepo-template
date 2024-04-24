@@ -7,6 +7,7 @@ export default defineConfig(
     ({
       format: ["cjs", "esm"],
       target: "es2019",
+      entry: ["./src"],
       sourcemap: false,
       clean: true,
       bundle: true,

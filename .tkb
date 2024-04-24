@@ -1,0 +1,90 @@
+{
+  "scope": "Workspace",
+  "tasks": {
+    "uUjYvxGR0oOu3Q1iJQler": {
+      "id": "uUjYvxGR0oOu3Q1iJQler",
+      "description": "Add use case for r18gs",
+      "columnId": "column-todo"
+    },
+    "hnmDBbQK5q6-GX3eIdtUP": {
+      "id": "hnmDBbQK5q6-GX3eIdtUP",
+      "description": "Create/feature a list of projects created from this template",
+      "columnId": "column-done"
+    },
+    "5FPnfgSKUpHBbORBRtgui": {
+      "id": "5FPnfgSKUpHBbORBRtgui",
+      "description": "Optimise mobile view",
+      "columnId": "column-doing"
+    },
+    "iXE3kCY0L1r_4TD-zRgVh": {
+      "id": "iXE3kCY0L1r_4TD-zRgVh",
+      "description": "React Loaders\n- improve step by step --- incremental improvements\n- Purposes\n  - Provide a good demo - demonstrating the full potential of the setup\n  - Give learners opportunity to contribute to open source",
+      "columnId": "column-doing"
+    },
+    "jxGpRnHuqpR8FMho_53Je": {
+      "id": "jxGpRnHuqpR8FMho_53Je",
+      "description": "Choose a name for the new library\n- react18-loaders",
+      "columnId": "column-done"
+    },
+    "W5ouBV1q2_FExuUzGV0aP": {
+      "id": "W5ouBV1q2_FExuUzGV0aP",
+      "description": "Update description\n",
+      "columnId": "column-done"
+    },
+    "rRkFSIcteEvuq6MRX2BN0": {
+      "id": "rRkFSIcteEvuq6MRX2BN0",
+      "description": "Create 2 - 3 loaders",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "aRVjexKyP1sX5zxvp7pdz": {
+      "id": "aRVjexKyP1sX5zxvp7pdz",
+      "description": "exports -- in package.json",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "5Br6CU2MKWj0R40obK9Nm": {
+      "id": "5Br6CU2MKWj0R40obK9Nm",
+      "description": "ADD CRM form - e.g. to report code of conduct violations",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    }
+  },
+  "columns": [
+    {
+      "id": "column-rHWkySHomUOsd93fyS05p",
+      "title": "To do ",
+      "tasksIds": [
+        "rRkFSIcteEvuq6MRX2BN0",
+        "aRVjexKyP1sX5zxvp7pdz",
+        "5Br6CU2MKWj0R40obK9Nm"
+      ]
+    },
+    {
+      "id": "column-doing",
+      "title": "Doing",
+      "tasksIds": [
+        "iXE3kCY0L1r_4TD-zRgVh",
+        "5FPnfgSKUpHBbORBRtgui"
+      ]
+    },
+    {
+      "id": "column-done",
+      "title": "Done",
+      "tasksIds": [
+        "W5ouBV1q2_FExuUzGV0aP",
+        "jxGpRnHuqpR8FMho_53Je",
+        "hnmDBbQK5q6-GX3eIdtUP"
+      ]
+    },
+    {
+      "id": "column-S6UGsrZqn5uTUGxNq5qGJ",
+      "title": "Will not do",
+      "tasksIds": []
+    },
+    {
+      "id": "column-todo",
+      "title": "Archive",
+      "tasksIds": [
+        "uUjYvxGR0oOu3Q1iJQler"
+      ]
+    }
+  ]
+}

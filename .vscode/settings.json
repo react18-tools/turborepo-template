@@ -1,7 +1,17 @@
 {
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ]
+	// Formatting using Prettier by default for all languages
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	// Ensure enough terminal history is preserved when running tests.
+	"terminal.integrated.scrollback": 10000,
+
+	// Disable TypeScript surveys.
+	"typescript.surveys.enabled": false,
+
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSaveMode": "file",
+	"mayank1513.trello-kanban.Workspace.filePath": ".tkb"
 }

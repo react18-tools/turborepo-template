@@ -114,8 +114,8 @@ function getActions(data: InquirerDataType) {
 
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
   // A simple generator to add a new React component to the internal UI library
-  plop.setGenerator("react-component", {
-    description: "Adds a new react component",
+  plop.setGenerator("lib-rc", {
+    description: "Adds a new React component to the lib directory",
     prompts: [
       {
         type: "input",

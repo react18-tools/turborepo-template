@@ -16,7 +16,8 @@
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
-    "test": "jest"
+    "test": "jest",
+    "gen": "turbo gen"
   },
   "jest": {
     "preset": "@repo/jest-presets/browser"

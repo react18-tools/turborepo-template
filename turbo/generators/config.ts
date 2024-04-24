@@ -56,7 +56,7 @@ function getNestedRouteActions(data: InquirerDataType) {
   // remove multiple '/' and trailing '/' if any
   const name = data.name.replace(/\/+/g, "/").replace(/\/$/, "").trim();
 
-  const root = isClient ? "src/client/" : "src/server/";
+  const root = `lib/src/${isClient ? "client/" : "server/"}`;
   const nestedRouteActions: PlopTypes.ActionType[] = [];
 
   if (!fs.existsSync(path.resolve(__dirname, "..", "..", root, "index.ts"))) {

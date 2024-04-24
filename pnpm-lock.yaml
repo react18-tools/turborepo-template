@@ -11,6 +11,9 @@ importers:
       '@changesets/cli':
         specifier: ^2.27.1
         version: 2.27.1
+      '@turbo/gen':
+        specifier: ^1.13.2
+        version: 1.13.2(@types/node@20.12.7)(typescript@5.4.5)
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -213,9 +216,6 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../packages/config-typescript
-      '@turbo/gen':
-        specifier: ^1.13.2
-        version: 1.13.2(@types/node@20.12.7)(typescript@5.4.5)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12

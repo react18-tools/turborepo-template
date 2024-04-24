@@ -12,7 +12,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "prettier": "^3.2.5",
-    "turbo": "latest"
+    "turbo": "^1.13.2"
   },
   "packageManager": "pnpm@9.0.5",
   "engines": {

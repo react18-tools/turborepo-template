@@ -11,7 +11,6 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
-    "@turbo/gen": "^1.13.2",
     "plop": "^4.0.1",
     "prettier": "^3.2.5",
     "turbo": "^1.13.2"

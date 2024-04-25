@@ -1,0 +1,33 @@
+name: test
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "5 */8 * * *"
+jobs:
+  test:
+    if: github.run_number != 1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm i -g pnpm && pnpm i
+        name: Install dependencies
+      - name: Run unit tests
+        run: pnpm test
+      - name: Upload coverage reports to Codecov
+        continue-on-error: true
+        uses: codecov/codecov-action@v4
+        with:
+          directory: ./lib/fork-me
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: fork-me
+      - uses: paambaati/codeclimate-action@v5.0.0
+        continue-on-error: true
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageLocations: ./lib/fork-me/coverage/*.xml:clover

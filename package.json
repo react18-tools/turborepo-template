@@ -7,12 +7,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,md,css,scss}\"",
     "lint": "turbo lint",
     "test": "turbo test",
-    "typecheck": "turbo typecheck",
-    "gen": "turbo gen"
+    "typecheck": "turbo typecheck"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "@turbo/gen": "^1.13.2",
+    "plop": "^4.0.1",
     "prettier": "^3.2.5",
     "turbo": "^1.13.2"
   },

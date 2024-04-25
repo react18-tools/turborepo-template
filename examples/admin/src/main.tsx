@@ -9,7 +9,7 @@ if (el) {
   root.render(
     <React.StrictMode>
       <App />
-    </React.StrictMode>
+    </React.StrictMode>,
   );
 } else {
   throw new Error("Could not find root element");

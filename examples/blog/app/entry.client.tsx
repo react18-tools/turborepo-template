@@ -8,7 +8,7 @@ function hydrate(): void {
       document,
       <StrictMode>
         <RemixBrowser />
-      </StrictMode>
+      </StrictMode>,
     );
   });
 }

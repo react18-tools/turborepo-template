@@ -6,7 +6,7 @@ describe("Server", () => {
     await supertest(createServer())
       .get("/status")
       .expect(200)
-      .then((res) => {
+      .then(res => {
         expect(res.ok).toBe(true);
       });
   });
@@ -15,7 +15,7 @@ describe("Server", () => {
     await supertest(createServer())
       .get("/message/jared")
       .expect(200)
-      .then((res) => {
+      .then(res => {
         expect(res.body).toEqual({ message: "hello jared" });
       });
   });

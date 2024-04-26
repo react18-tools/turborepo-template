@@ -13,7 +13,6 @@ export default defineConfig(
       bundle: true,
       minify: !options.watch,
       esbuildPlugins: [react18Plugin(), cssPlugin()],
-      dts: true,
       external: ["react"],
       ...options,
     }) as Options,

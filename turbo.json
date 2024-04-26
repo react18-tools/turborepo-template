@@ -22,6 +22,7 @@
       "cache": false,
       "persistent": true
     },
+    "doc": {},
     "clean": {
       "cache": false
     }

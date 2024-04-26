@@ -67,6 +67,14 @@ function getNestedRouteActions(data) {
   /** @type {[import('plop').ActionType]} */
   const nestedRouteActions = [];
 
+  if (!fs.existsSync(path.resolve(__dirname, "lib/src", "index.ts"))) {
+    nestedRouteActions.push({
+      type: "add",
+      path: "lib/src/index.ts",
+      template: `${isClient ? '"use client";\n\n' : ""}export * from "./${isClient ? "client" : "server"}";\n`,
+    });
+  }
+
   if (!fs.existsSync(path.resolve(__dirname, root, "index.ts"))) {
     nestedRouteActions.push({
       type: "add",

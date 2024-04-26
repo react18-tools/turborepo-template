@@ -8,5 +8,6 @@ dist-ssr
 *.local
 .env
 .cache
-server/dist
-public/dist
+
+# test coverage
+coverage

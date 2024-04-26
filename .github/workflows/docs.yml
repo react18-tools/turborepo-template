@@ -20,7 +20,7 @@ jobs:
         with:
           registry-url: https://registry.npmjs.org
           node-version: 20
-      - run: npm i -g pnpm && pnpm i
+      - run: npm i -g pnpm@9.0.5 && pnpm i
         name: Install dependencies
       - name: Test
         run: npm test

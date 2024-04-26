@@ -36,14 +36,14 @@
       "description": "Create 2 - 3 loaders",
       "columnId": "column-rHWkySHomUOsd93fyS05p"
     },
-    "aRVjexKyP1sX5zxvp7pdz": {
-      "id": "aRVjexKyP1sX5zxvp7pdz",
-      "description": "exports -- in package.json",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
-    },
     "5Br6CU2MKWj0R40obK9Nm": {
       "id": "5Br6CU2MKWj0R40obK9Nm",
       "description": "ADD CRM form - e.g. to report code of conduct violations",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "P92idHa6fbprwBOYEp5uu": {
+      "id": "P92idHa6fbprwBOYEp5uu",
+      "description": "Add a issue - tag it as good-first-issue - create option for avoiding scss module file\n",
       "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
@@ -53,8 +53,8 @@
       "title": "To do ",
       "tasksIds": [
         "rRkFSIcteEvuq6MRX2BN0",
-        "aRVjexKyP1sX5zxvp7pdz",
-        "5Br6CU2MKWj0R40obK9Nm"
+        "5Br6CU2MKWj0R40obK9Nm",
+        "P92idHa6fbprwBOYEp5uu"
       ]
     },
     {

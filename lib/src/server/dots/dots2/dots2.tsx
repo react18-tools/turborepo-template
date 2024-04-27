@@ -10,10 +10,5 @@ interface Dots2Props {
  * A simple loader with 3 dots.
  */
 export function Dots2({ children }: Dots2Props) {
-  return (
-    <div className={styles.loader}>
-      <h1 data-testid="dots2-h1">dots2</h1>
-      {children}
-    </div>
-  );
+  return <div className={styles.loader} />;
 }

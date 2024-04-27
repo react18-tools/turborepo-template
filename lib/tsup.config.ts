@@ -9,7 +9,7 @@ export default defineConfig(
       target: "es2019",
       entry: ["./src"],
       sourcemap: false,
-      clean: true,
+      clean: !options.watch,
       bundle: true,
       minify: !options.watch,
       esbuildPlugins: [react18Plugin(), cssPlugin()],

@@ -1,7 +1,7 @@
 /* HTML: <div class="loader"></div> */
 .loader {
   width: 45px;
-  height: 45px;
+  aspect-ratio: 1;
   --c: #000;
   --b: no-repeat linear-gradient(var(--c) 0 0);
   background:

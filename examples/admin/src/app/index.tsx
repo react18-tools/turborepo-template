@@ -12,6 +12,7 @@ function App(): JSX.Element {
       <Dots1 color="#00f" width={60} />
       <Dots2 color="#00f" width={50} dotSize={8} />
       <Bars2 color="red" width={50} />
+      <Bars1 color="red" width={50} />
     </div>
   );
 }

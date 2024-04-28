@@ -1,4 +1,4 @@
-@import "@repo/ui/dist/index.css";
+@import "@repo/ui/dist";
 
 .container {
   min-height: 100vh;

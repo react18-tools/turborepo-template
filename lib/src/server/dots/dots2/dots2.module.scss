@@ -2,9 +2,11 @@
 .loader {
   width: 32px;
   aspect-ratio: 1;
-  --_g: no-repeat radial-gradient(farthest-side, #000 90%, #0000);
+  --c: #000;
+  --dot-radius: 20%;
+  --_g: no-repeat radial-gradient(farthest-side, var(--c) 90%, #0000);
   background: var(--_g), var(--_g), var(--_g), var(--_g);
-  background-size: 40% 40%;
+  background-size: calc(2 * var(--dot-radius)) calc(2 * var(--dot-radius));
   animation: anim 1s infinite;
 }
 

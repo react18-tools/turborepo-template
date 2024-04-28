@@ -1,12 +1,8 @@
 import * as React from "react";
 import styles from "./dots1.module.scss";
+import { Base, BaseProps } from "../../common";
 
-interface Dots1Props extends React.HTMLAttributes<HTMLDivElement> {
-  /** width of the loader element in pixels or a string with a length unit. */
-  width?: number | string;
-  /** Color of the dots - CSS compatible color */
-  color?: string;
-}
+interface Dots1Props extends BaseProps {}
 
 /**
  * A simple loader with 3 dots.
@@ -16,10 +12,6 @@ interface Dots1Props extends React.HTMLAttributes<HTMLDivElement> {
  *
  * @source
  */
-export function Dots1({ width, color = "#000", ...props }: Dots1Props) {
-  let w = props.style?.width ?? width ?? 32;
-  w = typeof w === "string" ? w : `${w}px`;
-  const className = [styles.loader, props.className].filter(Boolean).join(" ");
-  const style = { ...(props.style ?? {}), width: w, "--c": color };
-  return <div className={className} style={style} />;
+export function Dots1(props: Dots1Props) {
+  return <Base {...props} loaderClass={styles.loader} />;
 }

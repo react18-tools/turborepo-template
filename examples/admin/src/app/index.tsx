@@ -9,7 +9,7 @@ function App(): JSX.Element {
         Admin <br />
         <span>Kitchen Sink</span>
       </h1>
-      <Dots1 />
+      <Dots1 color="#00f" width={60} />
       <Dots2 color="#00f" width={50} dotSize={8} />
     </div>
   );

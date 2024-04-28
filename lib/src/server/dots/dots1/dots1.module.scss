@@ -1,8 +1,10 @@
 /* HTML: <div class="loader"></div> */
 .loader {
+  --c: #000;
   width: 60px;
   aspect-ratio: 4;
-  background: radial-gradient(circle closest-side, #000 90%, #0000) 0 / calc(100% / 3) 100% space;
+  background: radial-gradient(circle closest-side, var(--c) 90%, #0000) 0 / calc(100% / 3) 100%
+    space;
   clip-path: inset(0 100% 0 0);
   animation: anim 1s steps(4) infinite;
 }

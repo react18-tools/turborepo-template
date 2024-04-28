@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import { Dots1, Dots2 } from "@repo/ui";
+import { Bars1, Bars2, Dots1, Dots2 } from "@repo/ui";
 
 function App(): JSX.Element {
   return (
@@ -11,6 +11,7 @@ function App(): JSX.Element {
       </h1>
       <Dots1 color="#00f" width={60} />
       <Dots2 color="#00f" width={50} dotSize={8} />
+      <Bars2 color="red" width={50} />
     </div>
   );
 }

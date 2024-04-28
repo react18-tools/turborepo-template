@@ -20,7 +20,7 @@ interface Dots2Props extends React.HTMLAttributes<HTMLDivElement> {
  */
 export function Dots2({ width, color = "#000", dotSize = "20%", ...props }: Dots2Props) {
   let w = props.style?.width ?? width ?? 32;
-  w = typeof width === "string" ? width : `${width}px`;
+  w = typeof w === "string" ? w : `${w}px`;
   const r = typeof dotSize === "string" ? dotSize : `${dotSize}px`;
   const className = [styles.loader, props.className].filter(Boolean).join(" ");
   const style = { ...(props.style ?? {}), width: w, "--c": color, "--dot-radius": r };

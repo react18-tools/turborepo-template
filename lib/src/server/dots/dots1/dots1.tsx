@@ -18,7 +18,7 @@ interface Dots1Props extends React.HTMLAttributes<HTMLDivElement> {
  */
 export function Dots1({ width, color = "#000", ...props }: Dots1Props) {
   let w = props.style?.width ?? width ?? 32;
-  w = typeof width === "string" ? width : `${width}px`;
+  w = typeof w === "string" ? w : `${w}px`;
   const className = [styles.loader, props.className].filter(Boolean).join(" ");
   const style = { ...(props.style ?? {}), width: w, "--c": color };
   return <div className={className} style={style} />;

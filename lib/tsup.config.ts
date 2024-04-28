@@ -12,7 +12,7 @@ export default defineConfig(
       clean: !options.watch,
       bundle: true,
       minify: !options.watch,
-      esbuildPlugins: [react18Plugin(), cssPlugin()],
+      esbuildPlugins: [react18Plugin(), cssPlugin({ generateScopedName: "[folder]__[local]" })],
       external: ["react"],
       ...options,
     }) as Options,

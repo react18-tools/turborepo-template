@@ -45,6 +45,11 @@
       "id": "P92idHa6fbprwBOYEp5uu",
       "description": "Add a issue - tag it as good-first-issue - create option for avoiding scss module file\n",
       "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "mWXPi1Qzt9zNe6cKb8IZ3": {
+      "id": "mWXPi1Qzt9zNe6cKb8IZ3",
+      "description": "Update append pattern -- to avoid extra new lines in barrel files",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
   "columns": [
@@ -54,7 +59,8 @@
       "tasksIds": [
         "rRkFSIcteEvuq6MRX2BN0",
         "5Br6CU2MKWj0R40obK9Nm",
-        "P92idHa6fbprwBOYEp5uu"
+        "P92idHa6fbprwBOYEp5uu",
+        "mWXPi1Qzt9zNe6cKb8IZ3"
       ]
     },
     {

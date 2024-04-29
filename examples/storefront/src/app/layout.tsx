@@ -1,5 +1,7 @@
 import "./styles.css";
-import { LoaderContainer, Bars2 } from "@repo/ui";
+import { Bars2 } from "@repo/ui";
+import { LoaderContainer } from "@repo/ui/dist/client";
+import "@repo/ui/dist/index.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (
@@ -7,7 +9,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
       <body>
         {children}
         <LoaderContainer>
-          <Bars2 />
+          <Bars2 color="red" />
         </LoaderContainer>
       </body>
     </html>

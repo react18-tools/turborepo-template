@@ -46,5 +46,8 @@
     "typescript": "^5.4.5",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^1.5.2"
+  },
+  "dependencies": {
+    "r18gs": "^0.1.3"
   }
 }

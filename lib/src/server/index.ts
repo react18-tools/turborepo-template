@@ -8,3 +8,5 @@
 
 export * from "./dots";
 export * from "./bars";
+
+export * from "./loader-container";

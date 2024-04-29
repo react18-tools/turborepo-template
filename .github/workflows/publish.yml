@@ -43,5 +43,7 @@ jobs:
           REPO: ${{ github.event.repository.name }}
       - name: Craete GitHub Release
         run: |
-          v=$(node.exe -p -e "require('./package.json').version")
-          gh release create $v --generate-notes --latest -F CHANGELOG.md --title "Release $v"
+          v=$(node -p -e "require('./package.json').version")
+          gh release create $v --generate-notes --latest -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release $v"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

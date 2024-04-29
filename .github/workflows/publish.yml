@@ -2,6 +2,7 @@ name: Publish to NPM
 
 # publish only when package json has changed - assuming version upgrade
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths: "lib/package.json"

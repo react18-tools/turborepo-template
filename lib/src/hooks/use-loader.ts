@@ -6,6 +6,6 @@ import { LOADER_RGS_KEY } from "../constants";
  * @returns
  */
 export function useLoader() {
-  const [loading, setLoading] = useRGS(LOADER_RGS_KEY);
+  const [loading, setLoading] = useRGS<boolean>(LOADER_RGS_KEY);
   return { loading, setLoading };
 }

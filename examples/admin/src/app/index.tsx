@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
-import { Bars1, Bars2, Dots1, Dots2, LoaderContainer, useLoader } from "@repo/ui";
+import { Bars1, Bars2, Dots1, Dots2, useLoader } from "@repo/ui";
+import { LoaderContainer } from "@repo/ui/dist/client";
 
 function App(): JSX.Element {
   const { setLoading } = useLoader();

@@ -11,9 +11,10 @@
     "lint": "eslint src/"
   },
   "dependencies": {
-    "react18-loaders": "workspace:*",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react18-loaders": "workspace:*",
+    "react18-themes": "^3.1.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

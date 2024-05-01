@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./layout.module.scss";
+import { ForkMe } from "@mayank1513/fork-me/server";
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -12,8 +13,8 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <div className={styles.container}>
-      <h1 data-testid="layout-h1">layout</h1>
       {children}
+      <ForkMe gitHubUrl="https://github.com/react18-tools/turborepo-template" />
     </div>
   );
 }

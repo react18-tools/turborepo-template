@@ -38,6 +38,7 @@
     "vitest": "^1.5.3"
   },
   "dependencies": {
+    "@mayank1513/fork-me": "^2.1.2",
     "r18gs": "^1.0.1"
   }
 }

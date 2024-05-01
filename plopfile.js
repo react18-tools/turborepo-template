@@ -171,7 +171,7 @@ function generator(plop) {
       {
         type: "list",
         name: "pkgPath",
-        choices: ["lib", "packages/ui"],
+        choices: ["lib", "packages/shared"],
         default: "lib",
         message: "Select the package",
       },

@@ -193,6 +193,12 @@ function generator(plop) {
     ],
     actions: data => (data ? getActions(data) : []),
   });
+
+  plop.setGenerator("React Hook", {
+    description: "Add a new React hook.",
+    prompts: [],
+    actions: [],
+  });
 }
 
 module.exports = generator;

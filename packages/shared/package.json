@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@mayank1513/fork-me": "^2.1.2",
+    "react18-loaders": "workspace:*",
     "r18gs": "^1.0.1"
   }
 }

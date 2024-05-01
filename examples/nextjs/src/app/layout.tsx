@@ -1,9 +1,9 @@
 import "./styles.css";
-import { Bars2 } from "react18-loaders";
-import { LoaderContainer } from "react18-loaders/dist/client";
 import "react18-loaders/dist/index.css";
 import { NextJsServerTarget } from "nextjs-themes/server";
 import { ThemeSwitcher } from "nextjs-themes";
+import { Layout } from "@repo/shared/dist/server";
+import { GlobalLoader } from "@repo/shared/dist/client";
 
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (
@@ -11,10 +11,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
       <body>
         <NextJsServerTarget />
         <ThemeSwitcher />
-        {children}
-        <LoaderContainer>
-          <Bars2 color="red" />
-        </LoaderContainer>
+        <Layout>{children}</Layout>
+        <GlobalLoader />
       </body>
     </html>
   );

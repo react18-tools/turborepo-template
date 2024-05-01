@@ -1,7 +1,7 @@
 import "./styles.css";
-import { Bars2 } from "@repo/ui";
-import { LoaderContainer } from "@repo/ui/dist/client";
-import "@repo/ui/dist/index.css";
+import { Bars2 } from "react18-loaders";
+import { LoaderContainer } from "react18-loaders/dist/client";
+import "react18-loaders/dist/index.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (

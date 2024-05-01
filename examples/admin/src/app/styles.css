@@ -1,4 +1,4 @@
-@import "@repo/ui/dist";
+@import "react18-loaders/dist";
 
 .container {
   min-height: 100vh;

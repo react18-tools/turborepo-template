@@ -1,6 +1,6 @@
 "use client";
 
-import { useLoader } from "@repo/ui";
+import { useLoader } from "react18-loaders";
 
 export default function MyButton() {
   const { setLoading } = useLoader();

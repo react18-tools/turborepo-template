@@ -31,7 +31,7 @@ function updateIndexFilesIfNeeded(
     const length = currentDirSegments.length;
     nestedRouteActions.push({
       type: "append",
-      // pattern: /(?<insertion> component exports)/g,
+      pattern: /(?<insertion> component exports)/,
       path: `${
         root + (length === 1 ? "" : `${currentDirSegments.slice(0, length - 1).join("/")}/`)
       }index.ts`,
@@ -80,7 +80,7 @@ function getNestedRouteActions(data) {
       type: "add",
       path: `${root}index.ts`,
       template: `${isClient ? '"use client";\n\n' : ""}/**
- * need to export server components and client components from separate files as
+ * Server components and client components need to be exported from separate files as
  * directive on top of the file from which component is imported takes effect.
  * i.e., server component re-exported from file with "use client" will behave as client component
  * */
@@ -116,13 +116,14 @@ function getIndexAction(data, parentDir) {
   if (fs.existsSync(indFilePath))
     return {
       type: "append",
+      pattern: /(?<insertion> component exports)/,
       path: `${parentDir}{{kebabCase name}}/index.ts`,
       template: 'export * from "./{{kebabCase name}}";',
     };
   return {
     type: "add",
     path: `${parentDir}{{kebabCase name}}/index.ts`,
-    template: `${data.isClient ? '"use client";\n\n' : ""}export * from "./{{kebabCase name}}";\n`,
+    template: `${data.isClient ? '"use client";\n\n' : ""}// component exports\nexport * from "./{{kebabCase name}}";\n`,
   };
 }
 
@@ -153,6 +154,7 @@ function getActions(data) {
     },
     {
       type: "append",
+      pattern: /(?<insertion> component exports)/,
       path: `${parentDir}index.ts`,
       template: 'export * from "./{{kebabCase name}}";',
     },

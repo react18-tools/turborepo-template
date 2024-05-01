@@ -19,7 +19,7 @@
     "iXE3kCY0L1r_4TD-zRgVh": {
       "id": "iXE3kCY0L1r_4TD-zRgVh",
       "description": "React Loaders\n- improve step by step --- incremental improvements\n- Purposes\n  - Provide a good demo - demonstrating the full potential of the setup\n  - Give learners opportunity to contribute to open source",
-      "columnId": "column-doing"
+      "columnId": "column-done"
     },
     "jxGpRnHuqpR8FMho_53Je": {
       "id": "jxGpRnHuqpR8FMho_53Je",
@@ -49,7 +49,7 @@
     "mWXPi1Qzt9zNe6cKb8IZ3": {
       "id": "mWXPi1Qzt9zNe6cKb8IZ3",
       "description": "Update append pattern -- to avoid extra new lines in barrel files",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
+      "columnId": "column-done"
     }
   },
   "columns": [
@@ -58,15 +58,13 @@
       "title": "To do ",
       "tasksIds": [
         "5Br6CU2MKWj0R40obK9Nm",
-        "P92idHa6fbprwBOYEp5uu",
-        "mWXPi1Qzt9zNe6cKb8IZ3"
+        "P92idHa6fbprwBOYEp5uu"
       ]
     },
     {
       "id": "column-doing",
       "title": "Doing",
       "tasksIds": [
-        "iXE3kCY0L1r_4TD-zRgVh",
         "5FPnfgSKUpHBbORBRtgui"
       ]
     },
@@ -74,7 +72,9 @@
       "id": "column-done",
       "title": "Done",
       "tasksIds": [
+        "iXE3kCY0L1r_4TD-zRgVh",
         "rRkFSIcteEvuq6MRX2BN0",
+        "mWXPi1Qzt9zNe6cKb8IZ3",
         "W5ouBV1q2_FExuUzGV0aP",
         "jxGpRnHuqpR8FMho_53Je",
         "hnmDBbQK5q6-GX3eIdtUP"

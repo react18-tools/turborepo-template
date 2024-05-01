@@ -3,26 +3,25 @@ const path = require("path");
 
 /**
  * @typedef {Object} InquirerDataType
- * @property {boolean} isClient - Whether we want to create client component. I.e., add "use client" or not
- * @property {string} name - Component name along with relative path --- TODO
+ * @property {boolean} isClient - Indicates whether a client component should be created.
+ * @property {string} name - Component name along with the relative path from either the client or server directory.
+ * @property {string} pkgPath - Package path.
  */
 
-function updateIndexFilesIfNeeded(
-  /** @type {import('plop').ActionType} */
-  nestedRouteActions,
-  /** @type {[string]} */
-  rootSegments,
-  /** @type {[string]} */
-  currentDirSegments,
-  /** @type {boolean} */
-  isClient,
-) {
+/**
+ * Updates index files if needed based on the provided parameters.
+ * @param {import('plop').ActionType} nestedRouteActions - Nested route actions.
+ * @param {string[]} rootSegments - Root segments.
+ * @param {string[]} currentDirSegments - Current directory segments.
+ * @param {boolean} isClient - Indicates whether it's a client component.
+ */
+function updateIndexFilesIfNeeded(nestedRouteActions, rootSegments, currentDirSegments, isClient) {
   const indexFilePath = path.resolve(__dirname, ...rootSegments, ...currentDirSegments, "index.ts");
   const root = rootSegments.join("/");
   if (!fs.existsSync(indexFilePath)) {
-    const content = `${isClient ? '"use client";\n' : ""}// ${currentDirSegments.join(
-      "/",
-    )} component exports\n`;
+    const content =
+      `${isClient ? '"use client";\n' : ""}// ${currentDirSegments.join("/")}` +
+      " component exports\n";
     nestedRouteActions.push({
       type: "add",
       path: `${root + currentDirSegments.join("/")}/index.ts`,
@@ -41,9 +40,9 @@ function updateIndexFilesIfNeeded(
 }
 
 /**
- *
- * @param {string} str
- * @returns {string} string in kebab-case
+ * Converts a string to kebab-case.
+ * @param {string} str - The input string.
+ * @returns {string} The string in kebab-case.
  */
 function toKebabCase(str) {
   return str
@@ -54,23 +53,20 @@ function toKebabCase(str) {
 }
 
 /**
- *
- * @param {InquirerDataType} data
- * @returns
+ * Gets nested route actions based on the provided data.
+ * @param {InquirerDataType} data - Input data.
+ * @returns {Object} Nested route actions and parent directory.
  */
 function getNestedRouteActions(data) {
   const { isClient } = data;
-  // remove multiple '/' and trailing '/' if any
   const name = data.name.replace(/\/+/g, "/").replace(/\/$/, "").trim();
-
-  const root = `lib/src/${isClient ? "client/" : "server/"}`;
-  /** @type {[import('plop').ActionType]} */
+  const root = `${data.pkgPath}/src/${isClient ? "client/" : "server/"}`;
   const nestedRouteActions = [];
 
-  if (!fs.existsSync(path.resolve(__dirname, "lib/src", "index.ts"))) {
+  if (!fs.existsSync(path.resolve(__dirname, `${data.pkgPath}/src`, "index.ts"))) {
     nestedRouteActions.push({
       type: "add",
-      path: "lib/src/index.ts",
+      path: `${data.pkgPath}/src/index.ts`,
       template: `${isClient ? '"use client";\n\n' : ""}export * from "./${isClient ? "client" : "server"}";\n`,
     });
   }
@@ -79,21 +75,13 @@ function getNestedRouteActions(data) {
     nestedRouteActions.push({
       type: "add",
       path: `${root}index.ts`,
-      template: `${isClient ? '"use client";\n\n' : ""}/**
- * Server components and client components need to be exported from separate files as
- * directive on top of the file from which component is imported takes effect.
- * i.e., server component re-exported from file with "use client" will behave as client component
- * */
-
-// ${isClient ? "client" : "server"} component exports\n`,
+      template: `${isClient ? '"use client";\n\n' : ""}/**\n * Server components and client components need to be exported from separate files as\n * directive on top of the file from which component is imported takes effect.\n * i.e., server component re-exported from file with "use client" will behave as client component\n */\n\n// ${isClient ? "client" : "server"} component exports\n`,
     });
   }
 
-  /** Return early if no nested routes */
   if (!name.includes("/")) return { nestedRouteActions, parentDir: root };
 
   const lastSlashInd = name.lastIndexOf("/") || name.lastIndexOf("\\");
-  /** following is required to make sure appropreate name is used while creating components */
   data.name = name.slice(lastSlashInd + 1);
 
   const directories = toKebabCase(name.slice(0, lastSlashInd)).split(/\/|\\/);
@@ -106,10 +94,10 @@ function getNestedRouteActions(data) {
 }
 
 /**
- *
- * @param {InquirerDataType} data
- * @param {string} parentDir
- * @returns
+ * Gets the index action based on the provided data and parent directory.
+ * @param {InquirerDataType} data - Input data.
+ * @param {string} parentDir - Parent directory.
+ * @returns {Object} Index action.
  */
 function getIndexAction(data, parentDir) {
   const indFilePath = path.resolve(__dirname, parentDir, toKebabCase(data.name), "index.ts");
@@ -128,9 +116,9 @@ function getIndexAction(data, parentDir) {
 }
 
 /**
- *
- * @param {InquirerDataType} data
- * @returns
+ * Gets actions based on the provided data.
+ * @param {InquirerDataType} data - Input data.
+ * @returns {Array} Actions.
  */
 function getActions(data) {
   const { nestedRouteActions, parentDir } = getNestedRouteActions(data);
@@ -162,14 +150,20 @@ function getActions(data) {
 }
 
 /**
- *
- * @param {import('plop').NodePlopAPI} plop
+ * Generator function to add a new React component to the internal UI library.
+ * @param {import('plop').NodePlopAPI} plop - Plop API.
  */
 function generator(plop) {
-  // A simple generator to add a new React component to the internal UI library
-  plop.setGenerator("lib-rc", {
-    description: "Adds a new React component to the lib directory",
+  plop.setGenerator("rc", {
+    description: "Adds a new React component to the selected package.",
     prompts: [
+      {
+        type: "list",
+        name: "pkgPath",
+        choices: ["lib", "packages/ui"],
+        default: "lib",
+        message: "Select the package",
+      },
       {
         type: "input",
         name: "name",

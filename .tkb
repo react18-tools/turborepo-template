@@ -50,6 +50,11 @@
       "id": "mWXPi1Qzt9zNe6cKb8IZ3",
       "description": "Update append pattern -- to avoid extra new lines in barrel files",
       "columnId": "column-done"
+    },
+    "-DCBBAzTvSWMDb8whog60": {
+      "id": "-DCBBAzTvSWMDb8whog60",
+      "description": "Rebranding experience\n- lauch inquirer.js postinstall\n- rebrand based on options selected",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
   "columns": [
@@ -58,7 +63,8 @@
       "title": "To do ",
       "tasksIds": [
         "5Br6CU2MKWj0R40obK9Nm",
-        "P92idHa6fbprwBOYEp5uu"
+        "P92idHa6fbprwBOYEp5uu",
+        "-DCBBAzTvSWMDb8whog60"
       ]
     },
     {

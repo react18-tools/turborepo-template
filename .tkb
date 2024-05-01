@@ -34,7 +34,7 @@
     "rRkFSIcteEvuq6MRX2BN0": {
       "id": "rRkFSIcteEvuq6MRX2BN0",
       "description": "Create 2 - 3 loaders",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
+      "columnId": "column-done"
     },
     "5Br6CU2MKWj0R40obK9Nm": {
       "id": "5Br6CU2MKWj0R40obK9Nm",
@@ -57,7 +57,6 @@
       "id": "column-rHWkySHomUOsd93fyS05p",
       "title": "To do ",
       "tasksIds": [
-        "rRkFSIcteEvuq6MRX2BN0",
         "5Br6CU2MKWj0R40obK9Nm",
         "P92idHa6fbprwBOYEp5uu",
         "mWXPi1Qzt9zNe6cKb8IZ3"
@@ -75,6 +74,7 @@
       "id": "column-done",
       "title": "Done",
       "tasksIds": [
+        "rRkFSIcteEvuq6MRX2BN0",
         "W5ouBV1q2_FExuUzGV0aP",
         "jxGpRnHuqpR8FMho_53Je",
         "hnmDBbQK5q6-GX3eIdtUP"

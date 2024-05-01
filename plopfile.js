@@ -63,6 +63,7 @@ function getNestedRouteActions(data) {
   const root = `${data.pkgPath}/src/${isClient ? "client/" : "server/"}`;
   const nestedRouteActions = [];
 
+  /** Create index.ts in src directory if not present.  */
   if (!fs.existsSync(path.resolve(__dirname, `${data.pkgPath}/src`, "index.ts"))) {
     nestedRouteActions.push({
       type: "add",
@@ -71,6 +72,16 @@ function getNestedRouteActions(data) {
     });
   }
 
+  /** Create declaration if not present.  */
+  if (!fs.existsSync(path.resolve(__dirname, `${data.pkgPath}/src`, "declaration.d.ts"))) {
+    nestedRouteActions.push({
+      type: "add",
+      path: `${data.pkgPath}/src/declaration.d.ts`,
+      template: `declare module "*.module.css";\ndeclare module "*.module.scss";\n`,
+    });
+  }
+
+  /** Create index.ts in src/client or src/server directory if not present.  */
   if (!fs.existsSync(path.resolve(__dirname, root, "index.ts"))) {
     nestedRouteActions.push({
       type: "add",

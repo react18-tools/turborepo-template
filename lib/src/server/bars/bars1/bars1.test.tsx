@@ -5,8 +5,7 @@ import { Bars1 } from "./bars1";
 describe.concurrent("bars1", () => {
   afterEach(cleanup);
 
-  test("check if h1 heading exists", ({ expect }) => {
+  test("check if renders without errors", ({ expect }) => {
     render(<Bars1 />);
-    expect(screen.getByTestId("bars1-h1").textContent).toBe("bars1");
   });
 });

@@ -6,7 +6,7 @@ describe.concurrent("base", () => {
   afterEach(cleanup);
 
   test("check if h1 heading exists", ({ expect }) => {
-    render(<Base />);
-    expect(screen.getByTestId("base-h1").textContent).toBe("base");
+    const { container } = render(<Base loaderClass="my-clx" />);
+    expect(container.children[0].classList).toContain("my-clx");
   });
 });

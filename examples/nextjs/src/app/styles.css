@@ -1,5 +1,6 @@
 @import "nextjs-themes/styles.css";
 @import "@repo/shared/dist/global.css";
+@import "@repo/shared/dist";
 
 html {
   font-family:

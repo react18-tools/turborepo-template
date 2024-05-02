@@ -12,7 +12,7 @@ export function Logo() {
       target="_blank"
       rel="noopener noreferrer"
       className={styles.logo}>
-      <code>turborepo-template</code>
+      <span>turborepo-template</span>
     </a>
   );
 }

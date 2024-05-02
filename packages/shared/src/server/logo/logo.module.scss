@@ -8,11 +8,17 @@
   overflow: hidden;
   box-shadow: 0px 2px 8px -1px #0000001a;
   padding: 2px;
-  code {
-    display: block;
-    background: var(--bg-color);
+  width: 210px;
+  span {
     font-weight: 700;
     font-family: var(--font-mono);
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    background: linear-gradient(to right, #3b82f6, #ef4444);
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    animation: 4s txt infinite linear;
   }
   &::before,
   &::after {
@@ -33,11 +39,7 @@
     inset: 0;
     padding: 1px;
     border-radius: var(--border-radius);
-    background: linear-gradient(
-      to bottom right,
-      rgba(var(--tile-start-rgb), 1),
-      rgba(var(--tile-end-rgb), 1)
-    );
+    background: var(--bg-color);
     background-clip: content-box;
   }
 }
@@ -48,5 +50,14 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes txt {
+  from {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: -100% 50%;
   }
 }

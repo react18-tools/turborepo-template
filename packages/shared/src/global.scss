@@ -89,21 +89,6 @@ body,
   flex-direction: column;
 }
 
-main,
-footer {
-  background: var(--bg-color);
-  color: var(--text-color);
-}
-
-main {
-  flex-grow: 1;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-}
-
 a {
   color: inherit;
   text-decoration: none;

@@ -1,0 +1,52 @@
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(0);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0px 2px 8px -1px #0000001a;
+  padding: 2px;
+  code {
+    display: block;
+    background: var(--bg-color);
+    font-weight: 700;
+    font-family: var(--font-mono);
+  }
+  &::before,
+  &::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+  }
+  /* Conic Gradient Animation */
+  &::before {
+    animation: 3s rotate infinite linear;
+    width: 800%;
+    height: 800%;
+    background: var(--tile-border);
+  }
+
+  /* Inner Square */
+  &::after {
+    inset: 0;
+    padding: 1px;
+    border-radius: var(--border-radius);
+    background: linear-gradient(
+      to bottom right,
+      rgba(var(--tile-start-rgb), 1),
+      rgba(var(--tile-end-rgb), 1)
+    );
+    background-clip: content-box;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

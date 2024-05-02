@@ -2,7 +2,7 @@
   "extends": "@repo/typescript-config/react-library.json",
   "compilerOptions": {
     "lib": ["dom", "ES2015"],
-    "types": ["jest", "node"]
+    "types": ["vitest", "node"]
   },
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]

@@ -1,3 +1,6 @@
+@import "nextjs-themes/styles.css";
+@import "@repo/shared/dist/global.css";
+
 html {
   font-family:
     ui-sans-serif,

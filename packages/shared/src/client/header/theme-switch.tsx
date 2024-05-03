@@ -2,7 +2,7 @@
 
 import { ColorSwitch, useTheme } from "nextjs-themes";
 import styles from "./header.module.scss";
-import { MouseEvent, useCallback } from "react";
+import { useCallback } from "react";
 
 export default function ThemeSwitch() {
   const { colorSchemePref, setColorSchemePref } = useTheme();

@@ -3,8 +3,7 @@ import "react18-loaders/dist/index.css";
 import { NextJsServerTarget } from "nextjs-themes/server";
 import { ThemeSwitcher } from "nextjs-themes";
 import { Layout } from "@repo/shared/dist/server";
-import { GlobalLoader } from "@repo/shared";
-import Header from "../components/header";
+import { GlobalLoader, Header } from "@repo/shared";
 
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (

@@ -2,6 +2,7 @@ import type { MetaFunction, LinksFunction } from "@remix-run/node";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import { Analytics } from "@vercel/analytics/react";
 import styles from "./styles.css";
+import { Layout } from "@repo/shared/dist/server";
 
 export const meta: MetaFunction = () => [
   {
@@ -21,7 +22,9 @@ export default function App(): JSX.Element {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <Layout>
+          <Outlet />
+        </Layout>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

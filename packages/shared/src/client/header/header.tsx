@@ -12,12 +12,13 @@ import { Logo } from "../../server";
  * However, we want to reuse as much code as possible across different examples and also optimize for the best use of bleading edge features.
  */
 export function Header() {
+  const [open, setOpen] = React.useState(false);
   return (
     <header className={styles.header}>
       <div>
-        <DrawerButton />
+        <DrawerButton {...{ open, setOpen }} />
         <Logo />
-        <nav>
+        <nav className={open ? styles.open : ""}>
           <a
             href="https://mayank-chaudhari.vercel.app/"
             target="_blank"

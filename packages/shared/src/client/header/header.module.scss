@@ -20,7 +20,7 @@
     position: fixed;
     top: 76px;
     height: calc(100vh - 76px);
-    left: 0;
+    left: -300px;
     width: 300px;
     box-shadow: 0 0 8px -5px var(--text-color);
     overflow: auto;
@@ -29,6 +29,9 @@
     gap: 20px;
     justify-content: space-between;
     background: var(--bg-color);
+  }
+  .open {
+    left: 0;
   }
 }
 
@@ -52,9 +55,31 @@
 @media screen and (min-width: 800px) {
   .header {
     & > div {
-      justify-content: flex-start;
+      justify-content: space-between;
     }
     nav {
+      position: relative;
+      flex-direction: row;
+      height: auto;
+      width: auto;
+      top: 0;
     }
+    nav,
+    .author,
+    .themeswitch {
+      box-shadow: none;
+      text-shadow: none;
+      font-weight: 500;
+      gap: 0;
+    }
+  }
+  .themeswitch {
+    margin-right: 130px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .themeswitch {
+    margin-right: 80px;
   }
 }

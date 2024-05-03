@@ -5,6 +5,7 @@
  */
 
 // server component exports
+export * from "./landing-page";
 export * from "./logo";
 export * from "./cards";
 export * from "./layout";

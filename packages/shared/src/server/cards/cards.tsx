@@ -1,19 +1,25 @@
-import * as React from "react";
 import styles from "./cards.module.scss";
+import { Card } from "./card";
 
-interface CardsProps {
-	children?: React.ReactNode;
-}
+const cards = [
+  {
+    href: "https://react18-tools.github.io/turborepo-template/",
+    title: "Docs",
+    description: "Explore the official docs.",
+  },
+  {
+    href: "https://github.com/react18-tools/turborepo-template",
+    title: "More Examples",
+    description: "Explore more examples on official GitHub Repo.",
+  },
+];
 
-/**
- * # Cards
- * Cards with links
- */
-export function Cards({ children }: CardsProps) {
-	return (
-		<div className={styles.container}>
-			<h1 data-testid="cards-h1">cards</h1>
-			{children}
-		</div>
-	);
+export function Cards() {
+  return (
+    <div className={styles.cards}>
+      {cards.map(card => (
+        <Card key={card.href} {...card} />
+      ))}
+    </div>
+  );
 }

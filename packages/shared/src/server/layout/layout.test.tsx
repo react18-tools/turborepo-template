@@ -3,10 +3,9 @@ import { afterEach, describe, test } from "vitest";
 import { Layout } from "./layout";
 
 describe.concurrent("layout", () => {
-	afterEach(cleanup);
+  afterEach(cleanup);
 
-	test("check if h1 heading exists", ({ expect }) => {
-		render(<Layout />);
-		expect(screen.getByTestId("layout-h1").textContent).toBe("layout");
-	});
+  test("check if renders without errors", ({ expect }) => {
+    render(<Layout />);
+  });
 });

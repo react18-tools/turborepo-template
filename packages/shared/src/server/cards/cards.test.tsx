@@ -3,10 +3,9 @@ import { afterEach, describe, test } from "vitest";
 import { Cards } from "./cards";
 
 describe.concurrent("cards", () => {
-	afterEach(cleanup);
+  afterEach(cleanup);
 
-	test("check if h1 heading exists", ({ expect }) => {
-		render(<Cards />);
-		expect(screen.getByTestId("cards-h1").textContent).toBe("cards");
-	});
+  test("check if renders without errors", ({ expect }) => {
+    render(<Cards />);
+  });
 });

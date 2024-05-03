@@ -3,7 +3,8 @@
   top: 0;
   width: 100%;
   height: 76px;
-  box-shadow: 0 2px 8px -5px var(--text-color);
+  box-shadow: 0 3px 8px -6px var(--text-color);
+  backdrop-filter: blur(3px);
   & > div {
     display: flex;
     align-items: center;
@@ -11,9 +12,9 @@
     font-size: 0.85rem;
     max-width: var(--max-width);
     width: 100%;
+    height: 100%;
     z-index: 2;
-    padding: 10px;
-    backdrop-filter: blur(3px);
+    padding: 0 10px;
     margin: auto;
   }
   nav {
@@ -60,9 +61,11 @@
     nav {
       position: relative;
       flex-direction: row;
-      height: auto;
+      align-items: center;
+      height: 100%;
       width: auto;
       top: 0;
+      left: auto;
     }
     nav,
     .author,

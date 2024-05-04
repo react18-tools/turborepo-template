@@ -66,7 +66,6 @@ if (!rebrandConfig.keepRebrandingScripts) {
       path.resolve(rootDir, "package.json"),
       JSON.stringify(rootPackageJSON, null, 2),
     );
-    // fs.unlinkSync(path.resolve(rootDir, "rebrand.config.json"));
     fs.unlinkSync(path.resolve(rootDir, "rebrand.js"));
   } catch (e) {
     console.error(e);

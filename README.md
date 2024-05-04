@@ -36,7 +36,7 @@ This template offers the following pre-configured features. Additionally, your r
 
 ✅ Workflow to automatically rebrand the entire template based on your repository name. (Upon creating a repository from this template, a setup workflow is triggered to rename `@mayank1513/fork-me` to your repo name and perform other necessary fixes to get you up and running.)
 
-✅ Plus, this readme file includes a quick checklist for configuring Codecov and other badges, setting up your docs website on GitHub pages, and more. See [Checklist](#step-by-step-instructions-and-checklist).
+✅ Plus, this readme file includes a quick checklist for configuring Codecov and other badges, setting up your docs website on GitHub pages, and more. See [Checklist](./TODO.md).
 
 #### Create a library that is
 
@@ -50,13 +50,13 @@ This template offers the following pre-configured features. Additionally, your r
 
 ✅ Documented with [Typedoc](https://react18-tools.github.io/turborepo-template) ([Docs](https://react18-tools.github.io/turborepo-template))
 
-## Introduction
-
-This template is based on the official starter Turbo Repo but includes additional features tailored for creating and publishing JavaScript/TypeScript libraries, particularly for React 18.
-
 ## Getting Started:
 
-Click on the `"Use this template"` button to customize it for your next JavaScript/TypeScript/React/Vue/Next.js library or project.
+This template is based on one of the official Turbo Repo starters but comes with a plethora of additional features specifically designed for developing and publishing JavaScript/TypeScript libraries, especially for React 18.
+
+To get started, simply click on the `"Use this template"` button to create a new repository based on this template. Customize it according to your requirements for your next JavaScript/TypeScript/React/Next.js library or project.
+
+For detailed instructions and a checklist, please refer to [TODO.md](./TODO.md).
 
 ## What's Different?
 
@@ -68,53 +68,6 @@ Compared to the default scaffold from create-turbo, this template offers:
   - Simply run `yarn plop` and follow the prompts to auto-generate your new component with test files and dependency linking, adhering to best practices automatically
 - GitHub actions/workflows to auto-publish your package when the version changes
 - GitHub action/workflow + pre-install scripts to automatically rebrand your repo on creation
-
-## Step-by-Step Instructions and Checklist
-
-- [ ] Star [this repository](https://github.com/react18-tools/turborepo-template/) for easy access and to show your support
-- [ ] Create a new GitHub repository using this template.
-  - [ ] Click `Use this template` button at the top right -> `Create a new repository`
-  - [ ] Set your library name as the repository name (This template has automation workflows to customize your repo, assuming the repo name as the library name.)
-  - [ ] Click `Create repository` and wait for the setup workflow to finish rebranding your repo.
-- [ ] Install and set up Node.js and your IDE (VSCode recommended)
-- [ ] Install the recommended VSCode extensions - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Trello Kanban](https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board)
-- [ ] Install dependencies using `pnpm`
-  - [ ] If `pnpm` is not installed, run `npm i -g pnpm@9.0.5` to install `pnpm`, then run `pnpm setup` to set up `pnpm` for global installations
-  - [ ] Run `pnpm i` to install dependencies; the `preinstall` script will automatically adjust workflows and create a commit
-  - [ ] Run `pnpm i -g turbo` to install `turbo` globally (Occasionally, due to TypeScript and Plop version conflicts, code generation requires global `turbo`).
-  - [ ] Run `turbo gen react-component`, and follow prompts to generate server or client components for your library
-    - [ ] Use `snake-case` for your component name - it will be automatically converted to `PascalCase`
-    - [ ] Your component and test files will be created in `**/src/client/` or `**/src/server/` directory, depending on whether you choose a `client` or `server` component
-- [ ] Run `node scope.js` from the root directory if you want to publish a
-
-scoped package.
-
-- [ ] Assumption: Your npm username is the same as your GitHub account or organization username.
-- [ ] Make sure `owner` is set to your <npmjs.com> username before running the above command.
-- [ ] Set up `CodeCov`
-  - [ ] Visit Codecov and set up your repo
-  - [ ] Create [repository secret](https://github.com/react18-tools/turborepo-template/settings/secrets/actions) for `CODECOV_TOKEN`
-- [ ] Set up `CodeClimate`
-  - [ ] Visit CodeClimate and set up your repo
-  - [ ] Create [repository secret](https://github.com/react18-tools/turborepo-template/settings/secrets/actions) for `CC_TEST_REPORTER_ID`
-  - [ ] Add `*.test.*` to ignore patterns on the website
-  - [ ] Update Code Climate badge
-- [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate package publishing
-  - [ ] Log in to your [`npm` account](https://www.npmjs.com/login) and create an automation token
-  - [ ] Create a new repository secret `NPM_AUTH_TOKEN`
-- [ ] Update description in `lib/@mayank1513/fork-me/package.json`
-- [ ] Update Repo Stats by visiting and setting up [repobeats](https://repobeats.axiom.co/)
-- [ ] Create your library and update examples
-- [ ] Update README
-- [ ] Set up GitHub pages to deploy docs
-  - [ ] Go to [repo settings](https://github.com/react18-tools/turborepo-template/settings/pages) -> pages (On the left panel); Select deploy from a branch; Then Select `main` and `/docs`
-- [ ] (Optional) Set up [Deepsource](https://app.deepsource.com/login) for static code analysis
-- [ ] Push your changes/Create PR and see your library being automatically tested and published
-- [ ] Optionally deploy your examples to Vercel.
-- [ ] Update sponsorship URLs.
-- [ ] Feel free to star this template, contribute, and/or sponsor the `terbo-repo-template` project or my other open-source work
-- [ ] You can also fork the [`terbo-repo-template`](https://github.com/react18-tools/turbo-repo-template/fork) and add your package to `packages/shared-ui/src/examples/featured.json`
-  - [ ] If approved, your package will be automatically added to FEATURED.md and also published on the home page of this repo.
 
 ## What's Inside?
 

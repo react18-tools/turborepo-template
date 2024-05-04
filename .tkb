@@ -55,6 +55,11 @@
       "id": "-DCBBAzTvSWMDb8whog60",
       "description": "Rebranding experience\n- lauch inquirer.js postinstall\n- rebrand based on options selected",
       "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "T1TbmRqXHguxnJv1g_Ot6": {
+      "id": "T1TbmRqXHguxnJv1g_Ot6",
+      "description": "Explore GitHub codespace templates",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
   "columns": [
@@ -64,7 +69,8 @@
       "tasksIds": [
         "5Br6CU2MKWj0R40obK9Nm",
         "P92idHa6fbprwBOYEp5uu",
-        "-DCBBAzTvSWMDb8whog60"
+        "-DCBBAzTvSWMDb8whog60",
+        "T1TbmRqXHguxnJv1g_Ot6"
       ]
     },
     {

@@ -1,0 +1,42 @@
+## Step-by-Step Instructions and Checklist
+
+- [ ] Star [this repository](https://github.com/react18-tools/turborepo-template/) for easy access and to show your support
+- [ ] Create a new GitHub repository using this template.
+  - [ ] Click `Use this template` button at the top right -> `Create a new repository`
+  - [ ] Set your library name as the repository name (This template has automation workflows to customize your repo, assuming the repo name as the library name.)
+  - [ ] Click `Create repository` and wait for the setup workflow to finish rebranding your repo.
+- [ ] Install and set up Node.js and your IDE (VSCode recommended)
+- [ ] Install the recommended VSCode extensions - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Trello Kanban](https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board)
+- [ ] Install dependencies using `pnpm`
+  - [ ] If `pnpm` is not installed, run `npm i -g pnpm@9.0.5` to install `pnpm`, then run `pnpm setup` to set up `pnpm` for global installations
+  - [ ] Run `pnpm i` to install dependencies; the `preinstall` script will automatically adjust workflows and create a commit
+  - [ ] Run `yarn plop`, and follow prompts to generate server or client components for your library
+    - [ ] Use `snake-case` for your component name - it will be automatically converted to `PascalCase`
+    - [ ] Your component and test files will be created in `**/src/client/` or `**/src/server/` directory, depending on whether you choose a `client` or `server` component
+- [ ] Run `node scope.js` from the root directory if you want to publish a scoped package.
+- [ ] Assumption: Your npm username is the same as your GitHub account or organization username.
+- [ ] Make sure `owner` is set to your <npmjs.com> username before running the above command.
+- [ ] Set up `CodeCov`
+  - [ ] Visit Codecov and set up your repo
+  - [ ] Create [repository secret](https://github.com/react18-tools/turborepo-template/settings/secrets/actions) for `CODECOV_TOKEN`
+- [ ] Set up `CodeClimate`
+  - [ ] Visit CodeClimate and set up your repo
+  - [ ] Create [repository secret](https://github.com/react18-tools/turborepo-template/settings/secrets/actions) for `CC_TEST_REPORTER_ID`
+  - [ ] Add `*.test.*` to ignore patterns on the website
+  - [ ] Update Code Climate badge
+- [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate package publishing
+  - [ ] Log in to your [`npm` account](https://www.npmjs.com/login) and create an automation token
+  - [ ] Create a new repository secret `NPM_AUTH_TOKEN`
+- [ ] Update description in `lib/@mayank1513/fork-me/package.json`
+- [ ] Update Repo Stats by visiting and setting up [repobeats](https://repobeats.axiom.co/)
+- [ ] Create your library and update examples
+- [ ] Update README
+- [ ] Set up GitHub pages to deploy docs
+  - [ ] Go to [repo settings](https://github.com/react18-tools/turborepo-template/settings/pages) -> pages (On the left panel); Select deploy from a branch; Then Select `main` and `/docs`
+- [ ] (Optional) Set up [Deepsource](https://app.deepsource.com/login) for static code analysis
+- [ ] Push your changes/Create PR and see your library being automatically tested and published
+- [ ] Optionally deploy your examples to Vercel.
+- [ ] Update sponsorship URLs.
+- [ ] Feel free to star this template, contribute, and/or sponsor the `terbo-repo-template` project or my other open-source work
+- [ ] You can also fork the [`terbo-repo-template`](https://github.com/react18-tools/turbo-repo-template/fork) and add your package to `packages/shared-ui/src/examples/featured.json`
+  - [ ] If approved, your package will be automatically added to FEATURED.md and also published on the home page of this repo.

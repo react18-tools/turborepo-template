@@ -17,10 +17,17 @@ export function LandingPage({ title, children }: LandingPageProps) {
     <main className={styles.main}>
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.center}>
-        <h2>Craft your next amazing library using</h2>
+        <h2>
+          <i>Craft your next amazing library using</i>
+        </h2>
         <Logo />
-        <p>Harness the full potential of React 18 Server Components!</p>
+        <p>
+          <strong>
+            <i>Harness the full potential of React 18 Server Components!</i>
+          </strong>
+        </p>
       </div>
+      {children}
       <Cards />
     </main>
   );

@@ -5,6 +5,7 @@
   height: 76px;
   box-shadow: 0 3px 8px -6px var(--text-color);
   backdrop-filter: blur(3px);
+  z-index: 100;
   & > div {
     display: flex;
     align-items: center;
@@ -66,6 +67,7 @@
       width: auto;
       top: 0;
       left: auto;
+      background: transparent;
     }
     nav,
     .author,

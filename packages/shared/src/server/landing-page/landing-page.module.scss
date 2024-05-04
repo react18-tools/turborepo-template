@@ -8,9 +8,13 @@
   flex-wrap: wrap;
   padding: 3rem;
   gap: 20px 50px;
+  z-index: 2;
   a {
     pointer-events: none;
     transform: scale(1.25);
+    &::after {
+      padding: 2px;
+    }
   }
 }
 
@@ -27,16 +31,15 @@
   background: var(--primary-glow);
   width: 240px;
   height: 180px;
-  z-index: -1;
 }
 
 .center::before,
 .center::after {
-  content: "";
+  content: " ";
   left: 50%;
   position: absolute;
   filter: blur(45px);
-  transform: translateZ(0);
+  z-index: -1;
 }
 
 .title {
@@ -47,4 +50,6 @@
   width: fit-content;
   margin: auto;
   margin-top: 3rem;
+  font-size: 3rem;
+  text-shadow: none;
 }

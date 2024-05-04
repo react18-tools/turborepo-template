@@ -6,7 +6,8 @@ describe.concurrent("{{ kebabCase name }}", () => {
 	afterEach(cleanup);
 
 	test("Dummy test - test if renders without errors", ({ expect }) => {
-		render(<{{ pascalCase name }} />);
-		expect(screen.getByTestId("{{ kebabCase name }}").textContent).toBe("{{ name }}");
+		const clx = "my-class";
+		render(<{{ pascalCase name }} className={clx} />);
+		expect(screen.getByTestId("{{ kebabCase name }}").classList).toContain(clx);
 	});
 });

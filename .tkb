@@ -14,7 +14,7 @@
     "5FPnfgSKUpHBbORBRtgui": {
       "id": "5FPnfgSKUpHBbORBRtgui",
       "description": "Optimise mobile view",
-      "columnId": "column-doing"
+      "columnId": "column-done"
     },
     "iXE3kCY0L1r_4TD-zRgVh": {
       "id": "iXE3kCY0L1r_4TD-zRgVh",
@@ -70,14 +70,13 @@
     {
       "id": "column-doing",
       "title": "Doing",
-      "tasksIds": [
-        "5FPnfgSKUpHBbORBRtgui"
-      ]
+      "tasksIds": []
     },
     {
       "id": "column-done",
       "title": "Done",
       "tasksIds": [
+        "5FPnfgSKUpHBbORBRtgui",
         "iXE3kCY0L1r_4TD-zRgVh",
         "rRkFSIcteEvuq6MRX2BN0",
         "mWXPi1Qzt9zNe6cKb8IZ3",

@@ -4,7 +4,7 @@ import { LandingPage } from "@repo/shared/dist/server";
 import { Demo } from "@repo/shared";
 
 export const metadata = {
-  title: "Store | Kitchen Sink",
+  title: "React 18 Loaders",
 };
 
 export default function Store(): JSX.Element {

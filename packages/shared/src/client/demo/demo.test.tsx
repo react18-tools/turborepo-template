@@ -5,7 +5,7 @@ import { Demo } from "./demo";
 describe.concurrent("demo", () => {
   afterEach(cleanup);
 
-  test("Dummy test - test if renders without errors", ({ expect }) => {
+  test("Dummy test - test if renders without errors", () => {
     render(<Demo />);
   });
 });

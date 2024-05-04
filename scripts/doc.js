@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const featured = require("../featured.json");
+const featured = require("./featured.json");
 featured.sort((f1, f2) => f1.title.localeCompare(f2.title));
 
 const readMeLines = [

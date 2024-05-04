@@ -42,6 +42,7 @@
     "nextjs-themes": "^3.1.1",
     "r18gs": "^1.0.2",
     "react-live": "^4.1.6",
-    "react18-loaders": "workspace:*"
+    "react18-loaders": "workspace:*",
+    "@repo/scripts": "workspace:*"
   }
 }

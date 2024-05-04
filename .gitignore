@@ -11,3 +11,6 @@ dist-ssr
 
 # test coverage
 coverage
+
+# temporary files
+tsup.config.bundled*

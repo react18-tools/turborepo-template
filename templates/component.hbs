@@ -11,8 +11,8 @@ interface {{ pascalCase name }}Props {
  */
 export function {{ pascalCase name }}({ children }: {{ pascalCase name }}Props) {
 	return (
-		<div className={styles.container}>
-			<h1 data-testid="{{ kebabCase name }}-h1">{{ name }}</h1>
+		<div className={styles.container} data-testid="{{ kebabCase name }}">
+			<h1>{{ name }}</h1>
 			{children}
 		</div>
 	);

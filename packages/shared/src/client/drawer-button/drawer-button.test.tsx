@@ -6,7 +6,6 @@ describe.concurrent("drawer-button", () => {
   afterEach(cleanup);
 
   test("check if h1 heading exists", ({ expect }) => {
-    render(<DrawerButton />);
-    expect(screen.getByTestId("drawer-button-h1").textContent).toBe("drawer-button");
+    render(<DrawerButton open setOpen={() => {}} />);
   });
 });

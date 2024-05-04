@@ -7,10 +7,17 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@types/node':
+        specifier: ^20.12.8
+        version: 20.12.8
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1
         version: 2.27.1
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:packages/config-typescript
       plop:
         specifier: ^4.0.1
         version: 4.0.1
@@ -20,6 +27,27 @@ importers:
       turbo:
         specifier: ^1.13.3
         version: 1.13.3
+      typedoc:
+        specifier: ^0.25.13
+        version: 0.25.13(typescript@5.4.5)
+      typedoc-plugin-extras:
+        specifier: ^3.0.0
+        version: 3.0.0(typedoc@0.25.13(typescript@5.4.5))
+      typedoc-plugin-inline-sources:
+        specifier: ^1.0.2
+        version: 1.0.2(typedoc@0.25.13(typescript@5.4.5))
+      typedoc-plugin-mdn-links:
+        specifier: ^3.1.23
+        version: 3.1.23(typedoc@0.25.13(typescript@5.4.5))
+      typedoc-plugin-missing-exports:
+        specifier: ^2.2.0
+        version: 2.2.0(typedoc@0.25.13(typescript@5.4.5))
+      typedoc-plugin-rename-defaults:
+        specifier: ^0.7.0
+        version: 0.7.0(typedoc@0.25.13(typescript@5.4.5))
+      typedoc-plugin-zod:
+        specifier: ^1.1.2
+        version: 1.1.2(typedoc@0.25.13(typescript@5.4.5))
 
   examples/express:
     dependencies:

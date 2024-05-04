@@ -1,12 +1,17 @@
 {
   "name": "react18-loaders",
-  "version": "0.0.0",
+  "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
   "private": false,
+  "version": "0.0.0",
+  "description": "A comprehensive library that unleashes the full potential of React 18 server components, providing customizable loading animation components alongside a fullscreen loader container. Designed to seamlessly integrate with React and Next.js.",
   "license": "MPL-2.0",
-  "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "repository": "github:react18-tools/turborepo-template",
+  "bugs": "https://github.com/react18-tools/turborepo-template/issues",
+  "homepage": "https://turborepo-template-three.vercel.app/",
+  "sideEffects": false,
   "files": [
     "dist/**"
   ],
@@ -48,5 +53,44 @@
   },
   "dependencies": {
     "r18gs": "^1.0.2"
-  }
+  },
+  "peerDependencies": {
+    "@types/react": "16.8 - 19",
+    "next": "10 - 14",
+    "react": "16.8 - 19"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/mayank1513"
+    },
+    {
+      "type": "individual",
+      "url": "https://pages.razorpay.com/mayank1513"
+    }
+  ],
+  "keywords": [
+    "React",
+    "React 18",
+    "React 19",
+    "Next.js",
+    "Next.js 14",
+    "Loading animations",
+    "Fullscreen loader",
+    "React server components",
+    "Customizable",
+    "Cutting-edge",
+    "Compatibility",
+    "Frontend development",
+    "UI components",
+    "Web development",
+    "Progressive",
+    "Modern",
+    "Seamless integration"
+  ]
 }

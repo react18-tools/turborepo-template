@@ -11,6 +11,7 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
     "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
     "Courier New", monospace;
+  --tile-border: conic-gradient(#f008, #f004, #f003, #f002, #f001, #f001, #f001);
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
@@ -35,7 +36,6 @@
   --callout-border-rgb: 108, 108, 108;
   --card-rgb: 100, 100, 100;
   --card-border-rgb: 200, 200, 200;
-  --tile-border: conic-gradient(#f008, #f004, #f003, #f002, #f001, #f001, #f001);
 }
 
 /* light themes */
@@ -43,7 +43,7 @@
 .light,
 .light ~ * {
   --bg-color: #fff;
-  --text-color: #a34c40;
+  --text-color: #534c40;
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #b916ff83 0deg,
@@ -52,7 +52,6 @@
     #ff006683 160deg
   );
   --secondary-glow: radial-gradient(#aaf5, #f0f0, #f0f0);
-  --tile-border: conic-gradient(#aaf8, #aaf4, #aaf3, #aaf2, #aaf1, #aaf1, #aaf1);
 }
 
 html {

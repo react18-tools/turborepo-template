@@ -6,6 +6,6 @@ describe.concurrent("cards", () => {
   afterEach(cleanup);
 
   test("check if renders without errors", ({ expect }) => {
-    render(<Cards />);
+    render(<Cards cards={[]} />);
   });
 });

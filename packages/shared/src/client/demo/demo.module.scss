@@ -1,0 +1,29 @@
+.demo {
+  width: var(--max-width);
+  max-width: 95vw;
+  display: flex;
+  margin: auto;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 8px -2px var(--text-color);
+  & > * {
+    flex-grow: 1;
+  }
+}
+
+.preview {
+  padding: 10px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.code {
+  font-family: var(--font-mono);
+}

@@ -41,7 +41,7 @@ export function LandingPage({ title, children }: LandingPageProps) {
         <h2>
           <i>Craft your next amazing library using</i>
         </h2>
-        <Logo />
+        <Logo href="https://github.com/react18-tools/turborepo-template/" />
         <p>
           <strong>
             <i>Harness the full potential of React 18 Server Components!</i>

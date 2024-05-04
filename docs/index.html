@@ -1,0 +1,140 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>React18 Loaders</title><meta name="description" content="Documentation for React18 Loaders"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">React18 Loaders</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h2>React18 Loaders</h2></div><div class="tsd-panel tsd-typography"><a id="md:turborepo-template" class="tsd-anchor"></a><h1><a href="#md:turborepo-template">Turborepo Template</a></h1><p><a href="https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml"><img src="https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml/badge.svg" alt="test"></a> <a href="https://codeclimate.com/github/react18-tools/turborepo-template/maintainability"><img src="https://api.codeclimate.com/v1/badges/aa896ec14c570f3bb274/maintainability" alt="Maintainability"></a> <a href="https://codecov.io/gh/react18-tools/turborepo-template"><img src="https://codecov.io/gh/react18-tools/turborepo-template/graph/badge.svg" alt="codecov"></a> <a href="https://www.npmjs.com/package/@mayank1513/fork-me"><img src="https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green" alt="Version"></a> <a href="https://www.npmjs.com/package/@mayank1513/fork-me"><img src="https://img.jsdelivr.com/img.shields.io/npm/d18m/@mayank1513/fork-me.svg" alt="Downloads"></a> <img src="https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me" alt="npm bundle size"> <a href="https://gitpod.io/from-referrer/"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod" alt="Gitpod ready-to-code"></a></p>
+<blockquote>
+<p><a href="./FEATURED.md">Explore featured packages built with this template.</a></p>
+</blockquote>
+<blockquote>
+<p>Exciting news! We&#39;ve launched a new course to help you master this template: <a href="https://www.udemy.com/course/craft-next-gen-ui-libraries-for-react-18-and-nextjs-14/?referralCode=46B8C7845ECCEA99E0EF">Craft Next Gen UI Libraries for React 18 and Next.js 14</a></p>
+</blockquote>
+<a id="md:features" class="tsd-anchor"></a><h2><a href="#md:features">Features</a></h2><p>This template offers the following pre-configured features. Additionally, your repository will automatically be rebranded with the help of workflows and post-install scripts.</p>
+<p>✅ Monorepo powered by Turbo Repo for building, testing, and deploying your library</p>
+<p>✅ Examples with Next.js, Vite, and Remix to showcase how your library can be utilized (Note: Remix is optional due to instability in monorepo setup and folder imports)</p>
+<p>✅ Examples pre-configured for Light/Dark theme based on user preference</p>
+<p>✅ Examples ready to be deployed to Vercel</p>
+<p>✅ Typedoc setup for automatic documentation generation based on tsdoc comments</p>
+<p>✅ Code of Conduct and contributing files, ready for customization</p>
+<p>✅ Prettier and linter configured according to modern best practices (Feel free to add your flavor)</p>
+<p>✅ Recommended VSCode extensions - Prettier and <a href="https://github.com/mayank1513/vscode-extension-trello-kanban-board">Kanban board</a> for code formatting and project management directly within your IDE</p>
+<p>✅ Powerful code generators - try <code>yarn plop</code></p>
+<p>✅ Test setup with Vitest - A modern and fast testing framework supporting Jest-like APIs</p>
+<p>✅ Workflows to automate testing on every pull-request or code push event</p>
+<p>✅ Workflow to automatically publish and create GitHub releases when you update your library&#39;s <code>package.json</code> file.</p>
+<p>✅ Workflow to automatically rebrand the entire template based on your repository name. (Upon creating a repository from this template, a setup workflow is triggered to rename <code>@mayank1513/fork-me</code> to your repo name and perform other necessary fixes to get you up and running.)</p>
+<p>✅ Plus, this readme file includes a quick checklist for configuring Codecov and other badges, setting up your docs website on GitHub pages, and more. See <a href="#md:step-by-step-instructions-and-checklist">Checklist</a>.</p>
+<a id="md:create-a-library-that-is" class="tsd-anchor"></a><h4><a href="#md:create-a-library-that-is">Create a library that is</a></h4><p>✅ Fully Treeshakable (import from <code>@mayank1513/fork-me/client/component</code>)</p>
+<p>✅ Fully TypeScript Supported</p>
+<p>✅ Leverages the power of React 18 Server components</p>
+<p>✅ Compatible with all React 18 build systems/tools/frameworks</p>
+<p>✅ Documented with <a href="https://react18-tools.github.io/turborepo-template">Typedoc</a> (<a href="https://react18-tools.github.io/turborepo-template">Docs</a>)</p>
+<a id="md:introduction" class="tsd-anchor"></a><h2><a href="#md:introduction">Introduction</a></h2><p>This template is based on the official starter Turbo Repo but includes additional features tailored for creating and publishing JavaScript/TypeScript libraries, particularly for React 18.</p>
+<a id="md:getting-started" class="tsd-anchor"></a><h2><a href="#md:getting-started">Getting Started:</a></h2><p>Click on the <code>&quot;Use this template&quot;</code> button to customize it for your next JavaScript/TypeScript/React/Vue/Next.js library or project.</p>
+<a id="md:what39s-different" class="tsd-anchor"></a><h2><a href="#md:what39s-different">What&#39;s Different?</a></h2><p>Compared to the default scaffold from create-turbo, this template offers:</p>
+<ul>
+<li>Unit tests with <code>vitest</code></li>
+<li>Build setup with <code>tsup</code> and <code>esbuild-react18-useclient</code> that supports React Server components out of the box</li>
+<li><strong>Automatic file generation</strong><ul>
+<li>Simply run <code>yarn plop</code> and follow the prompts to auto-generate your new component with test files and dependency linking, adhering to best practices automatically</li>
+</ul>
+</li>
+<li>GitHub actions/workflows to auto-publish your package when the version changes</li>
+<li>GitHub action/workflow + pre-install scripts to automatically rebrand your repo on creation</li>
+</ul>
+<a id="md:step-by-step-instructions-and-checklist" class="tsd-anchor"></a><h2><a href="#md:step-by-step-instructions-and-checklist">Step-by-Step Instructions and Checklist</a></h2><ul>
+<li><input disabled="" type="checkbox"> Star <a href="https://github.com/react18-tools/turborepo-template/">this repository</a> for easy access and to show your support</li>
+<li><input disabled="" type="checkbox"> Create a new GitHub repository using this template.<ul>
+<li><input disabled="" type="checkbox"> Click <code>Use this template</code> button at the top right -&gt; <code>Create a new repository</code></li>
+<li><input disabled="" type="checkbox"> Set your library name as the repository name (This template has automation workflows to customize your repo, assuming the repo name as the library name.)</li>
+<li><input disabled="" type="checkbox"> Click <code>Create repository</code> and wait for the setup workflow to finish rebranding your repo.</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> Install and set up Node.js and your IDE (VSCode recommended)</li>
+<li><input disabled="" type="checkbox"> Install the recommended VSCode extensions - <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a>, <a href="https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board">Trello Kanban</a></li>
+<li><input disabled="" type="checkbox"> Install dependencies using <code>pnpm</code><ul>
+<li><input disabled="" type="checkbox"> If <code>pnpm</code> is not installed, run <code>npm i -g pnpm@9.0.5</code> to install <code>pnpm</code>, then run <code>pnpm setup</code> to set up <code>pnpm</code> for global installations</li>
+<li><input disabled="" type="checkbox"> Run <code>pnpm i</code> to install dependencies; the <code>preinstall</code> script will automatically adjust workflows and create a commit</li>
+<li><input disabled="" type="checkbox"> Run <code>pnpm i -g turbo</code> to install <code>turbo</code> globally (Occasionally, due to TypeScript and Plop version conflicts, code generation requires global <code>turbo</code>).</li>
+<li><input disabled="" type="checkbox"> Run <code>turbo gen react-component</code>, and follow prompts to generate server or client components for your library<ul>
+<li><input disabled="" type="checkbox"> Use <code>snake-case</code> for your component name - it will be automatically converted to <code>PascalCase</code></li>
+<li><input disabled="" type="checkbox"> Your component and test files will be created in <code>**/src/client/</code> or <code>**/src/server/</code> directory, depending on whether you choose a <code>client</code> or <code>server</code> component</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> Run <code>node scope.js</code> from the root directory if you want to publish a</li>
+</ul>
+<p>scoped package.</p>
+<ul>
+<li><input disabled="" type="checkbox"> Assumption: Your npm username is the same as your GitHub account or organization username.</li>
+<li><input disabled="" type="checkbox"> Make sure <code>owner</code> is set to your &lt;npmjs.com&gt; username before running the above command.</li>
+<li><input disabled="" type="checkbox"> Set up <code>CodeCov</code><ul>
+<li><input disabled="" type="checkbox"> Visit Codecov and set up your repo</li>
+<li><input disabled="" type="checkbox"> Create <a href="https://github.com/react18-tools/turborepo-template/settings/secrets/actions">repository secret</a> for <code>CODECOV_TOKEN</code></li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> Set up <code>CodeClimate</code><ul>
+<li><input disabled="" type="checkbox"> Visit CodeClimate and set up your repo</li>
+<li><input disabled="" type="checkbox"> Create <a href="https://github.com/react18-tools/turborepo-template/settings/secrets/actions">repository secret</a> for <code>CC_TEST_REPORTER_ID</code></li>
+<li><input disabled="" type="checkbox"> Add <code>*.test.*</code> to ignore patterns on the website</li>
+<li><input disabled="" type="checkbox"> Update Code Climate badge</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> Add <code>NPM_AUTH_TOKEN</code> to repository secrets to automate package publishing<ul>
+<li><input disabled="" type="checkbox"> Log in to your <a href="https://www.npmjs.com/login"><code>npm</code> account</a> and create an automation token</li>
+<li><input disabled="" type="checkbox"> Create a new repository secret <code>NPM_AUTH_TOKEN</code></li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> Update description in <code>lib/@mayank1513/fork-me/package.json</code></li>
+<li><input disabled="" type="checkbox"> Update Repo Stats by visiting and setting up <a href="https://repobeats.axiom.co/">repobeats</a></li>
+<li><input disabled="" type="checkbox"> Create your library and update examples</li>
+<li><input disabled="" type="checkbox"> Update README</li>
+<li><input disabled="" type="checkbox"> Set up GitHub pages to deploy docs<ul>
+<li><input disabled="" type="checkbox"> Go to <a href="https://github.com/react18-tools/turborepo-template/settings/pages">repo settings</a> -&gt; pages (On the left panel); Select deploy from a branch; Then Select <code>main</code> and <code>/docs</code></li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> (Optional) Set up <a href="https://app.deepsource.com/login">Deepsource</a> for static code analysis</li>
+<li><input disabled="" type="checkbox"> Push your changes/Create PR and see your library being automatically tested and published</li>
+<li><input disabled="" type="checkbox"> Optionally deploy your examples to Vercel.</li>
+<li><input disabled="" type="checkbox"> Update sponsorship URLs.</li>
+<li><input disabled="" type="checkbox"> Feel free to star this template, contribute, and/or sponsor the <code>terbo-repo-template</code> project or my other open-source work</li>
+<li><input disabled="" type="checkbox"> You can also fork the <a href="https://github.com/react18-tools/turbo-repo-template/fork"><code>terbo-repo-template</code></a> and add your package to <code>packages/shared-ui/src/examples/featured.json</code><ul>
+<li><input disabled="" type="checkbox"> If approved, your package will be automatically added to FEATURED.md and also published on the home page of this repo.</li>
+</ul>
+</li>
+</ul>
+<a id="md:what39s-inside" class="tsd-anchor"></a><h2><a href="#md:what39s-inside">What&#39;s Inside?</a></h2><a id="md:utilities" class="tsd-anchor"></a><h3><a href="#md:utilities">Utilities</a></h3><p>This Turborepo template includes pre-configured tools:</p>
+<ul>
+<li><a href="https://www.typescriptlang.org/">TypeScript</a> for static type checking</li>
+<li><a href="https://eslint.org/">ESLint</a> for code linting</li>
+<li><a href="https://prettier.io">Prettier</a> for code formatting</li>
+<li>Plop-based code generator for scaffolding new components</li>
+<li>Automatic rebranding of this template to match your repo name</li>
+</ul>
+<a id="md:apps-and-packages" class="tsd-anchor"></a><h3><a href="#md:apps-and-packages">Apps and Packages</a></h3><p>This Turborepo includes the following packages/examples/libraries:</p>
+<ul>
+<li><code>nextjs</code>: a <a href="https://nextjs.org/">Next.js</a> app</li>
+<li><code>vite</code>: a <a href="https://vitest.dev">Vite.js</a> app</li>
+<li><code>fork-me</code>: a React component library shared by both <code>Next.js</code> and <code>Vite</code> examples</li>
+<li><code>eslint-config-custom</code>: ESLint configurations (includes <code>eslint-config-next</code> and <code>eslint-config-prettier</code>)</li>
+<li><code>tsconfig</code>: <code>tsconfig.json</code> files used throughout the monorepo</li>
+</ul>
+<p>Each package/example is 100% <a href="https://www.typescriptlang.org/">TypeScript</a>.</p>
+<a id="md:build" class="tsd-anchor"></a><h3><a href="#md:build">Build</a></h3><p>To build all apps and packages, run the following command:</p>
+<pre><code><span class="hl-0">cd</span><span class="hl-1"> </span><span class="hl-0">my</span><span class="hl-1">-</span><span class="hl-0">turborepo</span><br/><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-0">build</span>
+</code><button>Copy</button></pre>
+<a id="md:develop" class="tsd-anchor"></a><h3><a href="#md:develop">Develop</a></h3><p>To develop all apps and packages, run the following command:</p>
+<pre><code><span class="hl-0">cd</span><span class="hl-1"> </span><span class="hl-0">my</span><span class="hl-1">-</span><span class="hl-0">turborepo</span><br/><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-0">dev</span>
+</code><button>Copy</button></pre>
+<a id="md:useful-links" class="tsd-anchor"></a><h2><a href="#md:useful-links">Useful Links</a></h2><p>Learn more about the power of Turborepo:</p>
+<ul>
+<li><a href="https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks">Tasks</a></li>
+<li><a href="https://turbo.build/repo/docs/core-concepts/caching">Caching</a></li>
+<li><a href="https://turbo.build/repo/docs/core-concepts/remote-caching">Remote Caching</a></li>
+<li><a href="https://turbo.build/repo/docs/core-concepts/monorepos/filtering">Filtering</a></li>
+<li><a href="https://turbo.build/repo/docs/reference/configuration">Configuration Options</a></li>
+<li><a href="https://turbo.build/repo/docs/reference/command-line-reference">CLI Usage</a></li>
+</ul>
+<a id="md:🤩-don39t-forget-to-star-this-repository" class="tsd-anchor"></a><h3><a href="#md:🤩-don39t-forget-to-star-this-repository">🤩 Don&#39;t forget to star <a href="https://github.com/mayank1513/turborepo-template">this repository</a>!</a></h3><p>Looking for a hands-on course to get started with Turborepo? Check out <a href="https://mayank-chaudhari.vercel.app/courses/react-and-next-js-with-typescript">React and Next.js with TypeScript</a> and <a href="https://www.udemy.com/course/game-of-chess-with-nextjs-react-and-typescript/?referralCode=851A28F10B254A8523FE">The Game of Chess with Next.js, React, and TypeScript</a></p>
+<p><img src="https://repobeats.axiom.co/api/embed/2ef1a24385037998386148afe5a98ded6006f410.svg" alt="Repo Stats" title="Repobeats analytics image"></p>
+<a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p>Licensed under the MIT open-source license.</p>
+<hr />
+
+<p align="center" style="text-align:center">with 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a></p></div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-index-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><h4 class="uppercase">Member Visibility</h4><form><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></form></div><div class="tsd-theme-toggle"><h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#md:turborepo-template"><span>Turborepo <wbr/>Template</span></a><ul><li><a href="#md:features"><span>Features</span></a></li><li><ul><li><ul><li><a href="#md:create-a-library-that-is"><span>Create a library that is</span></a></li></ul></li></ul></li><li><a href="#md:introduction"><span>Introduction</span></a></li><li><a href="#md:getting-started"><span>Getting <wbr/>Started:</span></a></li><li><a href="#md:what39s-different"><span>What&#39;s <wbr/>Different?</span></a></li><li><a href="#md:step-by-step-instructions-and-checklist"><span>Step-<wbr/>by-<wbr/>Step <wbr/>Instructions and <wbr/>Checklist</span></a></li><li><a href="#md:what39s-inside"><span>What&#39;s <wbr/>Inside?</span></a></li><li><ul><li><a href="#md:utilities"><span>Utilities</span></a></li><li><a href="#md:apps-and-packages"><span>Apps and <wbr/>Packages</span></a></li><li><a href="#md:build"><span>Build</span></a></li><li><a href="#md:develop"><span>Develop</span></a></li></ul></li><li><a href="#md:useful-links"><span>Useful <wbr/>Links</span></a></li><li><ul><li><a href="#md:🤩-don39t-forget-to-star-this-repository"><span>🤩 <wbr/>Don&#39;t forget to star this repository!</span></a></li></ul></li><li><a href="#md:license"><span>License</span></a></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="index.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="assets/icons.svg#icon-1"></use></svg><span>React18 Loaders</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>

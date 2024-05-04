@@ -16,7 +16,7 @@ const cards = [
     description: "Check out the official documentation for more information.",
   },
   {
-    href: "https://github.com/react18-tools/turborepo-template",
+    href: "https://github.com/react18-tools/turborepo-template/tree/main/examples",
     title: "More Examples",
     description:
       "Check out more examples on the official GitHub Repo. Feel free to suggest additional examples in the discussions section.",

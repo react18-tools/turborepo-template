@@ -53,3 +53,31 @@
   font-size: 3rem;
   text-shadow: none;
 }
+
+.featured {
+  margin: auto;
+  margin-bottom: 3rem;
+  width: calc(var(--max-width) + 3rem);
+  max-width: 95vw;
+  box-shadow: 0 0 8px -2px var(--text-color);
+  text-align: center;
+  border-radius: 20px;
+  padding: 1rem 0;
+  hr {
+    margin: 0 3rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 8px var(--text-color);
+  }
+  & > div {
+    width: auto;
+    max-height: calc(100vh - 300px);
+    overflow: auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .featured > div {
+    padding: 20px 4rem;
+  }
+}

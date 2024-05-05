@@ -5,6 +5,7 @@ const packageJSON = require("../lib/package.json");
 
 const rootDir = process.cwd();
 const oldPkgName = packageJSON.name;
+const [oldOwner, oldRepo] = packageJSON.repository.split(":")[1].split("/");
 
 const { packageName, owner, repo } = rebrandConfig;
 
@@ -30,7 +31,7 @@ fs.writeFileSync(
 const updatePkgAndRemoveChangelogs = dir => {
   // update package.json for packages and examples
   const pkgPath = path.resolve(dir, "package.json");
-  const pkg = JSON.parse(fs.readFileSync(pkgPath));
+  const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"));
   if (pkg.dependencies?.[oldPkgName]) {
     pkg.dependencies[oldPkgName] = "latest";
     pkg.dependencies[packageJSON.name] = "workspace:*";
@@ -58,7 +59,19 @@ try {
 } catch {}
 
 // Update README
-fs.copyFileSync(path.resolve(rootDir, "lib", "README.md"), path.resolve(rootDir, "README.md"));
+let readme = fs.readFileSync(path.resolve(rootDir, "lib", "README.md"), "utf-8");
+readme = readme.replace(new RegExp(oldPkgName, "g"), packageName);
+readme = readme.replace(new RegExp(oldOwner, "g"), owner);
+readme = readme.replace(new RegExp(oldRepo, "g"), repo);
+readme = readme.replace(
+  new RegExp(oldPkgName.replace("-", " "), "ig"),
+  packageName
+    .split("-")
+    .map(w => w[0].toUpperCase() + w.slice(1))
+    .join(" "),
+);
+readme = readme.replace(/> This package also.*[^\n]/, "");
+fs.writeFileSync(path.resolve(rootDir, "README.md"), readme);
 
 const rootPackageJSON = require("../package.json");
 delete rootPackageJSON.scripts.postinstall;

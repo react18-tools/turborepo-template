@@ -122,7 +122,7 @@ Learn more about the power of Turborepo:
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
 
-### 🤩 Don't forget to star [this repository](https://github.com/mayank1513/turborepo-template)!
+### 🤩 Don't forget to star [this repository](https://github.com/react18-tools/turborepo-template)!
 
 Looking for a hands-on course to get started with Turborepo? Check out [React and Next.js with TypeScript](https://mayank-chaudhari.vercel.app/courses/react-and-next-js-with-typescript) and [The Game of Chess with Next.js, React, and TypeScript](https://www.udemy.com/course/game-of-chess-with-nextjs-react-and-typescript/?referralCode=851A28F10B254A8523FE)
 
@@ -130,7 +130,9 @@ Looking for a hands-on course to get started with Turborepo? Check out [React an
 
 ## License
 
-Licensed under the MIT open-source license.
+Licensed under the MPL-2.0 open-source license.
+
+> <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" style="height: 20px"/> Please consider enrolling in [our courses](https://mayank-chaudhari.vercel.app/courses) or (sponsoring)[https://github.com/sponsors/mayank1513] our work.
 
 <hr />
 

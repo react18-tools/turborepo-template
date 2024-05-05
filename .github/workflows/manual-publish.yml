@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  if: false # Work in progress
   publish:
+    if: false # Work in progress
     runs-on: ubuntu-latest
     permissions:
       contents: write

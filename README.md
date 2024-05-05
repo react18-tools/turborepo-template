@@ -1,6 +1,6 @@
-# Turborepo Template
+# Turborepo Template <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" style="height: 40px"/>
 
-[![test](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/aa896ec14c570f3bb274/maintainability)](https://codeclimate.com/github/react18-tools/turborepo-template/maintainability) [![codecov](https://codecov.io/gh/react18-tools/turborepo-template/graph/badge.svg)](https://codecov.io/gh/react18-tools/turborepo-template) [![Version](https://img.shields.io/npm/v/@mayank1513/fork-me.svg?colorB=green)](https://www.npmjs.com/package/@mayank1513/fork-me) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/@mayank1513/fork-me.svg)](https://www.npmjs.com/package/@mayank1513/fork-me) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@mayank1513/fork-me) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
+[![test](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/aa896ec14c570f3bb274/maintainability)](https://codeclimate.com/github/react18-tools/turborepo-template/maintainability) [![codecov](https://codecov.io/gh/react18-tools/turborepo-template/graph/badge.svg)](https://codecov.io/gh/react18-tools/turborepo-template) [![Version](https://img.shields.io/npm/v/react18-loaders.svg?colorB=green)](https://www.npmjs.com/package/react18-loaders) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/react18-loaders.svg)](https://www.npmjs.com/package/react18-loaders) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/react18-loaders) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
 > [Explore featured packages built with this template.](./FEATURED.md)
 
@@ -10,7 +10,7 @@
 
 This template offers the following pre-configured features. Additionally, your repository will automatically be rebranded with the help of workflows and post-install scripts.
 
-✅ Monorepo powered by Turbo Repo for building, testing, and deploying your library
+✅ Monorepo powered by Turborepo and GitHub actions for automating building, testing, and deploying your library
 
 ✅ Examples with Next.js, Vite, and Remix to showcase how your library can be utilized (Note: Remix is optional due to instability in monorepo setup and folder imports)
 
@@ -34,13 +34,13 @@ This template offers the following pre-configured features. Additionally, your r
 
 ✅ Workflow to automatically publish and create GitHub releases when you update your library's `package.json` file.
 
-✅ Workflow to automatically rebrand the entire template based on your repository name. (Upon creating a repository from this template, a setup workflow is triggered to rename `@mayank1513/fork-me` to your repo name and perform other necessary fixes to get you up and running.)
+✅ Workflow to automatically rebrand the entire template based on your repository name. (Refer [TODO.md](./TODO.md))
 
 ✅ Plus, this readme file includes a quick checklist for configuring Codecov and other badges, setting up your docs website on GitHub pages, and more. See [Checklist](./TODO.md).
 
-#### Create a library that is
+### Creates a library that is
 
-✅ Fully Treeshakable (import from `@mayank1513/fork-me/client/component`)
+✅ Fully Treeshakable (e.g., import {Bars1, Bars2} from `react18-loaders/dist/server/bars`)
 
 ✅ Fully TypeScript Supported
 
@@ -58,69 +58,16 @@ To get started, simply click on the `"Use this template"` button to create a new
 
 For detailed instructions and a checklist, please refer to [TODO.md](./TODO.md).
 
-## What's Different?
+## What's Different from Turborepo official templates?
 
 Compared to the default scaffold from create-turbo, this template offers:
 
 - Unit tests with `vitest`
-- Build setup with `tsup` and `esbuild-react18-useclient` that supports React Server components out of the box
+- Build setup with `tsup` and `esbuild-plugin-react18` that supports React Server components out of the box
 - **Automatic file generation**
   - Simply run `yarn plop` and follow the prompts to auto-generate your new component with test files and dependency linking, adhering to best practices automatically
 - GitHub actions/workflows to auto-publish your package when the version changes
 - GitHub action/workflow + pre-install scripts to automatically rebrand your repo on creation
-
-## What's Inside?
-
-### Utilities
-
-This Turborepo template includes pre-configured tools:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-- Plop-based code generator for scaffolding new components
-- Automatic rebranding of this template to match your repo name
-
-### Apps and Packages
-
-This Turborepo includes the following packages/examples/libraries:
-
-- `nextjs`: a [Next.js](https://nextjs.org/) app
-- `vite`: a [Vite.js](https://vitest.dev) app
-- `fork-me`: a React component library shared by both `Next.js` and `Vite` examples
-- `eslint-config-custom`: ESLint configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json` files used throughout the monorepo
-
-Each package/example is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
 
 ### 🤩 Don't forget to star [this repository](https://github.com/react18-tools/turborepo-template)!
 
@@ -132,7 +79,7 @@ Looking for a hands-on course to get started with Turborepo? Check out [React an
 
 Licensed under the MPL-2.0 open-source license.
 
-> <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" style="height: 20px"/> Please consider enrolling in [our courses](https://mayank-chaudhari.vercel.app/courses) or (sponsoring)[https://github.com/sponsors/mayank1513] our work.
+> <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" style="height: 20px"/> Please consider enrolling in [our courses](https://mayank-chaudhari.vercel.app/courses) or [sponsoring](https://github.com/sponsors/mayank1513) our work.
 
 <hr />
 

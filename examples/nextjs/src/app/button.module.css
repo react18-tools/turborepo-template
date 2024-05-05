@@ -1,0 +1,15 @@
+.btn {
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  padding: 15px 20px;
+  background: transparent;
+  border-radius: 10px;
+  color: var(--text-color);
+  box-shadow: -2px 2px 8px var(--text-color);
+}
+
+.btn:hover {
+  box-shadow: none;
+}

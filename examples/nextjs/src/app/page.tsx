@@ -13,6 +13,7 @@ export default function Store(): JSX.Element {
   return (
     <LandingPage title="Next.js Example">
       <Demo />
+      <MyButton />
     </LandingPage>
   );
 }

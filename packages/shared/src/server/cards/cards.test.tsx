@@ -5,7 +5,7 @@ import { Cards } from "./cards";
 describe.concurrent("cards", () => {
   afterEach(cleanup);
 
-  test("check if renders without errors", ({ expect }) => {
+  test("check if renders without errors", () => {
     render(<Cards cards={[]} />);
   });
 });

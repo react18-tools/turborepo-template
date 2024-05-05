@@ -1,7 +1,6 @@
 import * as React from "react";
-import styles from "./global-loader.module.scss";
 import { LoaderContainer } from "react18-loaders";
-import { Bars2 } from "react18-loaders/dist/server/bars/bars2";
+import { Bars1 } from "react18-loaders/dist/server/bars/bars1";
 
 /**
  * # GlobalLoader
@@ -21,7 +20,7 @@ import { Bars2 } from "react18-loaders/dist/server/bars/bars2";
 export function GlobalLoader() {
   return (
     <LoaderContainer>
-      <Bars2 />
+      <Bars1 color="red" />
     </LoaderContainer>
   );
 }

@@ -15,6 +15,7 @@ export default function ThemeSwitch() {
         setColorSchemePref("system");
         break;
       case "system":
+      default:
         setColorSchemePref("dark");
     }
   }, [colorSchemePref]);

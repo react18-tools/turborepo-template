@@ -46,7 +46,9 @@ const updatePkgAndRemoveChangelogs = dir => {
   // Delete old changelogs
   try {
     fs.unlinkSync(path.resolve(dir, "CHANGELOG.md"));
-  } catch {}
+  } catch {
+    /* empty */
+  }
 };
 
 ["examples", "packages"].forEach(dir => {
@@ -57,7 +59,9 @@ const updatePkgAndRemoveChangelogs = dir => {
 
 try {
   fs.unlinkSync(path.resolve(rootDir, "lib", "CHANGELOG.md"));
-} catch {}
+} catch {
+  /* empty */
+}
 
 // Update README
 const readme = fs

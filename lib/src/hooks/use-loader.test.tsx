@@ -1,4 +1,4 @@
-import { cleanup, render, renderHook, screen, act } from "@testing-library/react";
+import { cleanup, render, renderHook, act } from "@testing-library/react";
 import { afterEach, describe, test } from "vitest";
 import { LoaderContainer } from "../client";
 import { useLoader } from "./use-loader";

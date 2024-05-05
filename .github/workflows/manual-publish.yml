@@ -1,16 +1,11 @@
-name: Publish to NPM
+name: Manually publish to NPM - Apply changeset in the workflow.
 
 # publish only when package json has changed - assuming version upgrade
 on:
-  push:
-    branches: [main]
-    paths: "lib/package.json"
+  workflow_dispatch:
 
 jobs:
   publish:
-    # Don't run just after creating repo from template
-    # Also avoid running after merging set-up PR
-    if: github.run_number > 2 && github.event.repository.owner.login == 'react18-tools'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -34,8 +29,19 @@ jobs:
         # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
-      # - name: Copy Readme file
-      # run: cp ../README.md . # todo: uncomment this line while rebranding
+      - name: clean up working directory
+        run: git status && git clean -f -d && git status
+      - name: Apply changesets
+        run: yarn changeset version
+      - name: Setup Git and push back to the repo
+        run: | # todo - configure to run for branch for which it is triggered
+          git config --global user.name "mayank1513"
+          git config --global user.email "mayank.srmu@gmail.com"
+          git fetch
+          git checkout main
+          git add . && git commit -m "Apply changesets"
+      - name: Copy Readme file
+        # run: cp ../README.md . # todo: uncomment this line while rebranding
       - name: Create release and publish to NPM
         run: pnpm build && npm publish --provenance --access public
         env:

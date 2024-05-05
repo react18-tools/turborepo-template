@@ -57,17 +57,10 @@ try {
   fs.unlinkSync(path.resolve(rootDir, "lib", "CHANGELOG.md"));
 } catch {}
 
-if (!rebrandConfig.keepRebrandingScripts) {
-  const rootPackageJSON = require("../package.json");
-  delete rootPackageJSON.scripts.rebrand;
-  delete rootPackageJSON.scripts.postinstall;
-  try {
-    fs.writeFileSync(
-      path.resolve(rootDir, "package.json"),
-      JSON.stringify(rootPackageJSON, null, 2),
-    );
-    fs.unlinkSync(path.resolve(rootDir, "rebrand.js"));
-  } catch (e) {
-    console.error(e);
-  }
+const rootPackageJSON = require("../package.json");
+delete rootPackageJSON.scripts.postinstall;
+try {
+  fs.writeFileSync(path.resolve(rootDir, "package.json"), JSON.stringify(rootPackageJSON, null, 2));
+} catch (e) {
+  console.error(e);
 }

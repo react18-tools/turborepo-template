@@ -31,10 +31,10 @@ const updatePkgAndRemoveChangelogs = dir => {
   // update package.json for packages and examples
   const pkgPath = path.resolve(dir, "package.json");
   const pkg = JSON.parse(fs.readFileSync(pkgPath));
-  if (pkg.dependencies[oldPkgName]) {
+  if (pkg.dependencies?.[oldPkgName]) {
     pkg.dependencies[oldPkgName] = "latest";
     pkg.dependencies[packageJSON.name] = "workspace:*";
-  } else if (pkg.devDependencies[oldPkgName]) {
+  } else if (pkg.devDependencies?.[oldPkgName]) {
     pkg.devDependencies[oldPkgName] = "latest";
     pkg.dependencies[packageJSON.name] = "workspace:*";
   }
@@ -56,6 +56,9 @@ const updatePkgAndRemoveChangelogs = dir => {
 try {
   fs.unlinkSync(path.resolve(rootDir, "lib", "CHANGELOG.md"));
 } catch {}
+
+// Update README
+fs.copyFileSync(path.resolve(rootDir, "lib", "README.md"), path.resolve(rootDir, "README.md"));
 
 const rootPackageJSON = require("../package.json");
 delete rootPackageJSON.scripts.postinstall;

@@ -2,6 +2,7 @@ name: setup repo
 
 on:
   create:
+  workflow_dispatch:
 
 jobs:
   setup:

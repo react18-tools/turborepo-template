@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
+  if: false # Work in progress
   publish:
     runs-on: ubuntu-latest
     permissions:
@@ -40,8 +41,8 @@ jobs:
           git fetch
           git checkout main
           git add . && git commit -m "Apply changesets"
-      - name: Copy Readme file
         # run: cp ../README.md . # todo: uncomment this line while rebranding
+      # - name: Copy Readme file
       - name: Create release and publish to NPM
         run: pnpm build && npm publish --provenance --access public
         env:

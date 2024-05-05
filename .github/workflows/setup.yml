@@ -21,7 +21,9 @@ jobs:
           git fetch
           git checkout main
       - name: Set up repo
-        run: echo "{\"owner\" :${{ github.repository_owner }}}" > "scripts/rebrand.config.js"
+        run: |
+          sed -i -e "s/rebrand/postinstall/" package.json
+          echo "{\"owner\" :${{ github.repository_owner }}}" > "scripts/rebrand.config.js"
       - name: Push changes back to repo
         run: |
           git add .

@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./layout.module.scss";
 import { ForkMe } from "@mayank1513/fork-me/server";
+import { owner, repo } from "@repo/scripts/rebrand.config.json";
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -15,7 +16,7 @@ export function Layout({ children }: LayoutProps) {
     <div className={styles.container}>
       {children}
       <ForkMe
-        gitHubUrl="https://github.com/react18-tools/turborepo-template"
+        gitHubUrl={`https://github.com/${owner}/${repo}`}
         bgColor="var(--text-color)"
         textColor="var(--bg-color)"
       />

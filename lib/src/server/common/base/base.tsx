@@ -31,7 +31,7 @@ export function Base({
   ...props
 }: BaseProps & OtherProps) {
   const style = { ...props.style, width, height, "--c": color };
-  // @ts-ignore -- it is intensional
+  // @ts-expect-error -- it is intensional
   if (dotRadius) style["--r"] = dotRadius;
   const className = [props.className, loaderClass].filter(Boolean).join(" ");
   return <div {...props} className={className} style={style} />;

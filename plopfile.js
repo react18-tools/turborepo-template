@@ -77,7 +77,7 @@ function getNestedRouteActions(data) {
     nestedRouteActions.push({
       type: "add",
       path: `${data.pkgPath}/src/declaration.d.ts`,
-      template: `declare module "*.module.css";\ndeclare module "*.module.scss";\n`,
+      template: 'declare module "*.module.css";\ndeclare module "*.module.scss";\n',
     });
   }
 

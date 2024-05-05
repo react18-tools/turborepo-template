@@ -16,9 +16,9 @@ export function DrawerButton({ open, setOpen }: DrawerButtonProps) {
     <div
       className={[styles.drawerBtn, "mb", open ? styles.open : ""].join(" ")}
       onClick={() => setOpen(!open)}>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div />
+      <div />
+      <div />
     </div>
   );
 }

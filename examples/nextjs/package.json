@@ -8,7 +8,8 @@
     "dev": "next dev -p 3002",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "next telemetry disable"
   },
   "dependencies": {
     "@repo/logger": "workspace:*",

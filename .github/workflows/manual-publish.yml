@@ -36,7 +36,6 @@ jobs:
         id: oldv
         run: |
           v=$(node -p -e "require('./lib/package.json').version") 
-          echo $v
           echo "v=$v" >> $GITHUB_OUTPUT
       - name: Apply changesets
         run: pnpm changeset version
@@ -48,8 +47,8 @@ jobs:
         if: github.ref_name != github.event.repository.default_branch
         run: node ./scripts/should-publish.js
         env:
-          OLDV: ${{ steps.oldv.v }}
-          NEWV: ${{ steps.v.v }}
+          OLDV: ${{ steps.oldv.outputs }}
+          NEWV: ${{ steps.v.outputs.v }}
       # - name: Copy Readme file
       # run: cp ../README.md . # todo: uncomment this line while rebranding
       - name: Push the changes back to the branch

@@ -33,9 +33,9 @@ const isNotPatch = newMajor !== oldMajor && newMinor !== oldMinor;
 const pushCmd = `git add . && git commit -m "📃 Apply changesets and update CHANGELOG" && git push origin ${BRANCH}`;
 
 if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
+  exec(pushCmd);
   /** Create new release branch for every Major or Minor release */
   const releaseBranch = `release-${newMajor}.${newMinor}`;
-  exec(pushCmd);
   exec(`git checkout -b ${releaseBranch} && git push origin ${releaseBranch}`);
 } else if (isLatestRelease) {
   /** New version must be valid SEMVER version. No pre-release (beta/alpha etc.) */

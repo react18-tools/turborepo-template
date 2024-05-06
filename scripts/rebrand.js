@@ -99,6 +99,7 @@ fs.writeFileSync(todoPath, todo);
 
 // Update workflows
 const workflowsPath = path.resolve(rootDir, ".github", "workflows");
+/** Update publish and manual-publish workflows */
 const updatePublishFlow = name => {
   const publishWorkflowPath = path.resolve(workflowsPath, name);
   const publishWorkflow = fs

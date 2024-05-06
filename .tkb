@@ -60,6 +60,11 @@
       "id": "T1TbmRqXHguxnJv1g_Ot6",
       "description": "Explore GitHub codespace templates",
       "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "aCqTM5wgCQC3pY9TA7GtN": {
+      "id": "aCqTM5wgCQC3pY9TA7GtN",
+      "description": "Update r18-plugin to minify better - remove multiple jsx imports",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
   "columns": [
@@ -70,7 +75,8 @@
         "5Br6CU2MKWj0R40obK9Nm",
         "-DCBBAzTvSWMDb8whog60",
         "P92idHa6fbprwBOYEp5uu",
-        "T1TbmRqXHguxnJv1g_Ot6"
+        "T1TbmRqXHguxnJv1g_Ot6",
+        "aCqTM5wgCQC3pY9TA7GtN"
       ]
     },
     {

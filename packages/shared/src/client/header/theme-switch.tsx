@@ -4,6 +4,7 @@ import { ColorSwitch, useTheme } from "nextjs-themes";
 import styles from "./header.module.scss";
 import { useCallback } from "react";
 
+/** This is a wrapper around `nextjs-themes's ColorSwitch component to improve mobile view. */
 export default function ThemeSwitch() {
   const { colorSchemePref, setColorSchemePref } = useTheme();
   const toggle = useCallback(() => {

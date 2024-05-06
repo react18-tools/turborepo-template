@@ -3,6 +3,7 @@ import "./styles.css";
 import { Bars1, Bars2, Dots1, Dots2 } from "react18-loaders/dist/server";
 import { LoaderContainer, useLoader } from "react18-loaders";
 
+/** Vite App */
 function App(): JSX.Element {
   const { setLoading } = useLoader();
   return (

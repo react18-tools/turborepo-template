@@ -3,6 +3,7 @@ import express, { type Express } from "express";
 import morgan from "morgan";
 import cors from "cors";
 
+/** Create express server. */
 export const createServer = (): Express => {
   const app = express();
   app

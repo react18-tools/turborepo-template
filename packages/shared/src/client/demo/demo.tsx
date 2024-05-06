@@ -10,6 +10,8 @@ const code = `
  <Bars1 color="var(--text-color)"/>
 </div>
 `;
+
+/** React live demo */
 export function Demo() {
   return (
     <LiveProvider code={code} scope={{ Dots1, Dots2, Bars1, Bars2 }}>

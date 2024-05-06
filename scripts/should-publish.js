@@ -4,6 +4,8 @@
 const newV = process.env.v;
 const oldV = process.env.oldv;
 
+console.log({ oldV, newV });
+
 /** New version must be valid SEMVER version. No pre-release (beta/alpha etc.) */
 if (!/^\d+\.\d+.\d+$/.test(newV)) throw new Error("Invalid version");
 

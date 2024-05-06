@@ -49,27 +49,27 @@ jobs:
           NEWV: ${{ steps.v.outputs.v }}
       # - name: Copy Readme file
       # run: cp ../README.md . # todo: uncomment this line while rebranding
-      - name: Push the changes back to the branch
-        run: git add . && git commit -m "📃 Apply changesets and update CHANGELOG" && git push origin ${{ github.ref_name }}
-      - name: Create release and publish to NPM
-        run: pnpm build && npm publish --provenance --access public
-        working-directory: ./lib
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: Craete GitHub Release
-        if: github.ref_name == github.event.repository.default_branch
-        run: |
-          v=$(node -p -e "require('./package.json').version")
-          gh release create $v --generate-notes --latest -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release $v"
-        working-directory: ./lib
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Push the changes back to the branch
+      #   run: git add . && git commit -m "📃 Apply changesets and update CHANGELOG" && git push origin ${{ github.ref_name }}
+      # - name: Create release and publish to NPM
+      #   run: pnpm build && npm publish --provenance --access public
+      #   working-directory: ./lib
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      # - name: Craete GitHub Release
+      #   if: github.ref_name == github.event.repository.default_branch
+      #   run: |
+      #     v=$(node -p -e "require('./package.json').version")
+      #     gh release create $v --generate-notes --latest -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release $v"
+      #   working-directory: ./lib
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Craete GitHub Release Without setting latest if published from other branch
-        if: github.ref_name != github.event.repository.default_branch
-        run: |
-          v=$(node -p -e "require('./package.json').version")
-          gh release create $v --generate-notes -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release $v"
-        working-directory: ./lib
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Craete GitHub Release Without setting latest if published from other branch
+      #   if: github.ref_name != github.event.repository.default_branch
+      #   run: |
+      #     v=$(node -p -e "require('./package.json').version")
+      #     gh release create $v --generate-notes -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release $v"
+      #   working-directory: ./lib
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -79,6 +79,7 @@ const readme = fs
   )
   .replace(/> This package also.*[^\n]/, "");
 fs.writeFileSync(path.resolve(rootDir, "README.md"), readme);
+fs.writeFileSync(path.resolve(rootDir, "lib", "README.md"), readme);
 
 // Update TODO.md
 const todoPath = path.resolve(rootDir, "TODO.md");

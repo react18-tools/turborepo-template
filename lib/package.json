@@ -2,7 +2,7 @@
   "name": "react18-loaders",
   "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A comprehensive library that unleashes the full potential of React 18 server components, providing customizable loading animation components alongside a fullscreen loader container. Designed to seamlessly integrate with React and Next.js.",
   "license": "MPL-2.0",
   "main": "./dist/index.js",

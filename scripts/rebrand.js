@@ -79,6 +79,14 @@ const readme = fs
   .replace(/> This package also.*[^\n]/, "");
 fs.writeFileSync(path.resolve(rootDir, "README.md"), readme);
 
+// Update TODO.md
+const todoPath = path.resolve(rootDir, "TODO.md");
+const todo = fs
+  .readFileSync(todoPath, "utf-8")
+  .replace("[repo settings]", `[repo settings](https://github.com/${owner}/${repo}/settings/pages)`)
+  .replace("- [ ] Create a new GitHub repository", "- [x] Create a new GitHub repository");
+fs.writeFileSync(todoPath, todo);
+
 // Update workflows
 const workflowsPath = path.resolve(rootDir, ".github", "workflows");
 const publishWorkflowPath = path.resolve(workflowsPath, "publish.yml");

@@ -1,10 +1,10 @@
 "use client";
-import * as React from "react";
+import { Dispatch, SetStateAction } from "react";
 import styles from "./drawer-button.module.scss";
 
 interface DrawerButtonProps {
   open: boolean;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 /**

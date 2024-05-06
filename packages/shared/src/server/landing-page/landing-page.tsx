@@ -1,4 +1,4 @@
-import * as React from "react";
+import { ReactNode } from "react";
 import styles from "./landing-page.module.scss";
 import { Cards } from "../cards";
 import { Logo } from "../logo";
@@ -7,7 +7,7 @@ import rebrandingConfig from "@repo/scripts/rebrand.config.json";
 
 interface LandingPageProps {
   title: string;
-  children?: React.ReactNode;
+  children?: ReactNode;
 }
 
 const { owner, repo } = rebrandingConfig;

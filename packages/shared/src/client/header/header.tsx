@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import styles from "./header.module.scss";
 import ThemeSwitch from "./theme-switch";
 import { DrawerButton } from "../drawer-button";
@@ -12,7 +12,7 @@ import { Logo } from "../../server";
  * However, we want to reuse as much code as possible across different examples and also optimize for the best use of bleading edge features.
  */
 export function Header() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <header className={styles.header}>
       <div>

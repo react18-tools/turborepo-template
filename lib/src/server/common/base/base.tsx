@@ -1,7 +1,7 @@
-import * as React from "react";
+import { HTMLProps } from "react";
 
 /** Interface declaring the common properties of the loaders */
-export interface BaseProps extends React.HTMLProps<HTMLDivElement> {
+export interface BaseProps extends HTMLProps<HTMLDivElement> {
   /** width of the loader element in pixels or a string with a length unit. */
   width?: number | string;
   /** height of the loader element in pixels or a string with a length unit. */

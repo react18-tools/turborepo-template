@@ -1,11 +1,11 @@
-import * as React from "react";
+import { ReactNode } from "react";
 import styles from "./layout.module.scss";
 import { ForkMe } from "@mayank1513/fork-me/server";
 import config from "@repo/scripts/rebrand.config.json";
 
 const { owner, repo } = config;
 interface LayoutProps {
-  children?: React.ReactNode;
+  children?: ReactNode;
 }
 
 /**

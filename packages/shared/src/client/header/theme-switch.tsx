@@ -20,9 +20,9 @@ export default function ThemeSwitch() {
     }
   }, [colorSchemePref]);
   return (
-    <p className={styles.themeswitch} onClick={toggle} role="button">
+    <button className={styles.themeswitch} onClick={toggle}>
       <ColorSwitch />
       <span className="mb">{colorSchemePref}</span>
-    </p>
+    </button>
   );
 }

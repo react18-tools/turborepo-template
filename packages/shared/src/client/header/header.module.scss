@@ -39,6 +39,7 @@
 
 .author,
 .themeswitch {
+  all: unset;
   box-shadow: 0 1px 8px -5px var(--text-color);
   padding: 15px 20px;
   gap: 20px;

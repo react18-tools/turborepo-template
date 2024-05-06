@@ -10,7 +10,7 @@ $tr: 5px;
   cursor: pointer;
   * {
     height: 4px;
-    background: #dff;
+    background: var(--text-color);
     border-radius: 50%;
     border: 1px solid #5555;
   }

@@ -69,6 +69,7 @@ const readme = fs
   .replace(new RegExp(oldPkgName, "g"), packageName)
   .replace(new RegExp(oldOwner, "g"), owner)
   .replace(new RegExp(oldRepo, "g"), repo)
+  .replace(/\.\.\/popper.png/g, "./popper.png")
   .replace(
     new RegExp(oldPkgName.replace("-", " "), "ig"),
     packageName

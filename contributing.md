@@ -88,7 +88,7 @@ Explore more about TurboRepo and Next.js through the following links:
 
 > Quick tip: Remove all stale branches with `git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d`
 
-> <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" style="height: 20px"/> Consider enrolling in [our courses](https://mayank-chaudhari.vercel.app/courses) or [sponsoring](https://github.com/sponsors/mayank1513) our work.
+> <img src="./popper.png" style="height: 20px"/> Consider enrolling in [our courses](https://mayank-chaudhari.vercel.app/courses) or [sponsoring](https://github.com/sponsors/mayank1513) our work.
 
 <hr />
 

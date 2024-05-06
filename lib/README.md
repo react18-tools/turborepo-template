@@ -1,4 +1,4 @@
-# React18 Loaders <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" style="height: 40px"/>
+# React18 Loaders <img src="../popper.png" style="height: 40px"/>
 
 [![test](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml/badge.svg)](https://github.com/react18-tools/turborepo-template/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/aa896ec14c570f3bb274/maintainability)](https://codeclimate.com/github/react18-tools/turborepo-template/maintainability) [![codecov](https://codecov.io/gh/react18-tools/turborepo-template/graph/badge.svg)](https://codecov.io/gh/react18-tools/turborepo-template) [![Version](https://img.shields.io/npm/v/react18-loaders.svg?colorB=green)](https://www.npmjs.com/package/react18-loaders) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/react18-loaders.svg)](https://www.npmjs.com/package/react18-loaders) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/react18-loaders) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
@@ -16,7 +16,7 @@ React18 Loaders is a comprehensive library designed to unlock the full potential
 
 ✅ Examples for Next.js, Vite, and Remix
 
-> <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" style="height: 20px"/> Please consider starring [this repository](https://github.com/react18-tools/turborepo-template) and sharing it with your friends.
+> <img src="../popper.png" style="height: 20px"/> Please consider starring [this repository](https://github.com/react18-tools/turborepo-template) and sharing it with your friends.
 
 ## Getting Started
 
@@ -105,7 +105,7 @@ This library is licensed under the MPL-2.0 open-source license.
 
 > This package also serves as an example demonstrating how to build and publish a `React.js` library compatible with React Server Components.
 
-> <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" style="height: 20px"/> Please consider enrolling in [our courses](https://mayank-chaudhari.vercel.app/courses) or [sponsoring](https://github.com/sponsors/mayank1513) our work.
+> <img src="../popper.png" style="height: 20px"/> Please consider enrolling in [our courses](https://mayank-chaudhari.vercel.app/courses) or [sponsoring](https://github.com/sponsors/mayank1513) our work.
 
 <hr />
 

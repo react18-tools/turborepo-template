@@ -19,7 +19,7 @@ const OLD_VERSION = require("../lib/package.json").version;
 if (!isLatestRelease) {
   /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
   tag = BRANCH.split("-")[0];
-  exec(`pnpm changeset pre ${tag} && pnpm changeset version`);
+  exec(`pnpm changeset pre enter ${tag} && pnpm changeset version`);
 } else {
   /** Apply changeset */
   exec("pnpm changeset version");

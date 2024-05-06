@@ -32,13 +32,11 @@ jobs:
         run: | # todo - configure to run for branch for which it is triggered
           git config --global user.name "mayank1513"
           git config --global user.email "mayank.srmu@gmail.com"
-          git fetch
-          git checkout ${{ github.ref_name }}
       - name: Grab old package version
         id: oldv
         run: v=$(node -p -e "require('./lib/package.json').version") && echo "v=$v" >> $GITHUB_OUTPUT
       - name: Apply changesets
-        run: yarn changeset version
+        run: pnpm changeset version
       - name: Grab package version after applying changesets
         id: v
         run: v=$(node -p -e "require('./lib/package.json').version") && echo "v=$v" >> $GITHUB_OUTPUT
@@ -47,8 +45,8 @@ jobs:
         if: github.ref_name != github.event.repository.default_branch
         run: node ./scripts/should-publish.js
         env:
-          oldv: ${{ steps.oldv.v }}
-          v: ${{ steps.v.v }}
+          OLDV: ${{ steps.oldv.outputs.v }}
+          NEWV: ${{ steps.v.outputs.v }}
       # - name: Copy Readme file
       # run: cp ../README.md . # todo: uncomment this line while rebranding
       - name: Push the changes back to the branch
@@ -58,9 +56,6 @@ jobs:
         working-directory: ./lib
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OWNER: ${{ github.event.repository.owner.login }}
-          REPO: ${{ github.event.repository.name }}
       - name: Craete GitHub Release
         if: github.ref_name == github.event.repository.default_branch
         run: |

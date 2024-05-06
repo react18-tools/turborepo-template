@@ -86,6 +86,14 @@ const todoPath = path.resolve(rootDir, "TODO.md");
 const todo = fs
   .readFileSync(todoPath, "utf-8")
   .replace("[repo settings]", `[repo settings](https://github.com/${owner}/${repo}/settings/pages)`)
+  .replace(
+    "[repository secret]",
+    `[repository secret]((https://github.com/${owner}/${repo}/settings/secrets/actions))`,
+  )
+  .replace(
+    "[private vulnerability reporting]",
+    `[private vulnerability reporting](https://github.com/${owner}/${repo}/security)`,
+  )
   .replace("- [ ] Create a new GitHub repository", "- [x] Create a new GitHub repository");
 fs.writeFileSync(todoPath, todo);
 

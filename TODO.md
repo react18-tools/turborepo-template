@@ -13,12 +13,13 @@
 - [ ] Install dependencies using `pnpm`
   - Run `pnpm i` to install dependencies; the `rebrand` script will automatically rebrand the repo, adjust workflows, and create a commit
 - [ ] Run `yarn plop`, and follow prompts to generate server or client components for your library
+- [ ] 🌟 Enable [private vulnerability reporting]
 - [ ] Set up `CodeCov`
   - Visit Codecov and set up your repo
-  - Create [repository secret](https://github.com/react18-tools/turborepo-template/settings/secrets/actions) for `CODECOV_TOKEN`
+  - Create [repository secret] for `CODECOV_TOKEN`
 - [ ] Set up `CodeClimate`
   - Visit CodeClimate and set up your repo
-  - Create [repository secret](https://github.com/react18-tools/turborepo-template/settings/secrets/actions) for `CC_TEST_REPORTER_ID`
+  - Create [repository secret] for `CC_TEST_REPORTER_ID`
   - Add `*.test.*` to ignore patterns on the website
   - Update Code Climate badge
 - [ ] Add `NPM_AUTH_TOKEN` to repository secrets to automate package publishing
@@ -33,8 +34,8 @@
 - [ ] (Optional) Set up [Deepsource](https://app.deepsource.com/login) for static code analysis
 - [ ] Push your changes/Create PR and see your library being automatically tested and published
 - [ ] Optionally deploy your examples to Vercel.
-- [ ] Feel free to star this template, contribute, and/or sponsor the [`terbo-repo-template`](https://github.com/react18-tools/turbo-repo-template) project or my [other open-source work](https://github.com/sponsors/mayank1513)
-- [ ] You can also fork the [`terbo-repo-template`](https://github.com/react18-tools/turbo-repo-template/fork) and add your package to `scripts/featured.json`
+- [ ] Feel free to star this template, contribute, and/or sponsor the [`terborepo-template`](https://github.com/react18-tools/turborepo-template) project or my [other open-source work](https://github.com/sponsors/mayank1513)
+- [ ] You can also fork the [`terborepo-template`](https://github.com/react18-tools/turborepo-template/fork) and add your package to `scripts/featured.json`
   - If approved, your package will be automatically added to FEATURED.md and also published on the home page of this repo.
 
 <hr />

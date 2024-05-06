@@ -15,7 +15,7 @@ const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH;
 const isLatestRelease = BRANCH === DEFAULT_BRANCH || BRANCH.includes("release-");
 let tag = "latest";
 
-const OLD_VERSION = require("./lib/package.json").version;
+const OLD_VERSION = require("../lib/package.json").version;
 if (!isLatestRelease) {
   /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
   tag = BRANCH.split("-")[0];
@@ -23,7 +23,7 @@ if (!isLatestRelease) {
 }
 /** Apply changeset */
 exec("pnpm changeset version");
-const NEW_VERSION = require("./lib/package.json").version;
+const NEW_VERSION = require("../lib/package.json").version;
 
 const [newMajor, newMinor] = NEW_VERSION.split(".");
 const [oldMajor, oldMinor] = OLD_VERSION.split(".");

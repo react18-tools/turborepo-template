@@ -86,18 +86,32 @@ const todoPath = path.resolve(rootDir, "TODO.md");
 const todo = fs
   .readFileSync(todoPath, "utf-8")
   .replace("[repo settings]", `[repo settings](https://github.com/${owner}/${repo}/settings/pages)`)
+  .replace(
+    "[repository secret]",
+    `[repository secret]((https://github.com/${owner}/${repo}/settings/secrets/actions))`,
+  )
+  .replace(
+    "[private vulnerability reporting]",
+    `[private vulnerability reporting](https://github.com/${owner}/${repo}/security)`,
+  )
   .replace("- [ ] Create a new GitHub repository", "- [x] Create a new GitHub repository");
 fs.writeFileSync(todoPath, todo);
 
 // Update workflows
 const workflowsPath = path.resolve(rootDir, ".github", "workflows");
-const publishWorkflowPath = path.resolve(workflowsPath, "publish.yml");
-const publishWorkflow = fs
-  .readFileSync(publishWorkflowPath, "utf-8")
-  .replace("# - name", "- name")
-  .replace("# run", "  run")
-  .replace(oldOwner, owner);
-fs.writeFileSync(publishWorkflowPath, publishWorkflow);
+/** Update publish and manual-publish workflows */
+const updatePublishFlow = name => {
+  const publishWorkflowPath = path.resolve(workflowsPath, name);
+  const publishWorkflow = fs
+    .readFileSync(publishWorkflowPath, "utf-8")
+    .replace("# - name", "- name")
+    .replace("# run", "  run")
+    .replace(oldOwner, owner);
+  fs.writeFileSync(publishWorkflowPath, publishWorkflow);
+};
+
+updatePublishFlow("publish.yml");
+updatePublishFlow("manual-publish.yml");
 
 fs.unlinkSync(path.resolve(workflowsPath, "setup.yml"));
 

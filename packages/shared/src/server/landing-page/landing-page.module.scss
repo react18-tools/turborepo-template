@@ -41,6 +41,13 @@
   z-index: -1;
 }
 
+.hero {
+  h2,
+  strong {
+    font-style: italic;
+  }
+}
+
 .title {
   border-radius: var(--border-radius);
   background: linear-gradient(to right, #3b82f6, #ef4444);

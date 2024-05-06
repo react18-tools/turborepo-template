@@ -1,4 +1,3 @@
-import * as React from "react";
 import styles from "./dots2.module.scss";
 import { Base, BaseProps } from "../../common";
 

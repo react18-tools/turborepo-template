@@ -1,4 +1,3 @@
-import * as React from "react";
 import styles from "./logo.module.scss";
 import rebrandingConfig from "@repo/scripts/rebrand.config.json";
 

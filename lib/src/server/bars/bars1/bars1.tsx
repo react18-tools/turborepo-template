@@ -1,4 +1,3 @@
-import * as React from "react";
 import styles from "./bars1.module.scss";
 import { Base, BaseProps } from "../../common";
 

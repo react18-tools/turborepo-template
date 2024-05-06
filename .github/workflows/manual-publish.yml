@@ -32,13 +32,11 @@ jobs:
         run: | # todo - configure to run for branch for which it is triggered
           git config --global user.name "mayank1513"
           git config --global user.email "mayank.srmu@gmail.com"
-          git fetch
-          git checkout ${{ github.ref_name }}
       - name: Grab old package version
         id: oldv
         run: v=$(node -p -e "require('./lib/package.json').version") && echo "v=$v" >> $GITHUB_OUTPUT
       - name: Apply changesets
-        run: yarn changeset version
+        run: pnpm changeset version
       - name: Grab package version after applying changesets
         id: v
         run: v=$(node -p -e "require('./lib/package.json').version") && echo "v=$v" >> $GITHUB_OUTPUT

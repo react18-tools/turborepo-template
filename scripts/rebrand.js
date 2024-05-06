@@ -99,13 +99,18 @@ fs.writeFileSync(todoPath, todo);
 
 // Update workflows
 const workflowsPath = path.resolve(rootDir, ".github", "workflows");
-const publishWorkflowPath = path.resolve(workflowsPath, "publish.yml");
-const publishWorkflow = fs
-  .readFileSync(publishWorkflowPath, "utf-8")
-  .replace("# - name", "- name")
-  .replace("# run", "  run")
-  .replace(oldOwner, owner);
-fs.writeFileSync(publishWorkflowPath, publishWorkflow);
+const updatePublishFlow = name => {
+  const publishWorkflowPath = path.resolve(workflowsPath, name);
+  const publishWorkflow = fs
+    .readFileSync(publishWorkflowPath, "utf-8")
+    .replace("# - name", "- name")
+    .replace("# run", "  run")
+    .replace(oldOwner, owner);
+  fs.writeFileSync(publishWorkflowPath, publishWorkflow);
+};
+
+updatePublishFlow("publish.yml");
+updatePublishFlow("manual-publish.yml");
 
 fs.unlinkSync(path.resolve(workflowsPath, "setup.yml"));
 

@@ -1,0 +1,69 @@
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(0);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0px 2px 8px -1px #0000001a;
+  padding: 2px;
+  width: 180px;
+  span {
+    font-weight: 700;
+    font-family: var(--font-mono);
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    background: linear-gradient(to right, #3b82f6, #3b82f6, #ef4444, #ef4444);
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    animation: 4s txt infinite linear;
+  }
+  &::before,
+  &::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+  }
+  /* Conic Gradient Animation */
+  &::before {
+    animation: 3s rotate infinite linear;
+    width: 800%;
+    height: 800%;
+    background: var(--tile-border);
+  }
+
+  /* Inner Square */
+  &::after {
+    inset: 0;
+    padding: 1px;
+    border-radius: var(--border-radius);
+    background: var(--bg-color);
+    background-clip: content-box;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes txt {
+  from {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: -100% 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .logo {
+    width: 210px;
+  }
+}

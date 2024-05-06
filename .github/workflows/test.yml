@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm i -g pnpm && pnpm i
+      - run: npm i -g pnpm@9.0.5 && pnpm i
         name: Install dependencies
       - name: Run unit tests
         run: pnpm test
@@ -22,12 +22,11 @@ jobs:
         continue-on-error: true
         uses: codecov/codecov-action@v4
         with:
-          directory: ./lib/fork-me
+          directory: ./lib
           token: ${{ secrets.CODECOV_TOKEN }}
-          flags: fork-me
       - uses: paambaati/codeclimate-action@v5.0.0
         continue-on-error: true
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
-          coverageLocations: ./lib/fork-me/coverage/*.xml:clover
+          coverageLocations: ./lib/coverage/*.xml:clover

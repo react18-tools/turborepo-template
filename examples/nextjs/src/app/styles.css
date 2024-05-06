@@ -1,0 +1,13 @@
+@import "nextjs-themes/styles.css";
+@import "@repo/shared/dist/global.css";
+@import "@repo/shared/dist";
+@import "react18-loaders/dist";
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  tab-size: 4;
+}

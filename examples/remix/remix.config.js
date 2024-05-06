@@ -1,9 +1,9 @@
 /** @type {import('@remix-run/dev').AppConfig} */
-export default {
+module.exports = {
   ignoredRouteFiles: ["**/.*"],
-  serverDependenciesToBundle: ["@mayank1513/fork-me", "shared-ui"],
+  serverModuleFormat: "cjs",
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
-  // publicPath: "/build/",
   // serverBuildPath: "build/index.js",
+  // publicPath: "/build/",
 };

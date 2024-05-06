@@ -1,0 +1,86 @@
+@import "@mayank1513/fork-me/index.css";
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono",
+    "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
+    "Courier New", monospace;
+  --tile-border: conic-gradient(#f008, #f004, #f003, #f002, #f001, #f001, #f001);
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+
+/* dark themes */
+.dark,
+.dark ~ * {
+  --bg-color: #000;
+  --text-color: #9ca3af;
+  --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+  --secondary-glow: linear-gradient(
+    to bottom right,
+    rgba(1, 65, 255, 0),
+    rgba(1, 65, 255, 0),
+    rgba(1, 65, 255, 0.3)
+  );
+
+  --callout-rgb: 20, 20, 20;
+  --callout-border-rgb: 108, 108, 108;
+  --card-rgb: 100, 100, 100;
+  --card-border-rgb: 200, 200, 200;
+}
+
+/* light themes */
+
+.light,
+.light ~ * {
+  --bg-color: #fff;
+  --text-color: #534c40;
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #b916ff83 0deg,
+    #ff08bd53 55deg,
+    #ff54b583 120deg,
+    #ff006683 160deg
+  );
+  --secondary-glow: radial-gradient(#aaf5, #f0f0, #f0f0);
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+#root /** root element of vite */ {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// utils
+.grow {
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 800px) {
+  .mb {
+    display: none !important;
+  }
+}

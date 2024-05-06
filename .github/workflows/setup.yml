@@ -2,6 +2,7 @@ name: setup repo
 
 on:
   create:
+  workflow_dispatch:
 
 jobs:
   setup:
@@ -13,16 +14,21 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Setup Git and create PR
+      - name: Setup Git
         run: |
           git config --global user.name "Mayank Chaudhari<https://mayank-chaudhari.vercel.app>"
           git config --global user.email "mayank.srmu@gmail.com"
           git fetch
           git checkout main
       - name: Set up repo
-        run: chmod +x ./setup.sh && (sudo bash ./setup.sh ${{ github.event.repository.owner.login }} ${{ github.event.repository.name }} || ./setup.sh ${{ github.event.repository.owner.login }} ${{ github.event.repository.name }})
+        run: |
+          sed -i -e "s/rebrand/postinstall/" package.json
+          sed -i -e "s/.*owner.*/\t\"owner\": \"${{ github.repository_owner }}\",/" scripts/rebrand.config.js
+          sed -i -e "s/.*npm_user.*/\t\"npm_user\": \"${{ github.repository_owner }}\",/" scripts/rebrand.config.js
+          sed -i -e "s/.*repo.*/\t\"repo\": \"${{ github.event.repository.name }}\",/" scripts/rebrand.config.js
+          sed -i -e "s/.*packageName.*/\t\"packageName\": \"${{ github.event.repository.name }}\",/" scripts/rebrand.config.js
       - name: Push changes back to repo
         run: |
           git add .
-          git commit -m 'Rebrand 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]'
+          git commit -m 'Craete rebrand config 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]'
           git push origin main

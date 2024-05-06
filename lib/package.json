@@ -1,0 +1,88 @@
+{
+  "name": "react18-loaders",
+  "author": "Mayank Kumar Chaudhari <https://mayank-chaudhari.vercel.app>",
+  "private": false,
+  "version": "0.0.0",
+  "description": "A comprehensive library that unleashes the full potential of React 18 server components, providing customizable loading animation components alongside a fullscreen loader container. Designed to seamlessly integrate with React and Next.js.",
+  "license": "MPL-2.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "repository": "github:react18-tools/turborepo-template",
+  "bugs": "https://github.com/react18-tools/turborepo-template/issues",
+  "homepage": "https://turborepo-template-three.vercel.app/",
+  "sideEffects": false,
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup && tsc -p tsconfig-build.json",
+    "clean": "rm -rf dist",
+    "dev": "tsup --watch && tsc -p tsconfig-build.json -w",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/jest-presets": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@testing-library/react": "^15.0.6",
+    "@types/node": "^20.12.8",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.6.0",
+    "esbuild-plugin-react18": "^0.1.5",
+    "esbuild-plugin-react18-css": "^0.0.4",
+    "jsdom": "^24.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "r18gs": "^1.0.2"
+  },
+  "peerDependencies": {
+    "@types/react": "16.8 - 19",
+    "next": "10 - 14",
+    "react": "16.8 - 19"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/mayank1513"
+    },
+    {
+      "type": "individual",
+      "url": "https://pages.razorpay.com/mayank1513"
+    }
+  ],
+  "keywords": [
+    "Loading animations",
+    "Fullscreen loader",
+    "React",
+    "React 18",
+    "React 19",
+    "Next.js",
+    "Next.js 14",
+    "React server components",
+    "Customizable",
+    "Cutting-edge",
+    "Compatibility",
+    "Frontend development",
+    "UI components",
+    "Web development",
+    "Progressive",
+    "Modern",
+    "Seamless integration"
+  ]
+}

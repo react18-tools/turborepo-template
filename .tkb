@@ -14,40 +14,80 @@
     "5FPnfgSKUpHBbORBRtgui": {
       "id": "5FPnfgSKUpHBbORBRtgui",
       "description": "Optimise mobile view",
-      "columnId": "column-doing"
+      "columnId": "column-done"
     },
-    "MfiZXiLbzHnZ3GSE4SVe8": {
-      "id": "MfiZXiLbzHnZ3GSE4SVe8",
-      "description": "Update README - explain why we don't use sass. \n",
-      "columnId": "column-todo"
+    "iXE3kCY0L1r_4TD-zRgVh": {
+      "id": "iXE3kCY0L1r_4TD-zRgVh",
+      "description": "React Loaders\n- improve step by step --- incremental improvements\n- Purposes\n  - Provide a good demo - demonstrating the full potential of the setup\n  - Give learners opportunity to contribute to open source",
+      "columnId": "column-done"
     },
-    "3Jpxwcb60dUx093hDLZ6F": {
-      "id": "3Jpxwcb60dUx093hDLZ6F",
-      "description": "Add script to remove remix example and add sass \n- add keep-remix option",
-      "columnId": "column-todo"
+    "jxGpRnHuqpR8FMho_53Je": {
+      "id": "jxGpRnHuqpR8FMho_53Je",
+      "description": "Choose a name for the new library\n- react18-loaders",
+      "columnId": "column-done"
+    },
+    "W5ouBV1q2_FExuUzGV0aP": {
+      "id": "W5ouBV1q2_FExuUzGV0aP",
+      "description": "Update description\n",
+      "columnId": "column-done"
+    },
+    "rRkFSIcteEvuq6MRX2BN0": {
+      "id": "rRkFSIcteEvuq6MRX2BN0",
+      "description": "Create 2 - 3 loaders",
+      "columnId": "column-done"
+    },
+    "5Br6CU2MKWj0R40obK9Nm": {
+      "id": "5Br6CU2MKWj0R40obK9Nm",
+      "description": "ADD CRM form - e.g. to report code of conduct violations",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "P92idHa6fbprwBOYEp5uu": {
+      "id": "P92idHa6fbprwBOYEp5uu",
+      "description": "Add a issue - tag it as good-first-issue - create option for avoiding scss module file\n",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "mWXPi1Qzt9zNe6cKb8IZ3": {
+      "id": "mWXPi1Qzt9zNe6cKb8IZ3",
+      "description": "Update append pattern -- to avoid extra new lines in barrel files",
+      "columnId": "column-done"
+    },
+    "-DCBBAzTvSWMDb8whog60": {
+      "id": "-DCBBAzTvSWMDb8whog60",
+      "description": "Rebranding experience\n- lauch inquirer.js postinstall\n- rebrand based on options selected",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "T1TbmRqXHguxnJv1g_Ot6": {
+      "id": "T1TbmRqXHguxnJv1g_Ot6",
+      "description": "Explore GitHub codespace templates",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
   "columns": [
     {
-      "id": "column-todo",
-      "title": "To do",
+      "id": "column-rHWkySHomUOsd93fyS05p",
+      "title": "To do ",
       "tasksIds": [
-        "uUjYvxGR0oOu3Q1iJQler",
-        "MfiZXiLbzHnZ3GSE4SVe8",
-        "3Jpxwcb60dUx093hDLZ6F"
+        "5Br6CU2MKWj0R40obK9Nm",
+        "-DCBBAzTvSWMDb8whog60",
+        "P92idHa6fbprwBOYEp5uu",
+        "T1TbmRqXHguxnJv1g_Ot6"
       ]
     },
     {
       "id": "column-doing",
       "title": "Doing",
-      "tasksIds": [
-        "5FPnfgSKUpHBbORBRtgui"
-      ]
+      "tasksIds": []
     },
     {
       "id": "column-done",
       "title": "Done",
       "tasksIds": [
+        "5FPnfgSKUpHBbORBRtgui",
+        "iXE3kCY0L1r_4TD-zRgVh",
+        "rRkFSIcteEvuq6MRX2BN0",
+        "mWXPi1Qzt9zNe6cKb8IZ3",
+        "W5ouBV1q2_FExuUzGV0aP",
+        "jxGpRnHuqpR8FMho_53Je",
         "hnmDBbQK5q6-GX3eIdtUP"
       ]
     },
@@ -55,6 +95,13 @@
       "id": "column-S6UGsrZqn5uTUGxNq5qGJ",
       "title": "Will not do",
       "tasksIds": []
+    },
+    {
+      "id": "column-todo",
+      "title": "Archive",
+      "tasksIds": [
+        "uUjYvxGR0oOu3Q1iJQler"
+      ]
     }
   ]
 }

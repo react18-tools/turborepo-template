@@ -1,0 +1,37 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 32px;
+  aspect-ratio: 1;
+  --c: #000;
+  --dot-radius: 20%;
+  --_g: no-repeat radial-gradient(farthest-side, var(--c) 90%, #0000);
+  background: var(--_g), var(--_g), var(--_g), var(--_g);
+  background-size: calc(2 * var(--dot-radius)) calc(2 * var(--dot-radius));
+  animation: anim 1s infinite;
+}
+
+@keyframes anim {
+  0% {
+    background-position:
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%;
+  }
+  40%,
+  50% {
+    background-position:
+      100% 100%,
+      100% 0,
+      0 0,
+      0 100%;
+  }
+  90%,
+  100% {
+    background-position:
+      100% 100%,
+      0 100%,
+      0 0,
+      100% 0;
+  }
+}

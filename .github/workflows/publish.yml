@@ -4,7 +4,7 @@ name: Publish to NPM
 on:
   push:
     branches: [main]
-    paths: "lib/fork-me/package.json"
+    paths: "lib/package.json"
 
 jobs:
   publish:
@@ -18,7 +18,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./lib/fork-me
+        working-directory: ./lib
 
     steps:
       - uses: actions/checkout@v4
@@ -29,15 +29,23 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org
-      - run: npm i -g pnpm && pnpm i
+      - run: npm i -g pnpm@9.0.5 && pnpm i
         name: Install dependencies
         # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
+      # - name: Copy Readme file
+      # run: cp ../README.md . # will be uncommented while rebranding
       - name: Create release and publish to NPM
-        run: pnpm build && pnpm publish-package
+        run: pnpm build && npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.event.repository.owner.login }}
           REPO: ${{ github.event.repository.name }}
+      - name: Craete GitHub Release
+        run: |
+          v=$(node -p -e "require('./package.json').version")
+          gh release create $v --generate-notes --latest -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release $v"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

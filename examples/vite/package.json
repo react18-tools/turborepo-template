@@ -1,31 +1,29 @@
 {
-	"name": "vite-example",
-	"private": true,
-	"version": "0.0.6",
-	"type": "module",
-	"scripts": {
-		"dev": "vite --port 3001",
-		"build": "tsc && vite build",
-		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@mayank1513/fork-me": "workspace:*",
-		"nextjs-themes": "^3.1.1",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"shared-ui": "workspace:*"
-	},
-	"devDependencies": {
-		"@types/react": "^18.2.79",
-		"@types/react-dom": "^18.2.25",
-		"@typescript-eslint/eslint-plugin": "^7.7.0",
-		"@typescript-eslint/parser": "^7.7.0",
-		"@vitejs/plugin-react-swc": "^3.6.0",
-		"eslint": "^9.1.0",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"eslint-plugin-react-refresh": "^0.4.6",
-		"typescript": "^5.4.5",
-		"vite": "^5.2.10"
-	}
+  "name": "@example/vite",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "start": "vite serve",
+    "clean": "rm -rf dist",
+    "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@repo/shared": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react18-loaders": "workspace:*",
+    "react18-themes": "^3.1.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
 }

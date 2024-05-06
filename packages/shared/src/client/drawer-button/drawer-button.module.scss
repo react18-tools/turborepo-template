@@ -1,0 +1,42 @@
+$tr: 5px;
+.drawerBtn {
+  all: unset;
+  height: 32px;
+  width: 45px;
+  display: inline-flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  padding: 0 5px;
+  margin: 5px;
+  cursor: pointer;
+  * {
+    height: 4px;
+    background: var(--text-color);
+    border-radius: 50%;
+    border: 1px solid #5555;
+  }
+  :first-child,
+  :last-child {
+    transform: none;
+    margin: 0 7px;
+  }
+  :nth-child(2) {
+    opacity: 1;
+  }
+
+  &.open {
+    transform: rotate(-180deg);
+    * {
+      //   background: black;
+      &:first-child {
+        transform: rotate(45deg) translate($tr, $tr);
+      }
+      &:last-child {
+        transform: rotate(-45deg) translate($tr, -$tr);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+    }
+  }
+}

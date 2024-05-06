@@ -1,8 +1,13 @@
 {
-  "extends": "tsconfig/nextjs.json",
+  "exclude": ["node_modules"],
+  "extends": "@repo/typescript-config/nextjs.json",
   "compilerOptions": {
-    "plugins": [{ "name": "next" }]
+    "outDir": "dist",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src", "next.config.js", "next-env.d.ts", ".next/types/**/*.ts"]
 }

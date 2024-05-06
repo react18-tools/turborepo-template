@@ -1,0 +1,28 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: #000;
+  --b: no-repeat repeating-linear-gradient(90deg, var(--c) 0 calc(100% / 7), #0000 0 calc(200% / 7));
+  background: var(--b), var(--b), var(--b), var(--b);
+  background-size: 140% 26%;
+  animation: l27 0.75s infinite linear;
+}
+@keyframes l27 {
+  0%,
+  20% {
+    background-position:
+      0 calc(0 * 100% / 3),
+      100% calc(1 * 100% / 3),
+      0 calc(2 * 100% / 3),
+      100% calc(3 * 100% / 3);
+  }
+  80%,
+  100% {
+    background-position:
+      100% calc(0 * 100% / 3),
+      0 calc(1 * 100% / 3),
+      100% calc(2 * 100% / 3),
+      0 calc(3 * 100% / 3);
+  }
+}

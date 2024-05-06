@@ -30,7 +30,7 @@ const [oldMajor, oldMinor] = OLD_VERSION.split(".");
 
 const isNotPatch = newMajor !== oldMajor && newMinor !== oldMinor;
 
-const pushCmd = `git add . && git commit -m "📃 Apply changesets and update CHANGELOG" && git push origin ${BRANCH}`;
+const pushCmd = `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${BRANCH}`;
 
 if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   exec(pushCmd);

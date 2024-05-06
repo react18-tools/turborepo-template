@@ -65,6 +65,11 @@
       "id": "aCqTM5wgCQC3pY9TA7GtN",
       "description": "Update r18-plugin to minify better - remove multiple jsx imports",
       "columnId": "column-rHWkySHomUOsd93fyS05p"
+    },
+    "KOQ0LhYPWc6ydZDSbZMGe": {
+      "id": "KOQ0LhYPWc6ydZDSbZMGe",
+      "description": "Update manual workflow to craete new branch when published from a tag",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
   "columns": [
@@ -76,7 +81,8 @@
         "-DCBBAzTvSWMDb8whog60",
         "P92idHa6fbprwBOYEp5uu",
         "T1TbmRqXHguxnJv1g_Ot6",
-        "aCqTM5wgCQC3pY9TA7GtN"
+        "aCqTM5wgCQC3pY9TA7GtN",
+        "KOQ0LhYPWc6ydZDSbZMGe"
       ]
     },
     {

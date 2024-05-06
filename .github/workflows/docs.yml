@@ -40,5 +40,6 @@ jobs:
           git config --global user.email "mayank.srmu@gmail.com"
           git fetch
           git checkout main
+          git pull
       - name: Save upgraded packages back to repo
         run: git add . && git commit -m "upgrade deps && docs" && git push origin main

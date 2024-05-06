@@ -13,12 +13,12 @@ interface DrawerButtonProps {
  */
 export function DrawerButton({ open, setOpen }: DrawerButtonProps) {
   return (
-    <div
+    <button
       className={[styles.drawerBtn, "mb", open ? styles.open : ""].join(" ")}
       onClick={() => setOpen(!open)}>
       <div />
       <div />
       <div />
-    </div>
+    </button>
   );
 }

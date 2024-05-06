@@ -36,3 +36,7 @@
 - [ ] Feel free to star this template, contribute, and/or sponsor the [`terbo-repo-template`](https://github.com/react18-tools/turbo-repo-template) project or my [other open-source work](https://github.com/sponsors/mayank1513)
 - [ ] You can also fork the [`terbo-repo-template`](https://github.com/react18-tools/turbo-repo-template/fork) and add your package to `scripts/featured.json`
   - If approved, your package will be automatically added to FEATURED.md and also published on the home page of this repo.
+
+<hr />
+
+<p align="center" style="text-align:center">with 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a></p>

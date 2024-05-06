@@ -12,7 +12,15 @@ const { exec } = require("child_process");
 const BRANCH = process.env.BRANCH;
 const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH;
 
+const isLatestRelease = BRANCH === DEFAULT_BRANCH || BRANCH.includes("release-");
+let tag = "latest";
+
 const OLD_VERSION = require("./lib/package.json").version;
+if (!isLatestRelease) {
+  /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
+  tag = BRANCH.split("-")[0];
+  exec(`pnpm changeset pre ${tag}`);
+}
 /** Apply changeset */
 exec("pnpm changeset version");
 const NEW_VERSION = require("./lib/package.json").version;
@@ -21,11 +29,8 @@ const [newMajor, newMinor] = NEW_VERSION.split(".");
 const [oldMajor, oldMinor] = OLD_VERSION.split(".");
 
 const isNotPatch = newMajor !== oldMajor && newMinor !== oldMinor;
-const isLatestRelease = BRANCH.includes("release-");
 
 const pushCmd = `git add . && git commit -m "📃 Apply changesets and update CHANGELOG" && git push origin ${BRANCH}`;
-
-let tag = "latest";
 
 if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   /** Create new release branch for every Major or Minor release */
@@ -43,8 +48,6 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   exec(pushCmd);
 } else {
   exec(pushCmd);
-  /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
-  tag = BRANCH.split("-")[0];
 }
 
 /** Create release */

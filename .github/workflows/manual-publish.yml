@@ -24,8 +24,8 @@ jobs:
       - run: npm i -g pnpm@9.0.5 && pnpm i
         name: Install dependencies
         # fail and not publish if any of the unit tests are failing
-      # - name: Test
-      #   run: pnpm test
+      - name: Test
+        run: pnpm test
       - name: clean up working directory
         run: git status && git clean -f -d && git status
       - name: Setup Git and push back to the repo
@@ -34,9 +34,7 @@ jobs:
           git config --global user.email "mayank.srmu@gmail.com"
       - name: Grab old package version
         id: oldv
-        run: |
-          v=$(node -p -e "require('./lib/package.json').version") 
-          echo "v=$v" >> $GITHUB_OUTPUT
+        run: v=$(node -p -e "require('./lib/package.json').version") && echo "v=$v" >> $GITHUB_OUTPUT
       - name: Apply changesets
         run: pnpm changeset version
       - name: Grab package version after applying changesets

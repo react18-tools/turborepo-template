@@ -28,48 +28,16 @@ jobs:
         run: pnpm test
       - name: clean up working directory
         run: git status && git clean -f -d && git status
-      - name: Setup Git and push back to the repo
+      - name: Setup Git
         run: | # todo - configure to run for branch for which it is triggered
           git config --global user.name "mayank1513"
           git config --global user.email "mayank.srmu@gmail.com"
-      - name: Grab old package version
-        id: oldv
-        run: v=$(node -p -e "require('./lib/package.json').version") && echo "v=$v" >> $GITHUB_OUTPUT
-      - name: Apply changesets
-        run: pnpm changeset version
-      - name: Grab package version after applying changesets
-        id: v
-        run: v=$(node -p -e "require('./lib/package.json').version") && echo "v=$v" >> $GITHUB_OUTPUT
-      - name: Validate - allow only patch changes from release branches. Major and minor changes allowed only from main branch
-        # if: github.ref != format('refs/heads/{0}', github.event.repository.default_branch)
-        if: github.ref_name != github.event.repository.default_branch
-        run: node ./scripts/should-publish.js
-        env:
-          OLDV: ${{ steps.oldv.outputs.v }}
-          NEWV: ${{ steps.v.outputs.v }}
       # - name: Copy Readme file
       # run: cp ../README.md . # todo: uncomment this line while rebranding
-      - name: Push the changes back to the branch
-        run: git add . && git commit -m "📃 Apply changesets and update CHANGELOG" && git push origin ${{ github.ref_name }}
-      - name: Create release and publish to NPM
-        run: pnpm build && npm publish --provenance --access public
-        working-directory: ./lib
+      - name: Apply changesets and publish
+        run: node ./scripts/publish.js
         env:
+          BRANCH: ${{ github.ref_name }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: Craete GitHub Release
-        if: github.ref_name == github.event.repository.default_branch
-        run: |
-          v=$(node -p -e "require('./package.json').version")
-          gh release create $v --generate-notes --latest -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release $v"
-        working-directory: ./lib
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Craete GitHub Release Without setting latest if published from other branch
-        if: github.ref_name != github.event.repository.default_branch
-        run: |
-          v=$(node -p -e "require('./package.json').version")
-          gh release create $v --generate-notes -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release $v"
-        working-directory: ./lib
-        env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

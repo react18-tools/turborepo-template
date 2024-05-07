@@ -7,7 +7,7 @@ execSync(
   `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${process.env.BRANCH}`,
 );
 
-const LATEST_VERSION = process.env.LATEST_VERSION;
+const LATEST_VERSION = execSync("npm view react18-loaders version");
 const VERSION = require("../lib/package.json").version;
 
 console.log({ VERSION, LATEST_VERSION });

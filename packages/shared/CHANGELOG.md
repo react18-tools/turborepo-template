@@ -1,5 +1,14 @@
 # @repo/shared
 
+## 0.0.3-canary.0
+
+### Patch Changes
+
+- Updated dependencies [6ad42c8]
+- Updated dependencies [d80cde0]
+- Updated dependencies [b1f029b]
+  - react18-loaders@1.0.0-canary.0
+
 ## 0.0.2
 
 ### Patch Changes

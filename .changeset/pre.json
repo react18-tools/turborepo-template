@@ -1,0 +1,22 @@
+{
+  "mode": "pre",
+  "tag": "canary",
+  "initialVersions": {
+    "@example/express": "0.0.0",
+    "@example/nextjs": "0.0.0",
+    "@example/remix": "0.0.0",
+    "@example/vite": "0.0.0",
+    "react18-loaders": "0.0.2",
+    "@repo/eslint-config": "0.0.0",
+    "@repo/typescript-config": "0.0.0",
+    "@repo/jest-presets": "0.0.0",
+    "@repo/logger": "0.0.0",
+    "@repo/shared": "0.0.2",
+    "@repo/scripts": "0.0.0"
+  },
+  "changesets": [
+    "breezy-bobcats-sleep",
+    "healthy-laws-sing",
+    "popular-ravens-lick"
+  ]
+}

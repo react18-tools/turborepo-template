@@ -20,11 +20,14 @@ if (!isLatestRelease) {
   /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
   tag = BRANCH.split("-")[0];
   console.log({ tag });
-  execSync(`pnpm changeset pre enter ${tag} && pnpm changeset version`);
-} else {
-  /** Apply changeset */
-  execSync("pnpm changeset version");
+  try {
+    execSync(`pnpm changeset pre enter ${tag}`);
+  } catch (e) {
+    console.log({ e });
+  }
 }
+/** Apply changeset */
+execSync("pnpm changeset version");
 const NEW_VERSION = require("../lib/package.json").version;
 
 const [newMajor, newMinor] = NEW_VERSION.split(".");

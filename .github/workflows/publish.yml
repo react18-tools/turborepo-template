@@ -34,6 +34,8 @@ jobs:
         # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
+      - name: "Apply changesets if any -- e.g., coming from pre-release branches"
+        run: pnpm changeset pre exit && pnpm changeset version
       # - name: Copy Readme file
       # run: cp ../README.md . # will be uncommented while rebranding
       - name: Create release and publish to NPM

@@ -2,7 +2,10 @@
 const { execSync } = require("child_process");
 
 // Apply changesets if any -- e.g., coming from pre-release branches
-execSync("pnpm changeset pre exit && pnpm changeset version");
+try {
+  execSync("pnpm changeset pre exit");
+} catch {}
+execSync("pnpm changeset version");
 execSync(
   `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${process.env.BRANCH}`,
 );

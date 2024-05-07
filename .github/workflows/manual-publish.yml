@@ -24,10 +24,10 @@ jobs:
       - run: npm i -g pnpm@9.0.5 && pnpm i
         name: Install dependencies
         # fail and not publish if any of the unit tests are failing
-      # - name: Test
-      #   run: pnpm test
-      # - name: clean up working directory
-      #   run: git status && git clean -f -d && git status
+      - name: Test
+        run: pnpm test
+      - name: clean up working directory
+        run: git status && git clean -f -d && git status
       - name: Setup Git
         run: |
           git config --global user.name "mayank1513"

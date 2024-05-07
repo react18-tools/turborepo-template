@@ -29,6 +29,9 @@ if (!isLatestRelease) {
 execSync("pnpm changeset version");
 const NEW_VERSION = require("../lib/package.json").version;
 
+// exit pre mode -- to avoid collision with full releases
+execSync("pnpm changeset pre exit");
+
 const [newMajor, newMinor] = NEW_VERSION.split(".");
 const [oldMajor, oldMinor] = OLD_VERSION.split(".");
 

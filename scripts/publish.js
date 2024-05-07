@@ -48,7 +48,7 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   // Push changes back to the repo
   exec(pushCmd);
 } else {
-  console.log("push changes back to repo -> ", pushCmd);
+  console.log(pushCmd);
   exec("git status");
   exec(pushCmd);
 }
@@ -56,7 +56,6 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
 /** Create release */
 exec(`cd lib && pnpm build && npm publish --provenance --access public --tag ${tag}`);
 
-console.log("release");
 /** Create GitHub release */
 exec(
   `gh release create ${NEW_VERSION} --generate-notes${isLatestRelease ? " --latest" : ""} -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release ${NEW_VERSION}"`,

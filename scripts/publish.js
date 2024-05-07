@@ -49,6 +49,7 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   exec(pushCmd);
 } else {
   console.log("push changes back to repo -> ", pushCmd);
+  exec("git status");
   exec(pushCmd);
 }
 

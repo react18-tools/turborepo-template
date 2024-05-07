@@ -30,6 +30,10 @@ jobs:
         # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
+      - name: Setup Git
+        run: |
+          git config --global user.name "mayank1513"
+          git config --global user.email "mayank.srmu@gmail.com"
       # - name: Copy Readme file
       # run: cp ../README.md . # will be uncommented while rebranding
       - name: Apply changesets, publish and create release, branches and tags

@@ -19,7 +19,6 @@ const OLD_VERSION = require("../lib/package.json").version;
 if (!isLatestRelease) {
   /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
   tag = BRANCH.split("-")[0];
-  console.log({ tag });
   try {
     execSync(`pnpm changeset pre enter ${tag}`);
   } catch (e) {
@@ -29,10 +28,6 @@ if (!isLatestRelease) {
 /** Apply changeset */
 execSync("pnpm changeset version");
 const NEW_VERSION = require("../lib/package.json").version;
-
-try {
-  execSync(`pnpm changeset pre exit`);
-} catch {}
 
 const [newMajor, newMinor] = NEW_VERSION.split(".");
 const [oldMajor, oldMinor] = OLD_VERSION.split(".");
@@ -62,11 +57,7 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
 /** Create release */
 execSync(`cd lib && pnpm build && npm publish --provenance --access public --tag ${tag}`);
 
-console.log({ NEW_VERSION });
-
 /** Create GitHub release */
 execSync(
   `gh release create ${NEW_VERSION} --generate-notes${isLatestRelease ? " --latest" : ""} -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release v${NEW_VERSION}"`,
 );
-
-console.log("post", { OLD_VERSION, NEW_VERSION });

@@ -34,8 +34,8 @@ jobs:
           git config --global user.email "mayank.srmu@gmail.com"
       # - name: Copy Readme file
       # run: cp ../README.md . # todo: uncomment this line while rebranding
-      - name: Apply changesets and publish
-        run: node ./scripts/publish.js
+      - name: Apply changesets, publish and create release, branches and tags
+        run: node ./scripts/manual-publish.js
         env:
           BRANCH: ${{ github.ref_name }}
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}

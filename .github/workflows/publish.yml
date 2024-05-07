@@ -34,20 +34,14 @@ jobs:
         # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
-      - name: "Apply changesets if any -- e.g., coming from pre-release branches"
-        run: pnpm changeset pre exit && pnpm changeset version
       # - name: Copy Readme file
       # run: cp ../README.md . # will be uncommented while rebranding
-      - name: Create release and publish to NPM
-        run: pnpm build && npm publish --provenance --access public
+      - name: Apply changesets, publish and create release, branches and tags
+        run: node ./scripts/publish.js
         env:
+          LATEST_VERSION: ${{ npm view react18-loaders version }}
+          BRANCH: ${{ github.ref_name }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OWNER: ${{ github.event.repository.owner.login }}
-          REPO: ${{ github.event.repository.name }}
-      - name: Craete GitHub Release
-        run: |
-          v=$(node -p -e "require('./package.json').version")
-          gh release create $v --generate-notes --latest -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release $v"
-        env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,15 @@
 # react18-loaders
 
+## 1.0.0
+
+### Minor Changes
+
+- d80cde0: test minor
+
+### Patch Changes
+
+- 6ad42c8: test patch canary
+
 ## 1.0.0-canary.1
 
 ### Minor Changes

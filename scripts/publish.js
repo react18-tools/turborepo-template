@@ -48,7 +48,7 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   // Push changes back to the repo
   exec(pushCmd);
 } else {
-  console.log("push changes back to repo", pushCmd);
+  console.log("push changes back to repo -> ", pushCmd);
   exec(pushCmd);
 }
 

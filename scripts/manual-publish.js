@@ -37,7 +37,7 @@ try {
 const [newMajor, newMinor] = NEW_VERSION.split(".");
 const [oldMajor, oldMinor] = OLD_VERSION.split(".");
 
-const isNotPatch = newMajor !== oldMajor && newMinor !== oldMinor;
+const isNotPatch = newMajor !== oldMajor || newMinor !== oldMinor;
 
 const pushCmd = `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${BRANCH}`;
 

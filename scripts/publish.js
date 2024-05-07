@@ -22,9 +22,9 @@ console.log({ VERSION, LATEST_VERSION });
 const [newMajor, newMinor] = VERSION.split(".");
 const [oldMajor, oldMinor] = LATEST_VERSION.split(".");
 
-const isNotPatch = newMajor !== oldMajor && newMinor !== oldMinor;
+const isPatch = newMajor === oldMajor && newMinor === oldMinor;
 
-if (isNotPatch) {
+if (!isPatch) {
   /** Create new release branch for every Major or Minor release */
   const releaseBranch = `release-${newMajor}.${newMinor}`;
   execSync(`git checkout -b ${releaseBranch} && git push origin ${releaseBranch}`);

@@ -5,10 +5,14 @@ const { execSync } = require("child_process");
 try {
   execSync("pnpm changeset pre exit");
 } catch {}
-execSync("pnpm changeset version");
-execSync(
-  `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${process.env.BRANCH}`,
-);
+try {
+  execSync("pnpm changeset version");
+  execSync(
+    `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${process.env.BRANCH}`,
+  );
+} catch {
+  // no changesets to be applied
+}
 
 const LATEST_VERSION = execSync("npm view react18-loaders version").toString();
 const VERSION = require("../lib/package.json").version;

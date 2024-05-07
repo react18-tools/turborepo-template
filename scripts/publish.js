@@ -20,7 +20,7 @@ if (!isLatestRelease) {
   /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
   tag = BRANCH.split("-")[0];
   console.log({ tag });
-  exec(`pnpm changeset pre enter ${tag} && pnpm changeset version`);
+  exec(`pnpm changeset pre enter ${tag} && pnpm changeset version`, console.log);
 } else {
   /** Apply changeset */
   exec("pnpm changeset version");
@@ -49,17 +49,18 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   // Push changes back to the repo
   exec(pushCmd);
 } else {
-  exec(pushCmd);
+  exec(pushCmd, console.log);
 }
 
 /** Create release */
-exec(`cd lib && pnpm build && npm publish --provenance --access public --tag ${tag}`);
+exec(`cd lib && pnpm build && npm publish --provenance --access public --tag ${tag}`, console.log);
 
 console.log({ NEW_VERSION });
 
 /** Create GitHub release */
 exec(
   `gh release create ${NEW_VERSION} --generate-notes${isLatestRelease ? " --latest" : ""} -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release v${NEW_VERSION}"`,
+  console.log,
 );
 
-console.log("post", { NEW_VERSION });
+console.log("post", { OLD_VERSION, NEW_VERSION });

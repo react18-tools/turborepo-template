@@ -129,6 +129,12 @@ fs.writeFileSync(
   fs.readFileSync(docsWorkflowPath, "utf-8").replace(oldOwner, owner),
 );
 
+// Update SECURITY.md
+const secFile = path.resolve(rootDir, "SECURITY.md");
+fs.writeFileSync(
+  secFile,
+  fs.readFileSync(secFile, "utf-8").replace(`${oldOwner}/${oldRepo}`, `${owner}/${repo}`),
+);
 // clean up
 const rootPackageJSON = require("../package.json");
 const { exec } = require("child_process");

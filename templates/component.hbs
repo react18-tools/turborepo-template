@@ -1,7 +1,8 @@
-import { HTMLProps } from "react";
+import { HTMLProps, ReactNode } from "react";
 import styles from "./{{ kebabCase name }}.module.scss";
 
 interface {{ pascalCase name }}Props extends HTMLProps<HTMLDivElement> {
+	children: ReactNode;
 }
 
 /**

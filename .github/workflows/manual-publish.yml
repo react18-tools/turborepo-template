@@ -33,7 +33,7 @@ jobs:
           git config --global user.name "mayank1513"
           git config --global user.email "mayank.srmu@gmail.com"
       # - name: Copy Readme file
-      # run: cp ../README.md . # todo: uncomment this line while rebranding
+      # run: cp ./README.md ./lib # todo: uncomment this line while rebranding
       - name: Apply changesets, publish and create release, branches and tags
         run: node ./scripts/manual-publish.js
         env:

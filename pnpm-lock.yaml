@@ -255,7 +255,7 @@ importers:
     dependencies:
       next:
         specifier: 10 - 14
-        version: 14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.76.0)
+        version: 14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0)
       r18gs:
         specifier: ^1.0.2
         version: 1.0.2(@types/react@18.3.1)(react@18.3.1)
@@ -288,8 +288,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.12.11)(jsdom@24.0.0)(sass@1.77.0))
       esbuild-plugin-react18:
-        specifier: ^0.1.5
-        version: 0.1.5
+        specifier: ^0.1.6
+        version: 0.1.6(@types/react@18.3.1)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -421,8 +421,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.12.11)(jsdom@24.0.0)(sass@1.77.0))
       esbuild-plugin-react18:
-        specifier: ^0.1.5
-        version: 0.1.5
+        specifier: ^0.1.6
+        version: 0.1.6(@types/react@18.3.1)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -2914,8 +2914,15 @@ packages:
   esbuild-plugin-react18-css@0.0.4:
     resolution: {integrity: sha512-dg/6DB8c0ODubeahYa/4rWO5lk/Bn22lRD6n3+1ZFOvNU4d+Q/gGMiRq01ndrX7p70QYEnrjYmV8p59zrjTtIg==}
 
-  esbuild-plugin-react18@0.1.5:
-    resolution: {integrity: sha512-naueaYqB+DQ89yP19NNSEDSshXvmGFHZHet7gDxyLACAue50V2yHTds3nUkSP+xb75o1qmKeUGQdVFJig8x6LA==}
+  esbuild-plugin-react18@0.1.6:
+    resolution: {integrity: sha512-3le1Xs/oN4fNljcQWT6TlR336/8p6mkgheMZAcD1Rlbf59OyRxMd3FC0Gi69vY2DLPtgYOFZnCwaRrqkR0+aBw==}
+    peerDependencies:
+      '@types/react': 16.8 - 19
+      next: 10 - 14
+      react: 16.8 - 19
+    peerDependenciesMeta:
+      next:
+        optional: true
 
   esbuild-plugins-node-modules-polyfill@1.6.3:
     resolution: {integrity: sha512-nydQGT3RijD8mBd3Hek+2gSAxndgceZU9GIjYYiqU+7CE7veN8utTmupf0frcKpwIXCXWpRofL9CY9k0yU70CA==}
@@ -5647,11 +5654,6 @@ packages:
 
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
-
-  sass@1.76.0:
-    resolution: {integrity: sha512-nc3LeqvF2FNW5xGF1zxZifdW3ffIz5aBb7I7tSvOoNu7z1RQ6pFt9MBuiPtjgaI62YWrM/txjWlOCFiGtf2xpw==}
-    engines: {node: '>=14.0.0'}
-    hasBin: true
 
   sass@1.77.0:
     resolution: {integrity: sha512-eGj4HNfXqBWtSnvItNkn7B6icqH14i3CiCGbzMKs3BAPTq62pp9NBYsBgyN4cA+qssqo9r26lW4JSvlaUUWbgw==}
@@ -9656,7 +9658,12 @@ snapshots:
       postcss-modules: 6.0.0(postcss@8.4.38)
       sass: 1.77.0
 
-  esbuild-plugin-react18@0.1.5: {}
+  esbuild-plugin-react18@0.1.6(@types/react@18.3.1)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0))(react@18.3.1):
+    dependencies:
+      '@types/react': 18.3.1
+      react: 18.3.1
+    optionalDependencies:
+      next: 14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0)
 
   esbuild-plugins-node-modules-polyfill@1.6.3(esbuild@0.17.6):
     dependencies:
@@ -12386,32 +12393,6 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.76.0):
-    dependencies:
-      '@next/env': 14.2.3
-      '@swc/helpers': 0.5.5
-      busboy: 1.6.0
-      caniuse-lite: 1.0.30001616
-      graceful-fs: 4.2.11
-      postcss: 8.4.31
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      styled-jsx: 5.1.1(@babel/core@7.24.5)(react@18.3.1)
-    optionalDependencies:
-      '@next/swc-darwin-arm64': 14.2.3
-      '@next/swc-darwin-x64': 14.2.3
-      '@next/swc-linux-arm64-gnu': 14.2.3
-      '@next/swc-linux-arm64-musl': 14.2.3
-      '@next/swc-linux-x64-gnu': 14.2.3
-      '@next/swc-linux-x64-musl': 14.2.3
-      '@next/swc-win32-arm64-msvc': 14.2.3
-      '@next/swc-win32-ia32-msvc': 14.2.3
-      '@next/swc-win32-x64-msvc': 14.2.3
-      sass: 1.76.0
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
-
   next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0):
     dependencies:
       '@next/env': 14.2.3
@@ -13331,13 +13312,6 @@ snapshots:
       is-regex: 1.1.4
 
   safer-buffer@2.1.2: {}
-
-  sass@1.76.0:
-    dependencies:
-      chokidar: 3.6.0
-      immutable: 4.3.5
-      source-map-js: 1.2.0
-    optional: true
 
   sass@1.77.0:
     dependencies:

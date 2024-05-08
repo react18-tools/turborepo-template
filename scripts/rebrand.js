@@ -96,6 +96,15 @@ const todo = fs
   .replace("- [ ] Create a new GitHub repository", "- [x] Create a new GitHub repository");
 fs.writeFileSync(todoPath, todo);
 
+// Update Funding
+const fundingPath = path.resolve(rootDir, ".github", "FUNDING.yml");
+fs.writeFileSync(
+  fundingPath,
+  fs
+    .readFileSync(fundingPath, "utf-8")
+    .replace("github: [mayank1513]", `github: [${owner}, mayank1513]`),
+);
+
 // Update workflows
 const workflowsPath = path.resolve(rootDir, ".github", "workflows");
 /** Update publish and manual-publish workflows */

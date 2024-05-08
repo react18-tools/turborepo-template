@@ -8,6 +8,8 @@
 // throws an exception if process.env.oldv === process.env.v The library version is not up to date, error(" Not able to release to the same version.
 
 const { execSync } = require("child_process");
+const fs = require("fs");
+const path = require("path");
 
 const BRANCH = process.env.BRANCH;
 const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH;
@@ -27,12 +29,16 @@ if (!isLatestRelease) {
 }
 /** Apply changeset */
 execSync("pnpm changeset version");
-const NEW_VERSION = require("../lib/package.json").version;
 
 // exit pre mode -- to avoid collision with full releases
 try {
   execSync("pnpm changeset pre exit");
 } catch {}
+
+/** not requiring as require is cached by npm/node */
+const NEW_VERSION = JSON.parse(
+  fs.readFileSync(path.resolve(__dirname, "..", "lib", "package.json")),
+).version;
 
 const [newMajor, newMinor] = NEW_VERSION.split(".");
 const [oldMajor, oldMinor] = OLD_VERSION.split(".");

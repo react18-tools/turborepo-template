@@ -288,8 +288,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.12.11)(jsdom@24.0.0)(sass@1.77.0))
       esbuild-plugin-react18:
-        specifier: ^0.1.6
-        version: 0.1.6(@types/react@18.3.1)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0))(react@18.3.1)
+        specifier: 0.2.0-beta.0
+        version: 0.2.0-beta.0(@types/react@18.3.1)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -2919,6 +2919,16 @@ packages:
 
   esbuild-plugin-react18@0.1.6:
     resolution: {integrity: sha512-3le1Xs/oN4fNljcQWT6TlR336/8p6mkgheMZAcD1Rlbf59OyRxMd3FC0Gi69vY2DLPtgYOFZnCwaRrqkR0+aBw==}
+    peerDependencies:
+      '@types/react': 16.8 - 19
+      next: 10 - 14
+      react: 16.8 - 19
+    peerDependenciesMeta:
+      next:
+        optional: true
+
+  esbuild-plugin-react18@0.2.0-beta.0:
+    resolution: {integrity: sha512-Tcls3bNWRTrnHzz43BrcH7aT+hJbFgPu9rMv+sHhsYuYTIyKJoYh66Kefpfj1DWXjY97WwAhX/xNic3GjrIt/g==}
     peerDependencies:
       '@types/react': 16.8 - 19
       next: 10 - 14
@@ -8540,7 +8550,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.24.1(@babel/core@7.24.5)
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.5
       '@vanilla-extract/css': 1.15.1
-      esbuild: 0.17.6
+      esbuild: 0.19.12
       eval: 0.1.8
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -9662,6 +9672,13 @@ snapshots:
       sass: 1.77.0
 
   esbuild-plugin-react18@0.1.6(@types/react@18.3.1)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0))(react@18.3.1):
+    dependencies:
+      '@types/react': 18.3.1
+      react: 18.3.1
+    optionalDependencies:
+      next: 14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0)
+
+  esbuild-plugin-react18@0.2.0-beta.0(@types/react@18.3.1)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.0))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.1
       react: 18.3.1

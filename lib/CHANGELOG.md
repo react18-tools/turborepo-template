@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.0.1
+
+### Patch Changes
+
+- Upgrade esbuild-plugin-reacct18 to beta version for better minification
+
 ## 1.0.0
 
 ### Minor Changes

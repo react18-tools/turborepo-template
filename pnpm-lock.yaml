@@ -288,8 +288,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.12.12)(jsdom@24.0.0)(sass@1.77.1))
       esbuild-plugin-react18:
-        specifier: 0.2.0-beta.0
-        version: 0.2.0-beta.0(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1))(react@18.3.1)
+        specifier: 0.2.0
+        version: 0.2.0(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -424,8 +424,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.12.12)(jsdom@24.0.0)(sass@1.77.1))
       esbuild-plugin-react18:
-        specifier: ^0.1.6
-        version: 0.1.6(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1))(react@18.3.1)
+        specifier: ^0.2.0
+        version: 0.2.0(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -2917,18 +2917,8 @@ packages:
   esbuild-plugin-react18-css@0.0.4:
     resolution: {integrity: sha512-dg/6DB8c0ODubeahYa/4rWO5lk/Bn22lRD6n3+1ZFOvNU4d+Q/gGMiRq01ndrX7p70QYEnrjYmV8p59zrjTtIg==}
 
-  esbuild-plugin-react18@0.1.6:
-    resolution: {integrity: sha512-3le1Xs/oN4fNljcQWT6TlR336/8p6mkgheMZAcD1Rlbf59OyRxMd3FC0Gi69vY2DLPtgYOFZnCwaRrqkR0+aBw==}
-    peerDependencies:
-      '@types/react': 16.8 - 19
-      next: 10 - 14
-      react: 16.8 - 19
-    peerDependenciesMeta:
-      next:
-        optional: true
-
-  esbuild-plugin-react18@0.2.0-beta.0:
-    resolution: {integrity: sha512-Tcls3bNWRTrnHzz43BrcH7aT+hJbFgPu9rMv+sHhsYuYTIyKJoYh66Kefpfj1DWXjY97WwAhX/xNic3GjrIt/g==}
+  esbuild-plugin-react18@0.2.0:
+    resolution: {integrity: sha512-2KCbHi7cI3L2BADTgsmeBGW9qsVQtA6PNmydCLD9+Kag7+DbzQZgZstbo68XK/LomGDC5flPooT7GuQcxo8bSg==}
     peerDependencies:
       '@types/react': 16.8 - 19
       next: 10 - 14
@@ -6439,8 +6429,8 @@ packages:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
 
-  update-browserslist-db@1.0.15:
-    resolution: {integrity: sha512-K9HWH62x3/EalU1U6sjSZiylm9C8tgq2mSvshZpqc7QE69RaA2qjhkW2HlNA0tFpEbtyFz7HTqbSdN4MSwUodA==}
+  update-browserslist-db@1.0.16:
+    resolution: {integrity: sha512-KVbTxlBYlckhF5wgfyZXTWnMn7MMZjMu9XG8bPlliUOP9ThaF4QnhP8qrjrH7DRzHfSk0oQv1wToW+iA5GajEQ==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
@@ -9009,7 +8999,7 @@ snapshots:
       caniuse-lite: 1.0.30001618
       electron-to-chromium: 1.4.767
       node-releases: 2.0.14
-      update-browserslist-db: 1.0.15(browserslist@4.23.0)
+      update-browserslist-db: 1.0.16(browserslist@4.23.0)
 
   bs-logger@0.2.6:
     dependencies:
@@ -9666,14 +9656,7 @@ snapshots:
       postcss-modules: 6.0.0(postcss@8.4.38)
       sass: 1.77.1
 
-  esbuild-plugin-react18@0.1.6(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1))(react@18.3.1):
-    dependencies:
-      '@types/react': 18.3.2
-      react: 18.3.1
-    optionalDependencies:
-      next: 14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1)
-
-  esbuild-plugin-react18@0.2.0-beta.0(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1))(react@18.3.1):
+  esbuild-plugin-react18@0.2.0(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.1))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.2
       react: 18.3.1
@@ -14184,7 +14167,7 @@ snapshots:
 
   unpipe@1.0.0: {}
 
-  update-browserslist-db@1.0.15(browserslist@4.23.0):
+  update-browserslist-db@1.0.16(browserslist@4.23.0):
     dependencies:
       browserslist: 4.23.0
       escalade: 3.1.2

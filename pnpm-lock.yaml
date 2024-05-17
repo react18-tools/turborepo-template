@@ -6344,8 +6344,8 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  undici@6.16.1:
-    resolution: {integrity: sha512-NeNiTT7ixpeiL1qOIU/xTVpHpVP0svmI6PwoCKaMGaI5AsHOaRdwqU/f7Fi9eyU4u03nd5U/BC8wmRMnS9nqoA==}
+  undici@6.17.0:
+    resolution: {integrity: sha512-fs13QiDjPIzJ7gFAOal9CSG0c92rT2xw6MuMUJ4H30Eg5GCauLWYCCZA1tInjd6M4y+JZjVCCFr9pFpbhcC64w==}
     engines: {node: '>=18.17'}
 
   unified-engine@11.2.1:
@@ -7977,7 +7977,7 @@ snapshots:
       cookie-signature: 1.2.1
       source-map-support: 0.5.21
       stream-slice: 0.1.2
-      undici: 6.16.1
+      undici: 6.17.0
     optionalDependencies:
       typescript: 5.4.5
 
@@ -14033,7 +14033,7 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici@6.16.1: {}
+  undici@6.17.0: {}
 
   unified-engine@11.2.1:
     dependencies:

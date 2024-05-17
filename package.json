@@ -12,7 +12,7 @@
     "rebrand": "node scripts/rebrand.js"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
+    "@changesets/cli": "^2.27.2",
     "@repo/typescript-config": "workspace:*",
     "plop": "^4.0.1",
     "prettier": "^3.2.5",

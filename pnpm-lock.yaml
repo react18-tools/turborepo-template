@@ -288,8 +288,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.12.12)(jsdom@24.0.0)(sass@1.77.2))
       esbuild-plugin-react18:
-        specifier: 0.2.0
-        version: 0.2.0(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1)
+        specifier: 0.2.1
+        version: 0.2.1(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -424,8 +424,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.12.12)(jsdom@24.0.0)(sass@1.77.2))
       esbuild-plugin-react18:
-        specifier: ^0.2.0
-        version: 0.2.0(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1)
+        specifier: ^0.2.1
+        version: 0.2.1(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -2917,8 +2917,8 @@ packages:
   esbuild-plugin-react18-css@0.0.4:
     resolution: {integrity: sha512-dg/6DB8c0ODubeahYa/4rWO5lk/Bn22lRD6n3+1ZFOvNU4d+Q/gGMiRq01ndrX7p70QYEnrjYmV8p59zrjTtIg==}
 
-  esbuild-plugin-react18@0.2.0:
-    resolution: {integrity: sha512-2KCbHi7cI3L2BADTgsmeBGW9qsVQtA6PNmydCLD9+Kag7+DbzQZgZstbo68XK/LomGDC5flPooT7GuQcxo8bSg==}
+  esbuild-plugin-react18@0.2.1:
+    resolution: {integrity: sha512-Hu5qqhqNsZG7LxBnp1ynsul7Eqy4pYgvktzceTp+Oe0LmdL7dWv7fgmDuNgofhWaXUbxOuRxzd1G9vMslDnJxQ==}
     peerDependencies:
       '@types/react': 16.8 - 19
       next: 10 - 14
@@ -9656,7 +9656,7 @@ snapshots:
       postcss-modules: 6.0.0(postcss@8.4.38)
       sass: 1.77.2
 
-  esbuild-plugin-react18@0.2.0(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1):
+  esbuild-plugin-react18@0.2.1(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.2
       react: 18.3.1

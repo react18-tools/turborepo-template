@@ -14,8 +14,8 @@ try {
   // no changesets to be applied
 }
 
-const LATEST_VERSION = execSync("npm view react18-loaders version").toString();
-const VERSION = require("../lib/package.json").version;
+const { version: VERSION, name } = require("../lib/package.json");
+const LATEST_VERSION = execSync(`npm view ${name} version`).toString();
 
 console.log({ VERSION, LATEST_VERSION });
 

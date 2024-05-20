@@ -288,8 +288,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.12.12)(jsdom@24.0.0)(sass@1.77.2))
       esbuild-plugin-react18:
-        specifier: 0.2.1
-        version: 0.2.1(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1)
+        specifier: 0.2.2
+        version: 0.2.2(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -424,8 +424,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(@types/node@20.12.12)(jsdom@24.0.0)(sass@1.77.2))
       esbuild-plugin-react18:
-        specifier: ^0.2.1
-        version: 0.2.1(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1)
+        specifier: ^0.2.2
+        version: 0.2.2(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -2917,8 +2917,8 @@ packages:
   esbuild-plugin-react18-css@0.0.4:
     resolution: {integrity: sha512-dg/6DB8c0ODubeahYa/4rWO5lk/Bn22lRD6n3+1ZFOvNU4d+Q/gGMiRq01ndrX7p70QYEnrjYmV8p59zrjTtIg==}
 
-  esbuild-plugin-react18@0.2.1:
-    resolution: {integrity: sha512-Hu5qqhqNsZG7LxBnp1ynsul7Eqy4pYgvktzceTp+Oe0LmdL7dWv7fgmDuNgofhWaXUbxOuRxzd1G9vMslDnJxQ==}
+  esbuild-plugin-react18@0.2.2:
+    resolution: {integrity: sha512-41V/AflyHfyfRJjDbx3GWiGZZ4wME2r4IUHsWclpEaMVX29RIwREXDbmpJVfIlg8oLjyS+NWWUZNrxX2OgSp/w==}
     peerDependencies:
       '@types/react': 16.8 - 19
       next: 10 - 14
@@ -6344,8 +6344,8 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  undici@6.17.0:
-    resolution: {integrity: sha512-fs13QiDjPIzJ7gFAOal9CSG0c92rT2xw6MuMUJ4H30Eg5GCauLWYCCZA1tInjd6M4y+JZjVCCFr9pFpbhcC64w==}
+  undici@6.18.0:
+    resolution: {integrity: sha512-nT8jjv/fE9Et1ilR6QoW8ingRTY2Pp4l2RUrdzV5Yz35RJDrtPc1DXvuNqcpsJSGIRHFdt3YKKktTzJA6r0fTA==}
     engines: {node: '>=18.17'}
 
   unified-engine@11.2.1:
@@ -7977,7 +7977,7 @@ snapshots:
       cookie-signature: 1.2.1
       source-map-support: 0.5.21
       stream-slice: 0.1.2
-      undici: 6.17.0
+      undici: 6.18.0
     optionalDependencies:
       typescript: 5.4.5
 
@@ -9656,7 +9656,7 @@ snapshots:
       postcss-modules: 6.0.0(postcss@8.4.38)
       sass: 1.77.2
 
-  esbuild-plugin-react18@0.2.1(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1):
+  esbuild-plugin-react18@0.2.2(@types/react@18.3.2)(next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.2))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.2
       react: 18.3.1
@@ -14033,7 +14033,7 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici@6.17.0: {}
+  undici@6.18.0: {}
 
   unified-engine@11.2.1:
     dependencies:

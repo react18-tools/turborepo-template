@@ -20,7 +20,14 @@ jobs:
         with:
           registry-url: https://registry.npmjs.org
           node-version: 20
-      - run: npm i -g pnpm@9.0.5 && pnpm i
+      - name: Setup Git
+        run: |
+          git config --global user.name "mayank1513"
+          git config --global user.email "mayank.srmu@gmail.com"
+          git fetch
+          git checkout main
+          git pull
+      - run: npm i -g pnpm && pnpm i
         name: Install dependencies
       - name: Test
         run: npm test
@@ -34,12 +41,5 @@ jobs:
         run: pnpm test
       - name: Generate/update docs
         run: pnpm doc
-      - name: Setup Git
-        run: |
-          git config --global user.name "mayank1513"
-          git config --global user.email "mayank.srmu@gmail.com"
-          git fetch
-          git checkout main
-          git pull
       - name: Save upgraded packages back to repo
         run: git add . && git commit -m "upgrade deps && docs" && git push origin main

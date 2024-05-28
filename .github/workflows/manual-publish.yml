@@ -21,17 +21,17 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org
-      - run: npm i -g pnpm@9.0.5 && pnpm i
+      - name: Setup Git
+        run: |
+          git config --global user.name "mayank1513"
+          git config --global user.email "mayank.srmu@gmail.com"
+      - run: npm i -g pnpm && pnpm i
         name: Install dependencies
         # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
       - name: clean up working directory
         run: git status && git clean -f -d && git status
-      - name: Setup Git
-        run: |
-          git config --global user.name "mayank1513"
-          git config --global user.email "mayank.srmu@gmail.com"
       # - name: Copy Readme file
       # run: cp ./README.md ./lib # todo: uncomment this line while rebranding
       - name: Apply changesets, publish and create release, branches and tags

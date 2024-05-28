@@ -9,7 +9,7 @@
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [Trello Kanban](https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board)
 - [ ] 🌟 **Update [`sripts/rebrand.config.json`](./scripts/rebrand.config.json) if required.**
-- [ ] Install `pnpm` using `npm i -g pnpm@9.0.5`
+- [ ] Install `pnpm` using `npm i -g pnpm`
 - [ ] Install dependencies using `pnpm`
   - Run `pnpm i` to install dependencies; the `rebrand` script will automatically rebrand the repo, adjust workflows, and create a commit
 - [ ] Run `yarn plop`, and follow prompts to generate server or client components for your library

@@ -14,7 +14,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm i -g pnpm@9.0.5 && pnpm i
+      - name: Setup Git
+        run: |
+          git config --global user.name "mayank1513"
+          git config --global user.email "mayank.srmu@gmail.com"
+      - run: npm i -g pnpm && pnpm i
         name: Install dependencies
       - name: Run unit tests
         run: pnpm test

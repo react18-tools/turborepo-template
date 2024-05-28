@@ -1,7 +1,7 @@
 import { HTMLProps, ReactNode } from "react";
 import styles from "./{{ kebabCase name }}.module.scss";
 
-interface {{ pascalCase name }}Props extends HTMLProps<HTMLDivElement> {
+export interface {{ pascalCase name }}Props extends HTMLProps<HTMLDivElement> {
 	children: ReactNode;
 }
 
@@ -15,7 +15,7 @@ interface {{ pascalCase name }}Props extends HTMLProps<HTMLDivElement> {
  * 
  * @source - Source code
  */
-export function {{ pascalCase name }}({ children, ...props }: {{ pascalCase name }}Props) {
+export const {{ pascalCase name }} = ({ children, ...props }: {{ pascalCase name }}Props) => {
   const className = [props.className, styles["{{ kebabCase name }}"]].filter(Boolean).join(" ");
 	return (
 		<div {...props} className={className} data-testid="{{ kebabCase name }}">

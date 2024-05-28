@@ -1,0 +1,24 @@
+import { useState } from "react";
+
+export interface {{ pascalCase name }}Options {
+  /** this is a dummy option */
+  dummy?: string;
+}
+
+/**
+ * {{ description }}
+ *
+ * @example
+ * ```tsx
+ * const [] = {{ camelCase name }}(options);
+ * ```
+ * 
+ * @source - Source code
+ */
+
+export const {{ camelCase name }} = (options?: {{ pascalCase name }}Options) => {
+  const [value, setValue] = useState(0);
+  return {
+    value, setValue
+  }
+}

@@ -4,11 +4,7 @@
  */
 function generator(plop) {
   plop.setGenerator("rc", require("./scripts/rc"));
-  plop.setGenerator("React Hook", {
-    description: "Add a new React hook.",
-    prompts: [],
-    actions: [],
-  });
+  plop.setGenerator("React Hook", require("./scripts/hook"));
 }
 
 module.exports = generator;

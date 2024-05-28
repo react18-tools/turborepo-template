@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.0.2
+
+### Patch Changes
+
+- Fix renaming of CSS variables due to react18 plugin
+
 ## 1.0.1
 
 ### Patch Changes

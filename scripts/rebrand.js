@@ -81,20 +81,28 @@ fs.writeFileSync(path.resolve(rootDir, "README.md"), readme);
 fs.writeFileSync(path.resolve(rootDir, "lib", "README.md"), readme);
 
 // Update TODO.md
+const touchupTodo = content =>
+  content
+    .replace(
+      "[repo settings]",
+      `[repo settings](https://github.com/${owner}/${repo}/settings/pages)`,
+    )
+    .replace(
+      "[repository secret]",
+      `[repository secret]((https://github.com/${owner}/${repo}/settings/secrets/actions))`,
+    )
+    .replace(
+      "[private vulnerability reporting]",
+      `[private vulnerability reporting](https://github.com/${owner}/${repo}/security)`,
+    )
+    .replace("- [ ] Create a new GitHub repository", "- [x] Create a new GitHub repository");
+
 const todoPath = path.resolve(rootDir, "TODO.md");
-const todo = fs
-  .readFileSync(todoPath, "utf-8")
-  .replace("[repo settings]", `[repo settings](https://github.com/${owner}/${repo}/settings/pages)`)
-  .replace(
-    "[repository secret]",
-    `[repository secret]((https://github.com/${owner}/${repo}/settings/secrets/actions))`,
-  )
-  .replace(
-    "[private vulnerability reporting]",
-    `[private vulnerability reporting](https://github.com/${owner}/${repo}/security)`,
-  )
-  .replace("- [ ] Create a new GitHub repository", "- [x] Create a new GitHub repository");
-fs.writeFileSync(todoPath, todo);
+fs.writeFileSync(todoPath, touchupTodo(fs.readFileSync(todoPath, "utf-8")));
+
+const tkbPath = path.resolve(rootDir, "scripts", ".tkb");
+fs.writeFileSync(tkbPath, touchupTodo(fs.readFileSync(tkbPath, "utf-8")));
+fs.renameSync(tkbPath, path.resolve(rootDir, ".tkb"));
 
 // Update Funding
 const fundingPath = path.resolve(rootDir, ".github", "FUNDING.yml");

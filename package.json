@@ -9,7 +9,8 @@
     "lint": "turbo lint",
     "test": "turbo test",
     "typecheck": "turbo typecheck",
-    "rebrand": "node scripts/rebrand.js"
+    "rebrand": "node scripts/rebrand.js",
+    "preinstall": "node scripts/update-pm.js"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.3",
@@ -25,7 +26,7 @@
     "typedoc-plugin-rename-defaults": "^0.7.0",
     "typedoc-plugin-zod": "^1.1.2"
   },
-  "packageManager": "pnpm@9.0.5",
+  "packageManager": "pnpm@9.1.3",
   "engines": {
     "node": ">=18"
   },

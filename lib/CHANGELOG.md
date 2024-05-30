@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.0.3
+
+### Patch Changes
+
+- Remove uuid as it will result in multiple rgs stores for treeshakable imports
+
 ## 1.0.2
 
 ### Patch Changes

@@ -17,7 +17,13 @@ try {
 }
 
 const { version: VERSION, name } = require("../lib/package.json");
-const LATEST_VERSION = execSync(`npm view ${name} version`).toString();
+let LATEST_VERSION;
+
+try {
+  LATEST_VERSION = execSync(`npm view ${name} version`).toString() ?? "0.0.-1";
+} catch {
+  LATEST_VERSION = "0.0.-1";
+}
 
 console.log({ VERSION, LATEST_VERSION });
 

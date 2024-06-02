@@ -38,6 +38,14 @@
 - [ ] You can also fork the [`terborepo-template`](https://github.com/react18-tools/turborepo-template/fork) and add your package to `scripts/featured.json`
   - If approved, your package will be automatically added to FEATURED.md and also published on the home page of this repo.
 
+## Recommended Repository Settings
+
+Go to [repository settings] and configure the following:
+
+- [ ] Enable Discussions
+- [ ] Enable `Always suggest updating pull request branches`
+- [ ] Enable `Automatically delete head branches`
+
 <hr />
 
 <p align="center" style="text-align:center">with 💖 by <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a></p>

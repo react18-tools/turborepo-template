@@ -64,21 +64,24 @@ try {
 }
 
 // Update README
+const title = packageName
+  .split("-")
+  .map(w => w[0].toUpperCase() + w.slice(1))
+  .join(" ");
 const readme = fs
   .readFileSync(path.resolve(rootDir, "lib", "README.md"), "utf-8")
   .replace(new RegExp(oldPkgName, "g"), packageName)
   .replace(new RegExp(oldOwner, "g"), owner)
   .replace(new RegExp(oldRepo, "g"), repo)
-  .replace(
-    new RegExp(oldPkgName.replace("-", " "), "ig"),
-    packageName
-      .split("-")
-      .map(w => w[0].toUpperCase() + w.slice(1))
-      .join(" "),
-  )
+  .replace(new RegExp(oldPkgName.replace("-", " "), "ig"), title)
   .replace(/> This package also.*[^\n]/, "");
 fs.writeFileSync(path.resolve(rootDir, "README.md"), readme);
 fs.writeFileSync(path.resolve(rootDir, "lib", "README.md"), readme);
+
+// Update page title
+const pageFilePath = path.resolve(rootDir, "examples", "nextjs", "src", "app", "page.tsx");
+const pageCode = fs.readFileSync(pageFilePath, "utf-8").replace("React 18 Loaders", title);
+fs.writeFileSync(pageFilePath, pageCode);
 
 // Update TODO.md
 const touchupTodo = content =>

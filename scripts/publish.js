@@ -4,7 +4,9 @@ const { execSync } = require("child_process");
 // Apply changesets if any -- e.g., coming from pre-release branches
 try {
   execSync("pnpm changeset pre exit");
-} catch {}
+} catch {
+  // empty
+}
 try {
   execSync("pnpm changeset version");
   execSync(

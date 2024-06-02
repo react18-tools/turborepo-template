@@ -33,7 +33,9 @@ execSync("pnpm changeset version");
 // exit pre mode -- to avoid collision with full releases
 try {
   execSync("pnpm changeset pre exit");
-} catch {}
+} catch {
+  // empty
+}
 
 /** not requiring as require is cached by npm/node */
 const NEW_VERSION = JSON.parse(

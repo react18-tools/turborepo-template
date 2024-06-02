@@ -18,7 +18,7 @@
     },
     "jcpymbi71e702p7n6fwvZ": {
       "id": "jcpymbi71e702p7n6fwvZ",
-      "description": "Install dependencies using `pnpm`\n  - Run `pnpm i` to install dependencies; the `rebrand` script will automatically rebrand the repo, adjust workflows, and create a commit",
+      "description": "Close this Kanban Board tab and install dependencies using `pnpm`\n  - Run `pnpm i` to install dependencies; the `rebrand` script will automatically rebrand the repo, adjust workflows, and create a commit",
       "columnId": "column-todo"
     },
     "jdZxwLymOo7w2eZeNpvsN": {
@@ -28,7 +28,7 @@
     },
     "RX4J5v4y5IOe_ucf8pMRT": {
       "id": "RX4J5v4y5IOe_ucf8pMRT",
-      "description": "🌟 Enable [private vulnerability reporting]",
+      "description": "🌟 Enable [private vulnerability reporting] (For public repo - do this after updating visibility to public)",
       "columnId": "column-todo"
     },
     "EdPbrbJLllUHfZmCS80f7": {

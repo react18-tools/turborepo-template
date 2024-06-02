@@ -100,9 +100,9 @@ const touchupTodo = content =>
 const todoPath = path.resolve(rootDir, "TODO.md");
 fs.writeFileSync(todoPath, touchupTodo(fs.readFileSync(todoPath, "utf-8")));
 
-const tkbPath = path.resolve(rootDir, "scripts", ".tkb");
+const tkbPath = path.resolve(rootDir, ".tkb");
 fs.writeFileSync(tkbPath, touchupTodo(fs.readFileSync(tkbPath, "utf-8")));
-fs.renameSync(tkbPath, path.resolve(rootDir, ".tkb"));
+fs.renameSync(tkbPath, tkbPath);
 
 // Update Funding
 const fundingPath = path.resolve(rootDir, ".github", "FUNDING.yml");

@@ -1,31 +1,22 @@
 "use client";
 
-import { ColorSwitch, useTheme } from "nextjs-themes";
+import { ColorSchemeType, ColorSwitch, useTheme } from "nextjs-themes";
 import styles from "./header.module.scss";
-import { useCallback } from "react";
+import { KeyboardEvent, useCallback } from "react";
+
+const colorSchemes: ColorSchemeType[] = ["dark", "light", "system"];
 
 /** This is a wrapper around `nextjs-themes's ColorSwitch component to improve mobile view. */
 export default function ThemeSwitch() {
   const { colorSchemePref, setColorSchemePref } = useTheme();
   const toggle = useCallback(() => {
-    switch (colorSchemePref) {
-      case "dark":
-        setColorSchemePref("light");
-        break;
-      case "light":
-        setColorSchemePref("system");
-        break;
-      case "system":
-      default:
-        setColorSchemePref("dark");
-    }
+    const index = colorSchemes.indexOf(colorSchemePref);
+    setColorSchemePref(colorSchemes[(index + 1) % colorSchemes.length]);
   }, [colorSchemePref]);
 
   const onKeyDown = useCallback(
-    (e: React.KeyboardEvent) => {
-      if (e.key === "Enter") {
-        toggle();
-      }
+    (e: KeyboardEvent) => {
+      if (e.key === "Enter") toggle();
     },
     [toggle],
   );

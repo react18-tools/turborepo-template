@@ -26,17 +26,14 @@ function getActions(data) {
     });
   }
 
-  actions.push({
-    type: "add",
-    path: `${data.pkgPath}/src/hooks/{{kebabCase name}}.ts`,
-    templateFile: `${TEMPLATE_DIR}hook.hbs`,
+  ["", ".test"].forEach(suffix => {
+    actions.push({
+      type: "add",
+      path: `${data.pkgPath}/src/hooks/{{kebabCase name}}${suffix}.ts`,
+      templateFile: `${TEMPLATE_DIR}hook${suffix}.hbs`,
+    });
   });
 
-  actions.push({
-    type: "add",
-    path: `${data.pkgPath}/src/hooks/{{kebabCase name}}.test.ts`,
-    templateFile: `${TEMPLATE_DIR}hook.test.hbs`,
-  });
   return actions;
 }
 

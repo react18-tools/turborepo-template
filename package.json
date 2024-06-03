@@ -31,6 +31,6 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@types/node": "^20.13.0"
+    "@types/node": "^20.14.0"
   }
 }

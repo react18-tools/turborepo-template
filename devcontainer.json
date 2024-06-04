@@ -1,0 +1,18 @@
+{
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:20",
+  "hostRequirements": {
+    "memory": "8gb"
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "",
+  "postCreateCommand": "",
+  "postAttachCommand": "",
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["TODO.md", "scripts/rebrand.config.json"]
+    },
+    "vscode": {
+      "extensions": ["mayank1513.trello-kanban-task-board", "esbenp.prettier-vscode"]
+    }
+  }
+}

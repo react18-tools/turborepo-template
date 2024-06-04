@@ -17,7 +17,7 @@
     "@repo/typescript-config": "workspace:*",
     "plop": "^4.0.1",
     "prettier": "^3.3.0",
-    "turbo": "^1.13.3",
+    "turbo": "^1.13.4",
     "typedoc": "^0.25.13",
     "typedoc-plugin-extras": "^3.0.0",
     "typedoc-plugin-inline-sources": "^1.0.2",

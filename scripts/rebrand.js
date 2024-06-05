@@ -148,7 +148,7 @@ fs.writeFileSync(
 );
 // clean up
 const rootPackageJSON = require("../package.json");
-const { exec } = require("child_process");
+const { execSync } = require("child_process");
 delete rootPackageJSON.scripts.postinstall;
 try {
   fs.writeFileSync(path.resolve(rootDir, "package.json"), JSON.stringify(rootPackageJSON, null, 2));
@@ -156,7 +156,10 @@ try {
   console.error(e);
 }
 
+// reinstall dependencies --> this will update the pnpm-lock file as well which we need to add to commit
+execSync("pnpm i");
+
 // clean lib/src and craete commit
-exec(
+execSync(
   'rm -rf ./lib/src/ && git add . && git commit -m "Rebrand 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]" && turbo telemetry disable',
 );

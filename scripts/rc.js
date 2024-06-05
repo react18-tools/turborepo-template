@@ -59,37 +59,38 @@ function toKebabCase(str) {
  * createRootIndexAndDeclarations if not present.
  * @param {InquirerDataType} data - Input data.
  */
-function createRootIndexAndDeclarations(data, root) {
+function createRootIndexAndDeclarations(data) {
+  const nestedRouteActions = [];
+  const { isClient } = data;
   const srcDir = path.resolve(__dir, `${data.pkgPath}/src`);
+  const [banner, target] = isClient ? ['"use client";\n\n', "client"] : ["", "server"];
+  const root = `${data.pkgPath}/src/${target}/`;
+
   /** Create index.ts in src directory if not present.  */
-  if (!fs.existsSync(path.resolve(srcDir, "index.ts"))) {
+  if (!fs.existsSync(path.resolve(srcDir, "index.ts")))
     nestedRouteActions.push({
       type: "add",
       path: `${data.pkgPath}/src/index.ts`,
-      template: `${isClient ? '"use client";\n\n' : ""}export * from "./${isClient ? "client" : "server"}";\n`,
+      template: `${banner}export * from "./${target}";\n`,
     });
-  }
 
   /** Create declaration if not present.  */
-  if (!fs.existsSync(path.resolve(srcDir, "declaration.d.ts"))) {
+  if (!fs.existsSync(path.resolve(srcDir, "declaration.d.ts")))
     nestedRouteActions.push({
       type: "add",
       path: `${data.pkgPath}/src/declaration.d.ts`,
       template: 'declare module "*.module.css";\ndeclare module "*.module.scss";\n',
     });
-  }
-
-  const banner = isClient ? '"use client";\n\n' : "";
-  const patternLine = `// ${isClient ? "client" : "server"} component exports`;
 
   /** Create index.ts in src/client or src/server directory if not present.  */
-  if (!fs.existsSync(path.resolve(__dir, root, "index.ts"))) {
+  if (!fs.existsSync(path.resolve(__dir, root, "index.ts")))
     nestedRouteActions.push({
       type: "add",
       path: `${root}index.ts`,
-      template: `${banner}/**\n * Server components and client components need to be exported from separate files as\n * directive on top of the file from which component is imported takes effect.\n * i.e., server component re-exported from file with "use client" will behave as client component\n */\n\n${patternLine}\n`,
+      template: `${banner}/**\n * Server components and client components need to be exported from separate files as\n * directive on top of the file from which component is imported takes effect.\n * i.e., server component re-exported from file with "use client" will behave as client component\n */\n\n// ${target} component exports\n`,
     });
-  }
+
+  return { nestedRouteActions, root, isClient };
 }
 
 /**
@@ -98,12 +99,8 @@ function createRootIndexAndDeclarations(data, root) {
  * @returns {Object} Nested route actions and parent directory.
  */
 function getNestedRouteActions(data) {
-  const { isClient } = data;
   const name = data.name.replace(/\/+/g, "/").replace(/\/$/, "").trim();
-  const root = `${data.pkgPath}/src/${isClient ? "client/" : "server/"}`;
-  const nestedRouteActions = [];
-
-  createRootIndexAndDeclarations(data, root);
+  const { nestedRouteActions, root, isClient } = createRootIndexAndDeclarations(data);
 
   if (!name.includes("/")) return { nestedRouteActions, parentDir: root };
 

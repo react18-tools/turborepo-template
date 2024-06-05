@@ -31,7 +31,7 @@ jobs:
         name: Install dependencies
       - name: Test
         run: npm test
-      - run: git status && git clean -f -d && git status
+      - run: git stash --include-untracked
         name: clean up working directory
       - run: npx @turbo/codemod update . && pnpm update --latest -r
         name: Update dependencies

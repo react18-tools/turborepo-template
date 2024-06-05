@@ -6,7 +6,8 @@
 
 > Exciting news! We've launched a new course to help you master this template: [Craft Next Gen UI Libraries for React 18 and Next.js 14](https://www.udemy.com/course/craft-next-gen-ui-libraries-for-react-18-and-nextjs-14/?referralCode=46B8C7845ECCEA99E0EF)
 
-## Features
+<details>
+<summary style="cursor:pointer"><h2 style="display:inline-block">Features</h2></summary>
 
 This template offers the following pre-configured features. Additionally, your repository will automatically be rebranded with the help of workflows and post-install scripts.
 
@@ -49,6 +50,8 @@ This template offers the following pre-configured features. Additionally, your r
 ✅ Compatible with all React 18 build systems/tools/frameworks
 
 ✅ Documented with [Typedoc](https://react18-tools.github.io/turborepo-template) ([Docs](https://react18-tools.github.io/turborepo-template))
+
+</details>
 
 ## Getting Started:
 

@@ -4,7 +4,7 @@
  */
 function generator(plop) {
   plop.setGenerator("rc", require("./scripts/rc"));
-  plop.setGenerator("React Hook", require("./scripts/hook"));
+  plop.setGenerator("hook", require("./scripts/hook"));
 }
 
 module.exports = generator;

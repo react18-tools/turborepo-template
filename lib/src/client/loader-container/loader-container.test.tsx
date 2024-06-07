@@ -8,4 +8,8 @@ describe.concurrent("loader-container", () => {
   test("check if renders without erros", () => {
     render(<LoaderContainer />);
   });
+
+  test("check if renders without erros", () => {
+    render(<LoaderContainer loading />);
+  });
 });

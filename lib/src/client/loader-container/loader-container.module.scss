@@ -13,10 +13,16 @@
   background: radial-gradient(circle, #535bf200 0%, #535bf200 150%, #8489f685, #535bf255);
   opacity: 0;
   transition: all 0.5s;
+  * {
+    animation-play-state: paused !important;
+  }
 }
 .loading {
   backdrop-filter: blur(3px);
   background: radial-gradient(circle, #535bf200 0%, #535bf200 0%, #8489f6b5 10%, #535bf255 100%);
   pointer-events: all;
   opacity: 1;
+  * {
+    animation-play-state: running !important;
+  }
 }

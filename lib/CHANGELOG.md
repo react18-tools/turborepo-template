@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.0
+
+### Minor Changes
+
+- 032f2f8: Added loading prop to loader-container and improved styles
+
 ## 1.0.3
 
 ### Patch Changes

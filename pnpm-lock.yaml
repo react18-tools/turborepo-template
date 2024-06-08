@@ -11,6 +11,9 @@ importers:
       '@types/node':
         specifier: ^20.14.2
         version: 20.14.2
+      enquirer:
+        specifier: ^2.4.1
+        version: 2.4.1
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.5

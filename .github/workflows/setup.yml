@@ -24,7 +24,6 @@ jobs:
         run: |
           sed -i -e "s/rebrand/postinstall/" package.json
           sed -i -e "s/.*owner.*/\t\"owner\": \"${{ github.repository_owner }}\",/" ./scripts/rebrand.config.json
-          sed -i -e "s/.*npm_user.*/\t\"npm_user\": \"${{ github.repository_owner }}\",/" ./scripts/rebrand.config.json
           sed -i -e "s/.*repo.*/\t\"repo\": \"${{ github.event.repository.name }}\",/" ./scripts/rebrand.config.json
           sed -i -e "s/.*packageName.*/\t\"packageName\": \"${{ github.event.repository.name }}\"/" ./scripts/rebrand.config.json
           git rm .tkb

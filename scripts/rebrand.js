@@ -16,12 +16,14 @@ const { packageName, owner, repo } = require("./rebrand.config.json");
 
   // if .tkb is not moved - setup workflow was not triggered or could not create the required commit
   if (fs.existsSync(path.resolve(process.cwd(), "scripts", ".tkb"))) {
-    execSync(`git rm .tkb
+    `git rm .tkb
           mv ./scripts/.tkb ./.tkb
           rm -rf ./docs
           git add .
           git commit -m 'Craete rebrand config 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]'
-          git push origin main`);
+          git push origin main`
+      .split("\n")
+      .forEach(execSync);
   }
 
   const answers = await prompt([

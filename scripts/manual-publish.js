@@ -74,3 +74,6 @@ execSync(`cd lib && pnpm build && npm publish --provenance --access public --tag
 execSync(
   `gh release create ${NEW_VERSION} --generate-notes${isLatestRelease ? " --latest" : ""} -n "$(sed '1,/^## /d;/^## /,$d' CHANGELOG.md)" --title "Release v${NEW_VERSION}"`,
 );
+
+execSync("node ./scripts/lite.js");
+execSync(`cd lib && pnpm build && npm publish --provenance --access public --tag ${tag}`);

@@ -38,6 +38,26 @@ $ npm install react18-loaders
 $ yarn add react18-loaders
 ```
 
+## Want Lite Version? [![npm bundle size](https://img.shields.io/bundlephobia/minzip/react18-loaders-lite)](https://www.npmjs.com/package/react18-loaders-lite) [![Version](https://img.shields.io/npm/v/react18-loaders-lite.svg?colorB=green)](https://www.npmjs.com/package/react18-loaders-lite) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/dt/react18-loaders-lite.svg)](https://www.npmjs.com/package/react18-loaders-lite)
+
+```bash
+$ pnpm add nextjs-themes-lite
+```
+
+**or**
+
+```bash
+$ npm install nextjs-themes-lite
+```
+
+**or**
+
+```bash
+$ yarn add nextjs-themes-lite
+```
+
+> You need `r18gs` as a peer-dependency
+
 ### Import Styles
 
 You can import styles globally or within specific components.

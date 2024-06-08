@@ -59,17 +59,22 @@
     "T1TbmRqXHguxnJv1g_Ot6": {
       "id": "T1TbmRqXHguxnJv1g_Ot6",
       "description": "Explore GitHub codespace templates",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
+      "columnId": "column-done"
     },
     "aCqTM5wgCQC3pY9TA7GtN": {
       "id": "aCqTM5wgCQC3pY9TA7GtN",
       "description": "Update r18-plugin to minify better - remove multiple jsx imports",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
+      "columnId": "column-done"
     },
     "KOQ0LhYPWc6ydZDSbZMGe": {
       "id": "KOQ0LhYPWc6ydZDSbZMGe",
       "description": "Update manual workflow to craete new branch when published from a tag",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
+      "columnId": "column-done"
+    },
+    "OUXfu0Fbgy4-8mdT_3xH8": {
+      "id": "OUXfu0Fbgy4-8mdT_3xH8",
+      "description": "Create lite version",
+      "columnId": "column-done"
     }
   },
   "columns": [
@@ -79,10 +84,7 @@
       "tasksIds": [
         "5Br6CU2MKWj0R40obK9Nm",
         "-DCBBAzTvSWMDb8whog60",
-        "P92idHa6fbprwBOYEp5uu",
-        "T1TbmRqXHguxnJv1g_Ot6",
-        "aCqTM5wgCQC3pY9TA7GtN",
-        "KOQ0LhYPWc6ydZDSbZMGe"
+        "P92idHa6fbprwBOYEp5uu"
       ]
     },
     {
@@ -94,7 +96,11 @@
       "id": "column-done",
       "title": "Done",
       "tasksIds": [
+        "OUXfu0Fbgy4-8mdT_3xH8",
         "5FPnfgSKUpHBbORBRtgui",
+        "T1TbmRqXHguxnJv1g_Ot6",
+        "KOQ0LhYPWc6ydZDSbZMGe",
+        "aCqTM5wgCQC3pY9TA7GtN",
         "iXE3kCY0L1r_4TD-zRgVh",
         "rRkFSIcteEvuq6MRX2BN0",
         "mWXPi1Qzt9zNe6cKb8IZ3",

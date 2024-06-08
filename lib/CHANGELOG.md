@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.1
+
+### Patch Changes
+
+- 5579416: Publish lite version
+
 ## 1.1.0
 
 ### Minor Changes

@@ -18,12 +18,9 @@ const { packageName, owner, repo } = require("./rebrand.config.json");
   if (fs.existsSync(path.resolve(process.cwd(), "scripts", ".tkb"))) {
     `git rm .tkb
           mv ./scripts/.tkb ./.tkb
-          rm -rf ./docs
-          git add .
-          git commit -m 'Craete rebrand config 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]'
-          git push origin main`
+          rm -rf ./docs`
       .split("\n")
-      .forEach(execSync);
+      .forEach(cmd => execSync(cmd.trim()));
   }
 
   const answers = await prompt([

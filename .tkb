@@ -53,8 +53,8 @@
     },
     "-DCBBAzTvSWMDb8whog60": {
       "id": "-DCBBAzTvSWMDb8whog60",
-      "description": "Rebranding experience\n- lauch inquirer.js postinstall\n- rebrand based on options selected",
-      "columnId": "column-rHWkySHomUOsd93fyS05p"
+      "description": "Rebranding experience\n- lauch enquirer.js postinstall\n- rebrand based on options selected",
+      "columnId": "column-done"
     },
     "T1TbmRqXHguxnJv1g_Ot6": {
       "id": "T1TbmRqXHguxnJv1g_Ot6",
@@ -75,6 +75,11 @@
       "id": "OUXfu0Fbgy4-8mdT_3xH8",
       "description": "Create lite version",
       "columnId": "column-done"
+    },
+    "_KFiy00MBhHgoDP1iiF71": {
+      "id": "_KFiy00MBhHgoDP1iiF71",
+      "description": "Use git remote in place of github.event.owner, etc.",
+      "columnId": "column-rHWkySHomUOsd93fyS05p"
     }
   },
   "columns": [
@@ -83,8 +88,8 @@
       "title": "To do ",
       "tasksIds": [
         "5Br6CU2MKWj0R40obK9Nm",
-        "-DCBBAzTvSWMDb8whog60",
-        "P92idHa6fbprwBOYEp5uu"
+        "P92idHa6fbprwBOYEp5uu",
+        "_KFiy00MBhHgoDP1iiF71"
       ]
     },
     {
@@ -96,6 +101,7 @@
       "id": "column-done",
       "title": "Done",
       "tasksIds": [
+        "-DCBBAzTvSWMDb8whog60",
         "OUXfu0Fbgy4-8mdT_3xH8",
         "5FPnfgSKUpHBbORBRtgui",
         "T1TbmRqXHguxnJv1g_Ot6",

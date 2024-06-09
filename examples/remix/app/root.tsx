@@ -3,6 +3,8 @@ import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@re
 import { Analytics } from "@vercel/analytics/react";
 import styles from "./styles.css";
 import { Layout } from "@repo/shared/dist/server";
+import { Core } from "nextjs-darkmode";
+import { Header } from "@repo/shared";
 
 /** Page metadata */
 export const meta: MetaFunction = () => [
@@ -26,6 +28,8 @@ export default function App(): JSX.Element {
       </head>
       <body>
         <Layout>
+          <Core t="background .5s" />
+          <Header />
           <Outlet />
         </Layout>
         <ScrollRestoration />

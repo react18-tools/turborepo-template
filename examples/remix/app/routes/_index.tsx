@@ -1,11 +1,11 @@
+import { Demo } from "@repo/shared";
+import { LandingPage } from "@repo/shared/dist/server";
+
 /** Remix App */
 export default function Index(): JSX.Element {
   return (
-    <div className="container">
-      <h1 className="title">
-        Blog <br />
-        <span>Turborepo Template</span>
-      </h1>
-    </div>
+    <LandingPage title="Remix Example">
+      <Demo />
+    </LandingPage>
   );
 }

@@ -6,7 +6,7 @@ import { useCallback } from "react";
 import type { ColorSchemePreference } from "nextjs-darkmode";
 import { Switch } from "nextjs-darkmode/switch";
 
-const colorSchemes: ColorSchemePreference[] = ["dark", "light", "system"];
+const colorSchemes: ColorSchemePreference[] = ["system", "dark", "light"];
 
 /** This is a wrapper around `nextjs-darkmode's ColorSwitch component to improve mobile view. */
 export default function ThemeSwitch() {

@@ -4,7 +4,7 @@ export default function Index(): JSX.Element {
     <div className="container">
       <h1 className="title">
         Blog <br />
-        <span>Kitchen Sink</span>
+        <span>Turborepo Template</span>
       </h1>
     </div>
   );

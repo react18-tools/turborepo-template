@@ -11,7 +11,7 @@ function App(): JSX.Element {
     <div className="container">
       <h1 className="title">
         Admin <br />
-        <span>Kitchen Sink</span>
+        <span>Turborepo Template</span>
       </h1>
       <Dots1 color="#00f" width={60} />
       <Dots2 color="#00f" width={50} dotRadius={8} />

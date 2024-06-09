@@ -9,7 +9,7 @@
     "lint": "turbo lint",
     "test": "turbo test",
     "typecheck": "turbo typecheck",
-    "rebrand": "node scripts/rebrand.js",
+    "postinstall": "node scripts/rebrand.js",
     "preinstall": "node scripts/update-pm.js"
   },
   "devDependencies": {

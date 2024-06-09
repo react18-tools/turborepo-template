@@ -2,7 +2,17 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { prompt } = require("enquirer");
 const { execSync } = require("child_process");
-const { packageName, owner, repo } = require("./rebrand.config.json");
+
+const [owner, repo] = execSync(
+  'git remote get-url --push origin | sed "s/https:\\/\\/github.com\\///" | sed "s/.git//"',
+)
+  .toString()
+  .trim()
+  .split("/");
+
+const packageName = repo;
+
+if (repo === "turborepo-template" && /(mayank1513|react18-tools)/.test(owner)) return; // silently ignore
 
 (async () => {
   const { shouldRebrand } = await prompt({

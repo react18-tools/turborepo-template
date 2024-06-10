@@ -51,6 +51,7 @@ const pushCmd = `git add . && git commit -m "Apply changesets and update CHANGEL
 
 if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   execSync(pushCmd);
+  require("./update-security-md")(`${newMajor}.${newMinor}`, `${oldMajor}.${oldMinor}`);
   /** Create new release branch for every Major or Minor release */
   const releaseBranch = `release-${newMajor}.${newMinor}`;
   execSync(`git checkout -b ${releaseBranch} && git push origin ${releaseBranch}`);

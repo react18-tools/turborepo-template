@@ -80,6 +80,11 @@
       "id": "_KFiy00MBhHgoDP1iiF71",
       "description": "Use git remote in place of github.event.owner, etc.",
       "columnId": "column-done"
+    },
+    "wMuH6tntOhx-FBXWlw_AH": {
+      "id": "wMuH6tntOhx-FBXWlw_AH",
+      "description": "Automate Security.md updates",
+      "columnId": "column-doing"
     }
   },
   "columns": [
@@ -94,7 +99,9 @@
     {
       "id": "column-doing",
       "title": "Doing",
-      "tasksIds": []
+      "tasksIds": [
+        "wMuH6tntOhx-FBXWlw_AH"
+      ]
     },
     {
       "id": "column-done",

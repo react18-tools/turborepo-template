@@ -16,7 +16,7 @@
     "@changesets/cli": "^2.27.5",
     "@repo/typescript-config": "workspace:*",
     "plop": "^4.0.1",
-    "prettier": "^3.3.1",
+    "prettier": "^3.3.2",
     "turbo": "^2.0.3",
     "typedoc": "^0.25.13",
     "typedoc-plugin-extras": "^3.0.0",

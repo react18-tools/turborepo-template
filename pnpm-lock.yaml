@@ -3354,8 +3354,8 @@ packages:
     resolution: {integrity: sha512-0OABksIGrxKK8K4kynWkQ7y1zounQxP+CWnyclVwj81KW3vlLlGUx57DKGcP/LH216GzqnstnPocF16Nxs0Ycg==}
     engines: {node: '>=0.10.0'}
 
-  foreground-child@3.1.1:
-    resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
+  foreground-child@3.2.0:
+    resolution: {integrity: sha512-CrWQNaEl1/6WeZoarcM9LHupTo3RpZO2Pdk1vktwzPiQTsJnAKJmm3TACKeG5UZbWDfaH2AbvYxzP96y0MT7fA==}
     engines: {node: '>=14'}
 
   form-data@4.0.0:
@@ -10330,7 +10330,7 @@ snapshots:
     dependencies:
       for-in: 1.0.2
 
-  foreground-child@3.1.1:
+  foreground-child@3.2.0:
     dependencies:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
@@ -10451,7 +10451,7 @@ snapshots:
 
   glob@10.3.10:
     dependencies:
-      foreground-child: 3.1.1
+      foreground-child: 3.2.0
       jackspeak: 2.3.6
       minimatch: 9.0.4
       minipass: 7.1.2
@@ -10459,7 +10459,7 @@ snapshots:
 
   glob@10.4.1:
     dependencies:
-      foreground-child: 3.1.1
+      foreground-child: 3.2.0
       jackspeak: 3.4.0
       minimatch: 9.0.4
       minipass: 7.1.2

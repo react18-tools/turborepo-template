@@ -42,7 +42,7 @@
     "@repo/scripts": "workspace:*",
     "nextjs-darkmode": "^0.2.0",
     "nextjs-themes": "^3.1.2",
-    "r18gs": "^1.1.0",
+    "r18gs": "^1.1.1",
     "react-live": "^4.1.6",
     "react18-loaders": "workspace:*"
   },

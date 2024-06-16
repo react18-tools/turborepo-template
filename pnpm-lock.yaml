@@ -40,8 +40,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2(typedoc@0.25.13(typescript@5.4.5))
       typedoc-plugin-mdn-links:
-        specifier: ^3.1.29
-        version: 3.1.29(typedoc@0.25.13(typescript@5.4.5))
+        specifier: ^3.1.30
+        version: 3.1.30(typedoc@0.25.13(typescript@5.4.5))
       typedoc-plugin-missing-exports:
         specifier: ^2.3.0
         version: 2.3.0(typedoc@0.25.13(typescript@5.4.5))
@@ -125,8 +125,8 @@ importers:
         specifier: ^14.2.4
         version: 14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5)
       nextjs-darkmode:
-        specifier: ^0.3.0
-        version: 0.3.0(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
+        specifier: ^1.0.1
+        version: 1.0.1(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
       nextjs-themes:
         specifier: ^3.1.2
         version: 3.1.2(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
@@ -186,8 +186,8 @@ importers:
         specifier: ^0.1.1
         version: 0.1.1(react@18.3.1)
       nextjs-darkmode:
-        specifier: ^0.3.0
-        version: 0.3.0(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
+        specifier: ^1.0.1
+        version: 1.0.1(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -226,8 +226,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/shared
       nextjs-darkmode:
-        specifier: ^0.3.0
-        version: 0.3.0(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
+        specifier: ^1.0.1
+        version: 1.0.1(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -396,8 +396,8 @@ importers:
         specifier: 10 - 14
         version: 14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5)
       nextjs-darkmode:
-        specifier: ^0.3.0
-        version: 0.3.0(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
+        specifier: ^1.0.1
+        version: 1.0.1(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
       nextjs-themes:
         specifier: ^3.1.2
         version: 3.1.2(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1)
@@ -4721,8 +4721,8 @@ packages:
       sass:
         optional: true
 
-  nextjs-darkmode@0.3.0:
-    resolution: {integrity: sha512-TcYWeZ1HO2Py01RgEgXEPRoQr7kNY5P8aDdxnLaQ6pwJyn9keFLgasJL410wzaChd29rZhVL2wfTUh+8gEmFOw==}
+  nextjs-darkmode@1.0.1:
+    resolution: {integrity: sha512-jEwJktEla/ApBu5nsdzZNYu/aaFjVcDJmJmYCGjocloHs91jarXtXsozKWh2I37cN9BLHn9s2C1o4hVOs8tg8g==}
     peerDependencies:
       '@types/react': 16.8 - 19
       next: 10 - 15
@@ -6155,8 +6155,8 @@ packages:
     peerDependencies:
       typedoc: ^0.25.7
 
-  typedoc-plugin-mdn-links@3.1.29:
-    resolution: {integrity: sha512-dFKri2eYa+Owq+/3h3z/GvRQF5yM5kzbPqQWLo0LTIv5s78tFGq+yl8vNGf6CkJGakPBfdnHdfeo4bSsVZH0WQ==}
+  typedoc-plugin-mdn-links@3.1.30:
+    resolution: {integrity: sha512-aB3UqyRGdxYziOHKzE7AQPh+9xpqqHHrp23F+T6yshHeuSiauCL+zzgTRhi4Ad1x30/7rTkCtyQ5dfO/+1FDKA==}
     peerDependencies:
       typedoc: '>= 0.23.14 || 0.24.x || 0.25.x'
 
@@ -12183,7 +12183,7 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-darkmode@0.3.0(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1):
+  nextjs-darkmode@1.0.1(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.5))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.3
       r18gs: 1.1.1(@types/react@18.3.3)(react@18.3.1)
@@ -13747,7 +13747,7 @@ snapshots:
     dependencies:
       typedoc: 0.25.13(typescript@5.4.5)
 
-  typedoc-plugin-mdn-links@3.1.29(typedoc@0.25.13(typescript@5.4.5)):
+  typedoc-plugin-mdn-links@3.1.30(typedoc@0.25.13(typescript@5.4.5)):
     dependencies:
       typedoc: 0.25.13(typescript@5.4.5)
 

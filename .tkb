@@ -84,7 +84,7 @@
     "wMuH6tntOhx-FBXWlw_AH": {
       "id": "wMuH6tntOhx-FBXWlw_AH",
       "description": "Automate Security.md updates",
-      "columnId": "column-doing"
+      "columnId": "column-done"
     }
   },
   "columns": [
@@ -99,14 +99,13 @@
     {
       "id": "column-doing",
       "title": "Doing",
-      "tasksIds": [
-        "wMuH6tntOhx-FBXWlw_AH"
-      ]
+      "tasksIds": []
     },
     {
       "id": "column-done",
       "title": "Done",
       "tasksIds": [
+        "wMuH6tntOhx-FBXWlw_AH",
         "-DCBBAzTvSWMDb8whog60",
         "_KFiy00MBhHgoDP1iiF71",
         "uUjYvxGR0oOu3Q1iJQler",

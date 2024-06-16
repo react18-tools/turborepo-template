@@ -33,7 +33,7 @@ if (repo === "turborepo-template" && /(mayank1513|react18-tools)/.test(owner)) r
       .forEach(cmd => execSync(cmd.trim()));
   }
 
-  const answers = await prompt([
+  const { installExt, ...answers } = await prompt([
     {
       type: "input",
       name: "packageName",
@@ -53,7 +53,18 @@ if (repo === "turborepo-template" && /(mayank1513|react18-tools)/.test(owner)) r
       message: "What is the name of your repository?",
       initial: repo,
     },
+    {
+      type: "confirm",
+      name: "installExt",
+      message: "Do you want to install the recommended VS Code extensions?",
+      initial: true,
+    },
   ]);
+
+  if (installExt) {
+    execSync("code --install-extension mayank1513.trello-kanban-task-board");
+    execSync("code --install-extension esbenp.prettier-vscode");
+  }
 
   fs.writeFileSync(
     path.resolve(process.cwd(), "scripts", "rebrand.config.json"),
@@ -61,4 +72,11 @@ if (repo === "turborepo-template" && /(mayank1513|react18-tools)/.test(owner)) r
   );
 
   execSync("node ./scripts/rebrander.js");
+
+  prompt({
+    type: "list",
+    message:
+      "Please open TKB (Workspace) [`Ctrl/command` + `Shift` + `P` -> type 'TrelloKanban: Workspace' -> hit Enter] and clear the Kanban Board to complete setting up your repo.",
+    choices: ["Ok"],
+  });
 })();

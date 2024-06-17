@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 /** Root layout. */
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Core />
         <Layout>

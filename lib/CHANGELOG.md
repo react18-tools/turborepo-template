@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.2
+
+### Patch Changes
+
+- Update peerDependency
+
 ## 1.1.1
 
 ### Patch Changes

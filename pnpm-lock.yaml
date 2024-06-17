@@ -465,11 +465,7 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(@types/node@20.14.2)(jsdom@24.1.0)(sass@1.77.5)
 
-  scripts:
-    devDependencies:
-      enquirer:
-        specifier: ^2.4.1
-        version: 2.4.1
+  scripts: {}
 
 packages:
 

@@ -154,6 +154,9 @@ try {
   console.error(e);
 }
 
+// update typedoc config
+execSync(`sed -i -e 's/name:.*/name: "${title}",/' typedoc.config.js`);
+
 // reinstall dependencies --> this will update the pnpm-lock file as well which we need to add to commit
 execSync("pnpm i");
 

@@ -1,5 +1,6 @@
 const fs = require("node:fs");
 const path = require("node:path");
+// skipcq: JS-0258
 const { prompt } = require("enquirer");
 const { execSync } = require("child_process");
 
@@ -12,18 +13,19 @@ const [owner, repo] = execSync(
 
 const packageName = repo;
 
-// if (repo === "turborepo-template" && /(mayank1513|react18-tools)/.test(owner)) return; // silently ignore
+if (repo === "turborepo-template" && /(mayank1513|react18-tools)/.test(owner)) return; // silently ignore
 
 console.log("\x1b[32m", "---");
 console.log("\x1b[5m", "...");
 console.log(
   "\x1b[31m",
-  "If this script is stuck, force terminate the script by pressing `Ctrl` + `c`. Then run following",
+  "If this script is stuck, force terminate the script by pressing `Ctrl` + `c`. Then run following command",
 );
-console.log("\x1b[36m%s\x1b[0m", "node scripts/rebrand.js");
+console.log("\x1b[36m%s", "node scripts/rebrand.js");
 console.log("\x1b[32m", "---");
 
-(async () => {
+/** avoiding IIFE as formettter keeps misformettting IIFEs */
+const rebrandFn = async () => {
   const { shouldRebrand } = await prompt({
     type: "confirm",
     name: "shouldRebrand",
@@ -82,10 +84,30 @@ console.log("\x1b[32m", "---");
 
   execSync("node ./scripts/rebrander.js");
 
-  prompt({
-    type: "list",
-    message:
-      "Please open TKB (Workspace) [`Ctrl/command` + `Shift` + `P` -> type 'TrelloKanban: Workspace' -> hit Enter] and clear the Kanban Board to complete setting up your repo.",
-    choices: ["Ok"],
-  });
-})();
+  console.log("\x1b[32m", "90% of rebranding completed!");
+  console.log("\x1b[36m%s", ".");
+  console.log("\x1b[36m%s", ".");
+  console.log(
+    "\x1b[36m",
+    "Please open TKB (Workspace) and clear the Kanban Board to complete setting up your repo.",
+  );
+  console.log("\x1b[36m", ".");
+  console.log(
+    "\x1b[35m",
+    "To open TKB (Workspace) click on the `TKB (Workspace)` button on the vscode taskbar or follow these steps.",
+  );
+  console.log("\x1b[36m", ".");
+  console.log("\x1b[36m", "  1. Press `Ctrl/command` + `Shift` + `P` to open the command palette.");
+  console.log(
+    "\x1b[36m",
+    "  2. Type 'TrelloKanban: Workspace' and hit Enter to open the TKB (Workspace).",
+  );
+  console.log("\x1b[36m", ".");
+  console.log("\x1b[36m", ".");
+  console.log(
+    "\x1b[33m",
+    "If you have any issues, please raise an issue at https://github.com/react18-tools/turborepo-template/issues",
+  );
+};
+
+rebrandFn();

@@ -28,7 +28,7 @@
     "@repo/jest-presets": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@testing-library/react": "^16.0.0",
-    "@types/node": "^20.14.2",
+    "@types/node": "^20.14.4",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -44,7 +44,7 @@
     "vitest": "^1.6.0"
   },
   "dependencies": {
-    "r18gs": "^1.1.1"
+    "r18gs": "^1.1.2"
   },
   "peerDependencies": {
     "@types/react": "16.8 - 19",

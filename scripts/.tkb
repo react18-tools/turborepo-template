@@ -110,6 +110,11 @@
       "id": "wkDDELNeOfYSVmWI1eWu0",
       "description": "Install the recommended VSCode extensions:\n  - [Trello Kanban](https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board)",
       "columnId": "column-done"
+    },
+    "J5lp9I5d12B4tpGKawaqF": {
+      "id": "J5lp9I5d12B4tpGKawaqF",
+      "description": "Run `node scripts/rebrand.js` to rebrand this repo.",
+      "columnId": "column-todo"
     }
   },
   "columns": [
@@ -121,6 +126,7 @@
         "gbzyhx0FwFfzRoE-iqVeu",
         "Y5__aEZl3Pbxp7r90HKpV",
         "jcpymbi71e702p7n6fwvZ",
+        "J5lp9I5d12B4tpGKawaqF",
         "jdZxwLymOo7w2eZeNpvsN",
         "RX4J5v4y5IOe_ucf8pMRT",
         "EdPbrbJLllUHfZmCS80f7",

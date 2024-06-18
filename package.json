@@ -28,7 +28,7 @@
     "@types/node": "^20.14.2",
     "enquirer": "^2.4.1"
   },
-  "packageManager": "pnpm@9.3.0",
+  "packageManager": "pnpm@9.4.0",
   "engines": {
     "node": ">=18"
   },

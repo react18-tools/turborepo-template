@@ -22,7 +22,7 @@
     "@repo/jest-presets": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@testing-library/react": "^16.0.0",
-    "@types/node": "^20.14.5",
+    "@types/node": "^20.14.6",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -41,7 +41,7 @@
     "@mayank1513/fork-me": "^2.1.2",
     "@repo/scripts": "workspace:*",
     "nextjs-darkmode": "^1.0.2",
-    "nextjs-themes": "^3.1.4",
+    "nextjs-themes": "^3.1.5",
     "r18gs": "^1.1.2",
     "react-live": "^4.1.6",
     "react18-loaders": "workspace:*"

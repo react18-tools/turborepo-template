@@ -15,7 +15,7 @@
     "@repo/shared": "workspace:*",
     "next": "^14.2.4",
     "nextjs-darkmode": "^1.0.2",
-    "nextjs-themes": "^3.1.4",
+    "nextjs-themes": "^3.1.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react18-loaders": "workspace:*"
@@ -24,7 +24,7 @@
     "@next/eslint-plugin-next": "^14.2.4",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^20.14.5",
+    "@types/node": "^20.14.6",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.4.5"

@@ -9,7 +9,6 @@
     "lint": "turbo lint",
     "test": "turbo test",
     "typecheck": "turbo typecheck",
-    "postinstall": "echo run `node scripts/rebrand.js` to setup your repo.",
     "preinstall": "node scripts/update-pm.js"
   },
   "devDependencies": {

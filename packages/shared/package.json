@@ -22,7 +22,7 @@
     "@repo/jest-presets": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@testing-library/react": "^16.0.0",
-    "@types/node": "^20.14.6",
+    "@types/node": "^20.14.7",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -33,7 +33,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tsup": "^8.1.0",
-    "typescript": "^5.4.5",
+    "typescript": "^5.5.2",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^1.6.0"
   },

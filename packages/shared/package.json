@@ -40,7 +40,7 @@
   "dependencies": {
     "@mayank1513/fork-me": "^2.1.2",
     "@repo/scripts": "workspace:*",
-    "nextjs-darkmode": "^1.0.2",
+    "nextjs-darkmode": "^1.0.3",
     "nextjs-themes": "^3.1.6",
     "r18gs": "^1.1.2",
     "react-live": "^4.1.6",

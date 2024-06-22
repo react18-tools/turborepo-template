@@ -39,17 +39,17 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2(typedoc@0.26.0(typescript@5.5.2))
       typedoc-plugin-mdn-links:
-        specifier: ^3.1.30
-        version: 3.1.30(typedoc@0.26.0(typescript@5.5.2))
+        specifier: ^3.2.0
+        version: 3.2.0(typedoc@0.26.0(typescript@5.5.2))
       typedoc-plugin-missing-exports:
-        specifier: ^2.3.0
-        version: 2.3.0(typedoc@0.26.0(typescript@5.5.2))
+        specifier: ^3.0.0
+        version: 3.0.0(typedoc@0.26.0(typescript@5.5.2))
       typedoc-plugin-rename-defaults:
         specifier: ^0.7.1
         version: 0.7.1(typedoc@0.26.0(typescript@5.5.2))
       typedoc-plugin-zod:
-        specifier: ^1.1.2
-        version: 1.1.2(typedoc@0.26.0(typescript@5.5.2))
+        specifier: ^1.2.0
+        version: 1.2.0(typedoc@0.26.0(typescript@5.5.2))
 
   examples/express:
     dependencies:
@@ -124,8 +124,8 @@ importers:
         specifier: ^14.2.4
         version: 14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6)
       nextjs-darkmode:
-        specifier: ^1.0.3
-        version: 1.0.3(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
+        specifier: ^1.0.4
+        version: 1.0.4(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
       nextjs-themes:
         specifier: ^3.1.6
         version: 3.1.6(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
@@ -185,8 +185,8 @@ importers:
         specifier: ^0.1.1
         version: 0.1.1(react@18.3.1)
       nextjs-darkmode:
-        specifier: ^1.0.3
-        version: 1.0.3(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
+        specifier: ^1.0.4
+        version: 1.0.4(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -225,8 +225,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/shared
       nextjs-darkmode:
-        specifier: ^1.0.3
-        version: 1.0.3(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
+        specifier: ^1.0.4
+        version: 1.0.4(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -398,8 +398,8 @@ importers:
         specifier: 10 - 14
         version: 14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6)
       nextjs-darkmode:
-        specifier: ^1.0.3
-        version: 1.0.3(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
+        specifier: ^1.0.4
+        version: 1.0.4(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
       nextjs-themes:
         specifier: ^3.1.6
         version: 3.1.6(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
@@ -2705,8 +2705,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.4.809:
-    resolution: {integrity: sha512-Xg2vEbpMfkVivK8l9QwbjkLoHSUQouZLC0InWHqKJhNvB1VGoOfdlzbdnl4f1jVGTnxmWV1dP/IwoJRqJP78ug==}
+  electron-to-chromium@1.4.810:
+    resolution: {integrity: sha512-Kaxhu4T7SJGpRQx99tq216gCq2nMxJo+uuT6uzz9l8TVN2stL7M06MIIXAtr9jsrLs2Glflgf2vMQRepxawOdQ==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -4739,8 +4739,8 @@ packages:
       sass:
         optional: true
 
-  nextjs-darkmode@1.0.3:
-    resolution: {integrity: sha512-Mof4E4I0BHMkIEdBv8y3Nsh2nqB9fazJsArFgHABfLt4UCRMa9j4M7CAZCMi3DPjAGGGHxtqM5qFGvTDH8a4ug==}
+  nextjs-darkmode@1.0.4:
+    resolution: {integrity: sha512-GRpodrZ6NdCef7Ax9SYSMjWvweATcL4wC1PrRJcR07cU7vMOvq4TJLjLwkI7SuEh1aU13AD5iZ6xXhUVV8B1DA==}
     peerDependencies:
       '@types/react': 16.8 - 19
       react: 16.8 - 19
@@ -6188,25 +6188,25 @@ packages:
     peerDependencies:
       typedoc: ^0.25.7
 
-  typedoc-plugin-mdn-links@3.1.30:
-    resolution: {integrity: sha512-aB3UqyRGdxYziOHKzE7AQPh+9xpqqHHrp23F+T6yshHeuSiauCL+zzgTRhi4Ad1x30/7rTkCtyQ5dfO/+1FDKA==}
+  typedoc-plugin-mdn-links@3.2.0:
+    resolution: {integrity: sha512-6q/FvPwiBukjgGG8SfBNTkBuT7Vv089NUdB0fwdCtIiCgpT88kLnV4obS4aqFxV/Wq96Ju4IJcngjFYnEsJ8aA==}
     peerDependencies:
-      typedoc: '>= 0.23.14 || 0.24.x || 0.25.x'
+      typedoc: '>= 0.23.14 || 0.24.x || 0.25.x || 0.26.x'
 
-  typedoc-plugin-missing-exports@2.3.0:
-    resolution: {integrity: sha512-iI9ITNNLlbsLCBBeYDyu0Qqp3GN/9AGyWNKg8bctRXuZEPT7G1L+0+MNWG9MsHcf/BFmNbXL0nQ8mC/tXRicog==}
+  typedoc-plugin-missing-exports@3.0.0:
+    resolution: {integrity: sha512-R7D8fYrK34mBFZSlF1EqJxfqiUSlQSmyrCiQgTQD52nNm6+kUtqwiaqaNkuJ2rA2wBgWFecUA8JzHT7x2r7ePg==}
     peerDependencies:
-      typedoc: 0.24.x || 0.25.x
+      typedoc: 0.26.x
 
   typedoc-plugin-rename-defaults@0.7.1:
     resolution: {integrity: sha512-hgg4mAy5IumgUmPOnVVGmGywjTGtUCmRJ2jRbseqtXdlUuYKj652ODL9joUWFt5uvNu4Dr/pNILc/qsKGHJw+w==}
     peerDependencies:
       typedoc: '>=0.22.x <0.27.x'
 
-  typedoc-plugin-zod@1.1.2:
-    resolution: {integrity: sha512-jsmuYg1xsGjwKdhKN4tgRYORnbKpU7v5B1ZpsazMH5lUsI6ZLxBqAY5iiZ06oz/01gHOsAdhpABgWD97MOjKQA==}
+  typedoc-plugin-zod@1.2.0:
+    resolution: {integrity: sha512-eFvPQ4iJsoru4HJP8z7F0NhRxPBjgVPoM0j/xipB7nkGLYhfUjEOlABayaTdBiMocPNCXOCBjFWBHEJGBiMRdw==}
     peerDependencies:
-      typedoc: 0.23.x || 0.24.x || 0.25.x
+      typedoc: 0.23.x || 0.24.x || 0.25.x || 0.26.x
 
   typedoc@0.26.0:
     resolution: {integrity: sha512-OcYevjHsMN8DfpaL0dSBGAEBhOxuBB5Au8QVs9oz9iB0kRStPZwXLFWqh9gwbMUxNjW3yQuIM5GrVVauMJ2Akw==}
@@ -8824,7 +8824,7 @@ snapshots:
   browserslist@4.23.1:
     dependencies:
       caniuse-lite: 1.0.30001636
-      electron-to-chromium: 1.4.809
+      electron-to-chromium: 1.4.810
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.1)
 
@@ -9363,7 +9363,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.4.809: {}
+  electron-to-chromium@1.4.810: {}
 
   emittery@0.13.1: {}
 
@@ -12264,7 +12264,7 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-darkmode@1.0.3(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1):
+  nextjs-darkmode@1.0.4(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.3
       r18gs: 1.1.2(@types/react@18.3.3)(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.6))(react@18.3.1)
@@ -13845,11 +13845,11 @@ snapshots:
     dependencies:
       typedoc: 0.26.0(typescript@5.5.2)
 
-  typedoc-plugin-mdn-links@3.1.30(typedoc@0.26.0(typescript@5.5.2)):
+  typedoc-plugin-mdn-links@3.2.0(typedoc@0.26.0(typescript@5.5.2)):
     dependencies:
       typedoc: 0.26.0(typescript@5.5.2)
 
-  typedoc-plugin-missing-exports@2.3.0(typedoc@0.26.0(typescript@5.5.2)):
+  typedoc-plugin-missing-exports@3.0.0(typedoc@0.26.0(typescript@5.5.2)):
     dependencies:
       typedoc: 0.26.0(typescript@5.5.2)
 
@@ -13858,7 +13858,7 @@ snapshots:
       camelcase: 8.0.0
       typedoc: 0.26.0(typescript@5.5.2)
 
-  typedoc-plugin-zod@1.1.2(typedoc@0.26.0(typescript@5.5.2)):
+  typedoc-plugin-zod@1.2.0(typedoc@0.26.0(typescript@5.5.2)):
     dependencies:
       typedoc: 0.26.0(typescript@5.5.2)
 

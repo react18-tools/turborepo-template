@@ -22,10 +22,10 @@
     "typedoc": "^0.26.0",
     "typedoc-plugin-extras": "^3.0.0",
     "typedoc-plugin-inline-sources": "^1.0.2",
-    "typedoc-plugin-mdn-links": "^3.1.30",
-    "typedoc-plugin-missing-exports": "^2.3.0",
+    "typedoc-plugin-mdn-links": "^3.2.0",
+    "typedoc-plugin-missing-exports": "^3.0.0",
     "typedoc-plugin-rename-defaults": "^0.7.1",
-    "typedoc-plugin-zod": "^1.1.2"
+    "typedoc-plugin-zod": "^1.2.0"
   },
   "packageManager": "pnpm@9.4.0",
   "engines": {

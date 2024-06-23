@@ -37,7 +37,7 @@ const rebrandFn = async () => {
 
   // if .tkb is not moved - setup workflow was not triggered or could not create the required commit
   if (fs.existsSync(path.resolve(process.cwd(), "scripts", ".tkb"))) {
-    `git rm .tkb
+    `rm .tkb
           mv ./scripts/.tkb ./.tkb
           rm -rf ./docs`
       .split("\n")

@@ -30,26 +30,26 @@ importers:
         specifier: ^2.0.4
         version: 2.0.4
       typedoc:
-        specifier: ^0.26.1
-        version: 0.26.1(typescript@5.5.2)
+        specifier: ^0.26.2
+        version: 0.26.2(typescript@5.5.2)
       typedoc-plugin-extras:
         specifier: ^3.0.0
-        version: 3.0.0(typedoc@0.26.1(typescript@5.5.2))
+        version: 3.0.0(typedoc@0.26.2(typescript@5.5.2))
       typedoc-plugin-inline-sources:
         specifier: ^1.0.2
-        version: 1.0.2(typedoc@0.26.1(typescript@5.5.2))
+        version: 1.0.2(typedoc@0.26.2(typescript@5.5.2))
       typedoc-plugin-mdn-links:
         specifier: ^3.2.1
-        version: 3.2.1(typedoc@0.26.1(typescript@5.5.2))
+        version: 3.2.1(typedoc@0.26.2(typescript@5.5.2))
       typedoc-plugin-missing-exports:
         specifier: ^3.0.0
-        version: 3.0.0(typedoc@0.26.1(typescript@5.5.2))
+        version: 3.0.0(typedoc@0.26.2(typescript@5.5.2))
       typedoc-plugin-rename-defaults:
         specifier: ^0.7.1
-        version: 0.7.1(typedoc@0.26.1(typescript@5.5.2))
+        version: 0.7.1(typedoc@0.26.2(typescript@5.5.2))
       typedoc-plugin-zod:
         specifier: ^1.2.0
-        version: 1.2.0(typedoc@0.26.1(typescript@5.5.2))
+        version: 1.2.0(typedoc@0.26.2(typescript@5.5.2))
 
   examples/express:
     dependencies:
@@ -2765,8 +2765,8 @@ packages:
     resolution: {integrity: sha512-zoMwbCcH5hwUkKJkT8kDIBZSz9I6mVG//+lDCinLCGov4+r7NIy0ld8o03M0cJxl2spVf6ESYVS6/gpIfq1FFw==}
     engines: {node: '>= 0.4'}
 
-  es-module-lexer@1.5.3:
-    resolution: {integrity: sha512-i1gCgmR9dCl6Vil6UKPI/trA69s08g/syhiDK9TG0Nf1RJjjFI+AzoWW7sPufzkgYAn861skuCwJa0pIIHYxvg==}
+  es-module-lexer@1.5.4:
+    resolution: {integrity: sha512-MVNK56NiMrOwitFB7cqDwq0CQutbw+0BvLshJSse0MUNU+y1FC3bUS/AQg7oUng+/wKrrki7JfmwtVHkVfPLlw==}
 
   es-object-atoms@1.0.0:
     resolution: {integrity: sha512-MZ4iQ6JwHOBQjahnjwaC1ZtIBH+2ohjamzAO3oaHcXYup7qxjF2fixyH+Q71voWHeOkI2q/TnJao/KfXYIZWbw==}
@@ -6206,8 +6206,8 @@ packages:
     peerDependencies:
       typedoc: 0.23.x || 0.24.x || 0.25.x || 0.26.x
 
-  typedoc@0.26.1:
-    resolution: {integrity: sha512-APsVXqh93jTlpkLuw6+/IORx7n5LN8hzJV8nvMIrYYaIva0VCq0CoDN7Z3hsRThEYVExI/qoFHnAAxrhG+Wd7Q==}
+  typedoc@0.26.2:
+    resolution: {integrity: sha512-q/t+M+PZqhN9gPWLBZ3CCvP+KT8O1tyYkSzEYbcQ6mo89avdIrMlBEl3vfo5BgSzwC6Lbmq0W64E8RkY+eVsLA==}
     engines: {node: '>= 18'}
     hasBin: true
     peerDependencies:
@@ -7733,7 +7733,7 @@ snapshots:
       chokidar: 3.6.0
       cross-spawn: 7.0.3
       dotenv: 16.4.5
-      es-module-lexer: 1.5.3
+      es-module-lexer: 1.5.4
       esbuild: 0.17.6
       esbuild-plugins-node-modules-polyfill: 1.6.4(esbuild@0.17.6)
       execa: 5.1.1
@@ -9479,7 +9479,7 @@ snapshots:
       iterator.prototype: 1.1.2
       safe-array-concat: 1.1.2
 
-  es-module-lexer@1.5.3: {}
+  es-module-lexer@1.5.4: {}
 
   es-object-atoms@1.0.0:
     dependencies:
@@ -13850,32 +13850,32 @@ snapshots:
 
   typedarray@0.0.6: {}
 
-  typedoc-plugin-extras@3.0.0(typedoc@0.26.1(typescript@5.5.2)):
+  typedoc-plugin-extras@3.0.0(typedoc@0.26.2(typescript@5.5.2)):
     dependencies:
-      typedoc: 0.26.1(typescript@5.5.2)
+      typedoc: 0.26.2(typescript@5.5.2)
 
-  typedoc-plugin-inline-sources@1.0.2(typedoc@0.26.1(typescript@5.5.2)):
+  typedoc-plugin-inline-sources@1.0.2(typedoc@0.26.2(typescript@5.5.2)):
     dependencies:
-      typedoc: 0.26.1(typescript@5.5.2)
+      typedoc: 0.26.2(typescript@5.5.2)
 
-  typedoc-plugin-mdn-links@3.2.1(typedoc@0.26.1(typescript@5.5.2)):
+  typedoc-plugin-mdn-links@3.2.1(typedoc@0.26.2(typescript@5.5.2)):
     dependencies:
-      typedoc: 0.26.1(typescript@5.5.2)
+      typedoc: 0.26.2(typescript@5.5.2)
 
-  typedoc-plugin-missing-exports@3.0.0(typedoc@0.26.1(typescript@5.5.2)):
+  typedoc-plugin-missing-exports@3.0.0(typedoc@0.26.2(typescript@5.5.2)):
     dependencies:
-      typedoc: 0.26.1(typescript@5.5.2)
+      typedoc: 0.26.2(typescript@5.5.2)
 
-  typedoc-plugin-rename-defaults@0.7.1(typedoc@0.26.1(typescript@5.5.2)):
+  typedoc-plugin-rename-defaults@0.7.1(typedoc@0.26.2(typescript@5.5.2)):
     dependencies:
       camelcase: 8.0.0
-      typedoc: 0.26.1(typescript@5.5.2)
+      typedoc: 0.26.2(typescript@5.5.2)
 
-  typedoc-plugin-zod@1.2.0(typedoc@0.26.1(typescript@5.5.2)):
+  typedoc-plugin-zod@1.2.0(typedoc@0.26.2(typescript@5.5.2)):
     dependencies:
-      typedoc: 0.26.1(typescript@5.5.2)
+      typedoc: 0.26.2(typescript@5.5.2)
 
-  typedoc@0.26.1(typescript@5.5.2):
+  typedoc@0.26.2(typescript@5.5.2):
     dependencies:
       lunr: 2.3.9
       markdown-it: 14.1.0

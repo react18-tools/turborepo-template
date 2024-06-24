@@ -19,7 +19,7 @@
     "plop": "^4.0.1",
     "prettier": "^3.3.2",
     "turbo": "^2.0.4",
-    "typedoc": "^0.26.1",
+    "typedoc": "^0.26.2",
     "typedoc-plugin-extras": "^3.0.0",
     "typedoc-plugin-inline-sources": "^1.0.2",
     "typedoc-plugin-mdn-links": "^3.2.1",

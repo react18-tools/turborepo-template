@@ -22,7 +22,7 @@
     "@repo/jest-presets": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@testing-library/react": "^16.0.0",
-    "@types/node": "^20.14.8",
+    "@types/node": "^20.14.9",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -43,7 +43,7 @@
     "nextjs-darkmode": "^1.0.4",
     "nextjs-themes": "^4.0.1",
     "r18gs": "^1.1.3",
-    "react-live": "^4.1.6",
+    "react-live": "^4.1.7",
     "react18-loaders": "workspace:*"
   },
   "peerDependencies": {

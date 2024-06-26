@@ -5,6 +5,7 @@ import { Layout } from "@repo/shared/dist/server";
 import { GlobalLoader, Header } from "@repo/shared";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { MouseTrail } from "react-mouse-trails";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
           {children}
         </Layout>
         <GlobalLoader />
+        <MouseTrail />
       </body>
     </html>
   );

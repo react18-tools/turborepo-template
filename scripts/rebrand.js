@@ -84,6 +84,8 @@ const rebrandFn = async () => {
 
   execSync("node ./scripts/rebrander.js");
 
+  console.log("\x1b[32m", "Clean up repo by removing things that you don't need");
+
   console.log("\x1b[32m", "90% of rebranding completed!");
   console.log("\x1b[36m%s", ".");
   console.log("\x1b[36m%s", ".");

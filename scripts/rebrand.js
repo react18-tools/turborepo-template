@@ -86,6 +86,30 @@ const rebrandFn = async () => {
 
   console.log("\x1b[32m", "Clean up repo by removing things that you don't need");
 
+  const { pkgs } = await prompt({
+    type: "multiselect",
+    name: "pkgs",
+    message: "Select the examples or packages to remove",
+    choices: [
+      {
+        name: "express",
+        message:
+          "Express.js example at examples/express -- You might want to keep this for server or API related functionality provided by your app.",
+      },
+      { name: "remix", message: "Remix example at examples/remix." },
+      {
+        name: "logger",
+        message:
+          "Logger package at packages/logger. The express example uses logger - handle it if needed.",
+      },
+      {
+        name: "jest-presets",
+        message:
+          "We use vitest. You can keep this in case you want to use Jest. Note that the express example and logger package are set up to use jest with this jest-presets.",
+      },
+    ],
+  });
+
   console.log("\x1b[32m", "90% of rebranding completed!");
   console.log("\x1b[36m%s", ".");
   console.log("\x1b[36m%s", ".");

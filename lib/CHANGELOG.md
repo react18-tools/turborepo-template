@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.3
+
+### Patch Changes
+
+- 02d5cd9: Use https://www.npmjs.com/package/esbuild-plugin-rdi to better minify the build.
+
 ## 1.1.2
 
 ### Patch Changes

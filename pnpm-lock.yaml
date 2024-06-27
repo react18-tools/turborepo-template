@@ -117,9 +117,6 @@ importers:
 
   examples/nextjs:
     dependencies:
-      '@repo/logger':
-        specifier: workspace:*
-        version: link:../../packages/logger
       '@repo/shared':
         specifier: workspace:*
         version: link:../../packages/shared
@@ -280,9 +277,6 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../packages/config-eslint
-      '@repo/jest-presets':
-        specifier: workspace:*
-        version: link:../packages/jest-presets
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../packages/config-typescript
@@ -422,9 +416,6 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../config-eslint
-      '@repo/jest-presets':
-        specifier: workspace:*
-        version: link:../jest-presets
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../config-typescript

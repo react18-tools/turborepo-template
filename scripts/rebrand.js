@@ -92,23 +92,25 @@ const rebrandFn = async () => {
     message: "Select the examples or packages to remove",
     choices: [
       {
-        name: "express",
+        name: "examples/express",
         message:
           "Express.js example at examples/express -- You might want to keep this for server or API related functionality provided by your app.",
       },
-      { name: "remix", message: "Remix example at examples/remix." },
+      { name: "examples/remix", message: "Remix example at examples/remix." },
       {
-        name: "logger",
+        name: "packages/logger",
         message:
           "Logger package at packages/logger. The express example uses logger - handle it if needed.",
       },
       {
-        name: "jest-presets",
+        name: "packages/jest-presets",
         message:
           "We use vitest. You can keep this in case you want to use Jest. Note that the express example and logger package are set up to use jest with this jest-presets.",
       },
     ],
   });
+
+  pkgs.forEach(pkg => execSync(`rm -rf ${pkg}`));
 
   console.log("\x1b[32m", "90% of rebranding completed!");
   console.log("\x1b[36m%s", ".");

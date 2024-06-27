@@ -10,7 +10,8 @@
     "lint": "turbo lint",
     "test": "turbo test",
     "typecheck": "turbo typecheck",
-    "preinstall": "node scripts/update-pm.js"
+    "preinstall": "node scripts/update-pm.js",
+    "rebrand": "node scripts/rebrand.js"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.6",

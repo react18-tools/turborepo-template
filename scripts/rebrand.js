@@ -13,17 +13,6 @@ const [owner, repo] = execSync(
 
 const packageName = repo;
 
-if (repo === "turborepo-template" && /(mayank1513|react18-tools)/.test(owner)) return; // silently ignore
-
-console.log("\x1b[32m", "---");
-console.log("\x1b[5m", "...");
-console.log(
-  "\x1b[31m",
-  "If this script is stuck, force terminate the script by pressing `Ctrl` + `c`. Then run following command",
-);
-console.log("\x1b[36m%s", "node scripts/rebrand.js");
-console.log("\x1b[32m", "---");
-
 /** avoiding IIFE as formettter keeps misformettting IIFEs */
 const rebrandFn = async () => {
   const { shouldRebrand } = await prompt({
@@ -84,6 +73,9 @@ const rebrandFn = async () => {
 
   execSync("node ./scripts/rebrander.js");
 
+  console.log("\x1b[32m", "...");
+  console.log("\x1b[32m", "...");
+  console.log("\x1b[32m", "...");
   console.log("\x1b[32m", "Clean up repo by removing things that you don't need");
 
   const { pkgs } = await prompt({

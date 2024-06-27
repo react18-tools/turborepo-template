@@ -27,7 +27,7 @@ jobs:
           git fetch
           git checkout main
           git pull
-      - run: npm i -g pnpm && pnpm i
+      - run: npm i -g pnpm && pnpm i --no-frozen-lockfile
         name: Install dependencies
       - name: Test
         run: npm test

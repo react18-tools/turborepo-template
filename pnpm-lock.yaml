@@ -139,8 +139,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-mouse-trails:
-        specifier: ^0.0.2
-        version: 0.0.2(@types/react@18.3.3)(react@18.3.1)
+        specifier: ^0.0.3
+        version: 0.0.3(@types/react@18.3.3)(react@18.3.1)
       react18-loaders:
         specifier: workspace:*
         version: link:../../lib
@@ -5262,8 +5262,8 @@ packages:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
 
-  react-mouse-trails@0.0.2:
-    resolution: {integrity: sha512-Nsv6xiyI4bW4Cqi0bVH5m1P9I/xTHqh2xzEMl0aM+TthMAW25V68RcobezwHJOs68Z7Juobpm4krsqzbM3Rvng==}
+  react-mouse-trails@0.0.3:
+    resolution: {integrity: sha512-cEaLlgPfmeTt3nkFdd7zLQ33Tl9vBTcyU+USveX/Pn6ezk95jLNl2plw+terB9P1r6PECIshYx2NuXLM5eZdmA==}
     peerDependencies:
       '@types/react': 16.8 - 19
       react: 16.8 - 19
@@ -5946,8 +5946,8 @@ packages:
       esbuild:
         optional: true
 
-  tsconfck@3.1.0:
-    resolution: {integrity: sha512-CMjc5zMnyAjcS9sPLytrbFmj89st2g+JYtY/c02ug4Q+CZaAtCgbyviI0n1YvjZE/pzoc6FbNsINS13DOL1B9w==}
+  tsconfck@3.1.1:
+    resolution: {integrity: sha512-00eoI6WY57SvZEVjm13stEVE90VkEdJAFGgpFLTsZbJyW/LwFQ7uQxJHWpZ2hzSWgCPKc9AnBnNP+0X7o3hAmQ==}
     engines: {node: ^18 || >=20}
     hasBin: true
     peerDependencies:
@@ -12722,7 +12722,7 @@ snapshots:
       sucrase: 3.35.0
       use-editable: 2.3.3(react@18.3.1)
 
-  react-mouse-trails@0.0.2(@types/react@18.3.3)(react@18.3.1):
+  react-mouse-trails@0.0.3(@types/react@18.3.3)(react@18.3.1):
     dependencies:
       '@types/react': 18.3.3
       react: 18.3.1
@@ -13501,7 +13501,7 @@ snapshots:
       '@jest/types': 29.6.3
       babel-jest: 29.7.0(@babel/core@7.24.7)
 
-  tsconfck@3.1.0(typescript@5.5.2):
+  tsconfck@3.1.1(typescript@5.5.2):
     optionalDependencies:
       typescript: 5.5.2
 
@@ -13950,7 +13950,7 @@ snapshots:
     dependencies:
       debug: 4.3.5
       globrex: 0.1.2
-      tsconfck: 3.1.0(typescript@5.5.2)
+      tsconfck: 3.1.1(typescript@5.5.2)
     optionalDependencies:
       vite: 5.3.1(@types/node@20.14.9)(sass@1.77.6)
     transitivePeerDependencies:

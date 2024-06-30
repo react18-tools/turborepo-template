@@ -9,7 +9,9 @@ export default function ThemeSwitch(): JSX.Element {
   const { mode } = useMode();
   return (
     <Switch className={styles.themeswitch}>
-      <span className="mb">{mode}</span>
+      <span className="mb" suppressHydrationWarning>
+        {mode}
+      </span>
     </Switch>
   );
 }

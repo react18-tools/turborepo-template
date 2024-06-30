@@ -62,15 +62,18 @@ const rebrandFn = async () => {
   ]);
 
   if (installExt) {
+    console.log("\x1b[32m", "Installing recommended VS Code extensions...");
     execSync("code --install-extension mayank1513.trello-kanban-task-board");
     execSync("code --install-extension esbenp.prettier-vscode");
   }
 
+  console.log("\x1b[32m", "Creating rebrand.config.json...");
   fs.writeFileSync(
     path.resolve(process.cwd(), "scripts", "rebrand.config.json"),
     JSON.stringify(answers, null, 2),
   );
 
+  console.log("\x1b[32m", "rebranding...");
   execSync("node ./scripts/rebrander.js");
 
   console.log("\x1b[32m", "...");

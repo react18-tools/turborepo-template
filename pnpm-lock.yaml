@@ -136,8 +136,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-mouse-trails:
-        specifier: ^0.0.3
-        version: 0.0.3(@types/react@18.3.3)(react@18.3.1)
+        specifier: ^0.0.4
+        version: 0.0.4(@types/react@18.3.3)(react@18.3.1)
       react18-loaders:
         specifier: workspace:*
         version: link:../../lib
@@ -5250,8 +5250,8 @@ packages:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
 
-  react-mouse-trails@0.0.3:
-    resolution: {integrity: sha512-cEaLlgPfmeTt3nkFdd7zLQ33Tl9vBTcyU+USveX/Pn6ezk95jLNl2plw+terB9P1r6PECIshYx2NuXLM5eZdmA==}
+  react-mouse-trails@0.0.4:
+    resolution: {integrity: sha512-Ia5bsG2NJ6KQPditU9+mBXcc+vnAxSFf+Ay/otp3BxDdCu9ZmPkON55P1hRw1lQRtWxXdOHFShCl+rw7Io3zeQ==}
     peerDependencies:
       '@types/react': 16.8 - 19
       react: 16.8 - 19
@@ -5678,8 +5678,8 @@ packages:
     resolution: {integrity: sha512-k01swCJAgQmuADB0YIc+7TuatfNvTBVOoaUWJjTB9R4VJzR5vNWzf5t42ESVZFPS8xTySF7CAdV4t/aaIm3UnQ==}
     engines: {node: '>=16'}
 
-  string-width@7.1.0:
-    resolution: {integrity: sha512-SEIJCWiX7Kg4c129n48aDRwLbFb2LJmXXFrWBG4NGaRtMQ3myKPKbwrD1BKqQn74oCoNMBVrfDEr5M9YxCsrkw==}
+  string-width@7.2.0:
+    resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
     engines: {node: '>=18'}
 
   string.prototype.includes@2.0.0:
@@ -12281,7 +12281,7 @@ snapshots:
       is-unicode-supported: 2.0.0
       log-symbols: 6.0.0
       stdin-discarder: 0.2.2
-      string-width: 7.1.0
+      string-width: 7.2.0
       strip-ansi: 7.1.0
 
   os-tmpdir@1.0.2: {}
@@ -12706,7 +12706,7 @@ snapshots:
       sucrase: 3.35.0
       use-editable: 2.3.3(react@18.3.1)
 
-  react-mouse-trails@0.0.3(@types/react@18.3.3)(react@18.3.1):
+  react-mouse-trails@0.0.4(@types/react@18.3.3)(react@18.3.1):
     dependencies:
       '@types/react': 18.3.3
       react: 18.3.1
@@ -13210,7 +13210,7 @@ snapshots:
       emoji-regex: 10.3.0
       strip-ansi: 7.1.0
 
-  string-width@7.1.0:
+  string-width@7.2.0:
     dependencies:
       emoji-regex: 10.3.0
       get-east-asian-width: 1.2.0

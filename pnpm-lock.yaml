@@ -141,6 +141,9 @@ importers:
       react18-loaders:
         specifier: workspace:*
         version: link:../../lib
+      webgl-generative-particles:
+        specifier: ^0.0.0
+        version: 0.0.0(@types/react@18.3.3)(react@18.3.1)
     devDependencies:
       '@next/eslint-plugin-next':
         specifier: ^14.2.4
@@ -6386,6 +6389,12 @@ packages:
   web-streams-polyfill@3.3.3:
     resolution: {integrity: sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==}
     engines: {node: '>= 8'}
+
+  webgl-generative-particles@0.0.0:
+    resolution: {integrity: sha512-L4+GpCxt/1xEDEeRG+8zOwetPvZInKatPTHRZYWjrhjbM8KudrXCIYdioU7rzrkmxUerH9/JsJe34Nq48jwdVw==}
+    peerDependencies:
+      '@types/react': 16.8 - 19
+      react: 16.8 - 19
 
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
@@ -14014,6 +14023,11 @@ snapshots:
       '@zxing/text-encoding': 0.9.0
 
   web-streams-polyfill@3.3.3: {}
+
+  webgl-generative-particles@0.0.0(@types/react@18.3.3)(react@18.3.1):
+    dependencies:
+      '@types/react': 18.3.3
+      react: 18.3.1
 
   webidl-conversions@4.0.2: {}
 

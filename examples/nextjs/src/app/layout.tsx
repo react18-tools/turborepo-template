@@ -6,6 +6,7 @@ import { GlobalLoader, Header } from "@repo/shared";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { MouseTrail } from "react-mouse-trails";
+import { Particles } from "webgl-generative-particles/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
         </Layout>
         <GlobalLoader />
         <MouseTrail />
+        <Particles fullScreenOverlay />
       </body>
     </html>
   );

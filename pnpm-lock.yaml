@@ -42,8 +42,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2(typedoc@0.26.3(typescript@5.5.3))
       typedoc-plugin-mdn-links:
-        specifier: ^3.2.2
-        version: 3.2.2(typedoc@0.26.3(typescript@5.5.3))
+        specifier: ^3.2.3
+        version: 3.2.3(typedoc@0.26.3(typescript@5.5.3))
       typedoc-plugin-missing-exports:
         specifier: ^3.0.0
         version: 3.0.0(typedoc@0.26.3(typescript@5.5.3))
@@ -1505,8 +1505,8 @@ packages:
   '@rushstack/eslint-patch@1.10.3':
     resolution: {integrity: sha512-qC/xYId4NMebE6w/V33Fh9gWxLgURiNYgVNObbJl2LZv0GUUItCcCqC5axQSwRaAgaxl2mELq1rMzlswaQ0Zxg==}
 
-  '@shikijs/core@1.10.1':
-    resolution: {integrity: sha512-qdiJS5a/QGCff7VUFIqd0hDdWly9rDp8lhVmXVrS11aazX8LOTRLHAXkkEeONNsS43EcCd7gax9LLoOz4vlFQA==}
+  '@shikijs/core@1.10.2':
+    resolution: {integrity: sha512-hCtKSC0PNmidU+TVBUiddE0sF1QsOPVbBBRQlugsKy0QJBfSj9aIQQ/pNEIv58wwM/9cAlWG1yihi+5ovZfYmA==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -5548,8 +5548,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shiki@1.10.1:
-    resolution: {integrity: sha512-uafV7WCgN4YYrccH6yxpnps6k38sSTlFRrwc4jycWmhWxJIm9dPrk+XkY1hZ2t0I7jmacMNb15Lf2fspa/Y3lg==}
+  shiki@1.10.2:
+    resolution: {integrity: sha512-wrddjiCJ6D8zB1MuAGZ37G37rGw+6Ntnqqbl2uXh3P8g5JxneJRRhccPnex/gqorJoXkbpTRC2x54QIsdx2b1Q==}
 
   side-channel@1.0.6:
     resolution: {integrity: sha512-fDW/EZ6Q9RiO8eFG8Hj+7u/oW+XrPTIChwCOM2+th2A6OblDtYYIpve9m+KvI9Z4C9qSEXlaGR6bTEYHReuglA==}
@@ -6087,8 +6087,8 @@ packages:
     peerDependencies:
       typedoc: ^0.25.7
 
-  typedoc-plugin-mdn-links@3.2.2:
-    resolution: {integrity: sha512-3xlxS32c29Mey5SxqgCEF1lYYceQyoILhJM0Ewh2ISW8Ql3NzhC3SGpuvft4YtzpZIdB+YR7aIMkhlDquA0M+Q==}
+  typedoc-plugin-mdn-links@3.2.3:
+    resolution: {integrity: sha512-hz22UgFuzdtgpBXet2dxKf9d2HVixL2VcE9Ke1+X1Nu8W8jSGIB2awIA6HFVsD0vk1OLe3ehU0ibyD5sN7wh4w==}
     peerDependencies:
       typedoc: '>= 0.23.14 || 0.24.x || 0.25.x || 0.26.x'
 
@@ -7837,7 +7837,9 @@ snapshots:
 
   '@rushstack/eslint-patch@1.10.3': {}
 
-  '@shikijs/core@1.10.1': {}
+  '@shikijs/core@1.10.2':
+    dependencies:
+      '@types/hast': 3.0.4
 
   '@sinclair/typebox@0.27.8': {}
 
@@ -13091,9 +13093,10 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shiki@1.10.1:
+  shiki@1.10.2:
     dependencies:
-      '@shikijs/core': 1.10.1
+      '@shikijs/core': 1.10.2
+      '@types/hast': 3.0.4
 
   side-channel@1.0.6:
     dependencies:
@@ -13642,7 +13645,7 @@ snapshots:
     dependencies:
       typedoc: 0.26.3(typescript@5.5.3)
 
-  typedoc-plugin-mdn-links@3.2.2(typedoc@0.26.3(typescript@5.5.3)):
+  typedoc-plugin-mdn-links@3.2.3(typedoc@0.26.3(typescript@5.5.3)):
     dependencies:
       typedoc: 0.26.3(typescript@5.5.3)
 
@@ -13664,7 +13667,7 @@ snapshots:
       lunr: 2.3.9
       markdown-it: 14.1.0
       minimatch: 9.0.5
-      shiki: 1.10.1
+      shiki: 1.10.2
       typescript: 5.5.3
       yaml: 2.4.5
 

@@ -1,4 +1,4 @@
-import useRGS from "r18gs";
+import { useRGS } from "r18gs";
 import { LOADER_RGS_KEY } from "../constants";
 
 /**

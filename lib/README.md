@@ -23,37 +23,37 @@ React18 Loaders is a comprehensive library designed to unlock the full potential
 ### Installation
 
 ```bash
-$ pnpm add react18-loaders
+pnpm add react18-loaders
 ```
 
 **_or_**
 
 ```bash
-$ npm install react18-loaders
+npm install react18-loaders
 ```
 
 **_or_**
 
 ```bash
-$ yarn add react18-loaders
+yarn add react18-loaders
 ```
 
 ## Want Lite Version? [![npm bundle size](https://img.shields.io/bundlephobia/minzip/react18-loaders-lite)](https://www.npmjs.com/package/react18-loaders-lite) [![Version](https://img.shields.io/npm/v/react18-loaders-lite.svg?colorB=green)](https://www.npmjs.com/package/react18-loaders-lite) [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/react18-loaders-lite.svg)](https://www.npmjs.com/package/react18-loaders-lite)
 
 ```bash
-$ pnpm add react18-loaders-lite
+pnpm add react18-loaders-lite
 ```
 
 **or**
 
 ```bash
-$ npm install react18-loaders-lite
+npm install react18-loaders-lite
 ```
 
 **or**
 
 ```bash
-$ yarn add react18-loaders-lite
+yarn add react18-loaders-lite
 ```
 
 > You need `r18gs` as a peer-dependency

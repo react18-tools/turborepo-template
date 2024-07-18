@@ -8,7 +8,7 @@
     "node/jest-preset.js"
   ],
   "dependencies": {
-    "ts-jest": "^29.2.2"
+    "ts-jest": "^29.2.3"
   },
   "devDependencies": {
     "jest-environment-jsdom": "^29.7.0"

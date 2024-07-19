@@ -80,8 +80,11 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   }
 }
 
+const { visibility } = JSON.parse(execSync("gh repo view --json visibility").toString());
+const provenance = visibility.toLowerCase() === "public" ? "--provenance" : "";
+
 /** Create release */
-execSync(`cd lib && pnpm build && npm publish --provenance --access public --tag ${tag}`);
+execSync(`cd lib && pnpm build && npm publish ${provenance} --access public --tag ${tag}`);
 
 /** Create GitHub release */
 execSync(
@@ -89,4 +92,4 @@ execSync(
 );
 
 execSync("node ./scripts/lite.js");
-execSync(`cd lib && pnpm build && npm publish --provenance --access public --tag ${tag}`);
+execSync(`cd lib && pnpm build && npm publish ${provenance} --access public --tag ${tag}`);

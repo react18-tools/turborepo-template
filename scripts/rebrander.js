@@ -130,8 +130,11 @@ const updatePublishFlow = name => {
 updatePublishFlow("publish.yml");
 updatePublishFlow("manual-publish.yml");
 
-fs.unlinkSync(path.resolve(workflowsPath, "setup.yml"));
-
+try {
+  fs.unlinkSync(path.resolve(workflowsPath, "setup.yml"));
+} catch {
+  // empty
+}
 const docsWorkflowPath = path.resolve(workflowsPath, "docs.yml");
 fs.writeFileSync(
   docsWorkflowPath,

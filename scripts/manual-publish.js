@@ -50,7 +50,11 @@ const isNotPatch = newMajor !== oldMajor || newMinor !== oldMinor;
 const pushCmd = `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${BRANCH}`;
 
 if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
-  execSync(pushCmd);
+  try {
+    execSync(pushCmd);
+  } catch (e) {
+    console.log({ e });
+  }
   require("./update-security-md")(`${newMajor}.${newMinor}`, `${oldMajor}.${oldMinor}`);
   /** Create new release branch for every Major or Minor release */
   const releaseBranch = `release-${newMajor}.${newMinor}`;
@@ -63,9 +67,17 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
     throw new Error("Major or Minor changes can be published only from the default branch.");
 
   // Push changes back to the repo
-  execSync(pushCmd);
+  try {
+    execSync(pushCmd);
+  } catch (e) {
+    console.log({ e });
+  }
 } else {
-  execSync(pushCmd);
+  try {
+    execSync(pushCmd);
+  } catch (e) {
+    console.log({ e });
+  }
 }
 
 /** Create release */

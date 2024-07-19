@@ -1,5 +1,6 @@
 {
   "owner": "react18-tools",
   "repo": "turborepo-template",
-  "packageName": "react18-loaders"
+  "packageName": "react18-loaders",
+  "title": "React 18 Loaders"
 }

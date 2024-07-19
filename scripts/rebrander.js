@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const { packageName, owner, repo } = require("./rebrand.config.json");
+const { packageName, owner, repo, title } = require("./rebrand.config.json");
 const packageJSON = require("../lib/package.json");
 
 const rootDir = process.cwd();
@@ -62,10 +62,6 @@ try {
 }
 
 // Update README
-const title = packageName
-  .split("-")
-  .map(w => w[0].toUpperCase() + w.slice(1))
-  .join(" ");
 const readme = fs
   .readFileSync(path.resolve(rootDir, "lib", "README.md"), "utf-8")
   .replace(new RegExp(oldPkgName, "g"), packageName)

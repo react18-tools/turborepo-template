@@ -54,6 +54,15 @@ const rebrandFn = async () => {
       initial: repo,
     },
     {
+      type: "input",
+      name: "title",
+      message: "What is the title of your project?",
+      initial: packageName
+        .split("-")
+        .map(w => w[0].toUpperCase() + w.slice(1))
+        .join(" "),
+    },
+    {
       type: "confirm",
       name: "installExt",
       message: "Do you want to install the recommended VS Code extensions?",

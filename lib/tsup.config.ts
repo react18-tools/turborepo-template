@@ -8,7 +8,7 @@ export default defineConfig(
     ({
       format: ["cjs", "esm"],
       target: "es2019",
-      entry: ["./src"],
+      entry: ["./src/**"],
       sourcemap: false,
       clean: !options.watch,
       bundle: true,

@@ -208,7 +208,7 @@ importers:
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.10.3
-        version: 2.10.3(@remix-run/react@2.10.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.10.3(typescript@5.5.4))(@types/node@20.14.12)(sass@1.77.8)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.12)(sass@1.77.8))
+        version: 2.10.3(@remix-run/react@2.10.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.10.3(typescript@5.5.4))(@types/node@20.14.12)(sass@1.77.8)(typescript@5.5.4)(vite@5.3.5(@types/node@20.14.12)(sass@1.77.8))
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/config-eslint
@@ -263,13 +263,13 @@ importers:
         version: 18.3.0
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.3.4(@types/node@20.14.12)(sass@1.77.8))
+        version: 4.3.1(vite@5.3.5(@types/node@20.14.12)(sass@1.77.8))
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
       vite:
-        specifier: ^5.3.4
-        version: 5.3.4(@types/node@20.14.12)(sass@1.77.8)
+        specifier: ^5.3.5
+        version: 5.3.5(@types/node@20.14.12)(sass@1.77.8)
 
   lib:
     dependencies:
@@ -300,7 +300,7 @@ importers:
         version: 18.3.0
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.3.4(@types/node@20.14.12)(sass@1.77.8))
+        version: 4.3.1(vite@5.3.5(@types/node@20.14.12)(sass@1.77.8))
       '@vitest/coverage-v8':
         specifier: ^2.0.4
         version: 2.0.4(vitest@2.0.4(@types/node@20.14.12)(jsdom@24.1.1)(sass@1.77.8))
@@ -330,7 +330,7 @@ importers:
         version: 5.5.4
       vite-tsconfig-paths:
         specifier: ^4.3.2
-        version: 4.3.2(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.12)(sass@1.77.8))
+        version: 4.3.2(typescript@5.5.4)(vite@5.3.5(@types/node@20.14.12)(sass@1.77.8))
       vitest:
         specifier: ^2.0.4
         version: 2.0.4(@types/node@20.14.12)(jsdom@24.1.1)(sass@1.77.8)
@@ -439,7 +439,7 @@ importers:
         version: 18.3.0
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.3.4(@types/node@20.14.12)(sass@1.77.8))
+        version: 4.3.1(vite@5.3.5(@types/node@20.14.12)(sass@1.77.8))
       '@vitest/coverage-v8':
         specifier: ^2.0.4
         version: 2.0.4(vitest@2.0.4(@types/node@20.14.12)(jsdom@24.1.1)(sass@1.77.8))
@@ -469,7 +469,7 @@ importers:
         version: 5.5.4
       vite-tsconfig-paths:
         specifier: ^4.3.2
-        version: 4.3.2(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.12)(sass@1.77.8))
+        version: 4.3.2(typescript@5.5.4)(vite@5.3.5(@types/node@20.14.12)(sass@1.77.8))
       vitest:
         specifier: ^2.0.4
         version: 2.0.4(@types/node@20.14.12)(jsdom@24.1.1)(sass@1.77.8)
@@ -6558,8 +6558,8 @@ packages:
       vite:
         optional: true
 
-  vite@5.3.4:
-    resolution: {integrity: sha512-Cw+7zL3ZG9/NZBB8C+8QbQZmR54GwqIz+WMI4b3JgdYJvX+ny9AjJXqkGQlDXSXRP9rP0B4tbciRMOVEKulVOA==}
+  vite@5.3.5:
+    resolution: {integrity: sha512-MdjglKR6AQXQb9JGiS7Rc2wC6uMjcm7Go/NHNO63EwiJXfuk9PgqiP/n5IDJCziMkfw9n4Ubp7lttNwz+8ZVKA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -7948,7 +7948,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@remix-run/dev@2.10.3(@remix-run/react@2.10.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.10.3(typescript@5.5.4))(@types/node@20.14.12)(sass@1.77.8)(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.12)(sass@1.77.8))':
+  '@remix-run/dev@2.10.3(@remix-run/react@2.10.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.4))(@remix-run/serve@2.10.3(typescript@5.5.4))(@types/node@20.14.12)(sass@1.77.8)(typescript@5.5.4)(vite@5.3.5(@types/node@20.14.12)(sass@1.77.8))':
     dependencies:
       '@babel/core': 7.24.9
       '@babel/generator': 7.24.10
@@ -8007,7 +8007,7 @@ snapshots:
     optionalDependencies:
       '@remix-run/serve': 2.10.3(typescript@5.5.4)
       typescript: 5.5.4
-      vite: 5.3.4(@types/node@20.14.12)(sass@1.77.8)
+      vite: 5.3.5(@types/node@20.14.12)(sass@1.77.8)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -8605,7 +8605,7 @@ snapshots:
       lodash: 4.17.21
       mlly: 1.7.1
       outdent: 0.8.0
-      vite: 5.3.4(@types/node@20.14.12)(sass@1.77.8)
+      vite: 5.3.5(@types/node@20.14.12)(sass@1.77.8)
       vite-node: 1.6.0(@types/node@20.14.12)(sass@1.77.8)
     transitivePeerDependencies:
       - '@types/node'
@@ -8668,14 +8668,14 @@ snapshots:
       - supports-color
       - vitest
 
-  '@vitejs/plugin-react@4.3.1(vite@5.3.4(@types/node@20.14.12)(sass@1.77.8))':
+  '@vitejs/plugin-react@4.3.1(vite@5.3.5(@types/node@20.14.12)(sass@1.77.8))':
     dependencies:
       '@babel/core': 7.24.9
       '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.24.9)
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.24.9)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.3.4(@types/node@20.14.12)(sass@1.77.8)
+      vite: 5.3.5(@types/node@20.14.12)(sass@1.77.8)
     transitivePeerDependencies:
       - supports-color
 
@@ -14374,7 +14374,7 @@ snapshots:
       debug: 4.3.5
       pathe: 1.1.2
       picocolors: 1.0.1
-      vite: 5.3.4(@types/node@20.14.12)(sass@1.77.8)
+      vite: 5.3.5(@types/node@20.14.12)(sass@1.77.8)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -14391,7 +14391,7 @@ snapshots:
       debug: 4.3.5
       pathe: 1.1.2
       tinyrainbow: 1.2.0
-      vite: 5.3.4(@types/node@20.14.12)(sass@1.77.8)
+      vite: 5.3.5(@types/node@20.14.12)(sass@1.77.8)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -14402,18 +14402,18 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@4.3.2(typescript@5.5.4)(vite@5.3.4(@types/node@20.14.12)(sass@1.77.8)):
+  vite-tsconfig-paths@4.3.2(typescript@5.5.4)(vite@5.3.5(@types/node@20.14.12)(sass@1.77.8)):
     dependencies:
       debug: 4.3.5
       globrex: 0.1.2
       tsconfck: 3.1.1(typescript@5.5.4)
     optionalDependencies:
-      vite: 5.3.4(@types/node@20.14.12)(sass@1.77.8)
+      vite: 5.3.5(@types/node@20.14.12)(sass@1.77.8)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.3.4(@types/node@20.14.12)(sass@1.77.8):
+  vite@5.3.5(@types/node@20.14.12)(sass@1.77.8):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.40
@@ -14441,7 +14441,7 @@ snapshots:
       tinybench: 2.8.0
       tinypool: 1.0.0
       tinyrainbow: 1.2.0
-      vite: 5.3.4(@types/node@20.14.12)(sass@1.77.8)
+      vite: 5.3.5(@types/node@20.14.12)(sass@1.77.8)
       vite-node: 2.0.4(@types/node@20.14.12)(sass@1.77.8)
       why-is-node-running: 2.3.0
     optionalDependencies:

@@ -16,7 +16,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.1.0",
+    "@types/node": "^22.2.0",
     "enquirer": "^2.4.1",
     "plop": "^4.0.1",
     "prettier": "^3.3.3",
@@ -24,7 +24,7 @@
     "typedoc": "^0.26.5",
     "typedoc-plugin-extras": "^3.1.0",
     "typedoc-plugin-inline-sources": "^1.0.2",
-    "typedoc-plugin-mdn-links": "^3.2.7",
+    "typedoc-plugin-mdn-links": "^3.2.8",
     "typedoc-plugin-missing-exports": "^3.0.0",
     "typedoc-plugin-rename-defaults": "^0.7.1",
     "typedoc-plugin-zod": "^1.2.0"

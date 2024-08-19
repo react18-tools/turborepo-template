@@ -33,26 +33,26 @@ importers:
         specifier: ^2.0.14
         version: 2.0.14
       typedoc:
-        specifier: ^0.26.5
-        version: 0.26.5(typescript@5.5.4)
+        specifier: ^0.26.6
+        version: 0.26.6(typescript@5.5.4)
       typedoc-plugin-extras:
         specifier: ^3.1.0
-        version: 3.1.0(typedoc@0.26.5(typescript@5.5.4))
+        version: 3.1.0(typedoc@0.26.6(typescript@5.5.4))
       typedoc-plugin-inline-sources:
         specifier: ^1.0.2
-        version: 1.0.2(typedoc@0.26.5(typescript@5.5.4))
+        version: 1.0.2(typedoc@0.26.6(typescript@5.5.4))
       typedoc-plugin-mdn-links:
         specifier: ^3.2.9
-        version: 3.2.9(typedoc@0.26.5(typescript@5.5.4))
+        version: 3.2.9(typedoc@0.26.6(typescript@5.5.4))
       typedoc-plugin-missing-exports:
         specifier: ^3.0.0
-        version: 3.0.0(typedoc@0.26.5(typescript@5.5.4))
+        version: 3.0.0(typedoc@0.26.6(typescript@5.5.4))
       typedoc-plugin-rename-defaults:
         specifier: ^0.7.1
-        version: 0.7.1(typedoc@0.26.5(typescript@5.5.4))
+        version: 0.7.1(typedoc@0.26.6(typescript@5.5.4))
       typedoc-plugin-zod:
-        specifier: ^1.2.0
-        version: 1.2.0(typedoc@0.26.5(typescript@5.5.4))
+        specifier: ^1.2.1
+        version: 1.2.1(typedoc@0.26.6(typescript@5.5.4))
 
   examples/express:
     dependencies:
@@ -6349,13 +6349,13 @@ packages:
     peerDependencies:
       typedoc: '>=0.22.x <0.27.x'
 
-  typedoc-plugin-zod@1.2.0:
-    resolution: {integrity: sha512-eFvPQ4iJsoru4HJP8z7F0NhRxPBjgVPoM0j/xipB7nkGLYhfUjEOlABayaTdBiMocPNCXOCBjFWBHEJGBiMRdw==}
+  typedoc-plugin-zod@1.2.1:
+    resolution: {integrity: sha512-oPo0PhcryKNR9UYZ6F4LFqDpQEBtNRQe6CpRTOUGrdqZOeoIZtJBVVZnSn/pBJiBU+Y6iZ/HsPESLZn1BPeLkw==}
     peerDependencies:
       typedoc: 0.23.x || 0.24.x || 0.25.x || 0.26.x
 
-  typedoc@0.26.5:
-    resolution: {integrity: sha512-Vn9YKdjKtDZqSk+by7beZ+xzkkr8T8CYoiasqyt4TTRFy5+UHzL/mF/o4wGBjRF+rlWQHDb0t6xCpA3JNL5phg==}
+  typedoc@0.26.6:
+    resolution: {integrity: sha512-SfEU3SH3wHNaxhFPjaZE2kNl/NFtLNW5c1oHsg7mti7GjmUj1Roq6osBQeMd+F4kL0BoRBBr8gQAuqBlfFu8LA==}
     engines: {node: '>= 18'}
     hasBin: true
     peerDependencies:
@@ -14088,32 +14088,32 @@ snapshots:
 
   typedarray@0.0.6: {}
 
-  typedoc-plugin-extras@3.1.0(typedoc@0.26.5(typescript@5.5.4)):
+  typedoc-plugin-extras@3.1.0(typedoc@0.26.6(typescript@5.5.4)):
     dependencies:
-      typedoc: 0.26.5(typescript@5.5.4)
+      typedoc: 0.26.6(typescript@5.5.4)
 
-  typedoc-plugin-inline-sources@1.0.2(typedoc@0.26.5(typescript@5.5.4)):
+  typedoc-plugin-inline-sources@1.0.2(typedoc@0.26.6(typescript@5.5.4)):
     dependencies:
-      typedoc: 0.26.5(typescript@5.5.4)
+      typedoc: 0.26.6(typescript@5.5.4)
 
-  typedoc-plugin-mdn-links@3.2.9(typedoc@0.26.5(typescript@5.5.4)):
+  typedoc-plugin-mdn-links@3.2.9(typedoc@0.26.6(typescript@5.5.4)):
     dependencies:
-      typedoc: 0.26.5(typescript@5.5.4)
+      typedoc: 0.26.6(typescript@5.5.4)
 
-  typedoc-plugin-missing-exports@3.0.0(typedoc@0.26.5(typescript@5.5.4)):
+  typedoc-plugin-missing-exports@3.0.0(typedoc@0.26.6(typescript@5.5.4)):
     dependencies:
-      typedoc: 0.26.5(typescript@5.5.4)
+      typedoc: 0.26.6(typescript@5.5.4)
 
-  typedoc-plugin-rename-defaults@0.7.1(typedoc@0.26.5(typescript@5.5.4)):
+  typedoc-plugin-rename-defaults@0.7.1(typedoc@0.26.6(typescript@5.5.4)):
     dependencies:
       camelcase: 8.0.0
-      typedoc: 0.26.5(typescript@5.5.4)
+      typedoc: 0.26.6(typescript@5.5.4)
 
-  typedoc-plugin-zod@1.2.0(typedoc@0.26.5(typescript@5.5.4)):
+  typedoc-plugin-zod@1.2.1(typedoc@0.26.6(typescript@5.5.4)):
     dependencies:
-      typedoc: 0.26.5(typescript@5.5.4)
+      typedoc: 0.26.6(typescript@5.5.4)
 
-  typedoc@0.26.5(typescript@5.5.4):
+  typedoc@0.26.6(typescript@5.5.4):
     dependencies:
       lunr: 2.3.9
       markdown-it: 14.1.0

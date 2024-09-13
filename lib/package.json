@@ -31,7 +31,7 @@
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "@vitest/coverage-v8": "^2.1.0",
+    "@vitest/coverage-v8": "^2.1.1",
     "esbuild-plugin-rdi": "^0.0.0",
     "esbuild-plugin-react18": "0.2.5",
     "esbuild-plugin-react18-css": "^0.0.4",
@@ -41,7 +41,7 @@
     "tsup": "^8.2.4",
     "typescript": "^5.6.2",
     "vite-tsconfig-paths": "^5.0.1",
-    "vitest": "^2.1.0"
+    "vitest": "^2.1.1"
   },
   "dependencies": {
     "r18gs": "^2.0.0"

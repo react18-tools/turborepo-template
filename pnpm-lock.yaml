@@ -42,8 +42,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(typedoc@0.26.7(typescript@5.6.2))
       typedoc-plugin-mdn-links:
-        specifier: ^3.2.12
-        version: 3.2.12(typedoc@0.26.7(typescript@5.6.2))
+        specifier: ^3.3.0
+        version: 3.3.0(typedoc@0.26.7(typescript@5.6.2))
       typedoc-plugin-missing-exports:
         specifier: ^3.0.0
         version: 3.0.0(typedoc@0.26.7(typescript@5.6.2))
@@ -121,14 +121,14 @@ importers:
         specifier: workspace:*
         version: link:../../packages/shared
       next:
-        specifier: ^14.2.12
-        version: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+        specifier: ^14.2.13
+        version: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
       nextjs-darkmode:
         specifier: ^1.0.4
-        version: 1.0.4(@types/react@18.3.7)(next@14.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 1.0.4(@types/react@18.3.8)(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       nextjs-themes:
         specifier: ^4.0.3
-        version: 4.0.3(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 4.0.3(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -137,17 +137,17 @@ importers:
         version: 18.3.1(react@18.3.1)
       react-mouse-trails:
         specifier: ^0.0.4
-        version: 0.0.4(@types/react@18.3.7)(react@18.3.1)
+        version: 0.0.4(@types/react@18.3.8)(react@18.3.1)
       react18-loaders:
         specifier: workspace:*
         version: link:../../lib
       webgl-generative-particles:
         specifier: ^0.0.1
-        version: 0.0.1(@types/react@18.3.7)(react@18.3.1)
+        version: 0.0.1(@types/react@18.3.8)(react@18.3.1)
     devDependencies:
       '@next/eslint-plugin-next':
-        specifier: ^14.2.12
-        version: 14.2.12
+        specifier: ^14.2.13
+        version: 14.2.13
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/config-eslint
@@ -158,8 +158,8 @@ importers:
         specifier: ^22.5.5
         version: 22.5.5
       '@types/react':
-        specifier: ^18.3.7
-        version: 18.3.7
+        specifier: ^18.3.8
+        version: 18.3.8
       '@types/react-dom':
         specifier: ^18.3.0
         version: 18.3.0
@@ -186,13 +186,13 @@ importers:
         version: link:../../packages/shared
       '@vercel/analytics':
         specifier: ^1.3.1
-        version: 1.3.1(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 1.3.1(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       '@vercel/remix-entry-server':
         specifier: ^0.1.1
         version: 0.1.1(react@18.3.1)
       nextjs-darkmode:
         specifier: ^1.0.4
-        version: 1.0.4(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 1.0.4(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -204,11 +204,11 @@ importers:
         version: link:../../lib
       react18-themes:
         specifier: ^3.2.0
-        version: 3.2.0(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 3.2.0(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.12.1
-        version: 2.12.1(@remix-run/react@2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2))(@remix-run/serve@2.12.1(typescript@5.6.2))(@types/node@22.5.5)(sass@1.79.1)(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))
+        version: 2.12.1(@remix-run/react@2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2))(@remix-run/serve@2.12.1(typescript@5.6.2))(@types/node@22.5.5)(sass@1.79.2)(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/config-eslint
@@ -216,8 +216,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/config-typescript
       '@types/react':
-        specifier: ^18.3.7
-        version: 18.3.7
+        specifier: ^18.3.8
+        version: 18.3.8
       '@types/react-dom':
         specifier: ^18.3.0
         version: 18.3.0
@@ -232,7 +232,7 @@ importers:
         version: link:../../packages/shared
       nextjs-darkmode:
         specifier: ^1.0.4
-        version: 1.0.4(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 1.0.4(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -241,13 +241,13 @@ importers:
         version: 18.3.1(react@18.3.1)
       react-mouse-trails:
         specifier: ^0.0.4
-        version: 0.0.4(@types/react@18.3.7)(react@18.3.1)
+        version: 0.0.4(@types/react@18.3.8)(react@18.3.1)
       react18-loaders:
         specifier: workspace:*
         version: link:../../lib
       react18-themes:
         specifier: ^3.2.0
-        version: 3.2.0(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 3.2.0(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -256,29 +256,29 @@ importers:
         specifier: workspace:*
         version: link:../../packages/config-typescript
       '@types/react':
-        specifier: ^18.3.7
-        version: 18.3.7
+        specifier: ^18.3.8
+        version: 18.3.8
       '@types/react-dom':
         specifier: ^18.3.0
         version: 18.3.0
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))
+        version: 4.3.1(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))
       typescript:
         specifier: ^5.6.2
         version: 5.6.2
       vite:
         specifier: ^5.4.6
-        version: 5.4.6(@types/node@22.5.5)(sass@1.79.1)
+        version: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
 
   lib:
     dependencies:
       next:
         specifier: 10 - 15
-        version: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+        version: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
       r18gs:
         specifier: ^2.0.0
-        version: 2.0.0(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 2.0.0(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -288,28 +288,28 @@ importers:
         version: link:../packages/config-typescript
       '@testing-library/react':
         specifier: ^16.0.1
-        version: 16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/node':
         specifier: ^22.5.5
         version: 22.5.5
       '@types/react':
-        specifier: ^18.3.7
-        version: 18.3.7
+        specifier: ^18.3.8
+        version: 18.3.8
       '@types/react-dom':
         specifier: ^18.3.0
         version: 18.3.0
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))
+        version: 4.3.1(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))
       '@vitest/coverage-v8':
         specifier: ^2.1.1
-        version: 2.1.1(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1))
+        version: 2.1.1(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2))
       esbuild-plugin-rdi:
         specifier: ^0.0.0
         version: 0.0.0
       esbuild-plugin-react18:
         specifier: 0.2.5
-        version: 0.2.5(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 0.2.5(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -330,16 +330,16 @@ importers:
         version: 5.6.2
       vite-tsconfig-paths:
         specifier: ^5.0.1
-        version: 5.0.1(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))
+        version: 5.0.1(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))
       vitest:
         specifier: ^2.1.1
-        version: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1)
+        version: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2)
 
   packages/config-eslint:
     devDependencies:
       '@vercel/style-guide':
         specifier: ^6.0.0
-        version: 6.0.0(@next/eslint-plugin-next@14.2.12)(eslint@9.10.0)(jest@29.7.0(@types/node@22.5.5))(prettier@3.3.3)(typescript@5.6.2)(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1))
+        version: 6.0.0(@next/eslint-plugin-next@14.2.13)(eslint@9.10.0)(jest@29.7.0(@types/node@22.5.5))(prettier@3.3.3)(typescript@5.6.2)(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2))
       eslint-config-turbo:
         specifier: ^2.1.2
         version: 2.1.2(eslint@9.10.0)
@@ -396,22 +396,22 @@ importers:
     dependencies:
       '@mayank1513/fork-me':
         specifier: ^2.1.2
-        version: 2.1.2(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 2.1.2(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       '@repo/scripts':
         specifier: workspace:*
         version: link:../../scripts
       next:
         specifier: 10 - 14
-        version: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+        version: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
       nextjs-darkmode:
         specifier: ^1.0.4
-        version: 1.0.4(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 1.0.4(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       nextjs-themes:
         specifier: ^4.0.3
-        version: 4.0.3(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 4.0.3(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       r18gs:
         specifier: ^2.0.0
-        version: 2.0.0(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 2.0.0(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       react-live:
         specifier: ^4.1.7
         version: 4.1.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -427,28 +427,28 @@ importers:
         version: link:../config-typescript
       '@testing-library/react':
         specifier: ^16.0.1
-        version: 16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/node':
         specifier: ^22.5.5
         version: 22.5.5
       '@types/react':
-        specifier: ^18.3.7
-        version: 18.3.7
+        specifier: ^18.3.8
+        version: 18.3.8
       '@types/react-dom':
         specifier: ^18.3.0
         version: 18.3.0
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))
+        version: 4.3.1(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))
       '@vitest/coverage-v8':
         specifier: ^2.1.1
-        version: 2.1.1(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1))
+        version: 2.1.1(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2))
       esbuild-plugin-rdi:
         specifier: ^0.0.0
         version: 0.0.0
       esbuild-plugin-react18:
         specifier: ^0.2.5
-        version: 0.2.5(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+        version: 0.2.5(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -469,10 +469,10 @@ importers:
         version: 5.6.2
       vite-tsconfig-paths:
         specifier: ^5.0.1
-        version: 5.0.1(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))
+        version: 5.0.1(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))
       vitest:
         specifier: ^2.1.1
-        version: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1)
+        version: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2)
 
   scripts: {}
 
@@ -1368,62 +1368,62 @@ packages:
   '@microsoft/tsdoc@0.14.2':
     resolution: {integrity: sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug==}
 
-  '@next/env@14.2.12':
-    resolution: {integrity: sha512-3fP29GIetdwVIfIRyLKM7KrvJaqepv+6pVodEbx0P5CaMLYBtx+7eEg8JYO5L9sveJO87z9eCReceZLi0hxO1Q==}
+  '@next/env@14.2.13':
+    resolution: {integrity: sha512-s3lh6K8cbW1h5Nga7NNeXrbe0+2jIIYK9YaA9T7IufDWnZpozdFUp6Hf0d5rNWUKu4fEuSX2rCKlGjCrtylfDw==}
 
-  '@next/eslint-plugin-next@14.2.12':
-    resolution: {integrity: sha512-cPrKbXtK8NTThOOFNxRGGTw+5s02Ek8z8ri/hZqeKs6uP8LOTGqFyBy6hpCXt7TvLzzriWiiwRyD4h0XYmPEEg==}
+  '@next/eslint-plugin-next@14.2.13':
+    resolution: {integrity: sha512-z8Mk0VljxhIzsSiZUSdt3wp+t2lKd+jk5a9Jsvh3zDGkItgDMfjv/ZbET6HsxEl/fSihVoHGsXV6VLyDH0lfTQ==}
 
-  '@next/swc-darwin-arm64@14.2.12':
-    resolution: {integrity: sha512-crHJ9UoinXeFbHYNok6VZqjKnd8rTd7K3Z2zpyzF1ch7vVNKmhjv/V7EHxep3ILoN8JB9AdRn/EtVVyG9AkCXw==}
+  '@next/swc-darwin-arm64@14.2.13':
+    resolution: {integrity: sha512-IkAmQEa2Htq+wHACBxOsslt+jMoV3msvxCn0WFSfJSkv/scy+i/EukBKNad36grRxywaXUYJc9mxEGkeIs8Bzg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@14.2.12':
-    resolution: {integrity: sha512-JbEaGbWq18BuNBO+lCtKfxl563Uw9oy2TodnN2ioX00u7V1uzrsSUcg3Ep9ce+P0Z9es+JmsvL2/rLphz+Frcw==}
+  '@next/swc-darwin-x64@14.2.13':
+    resolution: {integrity: sha512-Dv1RBGs2TTjkwEnFMVL5XIfJEavnLqqwYSD6LXgTPdEy/u6FlSrLBSSfe1pcfqhFEXRAgVL3Wpjibe5wXJzWog==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@14.2.12':
-    resolution: {integrity: sha512-qBy7OiXOqZrdp88QEl2H4fWalMGnSCrr1agT/AVDndlyw2YJQA89f3ttR/AkEIP9EkBXXeGl6cC72/EZT5r6rw==}
+  '@next/swc-linux-arm64-gnu@14.2.13':
+    resolution: {integrity: sha512-yB1tYEFFqo4ZNWkwrJultbsw7NPAAxlPXURXioRl9SdW6aIefOLS+0TEsKrWBtbJ9moTDgU3HRILL6QBQnMevg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@14.2.12':
-    resolution: {integrity: sha512-EfD9L7o9biaQxjwP1uWXnk3vYZi64NVcKUN83hpVkKocB7ogJfyH2r7o1pPnMtir6gHZiGCeHKagJ0yrNSLNHw==}
+  '@next/swc-linux-arm64-musl@14.2.13':
+    resolution: {integrity: sha512-v5jZ/FV/eHGoWhMKYrsAweQ7CWb8xsWGM/8m1mwwZQ/sutJjoFaXchwK4pX8NqwImILEvQmZWyb8pPTcP7htWg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@14.2.12':
-    resolution: {integrity: sha512-iQ+n2pxklJew9IpE47hE/VgjmljlHqtcD5UhZVeHICTPbLyrgPehaKf2wLRNjYH75udroBNCgrSSVSVpAbNoYw==}
+  '@next/swc-linux-x64-gnu@14.2.13':
+    resolution: {integrity: sha512-aVc7m4YL7ViiRv7SOXK3RplXzOEe/qQzRA5R2vpXboHABs3w8vtFslGTz+5tKiQzWUmTmBNVW0UQdhkKRORmGA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@14.2.12':
-    resolution: {integrity: sha512-rFkUkNwcQ0ODn7cxvcVdpHlcOpYxMeyMfkJuzaT74xjAa5v4fxP4xDk5OoYmPi8QNLDs3UgZPMSBmpBuv9zKWA==}
+  '@next/swc-linux-x64-musl@14.2.13':
+    resolution: {integrity: sha512-4wWY7/OsSaJOOKvMsu1Teylku7vKyTuocvDLTZQq0TYv9OjiYYWt63PiE1nTuZnqQ4RPvME7Xai+9enoiN0Wrg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@14.2.12':
-    resolution: {integrity: sha512-PQFYUvwtHs/u0K85SG4sAdDXYIPXpETf9mcEjWc0R4JmjgMKSDwIU/qfZdavtP6MPNiMjuKGXHCtyhR/M5zo8g==}
+  '@next/swc-win32-arm64-msvc@14.2.13':
+    resolution: {integrity: sha512-uP1XkqCqV2NVH9+g2sC7qIw+w2tRbcMiXFEbMihkQ8B1+V6m28sshBwAB0SDmOe0u44ne1vFU66+gx/28RsBVQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-ia32-msvc@14.2.12':
-    resolution: {integrity: sha512-FAj2hMlcbeCV546eU2tEv41dcJb4NeqFlSXU/xL/0ehXywHnNpaYajOUvn3P8wru5WyQe6cTZ8fvckj/2XN4Vw==}
+  '@next/swc-win32-ia32-msvc@14.2.13':
+    resolution: {integrity: sha512-V26ezyjPqQpDBV4lcWIh8B/QICQ4v+M5Bo9ykLN+sqeKKBxJVDpEc6biDVyluTXTC40f5IqCU0ttth7Es2ZuMw==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@14.2.12':
-    resolution: {integrity: sha512-yu8QvV53sBzoIVRHsxCHqeuS8jYq6Lrmdh0briivuh+Brsp6xjg80MAozUsBTAV9KNmY08KlX0KYTWz1lbPzEg==}
+  '@next/swc-win32-x64-msvc@14.2.13':
+    resolution: {integrity: sha512-WwzOEAFBGhlDHE5Z73mNU8CO8mqMNLqaG+AO9ETmzdCQlJhVtWZnOl2+rqgVQS+YHunjOWptdFmNfbpwcUuEsw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1883,8 +1883,8 @@ packages:
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
 
-  '@types/react@18.3.7':
-    resolution: {integrity: sha512-KUnDCJF5+AiZd8owLIeVHqmW9yM4sqmDVf2JRJiBMFkGvkoZ4/WyV2lL4zVsoinmRS/W3FeEdZLEWFRofnT2FQ==}
+  '@types/react@18.3.8':
+    resolution: {integrity: sha512-syBUrW3/XpnW4WJ41Pft+I+aPoDVbrBVQGEnbD7NijDGlVC+8gV/XKRY+7vMDlfPpbwYt0l1vd/Sj8bJGMbs9Q==}
 
   '@types/semver@7.5.8':
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
@@ -4914,8 +4914,8 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  next@14.2.12:
-    resolution: {integrity: sha512-cDOtUSIeoOvt1skKNihdExWMTybx3exnvbFbb9ecZDIxlvIbREQzt9A5Km3Zn3PfU+IFjyYGsHS+lN9VInAGKA==}
+  next@14.2.13:
+    resolution: {integrity: sha512-BseY9YNw8QJSwLYD7hlZzl6QVDoSFHL/URN5K64kVEVpCsSOWeyjbIGK+dZUaRViHTaMQX8aqmnn0PHBbGZezg==}
     engines: {node: '>=18.17.0'}
     hasBin: true
     peerDependencies:
@@ -5773,8 +5773,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.79.1:
-    resolution: {integrity: sha512-+mA7svoNKeL0DiJqZGeR/ZGUu8he4I8o3jyUcOFyo4eBJrwNgIMmAEwCMo/N2Y3wdjOBcRzoNxZIOtrtMX8EXg==}
+  sass@1.79.2:
+    resolution: {integrity: sha512-YmT1aoF1MwHsZEu/eXhbAJNsPGAhNP4UixW9ckEwWCvPcVdVF0/C104OGDVEqtoctKq0N+wM20O/rj+sSPsWeg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -6391,8 +6391,8 @@ packages:
     peerDependencies:
       typedoc: 0.25.x || 0.26.x
 
-  typedoc-plugin-mdn-links@3.2.12:
-    resolution: {integrity: sha512-UT7JinqYE7IQSrpRPkUkHrXXEJw5qbHIZhVq8igutYDA/4fsrYZhYffVo8Uh70K2iXFdAyvt6foQG5ci1VERAw==}
+  typedoc-plugin-mdn-links@3.3.0:
+    resolution: {integrity: sha512-4iPgkqJ3d9wZe6O0Z6hezSa2xD4UEmuQKiEuv5jF4BJDwqkarshz14w0qznQJu0VvdQ7VaAXgA3WnnXgajYMrQ==}
     peerDependencies:
       typedoc: '>= 0.23.14 || 0.24.x || 0.25.x || 0.26.x'
 
@@ -7822,12 +7822,12 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
-  '@mayank1513/fork-me@2.1.2(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)':
+  '@mayank1513/fork-me@2.1.2(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)':
     dependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       react: 18.3.1
     optionalDependencies:
-      next: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+      next: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
 
   '@mdx-js/mdx@2.3.0':
     dependencies:
@@ -7860,37 +7860,37 @@ snapshots:
 
   '@microsoft/tsdoc@0.14.2': {}
 
-  '@next/env@14.2.12': {}
+  '@next/env@14.2.13': {}
 
-  '@next/eslint-plugin-next@14.2.12':
+  '@next/eslint-plugin-next@14.2.13':
     dependencies:
       glob: 10.3.10
 
-  '@next/swc-darwin-arm64@14.2.12':
+  '@next/swc-darwin-arm64@14.2.13':
     optional: true
 
-  '@next/swc-darwin-x64@14.2.12':
+  '@next/swc-darwin-x64@14.2.13':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@14.2.12':
+  '@next/swc-linux-arm64-gnu@14.2.13':
     optional: true
 
-  '@next/swc-linux-arm64-musl@14.2.12':
+  '@next/swc-linux-arm64-musl@14.2.13':
     optional: true
 
-  '@next/swc-linux-x64-gnu@14.2.12':
+  '@next/swc-linux-x64-gnu@14.2.13':
     optional: true
 
-  '@next/swc-linux-x64-musl@14.2.12':
+  '@next/swc-linux-x64-musl@14.2.13':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@14.2.12':
+  '@next/swc-win32-arm64-msvc@14.2.13':
     optional: true
 
-  '@next/swc-win32-ia32-msvc@14.2.12':
+  '@next/swc-win32-ia32-msvc@14.2.13':
     optional: true
 
-  '@next/swc-win32-x64-msvc@14.2.12':
+  '@next/swc-win32-x64-msvc@14.2.13':
     optional: true
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
@@ -8001,7 +8001,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@remix-run/dev@2.12.1(@remix-run/react@2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2))(@remix-run/serve@2.12.1(typescript@5.6.2))(@types/node@22.5.5)(sass@1.79.1)(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))':
+  '@remix-run/dev@2.12.1(@remix-run/react@2.12.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.2))(@remix-run/serve@2.12.1(typescript@5.6.2))(@types/node@22.5.5)(sass@1.79.2)(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/generator': 7.25.6
@@ -8018,7 +8018,7 @@ snapshots:
       '@remix-run/router': 1.19.2
       '@remix-run/server-runtime': 2.12.1(typescript@5.6.2)
       '@types/mdx': 2.0.13
-      '@vanilla-extract/integration': 6.5.0(@types/node@22.5.5)(sass@1.79.1)
+      '@vanilla-extract/integration': 6.5.0(@types/node@22.5.5)(sass@1.79.2)
       arg: 5.0.2
       cacache: 17.1.4
       chalk: 4.1.2
@@ -8060,7 +8060,7 @@ snapshots:
     optionalDependencies:
       '@remix-run/serve': 2.12.1(typescript@5.6.2)
       typescript: 5.6.2
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)
+      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -8142,7 +8142,7 @@ snapshots:
     dependencies:
       '@remix-run/router': 1.3.1
       '@types/cookie': 0.4.1
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       '@web3-storage/multipart-parser': 1.0.0
       cookie: 0.4.2
       set-cookie-parser: 2.7.0
@@ -8299,14 +8299,14 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.25.6
       '@testing-library/dom': 10.4.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       '@types/react-dom': 18.3.0
 
   '@tootallnate/once@2.0.0': {}
@@ -8482,9 +8482,9 @@ snapshots:
 
   '@types/react-dom@18.3.0':
     dependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
 
-  '@types/react@18.3.7':
+  '@types/react@18.3.8':
     dependencies:
       '@types/prop-types': 15.7.13
       csstype: 3.1.3
@@ -8681,7 +8681,7 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@vanilla-extract/integration@6.5.0(@types/node@22.5.5)(sass@1.79.1)':
+  '@vanilla-extract/integration@6.5.0(@types/node@22.5.5)(sass@1.79.2)':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/plugin-syntax-typescript': 7.25.4(@babel/core@7.25.2)
@@ -8694,8 +8694,8 @@ snapshots:
       lodash: 4.17.21
       mlly: 1.7.1
       outdent: 0.8.0
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)
-      vite-node: 1.6.0(@types/node@22.5.5)(sass@1.79.1)
+      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
+      vite-node: 1.6.0(@types/node@22.5.5)(sass@1.79.2)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -8710,11 +8710,11 @@ snapshots:
 
   '@vanilla-extract/private@1.0.6': {}
 
-  '@vercel/analytics@1.3.1(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)':
+  '@vercel/analytics@1.3.1(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)':
     dependencies:
       server-only: 0.0.1
     optionalDependencies:
-      next: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+      next: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
       react: 18.3.1
 
   '@vercel/remix-entry-server@0.1.1(react@18.3.1)':
@@ -8724,7 +8724,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.2.0(react@18.3.1)
 
-  '@vercel/style-guide@6.0.0(@next/eslint-plugin-next@14.2.12)(eslint@9.10.0)(jest@29.7.0(@types/node@22.5.5))(prettier@3.3.3)(typescript@5.6.2)(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1))':
+  '@vercel/style-guide@6.0.0(@next/eslint-plugin-next@14.2.13)(eslint@9.10.0)(jest@29.7.0(@types/node@22.5.5))(prettier@3.3.3)(typescript@5.6.2)(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2))':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/eslint-parser': 7.25.1(@babel/core@7.25.2)(eslint@9.10.0)
@@ -8744,10 +8744,10 @@ snapshots:
       eslint-plugin-testing-library: 6.3.0(eslint@9.10.0)(typescript@5.6.2)
       eslint-plugin-tsdoc: 0.2.17
       eslint-plugin-unicorn: 51.0.1(eslint@9.10.0)
-      eslint-plugin-vitest: 0.3.26(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2)(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1))
+      eslint-plugin-vitest: 0.3.26(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2)(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2))
       prettier-plugin-packagejson: 2.5.2(prettier@3.3.3)
     optionalDependencies:
-      '@next/eslint-plugin-next': 14.2.12
+      '@next/eslint-plugin-next': 14.2.13
       eslint: 9.10.0
       prettier: 3.3.3
       typescript: 5.6.2
@@ -8759,18 +8759,18 @@ snapshots:
       - supports-color
       - vitest
 
-  '@vitejs/plugin-react@4.3.1(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))':
+  '@vitejs/plugin-react@4.3.1(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.25.2)
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.25.2)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)
+      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/coverage-v8@2.1.1(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1))':
+  '@vitest/coverage-v8@2.1.1(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -8784,7 +8784,7 @@ snapshots:
       std-env: 3.7.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1)
+      vitest: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -8795,13 +8795,13 @@ snapshots:
       chai: 5.1.1
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.1(@vitest/spy@2.1.1)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))':
+  '@vitest/mocker@2.1.1(@vitest/spy@2.1.1)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))':
     dependencies:
       '@vitest/spy': 2.1.1
       estree-walker: 3.0.3
       magic-string: 0.30.11
     optionalDependencies:
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)
+      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
 
   '@vitest/pretty-format@2.1.1':
     dependencies:
@@ -9812,14 +9812,14 @@ snapshots:
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-modules: 6.0.0(postcss@8.4.47)
-      sass: 1.79.1
+      sass: 1.79.2
 
-  esbuild-plugin-react18@0.2.5(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1):
+  esbuild-plugin-react18@0.2.5(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       react: 18.3.1
     optionalDependencies:
-      next: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+      next: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
 
   esbuild-plugins-node-modules-polyfill@1.6.6(esbuild@0.17.6):
     dependencies:
@@ -10171,13 +10171,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-vitest@0.3.26(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2)(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1)):
+  eslint-plugin-vitest@0.3.26(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2)(vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2)):
     dependencies:
       '@typescript-eslint/utils': 7.18.0(eslint@9.10.0)(typescript@5.6.2)
       eslint: 9.10.0
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.10.0)(typescript@5.6.2))(eslint@9.10.0)(typescript@5.6.2)
-      vitest: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1)
+      vitest: 2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -12569,9 +12569,9 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1):
+  next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2):
     dependencies:
-      '@next/env': 14.2.12
+      '@next/env': 14.2.13
       '@swc/helpers': 0.5.5
       busboy: 1.6.0
       caniuse-lite: 1.0.30001662
@@ -12581,40 +12581,40 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       styled-jsx: 5.1.1(@babel/core@7.25.2)(react@18.3.1)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 14.2.12
-      '@next/swc-darwin-x64': 14.2.12
-      '@next/swc-linux-arm64-gnu': 14.2.12
-      '@next/swc-linux-arm64-musl': 14.2.12
-      '@next/swc-linux-x64-gnu': 14.2.12
-      '@next/swc-linux-x64-musl': 14.2.12
-      '@next/swc-win32-arm64-msvc': 14.2.12
-      '@next/swc-win32-ia32-msvc': 14.2.12
-      '@next/swc-win32-x64-msvc': 14.2.12
-      sass: 1.79.1
+      '@next/swc-darwin-arm64': 14.2.13
+      '@next/swc-darwin-x64': 14.2.13
+      '@next/swc-linux-arm64-gnu': 14.2.13
+      '@next/swc-linux-arm64-musl': 14.2.13
+      '@next/swc-linux-x64-gnu': 14.2.13
+      '@next/swc-linux-x64-musl': 14.2.13
+      '@next/swc-win32-arm64-msvc': 14.2.13
+      '@next/swc-win32-ia32-msvc': 14.2.13
+      '@next/swc-win32-x64-msvc': 14.2.13
+      sass: 1.79.2
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-darkmode@1.0.4(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1):
+  nextjs-darkmode@1.0.4(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
-      r18gs: 1.1.3(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+      '@types/react': 18.3.8
+      r18gs: 1.1.3(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       react: 18.3.1
     transitivePeerDependencies:
       - next
 
-  nextjs-darkmode@1.0.4(@types/react@18.3.7)(next@14.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1):
+  nextjs-darkmode@1.0.4(@types/react@18.3.8)(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
-      r18gs: 1.1.3(@types/react@18.3.7)(next@14.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+      '@types/react': 18.3.8
+      r18gs: 1.1.3(@types/react@18.3.8)(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       react: 18.3.1
     transitivePeerDependencies:
       - next
 
-  nextjs-themes@4.0.3(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1):
+  nextjs-themes@4.0.3(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
-      r18gs: 2.0.0-alpha.0(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+      '@types/react': 18.3.8
+      r18gs: 2.0.0-alpha.0(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       react: 18.3.1
     transitivePeerDependencies:
       - next
@@ -13190,33 +13190,33 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  r18gs@1.1.3(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1):
+  r18gs@1.1.3(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       react: 18.3.1
     optionalDependencies:
-      next: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+      next: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
 
-  r18gs@1.1.3(@types/react@18.3.7)(next@14.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1):
+  r18gs@1.1.3(@types/react@18.3.8)(next@14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       react: 18.3.1
     optionalDependencies:
-      next: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+      next: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
 
-  r18gs@2.0.0(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1):
+  r18gs@2.0.0(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       react: 18.3.1
     optionalDependencies:
-      next: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+      next: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
 
-  r18gs@2.0.0-alpha.0(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1):
+  r18gs@2.0.0-alpha.0(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       react: 18.3.1
     optionalDependencies:
-      next: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+      next: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
 
   range-parser@1.2.1: {}
 
@@ -13253,9 +13253,9 @@ snapshots:
       sucrase: 3.35.0
       use-editable: 2.3.3(react@18.3.1)
 
-  react-mouse-trails@0.0.4(@types/react@18.3.7)(react@18.3.1):
+  react-mouse-trails@0.0.4(@types/react@18.3.8)(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       react: 18.3.1
 
   react-refresh@0.14.2: {}
@@ -13272,13 +13272,13 @@ snapshots:
       '@remix-run/router': 1.19.2
       react: 18.3.1
 
-  react18-themes@3.2.0(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1):
+  react18-themes@3.2.0(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
-      r18gs: 1.1.3(@types/react@18.3.7)(next@14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1))(react@18.3.1)
+      '@types/react': 18.3.8
+      r18gs: 1.1.3(@types/react@18.3.8)(next@14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2))(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
-      next: 14.2.12(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.1)
+      next: 14.2.13(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.2)
 
   react@18.3.1:
     dependencies:
@@ -13537,7 +13537,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.79.1:
+  sass@1.79.2:
     dependencies:
       chokidar: 4.0.0
       immutable: 4.3.7
@@ -14199,7 +14199,7 @@ snapshots:
     dependencies:
       typedoc: 0.26.7(typescript@5.6.2)
 
-  typedoc-plugin-mdn-links@3.2.12(typedoc@0.26.7(typescript@5.6.2)):
+  typedoc-plugin-mdn-links@3.3.0(typedoc@0.26.7(typescript@5.6.2)):
     dependencies:
       typedoc: 0.26.7(typescript@5.6.2)
 
@@ -14485,13 +14485,13 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite-node@1.6.0(@types/node@22.5.5)(sass@1.79.1):
+  vite-node@1.6.0(@types/node@22.5.5)(sass@1.79.2):
     dependencies:
       cac: 6.7.14
       debug: 4.3.7
       pathe: 1.1.2
       picocolors: 1.1.0
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)
+      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -14503,12 +14503,12 @@ snapshots:
       - supports-color
       - terser
 
-  vite-node@2.1.1(@types/node@22.5.5)(sass@1.79.1):
+  vite-node@2.1.1(@types/node@22.5.5)(sass@1.79.2):
     dependencies:
       cac: 6.7.14
       debug: 4.3.7
       pathe: 1.1.2
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)
+      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -14520,18 +14520,18 @@ snapshots:
       - supports-color
       - terser
 
-  vite-tsconfig-paths@5.0.1(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1)):
+  vite-tsconfig-paths@5.0.1(typescript@5.6.2)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2)):
     dependencies:
       debug: 4.3.7
       globrex: 0.1.2
       tsconfck: 3.1.3(typescript@5.6.2)
     optionalDependencies:
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)
+      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.4.6(@types/node@22.5.5)(sass@1.79.1):
+  vite@5.4.6(@types/node@22.5.5)(sass@1.79.2):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
@@ -14539,12 +14539,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.5.5
       fsevents: 2.3.3
-      sass: 1.79.1
+      sass: 1.79.2
 
-  vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.1):
+  vitest@2.1.1(@types/node@22.5.5)(jsdom@25.0.0)(sass@1.79.2):
     dependencies:
       '@vitest/expect': 2.1.1
-      '@vitest/mocker': 2.1.1(@vitest/spy@2.1.1)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.1))
+      '@vitest/mocker': 2.1.1(@vitest/spy@2.1.1)(vite@5.4.6(@types/node@22.5.5)(sass@1.79.2))
       '@vitest/pretty-format': 2.1.1
       '@vitest/runner': 2.1.1
       '@vitest/snapshot': 2.1.1
@@ -14559,8 +14559,8 @@ snapshots:
       tinyexec: 0.3.0
       tinypool: 1.0.1
       tinyrainbow: 1.2.0
-      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.1)
-      vite-node: 2.1.1(@types/node@22.5.5)(sass@1.79.1)
+      vite: 5.4.6(@types/node@22.5.5)(sass@1.79.2)
+      vite-node: 2.1.1(@types/node@22.5.5)(sass@1.79.2)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.5.5
@@ -14602,9 +14602,9 @@ snapshots:
 
   web-streams-polyfill@3.3.3: {}
 
-  webgl-generative-particles@0.0.1(@types/react@18.3.7)(react@18.3.1):
+  webgl-generative-particles@0.0.1(@types/react@18.3.8)(react@18.3.1):
     dependencies:
-      '@types/react': 18.3.7
+      '@types/react': 18.3.8
       react: 18.3.1
 
   webidl-conversions@4.0.2: {}

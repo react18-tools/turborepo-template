@@ -16,7 +16,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.27.8",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.6.1",
+    "@types/node": "^22.7.0",
     "enquirer": "^2.4.1",
     "plop": "^4.0.1",
     "prettier": "^3.3.3",

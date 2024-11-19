@@ -43,7 +43,7 @@
     "nextjs-darkmode": "^1.0.4",
     "nextjs-themes": "^4.0.3",
     "r18gs": "^2.0.0",
-    "react-live": "^4.1.7",
+    "react-live": "^4.1.8",
     "react18-loaders": "workspace:*"
   },
   "peerDependencies": {

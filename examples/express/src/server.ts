@@ -12,9 +12,11 @@ export const createServer = (): Express => {
     .use(urlencoded({ extended: true }))
     .use(json())
     .use(cors())
+    // @ts-ignore
     .get("/message/:name", (req, res) => {
       return res.json({ message: `hello ${req.params.name}` });
     })
+    // @ts-ignore
     .get("/status", (_, res) => {
       return res.json({ ok: true });
     });

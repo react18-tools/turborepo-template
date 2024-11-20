@@ -15,7 +15,7 @@
     "@remix-run/serve": "^2.14.0",
     "@remix-run/server-runtime": "^2.14.0",
     "@repo/shared": "workspace:*",
-    "@vercel/analytics": "^1.4.0",
+    "@vercel/analytics": "^1.4.1",
     "@vercel/remix-entry-server": "^0.1.1",
     "nextjs-darkmode": "^1.0.4",
     "react": "^18.3.1",

@@ -1235,8 +1235,8 @@ packages:
     resolution: {integrity: sha512-2b/g5hRmpbb1o4GnTZax9N9m0FXzz9OV42ZzI4rDDMDuHUqigAiQCEWChBWCY4ztAGVRjoWT19v0yMmc5/L5kA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@gerrit0/mini-shiki@1.24.0':
-    resolution: {integrity: sha512-eopM3SyeUZQZSBu1VCV8/d1LtJXDd0aMpLjyWpGkjD6ux3sNwoLNeuEb5xmiWVfQvFeMUXa1WTjh06lqm3KETA==}
+  '@gerrit0/mini-shiki@1.24.1':
+    resolution: {integrity: sha512-PNP/Gjv3VqU7z7DjRgO3F9Ok5frTKqtpV+LJW1RzMcr2zpRk0ulhEWnbcNGXzPC7BZyWMIHrkfQX2GZRfxrn6Q==}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -5310,8 +5310,8 @@ packages:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
 
-  nwsapi@2.2.15:
-    resolution: {integrity: sha512-NWK6i6f70uRJgsqyNTNMQ/JbCzd8zQoFnOKdZpXqfyq0YFBQgCTFjDIXfAmkEJyV+/GzSrCCrz2iVJmJK9OX8w==}
+  nwsapi@2.2.16:
+    resolution: {integrity: sha512-F1I/bimDpj3ncaNDhfyMWuFqmQDBwDB0Fogc2qpL3BWvkQteFD/8BzWuIRl83rq0DXfm8SGt/HFhLXZyljTXcQ==}
 
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -7938,7 +7938,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@gerrit0/mini-shiki@1.24.0':
+  '@gerrit0/mini-shiki@1.24.1':
     dependencies:
       '@shikijs/engine-oniguruma': 1.24.0
       '@shikijs/types': 1.24.0
@@ -12046,7 +12046,7 @@ snapshots:
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
       is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.15
+      nwsapi: 2.2.16
       parse5: 7.2.1
       saxes: 6.0.0
       symbol-tree: 3.2.4
@@ -12073,7 +12073,7 @@ snapshots:
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.5
       is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.15
+      nwsapi: 2.2.16
       parse5: 7.2.1
       rrweb-cssom: 0.7.1
       saxes: 6.0.0
@@ -13224,7 +13224,7 @@ snapshots:
     dependencies:
       path-key: 3.1.1
 
-  nwsapi@2.2.15: {}
+  nwsapi@2.2.16: {}
 
   object-assign@4.1.1: {}
 
@@ -14766,7 +14766,7 @@ snapshots:
 
   typedoc@0.27.1(typescript@5.7.2):
     dependencies:
-      '@gerrit0/mini-shiki': 1.24.0
+      '@gerrit0/mini-shiki': 1.24.1
       lunr: 2.3.9
       markdown-it: 14.1.0
       minimatch: 9.0.5

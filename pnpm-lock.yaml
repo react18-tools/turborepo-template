@@ -125,7 +125,7 @@ importers:
         version: 15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
       nextjs-darkmode:
         specifier: ^1.0.4
-        version: 1.0.4(@types/react@18.3.12)(next@15.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)
+        version: 1.0.4(@types/react@18.3.12)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)
       nextjs-themes:
         specifier: ^4.0.3
         version: 4.0.3(@types/react@18.3.12)(next@15.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)
@@ -192,7 +192,7 @@ importers:
         version: 0.1.1(react@18.3.1)
       nextjs-darkmode:
         specifier: ^1.0.4
-        version: 1.0.4(@types/react@18.3.12)(next@15.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)
+        version: 1.0.4(@types/react@18.3.12)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -1952,8 +1952,8 @@ packages:
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
 
-  '@storybook/csf@0.1.11':
-    resolution: {integrity: sha512-dHYFQH3mA+EtnCkHXzicbLgsvzYjcDJ1JWsogbItZogkPHgSJM/Wr71uMkcvw8v9mmCyP4NpXJuu6bPoVsOnzg==}
+  '@storybook/csf@0.1.12':
+    resolution: {integrity: sha512-9/exVhabisyIVL0VxTCxo01Tdm8wefIXKXfltAPTSr8cbLn5JAxGQ6QV3mjdecLGEOucfoVhAKtJfVHxEK1iqw==}
 
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
@@ -5310,8 +5310,8 @@ packages:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
 
-  nwsapi@2.2.14:
-    resolution: {integrity: sha512-5XcFrl8snuCQTJC2SYIW9yhhMnILdMw9dlGT+At11P7jqDuTafp6/uc3lAXsMOmftER3Ntb+T3cHiupOtj7Lgw==}
+  nwsapi@2.2.15:
+    resolution: {integrity: sha512-NWK6i6f70uRJgsqyNTNMQ/JbCzd8zQoFnOKdZpXqfyq0YFBQgCTFjDIXfAmkEJyV+/GzSrCCrz2iVJmJK9OX8w==}
 
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -8781,7 +8781,7 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
-  '@storybook/csf@0.1.11':
+  '@storybook/csf@0.1.12':
     dependencies:
       type-fest: 2.19.0
 
@@ -10622,7 +10622,7 @@ snapshots:
 
   eslint-plugin-storybook@0.11.1(eslint@9.11.1)(typescript@5.7.2):
     dependencies:
-      '@storybook/csf': 0.1.11
+      '@storybook/csf': 0.1.12
       '@typescript-eslint/utils': 8.16.0(eslint@9.11.1)(typescript@5.7.2)
       eslint: 9.11.1
       ts-dedent: 2.2.0
@@ -12046,7 +12046,7 @@ snapshots:
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
       is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.14
+      nwsapi: 2.2.15
       parse5: 7.2.1
       saxes: 6.0.0
       symbol-tree: 3.2.4
@@ -12073,7 +12073,7 @@ snapshots:
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.5
       is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.14
+      nwsapi: 2.2.15
       parse5: 7.2.1
       rrweb-cssom: 0.7.1
       saxes: 6.0.0
@@ -13106,10 +13106,10 @@ snapshots:
     transitivePeerDependencies:
       - next
 
-  nextjs-darkmode@1.0.4(@types/react@18.3.12)(next@15.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1):
+  nextjs-darkmode@1.0.4(@types/react@18.3.12)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.12
-      r18gs: 1.1.3(@types/react@18.3.12)(next@15.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)
+      r18gs: 1.1.3(@types/react@18.3.12)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)
       react: 18.3.1
     transitivePeerDependencies:
       - next
@@ -13224,7 +13224,7 @@ snapshots:
     dependencies:
       path-key: 3.1.1
 
-  nwsapi@2.2.14: {}
+  nwsapi@2.2.15: {}
 
   object-assign@4.1.1: {}
 
@@ -13706,7 +13706,7 @@ snapshots:
     optionalDependencies:
       next: 14.2.13(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
 
-  r18gs@1.1.3(@types/react@18.3.12)(next@15.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1):
+  r18gs@1.1.3(@types/react@18.3.12)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.12
       react: 18.3.1
@@ -13791,7 +13791,7 @@ snapshots:
   react18-themes@3.2.0(@types/react@18.3.12)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1):
     dependencies:
       '@types/react': 18.3.12
-      r18gs: 1.1.3(@types/react@18.3.12)(next@15.0.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)
+      r18gs: 1.1.3(@types/react@18.3.12)(next@15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
       next: 15.0.3(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)

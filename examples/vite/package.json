@@ -13,8 +13,8 @@
   "dependencies": {
     "@repo/shared": "workspace:*",
     "nextjs-darkmode": "^1.0.4",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-mouse-trails": "^0.0.4",
     "react18-loaders": "workspace:*",
     "react18-themes": "^3.2.0"
@@ -22,8 +22,8 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/react": "^18.3.13",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.7.2",
     "vite": "^6.0.3"

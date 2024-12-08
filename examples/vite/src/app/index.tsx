@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { ReactNode, useCallback } from "react";
 import "./styles.css";
 import { Bars1 } from "react18-loaders/dist/server";
 import { LoaderContainer, useLoader } from "react18-loaders";
@@ -7,7 +7,7 @@ import { Core } from "nextjs-darkmode";
 import { Demo, Header } from "@repo/shared";
 
 /** Vite App */
-function App(): JSX.Element {
+function App(): ReactNode {
   const { setLoading } = useLoader();
   const handleClick = useCallback(() => setLoading(true), []);
   return (

@@ -5,7 +5,7 @@ import { Switch } from "nextjs-darkmode/switch";
 import styles from "./header.module.scss";
 
 /** This is a wrapper around `nextjs-darkmode's ColorSwitch component to improve mobile view. */
-export default function ThemeSwitch(): JSX.Element {
+export default function ThemeSwitch() {
   const { mode } = useMode();
   return (
     <Switch className={styles.themeswitch}>

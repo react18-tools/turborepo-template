@@ -12,22 +12,22 @@
   },
   "dependencies": {
     "@repo/shared": "workspace:*",
-    "next": "^15.0.3",
+    "next": "^15.0.4",
     "nextjs-darkmode": "^1.0.4",
     "nextjs-themes": "^4.0.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-mouse-trails": "^0.0.4",
     "react18-loaders": "workspace:*",
     "webgl-generative-particles": "^0.0.1"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.0.3",
+    "@next/eslint-plugin-next": "^15.0.4",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.10.1",
-    "@types/react": "^18.3.13",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
     "typescript": "^5.7.2"
   }
 }

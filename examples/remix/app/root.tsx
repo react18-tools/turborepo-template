@@ -5,6 +5,7 @@ import styles from "./styles.css";
 import { Layout } from "@repo/shared/dist/server";
 import { Core } from "nextjs-darkmode";
 import { Header } from "@repo/shared";
+import { ReactNode } from "react";
 
 /** Page metadata */
 export const meta: MetaFunction = () => [
@@ -19,7 +20,7 @@ export const meta: MetaFunction = () => [
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 /** Remix app root */
-export default function App(): JSX.Element {
+export default function App(): ReactNode {
   return (
     <html lang="en">
       <head>

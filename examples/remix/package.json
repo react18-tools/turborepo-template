@@ -10,10 +10,10 @@
     "lint": "eslint app/"
   },
   "dependencies": {
-    "@remix-run/node": "^2.15.0",
-    "@remix-run/react": "^2.15.0",
-    "@remix-run/serve": "^2.15.0",
-    "@remix-run/server-runtime": "^2.15.0",
+    "@remix-run/node": "^2.15.1",
+    "@remix-run/react": "^2.15.1",
+    "@remix-run/serve": "^2.15.1",
+    "@remix-run/server-runtime": "^2.15.1",
     "@repo/shared": "workspace:*",
     "@vercel/analytics": "^1.4.1",
     "@vercel/remix-entry-server": "^0.1.1",
@@ -24,11 +24,11 @@
     "react18-themes": "^3.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.15.0",
+    "@remix-run/dev": "^2.15.1",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
     "typescript": "^5.7.2"
   },
   "engines": {

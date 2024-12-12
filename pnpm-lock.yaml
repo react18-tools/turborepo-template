@@ -1429,8 +1429,8 @@ packages:
     resolution: {integrity: sha512-u3UPsIilWKOM3F9CXtrG8LEJmNxwoCQC/XVj4IKYXvvpx7QIi/Kg1LI5uDmDpKlac62NUtX7eLjRh+jVZcLOzw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
-  '@jridgewell/gen-mapping@0.3.5':
-    resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
+  '@jridgewell/gen-mapping@0.3.8':
+    resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
     engines: {node: '>=6.0.0'}
 
   '@jridgewell/resolve-uri@3.1.2':
@@ -2707,6 +2707,10 @@ packages:
     resolution: {integrity: sha512-oKlSFMcMwpUg2ednkhQ454wfWiU/ul3CkJe/PEHcTKuiX6RpbehUiFMXu13HalGZxfUwCQzZG747YXBn1im9ww==}
     engines: {node: '>= 0.4'}
 
+  call-bound@1.0.2:
+    resolution: {integrity: sha512-0lk0PHFe/uz0vl527fG9CgdE9WdafjDbCXvBbs+LUv000TVt2Jjhqbs4Jwm8gz070w8xXyEAxrPOMullsxXeGg==}
+    engines: {node: '>= 0.4'}
+
   callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
@@ -3188,8 +3192,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.72:
-    resolution: {integrity: sha512-ZpSAUOZ2Izby7qnZluSrAlGgGQzucmFbN0n64dYzocYxnxV5ufurpj3VgEe4cUp7ir9LmeLxNYo8bVnlM8bQHw==}
+  electron-to-chromium@1.5.73:
+    resolution: {integrity: sha512-8wGNxG9tAG5KhGd3eeA0o6ixhiNdgr0DcHWm85XPCphwZgD1lIEoi6t3VERayWao7SF7AAZTw6oARGJeVjH8Kg==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -3820,8 +3824,8 @@ packages:
     resolution: {integrity: sha512-vpeMIQKxczTD/0s2CdEWHcb0eeJe6TFjxb+J5xgX7hScxqrGuyjmv4c1D4A/gelKfyox0gJJwIHF+fLjeaM8kQ==}
     engines: {node: '>=18'}
 
-  get-intrinsic@1.2.5:
-    resolution: {integrity: sha512-Y4+pKa7XeRUPWFNvOOYHkRYrfzW07oraURSvjDmRVOJ748OrVmeXtpE4+GCEHncjCjkTxPNRt8kEbxDhsn6VTg==}
+  get-intrinsic@1.2.6:
+    resolution: {integrity: sha512-qxsEs+9A+u85HhllWJJFicJfPDhRmjzoYdl64aMWW9yRIJmSyxdn8IEkuIM530/7T+lv0TIHd8L6Q/ra0tEoeA==}
     engines: {node: '>= 0.4'}
 
   get-package-type@0.1.0:
@@ -4802,6 +4806,10 @@ packages:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
     hasBin: true
 
+  math-intrinsics@1.0.0:
+    resolution: {integrity: sha512-4MqMiKP90ybymYvsut0CH2g4XWbfLtmlCkXmtmdcDCxNB+mQcu1w/1+L/VD7vi/PSv7X2JYV7SCcR+jiPXnQtA==}
+    engines: {node: '>= 0.4'}
+
   mdast-util-definitions@5.1.2:
     resolution: {integrity: sha512-8SVPMuHqlPME/z3gqVwWY4zVXn8lqKv/pAhC57FuJ40ImXyBpmO5ukh98zB2v7Blql2FiHjHv9LVztSIqjY+MA==}
 
@@ -5713,8 +5721,8 @@ packages:
     resolution: {integrity: sha512-973driJZvxiGOQ5ONsFhOF/DtzPMOMtgC11kCpUrPGMTgqp2q/1gwzCquocrN33is0VZ5GFHXZYMM9l6h67v2Q==}
     engines: {node: '>=10'}
 
-  prism-react-renderer@2.4.0:
-    resolution: {integrity: sha512-327BsVCD/unU4CNLZTWVHyUHKnsqcvj2qbPlQ8MiBE2eq2rgctjigPA1Gp9HLF83kZ20zNN6jgizHJeEsyFYOw==}
+  prism-react-renderer@2.4.1:
+    resolution: {integrity: sha512-ey8Ls/+Di31eqzUxC46h8MksNuGx/n0AAC8uKpwFau4RPDYLuE3EXTp8N8G2vX2N7UC/+IXeNUnlWBGGcAG+Ig==}
     peerDependencies:
       react: '>=16.0.0'
 
@@ -6141,8 +6149,20 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  side-channel@1.0.6:
-    resolution: {integrity: sha512-fDW/EZ6Q9RiO8eFG8Hj+7u/oW+XrPTIChwCOM2+th2A6OblDtYYIpve9m+KvI9Z4C9qSEXlaGR6bTEYHReuglA==}
+  side-channel-list@1.0.0:
+    resolution: {integrity: sha512-FCLHtRD/gnpCiCHEiJLOwdmFP+wzCmDEkc9y7NsYxeF4u7Btsn1ZuwgwJGxImImHicJArLP4R0yX4c2KCrMrTA==}
+    engines: {node: '>= 0.4'}
+
+  side-channel-map@1.0.1:
+    resolution: {integrity: sha512-VCjCNfgMsby3tTdo02nbjtM/ewra6jPHmpThenkTYh8pG9ucZ/1P8So4u4FGBek/BjpOVsDCMoLA/iuBKIFXRA==}
+    engines: {node: '>= 0.4'}
+
+  side-channel-weakmap@1.0.2:
+    resolution: {integrity: sha512-WPS/HvHQTYnHisLo9McqBHOJk2FkHO/tlpvldyrnem4aeQp4hai3gythswg6p01oSoTl58rcpiFAjF2br2Ak2A==}
+    engines: {node: '>= 0.4'}
+
+  side-channel@1.1.0:
+    resolution: {integrity: sha512-ZX99e6tRweoUXqR+VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWGP/xbKn6hqfPRHujUNwz5fy/wbbhnpw==}
     engines: {node: '>= 0.4'}
 
   siginfo@2.0.0:
@@ -6291,12 +6311,13 @@ packages:
   string.prototype.repeat@1.0.0:
     resolution: {integrity: sha512-0u/TldDbKD8bFCQ/4f5+mNRrXwZ8hg2w7ZR8wa16e8z9XpePWl3eGEcUD0OXpEH/VJH/2G3gjUtR3ZOiBe2S/w==}
 
-  string.prototype.trim@1.2.9:
-    resolution: {integrity: sha512-klHuCNxiMZ8MlsOihJhJEBJAiMVqU3Z2nEXWfWnIqjN0gEFS9J9+IxKozWWtQGcgoa1WUZzLjKPTr4ZHNFTFxw==}
+  string.prototype.trim@1.2.10:
+    resolution: {integrity: sha512-Rs66F0P/1kedk5lyYyH9uBzuiI/kNRmwJAR9quK6VOtIpZ2G+hMZd+HQbbv25MgCA6gEffoMZYxlTod4WcdrKA==}
     engines: {node: '>= 0.4'}
 
-  string.prototype.trimend@1.0.8:
-    resolution: {integrity: sha512-p73uL5VCHCO2BZZ6krwwQE3kCzM7NKmis8S//xEC6fQonchbum4eP6kR4DLEjQFO3Wnj3Fuo8NM0kOSjVdHjZQ==}
+  string.prototype.trimend@1.0.9:
+    resolution: {integrity: sha512-G7Ok5C6E/j4SGfyLCloXTrngQIQU3PWtXGst3yM7Bea9FRURf1S42ZHlZZtsNque2FN2PoUhfZXYLNWwEr4dLQ==}
+    engines: {node: '>= 0.4'}
 
   string.prototype.trimstart@1.0.8:
     resolution: {integrity: sha512-UXSH262CSZY1tfu3G3Secr6uGLCFVPMhIqHjlgCUtCCcgihYc/xKs9djMTMUOb2j1mVSeU8EU6NWc/iQKU6Gfg==}
@@ -6469,11 +6490,11 @@ packages:
   title-case@3.0.3:
     resolution: {integrity: sha512-e1zGYRvbffpcHIrnuqT0Dh+gEJtDaxDSoG4JAIpq4oDFyooziLBIiYQv0GBT4FUAnUop5uZ1hiIAj7oAF6sOCA==}
 
-  tldts-core@6.1.66:
-    resolution: {integrity: sha512-s07jJruSwndD2X8bVjwioPfqpIc1pDTzszPe9pL1Skbh4bjytL85KNQ3tolqLbCvpQHawIsGfFi9dgerWjqW4g==}
+  tldts-core@6.1.67:
+    resolution: {integrity: sha512-12K5O4m3uUW6YM5v45Z7wc6NTSmAYj4Tq3de7eXghZkp879IlfPJrUWeWFwu1FS94U5t2vwETgJ1asu8UGNKVQ==}
 
-  tldts@6.1.66:
-    resolution: {integrity: sha512-l3ciXsYFel/jSRfESbyKYud1nOw7WfhrBEF9I3UiarYk/qEaOOwu3qXNECHw4fHGHGTEOuhf/VdKgoDX5M/dhQ==}
+  tldts@6.1.67:
+    resolution: {integrity: sha512-714VbegxoZ9WF5/IsVCy9rWXKUpPkJq87ebWLXQzNawce96l5oRrRf2eHzB4pT2g/4HQU1dYbu+sdXClYxlDKQ==}
     hasBin: true
 
   tmp@0.0.33:
@@ -7252,7 +7273,7 @@ snapshots:
 
   '@ampproject/remapping@2.3.0':
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
   '@babel/code-frame@7.26.2':
@@ -7295,7 +7316,7 @@ snapshots:
     dependencies:
       '@babel/parser': 7.26.3
       '@babel/types': 7.26.3
-      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
       jsesc: 3.0.2
 
@@ -8220,7 +8241,7 @@ snapshots:
       '@types/yargs': 17.0.33
       chalk: 4.1.2
 
-  '@jridgewell/gen-mapping@0.3.5':
+  '@jridgewell/gen-mapping@0.3.8':
     dependencies:
       '@jridgewell/set-array': 1.2.1
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -9507,7 +9528,7 @@ snapshots:
       define-properties: 1.2.1
       es-abstract: 1.23.5
       es-object-atoms: 1.0.0
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       is-string: 1.1.0
 
   array-slice@1.1.0: {}
@@ -9561,7 +9582,7 @@ snapshots:
       define-properties: 1.2.1
       es-abstract: 1.23.5
       es-errors: 1.3.0
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       is-array-buffer: 3.0.4
       is-shared-array-buffer: 1.0.3
 
@@ -9709,7 +9730,7 @@ snapshots:
   browserslist@4.24.2:
     dependencies:
       caniuse-lite: 1.0.30001687
-      electron-to-chromium: 1.5.72
+      electron-to-chromium: 1.5.73
       node-releases: 2.0.19
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
@@ -9767,8 +9788,13 @@ snapshots:
     dependencies:
       call-bind-apply-helpers: 1.0.1
       es-define-property: 1.0.1
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       set-function-length: 1.2.2
+
+  call-bound@1.0.2:
+    dependencies:
+      call-bind: 1.0.8
+      get-intrinsic: 1.2.6
 
   callsites@3.1.0: {}
 
@@ -10209,7 +10235,7 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
-  electron-to-chromium@1.5.72: {}
+  electron-to-chromium@1.5.73: {}
 
   emittery@0.13.1: {}
 
@@ -10260,7 +10286,7 @@ snapshots:
       es-set-tostringtag: 2.0.3
       es-to-primitive: 1.3.0
       function.prototype.name: 1.1.6
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       get-symbol-description: 1.0.2
       globalthis: 1.0.4
       gopd: 1.2.0
@@ -10284,8 +10310,8 @@ snapshots:
       regexp.prototype.flags: 1.5.3
       safe-array-concat: 1.1.2
       safe-regex-test: 1.0.3
-      string.prototype.trim: 1.2.9
-      string.prototype.trimend: 1.0.8
+      string.prototype.trim: 1.2.10
+      string.prototype.trimend: 1.0.9
       string.prototype.trimstart: 1.0.8
       typed-array-buffer: 1.0.2
       typed-array-byte-length: 1.0.1
@@ -10306,7 +10332,7 @@ snapshots:
       es-errors: 1.3.0
       es-set-tostringtag: 2.0.3
       function-bind: 1.1.2
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       globalthis: 1.0.4
       gopd: 1.2.0
       has-property-descriptors: 1.0.2
@@ -10324,7 +10350,7 @@ snapshots:
 
   es-set-tostringtag@2.0.3:
     dependencies:
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       has-tostringtag: 1.0.2
       hasown: 2.0.2
 
@@ -10554,7 +10580,7 @@ snapshots:
       object.groupby: 1.0.3
       object.values: 1.2.0
       semver: 6.3.1
-      string.prototype.trimend: 1.0.8
+      string.prototype.trimend: 1.0.9
       tsconfig-paths: 3.15.0
     optionalDependencies:
       '@typescript-eslint/parser': 7.18.0(eslint@9.11.1)(typescript@5.7.2)
@@ -11109,16 +11135,18 @@ snapshots:
 
   get-east-asian-width@1.3.0: {}
 
-  get-intrinsic@1.2.5:
+  get-intrinsic@1.2.6:
     dependencies:
       call-bind-apply-helpers: 1.0.1
       dunder-proto: 1.0.0
       es-define-property: 1.0.1
       es-errors: 1.3.0
+      es-object-atoms: 1.0.0
       function-bind: 1.1.2
       gopd: 1.2.0
       has-symbols: 1.1.0
       hasown: 2.0.2
+      math-intrinsics: 1.0.0
 
   get-package-type@0.1.0: {}
 
@@ -11132,7 +11160,7 @@ snapshots:
     dependencies:
       call-bind: 1.0.8
       es-errors: 1.3.0
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
 
   get-tsconfig@4.8.1:
     dependencies:
@@ -11431,7 +11459,7 @@ snapshots:
     dependencies:
       es-errors: 1.3.0
       hasown: 2.0.2
-      side-channel: 1.0.6
+      side-channel: 1.1.0
 
   interpret@3.1.1: {}
 
@@ -11464,7 +11492,7 @@ snapshots:
   is-array-buffer@3.0.4:
     dependencies:
       call-bind: 1.0.8
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
 
   is-arrayish@0.2.1: {}
 
@@ -11634,7 +11662,7 @@ snapshots:
   is-weakset@2.0.3:
     dependencies:
       call-bind: 1.0.8
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
 
   is-windows@1.0.2: {}
 
@@ -11704,7 +11732,7 @@ snapshots:
   iterator.prototype@1.1.3:
     dependencies:
       define-properties: 1.2.1
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       has-symbols: 1.1.0
       reflect.getprototypeof: 1.0.8
       set-function-name: 2.0.2
@@ -12323,6 +12351,8 @@ snapshots:
       mdurl: 2.0.0
       punycode.js: 2.3.1
       uc.micro: 2.1.0
+
+  math-intrinsics@1.0.0: {}
 
   mdast-util-definitions@5.1.2:
     dependencies:
@@ -13665,7 +13695,7 @@ snapshots:
     dependencies:
       parse-ms: 2.1.0
 
-  prism-react-renderer@2.4.0(react@19.0.0):
+  prism-react-renderer@2.4.1(react@19.0.0):
     dependencies:
       '@types/prismjs': 1.26.5
       clsx: 2.1.1
@@ -13730,11 +13760,11 @@ snapshots:
 
   qs@6.13.0:
     dependencies:
-      side-channel: 1.0.6
+      side-channel: 1.1.0
 
   qs@6.13.1:
     dependencies:
-      side-channel: 1.0.6
+      side-channel: 1.1.0
 
   querystringify@2.2.0: {}
 
@@ -13803,7 +13833,7 @@ snapshots:
 
   react-live@4.1.8(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
-      prism-react-renderer: 2.4.0(react@19.0.0)
+      prism-react-renderer: 2.4.1(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
       sucrase: 3.35.0
@@ -13902,7 +13932,7 @@ snapshots:
       dunder-proto: 1.0.0
       es-abstract: 1.23.5
       es-errors: 1.3.0
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       gopd: 1.2.0
       which-builtin-type: 1.2.0
 
@@ -14081,7 +14111,7 @@ snapshots:
   safe-array-concat@1.1.2:
     dependencies:
       call-bind: 1.0.8
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       has-symbols: 1.1.0
       isarray: 2.0.5
 
@@ -14161,7 +14191,7 @@ snapshots:
       define-data-property: 1.1.4
       es-errors: 1.3.0
       function-bind: 1.1.2
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       gopd: 1.2.0
       has-property-descriptors: 1.0.2
 
@@ -14207,12 +14237,33 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  side-channel@1.0.6:
+  side-channel-list@1.0.0:
     dependencies:
-      call-bind: 1.0.8
       es-errors: 1.3.0
-      get-intrinsic: 1.2.5
       object-inspect: 1.13.3
+
+  side-channel-map@1.0.1:
+    dependencies:
+      call-bound: 1.0.2
+      es-errors: 1.3.0
+      get-intrinsic: 1.2.6
+      object-inspect: 1.13.3
+
+  side-channel-weakmap@1.0.2:
+    dependencies:
+      call-bound: 1.0.2
+      es-errors: 1.3.0
+      get-intrinsic: 1.2.6
+      object-inspect: 1.13.3
+      side-channel-map: 1.0.1
+
+  side-channel@1.1.0:
+    dependencies:
+      es-errors: 1.3.0
+      object-inspect: 1.13.3
+      side-channel-list: 1.0.0
+      side-channel-map: 1.0.1
+      side-channel-weakmap: 1.0.2
 
   siginfo@2.0.0: {}
 
@@ -14360,29 +14411,33 @@ snapshots:
       es-abstract: 1.23.5
       es-errors: 1.3.0
       es-object-atoms: 1.0.0
-      get-intrinsic: 1.2.5
+      get-intrinsic: 1.2.6
       gopd: 1.2.0
       has-symbols: 1.1.0
       internal-slot: 1.0.7
       regexp.prototype.flags: 1.5.3
       set-function-name: 2.0.2
-      side-channel: 1.0.6
+      side-channel: 1.1.0
 
   string.prototype.repeat@1.0.0:
     dependencies:
       define-properties: 1.2.1
       es-abstract: 1.23.5
 
-  string.prototype.trim@1.2.9:
+  string.prototype.trim@1.2.10:
     dependencies:
       call-bind: 1.0.8
+      call-bound: 1.0.2
+      define-data-property: 1.1.4
       define-properties: 1.2.1
       es-abstract: 1.23.5
       es-object-atoms: 1.0.0
+      has-property-descriptors: 1.0.2
 
-  string.prototype.trimend@1.0.8:
+  string.prototype.trimend@1.0.9:
     dependencies:
       call-bind: 1.0.8
+      call-bound: 1.0.2
       define-properties: 1.2.1
       es-object-atoms: 1.0.0
 
@@ -14445,7 +14500,7 @@ snapshots:
 
   sucrase@3.35.0:
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/gen-mapping': 0.3.8
       commander: 4.1.1
       glob: 10.4.5
       lines-and-columns: 1.2.4
@@ -14567,11 +14622,11 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  tldts-core@6.1.66: {}
+  tldts-core@6.1.67: {}
 
-  tldts@6.1.66:
+  tldts@6.1.67:
     dependencies:
-      tldts-core: 6.1.66
+      tldts-core: 6.1.67
 
   tmp@0.0.33:
     dependencies:
@@ -14596,7 +14651,7 @@ snapshots:
 
   tough-cookie@5.0.0:
     dependencies:
-      tldts: 6.1.66
+      tldts: 6.1.67
 
   tr46@1.0.1:
     dependencies:

@@ -17,7 +17,7 @@
     "@repo/shared": "workspace:*",
     "@vercel/analytics": "^1.4.1",
     "@vercel/remix-entry-server": "^0.1.1",
-    "nextjs-darkmode": "^1.0.4",
+    "nextjs-darkmode": "^1.0.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react18-loaders": "workspace:*",

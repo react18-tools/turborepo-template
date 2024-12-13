@@ -13,7 +13,7 @@
   "dependencies": {
     "@repo/shared": "workspace:*",
     "next": "^15.1.0",
-    "nextjs-darkmode": "^1.0.4",
+    "nextjs-darkmode": "^1.0.7",
     "nextjs-themes": "^4.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

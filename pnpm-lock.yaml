@@ -232,7 +232,7 @@ importers:
         version: link:../../packages/shared
       nextjs-darkmode:
         specifier: ^1.0.7
-        version: 1.0.7(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 1.0.7(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -309,7 +309,7 @@ importers:
         version: 0.0.0
       esbuild-plugin-react18:
         specifier: 0.2.5
-        version: 0.2.5(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 0.2.5(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -396,7 +396,7 @@ importers:
     dependencies:
       '@mayank1513/fork-me':
         specifier: ^2.1.2
-        version: 2.1.2(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 2.1.2(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       '@repo/scripts':
         specifier: workspace:*
         version: link:../../scripts
@@ -405,13 +405,13 @@ importers:
         version: 14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
       nextjs-darkmode:
         specifier: ^1.0.7
-        version: 1.0.7(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 1.0.7(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       nextjs-themes:
         specifier: ^4.0.3
-        version: 4.0.3(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 4.0.3(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       r18gs:
         specifier: ^2.0.1
-        version: 2.0.1(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 2.0.1(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react-live:
         specifier: ^4.1.8
         version: 4.1.8(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -448,7 +448,7 @@ importers:
         version: 0.0.0
       esbuild-plugin-react18:
         specifier: ^0.2.5
-        version: 0.2.5(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+        version: 0.2.5(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       esbuild-plugin-react18-css:
         specifier: ^0.0.4
         version: 0.0.4
@@ -8276,7 +8276,7 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
-  '@mayank1513/fork-me@2.1.2(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)':
+  '@mayank1513/fork-me@2.1.2(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)':
     dependencies:
       '@types/react': 19.0.1
       react: 19.0.0
@@ -10373,7 +10373,7 @@ snapshots:
       postcss-modules: 6.0.1(postcss@8.4.49)
       sass: 1.83.0
 
-  esbuild-plugin-react18@0.2.5(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
+  esbuild-plugin-react18@0.2.5(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.1
       react: 19.0.0
@@ -13173,10 +13173,10 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-darkmode@1.0.7(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
+  nextjs-darkmode@1.0.7(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.1
-      r18gs: 2.0.1(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+      r18gs: 2.0.1(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react: 19.0.0
     transitivePeerDependencies:
       - next
@@ -13189,10 +13189,10 @@ snapshots:
     transitivePeerDependencies:
       - next
 
-  nextjs-themes@4.0.3(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
+  nextjs-themes@4.0.3(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.1
-      r18gs: 2.0.0-alpha.0(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
+      r18gs: 2.0.0-alpha.0(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react: 19.0.0
     transitivePeerDependencies:
       - next
@@ -13780,7 +13780,7 @@ snapshots:
     optionalDependencies:
       next: 15.1.0(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
-  r18gs@2.0.0-alpha.0(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
+  r18gs@2.0.0-alpha.0(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.1
       react: 19.0.0
@@ -13795,13 +13795,6 @@ snapshots:
       next: 15.1.0(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
   r18gs@2.0.1(@types/react@19.0.1)(next@14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
-    dependencies:
-      '@types/react': 19.0.1
-      react: 19.0.0
-    optionalDependencies:
-      next: 14.2.13(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
-
-  r18gs@2.0.1(@types/react@19.0.1)(next@14.2.13(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.1
       react: 19.0.0

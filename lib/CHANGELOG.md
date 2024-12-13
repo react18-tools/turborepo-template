@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.4
+
+### Patch Changes
+
+- 9bdf631: Upgrade r18gs
+
 ## 1.1.3
 
 ### Patch Changes

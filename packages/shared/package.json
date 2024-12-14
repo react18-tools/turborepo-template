@@ -41,7 +41,7 @@
     "@mayank1513/fork-me": "^2.1.2",
     "@repo/scripts": "workspace:*",
     "nextjs-darkmode": "^1.0.7",
-    "nextjs-themes": "^4.0.3",
+    "nextjs-themes": "^4.0.4",
     "r18gs": "^2.0.1",
     "react-live": "^4.1.8",
     "react18-loaders": "workspace:*"

@@ -94,6 +94,7 @@ const rebrandFn = async () => {
     type: "multiselect",
     name: "pkgs",
     message: "Select the examples or packages to remove",
+    initial: ["examples/express", "examples/remix", "packages/logger", "packages/jest-presets"],
     choices: [
       {
         name: "examples/express",
@@ -118,6 +119,11 @@ const rebrandFn = async () => {
 
   if (pkgs.includes("examples/remix"))
     execSync("sed -i -e 's/ -p 3002//' examples/nextjs/package.json");
+
+  if (pkgs.length)
+    execSync(
+      'git add . && git commit -m "Cleaned up 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]"',
+    );
 
   console.log("\x1b[32m", "90% of rebranding completed!");
   console.log("\x1b[36m%s", ".");

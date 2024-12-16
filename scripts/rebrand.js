@@ -116,6 +116,9 @@ const rebrandFn = async () => {
 
   pkgs.forEach(pkg => execSync(`rm -rf ${pkg}`));
 
+  if (pkgs.includes("examples/remix"))
+    execSync("sed -i -e 's/ -p 3002//' examples/nextjs/package.json");
+
   console.log("\x1b[32m", "90% of rebranding completed!");
   console.log("\x1b[36m%s", ".");
   console.log("\x1b[36m%s", ".");

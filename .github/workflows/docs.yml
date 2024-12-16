@@ -29,6 +29,8 @@ jobs:
           git pull
       - run: npm i -g pnpm && pnpm i --no-frozen-lockfile
         name: Install dependencies
+      - run: git stash --include-untracked
+        name: clean up working directory
       - run: npx @turbo/codemod update . && pnpm update --latest -r
         name: Update dependencies
       - run: pnpm build

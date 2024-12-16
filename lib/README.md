@@ -16,7 +16,7 @@ React18 Loaders is a comprehensive library designed to unlock the full potential
 
 ✅ Examples for Next.js, Vite, and Remix
 
-> <img src="https://raw.githubusercontent.com/mayank1513/mayank1513/main/popper.png" style="height: 20px"/> Please consider starring [this repository](https://github.com/react18-tools/turborepo-template) and sharing it with your friends.
+> <img src="https://raw.githubusercontent.com/mayank1513/mayank1513/main/popper.png" style="height: 20px"/> Star [this repository](https://github.com/react18-tools/turborepo-template) and share it with your friends.
 
 ## Getting Started
 
@@ -125,7 +125,7 @@ This library is licensed under the MPL-2.0 open-source license.
 
 > This package also serves as an example demonstrating how to build and publish a `React.js` library compatible with React Server Components.
 
-> <img src="https://raw.githubusercontent.com/mayank1513/mayank1513/main/popper.png" style="height: 20px"/> Please consider enrolling in [our courses](https://mayank-chaudhari.vercel.app/courses) or [sponsoring](https://github.com/sponsors/mayank1513) our work.
+> <img src="https://raw.githubusercontent.com/mayank1513/mayank1513/main/popper.png" style="height: 20px"/> Please enroll in [our courses](https://mayank-chaudhari.vercel.app/courses) or [sponsor](https://github.com/sponsors/mayank1513) our work.
 
 <hr />
 

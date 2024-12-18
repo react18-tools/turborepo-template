@@ -11,6 +11,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
     "typecheck": "tsc --noEmit",
     "test": "jest"
   },

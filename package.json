@@ -8,6 +8,7 @@
     "doc": "node scripts/doc.js && typedoc",
     "format": "prettier --write \"**/*.{ts,tsx,md,css,scss}\"",
     "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
     "test": "turbo test",
     "typecheck": "turbo typecheck",
     "preinstall": "node scripts/update-pm.js",
@@ -32,13 +33,5 @@
   "packageManager": "pnpm@9.15.0",
   "engines": {
     "node": ">=18"
-  },
-  "pnpm": {
-    "overrides": {
-      "eslint": "^8.0.0"
-    }
-  },
-  "overrides": {
-    "eslint": "^8.0.0"
   }
 }

@@ -21,6 +21,7 @@
     "dev": "tsup --watch && tsc -p tsconfig-build.json -w",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
     "test": "vitest run --coverage"
   },
   "devDependencies": {

@@ -8,6 +8,7 @@
     "doc": "node scripts/doc.js && typedoc",
     "format": "prettier --write \"**/*.{ts,tsx,md,css,scss}\"",
     "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
     "test": "turbo test",
     "typecheck": "turbo typecheck",
     "preinstall": "node scripts/update-pm.js",

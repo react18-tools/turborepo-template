@@ -9,6 +9,7 @@
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
     "test": "jest --detectOpenHandles"
   },
   "jest": {

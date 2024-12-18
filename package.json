@@ -32,13 +32,5 @@
   "packageManager": "pnpm@9.15.0",
   "engines": {
     "node": ">=18"
-  },
-  "pnpm": {
-    "overrides": {
-      "eslint": "^8.0.0"
-    }
-  },
-  "overrides": {
-    "eslint": "^8.0.0"
   }
 }

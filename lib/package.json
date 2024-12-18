@@ -34,7 +34,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-v8": "^2.1.8",
     "esbuild-plugin-rdi": "^0.0.0",
-    "esbuild-plugin-react18": "0.2.5",
+    "esbuild-plugin-react18": "0.2.6",
     "esbuild-plugin-react18-css": "^0.0.4",
     "jsdom": "^25.0.1",
     "react": "^19.0.0",

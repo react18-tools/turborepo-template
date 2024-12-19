@@ -33,7 +33,7 @@ jobs:
         name: clean up working directory
       - run: npx @turbo/codemod update . && pnpm update --latest -r
         name: Update dependencies
-      - run: pnpm build
+      - run: pnpm build --filter @example/nextjs
         name: Build all apps to make sure it is not broken due to dependency upgrades
       - name: Run unit tests
         run: pnpm test
@@ -41,3 +41,13 @@ jobs:
         run: pnpm doc
       - name: Save upgraded packages back to repo
         run: git add . && git commit -m "upgrade deps && docs" && git push origin main
+      - name: Update website
+        run: |
+          gh api \
+          --method POST \
+          -H "Accept: application/vnd.github+json" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          /repos/mayank1513/turborepo-template/merge-upstream \
+          -f "branch=main"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

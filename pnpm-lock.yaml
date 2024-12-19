@@ -189,7 +189,7 @@ importers:
         version: 0.1.1(react@19.0.0)
       nextjs-darkmode:
         specifier: ^1.0.7
-        version: 1.0.7(@types/react@19.0.2)(react@19.0.0)
+        version: 1.0.7(@types/react@19.0.2)(next@15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -229,7 +229,7 @@ importers:
         version: link:../../packages/shared
       nextjs-darkmode:
         specifier: ^1.0.7
-        version: 1.0.7(@types/react@19.0.2)(react@19.0.0)
+        version: 1.0.7(@types/react@19.0.2)(next@15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -423,7 +423,7 @@ importers:
         version: 0.1.1
       nextjs-darkmode:
         specifier: ^1.0.7
-        version: 1.0.7(@types/react@19.0.2)(react@19.0.0)
+        version: 1.0.7(@types/react@19.0.2)(next@15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       nextjs-themes:
         specifier: ^4.0.4
         version: 4.0.4(@types/react@19.0.2)(next@15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
@@ -5183,11 +5183,15 @@ packages:
       next:
         optional: true
 
-  r18gs@2.1.0:
-    resolution: {integrity: sha512-OYUmx+QW8I1uy40+VFXsLhSOTlMPPlV2NsJppeYD+8VM6jYiFQOsgsdlPnuD9ocpQwi6hT4rr6+BM6AILh86+Q==}
+  r18gs@2.0.2:
+    resolution: {integrity: sha512-sO3gq+c8essYacmFr42Vsi0EQZdtrV/kfjiz5JBJCyXek4u0o/8qhLFnljHxPH58BvK5hQsORl5w/mx1EYuZJw==}
     peerDependencies:
       '@types/react': 16.8 - 19
+      next: '*'
       react: 16.8 - 19
+    peerDependenciesMeta:
+      next:
+        optional: true
 
   r18gs@3.0.1:
     resolution: {integrity: sha512-cuH/f+jlfJ5Se6OnQ6FJDF6GrugwBeWDYVSDvK4hL9Prxe7bHTRn0ep7ZOh/QYg1TKx6FFiV8IpeYmmFpQNCgw==}
@@ -11453,11 +11457,13 @@ snapshots:
       r18gs: 3.0.1(@types/react@19.0.2)(react@19.0.0)
       react: 19.0.0
 
-  nextjs-darkmode@1.0.7(@types/react@19.0.2)(react@19.0.0):
+  nextjs-darkmode@1.0.7(@types/react@19.0.2)(next@15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.2
-      r18gs: 2.1.0(@types/react@19.0.2)(react@19.0.0)
+      r18gs: 2.0.2(@types/react@19.0.2)(next@15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react: 19.0.0
+    transitivePeerDependencies:
+      - next
 
   nextjs-themes@4.0.4(@types/react@19.0.2)(next@15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
@@ -11987,10 +11993,12 @@ snapshots:
     optionalDependencies:
       next: 15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
-  r18gs@2.1.0(@types/react@19.0.2)(react@19.0.0):
+  r18gs@2.0.2(@types/react@19.0.2)(next@15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0):
     dependencies:
       '@types/react': 19.0.2
       react: 19.0.0
+    optionalDependencies:
+      next: 15.1.1(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0)
 
   r18gs@3.0.1(@types/react@19.0.2)(react@19.0.0):
     dependencies:

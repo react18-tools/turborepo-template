@@ -1,6 +1,8 @@
 /** It is assumed that this is called only from the default branch. */
 const { execSync } = require("child_process");
 
+const BRANCH = process.env.BRANCH;
+
 // Apply changesets if any -- e.g., coming from pre-release branches
 try {
   execSync("pnpm changeset pre exit");
@@ -10,7 +12,7 @@ try {
 try {
   execSync("pnpm changeset version");
   execSync(
-    `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${process.env.BRANCH}`,
+    `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${BRANCH}`,
   );
 } catch {
   // no changesets to be applied
@@ -32,12 +34,11 @@ const [oldMajor, oldMinor] = LATEST_VERSION.split(".");
 
 const isPatch = newMajor === oldMajor && newMinor === oldMinor;
 const releaseBranch = `release-${newMajor}.${newMinor}`;
-const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH;
 
 if (isPatch) {
   // update release branch
   execSync(
-    `git checkout ${releaseBranch} && git merge ${DEFAULT_BRANCH} && git push origin ${releaseBranch}`,
+    `git checkout ${releaseBranch} && git merge ${BRANCH} && git push origin ${releaseBranch}`,
   );
 } else {
   require("./update-security-md")(`${newMajor}.${newMinor}`, `${oldMajor}.${oldMinor}`);

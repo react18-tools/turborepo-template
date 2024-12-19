@@ -50,4 +50,4 @@ jobs:
           /repos/mayank1513/turborepo-template/merge-upstream \
           -f "branch=main"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.mayank1513PAT }}

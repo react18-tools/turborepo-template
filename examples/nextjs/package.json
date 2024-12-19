@@ -13,17 +13,16 @@
   },
   "dependencies": {
     "@repo/shared": "workspace:*",
-    "next": "^15.1.1",
-    "nextjs-darkmode-lite": "^1.0.7",
-    "nextjs-themes": "^4.0.4",
+    "next": "^15.1.2",
+    "nextjs-darkmode-lite": "^1.0.9",
+    "nextjs-themes": "^4.0.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-mouse-trails": "^0.0.4",
     "react18-loaders": "workspace:*",
     "webgl-generative-particles": "^0.0.1"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.1.1",
+    "@next/eslint-plugin-next": "^15.1.2",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^22.10.2",

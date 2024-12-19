@@ -2,7 +2,6 @@
 @import "@repo/shared/dist/global.css";
 @import "@repo/shared/dist";
 @import "react18-loaders/dist";
-@import "react-mouse-trails/dist";
 
 html {
   -webkit-text-size-adjust: 100%;

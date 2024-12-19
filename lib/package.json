@@ -48,9 +48,9 @@
     "r18gs": "^3.0.1"
   },
   "peerDependencies": {
-    "@types/react": "16.8 - 19",
-    "next": "10 - 15",
-    "react": "16.8 - 19"
+    "@types/react": ">=16.8",
+    "next": ">=10",
+    "react": ">=16.8"
   },
   "peerDependenciesMeta": {
     "next": {

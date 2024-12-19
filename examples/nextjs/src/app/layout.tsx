@@ -5,7 +5,6 @@ import { Layout } from "@repo/shared/dist/server";
 import { GlobalLoader, Header } from "@repo/shared";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { MouseTrail } from "react-mouse-trails";
 import { Particles } from "webgl-generative-particles/react";
 import { ReactNode } from "react";
 
@@ -22,7 +21,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
           {children}
         </Layout>
         <GlobalLoader />
-        <MouseTrail />
         <Particles fullScreenOverlay />
       </body>
     </html>

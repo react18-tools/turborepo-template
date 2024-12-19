@@ -226,7 +226,7 @@ importers:
         version: link:../../packages/shared
       nextjs-darkmode:
         specifier: ^1.0.9
-        version: 1.0.9(@types/react@19.0.2)(react@19.0.0)
+        version: 1.0.9(@types/react@19.0.2)(next@15.1.2(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -11292,14 +11292,6 @@ snapshots:
     dependencies:
       '@types/react': 19.0.2
       r18gs: 2.0.2(@types/react@19.0.2)(next@15.1.2(@babel/core@7.26.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
-      react: 19.0.0
-    transitivePeerDependencies:
-      - next
-
-  nextjs-darkmode@1.0.9(@types/react@19.0.2)(react@19.0.0):
-    dependencies:
-      '@types/react': 19.0.2
-      r18gs: 2.0.2(@types/react@19.0.2)(next@15.1.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.83.0))(react@19.0.0)
       react: 19.0.0
     transitivePeerDependencies:
       - next

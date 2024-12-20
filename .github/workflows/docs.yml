@@ -42,6 +42,7 @@ jobs:
       - name: Save upgraded packages back to repo
         run: git add . && git commit -m "upgrade deps && docs" && git push origin main
       - name: Update website
+        continue-on-error: true
         run: |
           gh api \
           --method POST \

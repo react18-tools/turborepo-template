@@ -134,7 +134,7 @@ try {
 const docsWorkflowPath = path.resolve(workflowsPath, "docs.yml");
 fs.writeFileSync(
   docsWorkflowPath,
-  fs.readFileSync(docsWorkflowPath, "utf-8").replace(oldOwner, owner),
+  fs.readFileSync(docsWorkflowPath, "utf-8").replace(oldOwner, owner).replaceAll(oldRepo, repo),
 );
 
 // Update SECURITY.md

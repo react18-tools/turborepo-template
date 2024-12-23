@@ -13,7 +13,7 @@ This template offers the following pre-configured features. Additionally, your r
 
 ✅ Monorepo powered by Turborepo and GitHub actions for automating building, testing, and deploying your library
 
-✅ Examples with Next.js, Vite, and Remix to showcase how your library can be utilized (Note: Remix is optional due to instability in monorepo setup and folder imports)
+✅ Examples with Next.js, and Vite to showcase how your library can be utilized
 
 ✅ Examples pre-configured for Light/Dark theme based on user preference
 

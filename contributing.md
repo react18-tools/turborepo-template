@@ -23,7 +23,6 @@ This TurboRepo comprises the following packages/examples, all written in [TypeSc
 
 - `@example/nextjs`: a [Next.js](https://nextjs.org/) app
 - `@example/vite`: a [Vite.js](https://vitest.dev) app
-- `@example/remix`: a Remix app
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 - `@repo/jest-presets`: Jest presets for unit testing

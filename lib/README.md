@@ -14,7 +14,7 @@ React18 Loaders is a comprehensive library designed to unlock the full potential
 
 ✅ Documented with [Typedoc](https://react18-tools.github.io/turborepo-template) ([Docs](https://react18-tools.github.io/turborepo-template))
 
-✅ Examples for Next.js, Vite, and Remix
+✅ Examples for Next.js, and Vite
 
 > <img src="https://raw.githubusercontent.com/mayank1513/mayank1513/main/popper.png" style="height: 20px"/> Star [this repository](https://github.com/react18-tools/turborepo-template) and share it with your friends.
 

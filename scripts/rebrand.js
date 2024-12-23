@@ -94,14 +94,13 @@ const rebrandFn = async () => {
     type: "multiselect",
     name: "pkgs",
     message: "Select the examples or packages to remove",
-    initial: ["examples/express", "examples/remix", "packages/logger", "packages/jest-presets"],
+    initial: ["examples/express", "packages/logger", "packages/jest-presets"],
     choices: [
       {
         name: "examples/express",
         message:
           "Express.js example at examples/express -- You might want to keep this for server or API related functionality provided by your app.",
       },
-      { name: "examples/remix", message: "Remix example at examples/remix." },
       {
         name: "packages/logger",
         message:
@@ -116,9 +115,6 @@ const rebrandFn = async () => {
   });
 
   pkgs.forEach(pkg => execSync(`rm -rf ${pkg}`));
-
-  if (pkgs.includes("examples/remix"))
-    execSync("sed -i -e 's/ -p 3002//' examples/nextjs/package.json");
 
   if (pkgs.length)
     execSync(

@@ -28,7 +28,7 @@ jobs:
           fi
 
       - name: Exit early if lib/package.json was modified
-        if: steps.pub.outputs.diff != ''
+        if: steps.pub.outputs.file_changed == 'true'
         run: exit 1
 
       - uses: actions/setup-node@v4

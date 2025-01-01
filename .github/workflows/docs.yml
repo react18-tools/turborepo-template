@@ -21,7 +21,8 @@ jobs:
         id: pub
         run: |
           git fetch && git checkout main
-          echo "diff=\"$(git diff ${{ github.event.before }}:lib/package.json lib/package.json)\"" >> $GITHUB_OUTPUT
+          diff=$(git diff ${{ github.event.before }}:lib/package.json lib/package.json)
+          echo "diff=$diff" >> $GITHUB_OUTPUT
 
       - name: Exit early if lib/package.json was modified
         if: steps.pub.outputs.diff != ''

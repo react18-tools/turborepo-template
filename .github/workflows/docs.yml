@@ -3,6 +3,8 @@ name: Generate Docs
 on:
   push:
     branches: [main]
+    paths-ignore: "lib/package.json"
+  workflow_dispatch:
 
 jobs:
   generate-docs:

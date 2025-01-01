@@ -1,11 +1,10 @@
-name: Generate Docs
+name: Update dependencies
 
 on:
-  push:
-    branches: [main]
-
+  schedule:
+    - cron: "0 */8 * * *"
 jobs:
-  generate-docs:
+  update-deps:
     if: github.event.repository.owner.login == 'react18-tools'
     runs-on: ubuntu-latest
     permissions:
@@ -30,18 +29,11 @@ jobs:
         name: Install dependencies
       - run: git stash --include-untracked
         name: clean up working directory
-      - name: Generate/update docs
-        run: pnpm doc
-      - name: Save docs back to repo
-        run: git add . && git commit -m "upgrade deps && docs [skip ci]" && git push origin main
-      - name: Update website
-        continue-on-error: true
-        run: |
-          gh api \
-          --method POST \
-          -H "Accept: application/vnd.github+json" \
-          -H "X-GitHub-Api-Version: 2022-11-28" \
-          /repos/mayank1513/turborepo-template/merge-upstream \
-          -f "branch=main"
-        env:
-          GH_TOKEN: ${{ secrets.mayank1513PAT }}
+      - run: pnpx @turbo/codemod update . && pnpm update --latest -r
+        name: Update dependencies
+      - run: pnpm build --filter @example/nextjs
+        name: Build all apps to make sure it is not broken due to dependency upgrades
+      - name: Run unit tests
+        run: pnpm test
+      - name: Save upgraded packages back to repo
+        run: git add . && git commit -m "upgrade deps && docs" && git push origin main

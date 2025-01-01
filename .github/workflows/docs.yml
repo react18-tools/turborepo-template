@@ -20,7 +20,7 @@ jobs:
       - name: Check if package.json was modified
         id: pub
         run: |
-          git checkout origin main
+          git fetch && git checkout main
           echo "diff=$(git diff ${{ github.event.before }}:lib/package.json lib/package.json)" >> $GITHUB_OUTPUT
 
       - name: Exit early if lib/package.json was modified

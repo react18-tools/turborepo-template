@@ -17,8 +17,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check if package.json was modified
+        id: pub
         run: |
-          diff="$(git diff ${{ github.event.before }}:lib/package.json lib/package.json)"
+          echo "diff=$(git diff ${{ github.event.before }}:lib/package.json lib/package.json)" >> $GITHUB_OUTPUT
+
+      - name: Exit early if lib/package.json was modified
+        if: steps.pub.outputs.diff != ''
+        run: exit 1
 
       - uses: actions/setup-node@v4
         with:

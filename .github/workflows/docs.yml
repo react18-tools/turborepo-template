@@ -22,7 +22,11 @@ jobs:
         run: |
           git fetch && git checkout main
           diff=$(git diff ${{ github.event.before }}:lib/package.json lib/package.json)
-          echo "diff=$diff" >> $GITHUB_OUTPUT
+          if $diff == ''; then
+            echo "diff=''" >> $GITHUB_ENV
+          else
+            echo "diff='not empty'" >> $GITHUB_ENV
+          fi
 
       - name: Exit early if lib/package.json was modified
         if: steps.pub.outputs.diff != ''

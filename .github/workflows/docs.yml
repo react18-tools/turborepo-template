@@ -3,7 +3,6 @@ name: Generate Docs
 on:
   push:
     branches: [main]
-    paths-ignore: "lib/package.json"
   workflow_dispatch:
 
 jobs:
@@ -16,6 +15,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check if package.json is modified
+        id: package_check
+        run: |
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q "lib/package.json"; then
+            echo "file_changed=true" >> $GITHUB_ENV
+          else
+            echo "file_changed=false" >> $GITHUB_ENV
+          fi
+      - name: Exit if lib/package has changed
+        if: env.file_changed == 'false'
+        run: exit 1
 
       - uses: actions/setup-node@v4
         with:

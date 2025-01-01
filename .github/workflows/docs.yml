@@ -7,7 +7,7 @@ on:
 
 jobs:
   generate-docs:
-    if: github.event.repository.owner.login == 'react18-tools' && !git diff ${{ github.event.before }}:lib/package.json lib/package.json
+    if: github.event.repository.owner.login == 'react18-tools'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -15,6 +15,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check if package.json was modified
+        run: |
+          diff="$(git diff ${{ github.event.before }}:lib/package.json lib/package.json)"
 
       - uses: actions/setup-node@v4
         with:

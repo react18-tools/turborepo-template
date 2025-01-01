@@ -15,11 +15,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.event.before }}
 
       - name: Check if package.json was modified
         id: pub
         run: |
-          git checkout ${{ github.event.before }} && ls && git checkout main
+          git checkout main
           echo "diff=$(git diff ${{ github.event.before }}:lib/package.json lib/package.json)" >> $GITHUB_OUTPUT
 
       - name: Exit early if lib/package.json was modified

@@ -35,4 +35,5 @@ jobs:
       - name: Run unit tests
         run: pnpm test
       - name: Save upgraded packages back to repo
+        continue-on-error: true
         run: git add . && git commit -m "upgrade deps && docs" && git push origin main

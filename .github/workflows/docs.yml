@@ -21,7 +21,6 @@ jobs:
         id: pub
         run: |
           git fetch origin main && git checkout main
-          git log --oneline
           if git diff --name-only ${{ github.event.before }} HEAD | grep -q "lib/package.json"; then
             echo "file_changed=true" >> $GITHUB_ENV
           else

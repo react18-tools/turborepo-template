@@ -7,7 +7,7 @@ on:
 
 jobs:
   generate-docs:
-    if: github.event.repository.owner.login == 'react18-tools'
+    if: github.run_number != 1 && github.event.repository.owner.login == 'react18-tools'
     runs-on: ubuntu-latest
     permissions:
       contents: write

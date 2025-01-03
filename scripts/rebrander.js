@@ -144,14 +144,7 @@ fs.writeFileSync(
   fs.readFileSync(secFile, "utf-8").replace(`${oldOwner}/${oldRepo}`, `${owner}/${repo}`),
 );
 // clean up
-const rootPackageJSON = require("../package.json");
 const { execSync } = require("child_process");
-delete rootPackageJSON.scripts.postinstall;
-try {
-  fs.writeFileSync(path.resolve(rootDir, "package.json"), JSON.stringify(rootPackageJSON, null, 2));
-} catch (e) {
-  console.error(e);
-}
 
 // update typedoc config
 execSync(`sed -i -e 's/name:.*/name: "${title.replace(/\//g, "\\/")}",/' typedoc.config.js`);

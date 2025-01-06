@@ -35,11 +35,13 @@ const [oldMajor, oldMinor] = LATEST_VERSION.split(".");
 const isPatch = newMajor === oldMajor && newMinor === oldMinor;
 const releaseBranch = `release-${newMajor}.${newMinor}`;
 
-if (isPatch && !LATEST_VERSION.endsWith("-1")) {
+if (isPatch) {
   // update release branch
-  execSync(
-    `git checkout ${releaseBranch} && git merge ${BRANCH} && git push origin ${releaseBranch}`,
-  );
+  try {
+    execSync(
+      `git checkout ${releaseBranch} && git merge ${BRANCH} && git push origin ${releaseBranch}`,
+    );
+  } catch {}
 } else {
   require("./update-security-md")(`${newMajor}.${newMinor}`, `${oldMajor}.${oldMinor}`);
   /** Create new release branch for every Major or Minor release */

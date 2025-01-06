@@ -12,7 +12,7 @@ try {
 try {
   execSync("pnpm changeset version");
   execSync(
-    `git add . && git commit -m "Apply changesets and update CHANGELOG" && git push origin ${BRANCH}`,
+    `git add . && git commit -m "Apply changesets and update CHANGELOG [skip ci]" && git push origin ${BRANCH}`,
   );
 } catch {
   // no changesets to be applied
@@ -35,7 +35,7 @@ const [oldMajor, oldMinor] = LATEST_VERSION.split(".");
 const isPatch = newMajor === oldMajor && newMinor === oldMinor;
 const releaseBranch = `release-${newMajor}.${newMinor}`;
 
-if (isPatch) {
+if (isPatch && !LATEST_VERSION.endsWith("-1")) {
   // update release branch
   execSync(
     `git checkout ${releaseBranch} && git merge ${BRANCH} && git push origin ${releaseBranch}`,

@@ -18,6 +18,7 @@ jobs:
         name: Install dependencies
       - name: Run unit tests
         run: pnpm test
+        working-directory: ./lib
       - name: Upload coverage reports to Codecov
         continue-on-error: true
         uses: codecov/codecov-action@v4

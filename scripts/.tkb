@@ -8,7 +8,7 @@
     },
     "gbzyhx0FwFfzRoE-iqVeu": {
       "id": "gbzyhx0FwFfzRoE-iqVeu",
-      "description": "🌟 **Update `sripts/rebrand.config.json` if required.**",
+      "description": "run `yarn rebrand` to rebrand and clean up the repo; the `rebrand` script will automatically rebrand the repo, adjust workflows, and create a commit",
       "columnId": "column-todo"
     },
     "Y5__aEZl3Pbxp7r90HKpV": {
@@ -18,7 +18,7 @@
     },
     "jcpymbi71e702p7n6fwvZ": {
       "id": "jcpymbi71e702p7n6fwvZ",
-      "description": "Close this Kanban Board tab and install dependencies using `pnpm`\n  - Run `pnpm i` to install dependencies; the `rebrand` script will automatically rebrand the repo, adjust workflows, and create a commit",
+      "description": "Install dependencies using `pnpm`: run `pnpm i`.",
       "columnId": "column-todo"
     },
     "jdZxwLymOo7w2eZeNpvsN": {
@@ -110,11 +110,6 @@
       "id": "wkDDELNeOfYSVmWI1eWu0",
       "description": "Install the recommended VSCode extensions:\n  - [Trello Kanban](https://marketplace.visualstudio.com/items?itemName=mayank1513.trello-kanban-task-board)",
       "columnId": "column-done"
-    },
-    "J5lp9I5d12B4tpGKawaqF": {
-      "id": "J5lp9I5d12B4tpGKawaqF",
-      "description": "Run `node scripts/rebrand.js` to rebrand this repo.",
-      "columnId": "column-todo"
     }
   },
   "columns": [
@@ -123,10 +118,9 @@
       "title": "To do",
       "tasksIds": [
         "G-1H47JpSI69kav1qZ-kp",
-        "gbzyhx0FwFfzRoE-iqVeu",
         "Y5__aEZl3Pbxp7r90HKpV",
         "jcpymbi71e702p7n6fwvZ",
-        "J5lp9I5d12B4tpGKawaqF",
+        "gbzyhx0FwFfzRoE-iqVeu",
         "jdZxwLymOo7w2eZeNpvsN",
         "RX4J5v4y5IOe_ucf8pMRT",
         "EdPbrbJLllUHfZmCS80f7",

@@ -144,6 +144,10 @@ const rebrandFn = async () => {
         message:
           "Generators are used to generate boilerplate code for new packages. They might not be required for a few libraries.",
       },
+      {
+        name: "LiteMode",
+        message: "If you do not want to create a lite version of your lib",
+      },
     ],
   });
 
@@ -179,6 +183,19 @@ const rebrandFn = async () => {
     delete rootPackageJSON.devDependencies.plop;
     ["./scripts/templates", "./scripts/hook.js", "./scripts/rc.js", "./plopfile.js"].forEach(
       dirOrfile => execSync("rm -rf " + dirOrfile),
+    );
+  }
+
+  if (feats.includes("LiteMode")) {
+    ["./scripts/lite.js"].forEach(dirOrfile => execSync("rm -rf " + dirOrfile));
+    ["publish.js", "manual-publish.js"].forEach(src =>
+      fs.writeFileSync(
+        fs
+          .readFileSync(path.resolve(process.cwd(), "scripts", src), "utf-8")
+          .split("\n")
+          .slice(-3)
+          .join("\n"),
+      ),
     );
   }
 

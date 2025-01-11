@@ -156,8 +156,8 @@ const rebrandFn = async () => {
   if (feats.includes("Rebrander")) {
     delete rootPackageJSON.scripts.rebrand;
     delete rootPackageJSON.devDependencies.enquirer;
-    ["./scripts/rebrand.js", "./scripts/rebrander.js", "./scripts/rebrand.config.json"].forEach(
-      dirOrfile => execSync("rm -rf " + dirOrfile),
+    ["./scripts/rebrand.js", "./scripts/rebrander.js"].forEach(dirOrfile =>
+      execSync("rm -rf " + dirOrfile),
     );
   }
 

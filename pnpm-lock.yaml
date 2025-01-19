@@ -39,8 +39,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(typedoc@0.27.6(typescript@5.7.3))
       typedoc-plugin-mdn-links:
-        specifier: ^4.0.8
-        version: 4.0.8(typedoc@0.27.6(typescript@5.7.3))
+        specifier: ^4.0.9
+        version: 4.0.9(typedoc@0.27.6(typescript@5.7.3))
       typedoc-plugin-missing-exports:
         specifier: ^3.1.0
         version: 3.1.0(typedoc@0.27.6(typescript@5.7.3))
@@ -4720,8 +4720,8 @@ packages:
     peerDependencies:
       typedoc: 0.25.x || 0.26.x
 
-  typedoc-plugin-mdn-links@4.0.8:
-    resolution: {integrity: sha512-HQqGiO1zIHYgWKPkfutYKqnUeDCdf/3SfSz2mgjQnD4/S7NxqemKZbeAZy5Cp2+1qvyo32sf9bN8SmUTB0f6mA==}
+  typedoc-plugin-mdn-links@4.0.9:
+    resolution: {integrity: sha512-udtolnpREnT+SB3xZnWHIyN2KtzjlohBOtOOYw+ofKMZKTCaYzHElSyaP2oS/7w/cZtFvrXr/m+35458XUcSLQ==}
     peerDependencies:
       typedoc: 0.26.x || 0.27.x
 
@@ -9989,7 +9989,7 @@ snapshots:
     dependencies:
       typedoc: 0.27.6(typescript@5.7.3)
 
-  typedoc-plugin-mdn-links@4.0.8(typedoc@0.27.6(typescript@5.7.3)):
+  typedoc-plugin-mdn-links@4.0.9(typedoc@0.27.6(typescript@5.7.3)):
     dependencies:
       typedoc: 0.27.6(typescript@5.7.3)
 

@@ -39,8 +39,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(typedoc@0.27.6(typescript@5.7.3))
       typedoc-plugin-mdn-links:
-        specifier: ^4.0.9
-        version: 4.0.9(typedoc@0.27.6(typescript@5.7.3))
+        specifier: ^4.0.10
+        version: 4.0.10(typedoc@0.27.6(typescript@5.7.3))
       typedoc-plugin-missing-exports:
         specifier: ^3.1.0
         version: 3.1.0(typedoc@0.27.6(typescript@5.7.3))
@@ -106,8 +106,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       tsup:
-        specifier: ^8.3.5
-        version: 8.3.5(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0)
+        specifier: ^8.3.6
+        version: 8.3.6(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0)
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -259,8 +259,8 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tsup:
-        specifier: ^8.3.5
-        version: 8.3.5(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0)
+        specifier: ^8.3.6
+        version: 8.3.6(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0)
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -343,8 +343,8 @@ importers:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@22.10.10)
       tsup:
-        specifier: ^8.3.5
-        version: 8.3.5(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0)
+        specifier: ^8.3.6
+        version: 8.3.6(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0)
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -419,8 +419,8 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       tsup:
-        specifier: ^8.3.5
-        version: 8.3.5(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0)
+        specifier: ^8.3.6
+        version: 8.3.6(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0)
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -4648,8 +4648,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tsup@8.3.5:
-    resolution: {integrity: sha512-Tunf6r6m6tnZsG9GYWndg0z8dEV7fD733VBFzFJ5Vcm1FtlXB8xBD/rtrBi2a3YKEV7hHtxiZtW5EAVADoe1pA==}
+  tsup@8.3.6:
+    resolution: {integrity: sha512-XkVtlDV/58S9Ye0JxUUTcrQk4S+EqlOHKzg6Roa62rdjL1nGWNUstG0xgI4vanHdfIpjP448J8vlN0oK6XOJ5g==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -4743,8 +4743,8 @@ packages:
     peerDependencies:
       typedoc: 0.25.x || 0.26.x
 
-  typedoc-plugin-mdn-links@4.0.9:
-    resolution: {integrity: sha512-udtolnpREnT+SB3xZnWHIyN2KtzjlohBOtOOYw+ofKMZKTCaYzHElSyaP2oS/7w/cZtFvrXr/m+35458XUcSLQ==}
+  typedoc-plugin-mdn-links@4.0.10:
+    resolution: {integrity: sha512-XlJttXrXLIlkU429vDjcKpTwrBTQ1FPpskEHqBfQca9HrvT3Ohl5lOJWsij23Puk6LsI+6l7RPRoHtL7ZTtROA==}
     peerDependencies:
       typedoc: 0.26.x || 0.27.x
 
@@ -9970,7 +9970,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsup@8.3.5(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0):
+  tsup@8.3.6(postcss@8.5.1)(typescript@5.7.3)(yaml@2.7.0):
     dependencies:
       bundle-require: 5.1.0(esbuild@0.24.2)
       cac: 6.7.14
@@ -10078,7 +10078,7 @@ snapshots:
     dependencies:
       typedoc: 0.27.6(typescript@5.7.3)
 
-  typedoc-plugin-mdn-links@4.0.9(typedoc@0.27.6(typescript@5.7.3)):
+  typedoc-plugin-mdn-links@4.0.10(typedoc@0.27.6(typescript@5.7.3)):
     dependencies:
       typedoc: 0.27.6(typescript@5.7.3)
 

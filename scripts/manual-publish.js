@@ -17,7 +17,7 @@ const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH;
 const isLatestRelease = BRANCH === DEFAULT_BRANCH || BRANCH.includes("release-");
 let tag = "";
 
-const OLD_VERSION = require("../lib/package.json").version;
+const { version: OLD_VERSION, name } = require("../lib/package.json");
 if (!isLatestRelease) {
   /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
   tag = BRANCH.split("-")[0];
@@ -83,9 +83,31 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
 const { visibility } = JSON.parse(execSync("gh repo view --json visibility").toString());
 const provenance = visibility.toLowerCase() === "public" ? "--provenance" : "";
 
+let LATEST_VERSION = "0.0.-1";
+
+try {
+  LATEST_VERSION = execSync(`npm view ${name} version`).toString().trim() ?? "0.0.-1";
+} catch {
+  // empty
+}
+
+const latest = LATEST_VERSION.split(".").map(parseInt);
+const current = NEW_VERSION.split(".").map(parseInt);
+
+let isLatest = false;
+
+if (latest[0] < current[0]) {
+  isLatest = true;
+} else if (latest[0] === current[0] && latest[1] < current[1]) {
+  isLatest = true;
+} else if (latest[0] === current[0] && latest[1] === current[1] && latest[2] < current[2]) {
+  isLatest = true;
+}
+
+const reTag = isLatest ? "" : ` && npm dist-tag add ${name}@${LATEST_VERSION} latest`;
 /** Create release */
 const publishCmd = `cd lib && pnpm build && npm publish ${provenance} --access public${tag && ` --tag ${tag}`}`;
-execSync(pushCmd);
+execSync(publishCmd + reTag);
 
 /** Create GitHub release */
 execSync(
@@ -93,4 +115,4 @@ execSync(
 );
 
 execSync("node ./scripts/lite.js");
-execSync(publishCmd);
+execSync(publishCmd + reTag.replace("@", "-lite@"));

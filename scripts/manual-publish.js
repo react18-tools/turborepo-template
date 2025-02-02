@@ -15,7 +15,7 @@ const BRANCH = process.env.BRANCH;
 const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH;
 
 const isLatestRelease = BRANCH === DEFAULT_BRANCH || BRANCH.includes("release-");
-let tag = "latest";
+let tag = "";
 
 const OLD_VERSION = require("../lib/package.json").version;
 if (!isLatestRelease) {
@@ -84,7 +84,8 @@ const { visibility } = JSON.parse(execSync("gh repo view --json visibility").toS
 const provenance = visibility.toLowerCase() === "public" ? "--provenance" : "";
 
 /** Create release */
-execSync(`cd lib && pnpm build && npm publish ${provenance} --access public --tag ${tag}`);
+const publishCmd = `cd lib && pnpm build && npm publish ${provenance} --access public${tag && ` --tag ${tag}`}`;
+execSync(pushCmd);
 
 /** Create GitHub release */
 execSync(
@@ -92,4 +93,4 @@ execSync(
 );
 
 execSync("node ./scripts/lite.js");
-execSync(`cd lib && pnpm build && npm publish ${provenance} --access public --tag ${tag}`);
+execSync(publishCmd);

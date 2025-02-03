@@ -43,7 +43,7 @@
     "@repo/scripts": "workspace:*",
     "esbuild-raw-plugin": "^0.1.1",
     "nextjs-darkmode": "^1.0.10",
-    "nextjs-themes": "^4.0.5",
+    "nextjs-themes": "^4.0.6",
     "r18gs": "^3.0.1",
     "react-live": "^4.1.8",
     "react18-loaders": "workspace:*"

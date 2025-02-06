@@ -4609,8 +4609,8 @@ packages:
       esbuild:
         optional: true
 
-  tsconfck@3.1.4:
-    resolution: {integrity: sha512-kdqWFGVJqe+KGYvlSO9NIaWn9jT1Ny4oKVzAJsKii5eoE9snzTJzL4+MMVOMn+fikWGFmKEylcXL710V/kIPJQ==}
+  tsconfck@3.1.5:
+    resolution: {integrity: sha512-CLDfGgUp7XPswWnezWwsCRxNmgQjhYq3VXHM0/XIRxhVrKw0M1if9agzryh1QS3nxjCROvV+xWxoJO1YctzzWg==}
     engines: {node: ^18 || >=20}
     hasBin: true
     peerDependencies:
@@ -9877,7 +9877,7 @@ snapshots:
       '@jest/types': 29.6.3
       babel-jest: 29.7.0(@babel/core@7.26.7)
 
-  tsconfck@3.1.4(typescript@5.7.3):
+  tsconfck@3.1.5(typescript@5.7.3):
     optionalDependencies:
       typescript: 5.7.3
 
@@ -10117,7 +10117,7 @@ snapshots:
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
-      tsconfck: 3.1.4(typescript@5.7.3)
+      tsconfck: 3.1.5(typescript@5.7.3)
     optionalDependencies:
       vite: 6.1.0(@types/node@22.13.1)(sass@1.84.0)(yaml@2.7.0)
     transitivePeerDependencies:

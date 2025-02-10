@@ -30,26 +30,26 @@ importers:
         specifier: ^2.4.0
         version: 2.4.0
       typedoc:
-        specifier: ^0.27.6
-        version: 0.27.6(typescript@5.7.3)
+        specifier: ^0.27.7
+        version: 0.27.7(typescript@5.7.3)
       typedoc-plugin-extras:
         specifier: ^4.0.0
-        version: 4.0.0(typedoc@0.27.6(typescript@5.7.3))
+        version: 4.0.0(typedoc@0.27.7(typescript@5.7.3))
       typedoc-plugin-inline-sources:
         specifier: ^1.2.0
-        version: 1.2.0(typedoc@0.27.6(typescript@5.7.3))
+        version: 1.2.0(typedoc@0.27.7(typescript@5.7.3))
       typedoc-plugin-mdn-links:
         specifier: ^4.0.12
-        version: 4.0.12(typedoc@0.27.6(typescript@5.7.3))
+        version: 4.0.12(typedoc@0.27.7(typescript@5.7.3))
       typedoc-plugin-missing-exports:
         specifier: ^3.1.0
-        version: 3.1.0(typedoc@0.27.6(typescript@5.7.3))
+        version: 3.1.0(typedoc@0.27.7(typescript@5.7.3))
       typedoc-plugin-rename-defaults:
         specifier: ^0.7.2
-        version: 0.7.2(typedoc@0.27.6(typescript@5.7.3))
+        version: 0.7.2(typedoc@0.27.7(typescript@5.7.3))
       typedoc-plugin-zod:
         specifier: ^1.3.1
-        version: 1.3.1(typedoc@0.27.6(typescript@5.7.3))
+        version: 1.3.1(typedoc@0.27.7(typescript@5.7.3))
 
   examples/express:
     dependencies:
@@ -4769,8 +4769,8 @@ packages:
     peerDependencies:
       typedoc: 0.23.x || 0.24.x || 0.25.x || 0.26.x || 0.27.x
 
-  typedoc@0.27.6:
-    resolution: {integrity: sha512-oBFRoh2Px6jFx366db0lLlihcalq/JzyCVp7Vaq1yphL/tbgx2e+bkpkCgJPunaPvPwoTOXSwasfklWHm7GfAw==}
+  typedoc@0.27.7:
+    resolution: {integrity: sha512-K/JaUPX18+61W3VXek1cWC5gwmuLvYTOXJzBvD9W7jFvbPnefRnCHQCEPw7MSNrP/Hj7JJrhZtDDLKdcYm6ucg==}
     engines: {node: '>= 18'}
     hasBin: true
     peerDependencies:
@@ -10093,32 +10093,32 @@ snapshots:
       possible-typed-array-names: 1.1.0
       reflect.getprototypeof: 1.0.10
 
-  typedoc-plugin-extras@4.0.0(typedoc@0.27.6(typescript@5.7.3)):
+  typedoc-plugin-extras@4.0.0(typedoc@0.27.7(typescript@5.7.3)):
     dependencies:
-      typedoc: 0.27.6(typescript@5.7.3)
+      typedoc: 0.27.7(typescript@5.7.3)
 
-  typedoc-plugin-inline-sources@1.2.0(typedoc@0.27.6(typescript@5.7.3)):
+  typedoc-plugin-inline-sources@1.2.0(typedoc@0.27.7(typescript@5.7.3)):
     dependencies:
-      typedoc: 0.27.6(typescript@5.7.3)
+      typedoc: 0.27.7(typescript@5.7.3)
 
-  typedoc-plugin-mdn-links@4.0.12(typedoc@0.27.6(typescript@5.7.3)):
+  typedoc-plugin-mdn-links@4.0.12(typedoc@0.27.7(typescript@5.7.3)):
     dependencies:
-      typedoc: 0.27.6(typescript@5.7.3)
+      typedoc: 0.27.7(typescript@5.7.3)
 
-  typedoc-plugin-missing-exports@3.1.0(typedoc@0.27.6(typescript@5.7.3)):
+  typedoc-plugin-missing-exports@3.1.0(typedoc@0.27.7(typescript@5.7.3)):
     dependencies:
-      typedoc: 0.27.6(typescript@5.7.3)
+      typedoc: 0.27.7(typescript@5.7.3)
 
-  typedoc-plugin-rename-defaults@0.7.2(typedoc@0.27.6(typescript@5.7.3)):
+  typedoc-plugin-rename-defaults@0.7.2(typedoc@0.27.7(typescript@5.7.3)):
     dependencies:
       camelcase: 8.0.0
-      typedoc: 0.27.6(typescript@5.7.3)
+      typedoc: 0.27.7(typescript@5.7.3)
 
-  typedoc-plugin-zod@1.3.1(typedoc@0.27.6(typescript@5.7.3)):
+  typedoc-plugin-zod@1.3.1(typedoc@0.27.7(typescript@5.7.3)):
     dependencies:
-      typedoc: 0.27.6(typescript@5.7.3)
+      typedoc: 0.27.7(typescript@5.7.3)
 
-  typedoc@0.27.6(typescript@5.7.3):
+  typedoc@0.27.7(typescript@5.7.3):
     dependencies:
       '@gerrit0/mini-shiki': 1.27.2
       lunr: 2.3.9

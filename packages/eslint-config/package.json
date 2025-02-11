@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.1.6",
+    "@next/eslint-plugin-next": "^15.1.7",
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
     "eslint": "^9.20.0",

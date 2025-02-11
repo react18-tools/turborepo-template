@@ -5,16 +5,16 @@
   "private": true,
   "devDependencies": {
     "@next/eslint-plugin-next": "^15.1.6",
-    "@typescript-eslint/eslint-plugin": "^8.23.0",
-    "@typescript-eslint/parser": "^8.23.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
     "eslint": "^9.20.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-only-warn": "^1.1.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-turbo": "^2.4.0",
+    "eslint-plugin-turbo": "^2.4.1",
     "globals": "^15.14.0",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.23.0"
+    "typescript-eslint": "^8.24.0"
   }
 }

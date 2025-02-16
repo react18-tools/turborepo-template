@@ -39,8 +39,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(typedoc@0.27.7(typescript@5.7.3))
       typedoc-plugin-mdn-links:
-        specifier: ^4.0.12
-        version: 4.0.12(typedoc@0.27.7(typescript@5.7.3))
+        specifier: ^4.0.13
+        version: 4.0.13(typedoc@0.27.7(typescript@5.7.3))
       typedoc-plugin-missing-exports:
         specifier: ^3.1.0
         version: 3.1.0(typedoc@0.27.7(typescript@5.7.3))
@@ -1474,8 +1474,8 @@ packages:
   '@shikijs/types@1.29.2':
     resolution: {integrity: sha512-VJjK0eIijTZf0QSTODEXCqinjBn0joAHQ+aPSBzrv4O2d/QSbsMw+ZeSRx03kV34Hy7NzUvV/7NqfYGRLrASmw==}
 
-  '@shikijs/vscode-textmate@10.0.1':
-    resolution: {integrity: sha512-fTIQwLF+Qhuws31iw7Ncl1R3HUDtGwIipiJ9iU+UsDUwMhegFcQKQHd51nZjb7CArq0MvON8rbgCGQYWHUKAdg==}
+  '@shikijs/vscode-textmate@10.0.2':
+    resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -4754,8 +4754,8 @@ packages:
     peerDependencies:
       typedoc: 0.25.x || 0.26.x
 
-  typedoc-plugin-mdn-links@4.0.12:
-    resolution: {integrity: sha512-pie8DmMoN9P6oUdwi5fWuPSfseqEqPAew5wJ3XOdQql5Pbuv/TQlS4RhBwV2hSy4u8eGqu00TbFjabicL9K1WQ==}
+  typedoc-plugin-mdn-links@4.0.13:
+    resolution: {integrity: sha512-vbfQHlPGU0AXuyEeMpKDEMS5FuF5EN5aVSPqxK0vbyhbC7vrE8H2AFwI2avWdPgo9crpld2EtT1IUhkAogAefw==}
     peerDependencies:
       typedoc: 0.26.x || 0.27.x
 
@@ -5696,7 +5696,7 @@ snapshots:
     dependencies:
       '@shikijs/engine-oniguruma': 1.29.2
       '@shikijs/types': 1.29.2
-      '@shikijs/vscode-textmate': 10.0.1
+      '@shikijs/vscode-textmate': 10.0.2
 
   '@humanfs/core@0.19.1': {}
 
@@ -6201,14 +6201,14 @@ snapshots:
   '@shikijs/engine-oniguruma@1.29.2':
     dependencies:
       '@shikijs/types': 1.29.2
-      '@shikijs/vscode-textmate': 10.0.1
+      '@shikijs/vscode-textmate': 10.0.2
 
   '@shikijs/types@1.29.2':
     dependencies:
-      '@shikijs/vscode-textmate': 10.0.1
+      '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
 
-  '@shikijs/vscode-textmate@10.0.1': {}
+  '@shikijs/vscode-textmate@10.0.2': {}
 
   '@sinclair/typebox@0.27.8': {}
 
@@ -10114,7 +10114,7 @@ snapshots:
     dependencies:
       typedoc: 0.27.7(typescript@5.7.3)
 
-  typedoc-plugin-mdn-links@4.0.12(typedoc@0.27.7(typescript@5.7.3)):
+  typedoc-plugin-mdn-links@4.0.13(typedoc@0.27.7(typescript@5.7.3)):
     dependencies:
       typedoc: 0.27.7(typescript@5.7.3)
 

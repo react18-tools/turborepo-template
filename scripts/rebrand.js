@@ -116,10 +116,16 @@ const rebrandFn = async () => {
 
   pkgs.forEach(pkg => execSync(`rm -rf ${pkg}`));
 
-  if (pkgs.length)
-    execSync(
-      'git add . && git commit -m "Cleaned up 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]"',
-    );
+  if (pkgs.length) {
+    // packages might have already been deleted during previous rebrand
+    try {
+      execSync(
+        'git add . && git commit -m "Cleaned up 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]"',
+      );
+    } catch {
+      // empty
+    }
+  }
 
   /**
    * feats: Rebrander, Docs

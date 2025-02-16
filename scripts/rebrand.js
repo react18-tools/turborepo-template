@@ -188,15 +188,13 @@ const rebrandFn = async () => {
 
   if (feats.includes("LiteMode")) {
     ["./scripts/lite.js"].forEach(dirOrfile => execSync("rm -rf " + dirOrfile));
-    ["publish.js", "manual-publish.js"].forEach(src =>
+    ["publish.js", "manual-publish.js"].forEach(src => {
+      const filePath = path.resolve(process.cwd(), "scripts", src);
       fs.writeFileSync(
-        fs
-          .readFileSync(path.resolve(process.cwd(), "scripts", src), "utf-8")
-          .split("\n")
-          .slice(-3)
-          .join("\n"),
-      ),
-    );
+        filePath,
+        fs.readFileSync(filePath, "utf-8").split("\n").slice(-3).join("\n"),
+      );
+    });
   }
 
   const rootDir = process.cwd();

@@ -198,7 +198,7 @@ const rebrandFn = async () => {
       const filePath = path.resolve(process.cwd(), "scripts", src);
       fs.writeFileSync(
         filePath,
-        fs.readFileSync(filePath, "utf-8").split("\n").slice(-3).join("\n"),
+        fs.readFileSync(filePath, "utf-8").split("\n").slice(0, -3).join("\n"),
       );
     });
   }

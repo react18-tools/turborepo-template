@@ -36,8 +36,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(typedoc@0.27.8(typescript@5.7.3))
       typedoc-plugin-inline-sources:
-        specifier: ^1.2.0
-        version: 1.2.0(typedoc@0.27.8(typescript@5.7.3))
+        specifier: ^1.2.1
+        version: 1.2.1(typedoc@0.27.8(typescript@5.7.3))
       typedoc-plugin-mdn-links:
         specifier: ^4.0.14
         version: 4.0.14(typedoc@0.27.8(typescript@5.7.3))
@@ -707,19 +707,19 @@ packages:
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
 
-  '@csstools/color-helpers@5.0.1':
-    resolution: {integrity: sha512-MKtmkA0BX87PKaO1NFRTFH+UnkgnmySQOvNxJubsadusqPEC2aJ9MOQiMceZJJ6oitUl/i0L6u0M1IrmAOmgBA==}
+  '@csstools/color-helpers@5.0.2':
+    resolution: {integrity: sha512-JqWH1vsgdGcw2RR6VliXXdA0/59LttzlU8UlRT/iUUsEeWfYq8I+K0yhihEUTTHLRm1EXvpsCx3083EU15ecsA==}
     engines: {node: '>=18'}
 
-  '@csstools/css-calc@2.1.1':
-    resolution: {integrity: sha512-rL7kaUnTkL9K+Cvo2pnCieqNpTKgQzy5f+N+5Iuko9HAoasP+xgprVh7KN/MaJVvVL1l0EzQq2MoqBHKSrDrag==}
+  '@csstools/css-calc@2.1.2':
+    resolution: {integrity: sha512-TklMyb3uBB28b5uQdxjReG4L80NxAqgrECqLZFQbyLekwwlcDDS8r3f07DKqeo8C4926Br0gf/ZDe17Zv4wIuw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^3.0.4
       '@csstools/css-tokenizer': ^3.0.3
 
-  '@csstools/css-color-parser@3.0.7':
-    resolution: {integrity: sha512-nkMp2mTICw32uE5NN+EsJ4f5N+IGFeCFu4bGpiKgb2Pq/7J/MpyLBeQ5ry4KKtRFZaYs6sTmcMYrSRIyj5DFKA==}
+  '@csstools/css-color-parser@3.0.8':
+    resolution: {integrity: sha512-pdwotQjCCnRPuNi06jFuP68cykU1f3ZWExLe/8MQ1LOs8Xq+fTkYgd+2V8mWUWMrOn9iS2HftPVaMZDaXzGbhQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^3.0.4
@@ -4746,10 +4746,10 @@ packages:
     peerDependencies:
       typedoc: 0.27.x
 
-  typedoc-plugin-inline-sources@1.2.0:
-    resolution: {integrity: sha512-gCjief4B71vRJw25Lwl7J69DuxzDjjG6pvUUPmjxY3uePyzcFGiw4eqbq+tmIPLXlnKAQujmglX/G+ZDnLUzug==}
+  typedoc-plugin-inline-sources@1.2.1:
+    resolution: {integrity: sha512-H+5AR5zhsGLB4ufrAQUO75bNUS74zoxDCRtFCEF2fEnrH62zM1YLi36x2utxWMCvrVRdpF1wLq2z0E3wxldmkQ==}
     peerDependencies:
-      typedoc: 0.25.x || 0.26.x
+      typedoc: 0.25.x || 0.26.x || 0.27.x
 
   typedoc-plugin-mdn-links@4.0.14:
     resolution: {integrity: sha512-IDILzJr4OzNb5uAWWRMZYny80Q6jUQerAwskdYbNMwaHMRwsB3+y8oqYYE7/PyH+kJVvJnCC4G2wnAQ3CLdgqA==}
@@ -5114,8 +5114,8 @@ snapshots:
 
   '@asamuzakjp/css-color@2.8.3':
     dependencies:
-      '@csstools/css-calc': 2.1.1(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)
-      '@csstools/css-color-parser': 3.0.7(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)
+      '@csstools/css-calc': 2.1.2(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)
+      '@csstools/css-color-parser': 3.0.8(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
       lru-cache: 10.4.3
@@ -5543,17 +5543,17 @@ snapshots:
       human-id: 4.1.1
       prettier: 2.8.8
 
-  '@csstools/color-helpers@5.0.1': {}
+  '@csstools/color-helpers@5.0.2': {}
 
-  '@csstools/css-calc@2.1.1(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)':
+  '@csstools/css-calc@2.1.2(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)':
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
 
-  '@csstools/css-color-parser@3.0.7(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)':
+  '@csstools/css-color-parser@3.0.8(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)':
     dependencies:
-      '@csstools/color-helpers': 5.0.1
-      '@csstools/css-calc': 2.1.1(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)
+      '@csstools/color-helpers': 5.0.2
+      '@csstools/css-calc': 2.1.2(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
 
@@ -10103,7 +10103,7 @@ snapshots:
     dependencies:
       typedoc: 0.27.8(typescript@5.7.3)
 
-  typedoc-plugin-inline-sources@1.2.0(typedoc@0.27.8(typescript@5.7.3)):
+  typedoc-plugin-inline-sources@1.2.1(typedoc@0.27.8(typescript@5.7.3)):
     dependencies:
       typedoc: 0.27.8(typescript@5.7.3)
 

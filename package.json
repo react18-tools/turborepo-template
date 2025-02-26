@@ -21,7 +21,7 @@
     "enquirer": "^2.4.1",
     "plop": "^4.0.1",
     "prettier": "^3.5.2",
-    "turbo": "^2.4.3",
+    "turbo": "^2.4.4",
     "typedoc": "^0.27.9",
     "typedoc-plugin-extras": "^4.0.0",
     "typedoc-plugin-inline-sources": "^1.2.1",

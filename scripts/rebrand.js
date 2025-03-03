@@ -190,6 +190,13 @@ const rebrandFn = async () => {
     ["./scripts/templates", "./scripts/hook.js", "./scripts/rc.js", "./plopfile.js"].forEach(
       dirOrfile => execSync("rm -rf " + dirOrfile),
     );
+    // update vitest scripts
+    execSync(`sed -i -e 's/"\*\*\/index.ts", //' typedoc.config.js`);
+
+    // update docs config if docs is there
+    if (!feats.includes("Docs")) {
+      execSync(`sed -i -e 's/"src\/\*\*\/index.ts", //' lib/vitest.config.mts`);
+    }
   }
 
   if (feats.includes("LiteMode")) {

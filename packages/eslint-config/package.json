@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.2.0",
-    "@typescript-eslint/eslint-plugin": "^8.25.0",
-    "@typescript-eslint/parser": "^8.25.0",
+    "@next/eslint-plugin-next": "^15.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.0.2",
     "eslint-plugin-only-warn": "^1.1.0",
@@ -15,6 +15,6 @@
     "eslint-plugin-turbo": "^2.4.4",
     "globals": "^16.0.0",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.25.0"
+    "typescript-eslint": "^8.26.0"
   }
 }

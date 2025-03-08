@@ -191,11 +191,11 @@ const rebrandFn = async () => {
       dirOrfile => execSync("rm -rf " + dirOrfile),
     );
     // update vitest scripts
-    execSync(`sed -i -e 's/"\*\*\/index.ts", //' typedoc.config.js`);
+    execSync(`sed -i -e 's/"src\\/\\*\\*\\/index.ts", //' lib/vitest.config.mts`);
 
     // update docs config if docs is there
     if (!feats.includes("Docs")) {
-      execSync(`sed -i -e 's/"src\/\*\*\/index.ts", //' lib/vitest.config.mts`);
+      execSync(`sed -i -e 's/"\\*\\*\\/index.ts", //' typedoc.config.js`);
     }
   }
 

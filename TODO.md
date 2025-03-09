@@ -11,8 +11,8 @@
 - [ ] 🌟 **Update [`sripts/rebrand.config.json`](./scripts/rebrand.config.json) if required.**
 - [ ] Install `pnpm` using `npm i -g pnpm`
 - [ ] Install dependencies using `pnpm`
-  - Run `pnpm i` to install dependencies; the `rebrand` script will automatically rebrand the repo, adjust workflows, and create a commit
-- [ ] Make sure you run `node scripts/rebrand.js` from the root directory to rebrand your repo.
+  - Run `pnpm i` to install dependencies
+- [ ] Make sure you run `pnpm rebrand` from the root directory to rebrand your repo.
 - [ ] Run `yarn plop`, and follow prompts to generate server or client components for your library
 - [ ] 🌟 Enable [private vulnerability reporting]
 - [ ] Set up `CodeCov`

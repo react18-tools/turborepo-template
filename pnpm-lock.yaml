@@ -122,14 +122,14 @@ importers:
         specifier: workspace:*
         version: link:../../packages/shared
       next:
-        specifier: ^15.2.2
-        version: 15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1)
+        specifier: ^15.2.3
+        version: 15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.86.0)
       nextjs-darkmode-lite:
         specifier: ^1.0.10
-        version: 1.0.10(@types/react@19.0.10)(r18gs@3.0.1(@types/react@19.0.10)(react@19.0.0))(react@19.0.0)
+        version: 1.0.10(@types/react@19.0.11)(r18gs@3.0.1(@types/react@19.0.11)(react@19.0.0))(react@19.0.0)
       nextjs-themes:
         specifier: ^4.0.6
-        version: 4.0.6(@types/react@19.0.10)(next@15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
+        version: 4.0.6(@types/react@19.0.11)(next@15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.86.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -141,11 +141,11 @@ importers:
         version: link:../../lib
       webgl-generative-particles:
         specifier: ^0.0.1
-        version: 0.0.1(@types/react@19.0.10)(react@19.0.0)
+        version: 0.0.1(@types/react@19.0.11)(react@19.0.0)
     devDependencies:
       '@next/eslint-plugin-next':
-        specifier: ^15.2.2
-        version: 15.2.2
+        specifier: ^15.2.3
+        version: 15.2.3
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -156,11 +156,11 @@ importers:
         specifier: ^22.13.10
         version: 22.13.10
       '@types/react':
-        specifier: ^19.0.10
-        version: 19.0.10
+        specifier: ^19.0.11
+        version: 19.0.11
       '@types/react-dom':
         specifier: ^19.0.4
-        version: 19.0.4(@types/react@19.0.10)
+        version: 19.0.4(@types/react@19.0.11)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -172,7 +172,7 @@ importers:
         version: link:../../packages/shared
       nextjs-darkmode:
         specifier: ^1.0.10
-        version: 1.0.10(@types/react@19.0.10)(react@19.0.0)
+        version: 1.0.10(@types/react@19.0.11)(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -181,13 +181,13 @@ importers:
         version: 19.0.0(react@19.0.0)
       react-mouse-trails:
         specifier: ^0.0.5
-        version: 0.0.5(@types/react@19.0.10)(react@19.0.0)
+        version: 0.0.5(@types/react@19.0.11)(react@19.0.0)
       react18-loaders:
         specifier: workspace:*
         version: link:../../lib
       react18-themes:
         specifier: ^3.2.0
-        version: 3.2.0(@types/react@19.0.10)(react@19.0.0)
+        version: 3.2.0(@types/react@19.0.11)(react@19.0.0)
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -196,20 +196,20 @@ importers:
         specifier: workspace:*
         version: link:../../packages/config-typescript
       '@types/react':
-        specifier: ^19.0.10
-        version: 19.0.10
+        specifier: ^19.0.11
+        version: 19.0.11
       '@types/react-dom':
         specifier: ^19.0.4
-        version: 19.0.4(@types/react@19.0.10)
+        version: 19.0.4(@types/react@19.0.11)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
-        version: 4.3.4(vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0))
+        version: 4.3.4(vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0))
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
       vite:
         specifier: ^6.2.2
-        version: 6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0)
+        version: 6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0)
 
   lib:
     dependencies:
@@ -218,7 +218,7 @@ importers:
         version: 15.1.2(@babel/core@7.26.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1)
       r18gs:
         specifier: ^3.0.1
-        version: 3.0.1(@types/react@19.0.10)(react@19.0.0)
+        version: 3.0.1(@types/react@19.0.11)(react@19.0.0)
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -228,22 +228,22 @@ importers:
         version: link:../packages/config-typescript
       '@testing-library/react':
         specifier: ^16.2.0
-        version: 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.4(@types/react@19.0.10))(@types/react@19.0.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.4(@types/react@19.0.11))(@types/react@19.0.11)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@types/node':
         specifier: ^22.13.10
         version: 22.13.10
       '@types/react':
-        specifier: ^19.0.10
-        version: 19.0.10
+        specifier: ^19.0.11
+        version: 19.0.11
       '@types/react-dom':
         specifier: ^19.0.4
-        version: 19.0.4(@types/react@19.0.10)
+        version: 19.0.4(@types/react@19.0.11)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
-        version: 4.3.4(vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0))
+        version: 4.3.4(vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0))
       '@vitest/coverage-v8':
         specifier: ^3.0.9
-        version: 3.0.9(vitest@3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.85.1)(yaml@2.7.0))
+        version: 3.0.9(vitest@3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.86.0)(yaml@2.7.0))
       esbuild-plugin-rdi:
         specifier: ^0.0.0
         version: 0.0.0
@@ -270,18 +270,18 @@ importers:
         version: 5.8.2
       vite-tsconfig-paths:
         specifier: ^5.1.4
-        version: 5.1.4(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0))
+        version: 5.1.4(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0))
       vitest:
         specifier: ^3.0.9
-        version: 3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.85.1)(yaml@2.7.0)
+        version: 3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.86.0)(yaml@2.7.0)
 
   packages/config-typescript: {}
 
   packages/eslint-config:
     devDependencies:
       '@next/eslint-plugin-next':
-        specifier: ^15.2.2
-        version: 15.2.2
+        specifier: ^15.2.3
+        version: 15.2.3
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.26.1
         version: 8.26.1(@typescript-eslint/parser@8.26.1(eslint@9.22.0)(typescript@5.8.2))(eslint@9.22.0)(typescript@5.8.2)
@@ -357,7 +357,7 @@ importers:
     dependencies:
       '@mayank1513/fork-me':
         specifier: ^2.1.3
-        version: 2.1.3(@types/react@19.0.10)(next@15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
+        version: 2.1.3(@types/react@19.0.11)(next@15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.86.0))(react@19.0.0)
       '@repo/scripts':
         specifier: workspace:*
         version: link:../../scripts
@@ -366,13 +366,13 @@ importers:
         version: 0.2.0
       nextjs-darkmode:
         specifier: ^1.0.10
-        version: 1.0.10(@types/react@19.0.10)(react@19.0.0)
+        version: 1.0.10(@types/react@19.0.11)(react@19.0.0)
       nextjs-themes:
         specifier: ^4.0.6
-        version: 4.0.6(@types/react@19.0.10)(next@15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)
+        version: 4.0.6(@types/react@19.0.11)(next@15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.86.0))(react@19.0.0)
       r18gs:
         specifier: ^3.0.1
-        version: 3.0.1(@types/react@19.0.10)(react@19.0.0)
+        version: 3.0.1(@types/react@19.0.11)(react@19.0.0)
       react-live:
         specifier: ^4.1.8
         version: 4.1.8(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -388,22 +388,22 @@ importers:
         version: link:../config-typescript
       '@testing-library/react':
         specifier: ^16.2.0
-        version: 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.4(@types/react@19.0.10))(@types/react@19.0.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.4(@types/react@19.0.11))(@types/react@19.0.11)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@types/node':
         specifier: ^22.13.10
         version: 22.13.10
       '@types/react':
-        specifier: ^19.0.10
-        version: 19.0.10
+        specifier: ^19.0.11
+        version: 19.0.11
       '@types/react-dom':
         specifier: ^19.0.4
-        version: 19.0.4(@types/react@19.0.10)
+        version: 19.0.4(@types/react@19.0.11)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
-        version: 4.3.4(vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0))
+        version: 4.3.4(vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0))
       '@vitest/coverage-v8':
         specifier: ^3.0.9
-        version: 3.0.9(vitest@3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.85.1)(yaml@2.7.0))
+        version: 3.0.9(vitest@3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.86.0)(yaml@2.7.0))
       esbuild-plugin-rdi:
         specifier: ^0.0.0
         version: 0.0.0
@@ -430,10 +430,10 @@ importers:
         version: 5.8.2
       vite-tsconfig-paths:
         specifier: ^5.1.4
-        version: 5.1.4(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0))
+        version: 5.1.4(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0))
       vitest:
         specifier: ^3.0.9
-        version: 3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.85.1)(yaml@2.7.0)
+        version: 3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.86.0)(yaml@2.7.0)
 
   scripts: {}
 
@@ -1148,11 +1148,11 @@ packages:
   '@next/env@15.1.2':
     resolution: {integrity: sha512-Hm3jIGsoUl6RLB1vzY+dZeqb+/kWPZ+h34yiWxW0dV87l8Im/eMOwpOA+a0L78U0HM04syEjXuRlCozqpwuojQ==}
 
-  '@next/env@15.2.2':
-    resolution: {integrity: sha512-yWgopCfA9XDR8ZH3taB5nRKtKJ1Q5fYsTOuYkzIIoS8TJ0UAUKAGF73JnGszbjk2ufAQDj6mDdgsJAFx5CLtYQ==}
+  '@next/env@15.2.3':
+    resolution: {integrity: sha512-a26KnbW9DFEUsSxAxKBORR/uD9THoYoKbkpFywMN/AFvboTt94b8+g/07T8J6ACsdLag8/PDU60ov4rPxRAixw==}
 
-  '@next/eslint-plugin-next@15.2.2':
-    resolution: {integrity: sha512-1+BzokFuFQIfLaRxUKf2u5In4xhPV7tUgKcK53ywvFl6+LXHWHpFkcV7VNeKlyQKUotwiq4fy/aDNF9EiUp4RQ==}
+  '@next/eslint-plugin-next@15.2.3':
+    resolution: {integrity: sha512-eNSOIMJtjs+dp4Ms1tB1PPPJUQHP3uZK+OQ7iFY9qXpGO6ojT6imCL+KcUOqE/GXGidWbBZJzYdgAdPHqeCEPA==}
 
   '@next/swc-darwin-arm64@15.1.2':
     resolution: {integrity: sha512-b9TN7q+j5/7+rGLhFAVZiKJGIASuo8tWvInGfAd8wsULjB1uNGRCj1z1WZwwPWzVQbIKWFYqc+9L7W09qwt52w==}
@@ -1160,8 +1160,8 @@ packages:
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-arm64@15.2.2':
-    resolution: {integrity: sha512-HNBRnz+bkZ+KfyOExpUxTMR0Ow8nkkcE6IlsdEa9W/rI7gefud19+Sn1xYKwB9pdCdxIP1lPru/ZfjfA+iT8pw==}
+  '@next/swc-darwin-arm64@15.2.3':
+    resolution: {integrity: sha512-uaBhA8aLbXLqwjnsHSkxs353WrRgQgiFjduDpc7YXEU0B54IKx3vU+cxQlYwPCyC8uYEEX7THhtQQsfHnvv8dw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -1172,8 +1172,8 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@15.2.2':
-    resolution: {integrity: sha512-mJOUwp7al63tDpLpEFpKwwg5jwvtL1lhRW2fI1Aog0nYCPAhxbJsaZKdoVyPZCy8MYf/iQVNDuk/+i29iLCzIA==}
+  '@next/swc-darwin-x64@15.2.3':
+    resolution: {integrity: sha512-pVwKvJ4Zk7h+4hwhqOUuMx7Ib02u3gDX3HXPKIShBi9JlYllI0nU6TWLbPT94dt7FSi6mSBhfc2JrHViwqbOdw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -1184,8 +1184,8 @@ packages:
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-gnu@15.2.2':
-    resolution: {integrity: sha512-5ZZ0Zwy3SgMr7MfWtRE7cQWVssfOvxYfD9O7XHM7KM4nrf5EOeqwq67ZXDgo86LVmffgsu5tPO57EeFKRnrfSQ==}
+  '@next/swc-linux-arm64-gnu@15.2.3':
+    resolution: {integrity: sha512-50ibWdn2RuFFkOEUmo9NCcQbbV9ViQOrUfG48zHBCONciHjaUKtHcYFiCwBVuzD08fzvzkWuuZkd4AqbvKO7UQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -1196,8 +1196,8 @@ packages:
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@15.2.2':
-    resolution: {integrity: sha512-cgKWBuFMLlJ4TWcFHl1KOaVVUAF8vy4qEvX5KsNd0Yj5mhu989QFCq1WjuaEbv/tO1ZpsQI6h/0YR8bLwEi+nA==}
+  '@next/swc-linux-arm64-musl@15.2.3':
+    resolution: {integrity: sha512-2gAPA7P652D3HzR4cLyAuVYwYqjG0mt/3pHSWTCyKZq/N/dJcUAEoNQMyUmwTZWCJRKofB+JPuDVP2aD8w2J6Q==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -1208,8 +1208,8 @@ packages:
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@15.2.2':
-    resolution: {integrity: sha512-c3kWSOSsVL8rcNBBfOq1+/j2PKs2nsMwJUV4icUxRgGBwUOfppeh7YhN5s79enBQFU+8xRgVatFkhHU1QW7yUA==}
+  '@next/swc-linux-x64-gnu@15.2.3':
+    resolution: {integrity: sha512-ODSKvrdMgAJOVU4qElflYy1KSZRM3M45JVbeZu42TINCMG3anp7YCBn80RkISV6bhzKwcUqLBAmOiWkaGtBA9w==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -1220,8 +1220,8 @@ packages:
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@15.2.2':
-    resolution: {integrity: sha512-PXTW9PLTxdNlVYgPJ0equojcq1kNu5NtwcNjRjHAB+/sdoKZ+X8FBu70fdJFadkxFIGekQTyRvPMFF+SOJaQjw==}
+  '@next/swc-linux-x64-musl@15.2.3':
+    resolution: {integrity: sha512-ZR9kLwCWrlYxwEoytqPi1jhPd1TlsSJWAc+H/CJHmHkf2nD92MQpSRIURR1iNgA/kuFSdxB8xIPt4p/T78kwsg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -1232,8 +1232,8 @@ packages:
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-arm64-msvc@15.2.2':
-    resolution: {integrity: sha512-nG644Es5llSGEcTaXhnGWR/aThM/hIaz0jx4MDg4gWC8GfTCp8eDBWZ77CVuv2ha/uL9Ce+nPTfYkSLG67/sHg==}
+  '@next/swc-win32-arm64-msvc@15.2.3':
+    resolution: {integrity: sha512-+G2FrDcfm2YDbhDiObDU/qPriWeiz/9cRR0yMWJeTLGGX6/x8oryO3tt7HhodA1vZ8r2ddJPCjtLcpaVl7TE2Q==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -1244,8 +1244,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@15.2.2':
-    resolution: {integrity: sha512-52nWy65S/R6/kejz3jpvHAjZDPKIbEQu4x9jDBzmB9jJfuOy5rspjKu4u77+fI4M/WzLXrrQd57hlFGzz1ubcQ==}
+  '@next/swc-win32-x64-msvc@15.2.3':
+    resolution: {integrity: sha512-gHYS9tc+G2W0ZC8rBL+H6RdtXIyk40uLiaos0yj5US85FNhbFEndMA2nW3z47nzOWiSvXTZ5kBClc3rD0zJg0w==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1591,8 +1591,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.0.10':
-    resolution: {integrity: sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==}
+  '@types/react@19.0.11':
+    resolution: {integrity: sha512-vrdxRZfo9ALXth6yPfV16PYTLZwsUWhVjjC+DkfE5t1suNSbBrWC9YqSuuxJZ8Ps6z1o2ycRpIqzZJIgklq4Tw==}
 
   '@types/send@0.17.4':
     resolution: {integrity: sha512-x2EM6TJOybec7c52BX0ZspPodMsQUd5L6PRwOunVyVUhXiBSKf3AezDL8Dgvgt5o0UfKNfuA0eMLr2wLT4AiBA==}
@@ -2338,8 +2338,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.119:
-    resolution: {integrity: sha512-Ku4NMzUjz3e3Vweh7PhApPrZSS4fyiCIbcIrG9eKrriYVLmbMepETR/v6SU7xPm98QTqMSYiCwfO89QNjXLkbQ==}
+  electron-to-chromium@1.5.120:
+    resolution: {integrity: sha512-oTUp3gfX1gZI+xfD2djr2rzQdHCwHzPQrrK0CD7WpTdF0nPdQ/INcRVjWgLdCT4a9W3jFObR9DAfsuyFQnI8CQ==}
 
   emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -3637,8 +3637,8 @@ packages:
       sass:
         optional: true
 
-  next@15.2.2:
-    resolution: {integrity: sha512-dgp8Kcx5XZRjMw2KNwBtUzhngRaURPioxoNIVl5BOyJbhi9CUgEtKDO7fx5wh8Z8vOVX1nYZ9meawJoRrlASYA==}
+  next@15.2.3:
+    resolution: {integrity: sha512-x6eDkZxk2rPpu46E1ZVUWIBhYCLszmUY6fvHBFcbzJ9dD+qRX6vcHusaqqDlnY+VngKzKbAiG2iRCkPbmi8f7w==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
     hasBin: true
     peerDependencies:
@@ -4278,6 +4278,11 @@ packages:
 
   sass@1.85.1:
     resolution: {integrity: sha512-Uk8WpxM5v+0cMR0XjX9KfRIacmSG86RH4DCCZjLU2rFh5tyutt9siAXJ7G+YfxQ99Q6wrRMbMlVl6KqUms71ag==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+
+  sass@1.86.0:
+    resolution: {integrity: sha512-zV8vGUld/+mP4KbMLJMX7TyGCuUp7hnkOScgCMsWuHtns8CWBoz+vmEhoGMXsaJrbUP8gj+F1dLvVe79sK8UdA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -5949,67 +5954,67 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
-  '@mayank1513/fork-me@2.1.3(@types/react@19.0.10)(next@15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0)':
+  '@mayank1513/fork-me@2.1.3(@types/react@19.0.11)(next@15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.86.0))(react@19.0.0)':
     dependencies:
-      '@types/react': 19.0.10
+      '@types/react': 19.0.11
       react: 19.0.0
     optionalDependencies:
-      next: 15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1)
+      next: 15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.86.0)
 
   '@next/env@15.1.2': {}
 
-  '@next/env@15.2.2': {}
+  '@next/env@15.2.3': {}
 
-  '@next/eslint-plugin-next@15.2.2':
+  '@next/eslint-plugin-next@15.2.3':
     dependencies:
       fast-glob: 3.3.1
 
   '@next/swc-darwin-arm64@15.1.2':
     optional: true
 
-  '@next/swc-darwin-arm64@15.2.2':
+  '@next/swc-darwin-arm64@15.2.3':
     optional: true
 
   '@next/swc-darwin-x64@15.1.2':
     optional: true
 
-  '@next/swc-darwin-x64@15.2.2':
+  '@next/swc-darwin-x64@15.2.3':
     optional: true
 
   '@next/swc-linux-arm64-gnu@15.1.2':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@15.2.2':
+  '@next/swc-linux-arm64-gnu@15.2.3':
     optional: true
 
   '@next/swc-linux-arm64-musl@15.1.2':
     optional: true
 
-  '@next/swc-linux-arm64-musl@15.2.2':
+  '@next/swc-linux-arm64-musl@15.2.3':
     optional: true
 
   '@next/swc-linux-x64-gnu@15.1.2':
     optional: true
 
-  '@next/swc-linux-x64-gnu@15.2.2':
+  '@next/swc-linux-x64-gnu@15.2.3':
     optional: true
 
   '@next/swc-linux-x64-musl@15.1.2':
     optional: true
 
-  '@next/swc-linux-x64-musl@15.2.2':
+  '@next/swc-linux-x64-musl@15.2.3':
     optional: true
 
   '@next/swc-win32-arm64-msvc@15.1.2':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@15.2.2':
+  '@next/swc-win32-arm64-msvc@15.2.3':
     optional: true
 
   '@next/swc-win32-x64-msvc@15.1.2':
     optional: true
 
-  '@next/swc-win32-x64-msvc@15.2.2':
+  '@next/swc-win32-x64-msvc@15.2.3':
     optional: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -6184,15 +6189,15 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.4(@types/react@19.0.10))(@types/react@19.0.10)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@testing-library/react@16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.4(@types/react@19.0.11))(@types/react@19.0.11)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@babel/runtime': 7.26.10
       '@testing-library/dom': 10.4.0
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
     optionalDependencies:
-      '@types/react': 19.0.10
-      '@types/react-dom': 19.0.4(@types/react@19.0.10)
+      '@types/react': 19.0.11
+      '@types/react-dom': 19.0.4(@types/react@19.0.11)
 
   '@tootallnate/once@2.0.0': {}
 
@@ -6315,11 +6320,11 @@ snapshots:
 
   '@types/range-parser@1.2.7': {}
 
-  '@types/react-dom@19.0.4(@types/react@19.0.10)':
+  '@types/react-dom@19.0.4(@types/react@19.0.11)':
     dependencies:
-      '@types/react': 19.0.10
+      '@types/react': 19.0.11
 
-  '@types/react@19.0.10':
+  '@types/react@19.0.11':
     dependencies:
       csstype: 3.1.3
 
@@ -6439,18 +6444,18 @@ snapshots:
       '@typescript-eslint/types': 8.26.1
       eslint-visitor-keys: 4.2.0
 
-  '@vitejs/plugin-react@4.3.4(vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0))':
+  '@vitejs/plugin-react@4.3.4(vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0))':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.10)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.10)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0)
+      vite: 6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/coverage-v8@3.0.9(vitest@3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.85.1)(yaml@2.7.0))':
+  '@vitest/coverage-v8@3.0.9(vitest@3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.86.0)(yaml@2.7.0))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 1.0.2
@@ -6464,7 +6469,7 @@ snapshots:
       std-env: 3.8.1
       test-exclude: 7.0.1
       tinyrainbow: 2.0.0
-      vitest: 3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.85.1)(yaml@2.7.0)
+      vitest: 3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.86.0)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6475,13 +6480,13 @@ snapshots:
       chai: 5.2.0
       tinyrainbow: 2.0.0
 
-  '@vitest/mocker@3.0.9(vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0))':
+  '@vitest/mocker@3.0.9(vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0))':
     dependencies:
       '@vitest/spy': 3.0.9
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      vite: 6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0)
+      vite: 6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0)
 
   '@vitest/pretty-format@3.0.9':
     dependencies:
@@ -6778,7 +6783,7 @@ snapshots:
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001705
-      electron-to-chromium: 1.5.119
+      electron-to-chromium: 1.5.120
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
 
@@ -7170,7 +7175,7 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
-  electron-to-chromium@1.5.119: {}
+  electron-to-chromium@1.5.120: {}
 
   emittery@0.13.1: {}
 
@@ -7302,7 +7307,7 @@ snapshots:
       autoprefixer: 10.4.21(postcss@8.5.3)
       postcss: 8.5.3
       postcss-modules: 6.0.1(postcss@8.5.3)
-      sass: 1.85.1
+      sass: 1.86.0
 
   esbuild-plugin-react18@0.2.6: {}
 
@@ -8863,9 +8868,9 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  next@15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1):
+  next@15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.86.0):
     dependencies:
-      '@next/env': 15.2.2
+      '@next/env': 15.2.3
       '@swc/counter': 0.1.3
       '@swc/helpers': 0.5.15
       busboy: 1.6.0
@@ -8875,39 +8880,39 @@ snapshots:
       react-dom: 19.0.0(react@19.0.0)
       styled-jsx: 5.1.6(react@19.0.0)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 15.2.2
-      '@next/swc-darwin-x64': 15.2.2
-      '@next/swc-linux-arm64-gnu': 15.2.2
-      '@next/swc-linux-arm64-musl': 15.2.2
-      '@next/swc-linux-x64-gnu': 15.2.2
-      '@next/swc-linux-x64-musl': 15.2.2
-      '@next/swc-win32-arm64-msvc': 15.2.2
-      '@next/swc-win32-x64-msvc': 15.2.2
-      sass: 1.85.1
+      '@next/swc-darwin-arm64': 15.2.3
+      '@next/swc-darwin-x64': 15.2.3
+      '@next/swc-linux-arm64-gnu': 15.2.3
+      '@next/swc-linux-arm64-musl': 15.2.3
+      '@next/swc-linux-x64-gnu': 15.2.3
+      '@next/swc-linux-x64-musl': 15.2.3
+      '@next/swc-win32-arm64-msvc': 15.2.3
+      '@next/swc-win32-x64-msvc': 15.2.3
+      sass: 1.86.0
       sharp: 0.33.5
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-darkmode-lite@1.0.10(@types/react@19.0.10)(r18gs@3.0.1(@types/react@19.0.10)(react@19.0.0))(react@19.0.0):
+  nextjs-darkmode-lite@1.0.10(@types/react@19.0.11)(r18gs@3.0.1(@types/react@19.0.11)(react@19.0.0))(react@19.0.0):
     dependencies:
-      '@types/react': 19.0.10
-      r18gs: 3.0.1(@types/react@19.0.10)(react@19.0.0)
+      '@types/react': 19.0.11
+      r18gs: 3.0.1(@types/react@19.0.11)(react@19.0.0)
       react: 19.0.0
 
-  nextjs-darkmode@1.0.10(@types/react@19.0.10)(react@19.0.0):
+  nextjs-darkmode@1.0.10(@types/react@19.0.11)(react@19.0.0):
     dependencies:
-      '@types/react': 19.0.10
-      r18gs: 3.0.1(@types/react@19.0.10)(react@19.0.0)
+      '@types/react': 19.0.11
+      r18gs: 3.0.1(@types/react@19.0.11)(react@19.0.0)
       react: 19.0.0
 
-  nextjs-themes@4.0.6(@types/react@19.0.10)(next@15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1))(react@19.0.0):
+  nextjs-themes@4.0.6(@types/react@19.0.11)(next@15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.86.0))(react@19.0.0):
     dependencies:
-      '@types/react': 19.0.10
-      r18gs: 3.0.1(@types/react@19.0.10)(react@19.0.0)
+      '@types/react': 19.0.11
+      r18gs: 3.0.1(@types/react@19.0.11)(react@19.0.0)
       react: 19.0.0
     optionalDependencies:
-      next: 15.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1)
+      next: 15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.86.0)
 
   no-case@3.0.4:
     dependencies:
@@ -9327,14 +9332,14 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  r18gs@1.1.3(@types/react@19.0.10)(react@19.0.0):
+  r18gs@1.1.3(@types/react@19.0.11)(react@19.0.0):
     dependencies:
-      '@types/react': 19.0.10
+      '@types/react': 19.0.11
       react: 19.0.0
 
-  r18gs@3.0.1(@types/react@19.0.10)(react@19.0.0):
+  r18gs@3.0.1(@types/react@19.0.11)(react@19.0.0):
     dependencies:
-      '@types/react': 19.0.10
+      '@types/react': 19.0.11
       react: 19.0.0
 
   range-parser@1.2.1: {}
@@ -9365,17 +9370,17 @@ snapshots:
       sucrase: 3.35.0
       use-editable: 2.3.3(react@19.0.0)
 
-  react-mouse-trails@0.0.5(@types/react@19.0.10)(react@19.0.0):
+  react-mouse-trails@0.0.5(@types/react@19.0.11)(react@19.0.0):
     dependencies:
-      '@types/react': 19.0.10
+      '@types/react': 19.0.11
       react: 19.0.0
 
   react-refresh@0.14.2: {}
 
-  react18-themes@3.2.0(@types/react@19.0.10)(react@19.0.0):
+  react18-themes@3.2.0(@types/react@19.0.11)(react@19.0.0):
     dependencies:
-      '@types/react': 19.0.10
-      r18gs: 1.1.3(@types/react@19.0.10)(react@19.0.0)
+      '@types/react': 19.0.11
+      r18gs: 1.1.3(@types/react@19.0.11)(react@19.0.0)
       react: 19.0.0
 
   react@19.0.0: {}
@@ -9541,6 +9546,15 @@ snapshots:
   safer-buffer@2.1.2: {}
 
   sass@1.85.1:
+    dependencies:
+      chokidar: 4.0.3
+      immutable: 5.0.3
+      source-map-js: 1.2.1
+    optionalDependencies:
+      '@parcel/watcher': 2.5.1
+    optional: true
+
+  sass@1.86.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.0.3
@@ -10217,13 +10231,13 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-node@3.0.9(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0):
+  vite-node@3.0.9(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.0
       es-module-lexer: 1.6.0
       pathe: 2.0.3
-      vite: 6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0)
+      vite: 6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -10238,18 +10252,18 @@ snapshots:
       - tsx
       - yaml
 
-  vite-tsconfig-paths@5.1.4(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0)):
+  vite-tsconfig-paths@5.1.4(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
       tsconfck: 3.1.5(typescript@5.8.2)
     optionalDependencies:
-      vite: 6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0)
+      vite: 6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0):
+  vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0):
     dependencies:
       esbuild: 0.25.1
       postcss: 8.5.3
@@ -10257,13 +10271,13 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.13.10
       fsevents: 2.3.3
-      sass: 1.85.1
+      sass: 1.86.0
       yaml: 2.7.0
 
-  vitest@3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.85.1)(yaml@2.7.0):
+  vitest@3.0.9(@types/node@22.13.10)(jsdom@26.0.0)(sass@1.86.0)(yaml@2.7.0):
     dependencies:
       '@vitest/expect': 3.0.9
-      '@vitest/mocker': 3.0.9(vite@6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0))
+      '@vitest/mocker': 3.0.9(vite@6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0))
       '@vitest/pretty-format': 3.0.9
       '@vitest/runner': 3.0.9
       '@vitest/snapshot': 3.0.9
@@ -10279,8 +10293,8 @@ snapshots:
       tinyexec: 0.3.2
       tinypool: 1.0.2
       tinyrainbow: 2.0.0
-      vite: 6.2.2(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0)
-      vite-node: 3.0.9(@types/node@22.13.10)(sass@1.85.1)(yaml@2.7.0)
+      vite: 6.2.2(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0)
+      vite-node: 3.0.9(@types/node@22.13.10)(sass@1.86.0)(yaml@2.7.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.13.10
@@ -10315,9 +10329,9 @@ snapshots:
     dependencies:
       defaults: 1.0.4
 
-  webgl-generative-particles@0.0.1(@types/react@19.0.10)(react@19.0.0):
+  webgl-generative-particles@0.0.1(@types/react@19.0.11)(react@19.0.0):
     dependencies:
-      '@types/react': 19.0.10
+      '@types/react': 19.0.11
       react: 19.0.0
 
   webidl-conversions@4.0.2: {}

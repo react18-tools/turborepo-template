@@ -183,6 +183,11 @@ const rebrandFn = async () => {
       "./typedoc.config.js",
       "./tsconfig.docs.json",
     ].forEach(dirOrfile => execSync("rm -rf " + dirOrfile));
+    const publishWorkflowFile = path.resolve(process.cwd(), ".github/workflows/publish.yml");
+    fs.writeFileSync(
+      publishWorkflowFile,
+      fs.readFileSync(publishWorkflowFile, "utf8").split("\n").slice(0, -5).join("\n") + "\n",
+    );
   }
 
   if (feats.includes("Generators")) {

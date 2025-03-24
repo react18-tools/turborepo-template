@@ -21,6 +21,7 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@repo/scripts": "workspace:*",
     "@testing-library/react": "^16.2.0",
     "@types/node": "^22.13.12",
     "@types/react": "^19.0.12",

@@ -116,3 +116,6 @@ execSync(
 
 execSync("node ./scripts/lite.js");
 execSync(publishCmd + reTag.replace("@", "-lite@"));
+
+// Publish canonical packages
+execSync("node scripts/publish-canonical.js");

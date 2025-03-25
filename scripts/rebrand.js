@@ -169,7 +169,12 @@ const rebrandFn = async () => {
       execSync("rm -rf " + dirOrfile),
     );
   } else {
-    execSync(`sed -i -e 's/rm -rf \.\/lib\/src\/ && //' scripts/rebrander.js`);
+    fs.writeFileSync(
+      path.resolve(rootDir, "scripts", "rebrander.js"),
+      fs
+        .readFileSync(path.resolve(rootDir, "scripts", "rebrander.js"), "utf-8")
+        .replace("rm -rf ./lib/src/ && ", ""),
+    );
   }
 
   if (feats.includes("Docs")) {

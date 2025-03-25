@@ -40,5 +40,11 @@
   },
   "dependencies": {
     "pre-commit": "^1.2.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "cross-spawn@<6.0.6": ">=6.0.6",
+      "next@>=15.0.0 <15.2.3": ">=15.2.3"
+    }
   }
 }

@@ -74,8 +74,8 @@ const rebrandFn = async () => {
 
   if (installExt) {
     console.log("\x1b[32m", "Installing recommended VS Code extensions...");
-    execSync("code --install-extension mayank1513.trello-kanban-task-board");
-    execSync("code --install-extension esbenp.prettier-vscode");
+    execSync("code --install-extension mayank1513.trello-kanban-task-board", { stdio: "inherit" });
+    execSync("code --install-extension esbenp.prettier-vscode", { stdio: "inherit" });
   }
 
   console.log("\x1b[32m", "Creating rebrand.config.json...");
@@ -85,7 +85,7 @@ const rebrandFn = async () => {
   );
 
   console.log("\x1b[32m", "rebranding...");
-  execSync("node ./scripts/rebrander.js");
+  execSync("node ./scripts/rebrander.js", { stdio: "inherit" });
 
   console.log("\x1b[32m", "...");
   console.log("\x1b[32m", "...");
@@ -123,6 +123,7 @@ const rebrandFn = async () => {
     try {
       execSync(
         'git add . && git commit -m "Cleaned up 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]"',
+        { stdio: "inherit" },
       );
     } catch {
       // empty
@@ -186,7 +187,7 @@ const rebrandFn = async () => {
       "./scripts/doc.js",
       "./typedoc.config.js",
       "./tsconfig.docs.json",
-    ].forEach(dirOrfile => execSync("rm -rf " + dirOrfile));
+    ].forEach(dirOrFile => execSync("rm -rf " + dirOrFile));
     const publishWorkflowFile = path.resolve(process.cwd(), ".github/workflows/publish.yml");
     fs.writeFileSync(
       publishWorkflowFile,
@@ -197,7 +198,7 @@ const rebrandFn = async () => {
   if (feats.includes("Generators")) {
     delete rootPackageJSON.devDependencies.plop;
     ["./scripts/templates", "./scripts/hook.js", "./scripts/rc.js", "./plopfile.js"].forEach(
-      dirOrfile => execSync("rm -rf " + dirOrfile),
+      dirOrFile => execSync("rm -rf " + dirOrFile),
     );
     // update vitest scripts
     execSync(`sed -i -e 's/"src\\/\\*\\*\\/index.ts", //' lib/vitest.config.mts`);
@@ -209,7 +210,7 @@ const rebrandFn = async () => {
   }
 
   if (feats.includes("LiteMode")) {
-    ["./scripts/lite.js"].forEach(dirOrfile => execSync("rm -rf " + dirOrfile));
+    ["./scripts/lite.js"].forEach(dirOrFile => execSync("rm -rf " + dirOrFile));
     ["publish.js", "manual-publish.js"].forEach(src => {
       const filePath = path.resolve(process.cwd(), "scripts", src);
       fs.writeFileSync(

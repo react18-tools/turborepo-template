@@ -175,6 +175,11 @@ const rebrandFn = async () => {
         .readFileSync(path.resolve(rootDir, "scripts", "rebrander.js"), "utf-8")
         .replace("rm -rf ./lib/src/ && ", ""),
     );
+
+    execSync(
+      `sed -i -e 's/const packageName = repo/const packageName = config.packageName/' scripts/rebrand.js`,
+      { stdio: "inherit" },
+    );
   }
 
   if (feats.includes("Docs")) {
@@ -234,11 +239,6 @@ const rebrandFn = async () => {
   } catch (e) {
     console.error(e);
   }
-
-  execSync(
-    `sed -i -e 's/const packageName = repo/const packageName = config.packageName/' scripts/rebrand.js`,
-    { stdio: "inherit" },
-  );
 
   execSync(
     'git add . && git commit -m "Cleaned up features 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]"',

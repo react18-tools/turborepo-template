@@ -165,6 +165,8 @@ const rebrandFn = async () => {
     ["./scripts/rebrand.js", "./scripts/rebrander.js"].forEach(dirOrfile =>
       execSync("rm -rf " + dirOrfile),
     );
+  } else {
+    execSync(`sed -i -e 's/rm -rf \.\/lib\/src\/ && //' scripts/rebrander.js`);
   }
 
   if (feats.includes("Docs")) {

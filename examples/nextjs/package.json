@@ -16,8 +16,8 @@
     "next": "^15.2.4",
     "nextjs-darkmode-lite": "^1.0.10",
     "nextjs-themes": "^4.0.6",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react18-loaders": "workspace:*",
     "webgl-generative-particles": "^0.0.1"
   },

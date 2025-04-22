@@ -7,7 +7,7 @@ const { execSync } = require("child_process");
 const config = require("./rebrand.config.json");
 
 const [owner, repo] = execSync(
-  'git remote get-url --push origin | sed "s/https:\\/\\/github.com\\///" | sed "s/.git//"',
+  'git remote get-url --push origin | sed "s/https:\\/\\/([^@]*@)?github.com\\///" | sed "s/.git//"',
 )
   .toString()
   .trim()

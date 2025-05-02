@@ -47,6 +47,7 @@
     "nextjs-themes": "^4.0.6",
     "r18gs": "^3.0.1",
     "react-live": "^4.1.8",
-    "react18-loaders": "workspace:*"
+    "react18-loaders": "workspace:*",
+    "typingfx": "^1.0.0"
   }
 }

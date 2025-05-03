@@ -42,9 +42,9 @@ export function LandingPage({ title, children }: LandingPageProps) {
     <main className={styles.main}>
       <h1 className={styles.title}>{title}</h1>
       <div className={[styles.center, styles.hero].join(" ")}>
-        <h2>Craft your next amazing library using</h2>
-        <Logo href={`https://github.com/${owner}/${repo}`} />
-        <TypeOut>
+        <TypeOut componentAnimation={{ wrapper: "div" }}>
+          <h2>Craft your next amazing library using</h2>
+          <Logo href={`https://github.com/${owner}/${repo}`} />
           <strong>Harness the full potential of React 18 Server Components!</strong>
           {1500}
         </TypeOut>

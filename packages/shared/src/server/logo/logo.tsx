@@ -16,7 +16,12 @@ export interface LogoProps {
 export function Logo({ href, linkComponent }: LogoProps) {
   if (href?.startsWith("http"))
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={styles.logo}>
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.logo}
+        data-tfx="true">
         <span>{repo}</span>
       </a>
     );

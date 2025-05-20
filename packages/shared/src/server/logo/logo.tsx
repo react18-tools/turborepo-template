@@ -21,7 +21,7 @@ export function Logo({ href, linkComponent }: LogoProps) {
         target="_blank"
         rel="noopener noreferrer"
         className={styles.logo}
-        data-tfx="true">
+        data-tfx="component">
         <span>{packageName}</span>
       </a>
     );

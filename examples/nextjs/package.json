@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@repo/shared": "workspace:*",
-    "next": "^15.2.4",
+    "next": "^15.3.2",
     "nextjs-darkmode-lite": "^1.0.10",
     "nextjs-themes": "^4.0.6",
     "react": "^19.1.0",
@@ -22,12 +22,12 @@
     "webgl-generative-particles": "^0.0.1"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.2.4",
+    "@next/eslint-plugin-next": "^15.3.2",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.14.0",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
-    "typescript": "^5.8.2"
+    "@types/node": "^22.15.19",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "typescript": "^5.8.3"
   }
 }

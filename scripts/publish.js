@@ -67,8 +67,12 @@ try {
   execSync(`gh release create ${VERSION} --generate-notes --latest --title "Release v${VERSION}"`);
 }
 
-// Publish canonical packages
-execSync("node scripts/publish-canonical.js");
+try {
+  // Publish canonical packages
+  execSync("node scripts/publish-canonical.js");
+} catch {
+  console.error("Failed to publish canonical packages");
+}
 
 execSync("node ./scripts/lite.js");
 execSync(`cd lib && pnpm build && npm publish ${provenance} --access public`);

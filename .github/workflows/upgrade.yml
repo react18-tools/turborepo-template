@@ -33,6 +33,6 @@ jobs:
       - run: pnpm build --filter @example/nextjs
         name: Build all apps to make sure it is not broken due to dependency upgrades
       - name: Run unit tests
-        run: pnpm test
+        run: cd lib && pnpm test
       - name: Save upgraded packages back to repo
         run: echo $(date +%F_%H:%M:%S) > .lst && git add . && git commit -m "upgrade deps && docs [skip ci]" && git push origin main

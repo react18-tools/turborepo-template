@@ -14,7 +14,7 @@ const TEMPLATE_DIR = "scripts/templates/";
 /**
  * create exports entry
  */
-function createExportsEntry(pkgJSON, target) {
+function createExportsEntry(pkgJSON, target, data) {
   const entry = {
     types: `./dist/${target}/index.d.ts`,
     import: `./dist/${target}/index.mjs`,
@@ -22,8 +22,10 @@ function createExportsEntry(pkgJSON, target) {
   };
   pkgJSON.exports[`./${target}`] = entry;
   pkgJSON.exports[`./dist/${target}`] = entry;
-  pkgJSON.exports[`./${target}/index.css`] = `./dist/${target}/index.css`;
-  pkgJSON.exports[`./dist/${target}/index.css`] = `./dist/${target}/index.css`;
+  if (data.createScss) {
+    pkgJSON.exports[`./${target}/index.css`] = `./dist/${target}/index.css`;
+    pkgJSON.exports[`./dist/${target}/index.css`] = `./dist/${target}/index.css`;
+  }
 }
 
 /**
@@ -62,7 +64,7 @@ function updateIndexFilesIfNeeded(
       template: `export * from "./${currentDirSegments[length - 1]}"`,
     });
     // update exports
-    createExportsEntry(pkgJSON, dirPath.split("src/")[1]);
+    createExportsEntry(pkgJSON, dirPath.split("src/")[1], data);
   }
 }
 
@@ -104,10 +106,14 @@ function createRootIndexAndDeclarations(data, pkgJSON) {
         import: "./dist/index.mjs",
         require: "./dist/index.js",
       },
-      "./index.css": "./dist/index.css",
-      "./dist/index.css": "./dist/index.css",
-      "./styles": "./dist/index.css",
-      "./css": "./dist/index.css",
+      ...(data.createScss
+        ? {
+            "./index.css": "./dist/index.css",
+            "./dist/index.css": "./dist/index.css",
+            "./styles": "./dist/index.css",
+            "./css": "./dist/index.css",
+          }
+        : {}),
     };
   }
   /** Create declaration if not present.  */
@@ -125,7 +131,7 @@ function createRootIndexAndDeclarations(data, pkgJSON) {
       path: `${root}index.ts`,
       template: `${banner}/**\n * Server components and client components need to be exported from separate files as\n * directive on top of the file from which component is imported takes effect.\n * i.e., server component re-exported from file with "use client" will behave as client component\n */\n\n// ${target} component exports\n`,
     });
-    createExportsEntry(pkgJSON, target);
+    createExportsEntry(pkgJSON, target, data);
   }
 
   return { nestedRouteActions, root };
@@ -178,7 +184,7 @@ function getIndexAction(data, parentDir, pkgJSON) {
       template: 'export * from "./{{kebabCase name}}";',
     };
   // add exports if file did not exists
-  createExportsEntry(pkgJSON, dirPath.split("src")[1].slice(1).replace(/\\/g, "/"));
+  createExportsEntry(pkgJSON, dirPath.split("src")[1].slice(1).replace(/\\/g, "/"), data);
   return {
     type: "add",
     path: `${parentDir}{{kebabCase name}}/index.ts`,
@@ -200,23 +206,39 @@ function getActions(data) {
 
   fs.writeFileSync(packageJSONPath, JSON.stringify(pkgJSON, null, 2) + "\n");
 
-  return nestedRouteActions.concat([
-    indexAction,
-    {
+  const filesActions = [];
+
+  if (data.createScss) {
+    filesActions.push({
       type: "add",
       path: `${parentDir}{{kebabCase name}}/{{kebabCase name}}.tsx`,
       templateFile: `${TEMPLATE_DIR}component.hbs`,
-    },
-    {
-      type: "add",
-      path: `${parentDir}{{kebabCase name}}/{{kebabCase name}}.test.tsx`,
-      templateFile: `${TEMPLATE_DIR}component.test.hbs`,
-    },
-    {
+    });
+
+    filesActions.push({
       type: "add",
       path: `${parentDir}{{kebabCase name}}/{{kebabCase name}}.module.scss`,
       templateFile: `${TEMPLATE_DIR}component.module.hbs`,
-    },
+    });
+  } else {
+    filesActions.push({
+      type: "add",
+      path: `${parentDir}{{kebabCase name}}/{{kebabCase name}}.tsx`,
+      templateFile: `${TEMPLATE_DIR}component-noscss.hbs`,
+    });
+  }
+
+  if (data.createTestStub) {
+    filesActions.push({
+      type: "add",
+      path: `${parentDir}{{kebabCase name}}/{{kebabCase name}}.test.tsx`,
+      templateFile: `${TEMPLATE_DIR}component.test.hbs`,
+    });
+  }
+
+  return nestedRouteActions.concat([
+    indexAction,
+    ...filesActions,
     {
       type: "append",
       pattern: /(?<insertion> component exports)/,
@@ -246,6 +268,18 @@ module.exports = {
       type: "confirm",
       name: "isClient",
       message: 'Is this a client component? (Should we add "use client" directive?)',
+    },
+    {
+      type: "confirm",
+      name: "createScss",
+      message: "Will you use scss module? (Should we add create .module.scss file)",
+      default: true,
+    },
+    {
+      type: "confirm",
+      name: "createTestStub",
+      message: "Should we create unit test file?",
+      default: true,
     },
     {
       type: "input",

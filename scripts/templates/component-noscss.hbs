@@ -1,0 +1,21 @@
+import { HTMLProps, ReactNode } from "react";
+
+export interface {{ pascalCase name }}Props extends HTMLProps<HTMLDivElement> {
+	children?: ReactNode;
+}
+
+/**
+ * {{ description }}
+ *
+ * @example
+ * ```tsx
+ * <{{ pascalCase name }} />
+ * ```
+ */
+export const {{ pascalCase name }} = ({ children, ...props }: {{ pascalCase name }}Props) => {
+	return (
+		<div {...props} data-testid="{{ kebabCase name }}">
+			{children}
+		</div>
+	);
+}

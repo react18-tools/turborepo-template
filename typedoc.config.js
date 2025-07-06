@@ -13,8 +13,5 @@ module.exports = {
     "typedoc-plugin-mdn-links",
     "typedoc-plugin-rename-defaults",
     "typedoc-plugin-missing-exports",
-    "typedoc-plugin-zod",
-    "typedoc-plugin-inline-sources",
-    // "typedoc-plugin-extras",
   ],
 };

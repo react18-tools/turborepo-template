@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.5
+
+### Patch Changes
+
+- e29bdd4: Create exports field in package.json
+
 ## 1.1.4
 
 ### Patch Changes

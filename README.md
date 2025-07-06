@@ -72,7 +72,32 @@ Compared to the default scaffold from create-turbo, this template offers:
 - GitHub actions/workflows to auto-publish your package when the version changes
 - GitHub action/workflow + pre-install scripts to automatically rebrand your repo on creation
 
-### 🤩 Don't forget to star [this repository](https://github.com/react18-tools/turborepo-template)!
+## 🧱 Generate New Components
+
+This project uses [`plop`](https://plopjs.com/) to scaffold reusable React components under the `lib` or `packages/shared` directory.
+
+To generate a new component, run:
+
+```bash
+pnpm plop
+```
+
+You’ll be prompted to choose:
+
+- The **target package** (`lib` or `packages/shared`)
+- The **component name** (e.g., `Card`, or nested like `forms/Input`)
+- Whether it’s a **client component** (adds `"use client"` directive)
+- Whether to include a **`.module.scss` file**
+- Whether to generate a **test stub**
+- An optional **description** (used as JSDoc)
+
+🧠 The generator:
+
+- Creates a folder with `.tsx`, optional `.module.scss`, and `.test.tsx`
+- Updates `index.ts` files recursively
+- Adds `exports` to `package.json` automatically
+
+## 🤩 Don't forget to star [this repository](https://github.com/react18-tools/turborepo-template)!
 
 Looking for a hands-on course to get started with Turborepo? Check out [React and Next.js with TypeScript](https://mayank-chaudhari.vercel.app/courses/react-and-next-js-with-typescript) and [The Game of Chess with Next.js, React, and TypeScript](https://www.udemy.com/course/game-of-chess-with-nextjs-react-and-typescript/?referralCode=851A28F10B254A8523FE)
 

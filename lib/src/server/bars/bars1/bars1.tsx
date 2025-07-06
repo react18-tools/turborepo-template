@@ -6,8 +6,6 @@ import { Base, BaseProps } from "../../common";
  *
  * @example
  * <Bars1 />
- *
- * @source
  */
 export function Bars1(props: BaseProps) {
   return <Base {...props} loaderClass={styles.loader} />;

@@ -12,8 +12,6 @@ export interface {{ pascalCase name }}Props extends HTMLProps<HTMLDivElement> {
  * ```tsx
  * <{{ pascalCase name }} />
  * ```
- * 
- * @source - Source code
  */
 export const {{ pascalCase name }} = ({ children, ...props }: {{ pascalCase name }}Props) => {
   const className = [props.className, styles["{{ kebabCase name }}"]].filter(Boolean).join(" ");

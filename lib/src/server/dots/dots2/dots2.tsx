@@ -11,8 +11,6 @@ interface Dots2Props extends BaseProps {
  *
  * @example
  * <Dots2 />
- *
- * @source
  */
 export function Dots2(props: Dots2Props) {
   return <Base {...props} loaderClass={styles.loader} />;

@@ -21,6 +21,14 @@ packageJSON.funding.unshift({
 });
 packageJSON.keywords = packageJSON.keywords.slice(2);
 
+packageJSON.exports = {
+  ".": {
+    types: "./dist/index.d.ts",
+    import: "./dist/index.mjs",
+    require: "./dist/index.js",
+  },
+};
+
 fs.writeFileSync(
   path.resolve(rootDir, "lib", "package.json"),
   JSON.stringify(packageJSON, null, 2),

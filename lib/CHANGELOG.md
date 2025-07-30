@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.6
+
+### Patch Changes
+
+- 7d32ddd: Fix exports for styles
+
 ## 1.1.5
 
 ### Patch Changes

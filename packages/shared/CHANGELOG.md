@@ -1,5 +1,12 @@
 # @repo/shared
 
+## 0.0.13
+
+### Patch Changes
+
+- Updated dependencies [7d32ddd]
+  - react18-loaders@1.1.6
+
 ## 0.0.12
 
 ### Patch Changes

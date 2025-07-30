@@ -40,9 +40,11 @@
     "vitest": "^3.1.4"
   },
   "dependencies": {
+    "@m2d/react-markdown": "^1.0.0",
     "@mayank1513/fork-me": "^2.1.3",
     "@repo/scripts": "workspace:*",
     "esbuild-raw-plugin": "^0.2.0",
+    "mdast2docx": "^1.4.1",
     "nextjs-darkmode": "^1.0.10",
     "nextjs-themes": "^4.0.6",
     "r18gs": "^3.0.1",

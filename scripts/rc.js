@@ -26,6 +26,7 @@ function createExportsEntry(pkgJSON, target, data) {
     import: `./dist/${target}/index.mjs`,
     require: `./dist/${target}/index.js`,
   };
+  pkgJSON.exports = pkgJSON.exports ?? {};
   pkgJSON.exports[`./${target}`] = entry;
   pkgJSON.exports[`./dist/${target}`] = entry;
 

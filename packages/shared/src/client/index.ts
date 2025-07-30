@@ -7,6 +7,7 @@
  */
 
 // client component exports
+export * from "./docs";
 export * from "./demo";
 export * from "./header";
 export * from "./global-loader";

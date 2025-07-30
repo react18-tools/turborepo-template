@@ -90,7 +90,12 @@
       "types": "./dist/hooks/index.d.ts",
       "import": "./dist/hooks/index.mjs",
       "require": "./dist/hooks/index.js"
-    }
+    },
+    "./index.css": "./dist/index.css",
+    "./dist/index.css": "./dist/index.css",
+    "./dist": "./dist/index.css",
+    "./css": "./dist/index.css",
+    "./styles": "./dist/index.css"
   },
   "scripts": {
     "build": "tsup && tsc -p tsconfig-build.json && gzip -c dist/index.js | wc -c",

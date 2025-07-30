@@ -50,6 +50,7 @@
     "r18gs": "^3.0.1",
     "react-live": "^4.1.8",
     "react18-loaders": "workspace:*",
+    "rehype-raw": "^7.0.0",
     "typingfx": "^1.1.1"
   }
 }

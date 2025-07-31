@@ -19,15 +19,15 @@
     "format"
   ],
   "devDependencies": {
-    "@changesets/cli": "^2.29.4",
+    "@changesets/cli": "^2.29.5",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.15.19",
+    "@types/node": "^24.1.0",
     "enquirer": "^2.4.1",
     "plop": "^4.0.1",
-    "prettier": "^3.5.3",
-    "turbo": "^2.5.3",
-    "typedoc": "^0.28.4",
-    "typedoc-plugin-mdn-links": "^5.0.2",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.5",
+    "typedoc": "^0.28.8",
+    "typedoc-plugin-mdn-links": "^5.0.6",
     "typedoc-plugin-missing-exports": "^4.0.0",
     "typedoc-plugin-rename-defaults": "^0.7.3"
   },

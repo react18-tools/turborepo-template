@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.7
+
+### Patch Changes
+
+- bb84d03: Update exports
+
 ## 1.1.6
 
 ### Patch Changes

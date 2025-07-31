@@ -61,6 +61,26 @@
       "import": "./dist/server/bars/index.mjs",
       "require": "./dist/server/bars/index.js"
     },
+    "./server/bars/bars1": {
+      "types": "./dist/server/bars/bars1/index.d.ts",
+      "import": "./dist/server/bars/bars1/index.mjs",
+      "require": "./dist/server/bars/bars1/index.js"
+    },
+    "./dist/server/bars/bars1": {
+      "types": "./dist/server/bars/bars1/index.d.ts",
+      "import": "./dist/server/bars/bars1/index.mjs",
+      "require": "./dist/server/bars/bars1/index.js"
+    },
+    "./server/bars/2": {
+      "types": "./dist/server/bars/bars2/index.d.ts",
+      "import": "./dist/server/bars/bars2/index.mjs",
+      "require": "./dist/server/bars/bars2/index.js"
+    },
+    "./dist/server/bars/bars2": {
+      "types": "./dist/server/bars/bars2/index.d.ts",
+      "import": "./dist/server/bars/bars2/index.mjs",
+      "require": "./dist/server/bars/bars2/index.js"
+    },
     "./server/common": {
       "types": "./dist/server/common/index.d.ts",
       "import": "./dist/server/common/index.mjs",
@@ -80,6 +100,26 @@
       "types": "./dist/server/dots/index.d.ts",
       "import": "./dist/server/dots/index.mjs",
       "require": "./dist/server/dots/index.js"
+    },
+    "./server/dots1": {
+      "types": "./dist/server/dots1/index.d.ts",
+      "import": "./dist/server/dots1/index.mjs",
+      "require": "./dist/server/dots1/index.js"
+    },
+    "./dist/server/dots1": {
+      "types": "./dist/server/dots1/index.d.ts",
+      "import": "./dist/server/dots1/index.mjs",
+      "require": "./dist/server/dots1/index.js"
+    },
+    "./server/dots2": {
+      "types": "./dist/server/dots2/index.d.ts",
+      "import": "./dist/server/dots2/index.mjs",
+      "require": "./dist/server/dots2/index.js"
+    },
+    "./dist/server/dots2": {
+      "types": "./dist/server/dots2/index.d.ts",
+      "import": "./dist/server/dots2/index.mjs",
+      "require": "./dist/server/dots2/index.js"
     },
     "./hooks": {
       "types": "./dist/hooks/index.d.ts",

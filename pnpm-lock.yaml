@@ -982,8 +982,8 @@ packages:
     resolution: {integrity: sha512-Ul5l+lHEcw3L5+k8POx6r74mxEYKG5kOb6Xpy2gCRW6zweT6TEhAf8vhxGgjhqrd/VO/Dirhsb+1hNpD1ue9hw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@gerrit0/mini-shiki@3.9.0':
-    resolution: {integrity: sha512-p58r5PE/hIKtE7aYzeDYZr4DPrOidwoUFPX3p6rPEZWtb7zWX3b7Bu9LZ17XODFiRO4x/VzTE15KYNEaZ3khuw==}
+  '@gerrit0/mini-shiki@3.9.1':
+    resolution: {integrity: sha512-quvtbDhNf528BkMHQQd8xGJMpmA5taDZuex/JDF8ETEjS2iypXzr1hnEUVh+lTUyffFJ0JCxysUsiuUoEGIz/Q==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -6828,7 +6828,7 @@ snapshots:
       '@eslint/core': 0.15.1
       levn: 0.4.1
 
-  '@gerrit0/mini-shiki@3.9.0':
+  '@gerrit0/mini-shiki@3.9.1':
     dependencies:
       '@shikijs/engine-oniguruma': 3.9.1
       '@shikijs/langs': 3.9.1
@@ -12516,7 +12516,7 @@ snapshots:
 
   typedoc@0.28.9(typescript@5.9.2):
     dependencies:
-      '@gerrit0/mini-shiki': 3.9.0
+      '@gerrit0/mini-shiki': 3.9.1
       lunr: 2.3.9
       markdown-it: 14.1.0
       minimatch: 9.0.5

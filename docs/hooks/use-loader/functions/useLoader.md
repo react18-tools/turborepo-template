@@ -1,14 +1,10 @@
-[**React18 Loaders**](../../../README.md)
-
-***
-
 [React18 Loaders](../../../modules.md) / [hooks/use-loader](../README.md) / useLoader
 
 # Function: useLoader()
 
 > **useLoader**(): `object`
 
-Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/15f049b3490b4e059828906d31f43a3bb780bbbe/lib/src/hooks/use-loader.ts#L8)
+Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/59e71c9c47952d89d130580522ad77f57cd1f4be/lib/src/hooks/use-loader.ts#L8)
 
 ## Returns
 

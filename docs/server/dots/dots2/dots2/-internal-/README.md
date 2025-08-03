@@ -1,7 +1,3 @@
-[**React18 Loaders**](../../../../../README.md)
-
-***
-
 [React18 Loaders](../../../../../modules.md) / [server/dots/dots2/dots2](../README.md) / \<internal\>
 
 # \<internal\>

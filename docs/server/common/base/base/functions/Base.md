@@ -1,14 +1,10 @@
-[**React18 Loaders**](../../../../../README.md)
-
-***
-
 [React18 Loaders](../../../../../modules.md) / [server/common/base/base](../README.md) / Base
 
 # Function: Base()
 
 > **Base**(`__namedParameters`): `Element`
 
-Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/15f049b3490b4e059828906d31f43a3bb780bbbe/lib/src/server/common/base/base.tsx#L25)
+Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/59e71c9c47952d89d130580522ad77f57cd1f4be/lib/src/server/common/base/base.tsx#L25)
 
 Base component to avoid code duplication
 

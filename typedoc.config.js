@@ -10,6 +10,7 @@ module.exports = {
   searchInComments: true,
   excludeExternals: true,
   plugin: [
+    "typedoc-plugin-markdown",
     "typedoc-plugin-mdn-links",
     "typedoc-plugin-rename-defaults",
     "typedoc-plugin-missing-exports",

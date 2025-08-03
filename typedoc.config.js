@@ -15,4 +15,5 @@ module.exports = {
     "typedoc-plugin-rename-defaults",
     "typedoc-plugin-missing-exports",
   ],
+  githubPages: true,
 };

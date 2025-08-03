@@ -96,7 +96,7 @@ const rebrandFn = async () => {
     type: "multiselect",
     name: "pkgs",
     message: "Select the examples or packages to remove",
-    initial: ["examples/express", "packages/logger", "packages/jest-presets"],
+    initial: ["examples/express", "packages/logger"],
     choices: [
       {
         name: "examples/express",
@@ -107,11 +107,6 @@ const rebrandFn = async () => {
         name: "packages/logger",
         message:
           "Logger package at packages/logger. The express example uses logger - handle it if needed.",
-      },
-      {
-        name: "packages/jest-presets",
-        message:
-          "We use vitest. You can keep this in case you want to use Jest. Note that the express example and logger package are set up to use jest with this jest-presets.",
       },
     ],
   });

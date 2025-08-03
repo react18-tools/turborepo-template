@@ -25,7 +25,6 @@ This TurboRepo comprises the following packages/examples, all written in [TypeSc
 - `@example/vite`: a [Vite.js](https://vitest.dev) app
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-- `@repo/jest-presets`: Jest presets for unit testing
 - `@repo/logger`: A configurable shared logger utility
 - `@repo/shared`: An internal library of components utilized by the examples
 - `react18-loaders`: a React component library (The core package published to NPM)

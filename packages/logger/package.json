@@ -12,19 +12,12 @@
     "dev": "tsup --watch",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
-    "typecheck": "tsc --noEmit",
-    "test": "jest"
-  },
-  "jest": {
-    "preset": "@repo/jest-presets/node"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/jest-presets": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/jest": "^30.0.0",
     "@types/node": "^24.1.0",
-    "jest": "^30.0.5",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"
   }

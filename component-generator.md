@@ -16,7 +16,7 @@ pnpm plop rc
 | Component Name        | Supports nested paths like `form/InputText`     |
 | Is Client Component   | Adds `"use client"` directive                   |
 | Create .module.scss   | Adds a scoped SCSS module                       |
-| Create Unit Test File | Adds a Jest + React Testing Library stub        |
+| Create Unit Test File | Adds a Vitest + React Testing Library stub      |
 | Description           | Added to the top of the component file as JSDoc |
 
 ### Example Output

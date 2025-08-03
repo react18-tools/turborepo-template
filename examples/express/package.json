@@ -9,11 +9,7 @@
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix",
-    "test": "jest --detectOpenHandles"
-  },
-  "jest": {
-    "preset": "@repo/jest-presets/node"
+    "lint:fix": "eslint src/ --fix"
   },
   "dependencies": {
     "@repo/logger": "workspace:*",
@@ -24,16 +20,13 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/jest-presets": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/body-parser": "^1.19.6",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
-    "@types/jest": "^30.0.0",
     "@types/morgan": "^1.9.10",
     "@types/node": "^24.1.0",
     "@types/supertest": "^6.0.3",
-    "jest": "^30.0.5",
     "supertest": "^7.1.4",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"

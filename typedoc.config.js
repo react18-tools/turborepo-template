@@ -15,4 +15,8 @@ module.exports = {
     "typedoc-plugin-rename-defaults",
     "typedoc-plugin-missing-exports",
   ],
+  hidePageHeader: true,
+  formatWithPrettier: true,
+  prettierConfigFile: "./.prettierrc",
+  sanitizeComments: true,
 };

@@ -1,6 +1,6 @@
 [**React18 Loaders**](../README.md)
 
----
+***
 
 [React18 Loaders](../modules.md) / constants
 
@@ -8,4 +8,4 @@
 
 ## Variables
 
-- [LOADER_RGS_KEY](variables/LOADER_RGS_KEY.md)
+- [LOADER\_RGS\_KEY](variables/LOADER_RGS_KEY.md)

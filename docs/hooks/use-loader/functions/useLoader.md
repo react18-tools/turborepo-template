@@ -8,7 +8,7 @@
 
 > **useLoader**(): `object`
 
-Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/6992f1fb268f2be86edb6d8b62449869be6275d6/lib/src/hooks/use-loader.ts#L8)
+Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/3c61c153f3892758f2527e3989f6df9771a3c8c0/lib/src/hooks/use-loader.ts#L8)
 
 ## Returns
 

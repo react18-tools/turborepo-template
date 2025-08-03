@@ -6,7 +6,7 @@
     "clean": "turbo clean",
     "dev": "turbo dev",
     "doc": "node scripts/doc.js && typedoc",
-    "format": "prettier --write \"**/*.{ts,tsx,md,css,scss}\"",
+    "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,css,scss}\"",
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "test": "turbo test",

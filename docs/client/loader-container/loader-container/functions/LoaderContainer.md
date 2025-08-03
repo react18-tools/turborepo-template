@@ -8,7 +8,7 @@
 
 > **LoaderContainer**(`__namedParameters`): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/3c61c153f3892758f2527e3989f6df9771a3c8c0/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/ecb9ad63264dbaf9d236cc2affee81a2b4facb34/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 A full screen container for the loading animation.

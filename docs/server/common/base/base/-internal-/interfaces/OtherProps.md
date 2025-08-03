@@ -1,6 +1,6 @@
 [**React18 Loaders**](../../../../../../README.md)
 
-***
+---
 
 [React18 Loaders](../../../../../../modules.md) / [server/common/base/base](../../README.md) / [\<internal\>](../README.md) / OtherProps
 
@@ -18,7 +18,7 @@ Other props - loaderClass is included here as we will extend BaseProps for other
 
 Defined in: [server/common/base/base.tsx:17](https://github.com/react18-tools/turborepo-template/blob/4ba5fa0153436bcfff18898a31cd43f89214a2fe/lib/src/server/common/base/base.tsx#L17)
 
-***
+---
 
 ### loaderClass
 

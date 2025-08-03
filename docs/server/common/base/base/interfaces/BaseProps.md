@@ -1,6 +1,6 @@
 [**React18 Loaders**](../../../../../README.md)
 
-***
+---
 
 [React18 Loaders](../../../../../modules.md) / [server/common/base/base](../README.md) / BaseProps
 
@@ -32,7 +32,7 @@ Color of the dots - CSS compatible color
 
 `HTMLProps.color`
 
-***
+---
 
 ### height?
 
@@ -46,7 +46,7 @@ height of the loader element in pixels or a string with a length unit.
 
 `HTMLProps.height`
 
-***
+---
 
 ### width?
 

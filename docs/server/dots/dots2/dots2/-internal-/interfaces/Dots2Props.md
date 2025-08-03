@@ -1,6 +1,6 @@
 [**React18 Loaders**](../../../../../../README.md)
 
-***
+---
 
 [React18 Loaders](../../../../../../modules.md) / [server/dots/dots2/dots2](../../README.md) / [\<internal\>](../README.md) / Dots2Props
 
@@ -28,7 +28,7 @@ Color of the dots - CSS compatible color
 
 [`BaseProps`](../../../../../common/base/base/interfaces/BaseProps.md).[`color`](../../../../../common/base/base/interfaces/BaseProps.md#color)
 
-***
+---
 
 ### dotRadius?
 
@@ -38,7 +38,7 @@ Defined in: [server/dots/dots2/dots2.tsx:6](https://github.com/react18-tools/tur
 
 Radius of the dots in pixels or a string with a length unit.
 
-***
+---
 
 ### height?
 
@@ -52,7 +52,7 @@ height of the loader element in pixels or a string with a length unit.
 
 [`BaseProps`](../../../../../common/base/base/interfaces/BaseProps.md).[`height`](../../../../../common/base/base/interfaces/BaseProps.md#height)
 
-***
+---
 
 ### width?
 

@@ -8,6 +8,6 @@
 
 > `const` **LOADER\_RGS\_KEY**: `"r18-loaders"` = `"r18-loaders"`
 
-Defined in: [constants.ts:3](https://github.com/react18-tools/turborepo-template/blob/ecb9ad63264dbaf9d236cc2affee81a2b4facb34/lib/src/constants.ts#L3)
+Defined in: [constants.ts:3](https://github.com/react18-tools/turborepo-template/blob/4ba5fa0153436bcfff18898a31cd43f89214a2fe/lib/src/constants.ts#L3)
 
 const uuid = () => (Date.now() * Math.random()).toString(16).slice(2, 8);

@@ -1496,17 +1496,17 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@shikijs/engine-oniguruma@3.9.1':
-    resolution: {integrity: sha512-WPlL/xqviwS3te4unSGGGfflKsuHLMI6tPdNYvgz/IygcBT6UiwDFSzjBKyebwi5GGSlXsjjdoJLIBnAplmEZw==}
+  '@shikijs/engine-oniguruma@3.9.2':
+    resolution: {integrity: sha512-Vn/w5oyQ6TUgTVDIC/BrpXwIlfK6V6kGWDVVz2eRkF2v13YoENUvaNwxMsQU/t6oCuZKzqp9vqtEtEzKl9VegA==}
 
-  '@shikijs/langs@3.9.1':
-    resolution: {integrity: sha512-Vyy2Yv9PP3Veh3VSsIvNncOR+O93wFsNYgN2B6cCCJlS7H9SKFYc55edsqernsg8WT/zam1cfB6llJsQWLnVhA==}
+  '@shikijs/langs@3.9.2':
+    resolution: {integrity: sha512-X1Q6wRRQXY7HqAuX3I8WjMscjeGjqXCg/Sve7J2GWFORXkSrXud23UECqTBIdCSNKJioFtmUGJQNKtlMMZMn0w==}
 
-  '@shikijs/themes@3.9.1':
-    resolution: {integrity: sha512-zAykkGECNICCMXpKeVvq04yqwaSuAIvrf8MjsU5bzskfg4XreU+O0B5wdNCYRixoB9snd3YlZ373WV5E/g5T9A==}
+  '@shikijs/themes@3.9.2':
+    resolution: {integrity: sha512-6z5lBPBMRfLyyEsgf6uJDHPa6NAGVzFJqH4EAZ+03+7sedYir2yJBRu2uPZOKmj43GyhVHWHvyduLDAwJQfDjA==}
 
-  '@shikijs/types@3.9.1':
-    resolution: {integrity: sha512-rqM3T7a0iM1oPKz9iaH/cVgNX9Vz1HERcUcXJ94/fulgVdwqfnhXzGxO4bLrAnh/o5CPLy3IcYedogfV+Ns0Qg==}
+  '@shikijs/types@3.9.2':
+    resolution: {integrity: sha512-/M5L0Uc2ljyn2jKvj4Yiah7ow/W+DJSglVafvWAJ/b8AZDeeRAdMu3c2riDzB7N42VD+jSnWxeP9AKtd4TfYVw==}
 
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
@@ -3612,8 +3612,8 @@ packages:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
     hasBin: true
 
-  marked@16.1.1:
-    resolution: {integrity: sha512-ij/2lXfCRT71L6u0M29tJPhP0bM5shLL3u5BePhFwPELj2blMJ6GDtD7PfJhRLhJ/c2UwrK17ySVcDzy2YHjHQ==}
+  marked@16.1.2:
+    resolution: {integrity: sha512-rNQt5EvRinalby7zJZu/mB+BvaAY2oz3wCuCjt1RDrWNpS1Pdf9xqMOeC9Hm5adBdcV/3XZPJpG58eT+WBc0XQ==}
     engines: {node: '>= 20'}
     hasBin: true
 
@@ -5789,10 +5789,10 @@ snapshots:
 
   '@gerrit0/mini-shiki@3.9.1':
     dependencies:
-      '@shikijs/engine-oniguruma': 3.9.1
-      '@shikijs/langs': 3.9.1
-      '@shikijs/themes': 3.9.1
-      '@shikijs/types': 3.9.1
+      '@shikijs/engine-oniguruma': 3.9.2
+      '@shikijs/langs': 3.9.2
+      '@shikijs/themes': 3.9.2
+      '@shikijs/types': 3.9.2
       '@shikijs/vscode-textmate': 10.0.2
 
   '@humanfs/core@0.19.1': {}
@@ -6302,20 +6302,20 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.46.2':
     optional: true
 
-  '@shikijs/engine-oniguruma@3.9.1':
+  '@shikijs/engine-oniguruma@3.9.2':
     dependencies:
-      '@shikijs/types': 3.9.1
+      '@shikijs/types': 3.9.2
       '@shikijs/vscode-textmate': 10.0.2
 
-  '@shikijs/langs@3.9.1':
+  '@shikijs/langs@3.9.2':
     dependencies:
-      '@shikijs/types': 3.9.1
+      '@shikijs/types': 3.9.2
 
-  '@shikijs/themes@3.9.1':
+  '@shikijs/themes@3.9.2':
     dependencies:
-      '@shikijs/types': 3.9.1
+      '@shikijs/types': 3.9.2
 
-  '@shikijs/types@3.9.1':
+  '@shikijs/types@3.9.2':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
@@ -8819,7 +8819,7 @@ snapshots:
       punycode.js: 2.3.1
       uc.micro: 2.1.0
 
-  marked@16.1.1: {}
+  marked@16.1.2: {}
 
   math-intrinsics@1.1.0: {}
 
@@ -8964,7 +8964,7 @@ snapshots:
       katex: 0.16.22
       khroma: 2.1.0
       lodash-es: 4.17.21
-      marked: 16.1.1
+      marked: 16.1.2
       roughjs: 4.6.6
       stylis: 4.3.6
       ts-dedent: 2.2.0

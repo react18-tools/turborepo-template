@@ -1,0 +1,25 @@
+[React18 Loaders](../modules.md) / [server/bars/bars1/bars1](../modules/server_bars_bars1_bars1.md) / Bars1
+
+# Function: Bars1()
+
+> **Bars1**(`props`): `Element`
+
+Defined in: [server/bars/bars1/bars1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/dc97ded5a91934519e0c4a91ba430df20a25e7f5/lib/src/server/bars/bars1/bars1.tsx#L10)
+
+A simple loader with 3 dots.
+
+## Parameters
+
+### props
+
+[`BaseProps`](../interfaces/server_common_base_base.BaseProps.md)
+
+## Returns
+
+`Element`
+
+## Example
+
+```ts
+<Bars1 />
+```

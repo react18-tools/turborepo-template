@@ -4,7 +4,7 @@
 
 > **Base**(`__namedParameters`): `Element`
 
-Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/dc97ded5a91934519e0c4a91ba430df20a25e7f5/lib/src/server/common/base/base.tsx#L25)
+Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/4ddbc8f1bc17ba0b17cf827b4dbb508da704727f/lib/src/server/common/base/base.tsx#L25)
 
 Base component to avoid code duplication
 

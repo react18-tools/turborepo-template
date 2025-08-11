@@ -26,7 +26,7 @@
     "plop": "^4.0.1",
     "prettier": "^3.6.2",
     "turbo": "^2.5.5",
-    "typedoc": "^0.28.9",
+    "typedoc": "^0.28.10",
     "typedoc-plugin-mdn-links": "^5.0.8",
     "typedoc-plugin-missing-exports": "^4.0.0",
     "typedoc-plugin-rename-defaults": "^0.7.3"

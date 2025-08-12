@@ -2,7 +2,7 @@
 layout: default
 title: Base
 parent: API Reference
-nav_order: 8
+nav_order: 10
 ---
 
 [React18 Loaders](../../../../../modules.md) / [server/common/base/base](../README.md) / Base
@@ -11,7 +11,7 @@ nav_order: 8
 
 > **Base**(`__namedParameters`): `Element`
 
-Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/a75418a026b73c4f6ec784fedbda1d235a7dfa4c/lib/src/server/common/base/base.tsx#L25)
+Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/4613c5240cccae89444d4b03b33930a608dcbb74/lib/src/server/common/base/base.tsx#L25)
 
 Base component to avoid code duplication
 

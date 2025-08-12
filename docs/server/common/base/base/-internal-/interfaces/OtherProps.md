@@ -2,14 +2,14 @@
 layout: default
 title: OtherProps
 parent: API Reference
-nav_order: 7
+nav_order: 9
 ---
 
 [React18 Loaders](../../../../../../modules.md) / [server/common/base/base](../../README.md) / [\<internal\>](../README.md) / OtherProps
 
 # Interface: OtherProps
 
-Defined in: [server/common/base/base.tsx:14](https://github.com/react18-tools/turborepo-template/blob/a75418a026b73c4f6ec784fedbda1d235a7dfa4c/lib/src/server/common/base/base.tsx#L14)
+Defined in: [server/common/base/base.tsx:14](https://github.com/react18-tools/turborepo-template/blob/4613c5240cccae89444d4b03b33930a608dcbb74/lib/src/server/common/base/base.tsx#L14)
 
 Other props - loaderClass is included here as we will extend BaseProps for other loaders
 
@@ -19,7 +19,7 @@ Other props - loaderClass is included here as we will extend BaseProps for other
 
 > `optional` **dotRadius**: `string` \| `number`
 
-Defined in: [server/common/base/base.tsx:17](https://github.com/react18-tools/turborepo-template/blob/a75418a026b73c4f6ec784fedbda1d235a7dfa4c/lib/src/server/common/base/base.tsx#L17)
+Defined in: [server/common/base/base.tsx:17](https://github.com/react18-tools/turborepo-template/blob/4613c5240cccae89444d4b03b33930a608dcbb74/lib/src/server/common/base/base.tsx#L17)
 
 ---
 
@@ -27,6 +27,6 @@ Defined in: [server/common/base/base.tsx:17](https://github.com/react18-tools/tu
 
 > **loaderClass**: `string`
 
-Defined in: [server/common/base/base.tsx:16](https://github.com/react18-tools/turborepo-template/blob/a75418a026b73c4f6ec784fedbda1d235a7dfa4c/lib/src/server/common/base/base.tsx#L16)
+Defined in: [server/common/base/base.tsx:16](https://github.com/react18-tools/turborepo-template/blob/4613c5240cccae89444d4b03b33930a608dcbb74/lib/src/server/common/base/base.tsx#L16)
 
 Loader class name

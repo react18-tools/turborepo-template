@@ -2,7 +2,7 @@
 layout: default
 title: Bars1
 parent: API Reference
-nav_order: 6
+nav_order: 8
 ---
 
 [React18 Loaders](../../../../../modules.md) / [server/bars/bars1/bars1](../README.md) / Bars1
@@ -11,7 +11,7 @@ nav_order: 6
 
 > **Bars1**(`props`): `Element`
 
-Defined in: [server/bars/bars1/bars1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/a75418a026b73c4f6ec784fedbda1d235a7dfa4c/lib/src/server/bars/bars1/bars1.tsx#L10)
+Defined in: [server/bars/bars1/bars1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/4613c5240cccae89444d4b03b33930a608dcbb74/lib/src/server/bars/bars1/bars1.tsx#L10)
 
 A simple loader with 3 dots.
 

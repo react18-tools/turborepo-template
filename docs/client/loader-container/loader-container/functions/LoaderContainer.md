@@ -2,7 +2,7 @@
 layout: default
 title: LoaderContainer
 parent: API Reference
-nav_order: 2
+nav_order: 5
 ---
 
 [React18 Loaders](../../../../modules.md) / [client/loader-container/loader-container](../README.md) / LoaderContainer
@@ -11,7 +11,7 @@ nav_order: 2
 
 > **LoaderContainer**(`__namedParameters`): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/a75418a026b73c4f6ec784fedbda1d235a7dfa4c/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/4613c5240cccae89444d4b03b33930a608dcbb74/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 

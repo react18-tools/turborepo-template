@@ -1,7 +1,6 @@
 ---
 layout: default
 title: LoaderContainerProps
-parent: API Reference
 nav_order: 1
 ---
 
@@ -9,7 +8,7 @@ nav_order: 1
 
 # Interface: LoaderContainerProps
 
-Defined in: [client/loader-container/loader-container.tsx:5](https://github.com/react18-tools/turborepo-template/blob/66e36ea6bd6f38a0f5f1e3e503151e439057be69/lib/src/client/loader-container/loader-container.tsx#L5)
+Defined in: [client/loader-container/loader-container.tsx:5](https://github.com/react18-tools/turborepo-template/blob/da96170e6e8ed2d4305f5f17fef4813021a270f1/lib/src/client/loader-container/loader-container.tsx#L5)
 
 ## Extends
 
@@ -21,7 +20,7 @@ Defined in: [client/loader-container/loader-container.tsx:5](https://github.com/
 
 > `optional` **children**: `ReactNode`
 
-Defined in: [client/loader-container/loader-container.tsx:6](https://github.com/react18-tools/turborepo-template/blob/66e36ea6bd6f38a0f5f1e3e503151e439057be69/lib/src/client/loader-container/loader-container.tsx#L6)
+Defined in: [client/loader-container/loader-container.tsx:6](https://github.com/react18-tools/turborepo-template/blob/da96170e6e8ed2d4305f5f17fef4813021a270f1/lib/src/client/loader-container/loader-container.tsx#L6)
 
 #### Overrides
 
@@ -33,4 +32,4 @@ Defined in: [client/loader-container/loader-container.tsx:6](https://github.com/
 
 > `optional` **loading**: `boolean`
 
-Defined in: [client/loader-container/loader-container.tsx:7](https://github.com/react18-tools/turborepo-template/blob/66e36ea6bd6f38a0f5f1e3e503151e439057be69/lib/src/client/loader-container/loader-container.tsx#L7)
+Defined in: [client/loader-container/loader-container.tsx:7](https://github.com/react18-tools/turborepo-template/blob/da96170e6e8ed2d4305f5f17fef4813021a270f1/lib/src/client/loader-container/loader-container.tsx#L7)

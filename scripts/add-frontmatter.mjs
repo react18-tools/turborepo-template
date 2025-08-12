@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 
 const DOCS_DIR = "./docs"; // adjust to your TypeDoc output folder
-const PARENT_SECTION = "API Reference"; // top-level sidebar section
 
 function addFrontmatter(filePath, navOrder) {
   const content = fs.readFileSync(filePath, "utf8");
@@ -16,7 +15,6 @@ function addFrontmatter(filePath, navOrder) {
   const frontmatter = `---
 layout: default
 title: ${title}
-parent: ${PARENT_SECTION}
 nav_order: ${navOrder}
 ---
 

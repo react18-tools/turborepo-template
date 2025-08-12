@@ -1,7 +1,6 @@
 ---
 layout: default
 title: README
-parent: API Reference
 nav_order: 5
 ---
 

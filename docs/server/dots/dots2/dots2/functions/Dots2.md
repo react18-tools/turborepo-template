@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Dots2
-parent: API Reference
 nav_order: 10
 ---
 
@@ -11,7 +10,7 @@ nav_order: 10
 
 > **Dots2**(`props`): `Element`
 
-Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/66e36ea6bd6f38a0f5f1e3e503151e439057be69/lib/src/server/dots/dots2/dots2.tsx#L15)
+Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/da96170e6e8ed2d4305f5f17fef4813021a270f1/lib/src/server/dots/dots2/dots2.tsx#L15)
 
 A simple loader with 3 dots.
 

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: modules
-parent: API Reference
 nav_order: 4
 ---
 

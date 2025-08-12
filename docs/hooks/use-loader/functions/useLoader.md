@@ -2,7 +2,7 @@
 layout: default
 title: useLoader
 parent: API Reference
-nav_order: 6
+nav_order: 3
 ---
 
 [React18 Loaders](../../../modules.md) / [hooks/use-loader](../README.md) / useLoader

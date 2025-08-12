@@ -2,7 +2,7 @@
 layout: default
 title: Dots2
 parent: API Reference
-nav_order: 12
+nav_order: 10
 ---
 
 [React18 Loaders](../../../../../modules.md) / [server/dots/dots2/dots2](../README.md) / Dots2

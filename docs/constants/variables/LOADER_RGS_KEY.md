@@ -2,7 +2,7 @@
 layout: default
 title: LOADER_RGS_KEY
 parent: API Reference
-nav_order: 5
+nav_order: 3
 ---
 
 [React18 Loaders](../../modules.md) / [constants](../README.md) / LOADER_RGS_KEY

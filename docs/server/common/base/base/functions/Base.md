@@ -2,7 +2,7 @@
 layout: default
 title: Base
 parent: API Reference
-nav_order: 10
+nav_order: 8
 ---
 
 [React18 Loaders](../../../../../modules.md) / [server/common/base/base](../README.md) / Base

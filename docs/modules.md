@@ -2,7 +2,7 @@
 layout: default
 title: modules
 parent: API Reference
-nav_order: 6
+nav_order: 4
 ---
 
 # React18 Loaders

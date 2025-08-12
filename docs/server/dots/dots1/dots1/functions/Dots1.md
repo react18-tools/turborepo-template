@@ -2,7 +2,7 @@
 layout: default
 title: Dots1
 parent: API Reference
-nav_order: 10
+nav_order: 8
 ---
 
 [React18 Loaders](../../../../../modules.md) / [server/dots/dots1/dots1](../README.md) / Dots1

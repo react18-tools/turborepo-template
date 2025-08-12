@@ -2,7 +2,7 @@
 layout: default
 title: Bars1
 parent: API Reference
-nav_order: 8
+nav_order: 6
 ---
 
 [React18 Loaders](../../../../../modules.md) / [server/bars/bars1/bars1](../README.md) / Bars1

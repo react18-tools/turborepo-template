@@ -2,7 +2,7 @@
 layout: default
 title: LoaderContainerProps
 parent: API Reference
-nav_order: 4
+nav_order: 1
 ---
 
 [React18 Loaders](../../../../../modules.md) / [client/loader-container/loader-container](../../README.md) / [\<internal\>](../README.md) / LoaderContainerProps

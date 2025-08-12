@@ -2,3 +2,5 @@ remote_theme: just-the-docs/just-the-docs
 title: React18 Loaders
 search_enabled: true
 nav_sort: case_insensitive
+baseurl: "/turborepo-template"
+url: "https://react18-tools.github.io"

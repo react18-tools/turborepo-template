@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "pre-commit": "^1.2.2",
-    "typedoc-plugin-markdown": "^4.8.0"
+    "typedoc-plugin-markdown": "^4.8.1"
   },
   "pnpm": {
     "overrides": {

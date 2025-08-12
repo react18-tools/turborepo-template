@@ -11,7 +11,7 @@ nav_order: 10
 
 > **Base**(`__namedParameters`): `Element`
 
-Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/4613c5240cccae89444d4b03b33930a608dcbb74/lib/src/server/common/base/base.tsx#L25)
+Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/3a66b23216861f5adcc73693c70f36ef7616e0f4/lib/src/server/common/base/base.tsx#L25)
 
 Base component to avoid code duplication
 

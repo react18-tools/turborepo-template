@@ -2,7 +2,7 @@
 layout: default
 title: Dots
 parent: Server
-nav_order: 20
+nav_order: 16
 has_children: true
 ---
 # Dots

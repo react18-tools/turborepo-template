@@ -166,28 +166,27 @@ function processDir(dir, startOrder = 1, parent = "") {
   return order;
 }
 
-function flattenDirs(rootDir) {
-  const entries = fs.readdirSync(rootDir, { withFileTypes: true });
-
-  if (entries.length < 2) return;
-
+function flattenDirs(dir, parent = "") {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
   for (const entry of entries) {
-    const fullPath = path.join(rootDir, entry.name);
-
+    const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       // Recursively flatten the subdirectory first
-      flattenDirs(fullPath);
+      flattenDirs(fullPath, dir);
+    }
+  }
 
-      // Move all files in subdir to rootDir
-      const subEntries = fs.readdirSync(fullPath, { withFileTypes: true });
-      for (const subEntry of subEntries) {
-        const src = path.join(fullPath, subEntry.name);
-        const dest = path.join(rootDir, subEntry.name);
-        fs.renameSync(src, dest);
-      }
-
-      // Remove the now-empty subdirectory
-      fs.rmdirSync(fullPath);
+  if (entries.length === 1 && parent) {
+    try {
+      // to avoid clash when parent directory has same name.
+      const uuid = crypto.randomUUID();
+      const dest = path.resolve(parent, entries[0].name);
+      const dest1 = dest + uuid;
+      fs.renameSync(path.resolve(dir, entries[0].name), dest1);
+      fs.rmdirSync(path.resolve(dir));
+      fs.renameSync(dest1, dest);
+    } catch (err) {
+      console.error(err);
     }
   }
 }

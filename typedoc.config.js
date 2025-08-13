@@ -19,5 +19,5 @@ module.exports = {
   formatWithPrettier: true,
   prettierConfigFile: "./.prettierrc",
   sanitizeComments: true,
-  router: "kind",
+  router: "module",
 };

@@ -12,7 +12,7 @@
 
 > **Dots2**(`props`): `Element`
 
-Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/3befa4bdc03d40e210600ce1fb6db9a187408521/lib/src/server/dots/dots2/dots2.tsx#L15)
+Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/f59e8fd66212044b6f2c79f6a8854365bf7ae248/lib/src/server/dots/dots2/dots2.tsx#L15)
 
 A simple loader with 3 dots.
 

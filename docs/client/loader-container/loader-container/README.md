@@ -12,7 +12,7 @@
 
 > **LoaderContainer**(`__namedParameters`): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/3befa4bdc03d40e210600ce1fb6db9a187408521/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/f59e8fd66212044b6f2c79f6a8854365bf7ae248/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 

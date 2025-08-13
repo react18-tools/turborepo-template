@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Loader Container
+parent: Loader Container
 nav_order: 4
 ---
 
@@ -18,7 +19,7 @@ nav_order: 4
 
 > **LoaderContainer**(`__namedParameters`): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/c0ce280424f534b03bede9f85f7ee8a16a91057f/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/a7a0f3110cb0811f0408f193a24e25977470a635/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 

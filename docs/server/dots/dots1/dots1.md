@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Dots1
+parent: Dots1
 nav_order: 11
 ---
 
@@ -14,7 +15,7 @@ nav_order: 11
 
 > **Dots1**(`props`): `Element`
 
-Defined in: [server/dots/dots1/dots1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/c0ce280424f534b03bede9f85f7ee8a16a91057f/lib/src/server/dots/dots1/dots1.tsx#L10)
+Defined in: [server/dots/dots1/dots1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/a7a0f3110cb0811f0408f193a24e25977470a635/lib/src/server/dots/dots1/dots1.tsx#L10)
 
 A simple loader with 3 dots.
 

@@ -12,34 +12,40 @@ function addFrontmatter(filePath, navOrder) {
   // Skip if file already has frontmatter
   if (content.startsWith("---")) return;
 
+  const relPath = path.relative(DOCS_DIR, filePath);
+  const parts = relPath.split(path.sep);
   const baseName = path.basename(filePath, ".md");
 
-  // Handle title generation
-  let title;
-  if (/^index$/i.test(baseName)) {
-    // Use parent folder name for index.md files
-    title = path.basename(path.dirname(filePath));
+  let title, parent;
+  if (relPath.toLowerCase() === "index.md") {
+    // Root index.md
+    title = "React18 Loaders"; // or "Home"
+  } else if (/^index$/i.test(baseName)) {
+    // index.md inside a subfolder → use folder name as title
+    title = capitalize(parts[parts.length - 2]);
+    if (parts.length > 2) parent = capitalize(parts[parts.length - 3] || ""); // parent folder’s parent
   } else {
-    title = baseName;
+    // Regular file
+    title = capitalize(baseName);
+    if (parts.length > 1) {
+      parent = capitalize(parts[parts.length - 2]);
+    }
   }
 
-  // Capitalize each word
-  title = title
-    .split(/ |-/)
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-
-  // Create YAML frontmatter
   const frontmatter = `---
 layout: default
 title: ${title}
-nav_order: ${navOrder}
+${parent ? `parent: ${parent}\n` : ""}nav_order: ${navOrder}
 ---
 
 `;
 
   fs.writeFileSync(filePath, frontmatter + content, "utf8");
   console.log(`✅ Added frontmatter to: ${filePath}`);
+}
+
+function capitalize(str) {
+  return str.replace(/[-_]/g, " ").replace(/\b\w/g, c => c.toUpperCase());
 }
 
 /**

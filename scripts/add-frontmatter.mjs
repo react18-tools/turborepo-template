@@ -3,7 +3,7 @@ import path from "path";
 
 const DOCS_DIR = "./docs"; // adjust to your TypeDoc output folder
 
-function addFrontmatter(filePath, navOrder) {
+function addFrontmatter(filePath) {
   const content = fs.readFileSync(filePath, "utf8");
 
   // Skip if it already has frontmatter
@@ -15,7 +15,6 @@ function addFrontmatter(filePath, navOrder) {
   const frontmatter = `---
 layout: default
 title: ${title}
-nav_order: ${navOrder}
 ---
 
 `;
@@ -24,13 +23,13 @@ nav_order: ${navOrder}
   console.log(`✅ Added frontmatter to: ${filePath}`);
 }
 
-function processDir(dir, navOrder = 1) {
+function processDir(dir) {
   fs.readdirSync(dir, { withFileTypes: true }).forEach((entry, i) => {
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      processDir(fullPath, navOrder + i);
+      processDir(fullPath);
     } else if (entry.isFile() && entry.name.endsWith(".md")) {
-      addFrontmatter(fullPath, navOrder + i);
+      addFrontmatter(fullPath);
     }
   });
 }

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: README
-nav_order: 7
 ---
 
 [React18 Loaders](../../../../modules.md) / server/bars/bars1/bars1

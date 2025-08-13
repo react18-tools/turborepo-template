@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Base
-nav_order: 10
 ---
 
 [React18 Loaders](../../../../../modules.md) / [server/common/base/base](../README.md) / Base
@@ -10,7 +9,7 @@ nav_order: 10
 
 > **Base**(`__namedParameters`): `Element`
 
-Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/6bca4da1020e7e35dd88f35809b83bb7f7d5a943/lib/src/server/common/base/base.tsx#L25)
+Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/92c5162263fb0a49f8e6aa57a89706b102cd4775/lib/src/server/common/base/base.tsx#L25)
 
 Base component to avoid code duplication
 

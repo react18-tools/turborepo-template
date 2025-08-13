@@ -17,7 +17,7 @@ has_children: true
 
 ### BaseProps
 
-Defined in: [server/common/base/base.tsx:4](https://github.com/react18-tools/turborepo-template/blob/1e1b7fcc497f2ccee0578210f242cf6f9e606f01/lib/src/server/common/base/base.tsx#L4)
+Defined in: [server/common/base/base.tsx:4](https://github.com/react18-tools/turborepo-template/blob/683b4ec36696d89670e076d81eed672b315d9d38/lib/src/server/common/base/base.tsx#L4)
 
 Interface declaring the common properties of the loaders
 
@@ -35,7 +35,7 @@ Interface declaring the common properties of the loaders
 
 > `optional` **color**: `string`
 
-Defined in: [server/common/base/base.tsx:10](https://github.com/react18-tools/turborepo-template/blob/1e1b7fcc497f2ccee0578210f242cf6f9e606f01/lib/src/server/common/base/base.tsx#L10)
+Defined in: [server/common/base/base.tsx:10](https://github.com/react18-tools/turborepo-template/blob/683b4ec36696d89670e076d81eed672b315d9d38/lib/src/server/common/base/base.tsx#L10)
 
 Color of the dots - CSS compatible color
 
@@ -47,7 +47,7 @@ Color of the dots - CSS compatible color
 
 > `optional` **height**: `string` \| `number`
 
-Defined in: [server/common/base/base.tsx:8](https://github.com/react18-tools/turborepo-template/blob/1e1b7fcc497f2ccee0578210f242cf6f9e606f01/lib/src/server/common/base/base.tsx#L8)
+Defined in: [server/common/base/base.tsx:8](https://github.com/react18-tools/turborepo-template/blob/683b4ec36696d89670e076d81eed672b315d9d38/lib/src/server/common/base/base.tsx#L8)
 
 height of the loader element in pixels or a string with a length unit.
 
@@ -59,7 +59,7 @@ height of the loader element in pixels or a string with a length unit.
 
 > `optional` **width**: `string` \| `number`
 
-Defined in: [server/common/base/base.tsx:6](https://github.com/react18-tools/turborepo-template/blob/1e1b7fcc497f2ccee0578210f242cf6f9e606f01/lib/src/server/common/base/base.tsx#L6)
+Defined in: [server/common/base/base.tsx:6](https://github.com/react18-tools/turborepo-template/blob/683b4ec36696d89670e076d81eed672b315d9d38/lib/src/server/common/base/base.tsx#L6)
 
 width of the loader element in pixels or a string with a length unit.
 
@@ -73,7 +73,7 @@ width of the loader element in pixels or a string with a length unit.
 
 > **Base**(`__namedParameters`): `Element`
 
-Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/1e1b7fcc497f2ccee0578210f242cf6f9e606f01/lib/src/server/common/base/base.tsx#L25)
+Defined in: [server/common/base/base.tsx:25](https://github.com/react18-tools/turborepo-template/blob/683b4ec36696d89670e076d81eed672b315d9d38/lib/src/server/common/base/base.tsx#L25)
 
 Base component to avoid code duplication
 

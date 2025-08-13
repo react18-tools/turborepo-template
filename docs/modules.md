@@ -1,7 +1,6 @@
 ---
 layout: default
-title: modules
-nav_order: 6
+title: Modules
 ---
 
 # React18 Loaders

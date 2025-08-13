@@ -1,7 +1,6 @@
 ---
 layout: default
-title: README
-nav_order: 4
+title: Loader container
 ---
 
 [React18 Loaders](../../../modules.md) / client/loader-container/loader-container
@@ -18,7 +17,7 @@ nav_order: 4
 
 > **LoaderContainer**(`__namedParameters`): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/f59e8fd66212044b6f2c79f6a8854365bf7ae248/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/de6102944e5df3b46e5a15ffb1a9b32d2acfa295/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 

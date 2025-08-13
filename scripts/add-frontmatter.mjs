@@ -9,13 +9,12 @@ function addFrontmatter(filePath, navOrder) {
   // Skip if it already has frontmatter
   if (content.startsWith("---")) return;
 
-  const fileName = path.basename(filePath, ".md");
+  const fileName = path.basename(filePath.replace(/readme\.md/i, ""), ".md");
   const title = fileName.replace(/-/g, " ");
 
   const frontmatter = `---
 layout: default
-title: ${title}
-nav_order: ${navOrder}
+title: ${title === "docs" ? "Home" : title[0].toUpperCase() + title.slice(1)}
 ---
 
 `;

@@ -5,7 +5,7 @@
     "build": "turbo build",
     "clean": "turbo clean",
     "dev": "turbo dev",
-    "doc": "node scripts/doc.js && typedoc && cp _config.yml docs && cp flatten.sh docs && cd docs && ./flatten.sh && cd .. && node scripts/add-frontmatter.mjs",
+    "doc": "node scripts/doc.js && typedoc && cp _config.yml docs && node scripts/add-frontmatter.mjs",
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,css,scss}\"",
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",

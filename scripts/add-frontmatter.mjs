@@ -166,5 +166,34 @@ function processDir(dir, startOrder = 1, parent = "") {
   return order;
 }
 
+function flattenDirs(rootDir) {
+  const entries = fs.readdirSync(rootDir, { withFileTypes: true });
+
+  if (entries.length < 2) return;
+
+  for (const entry of entries) {
+    const fullPath = path.join(rootDir, entry.name);
+
+    if (entry.isDirectory()) {
+      // Recursively flatten the subdirectory first
+      flattenDirs(fullPath);
+
+      // Move all files in subdir to rootDir
+      const subEntries = fs.readdirSync(fullPath, { withFileTypes: true });
+      for (const subEntry of subEntries) {
+        const src = path.join(fullPath, subEntry.name);
+        const dest = path.join(rootDir, subEntry.name);
+        fs.renameSync(src, dest);
+      }
+
+      // Remove the now-empty subdirectory
+      fs.rmdirSync(fullPath);
+    }
+  }
+}
+
+// flatten docs output
+flattenDirs(DOCS_DIR);
+
 // Run script
 processDir(DOCS_DIR);

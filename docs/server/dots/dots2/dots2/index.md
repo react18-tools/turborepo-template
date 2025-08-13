@@ -18,7 +18,7 @@ has_children: true
 
 > **Dots2**(`props`): `Element`
 
-Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/7e25a06c2e585bd4aae84dc3767c674dbbee497c/lib/src/server/dots/dots2/dots2.tsx#L15)
+Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/d00080fbef5eb37e4f1984bcf164eb1b6ab76c14/lib/src/server/dots/dots2/dots2.tsx#L15)
 
 A simple loader with 3 dots.
 

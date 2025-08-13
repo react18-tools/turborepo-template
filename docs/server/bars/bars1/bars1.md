@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Bars1
-parent: Bars1
 nav_order: 7
 ---
 
@@ -15,7 +14,7 @@ nav_order: 7
 
 > **Bars1**(`props`): `Element`
 
-Defined in: [server/bars/bars1/bars1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/a7a0f3110cb0811f0408f193a24e25977470a635/lib/src/server/bars/bars1/bars1.tsx#L10)
+Defined in: [server/bars/bars1/bars1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/747f592135576f89d486d5b401dbafe70b5452cc/lib/src/server/bars/bars1/bars1.tsx#L10)
 
 A simple loader with 3 dots.
 

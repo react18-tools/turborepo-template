@@ -1,8 +1,11 @@
 import fs from "fs";
 import path from "path";
-import { title as libTitle } from "./rebrand.config.json";
 
 const DOCS_DIR = "./docs"; // Root folder for TypeDoc output
+
+const libTitle = JSON.parse(
+  fs.readFileSync(path.resolve("scripts/rebrand.config.json"), "utf8"),
+).title;
 
 /**
  * Adds Just the Docs–compatible frontmatter to a file if missing.

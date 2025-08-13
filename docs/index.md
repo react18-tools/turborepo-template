@@ -1,6 +1,6 @@
 ---
 layout: default
-title: React18 Loaders
+title: React 18 Loaders
 nav_order: 1
 ---
 

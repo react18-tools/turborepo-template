@@ -1,7 +1,7 @@
 ---
 layout: default
 title: constants
-nav_order: 5
+nav_order: 7
 ---
 
 [React18 Loaders](../modules.md) / constants

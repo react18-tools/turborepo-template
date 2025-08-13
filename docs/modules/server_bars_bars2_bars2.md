@@ -1,7 +1,7 @@
 ---
 layout: default
 title: server_bars_bars2_bars2
-nav_order: 8
+nav_order: 10
 ---
 
 [React18 Loaders](../modules.md) / server/bars/bars2/bars2

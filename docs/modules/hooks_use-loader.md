@@ -1,7 +1,7 @@
 ---
 layout: default
 title: hooks_use loader
-nav_order: 6
+nav_order: 8
 ---
 
 [React18 Loaders](../modules.md) / hooks/use-loader

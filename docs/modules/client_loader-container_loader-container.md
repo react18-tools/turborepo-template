@@ -1,7 +1,7 @@
 ---
 layout: default
 title: client_loader container_loader container
-nav_order: 3
+nav_order: 6
 ---
 
 [React18 Loaders](../modules.md) / client/loader-container/loader-container

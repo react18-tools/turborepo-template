@@ -13,7 +13,7 @@ title: Use loader
 
 > **useLoader**(): `object`
 
-Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/de6102944e5df3b46e5a15ffb1a9b32d2acfa295/lib/src/hooks/use-loader.ts#L8)
+Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/ffafbfe4161bc7437e2bb0fd5ea796c2ca7be5ab/lib/src/hooks/use-loader.ts#L8)
 
 #### Returns
 

@@ -13,7 +13,7 @@ title: Bars2
 
 > **Bars2**(`props`): `Element`
 
-Defined in: [server/bars/bars2/bars2.tsx:10](https://github.com/react18-tools/turborepo-template/blob/de6102944e5df3b46e5a15ffb1a9b32d2acfa295/lib/src/server/bars/bars2/bars2.tsx#L10)
+Defined in: [server/bars/bars2/bars2.tsx:10](https://github.com/react18-tools/turborepo-template/blob/ffafbfe4161bc7437e2bb0fd5ea796c2ca7be5ab/lib/src/server/bars/bars2/bars2.tsx#L10)
 
 A simple loader with 3 dots.
 

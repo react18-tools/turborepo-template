@@ -1,37 +1,81 @@
 import fs from "fs";
 import path from "path";
 
-const DOCS_DIR = "./docs"; // adjust to your TypeDoc output folder
+const DOCS_DIR = "./docs"; // Root folder for TypeDoc output
 
+/**
+ * Adds Just the Docs–compatible frontmatter to a file if missing.
+ */
 function addFrontmatter(filePath, navOrder) {
   const content = fs.readFileSync(filePath, "utf8");
 
-  // Skip if it already has frontmatter
+  // Skip if file already has frontmatter
   if (content.startsWith("---")) return;
 
-  const fileName = path.basename(filePath.replace(/readme\.md/i, ""), ".md");
-  const title = fileName.replace(/-/g, " ");
+  const baseName = path.basename(filePath, ".md");
 
+  // Handle title generation
+  let title;
+  if (/^index$/i.test(baseName)) {
+    // Use parent folder name for index.md files
+    title = path.basename(path.dirname(filePath));
+  } else {
+    title = baseName;
+  }
+
+  // Capitalize each word
+  title = title
+    .split(/ |-/)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+  // Create YAML frontmatter
   const frontmatter = `---
 layout: default
-title: ${title === "docs" ? "Home" : title[0].toUpperCase() + title.slice(1)}
+title: ${title}
+nav_order: ${navOrder}
 ---
 
 `;
 
-  fs.writeFileSync(filePath.replace(/readme/gi, "index"), frontmatter + content, "utf8");
+  fs.writeFileSync(filePath, frontmatter + content, "utf8");
   console.log(`✅ Added frontmatter to: ${filePath}`);
 }
 
-function processDir(dir, navOrder = 1) {
-  fs.readdirSync(dir, { withFileTypes: true }).forEach((entry, i) => {
-    const fullPath = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      processDir(fullPath, navOrder + i);
-    } else if (entry.isFile() && entry.name.endsWith(".md")) {
-      addFrontmatter(fullPath, navOrder + i);
+/**
+ * Recursively process directory contents, sorting so:
+ * 1. Files before directories
+ * 2. index.md first among files
+ * 3. Alphabetical order otherwise
+ */
+function processDir(dir, startOrder = 1) {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+  entries.sort((e1, e2) => {
+    if (e1.isFile() && !e2.isFile()) return -1;
+    if (!e1.isFile() && e2.isFile()) return 1;
+
+    if (e1.isFile() && e2.isFile()) {
+      if (e1.name.toLowerCase() === "index.md") return -1;
+      if (e2.name.toLowerCase() === "index.md") return 1;
     }
+
+    return e1.name.localeCompare(e2.name, undefined, { sensitivity: "base" });
   });
+
+  let order = startOrder;
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+
+    if (entry.isFile() && entry.name.endsWith(".md")) {
+      addFrontmatter(fullPath, order++);
+    } else if (entry.isDirectory()) {
+      order = processDir(fullPath, order); // Continue order sequence
+    }
+  }
+
+  return order;
 }
 
 processDir(DOCS_DIR);

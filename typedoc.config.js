@@ -20,4 +20,5 @@ module.exports = {
   prettierConfigFile: "./.prettierrc",
   sanitizeComments: true,
   router: "module",
+  entryFileName: "index",
 };

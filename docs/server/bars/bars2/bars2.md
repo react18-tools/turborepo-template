@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Bars2
+nav_order: 8
 ---
 
 [React18 Loaders](../../../modules.md) / server/bars/bars2/bars2
@@ -13,7 +14,7 @@ title: Bars2
 
 > **Bars2**(`props`): `Element`
 
-Defined in: [server/bars/bars2/bars2.tsx:10](https://github.com/react18-tools/turborepo-template/blob/ffafbfe4161bc7437e2bb0fd5ea796c2ca7be5ab/lib/src/server/bars/bars2/bars2.tsx#L10)
+Defined in: [server/bars/bars2/bars2.tsx:10](https://github.com/react18-tools/turborepo-template/blob/a6eb526e5f23854bec6388e58fbb1d6429b3a592/lib/src/server/bars/bars2/bars2.tsx#L10)
 
 A simple loader with 3 dots.
 
@@ -21,7 +22,7 @@ A simple loader with 3 dots.
 
 ##### props
 
-[`BaseProps`](../../common/base/base/README.md#baseprops)
+[`BaseProps`](../../common/base/base/index.md#baseprops)
 
 #### Returns
 

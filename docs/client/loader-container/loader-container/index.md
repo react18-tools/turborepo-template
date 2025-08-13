@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Loader Container
-nav_order: 9
+nav_order: 8
 has_children: true
 ---
 [React18 Loaders](../../../index.md) / client/loader-container/loader-container
@@ -18,7 +18,7 @@ has_children: true
 
 > **LoaderContainer**(`__namedParameters`): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/d00080fbef5eb37e4f1984bcf164eb1b6ab76c14/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/d72e03c1433d57dfdb65e2ea13a3a5051446cc4c/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 

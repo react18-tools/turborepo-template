@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Home
-nav_order: 2
-has_children: true
+nav_order: 1
 ---
 # React18 Loaders <img src="https://raw.githubusercontent.com/mayank1513/mayank1513/main/popper.png" style="height: 40px"/>
 

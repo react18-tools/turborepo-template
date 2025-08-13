@@ -2,7 +2,7 @@
 layout: default
 title: Bars
 parent: Server
-nav_order: 16
+nav_order: 15
 has_children: true
 ---
 # Bars

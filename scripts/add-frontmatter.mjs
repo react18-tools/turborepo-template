@@ -1,40 +1,60 @@
 /**
- * Script to add Just the Docs–compatible frontmatter to all Markdown files,
- * auto-create missing index.md with TOC, and set correct parent relationships.
+ * Enhance TypeDoc-generated Markdown files with Just the Docs frontmatter.
  *
- * Special rules:
- * - Root index.md title is "Home" (no parent)
- * - Files in root have no parent
- * - Subfolder index.md has parent = parent folder name (unless root)
+ * Key Features:
+ * - Creates missing `index.md` for each folder (except root) with a TOC.
+ * - Adds correct `parent` for hierarchical navigation.
+ * - Sequential `nav_order` across the entire documentation tree.
+ * - Root-level files and folders appear as top-level items (no nesting under Home).
+ * - Skips overwriting files that already have frontmatter.
+ *
+ * Author: Mayank Chaudhari style, refactored for clarity & maintainability
  */
 
 import fs from "fs";
 import path from "path";
 
+// Root folder where TypeDoc markdown output exists
 const DOCS_DIR = "./docs";
 
-/** Capitalizes and prettifies a string (e.g., "foo_bar" → "Foo Bar") */
-function capitalize(str) {
+/**
+ * Prettify a string:
+ * - Replace hyphens/underscores with spaces
+ * - Capitalize first letter of each word
+ * @param {string} str
+ * @returns {string}
+ */
+function prettify(str) {
   return str.replace(/[-_]/g, " ").replace(/\b\w/g, c => c.toUpperCase());
 }
 
 /**
- * Adds frontmatter to a given Markdown file if missing.
+ * Writes frontmatter to a markdown file if missing.
+ *
+ * @param {string} filePath - Full file path
+ * @param {number} navOrder - Navigation order for Just the Docs
+ * @param {string} parent - Parent page title, if applicable
+ * @param {boolean} isIndex - Whether the file is an index.md
  */
 function addFrontmatter(filePath, navOrder, parent = "", isIndex = false) {
   const content = fs.readFileSync(filePath, "utf8");
+
+  // Skip files with existing frontmatter
   if (content.startsWith("---")) return;
 
   const baseName = path.basename(filePath, ".md");
   let title;
 
   if (filePath === path.join(DOCS_DIR, "index.md")) {
+    // Root index.md → Home page
     title = "Home";
     parent = "";
   } else if (isIndex) {
-    title = capitalize(path.basename(path.dirname(filePath)));
+    // Folder's index page → folder name
+    title = prettify(path.basename(path.dirname(filePath)));
   } else {
-    title = capitalize(baseName);
+    // Regular file → file name
+    title = prettify(baseName);
   }
 
   const fmLines = [
@@ -43,37 +63,40 @@ function addFrontmatter(filePath, navOrder, parent = "", isIndex = false) {
     `title: ${title}`,
     parent && !isIndex ? `parent: ${parent}` : "",
     `nav_order: ${navOrder}`,
-    isIndex ? "has_children: true" : "",
+    // has_children only if it's not root index
+    isIndex && filePath !== path.join(DOCS_DIR, "index.md") ? "has_children: true" : "",
     "---",
+    "",
   ].filter(Boolean);
 
   fs.writeFileSync(filePath, fmLines.join("\n") + "\n" + content, "utf8");
 }
 
 /**
- * Creates an index.md file if missing, with a TOC of the directory's contents.
+ * Creates an index.md for a folder if missing.
+ * Excludes root folder from this behavior to avoid "Home" nesting.
+ *
+ * @param {string} dir - Folder path
+ * @param {number} navOrder - Navigation order
+ * @param {string} parent - Parent title (empty for root-level folders)
+ * @returns {string} The title of this folder for child items to reference
  */
 function ensureIndexMd(dir, navOrder, parent = "") {
+  const isRoot = dir === DOCS_DIR;
   const indexPath = path.join(dir, "index.md");
 
-  if (!fs.existsSync(indexPath)) {
-    let title;
-    if (dir === DOCS_DIR) {
-      title = "Home";
-      parent = "";
-    } else {
-      title = capitalize(path.basename(dir));
-    }
+  if (!fs.existsSync(indexPath) && !isRoot) {
+    const title = prettify(path.basename(dir));
 
     const entries = fs.readdirSync(dir, { withFileTypes: true });
 
     const fileLinks = entries
       .filter(e => e.isFile() && e.name.endsWith(".md") && e.name.toLowerCase() !== "index.md")
-      .map(e => `- [${capitalize(path.basename(e.name, ".md"))}](${e.name})`);
+      .map(e => `- [${prettify(path.basename(e.name, ".md"))}](${e.name})`);
 
     const folderLinks = entries
       .filter(e => e.isDirectory())
-      .map(e => `- [${capitalize(e.name)}](${e.name}/)`);
+      .map(e => `- [${prettify(e.name)}](${e.name}/)`);
 
     const links = [...fileLinks, ...folderLinks].join("\n");
 
@@ -92,32 +115,36 @@ function ensureIndexMd(dir, navOrder, parent = "") {
     ].filter(Boolean);
 
     fs.writeFileSync(indexPath, fmLines.join("\n"), "utf8");
-    console.log(`📄 Created index.md in ${dir}`);
   }
+
+  return isRoot ? "" : prettify(path.basename(dir));
 }
 
 /**
- * Recursively processes directories:
- * - Creates missing index.md
- * - Adds frontmatter to files
- * - Preserves sequential nav_order
+ * Recursively processes the documentation folder.
+ *
+ * Rules:
+ * - Root index.md → Home (no has_children, no parent)
+ * - Root-level folders → top-level sections (no parent)
+ * - Subfolders → nested under their parent
+ *
+ * @param {string} dir - Directory path
+ * @param {number} startOrder - Starting nav_order
+ * @param {string} parent - Parent title
+ * @returns {number} - Next available nav_order after processing this directory
  */
 function processDir(dir, startOrder = 1, parent = "") {
   let order = startOrder;
-
-  // Determine current folder's parent
   const isRoot = dir === DOCS_DIR;
-  const currentTitle = isRoot ? "Home" : capitalize(path.basename(dir));
 
-  // Ensure index.md exists first
-  ensureIndexMd(dir, order, isRoot ? "" : parent);
-  order++;
+  // Ensure folder has index.md if not root
+  const currentTitle = ensureIndexMd(dir, order, isRoot ? "" : parent);
+  if (!isRoot) order++;
 
-  // Sort files before directories, index.md first
+  // Sort entries: files first (index.md first), then directories
   const entries = fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => {
     if (a.isFile() && !b.isFile()) return -1;
     if (!a.isFile() && b.isFile()) return 1;
-
     if (a.isFile() && b.isFile()) {
       if (a.name.toLowerCase() === "index.md") return -1;
       if (b.name.toLowerCase() === "index.md") return 1;
@@ -125,7 +152,6 @@ function processDir(dir, startOrder = 1, parent = "") {
     return a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
   });
 
-  // Process files
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
 
@@ -133,11 +159,13 @@ function processDir(dir, startOrder = 1, parent = "") {
       const isIndex = entry.name.toLowerCase() === "index.md";
       addFrontmatter(fullPath, order++, isRoot ? "" : currentTitle, isIndex);
     } else if (entry.isDirectory()) {
-      order = processDir(fullPath, order, currentTitle);
+      // Root folders have no parent
+      order = processDir(fullPath, order, isRoot ? "" : currentTitle);
     }
   }
 
   return order;
 }
 
+// Run script
 processDir(DOCS_DIR);

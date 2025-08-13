@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Hooks
-parent: Home
-nav_order: 11
+nav_order: 10
 has_children: true
 ---
 # Hooks

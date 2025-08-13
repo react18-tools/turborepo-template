@@ -2,7 +2,7 @@
 layout: default
 title: Dots2
 parent: Dots
-nav_order: 36
+nav_order: 35
 has_children: true
 ---
 # Dots2

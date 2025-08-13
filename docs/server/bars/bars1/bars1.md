@@ -15,7 +15,7 @@ nav_order: 20
 
 > **Bars1**(`props`): `Element`
 
-Defined in: [server/bars/bars1/bars1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/4b8554662427f3787083152b892932bcf7e15c3e/lib/src/server/bars/bars1/bars1.tsx#L10)
+Defined in: [server/bars/bars1/bars1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/2635c856ec31df0d27eb77876e3eb8707c5d4b76/lib/src/server/bars/bars1/bars1.tsx#L10)
 
 A simple loader with 3 dots.
 

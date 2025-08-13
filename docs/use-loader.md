@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Use Loader
-parent: Hooks
-nav_order: 12
+nav_order: 3
 ---
 [React18 Loaders](../index.md) / hooks/use-loader
 
@@ -14,7 +13,7 @@ nav_order: 12
 
 > **useLoader**(): `object`
 
-Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/75b385c901f1dcd5904eb3f4e38e0ae76e4f3a44/lib/src/hooks/use-loader.ts#L8)
+Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/e984eea0efaa34500b0633bbff30a3d1895801b7/lib/src/hooks/use-loader.ts#L8)
 
 #### Returns
 

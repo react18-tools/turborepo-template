@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Server
-nav_order: 13
+nav_order: 9
 has_children: true
 ---
 # Server
 - [Bars](bars/)
-- [Common](common/)
+- [Base](base/)
 - [Dots](dots/)

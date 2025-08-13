@@ -48,7 +48,6 @@ function addFrontmatter(filePath, navOrder, parent = "", isIndex = false) {
   if (filePath === path.join(DOCS_DIR, "index.md")) {
     // Root index.md → Home page
     title = "Home";
-    parent = "";
   } else if (isIndex) {
     // Folder's index page → folder name
     title = prettify(path.basename(path.dirname(filePath)));
@@ -61,7 +60,7 @@ function addFrontmatter(filePath, navOrder, parent = "", isIndex = false) {
     "---",
     "layout: default",
     `title: ${title}`,
-    parent && !isIndex ? `parent: ${parent}` : "",
+    parent ? `parent: ${parent}` : "",
     `nav_order: ${navOrder}`,
     // has_children only if it's not root index
     isIndex && filePath !== path.join(DOCS_DIR, "index.md") ? "has_children: true" : "",

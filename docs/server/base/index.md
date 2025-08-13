@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Base
-parent: Common
-nav_order: 25
+parent: Server
+nav_order: 15
 has_children: true
 ---
 # Base

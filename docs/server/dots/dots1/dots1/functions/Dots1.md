@@ -9,7 +9,7 @@ title: Dots1
 
 > **Dots1**(`props`): `Element`
 
-Defined in: [server/dots/dots1/dots1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/92c5162263fb0a49f8e6aa57a89706b102cd4775/lib/src/server/dots/dots1/dots1.tsx#L10)
+Defined in: [server/dots/dots1/dots1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/4860f8f3bf634e2ab10522ee4176777316d032d4/lib/src/server/dots/dots1/dots1.tsx#L10)
 
 A simple loader with 3 dots.
 

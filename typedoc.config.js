@@ -21,4 +21,5 @@ module.exports = {
   sanitizeComments: true,
   router: "module",
   entryFileName: "index",
+  mergeReadme: true,
 };

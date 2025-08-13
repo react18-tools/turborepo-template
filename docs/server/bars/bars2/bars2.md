@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Bars2
-nav_order: 8
+parent: Bars2
+nav_order: 23
 ---
-
-[React18 Loaders](../../../modules.md) / server/bars/bars2/bars2
+  
+[React18 Loaders](../../../index.md) / server/bars/bars2/bars2
 
 # server/bars/bars2/bars2
 
@@ -14,7 +15,7 @@ nav_order: 8
 
 > **Bars2**(`props`): `Element`
 
-Defined in: [server/bars/bars2/bars2.tsx:10](https://github.com/react18-tools/turborepo-template/blob/e8bb784e4debcd6d2b76724a3d00adb5da77b685/lib/src/server/bars/bars2/bars2.tsx#L10)
+Defined in: [server/bars/bars2/bars2.tsx:10](https://github.com/react18-tools/turborepo-template/blob/4b8554662427f3787083152b892932bcf7e15c3e/lib/src/server/bars/bars2/bars2.tsx#L10)
 
 A simple loader with 3 dots.
 

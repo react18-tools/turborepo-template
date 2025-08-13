@@ -1,10 +1,11 @@
 ---
 layout: default
 title: Dots2
-nav_order: 12
+nav_order: 39
+has_children: true
 ---
-
-[React18 Loaders](../../../../modules.md) / server/dots/dots2/dots2
+  
+[React18 Loaders](../../../../index.md) / server/dots/dots2/dots2
 
 # server/dots/dots2/dots2
 
@@ -18,7 +19,7 @@ nav_order: 12
 
 > **Dots2**(`props`): `Element`
 
-Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/e8bb784e4debcd6d2b76724a3d00adb5da77b685/lib/src/server/dots/dots2/dots2.tsx#L15)
+Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/4b8554662427f3787083152b892932bcf7e15c3e/lib/src/server/dots/dots2/dots2.tsx#L15)
 
 A simple loader with 3 dots.
 

@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { title as libTitle } from "./rebrand.config.json";
 
 const DOCS_DIR = "./docs"; // Root folder for TypeDoc output
 
@@ -16,26 +17,22 @@ function addFrontmatter(filePath, navOrder) {
   const parts = relPath.split(path.sep);
   const baseName = path.basename(filePath, ".md");
 
-  let title, parent;
+  let title;
   if (relPath.toLowerCase() === "index.md") {
     // Root index.md
-    title = "React18 Loaders"; // or "Home"
+    title = libTitle; // or "Home"
   } else if (/^index$/i.test(baseName)) {
     // index.md inside a subfolder → use folder name as title
     title = capitalize(parts[parts.length - 2]);
-    if (parts.length > 2) parent = capitalize(parts[parts.length - 3] || ""); // parent folder’s parent
   } else {
     // Regular file
     title = capitalize(baseName);
-    if (parts.length > 1) {
-      parent = capitalize(parts[parts.length - 2]);
-    }
   }
 
   const frontmatter = `---
 layout: default
 title: ${title}
-${parent ? `parent: ${parent}\n` : ""}nav_order: ${navOrder}
+nav_order: ${navOrder}
 ---
 
 `;

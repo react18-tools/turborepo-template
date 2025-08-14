@@ -13,7 +13,7 @@ nav_order: 3
 
 > **useLoader**(): `object`
 
-Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/9ed5b3363924f189688b70191d59baca25771534/lib/src/hooks/use-loader.ts#L8)
+Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/f1923d4ff0ef5aaa3964058745bd22672818884b/lib/src/hooks/use-loader.ts#L8)
 
 #### Returns
 

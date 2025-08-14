@@ -22,4 +22,8 @@ module.exports = {
   router: "module",
   entryFileName: "index",
   mergeReadme: true,
+  hideBreadcrumbs: true,
+  expandParameters: true,
+  expandObjects: true,
+  theme: "markdown",
 };

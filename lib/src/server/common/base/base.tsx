@@ -11,7 +11,7 @@ export interface BaseProps extends HTMLProps<HTMLDivElement> {
 }
 
 /** Other props - loaderClass is included here as we will extend BaseProps for other loaders */
-interface OtherProps {
+export interface OtherProps {
   /** Loader class name */
   loaderClass: string;
   dotRadius?: number | string;

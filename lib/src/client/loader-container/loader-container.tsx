@@ -2,7 +2,7 @@ import styles from "./loader-container.module.scss";
 import { useRGS } from "r18gs";
 import { LOADER_RGS_KEY } from "../../constants";
 
-interface LoaderContainerProps extends React.HTMLProps<HTMLDivElement> {
+export interface LoaderContainerProps extends React.HTMLProps<HTMLDivElement> {
   children?: React.ReactNode;
   loading?: boolean;
 }

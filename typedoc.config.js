@@ -20,7 +20,6 @@ module.exports = {
   prettierConfigFile: "./.prettierrc",
   sanitizeComments: true,
   router: "module",
-  entryFileName: "index",
   mergeReadme: true,
   hideBreadcrumbs: true,
   expandParameters: true,

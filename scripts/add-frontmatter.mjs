@@ -48,9 +48,6 @@ function addFrontmatter(filePath, navOrder, parent = "", isIndex = false) {
   if (filePath === path.join(DOCS_DIR, "index.md")) {
     // Root index.md → Home page
     title = "Home";
-  } else if (isIndex) {
-    // Folder's index page → folder name
-    title = prettify(path.basename(path.dirname(filePath)));
   } else {
     // Regular file → file name
     title = prettify(baseName);
@@ -155,7 +152,7 @@ function processDir(dir, startOrder = 1, parent = "") {
     const fullPath = path.join(dir, entry.name);
 
     if (entry.isFile() && entry.name.endsWith(".md")) {
-      const isIndex = entry.name.toLowerCase() === "index.md";
+      const isIndex = entry.name.toLowerCase() === "readme.md";
       addFrontmatter(fullPath, order++, isRoot ? "" : isIndex ? parent : currentTitle, isIndex);
     } else if (entry.isDirectory()) {
       // Root folders have no parent
@@ -167,7 +164,7 @@ function processDir(dir, startOrder = 1, parent = "") {
 }
 
 const ModuleTitle = "\n## Modules\n";
-const rootMdFile = path.resolve(DOCS_DIR, "index.md");
+const rootMdFile = path.resolve(DOCS_DIR, "README.md");
 let [staticPart, moduleIndex] = fs.readFileSync(rootMdFile, "utf8").split(ModuleTitle);
 
 function flattenDirs(dir, parent = "") {
@@ -203,6 +200,7 @@ function flattenDirs(dir, parent = "") {
 // flatten docs output
 flattenDirs(DOCS_DIR);
 fs.writeFileSync(rootMdFile, [staticPart, moduleIndex].join(ModuleTitle));
+fs.renameSync(path.resolve(DOCS_DIR, "README.md"), path.resolve(DOCS_DIR, "index.md"));
 
 // Run script
 processDir(DOCS_DIR);

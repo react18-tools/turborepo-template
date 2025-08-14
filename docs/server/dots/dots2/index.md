@@ -6,5 +6,3 @@ nav_order: 21
 has_children: true
 ---
 # Dots2
-- [ Internal ](-internal-.md)
-- [README](README.md)

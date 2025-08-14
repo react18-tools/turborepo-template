@@ -16,7 +16,7 @@ nav_order: 7
 
 > **LoaderContainer**(`__namedParameters`: [`LoaderContainerProps`](-internal-.md#loadercontainerprops)): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/76e11a03ce743685b3981fb25ca890c3ce54662c/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/9aed226e0a462eecb38c430b808d850b106bbe8c/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 

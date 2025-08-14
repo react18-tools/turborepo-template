@@ -19,7 +19,7 @@ has_children: true
 
 > **LoaderContainer**(`__namedParameters`): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/33300a01e0a383ab39ffb0b6c3c81e46330865b8/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/7391c92cfd2f29d798499dc97ae86a2f94c80212/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 

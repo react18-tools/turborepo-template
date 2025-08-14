@@ -2,7 +2,7 @@
 layout: default
 title:  Internal 
 parent: Dots2
-nav_order: 21
+nav_order: 23
 ---
 # \<internal\>
 
@@ -10,13 +10,13 @@ nav_order: 21
 
 ### Dots2Props
 
-Defined in: [server/dots/dots2/dots2.tsx:4](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/server/dots/dots2/dots2.tsx#L4)
+Defined in: [server/dots/dots2/dots2.tsx:4](https://github.com/react18-tools/turborepo-template/blob/588bc5cb0b13936af4a2e88e171026559ee56e11/lib/src/server/dots/dots2/dots2.tsx#L4)
 
 Interface declaring the common properties of the loaders
 
 #### Extends
 
-- [`BaseProps`](../../../common/base/base/index.md#baseprops)
+- [`BaseProps`](../../../common/base/base/README.md#baseprops)
 
 #### Properties
 
@@ -24,19 +24,19 @@ Interface declaring the common properties of the loaders
 
 > `optional` **color**: `string`
 
-Defined in: [server/common/base/base.tsx:10](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/server/common/base/base.tsx#L10)
+Defined in: [server/common/base/base.tsx:10](https://github.com/react18-tools/turborepo-template/blob/588bc5cb0b13936af4a2e88e171026559ee56e11/lib/src/server/common/base/base.tsx#L10)
 
 Color of the dots - CSS compatible color
 
 ###### Inherited from
 
-[`BaseProps`](../../../common/base/base/index.md#baseprops).[`color`](../../../common/base/base/index.md#color)
+[`BaseProps`](../../../common/base/base/README.md#baseprops).[`color`](../../../common/base/base/README.md#color)
 
 ##### dotRadius?
 
 > `optional` **dotRadius**: `string` \| `number`
 
-Defined in: [server/dots/dots2/dots2.tsx:6](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/server/dots/dots2/dots2.tsx#L6)
+Defined in: [server/dots/dots2/dots2.tsx:6](https://github.com/react18-tools/turborepo-template/blob/588bc5cb0b13936af4a2e88e171026559ee56e11/lib/src/server/dots/dots2/dots2.tsx#L6)
 
 Radius of the dots in pixels or a string with a length unit.
 
@@ -44,22 +44,22 @@ Radius of the dots in pixels or a string with a length unit.
 
 > `optional` **height**: `string` \| `number`
 
-Defined in: [server/common/base/base.tsx:8](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/server/common/base/base.tsx#L8)
+Defined in: [server/common/base/base.tsx:8](https://github.com/react18-tools/turborepo-template/blob/588bc5cb0b13936af4a2e88e171026559ee56e11/lib/src/server/common/base/base.tsx#L8)
 
 height of the loader element in pixels or a string with a length unit.
 
 ###### Inherited from
 
-[`BaseProps`](../../../common/base/base/index.md#baseprops).[`height`](../../../common/base/base/index.md#height)
+[`BaseProps`](../../../common/base/base/README.md#baseprops).[`height`](../../../common/base/base/README.md#height)
 
 ##### width?
 
 > `optional` **width**: `string` \| `number`
 
-Defined in: [server/common/base/base.tsx:6](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/server/common/base/base.tsx#L6)
+Defined in: [server/common/base/base.tsx:6](https://github.com/react18-tools/turborepo-template/blob/588bc5cb0b13936af4a2e88e171026559ee56e11/lib/src/server/common/base/base.tsx#L6)
 
 width of the loader element in pixels or a string with a length unit.
 
 ###### Inherited from
 
-[`BaseProps`](../../../common/base/base/index.md#baseprops).[`width`](../../../common/base/base/index.md#width)
+[`BaseProps`](../../../common/base/base/README.md#baseprops).[`width`](../../../common/base/base/README.md#width)

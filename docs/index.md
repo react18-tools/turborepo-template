@@ -138,11 +138,11 @@ This library is licensed under the MPL-2.0 open-source license.
 
 ## Modules
 
-- [client/loader-container/loader-container](client/loader-container/loader-container/index.md)
+- [client/loader-container/loader-container](client/loader-container/loader-container/README.md)
 - [constants](constants.md)
 - [hooks/use-loader](use-loader.md)
 - [server/bars/bars1/bars1](server/bars/bars1.md)
 - [server/bars/bars2/bars2](server/bars/bars2.md)
-- [server/common/base/base](server/common/base/base/index.md)
+- [server/common/base/base](server/common/base/base/README.md)
 - [server/dots/dots1/dots1](server/dots/dots1.md)
-- [server/dots/dots2/dots2](server/dots/dots2/dots2/index.md)
+- [server/dots/dots2/dots2](server/dots/dots2/dots2/README.md)

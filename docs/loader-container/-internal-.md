@@ -4,15 +4,13 @@ title:  Internal
 parent: Loader Container
 nav_order: 6
 ---
-[React18 Loaders](../../../index.md) / [client/loader-container/loader-container](index.md) / \<internal\>
-
 # \<internal\>
 
 ## Interfaces
 
 ### LoaderContainerProps
 
-Defined in: [client/loader-container/loader-container.tsx:5](https://github.com/react18-tools/turborepo-template/blob/f1923d4ff0ef5aaa3964058745bd22672818884b/lib/src/client/loader-container/loader-container.tsx#L5)
+Defined in: [client/loader-container/loader-container.tsx:5](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/client/loader-container/loader-container.tsx#L5)
 
 #### Extends
 
@@ -24,7 +22,7 @@ Defined in: [client/loader-container/loader-container.tsx:5](https://github.com/
 
 > `optional` **children**: `ReactNode`
 
-Defined in: [client/loader-container/loader-container.tsx:6](https://github.com/react18-tools/turborepo-template/blob/f1923d4ff0ef5aaa3964058745bd22672818884b/lib/src/client/loader-container/loader-container.tsx#L6)
+Defined in: [client/loader-container/loader-container.tsx:6](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/client/loader-container/loader-container.tsx#L6)
 
 ###### Overrides
 
@@ -34,4 +32,4 @@ Defined in: [client/loader-container/loader-container.tsx:6](https://github.com/
 
 > `optional` **loading**: `boolean`
 
-Defined in: [client/loader-container/loader-container.tsx:7](https://github.com/react18-tools/turborepo-template/blob/f1923d4ff0ef5aaa3964058745bd22672818884b/lib/src/client/loader-container/loader-container.tsx#L7)
+Defined in: [client/loader-container/loader-container.tsx:7](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/client/loader-container/loader-container.tsx#L7)

@@ -5,8 +5,6 @@ parent: Dots
 nav_order: 20
 has_children: true
 ---
-[React18 Loaders](../../../../index.md) / server/dots/dots2/dots2
-
 # server/dots/dots2/dots2
 
 ## Modules
@@ -17,9 +15,9 @@ has_children: true
 
 ### Dots2()
 
-> **Dots2**(`props`): `Element`
+> **Dots2**(`props`: [`Dots2Props`](-internal-.md#dots2props)): `Element`
 
-Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/f1923d4ff0ef5aaa3964058745bd22672818884b/lib/src/server/dots/dots2/dots2.tsx#L15)
+Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/server/dots/dots2/dots2.tsx#L15)
 
 A simple loader with 3 dots.
 

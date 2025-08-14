@@ -3,21 +3,19 @@ layout: default
 title: Use Loader
 nav_order: 3
 ---
-[React18 Loaders](../index.md) / hooks/use-loader
-
 # hooks/use-loader
 
 ## Functions
 
 ### useLoader()
 
-> **useLoader**(): `object`
+> **useLoader**(): \{ `loading`: `boolean`; `setLoading`: `SetStateAction`\<`boolean`\>; \}
 
-Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/f1923d4ff0ef5aaa3964058745bd22672818884b/lib/src/hooks/use-loader.ts#L8)
+Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/hooks/use-loader.ts#L8)
 
 #### Returns
 
-`object`
+\{ `loading`: `boolean`; `setLoading`: `SetStateAction`\<`boolean`\>; \}
 
 ##### loading
 

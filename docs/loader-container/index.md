@@ -4,8 +4,6 @@ title: Loader Container
 nav_order: 5
 has_children: true
 ---
-[React18 Loaders](../../../index.md) / client/loader-container/loader-container
-
 # client/loader-container/loader-container
 
 ## Modules
@@ -16,9 +14,9 @@ has_children: true
 
 ### LoaderContainer()
 
-> **LoaderContainer**(`__namedParameters`): `Element`
+> **LoaderContainer**(`__namedParameters`: [`LoaderContainerProps`](-internal-.md#loadercontainerprops)): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/f1923d4ff0ef5aaa3964058745bd22672818884b/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/3d3c113a28c3ab49589ecce9bf3d54046116994f/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 

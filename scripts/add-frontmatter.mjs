@@ -82,18 +82,6 @@ function ensureIndexMd(dir, navOrder, parent = "") {
   if (!fs.existsSync(indexPath) && !isRoot) {
     const title = prettify(path.basename(dir));
 
-    const entries = fs.readdirSync(dir, { withFileTypes: true });
-
-    const fileLinks = entries
-      .filter(e => e.isFile() && e.name.endsWith(".md") && e.name.toLowerCase() !== "index.md")
-      .map(e => `- [${prettify(path.basename(e.name, ".md"))}](${e.name})`);
-
-    const folderLinks = entries
-      .filter(e => e.isDirectory())
-      .map(e => `- [${prettify(e.name)}](${e.name}/)`);
-
-    const links = [...fileLinks, ...folderLinks].join("\n");
-
     const fmLines = [
       "---",
       "layout: default",
@@ -105,7 +93,6 @@ function ensureIndexMd(dir, navOrder, parent = "") {
       "",
       `# ${title}`,
       "",
-      links || "_No pages yet._",
     ].filter(Boolean);
 
     fs.writeFileSync(indexPath, fmLines.join("\n"), "utf8");

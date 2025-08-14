@@ -118,10 +118,6 @@ function processDir(dir, startOrder = 1, parent = "") {
   let order = startOrder;
   const isRoot = dir === DOCS_DIR;
 
-  // Ensure folder has index.md if not root
-  const currentTitle = ensureIndexMd(dir, order, isRoot ? "" : parent);
-  if (!isRoot) order++;
-
   // Sort entries: files first (index.md first), then directories
   const entries = fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => {
     if (a.isFile() && !b.isFile()) return -1;
@@ -132,6 +128,13 @@ function processDir(dir, startOrder = 1, parent = "") {
     }
     return a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
   });
+
+  // Ensure folder has index.md if not root
+  const currentTitle =
+    !isRoot && entries.length === 1
+      ? prettify(parent)
+      : ensureIndexMd(dir, order, isRoot ? "" : parent);
+  if (!isRoot) order++;
 
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
@@ -147,43 +150,43 @@ function processDir(dir, startOrder = 1, parent = "") {
   return order;
 }
 
-const ModuleTitle = "\n## Modules\n";
-const rootMdFile = path.resolve(DOCS_DIR, "README.md");
-let [staticPart, moduleIndex] = fs.readFileSync(rootMdFile, "utf8").split(ModuleTitle);
+// const ModuleTitle = "\n## Modules\n";
+// const rootMdFile = path.resolve(DOCS_DIR, "README.md");
+// let [staticPart, moduleIndex] = fs.readFileSync(rootMdFile, "utf8").split(ModuleTitle);
 
-function flattenDirs(dir, parent = "") {
-  const entries = fs.readdirSync(dir, { withFileTypes: true });
-  for (const entry of entries) {
-    const fullPath = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      // Recursively flatten the subdirectory first
-      flattenDirs(fullPath, dir);
-    }
-  }
+// function flattenDirs(dir, parent = "") {
+//   const entries = fs.readdirSync(dir, { withFileTypes: true });
+//   for (const entry of entries) {
+//     const fullPath = path.join(dir, entry.name);
+//     if (entry.isDirectory()) {
+//       // Recursively flatten the subdirectory first
+//       flattenDirs(fullPath, dir);
+//     }
+//   }
 
-  if (entries.length === 1 && parent) {
-    try {
-      // to avoid clash when parent directory has same name.
-      const src = path.resolve(dir, entries[0].name);
-      const uuid = crypto.randomUUID();
-      const dest = path.resolve(parent, entries[0].name);
-      const dest1 = dest + uuid;
-      fs.renameSync(src, dest1);
-      fs.rmdirSync(path.resolve(dir));
-      fs.renameSync(dest1, dest);
-      moduleIndex = moduleIndex.replaceAll(
-        `(${path.relative(DOCS_DIR, src).replaceAll(path.sep, "/")})`,
-        `(${path.relative(DOCS_DIR, dest).replaceAll(path.sep, "/")})`,
-      );
-    } catch (err) {
-      console.error(err);
-    }
-  }
-}
+//   if (entries.length === 1 && parent) {
+//     try {
+//       // to avoid clash when parent directory has same name.
+//       const src = path.resolve(dir, entries[0].name);
+//       const uuid = crypto.randomUUID();
+//       const dest = path.resolve(parent, entries[0].name);
+//       const dest1 = dest + uuid;
+//       fs.renameSync(src, dest1);
+//       fs.rmdirSync(path.resolve(dir));
+//       fs.renameSync(dest1, dest);
+//       moduleIndex = moduleIndex.replaceAll(
+//         `(${path.relative(DOCS_DIR, src).replaceAll(path.sep, "/")})`,
+//         `(${path.relative(DOCS_DIR, dest).replaceAll(path.sep, "/")})`,
+//       );
+//     } catch (err) {
+//       console.error(err);
+//     }
+//   }
+// }
 
 // flatten docs output
-flattenDirs(DOCS_DIR);
-fs.writeFileSync(rootMdFile, [staticPart, moduleIndex].join(ModuleTitle));
+// flattenDirs(DOCS_DIR);
+// fs.writeFileSync(rootMdFile, [staticPart, moduleIndex].join(ModuleTitle));
 fs.renameSync(path.resolve(DOCS_DIR, "README.md"), path.resolve(DOCS_DIR, "index.md"));
 
 // Run script

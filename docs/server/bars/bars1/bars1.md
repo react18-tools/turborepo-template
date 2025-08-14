@@ -2,7 +2,7 @@
 layout: default
 title: Bars1
 parent: Bars
-nav_order: 13
+nav_order: 11
 ---
 # server/bars/bars1/bars1
 
@@ -10,9 +10,9 @@ nav_order: 13
 
 ### Bars1()
 
-> **Bars1**(`props`: [`BaseProps`](../../common/base/base/README.md#baseprops)): `Element`
+> **Bars1**(`props`: [`BaseProps`](../../common/base/base.md#baseprops)): `Element`
 
-Defined in: [server/bars/bars1/bars1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/975cfbf9d9c94cbf523ecc743d5404303fa6b0f0/lib/src/server/bars/bars1/bars1.tsx#L10)
+Defined in: [server/bars/bars1/bars1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/fbde438a2b2686210f71769f2eb7c06f02784693/lib/src/server/bars/bars1/bars1.tsx#L10)
 
 A simple loader with 3 dots.
 
@@ -20,7 +20,7 @@ A simple loader with 3 dots.
 
 ##### props
 
-[`BaseProps`](../../common/base/base/README.md#baseprops)
+[`BaseProps`](../../common/base/base.md#baseprops)
 
 #### Returns
 

@@ -2,7 +2,7 @@
 layout: default
 title: Dots1
 parent: Dots
-nav_order: 23
+nav_order: 19
 ---
 # server/dots/dots1/dots1
 
@@ -10,9 +10,9 @@ nav_order: 23
 
 ### Dots1()
 
-> **Dots1**(`props`: [`BaseProps`](../../common/base/base/README.md#baseprops)): `Element`
+> **Dots1**(`props`: [`BaseProps`](../../common/base/base.md#baseprops)): `Element`
 
-Defined in: [server/dots/dots1/dots1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/975cfbf9d9c94cbf523ecc743d5404303fa6b0f0/lib/src/server/dots/dots1/dots1.tsx#L10)
+Defined in: [server/dots/dots1/dots1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/fbde438a2b2686210f71769f2eb7c06f02784693/lib/src/server/dots/dots1/dots1.tsx#L10)
 
 A simple loader with 3 dots.
 
@@ -20,7 +20,7 @@ A simple loader with 3 dots.
 
 ##### props
 
-[`BaseProps`](../../common/base/base/README.md#baseprops)
+[`BaseProps`](../../common/base/base.md#baseprops)
 
 #### Returns
 

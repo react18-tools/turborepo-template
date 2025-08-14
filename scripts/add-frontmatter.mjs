@@ -36,7 +36,7 @@ function prettify(str) {
  * @param {string} parent - Parent page title, if applicable
  * @param {boolean} isIndex - Whether the file is an index.md
  */
-function addFrontmatter(filePath, navOrder, parent = "", isIndex = false) {
+function addFrontmatter(filePath, navOrder, parent = "") {
   const content = fs.readFileSync(filePath, "utf8");
 
   // Skip files with existing frontmatter
@@ -59,8 +59,6 @@ function addFrontmatter(filePath, navOrder, parent = "", isIndex = false) {
     `title: ${title}`,
     parent ? `parent: ${parent}` : "",
     `nav_order: ${navOrder}`,
-    // has_children only if it's not root index
-    isIndex && filePath !== path.join(DOCS_DIR, "index.md") ? "has_children: true" : "",
     "---",
     "",
   ].filter(Boolean);
@@ -152,8 +150,7 @@ function processDir(dir, startOrder = 1, parent = "") {
     const fullPath = path.join(dir, entry.name);
 
     if (entry.isFile() && entry.name.endsWith(".md")) {
-      const isIndex = entry.name.toLowerCase() === "readme.md";
-      addFrontmatter(fullPath, order++, isRoot ? "" : isIndex ? parent : currentTitle, isIndex);
+      addFrontmatter(fullPath, order++, isRoot ? "" : currentTitle);
     } else if (entry.isDirectory()) {
       // Root folders have no parent
       order = processDir(fullPath, order, isRoot ? "" : currentTitle);

@@ -156,7 +156,7 @@ function processDir(dir, startOrder = 1, parent = "") {
 
     if (entry.isFile() && entry.name.endsWith(".md")) {
       const isIndex = entry.name.toLowerCase() === "index.md";
-      addFrontmatter(fullPath, order++, isRoot ? "" : currentTitle, isIndex);
+      addFrontmatter(fullPath, order++, isRoot ? "" : isIndex ? parent : currentTitle, isIndex);
     } else if (entry.isDirectory()) {
       // Root folders have no parent
       order = processDir(fullPath, order, isRoot ? "" : currentTitle);

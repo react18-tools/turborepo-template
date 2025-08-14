@@ -12,7 +12,7 @@ nav_order: 15
 
 ### OtherProps
 
-Defined in: [server/common/base/base.tsx:14](https://github.com/react18-tools/turborepo-template/blob/7391c92cfd2f29d798499dc97ae86a2f94c80212/lib/src/server/common/base/base.tsx#L14)
+Defined in: [server/common/base/base.tsx:14](https://github.com/react18-tools/turborepo-template/blob/9ed5b3363924f189688b70191d59baca25771534/lib/src/server/common/base/base.tsx#L14)
 
 Other props - loaderClass is included here as we will extend BaseProps for other loaders
 
@@ -22,12 +22,12 @@ Other props - loaderClass is included here as we will extend BaseProps for other
 
 > `optional` **dotRadius**: `string` \| `number`
 
-Defined in: [server/common/base/base.tsx:17](https://github.com/react18-tools/turborepo-template/blob/7391c92cfd2f29d798499dc97ae86a2f94c80212/lib/src/server/common/base/base.tsx#L17)
+Defined in: [server/common/base/base.tsx:17](https://github.com/react18-tools/turborepo-template/blob/9ed5b3363924f189688b70191d59baca25771534/lib/src/server/common/base/base.tsx#L17)
 
 ##### loaderClass
 
 > **loaderClass**: `string`
 
-Defined in: [server/common/base/base.tsx:16](https://github.com/react18-tools/turborepo-template/blob/7391c92cfd2f29d798499dc97ae86a2f94c80212/lib/src/server/common/base/base.tsx#L16)
+Defined in: [server/common/base/base.tsx:16](https://github.com/react18-tools/turborepo-template/blob/9ed5b3363924f189688b70191d59baca25771534/lib/src/server/common/base/base.tsx#L16)
 
 Loader class name

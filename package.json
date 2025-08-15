@@ -21,11 +21,11 @@
   "devDependencies": {
     "@changesets/cli": "^2.29.5",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^24.2.1",
+    "@types/node": "^24.3.0",
     "enquirer": "^2.4.1",
     "plop": "^4.0.1",
     "prettier": "^3.6.2",
-    "turbo": "^2.5.5",
+    "turbo": "^2.5.6",
     "typedoc": "^0.28.10",
     "typedoc-plugin-mdn-links": "^5.0.8",
     "typedoc-plugin-missing-exports": "^4.1.0",

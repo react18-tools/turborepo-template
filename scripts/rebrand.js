@@ -29,8 +29,10 @@ const rebrandFn = async () => {
   // if .tkb is not moved - setup workflow was not triggered or could not create the required commit
   if (fs.existsSync(path.resolve(process.cwd(), "scripts", ".tkb"))) {
     `rm .tkb
-          mv ./scripts/.tkb ./.tkb
-          rm -rf ./docs`
+     mv ./scripts/.tkb ./.tkb
+     rm -rf ./docs
+     sed -i '/.turborepo-template.lst/d' .github/workflows/upgrade.yml
+     sed -i '/.turborepo-template.lst/d' .github/workflows/docs.yml`
       .split("\n")
       .forEach(cmd => execSync(cmd.trim()));
   }
@@ -180,12 +182,11 @@ const rebrandFn = async () => {
   if (feats.includes("Docs")) {
     delete rootPackageJSON.scripts.doc;
     delete rootPackageJSON.devDependencies["typedoc"];
-    delete rootPackageJSON.devDependencies["typedoc-plugin-missing-exports"];
-    delete rootPackageJSON.devDependencies["typedoc-plugin-rename-defaults"];
-    delete rootPackageJSON.devDependencies["typedoc-plugin-inline-sources"];
-    delete rootPackageJSON.devDependencies["typedoc-plugin-mdn-links"];
-    delete rootPackageJSON.devDependencies["typedoc-plugin-extras"];
-    delete rootPackageJSON.devDependencies["typedoc-plugin-zod"];
+    Object.keys(rootPackageJSON.devDependencies).forEach(dep => {
+      if (dep.startsWith("typedoc-plugin-")) {
+        delete rootPackageJSON.devDependencies[dep];
+      }
+    });
     [
       ".github/workflows/docs.yml",
       "./docs",

@@ -135,7 +135,7 @@ updatePublishFlow("publish.yml");
 updatePublishFlow("manual-publish.yml");
 
 try {
-  fs.unlinkSync(path.resolve(workflowsPath, "setup.yml"));
+  fs.rmSync(path.resolve(workflowsPath, "setup.yml"));
 } catch {
   // empty
 }

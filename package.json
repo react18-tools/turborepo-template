@@ -19,7 +19,7 @@
     "format"
   ],
   "devDependencies": {
-    "@changesets/cli": "^2.29.5",
+    "@changesets/cli": "^2.29.6",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^24.3.0",
     "enquirer": "^2.4.1",

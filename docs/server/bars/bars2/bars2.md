@@ -4,6 +4,7 @@ title: Bars2
 parent: Bars
 nav_order: 13
 ---
+
 # server/bars/bars2/bars2
 
 ## Functions

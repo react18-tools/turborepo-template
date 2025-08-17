@@ -3,6 +3,7 @@ layout: default
 title: Constants
 nav_order: 2
 ---
+
 # constants
 
 ## Variables

@@ -48,7 +48,7 @@ jobs:
         name: clean up working directory
       - name: Generate/update docs
         run: |
-          pnpm doc
+          pnpm doc && pnpm format
           echo "$(git rev-parse HEAD)" > .turborepo-template.lst
       - name: Save docs back to repo
         run: git add . && git commit -m "upgrade deps && docs [skip ci]" && git push origin main

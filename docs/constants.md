@@ -12,6 +12,6 @@ nav_order: 2
 
 > `const` **LOADER_RGS_KEY**: `"r18-loaders"` = `"r18-loaders"`
 
-Defined in: [constants.ts:3](https://github.com/react18-tools/turborepo-template/blob/46eeb34782c56f9fef19a99a667b2efe0dca8a15/lib/src/constants.ts#L3)
+Defined in: [constants.ts:3](https://github.com/react18-tools/turborepo-template/blob/b69adccbe96d0b417275783c3d4126d4bdf2aa41/lib/src/constants.ts#L3)
 
 const uuid = () =\> (Date.now() \* Math.random()).toString(16).slice(2, 8);

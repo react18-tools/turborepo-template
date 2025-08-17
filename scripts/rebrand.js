@@ -6,6 +6,8 @@ const { execSync } = require("child_process");
 
 const config = require("./rebrand.config.json");
 
+const isFirstRebrand = config.repo === "turborepo-template" && config.owner === "react18-tools";
+
 const [owner, repo] = execSync(
   'git remote get-url --push origin | sed "s/https:\\/\\/github.com\\///" | sed "s/https:\\/\\/[^@]*@github.com\\///" | sed "s/.git//"',
 )
@@ -13,7 +15,7 @@ const [owner, repo] = execSync(
   .trim()
   .split("/");
 
-const packageName = repo;
+const packageName = isFirstRebrand ? repo : config.packageName || repo;
 
 /** avoiding IIFE as formettter keeps misformettting IIFEs */
 const rebrandFn = async () => {
@@ -37,6 +39,10 @@ const rebrandFn = async () => {
       .forEach(cmd => execSync(cmd.trim()));
   }
 
+  const defaultInitialTitle = packageName
+    .split("-")
+    .map(w => w[0].toUpperCase() + w.slice(1))
+    .join(" ");
   const { installExt, ...answers } = await prompt([
     {
       type: "input",
@@ -61,10 +67,7 @@ const rebrandFn = async () => {
       type: "input",
       name: "title",
       message: "What is the title of your project?",
-      initial: packageName
-        .split("-")
-        .map(w => w[0].toUpperCase() + w.slice(1))
-        .join(" "),
+      initial: isFirstRebrand ? defaultInitialTitle : config.title || defaultInitialTitle,
     },
     {
       type: "confirm",
@@ -80,10 +83,11 @@ const rebrandFn = async () => {
     execSync("code --install-extension esbenp.prettier-vscode", { stdio: "inherit" });
   }
 
+  const newConfig = Object.assign({}, answers);
   console.log("\x1b[32m", "Creating rebrand.config.json...");
   fs.writeFileSync(
     path.resolve(process.cwd(), "scripts", "rebrand.config.json"),
-    JSON.stringify(answers, null, 2),
+    JSON.stringify(newConfig, null, 2),
   );
 
   console.log("\x1b[32m", "rebranding...");
@@ -112,6 +116,8 @@ const rebrandFn = async () => {
       },
     ],
   });
+
+  Object.assign(newConfig, { removedPackages: pkgs });
 
   pkgs.forEach(pkg => execSync(`rm -rf ${pkg}`));
 
@@ -156,6 +162,8 @@ const rebrandFn = async () => {
       },
     ],
   });
+
+  Object.assign(newConfig, { removedFeatures: feats });
 
   const rootPackageJSON = require("../package.json");
 
@@ -235,6 +243,12 @@ const rebrandFn = async () => {
   } catch (e) {
     console.error(e);
   }
+
+  console.log("\x1b[32m", "Updating rebrand.config.json...");
+  fs.writeFileSync(
+    path.resolve(process.cwd(), "scripts", "rebrand.config.json"),
+    JSON.stringify(newConfig, null, 2),
+  );
 
   execSync(
     'git add . && git commit -m "Cleaned up features 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]"',

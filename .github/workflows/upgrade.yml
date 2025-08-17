@@ -28,7 +28,7 @@ jobs:
         name: Install dependencies
       - run: git stash --include-untracked
         name: clean up working directory
-      - run: pnpx @turbo/codemod update . && pnpm update --latest -r
+      - run: pnpx @turbo/codemod update . && node ./scripts/upgrade.js
         name: Update dependencies
       - run: pnpm build --filter @example/nextjs
         name: Build all apps to make sure it is not broken due to dependency upgrades

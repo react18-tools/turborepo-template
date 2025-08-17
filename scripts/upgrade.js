@@ -1,8 +1,12 @@
 const { execSync } = require("child_process");
-const { dependencies } = require("../lib/package.json");
+const pkgJSON = require("../package.json");
+const { writeFileSync } = require("fs");
+const { resolve } = require("path");
 
-execSync(
-  `pnpm update --latest -r ${Object.keys(dependencies)
-    .map(dep => `"\\!${dep}"`)
-    .join(" ")}`,
-);
+// Ensure all global deps are devDeps only for easier management.
+pkgJSON.devDependencies = { ...pkgJSON.dependencies, ...pkgJSON.devDependencies };
+delete pkgJSON.dependencies;
+
+writeFileSync(resolve(__dirname, "..", "package.json"), pkgJSON);
+
+execSync(`pnpm update --latest -r`);

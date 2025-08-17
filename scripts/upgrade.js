@@ -7,6 +7,8 @@ const { resolve } = require("path");
 pkgJSON.devDependencies = { ...pkgJSON.dependencies, ...pkgJSON.devDependencies };
 delete pkgJSON.dependencies;
 
-writeFileSync(resolve(__dirname, "..", "package.json"), pkgJSON);
+writeFileSync(resolve(__dirname, "..", "package.json"), JSON.stringify(pkgJSON, null, 2));
 
 execSync(`pnpm update --latest -r`);
+
+execSync("pnpm format");

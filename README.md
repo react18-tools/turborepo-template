@@ -66,6 +66,8 @@ To get started, simply click on the `"Use this template"` button to create a new
 
 For detailed instructions and a checklist, please refer to [TODO.md](./TODO.md).
 
+> You can also start by running `pnpm dlx create-turbo@latest --example https://github.com/react18-tools/turborepo-template/` in command line interface.
+
 ## What's Different from Turborepo official templates?
 
 Compared to the default scaffold from create-turbo, this template offers:

@@ -13,7 +13,7 @@ const [owner, repo] = execSync(
 )
   .toString()
   .trim()
-  .split("/");
+  ?.split("/") ?? ["", path.basename(path.cwd())];
 
 const packageName = isFirstRebrand ? repo : config.packageName || repo;
 

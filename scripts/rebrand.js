@@ -8,12 +8,15 @@ const config = require("./rebrand.config.json");
 
 const isFirstRebrand = config.repo === "turborepo-template" && config.owner === "react18-tools";
 
-const [owner, repo] = execSync(
+const ownerAndRepo = execSync(
   'git remote get-url --push origin | sed "s/https:\\/\\/github.com\\///" | sed "s/https:\\/\\/[^@]*@github.com\\///" | sed "s/.git//"',
 )
   .toString()
-  .trim()
-  ?.split("/") ?? ["", path.basename(path.cwd())];
+  .trim();
+
+const [owner, repo] = ownerAndRepo
+  ? ownerAndRepo.split("/")
+  : ["repo-owner", path.basename(process.cwd())];
 
 const packageName = isFirstRebrand ? repo : config.packageName || repo;
 

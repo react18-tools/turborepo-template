@@ -2102,8 +2102,8 @@ packages:
   caniuse-lite@1.0.30001716:
     resolution: {integrity: sha512-49/c1+x3Kwz7ZIWt+4DvK3aMJy9oYXXG6/97JKsnjdCk/6n9vVyWL8NAwVt95Lwt9eigI10Hl782kDfZUUlRXw==}
 
-  caniuse-lite@1.0.30001736:
-    resolution: {integrity: sha512-ImpN5gLEY8gWeqfLUyEF4b7mYWcYoR2Si1VhnrbM4JizRFmfGaAQ12PhNykq6nvI4XvKLrsp8Xde74D5phJOSw==}
+  caniuse-lite@1.0.30001737:
+    resolution: {integrity: sha512-BiloLiXtQNrY5UyF0+1nSJLXUENuhka2pzy2Fx5pGxqavdrxSCW4U6Pn/PoG3Efspi2frRbHpBV2XsrPE6EDlw==}
 
   capital-case@1.0.4:
     resolution: {integrity: sha512-ds37W8CytHgwnhGGTi88pcPyR15qoNkOpYwmMMfnWqqWgESapLqvDx6huFjQ5vqWSn2Z06173XNA7LtMOeUh1A==}
@@ -6956,7 +6956,7 @@ snapshots:
   autoprefixer@10.4.21(postcss@8.5.6):
     dependencies:
       browserslist: 4.25.3
-      caniuse-lite: 1.0.30001736
+      caniuse-lite: 1.0.30001737
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
@@ -7016,7 +7016,7 @@ snapshots:
 
   browserslist@4.25.3:
     dependencies:
-      caniuse-lite: 1.0.30001736
+      caniuse-lite: 1.0.30001737
       electron-to-chromium: 1.5.208
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.3)
@@ -7069,7 +7069,7 @@ snapshots:
 
   caniuse-lite@1.0.30001716: {}
 
-  caniuse-lite@1.0.30001736: {}
+  caniuse-lite@1.0.30001737: {}
 
   capital-case@1.0.4:
     dependencies:
@@ -9257,7 +9257,7 @@ snapshots:
     dependencies:
       '@next/env': 15.5.0
       '@swc/helpers': 0.5.15
-      caniuse-lite: 1.0.30001736
+      caniuse-lite: 1.0.30001737
       postcss: 8.4.31
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)

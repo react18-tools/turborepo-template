@@ -37,8 +37,8 @@ importers:
         specifier: ^2.5.6
         version: 2.5.6
       turborepo-template-upgrade:
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.2.2
+        version: 0.2.2
       typedoc:
         specifier: ^0.28.10
         version: 0.28.10(typescript@5.9.2)
@@ -4935,8 +4935,8 @@ packages:
     resolution: {integrity: sha512-gxToHmi9oTBNB05UjUsrWf0OyN5ZXtD0apOarC1KIx232Vp3WimRNy3810QzeNSgyD5rsaIDXlxlbnOzlouo+w==}
     hasBin: true
 
-  turborepo-template-upgrade@0.1.0:
-    resolution: {integrity: sha512-wB5VJcP1EmPdipdB/4vZfWruDy+mg+7pTwFfAPx7sQpUUxZWtIGvSb/uZiixs2frBrjgnqEGvLQ24x4oTbLdow==}
+  turborepo-template-upgrade@0.2.2:
+    resolution: {integrity: sha512-58jlCk+KWn+p4Kd4qsOnwA14S2t8ACLlfY/JVjl0ntdc+Ky1lc8mLxUQbRUz31Nu/QGW0RHZnfVBTaJMa3x9ig==}
     hasBin: true
 
   type-check@0.4.0:
@@ -10485,7 +10485,7 @@ snapshots:
       turbo-windows-64: 2.5.6
       turbo-windows-arm64: 2.5.6
 
-  turborepo-template-upgrade@0.1.0: {}
+  turborepo-template-upgrade@0.2.2: {}
 
   type-check@0.4.0:
     dependencies:

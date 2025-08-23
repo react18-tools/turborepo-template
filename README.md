@@ -9,6 +9,8 @@
 
 > [Explore featured packages built with this template.](./FEATURED.md)
 
+> Now it is super easy to use this template. Just run `pnpm create r18` and provide your project name. That's it, we will automatically load the template and initiate rebranding.
+
 > Exciting news! We've launched a new course to help you master this template: [Craft Next Gen UI Libraries for React 18 and Next.js 14](https://www.udemy.com/course/craft-next-gen-ui-libraries-for-react-18-and-nextjs-14/?referralCode=46B8C7845ECCEA99E0EF)
 
 <details>

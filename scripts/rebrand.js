@@ -253,6 +253,10 @@ const rebrandFn = async () => {
     JSON.stringify(newConfig, null, 2),
   );
 
+  console.log("\x1b[32m", "re-installing dependencies after updates...");
+  // reinstall dependencies --> this will update the pnpm-lock file as well which we need to add to commit
+  execSync("pnpm i");
+
   execSync(
     'git add . && git commit -m "Cleaned up features 💖 <a href="https://mayank-chaudhari.vercel.app" target="_blank">Mayank Kumar Chaudhari</a> [skip ci]"',
   );

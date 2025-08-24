@@ -9,7 +9,7 @@ const config = require("./rebrand.config.json");
 const isFirstRebrand = config.repo === "turborepo-template" && config.owner === "react18-tools";
 
 const ownerAndRepo = execSync(
-  'git remote get-url --push origin | sed "s/https:\\/\\/github.com\\///" | sed "s/https:\\/\\/[^@]*@github.com\\///" | sed "s/.git//"',
+  'git remote get-url --push origin | sed "s/https:\\/\\/github\\.com\\///" | sed "s/https:\\/\\/[^@]*@github\\.com\\///" | sed "s/\\.git//"',
 )
   .toString()
   .trim();
@@ -36,8 +36,8 @@ const rebrandFn = async () => {
     `rm .tkb
      mv ./scripts/.tkb ./.tkb
      rm -rf ./docs
-     sed -i '/.turborepo-template.lst/d' .github/workflows/upgrade.yml
-     sed -i '/.turborepo-template.lst/d' .github/workflows/docs.yml`
+     sed -i '/\\.turborepo-template\\.lst/d' .github/workflows/upgrade.yml
+     sed -i '/\\.turborepo-template\\.lst/d' .github/workflows/docs.yml`
       .split("\n")
       .forEach(cmd => execSync(cmd.trim()));
   }
@@ -218,11 +218,11 @@ const rebrandFn = async () => {
       dirOrFile => execSync("rm -rf " + dirOrFile),
     );
     // update vitest scripts
-    execSync(`sed -i -e 's/"src\\/\\*\\*\\/index.ts", //' lib/vitest.config.mts`);
+    execSync(`sed -i -e 's/"src\\/\\*\\*\\/index\\.ts", //' lib/vitest.config.mts`);
 
     // update docs config if docs is there
     if (!feats.includes("Docs")) {
-      execSync(`sed -i -e 's/"\\*\\*\\/index.ts", //' typedoc.config.js`);
+      execSync(`sed -i -e 's/"\\*\\*\\/index\\.ts", //' typedoc.config.js`);
     }
   }
 

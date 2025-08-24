@@ -31,7 +31,7 @@
     "turborepo-template-upgrade": "^0.2.2",
     "typedoc": "^0.28.10",
     "typedoc-plugin-markdown": "^4.8.1",
-    "typedoc-plugin-mdn-links": "^5.0.8",
+    "typedoc-plugin-mdn-links": "^5.0.9",
     "typedoc-plugin-missing-exports": "^4.1.0",
     "typedoc-plugin-rename-defaults": "^0.7.3"
   },

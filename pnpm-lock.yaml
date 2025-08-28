@@ -37,8 +37,8 @@ importers:
         specifier: ^2.5.6
         version: 2.5.6
       turborepo-template-upgrade:
-        specifier: ^0.2.2
-        version: 0.2.2
+        specifier: ^0.3.3
+        version: 0.3.3(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
       typedoc:
         specifier: ^0.28.11
         version: 0.28.11(typescript@5.9.2)
@@ -193,8 +193,8 @@ importers:
         specifier: ^19.1.8
         version: 19.1.8(@types/react@19.1.12)
       '@vitejs/plugin-react':
-        specifier: ^5.0.1
-        version: 5.0.1(vite@7.1.3(@types/node@24.3.0)(sass@1.91.0)(yaml@2.8.1))
+        specifier: ^5.0.2
+        version: 5.0.2(vite@7.1.3(@types/node@24.3.0)(sass@1.91.0)(yaml@2.8.1))
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
@@ -230,8 +230,8 @@ importers:
         specifier: ^19.1.8
         version: 19.1.8(@types/react@19.1.12)
       '@vitejs/plugin-react':
-        specifier: ^5.0.1
-        version: 5.0.1(vite@7.1.3(@types/node@24.3.0)(sass@1.91.0)(yaml@2.8.1))
+        specifier: ^5.0.2
+        version: 5.0.2(vite@7.1.3(@types/node@24.3.0)(sass@1.91.0)(yaml@2.8.1))
       '@vitest/coverage-v8':
         specifier: ^3.2.4
         version: 3.2.4(vitest@3.2.4(@types/debug@4.1.12)(@types/node@24.3.0)(happy-dom@17.4.7)(jsdom@26.1.0)(sass@1.91.0)(yaml@2.8.1))
@@ -383,8 +383,8 @@ importers:
         specifier: ^19.1.8
         version: 19.1.8(@types/react@19.1.12)
       '@vitejs/plugin-react':
-        specifier: ^5.0.1
-        version: 5.0.1(vite@7.1.3(@types/node@24.3.0)(sass@1.91.0)(yaml@2.8.1))
+        specifier: ^5.0.2
+        version: 5.0.2(vite@7.1.3(@types/node@24.3.0)(sass@1.91.0)(yaml@2.8.1))
       '@vitest/coverage-v8':
         specifier: ^3.2.4
         version: 3.2.4(vitest@3.2.4(@types/debug@4.1.12)(@types/node@24.3.0)(happy-dom@17.4.7)(jsdom@26.1.0)(sass@1.91.0)(yaml@2.8.1))
@@ -1404,8 +1404,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@rolldown/pluginutils@1.0.0-beta.32':
-    resolution: {integrity: sha512-QReCdvxiUZAPkvp1xpAg62IeNzykOFA6syH2CnClif4YmALN1XKpB39XneL80008UbtMShthSVDKmrx05N1q/g==}
+  '@rolldown/pluginutils@1.0.0-beta.34':
+    resolution: {integrity: sha512-LyAREkZHP5pMom7c24meKmJCdhf2hEyvam2q0unr3or9ydwDL+DJ8chTF6Av/RFPb3rH8UFBdMzO5MxTZW97oA==}
 
   '@rollup/rollup-android-arm-eabi@4.49.0':
     resolution: {integrity: sha512-rlKIeL854Ed0e09QGYFlmDNbka6I3EQFw7iZuugQjMb11KMpJCLPFL4ZPbMfaEhLADEL1yx0oujGkBQ7+qW3eA==}
@@ -1836,8 +1836,8 @@ packages:
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
 
-  '@vitejs/plugin-react@5.0.1':
-    resolution: {integrity: sha512-DE4UNaBXwtVoDJ0ccBdLVjFTWL70NRuWNCxEieTI3lrq9ORB9aOCQEKstwDXBl87NvFdbqh/p7eINGyj0BthJA==}
+  '@vitejs/plugin-react@5.0.2':
+    resolution: {integrity: sha512-tmyFgixPZCx2+e6VO9TNITWcCQl8+Nl/E8YbAyPVv85QCc7/A3JrdfG2A8gIzvVhWuzMOVrFW1aReaNxrI6tbw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
@@ -2474,8 +2474,8 @@ packages:
     resolution: {integrity: sha512-BS8PfmtDGnrgYdOonGZQdLZslWIeCGFP9tpan0hi1Co2Zr2NKADsvGYA8XxuG/4UWgJ6Cjtv+YJnB6MM69QGlQ==}
     engines: {node: '>= 0.4'}
 
-  dayjs@1.11.14:
-    resolution: {integrity: sha512-E8fIdSxUlyqSA8XYGnNa3IkIzxtEmFjI+JU/6ic0P1zmSqyL6HyG5jHnpPjRguDNiaHLpfvHKWFiohNsJLqcJQ==}
+  dayjs@1.11.15:
+    resolution: {integrity: sha512-MC+DfnSWiM9APs7fpiurHGCoeIx0Gdl6QZBy+5lu8MbYKN5FZEXqOgrundfibdfhGZ15o9hzmZ2xJjZnbvgKXQ==}
 
   debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -2957,6 +2957,30 @@ packages:
   get-symbol-description@1.1.0:
     resolution: {integrity: sha512-w9UMqWwJxHNOvoNzSJ2oPF5wvYcvP7jUvYzhp67yEhTi17ZDBBC1z9pTdGuzjD+EFIqLSYRweZjqfiPzQ06Ebg==}
     engines: {node: '>= 0.4'}
+
+  git-json-resolver@0.1.3:
+    resolution: {integrity: sha512-DJv/sIzRxzXggfmrgU+m48Vtrf4apWtAKUn0AeLaG40syiaCmQaoRBxqW6CExgmtCsf/8HlxYtQoE78hp83SqQ==}
+    hasBin: true
+    peerDependencies:
+      fast-xml-parser: ^5.2.5
+      json5: ^2.2.3
+      micromatch: ^4.0.8
+      picomatch: ^4.0.3
+      smol-toml: ^1.4.2
+      yaml: ^2.8.1
+    peerDependenciesMeta:
+      fast-xml-parser:
+        optional: true
+      json5:
+        optional: true
+      micromatch:
+        optional: true
+      picomatch:
+        optional: true
+      smol-toml:
+        optional: true
+      yaml:
+        optional: true
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -4940,8 +4964,8 @@ packages:
     resolution: {integrity: sha512-gxToHmi9oTBNB05UjUsrWf0OyN5ZXtD0apOarC1KIx232Vp3WimRNy3810QzeNSgyD5rsaIDXlxlbnOzlouo+w==}
     hasBin: true
 
-  turborepo-template-upgrade@0.2.2:
-    resolution: {integrity: sha512-58jlCk+KWn+p4Kd4qsOnwA14S2t8ACLlfY/JVjl0ntdc+Ky1lc8mLxUQbRUz31Nu/QGW0RHZnfVBTaJMa3x9ig==}
+  turborepo-template-upgrade@0.3.3:
+    resolution: {integrity: sha512-+ev912/JJ8BJjLj0EGtrJgGHgg9lfJEMSGOFSNsHfAoGWC7fvE3xmGrO2tI68zX6yK6m+hRn5ivg/iF7ar4J3A==}
     hasBin: true
 
   type-check@0.4.0:
@@ -6273,7 +6297,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@rolldown/pluginutils@1.0.0-beta.32': {}
+  '@rolldown/pluginutils@1.0.0-beta.34': {}
 
   '@rollup/rollup-android-arm-eabi@4.49.0':
     optional: true
@@ -6753,12 +6777,12 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vitejs/plugin-react@5.0.1(vite@7.1.3(@types/node@24.3.0)(sass@1.91.0)(yaml@2.8.1))':
+  '@vitejs/plugin-react@5.0.2(vite@7.1.3(@types/node@24.3.0)(sass@1.91.0)(yaml@2.8.1))':
     dependencies:
       '@babel/core': 7.28.3
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.3)
       '@babel/plugin-transform-react-jsx-source': 7.27.1(@babel/core@7.28.3)
-      '@rolldown/pluginutils': 1.0.0-beta.32
+      '@rolldown/pluginutils': 1.0.0-beta.34
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
       vite: 7.1.3(@types/node@24.3.0)(sass@1.91.0)(yaml@2.8.1)
@@ -7474,7 +7498,7 @@ snapshots:
       es-errors: 1.3.0
       is-data-view: 1.0.2
 
-  dayjs@1.11.14: {}
+  dayjs@1.11.15: {}
 
   debug@2.6.9:
     dependencies:
@@ -8114,6 +8138,13 @@ snapshots:
       call-bound: 1.0.4
       es-errors: 1.3.0
       get-intrinsic: 1.3.0
+
+  git-json-resolver@0.1.3(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
+    optionalDependencies:
+      json5: 2.2.3
+      micromatch: 4.0.8
+      picomatch: 4.0.3
+      yaml: 2.8.1
 
   glob-parent@5.1.2:
     dependencies:
@@ -8994,7 +9025,7 @@ snapshots:
       d3: 7.9.0
       d3-sankey: 0.12.3
       dagre-d3-es: 7.0.11
-      dayjs: 1.11.14
+      dayjs: 1.11.15
       dompurify: 3.2.6
       katex: 0.16.22
       khroma: 2.1.0
@@ -10499,7 +10530,16 @@ snapshots:
       turbo-windows-64: 2.5.6
       turbo-windows-arm64: 2.5.6
 
-  turborepo-template-upgrade@0.2.2: {}
+  turborepo-template-upgrade@0.3.3(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
+    dependencies:
+      git-json-resolver: 0.1.3(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
+    transitivePeerDependencies:
+      - fast-xml-parser
+      - json5
+      - micromatch
+      - picomatch
+      - smol-toml
+      - yaml
 
   type-check@0.4.0:
     dependencies:

@@ -13,7 +13,7 @@ nav_order: 13
 
 > **Bars2**(`props`: [`BaseProps`](../../common/base/base.md#baseprops)): `Element`
 
-Defined in: [server/bars/bars2/bars2.tsx:10](https://github.com/react18-tools/turborepo-template/blob/57118deff2892490905a199a01dddeb79459d676/lib/src/server/bars/bars2/bars2.tsx#L10)
+Defined in: [server/bars/bars2/bars2.tsx:10](https://github.com/react18-tools/turborepo-template/blob/9541d8e53c4139b35baaa7e4953b85a9913feed4/lib/src/server/bars/bars2/bars2.tsx#L10)
 
 A simple loader with 3 dots.
 

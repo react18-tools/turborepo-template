@@ -37,8 +37,8 @@ importers:
         specifier: ^2.5.6
         version: 2.5.6
       turborepo-template-upgrade:
-        specifier: ^0.3.12
-        version: 0.3.12(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
+        specifier: ^0.5.0
+        version: 0.5.0(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
       typedoc:
         specifier: ^0.28.11
         version: 0.28.11(typescript@5.9.2)
@@ -2958,8 +2958,8 @@ packages:
     resolution: {integrity: sha512-w9UMqWwJxHNOvoNzSJ2oPF5wvYcvP7jUvYzhp67yEhTi17ZDBBC1z9pTdGuzjD+EFIqLSYRweZjqfiPzQ06Ebg==}
     engines: {node: '>= 0.4'}
 
-  git-json-resolver@0.1.8:
-    resolution: {integrity: sha512-O0E7XJt0Z5AhOoZuruv8SZ2+iJE9xOmQCesQii6qXvuHCGg3SfRkth3PFm4QCmJqXuGTEObhk4xhkAWHlwQyJw==}
+  git-json-resolver@1.1.0:
+    resolution: {integrity: sha512-ptdJWsnmyZXSXuiC7Jr2AOzsdxvRYMP+pO7MYdBrZbIEvnUHHFXJNSYKkgTIeOCnj5jn6I9y7qnfXHbPwjTjLg==}
     hasBin: true
     peerDependencies:
       fast-xml-parser: ^5.2.5
@@ -4964,8 +4964,8 @@ packages:
     resolution: {integrity: sha512-gxToHmi9oTBNB05UjUsrWf0OyN5ZXtD0apOarC1KIx232Vp3WimRNy3810QzeNSgyD5rsaIDXlxlbnOzlouo+w==}
     hasBin: true
 
-  turborepo-template-upgrade@0.3.12:
-    resolution: {integrity: sha512-jvNJJUKLGqnBPsStQCIOhpMAoZNftPIqBPcd1VaR1hP0ONKNgU++SZ07n+xfxSGKHjkc7SvZxfz3+6paynUAqg==}
+  turborepo-template-upgrade@0.5.0:
+    resolution: {integrity: sha512-RsA7fPkOVfzAp+B67AeSOFolqsAL7UoxkqRaZvczrmfOIf0X/yxkPYkNb29X5vdjFGDFjRXZCQK56F/LpOWyiQ==}
     hasBin: true
 
   type-check@0.4.0:
@@ -8139,7 +8139,7 @@ snapshots:
       es-errors: 1.3.0
       get-intrinsic: 1.3.0
 
-  git-json-resolver@0.1.8(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
+  git-json-resolver@1.1.0(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
     optionalDependencies:
       json5: 2.2.3
       micromatch: 4.0.8
@@ -10530,9 +10530,9 @@ snapshots:
       turbo-windows-64: 2.5.6
       turbo-windows-arm64: 2.5.6
 
-  turborepo-template-upgrade@0.3.12(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
+  turborepo-template-upgrade@0.5.0(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
     dependencies:
-      git-json-resolver: 0.1.8(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
+      git-json-resolver: 1.1.0(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
     transitivePeerDependencies:
       - fast-xml-parser
       - json5

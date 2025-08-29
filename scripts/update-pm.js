@@ -5,6 +5,7 @@ const packageJSON = require("../package.json");
 
 // Update pnpm to latest version
 try {
+  execSync("pnpm turbo telemetry disable");
   execSync("pnpm self-update");
 } catch (err) {
   console.warn("Could not update pnpm: ", err);

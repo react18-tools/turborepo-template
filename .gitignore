@@ -15,3 +15,4 @@ coverage
 # temporary files
 tsup.config.bundled*
 *.patch
+.merge-backups

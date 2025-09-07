@@ -37,8 +37,8 @@ importers:
         specifier: ^2.5.6
         version: 2.5.6
       turborepo-template-upgrade:
-        specifier: ^0.5.9
-        version: 0.5.9(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
+        specifier: ^0.6.1
+        version: 0.6.1(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
       typedoc:
         specifier: ^0.28.12
         version: 0.28.12(typescript@5.9.2)
@@ -340,8 +340,8 @@ importers:
         specifier: ^0.3.1
         version: 0.3.1
       mdast2docx:
-        specifier: ^1.4.1
-        version: 1.4.1(remark-math@6.0.0)
+        specifier: ^1.4.2
+        version: 1.4.2(remark-math@6.0.0)
       nextjs-darkmode:
         specifier: ^1.0.10
         version: 1.0.10(@types/react@19.1.12)(react@19.1.1)
@@ -2960,8 +2960,8 @@ packages:
     resolution: {integrity: sha512-w9UMqWwJxHNOvoNzSJ2oPF5wvYcvP7jUvYzhp67yEhTi17ZDBBC1z9pTdGuzjD+EFIqLSYRweZjqfiPzQ06Ebg==}
     engines: {node: '>= 0.4'}
 
-  git-json-resolver-semver@0.0.2:
-    resolution: {integrity: sha512-U/dQf5tI5MVj9MruxMd7KttnhkMKMc0B3ofknu6oqmfCQFzNyW49AeyJ1Ne+KzmvOciQpS3fdOVX3FosSVCLpw==}
+  git-json-resolver-semver@1.0.0:
+    resolution: {integrity: sha512-mkT4B8LdrmyEFQj4J5mNgPu8/BQUQjd+GVUTxD/qASakf4fjvm/PvlRNxYVeq5L3ONzoVtLwb4vfEH3TcWOUTw==}
     peerDependencies:
       git-json-resolver: ^1.2.0
 
@@ -3680,8 +3680,8 @@ packages:
   mdast-util-to-string@4.0.0:
     resolution: {integrity: sha512-0H44vDimn51F0YwvxSJSm0eCDOJTRlmN0R1yBh4HLj9wiV1Dn0QoXGbvFAWj2hSItVTlCmBF1hqKlIyUBVFLPg==}
 
-  mdast2docx@1.4.1:
-    resolution: {integrity: sha512-A9Cxey+G8hMRkdUuMPNMg5yp09W3CQicLjd4TZMIOtCDQH6rm8FkADLH1c8Z189j/hGndhOozOGx3N+PnxIyYg==}
+  mdast2docx@1.4.2:
+    resolution: {integrity: sha512-F/vboGrVXjrQZ2eTipFixk4vSppADJx1ljWcCS8tQCuoA+/REB2BBwPh1/qjIXzXLe5L0osBhX7J1s1wgQGmPQ==}
 
   mdurl@2.0.0:
     resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
@@ -4795,8 +4795,8 @@ packages:
   tinyexec@1.0.1:
     resolution: {integrity: sha512-5uC6DDlmeqiOwCPmK9jMSdOuZTh8bU39Ys6yidB+UTt5hfZUPGAypSgFRiEp+jbi9qH40BLDvy85jIU88wKSqw==}
 
-  tinyglobby@0.2.14:
-    resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
+  tinyglobby@0.2.15:
+    resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
     engines: {node: '>=12.0.0'}
 
   tinypool@1.1.1:
@@ -4933,8 +4933,8 @@ packages:
     resolution: {integrity: sha512-gxToHmi9oTBNB05UjUsrWf0OyN5ZXtD0apOarC1KIx232Vp3WimRNy3810QzeNSgyD5rsaIDXlxlbnOzlouo+w==}
     hasBin: true
 
-  turborepo-template-upgrade@0.5.9:
-    resolution: {integrity: sha512-AKCnwoupjdPDspV4jcVUHBtOg3h7vw+sb7m7zrnWx3HfQpXS3wCUeFbYItkZKxtRbWGDUtv+yML0FYHHqtXHag==}
+  turborepo-template-upgrade@0.6.1:
+    resolution: {integrity: sha512-4qr1kyFxlChIutBmiD+pZMuBuToY0VtdfHLVApj1Caps0PEJseG1BM8UrUljmYNV7Ze5RgOX8UlVFi3H4VGrUA==}
     hasBin: true
 
   type-check@0.4.0:
@@ -8125,7 +8125,7 @@ snapshots:
       es-errors: 1.3.0
       get-intrinsic: 1.3.0
 
-  git-json-resolver-semver@0.0.2(git-json-resolver@1.3.5(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)):
+  git-json-resolver-semver@1.0.0(git-json-resolver@1.3.5(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)):
     dependencies:
       git-json-resolver: 1.3.5(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
 
@@ -8960,7 +8960,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
 
-  mdast2docx@1.4.1(remark-math@6.0.0):
+  mdast2docx@1.4.2(remark-math@6.0.0):
     dependencies:
       '@m2d/core': 1.5.0(docx@9.5.1)
       '@m2d/emoji': 0.1.3(docx@9.5.1)
@@ -10344,7 +10344,7 @@ snapshots:
 
   tinyexec@1.0.1: {}
 
-  tinyglobby@0.2.14:
+  tinyglobby@0.2.15:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
@@ -10422,7 +10422,7 @@ snapshots:
       source-map: 0.8.0-beta.0
       sucrase: 3.35.0
       tinyexec: 0.3.2
-      tinyglobby: 0.2.14
+      tinyglobby: 0.2.15
       tree-kill: 1.2.2
     optionalDependencies:
       postcss: 8.5.6
@@ -10460,10 +10460,10 @@ snapshots:
       turbo-windows-64: 2.5.6
       turbo-windows-arm64: 2.5.6
 
-  turborepo-template-upgrade@0.5.9(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
+  turborepo-template-upgrade@0.6.1(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
     dependencies:
       git-json-resolver: 1.3.5(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
-      git-json-resolver-semver: 0.0.2(git-json-resolver@1.3.5(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1))
+      git-json-resolver-semver: 1.0.0(git-json-resolver@1.3.5(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1))
     transitivePeerDependencies:
       - fast-xml-parser
       - json5
@@ -10704,7 +10704,7 @@ snapshots:
       picomatch: 4.0.3
       postcss: 8.5.6
       rollup: 4.50.0
-      tinyglobby: 0.2.14
+      tinyglobby: 0.2.15
     optionalDependencies:
       '@types/node': 24.3.1
       fsevents: 2.3.3
@@ -10730,7 +10730,7 @@ snapshots:
       std-env: 3.9.0
       tinybench: 2.9.0
       tinyexec: 0.3.2
-      tinyglobby: 0.2.14
+      tinyglobby: 0.2.15
       tinypool: 1.1.1
       tinyrainbow: 2.0.0
       vite: 7.1.4(@types/node@24.3.1)(sass@1.92.1)(yaml@2.8.1)

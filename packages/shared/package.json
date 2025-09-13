@@ -31,7 +31,7 @@
     "esbuild-plugin-rdi": "^0.0.0",
     "esbuild-plugin-react18": "^0.2.6",
     "esbuild-plugin-react18-css": "^0.0.4",
-    "jsdom": "^26.1.0",
+    "jsdom": "^27.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tsup": "^8.5.0",

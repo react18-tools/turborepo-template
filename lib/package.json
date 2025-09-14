@@ -171,13 +171,7 @@
   },
   "peerDependencies": {
     "@types/react": ">=16.8",
-    "next": ">=10",
     "react": ">=16.8"
-  },
-  "peerDependenciesMeta": {
-    "next": {
-      "optional": true
-    }
   },
   "funding": [
     {

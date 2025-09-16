@@ -12,7 +12,7 @@ nav_order: 7
 
 > **useLoader**(): \{ `loading`: `boolean`; `setLoading`: `SetStateAction`\<`boolean`\>; \}
 
-Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/3f54fcd3cca7108ddf0b3fd525691e79d57547e1/lib/src/hooks/use-loader.ts#L8)
+Defined in: [hooks/use-loader.ts:8](https://github.com/react18-tools/turborepo-template/blob/07213c92d57ced4d6fd3e265a89b945db6df059d/lib/src/hooks/use-loader.ts#L8)
 
 #### Returns
 

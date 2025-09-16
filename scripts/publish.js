@@ -75,10 +75,10 @@ try {
 
 try {
   // Publish canonical packages
-  execSync("node scripts/publish-canonical.js");
+  execSync("tsx scripts/publish-canonical.js");
 } catch {
   console.error("Failed to publish canonical packages");
 }
 
-execSync("node ./scripts/lite.js");
+execSync("tsx ./scripts/lite.js");
 execSync(`cd lib && pnpm build && npm publish ${provenance} --access public`);

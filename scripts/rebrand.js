@@ -94,7 +94,7 @@ const rebrandFn = async () => {
   );
 
   console.log("\x1b[32m", "rebranding...");
-  execSync("node ./scripts/rebrander.js", { stdio: "inherit" });
+  execSync("tsx ./scripts/rebrander.js", { stdio: "inherit" });
 
   console.log("\x1b[32m", "...");
   console.log("\x1b[32m", "...");

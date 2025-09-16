@@ -37,7 +37,7 @@ try {
   // empty
 }
 
-/** not requiring as require is cached by npm/node */
+/** not requiring as require is cached by npm */
 const NEW_VERSION = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, "..", "lib", "package.json")),
 ).version;
@@ -116,10 +116,10 @@ execSync(
 
 try {
   // Publish canonical packages
-  execSync("node scripts/publish-canonical.js");
+  execSync("tsx scripts/publish-canonical.js");
 } catch {
   console.error("Failed to publish canonical packages");
 }
 
-execSync("node ./scripts/lite.js");
+execSync("tsx ./scripts/lite.js");
 execSync(publishCmd + reTag.replace("@", "-lite@"));

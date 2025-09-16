@@ -5,15 +5,15 @@
     "build": "turbo build",
     "clean": "turbo clean",
     "dev": "turbo dev",
-    "doc": "node scripts/doc.js && typedoc && cp _config.yml docs && node scripts/add-frontmatter.mjs",
+    "doc": "tsx scripts/doc.js && typedoc && cp _config.yml docs && tsx scripts/add-frontmatter.mjs",
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,css,scss}\"",
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "sync": "turborepo-template-upgrade",
     "test": "turbo test",
     "typecheck": "turbo typecheck",
-    "preinstall": "node scripts/update-pm.js",
-    "rebrand": "node scripts/rebrand.js"
+    "preinstall": "tsx scripts/update-pm.js",
+    "rebrand": "tsx scripts/rebrand.js"
   },
   "pre-commit": [
     "lint:fix",
@@ -27,6 +27,7 @@
     "plop": "^4.0.2",
     "pre-commit": "^1.2.2",
     "prettier": "^3.6.2",
+    "tsx": "^4.20.5",
     "turbo": "^2.5.6",
     "turborepo-template-upgrade": "^0.6.1",
     "typedoc": "^0.28.13",
@@ -37,7 +38,7 @@
   },
   "packageManager": "pnpm@10.16.1",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "pnpm": {
     "overrides": {

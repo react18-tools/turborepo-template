@@ -25,5 +25,8 @@ const { owner, repo } = config;
 readMe = readMe.replace(new RegExp(`${owner}/${repo}`, "g"), tmp);
 readMe = readMe.replace(new RegExp(ref, "g"), packageJson.name);
 readMe = readMe.replace(new RegExp(tmp, "g"), `${owner}/${repo}`);
-readMe = readMe.replace(/## Want Lite Version(.|\\n|\\r)*You need `r18gs` as a peer-dependency/m, "");
+readMe = readMe.replace(
+  /## Want Lite Version(.|\\n|\\r)*You need `r18gs` as a peer-dependency/m,
+  "",
+);
 fs.writeFileSync(readMePath, readMe);

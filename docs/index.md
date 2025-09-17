@@ -75,20 +75,20 @@ You can import styles globally or within specific components.
 
 ```css
 /* globals.css */
-@import "react18-loaders/dist";
+@import "react18-loaders/styles";
 ```
 
 ```tsx
 // layout.tsx
-import "react18-loaders/dist/index.css";
+import "react18-loaders/index.css";
 ```
 
 For selective imports:
 
 ```css
 /* globals.css */
-@import "react18-loaders/dist/client"; /** required if you are using LoaderContainer */
-@import "react18-loaders/dist/server/bars/bars1";
+@import "react18-loaders/dist/client/index.css"; /** required if you are using LoaderContainer */
+@import "react18-loaders/dist/server/bars/bars1/index.css";
 ```
 
 ### Usage

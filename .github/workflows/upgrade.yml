@@ -15,10 +15,16 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
         with:
-          registry-url: https://registry.npmjs.org
+          version: 10
+          run_install: true
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
           node-version: 20
+          cache: "pnpm"
       - name: Setup Git
         run: |
           git config --global user.name "mayank1513"
@@ -26,8 +32,6 @@ jobs:
           git fetch
           git checkout main
           git pull
-      - run: npm i -g pnpm && pnpm i --no-frozen-lockfile
-        name: Install dependencies
       - run: git stash --include-untracked
         name: clean up working directory
       - run: pnpm upgrade

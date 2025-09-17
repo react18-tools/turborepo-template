@@ -4,6 +4,7 @@ import path from "path";
 import { prompt } from "enquirer";
 import { execSync } from "child_process";
 import config from "./rebrand.config.json";
+import rootPackageJSON from "../package.json";
 
 const isFirstRebrand = config.repo === "turborepo-template" && config.owner === "react18-tools";
 
@@ -177,10 +178,10 @@ const rebrandFn = async () => {
 
   Object.assign(newConfig, { removedFeatures: feats });
 
-  const rootPackageJSON = require("../package.json");
-
   if (feats.includes("Rebrander")) {
+    // @ts-expect-error -- allow delete
     delete rootPackageJSON.scripts.rebrand;
+    // @ts-expect-error -- allow delete
     delete rootPackageJSON.devDependencies.enquirer;
     ["./scripts/rebrand.ts", "./scripts/rebrander.ts"].forEach(dirOrfile =>
       execSync("rm -rf " + dirOrfile),
@@ -200,7 +201,9 @@ const rebrandFn = async () => {
   }
 
   if (feats.includes("Docs")) {
+    // @ts-expect-error -- allow delete
     delete rootPackageJSON.scripts.doc;
+    // @ts-expect-error -- allow delete
     delete rootPackageJSON.devDependencies["typedoc"];
     Object.keys(rootPackageJSON.devDependencies).forEach(dep => {
       if (dep.startsWith("typedoc-plugin-")) {
@@ -222,6 +225,7 @@ const rebrandFn = async () => {
   }
 
   if (feats.includes("Generators")) {
+    // @ts-expect-error -- allow delete
     delete rootPackageJSON.devDependencies.plop;
     ["./scripts/templates", "./scripts/hook.ts", "./scripts/rc.ts", "./plopfile.js"].forEach(
       dirOrFile => execSync("rm -rf " + dirOrFile),

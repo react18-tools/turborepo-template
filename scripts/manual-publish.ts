@@ -12,6 +12,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import updateSecurityMd from "./update-security-md";
+import { version as OLD_VERSION, name } from "../lib/package.json";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -21,7 +22,6 @@ const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH!;
 const isLatestRelease = BRANCH === DEFAULT_BRANCH || BRANCH.includes("release-");
 let tag = "";
 
-const { version: OLD_VERSION, name } = require("../lib/package.json");
 if (!isLatestRelease) {
   /** pre-release branch name should be the tag name (e.g., beta, canery, etc.) or tag name followed by a '-' and version or other specifiers. e.g. beta-2.0 */
   tag = BRANCH.split("-")[0];

@@ -1,6 +1,7 @@
 /** It is assumed that this is called only from the default branch. */
 import { execSync } from "child_process";
 import updateSecurityMd from "./update-security-md";
+import { version, name } from "../lib/package.json";
 
 const BRANCH = process.env.BRANCH!;
 
@@ -19,7 +20,6 @@ try {
   // no changesets to be applied
 }
 
-const { version: VERSION, name } = require("../lib/package.json");
 let LATEST_VERSION = "0.0.-1";
 
 try {
@@ -28,9 +28,9 @@ try {
   // empty
 }
 
-console.log({ VERSION, LATEST_VERSION });
+console.log({ version, LATEST_VERSION });
 
-const [newMajor, newMinor] = VERSION.split(".");
+const [newMajor, newMinor] = version.split(".");
 const [oldMajor, oldMinor] = LATEST_VERSION.split(".");
 
 const isPatch = newMajor === oldMajor && newMinor === oldMinor;
@@ -62,12 +62,12 @@ execSync(`cd lib && pnpm build && npm publish ${provenance} --access public`);
 /** Create GitHub release */
 try {
   execSync(
-    `gh release create ${VERSION} --generate-notes --latest -n "$(sed '1,/^## /d;/^## /,$d' lib/CHANGELOG.md)" --title "Release v${VERSION}"`,
+    `gh release create ${version} --generate-notes --latest -n "$(sed '1,/^## /d;/^## /,$d' lib/CHANGELOG.md)" --title "Release v${version}"`,
   );
 } catch {
   try {
     execSync(
-      `gh release create ${VERSION} --generate-notes --latest --title "Release v${VERSION}"`,
+      `gh release create ${version} --generate-notes --latest --title "Release v${version}"`,
     );
   } catch {
     // ignore

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
-// skipcq: JS-0258
-import { prompt } from "enquirer";
+import Enquirer from "enquirer";
+const { prompt } = Enquirer;
 import { execSync } from "child_process";
 import config from "./rebrand.config.json";
 import rootPackageJSON from "../package.json";

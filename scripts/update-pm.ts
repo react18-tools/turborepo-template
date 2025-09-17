@@ -1,7 +1,7 @@
-const { execSync } = require("child_process");
-const fs = require("fs");
-const path = require("path");
-const packageJSON = require("../package.json");
+import { execSync } from "child_process";
+import fs from "fs";
+import path from "path";
+import packageJSON from "../package.json";
 
 // Update pnpm to latest version
 try {

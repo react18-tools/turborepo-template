@@ -9,11 +9,12 @@
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,css,scss}\"",
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
+    "preinstall": "tsx scripts/update-pm.js",
+    "rebrand": "tsx scripts/rebrand.js",
     "sync": "turborepo-template-upgrade",
     "test": "turbo test",
     "typecheck": "turbo typecheck",
-    "preinstall": "tsx scripts/update-pm.js",
-    "rebrand": "tsx scripts/rebrand.js"
+    "upgrade": "tsx ./scripts/upgrade.js"
   },
   "pre-commit": [
     "lint:fix",

@@ -24,6 +24,11 @@ packageJSON.funding.unshift({
 });
 packageJSON.keywords = packageJSON.keywords.slice(2);
 
+// @ts-expect-error - allow delete
+delete packageJSON.exports["./dist/index.css"];
+// @ts-expect-error - allow delete
+delete packageJSON.exports["./dist"];
+
 fs.writeFileSync(
   path.resolve(rootDir, "lib", "package.json"),
   JSON.stringify(packageJSON, null, 2),

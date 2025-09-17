@@ -74,7 +74,7 @@ You can import styles globally or within specific components.
 
 ```tsx
 // layout.tsx
-import "react18-loaders/index.css";
+import "react18-loaders/styles";
 ```
 
 For selective imports:

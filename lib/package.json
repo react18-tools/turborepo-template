@@ -35,6 +35,7 @@
     "./dist/*/index.css": "./dist/*/index.css",
     "./index.css": "./dist/index.css",
     "./styles": "./dist/index.css",
+    "./dist/index.css": "./dist/index.css",
     "./dist": "./dist/index.css"
   },
   "scripts": {

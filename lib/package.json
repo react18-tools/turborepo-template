@@ -34,7 +34,8 @@
     },
     "./dist/*/index.css": "./dist/*/index.css",
     "./index.css": "./dist/index.css",
-    "./styles": "./dist/index.css"
+    "./styles": "./dist/index.css",
+    "./dist": "./dist/index.css"
   },
   "scripts": {
     "build": "tsup && tsc -p tsconfig-build.json && gzip -c dist/index.js | wc -c",

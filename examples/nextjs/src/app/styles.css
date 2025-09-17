@@ -1,7 +1,7 @@
 @import "nextjs-darkmode-lite/css";
 @import "@repo/shared/dist/global.css";
 @import "@repo/shared/dist";
-@import "react18-loaders/dist";
+@import "react18-loaders/styles";
 
 html {
   -webkit-text-size-adjust: 100%;

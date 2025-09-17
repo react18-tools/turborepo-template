@@ -39,7 +39,7 @@ jobs:
       # - name: Copy Readme file
       # run: cp ./README.md ./lib # will be uncommented while rebranding
       - name: Apply changesets, publish and create release, branches and tags
-        run: pnpm publish
+        run: pnpm release
         env:
           BRANCH: ${{ github.ref_name }}
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}

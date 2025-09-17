@@ -10,6 +10,7 @@
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "preinstall": "tsx scripts/update-pm.js",
+    "publish": "tsx ./scripts/publish.js",
     "rebrand": "tsx scripts/rebrand.js",
     "sync": "turborepo-template-upgrade",
     "test": "turbo test",

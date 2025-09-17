@@ -26,7 +26,7 @@ jobs:
           git fetch
           git checkout main
           git pull
-      - run: npm i -g pnpm && pnpm i --no-frozen-lockfile && pnpm i -g tsx
+      - run: npm i -g pnpm && pnpm i --no-frozen-lockfile && npm i -g tsx
         name: Install dependencies
       - run: git stash --include-untracked
         name: clean up working directory

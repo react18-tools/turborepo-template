@@ -15,7 +15,7 @@
     "sync": "turborepo-template-upgrade",
     "test": "turbo test",
     "typecheck": "turbo typecheck",
-    "upgrade": "tsx ./scripts/upgrade.js"
+    "upgrade": "tsx ./scripts/upgrade.ts"
   },
   "pre-commit": [
     "lint:fix",

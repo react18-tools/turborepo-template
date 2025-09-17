@@ -1,5 +1,13 @@
 # @repo/shared
 
+## 0.0.15
+
+### Patch Changes
+
+- f3f68cc: Remove next peed dep
+- Updated dependencies [f3f68cc]
+  - react18-loaders@1.1.8
+
 ## 0.0.14
 
 ### Patch Changes

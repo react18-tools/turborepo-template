@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.8
+
+### Patch Changes
+
+- f3f68cc: Remove next peed dep
+
 ## 1.1.7
 
 ### Patch Changes

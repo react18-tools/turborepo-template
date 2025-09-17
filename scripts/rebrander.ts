@@ -1,11 +1,8 @@
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 import { execSync } from "child_process";
 import config from "./rebrand.config.json";
 import packageJSON from "../lib/package.json";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const { packageName, owner, repo, title } = config;
 

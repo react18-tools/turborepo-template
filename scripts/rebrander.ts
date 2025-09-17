@@ -1,7 +1,13 @@
-const fs = require("fs");
-const path = require("path");
-const { packageName, owner, repo, title } = require("./rebrand.config.json");
-const packageJSON = require("../lib/package.json");
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import { execSync } from "child_process";
+import config from "./rebrand.config.json";
+import packageJSON from "../lib/package.json";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const { packageName, owner, repo, title } = config;
 
 const rootDir = process.cwd();
 const oldPkgName = packageJSON.name;
@@ -21,6 +27,7 @@ packageJSON.funding.unshift({
 });
 packageJSON.keywords = packageJSON.keywords.slice(2);
 
+// @ts-expect-error - ok
 packageJSON.exports = {
   ".": {
     types: "./dist/index.d.ts",
@@ -34,7 +41,7 @@ fs.writeFileSync(
   JSON.stringify(packageJSON, null, 2),
 );
 
-const updatePkgAndRemoveChangelogs = dir => {
+const updatePkgAndRemoveChangelogs = (dir: string) => {
   // update package.json for packages and examples
   const pkgPath = path.resolve(dir, "package.json");
   const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"));
@@ -86,7 +93,7 @@ const pageCode = fs.readFileSync(pageFilePath, "utf-8").replace("React 18 Loader
 fs.writeFileSync(pageFilePath, pageCode);
 
 // Update TODO.md
-const touchupTodo = content =>
+const touchupTodo = (content: string) =>
   content
     .replace(
       "[repo settings]",
@@ -121,7 +128,7 @@ fs.writeFileSync(
 // Update workflows
 const workflowsPath = path.resolve(rootDir, ".github", "workflows");
 /** Update publish and manual-publish workflows */
-const updatePublishFlow = name => {
+const updatePublishFlow = (name: string) => {
   const publishWorkflowPath = path.resolve(workflowsPath, name);
   const publishWorkflow = fs
     .readFileSync(publishWorkflowPath, "utf-8")
@@ -151,8 +158,6 @@ fs.writeFileSync(
   secFile,
   fs.readFileSync(secFile, "utf-8").replace(`${oldOwner}/${oldRepo}`, `${owner}/${repo}`),
 );
-// clean up
-const { execSync } = require("child_process");
 
 // update typedoc config
 execSync(`sed -i -e 's/name:.*/name: "${title.replace(/\//g, "\\/")}",/' typedoc.config.js`);

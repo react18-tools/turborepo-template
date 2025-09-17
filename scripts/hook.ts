@@ -1,16 +1,26 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import type { ActionType } from "plop";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const __dir = path.resolve(__dirname, "..");
 const TEMPLATE_DIR = "scripts/templates/";
 
+interface InquirerDataType {
+  pkgPath: string;
+  name: string;
+  description: string;
+}
+
 /**
  * Gets actions based on the provided data.
- * @param {InquirerDataType} data - Input data.
- * @returns {import('plop').ActionType[]} Actions.
+ * @param data - Input data.
+ * @returns Actions.
  */
-function getActions(data) {
-  const actions = [];
+function getActions(data: InquirerDataType): ActionType[] {
+  const actions: ActionType[] = [];
   if (!fs.existsSync(path.resolve(__dir, `${data.pkgPath}/src/hooks`, "index.ts"))) {
     actions.push({
       type: "add",
@@ -37,7 +47,7 @@ function getActions(data) {
   return actions;
 }
 
-module.exports = {
+export default {
   description: "Add a new React hook.",
   prompts: [
     {
@@ -58,5 +68,5 @@ module.exports = {
       message: "Describe your custom hook. (This will be added as js-doc comment.)",
     },
   ],
-  actions: data => (data ? getActions(data) : []),
+  actions: (data: InquirerDataType) => (data ? getActions(data) : []),
 };

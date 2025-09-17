@@ -7,12 +7,16 @@
 /** Let the following error be thrown by npm. There are situations where publish could have failed for different reasons. */
 // throws an exception if process.env.oldv === process.env.v The library version is not up to date, error(" Not able to release to the same version.
 
-const { execSync } = require("child_process");
-const fs = require("fs");
-const path = require("path");
+import { execSync } from "child_process";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import updateSecurityMd from "./update-security-md";
 
-const BRANCH = process.env.BRANCH;
-const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH;
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const BRANCH = process.env.BRANCH!;
+const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH!;
 
 const isLatestRelease = BRANCH === DEFAULT_BRANCH || BRANCH.includes("release-");
 let tag = "";
@@ -39,7 +43,7 @@ try {
 
 /** not requiring as require is cached by npm */
 const NEW_VERSION = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, "..", "lib", "package.json")),
+  fs.readFileSync(path.resolve(__dirname, "..", "lib", "package.json"), "utf8"),
 ).version;
 
 const [newMajor, newMinor] = NEW_VERSION.split(".");
@@ -55,7 +59,7 @@ if (isNotPatch && BRANCH === DEFAULT_BRANCH) {
   } catch (e) {
     console.log({ e });
   }
-  require("./update-security-md")(`${newMajor}.${newMinor}`, `${oldMajor}.${oldMinor}`);
+  updateSecurityMd(`${newMajor}.${newMinor}`, `${oldMajor}.${oldMinor}`);
   /** Create new release branch for every Major or Minor release */
   const releaseBranch = `release-${newMajor}.${newMinor}`;
   execSync(`git checkout -b ${releaseBranch} && git push origin ${releaseBranch}`);
@@ -91,8 +95,8 @@ try {
   // empty
 }
 
-const latest = LATEST_VERSION.split(".").map(parseInt);
-const current = NEW_VERSION.split(".").map(parseInt);
+const latest = LATEST_VERSION.split(".").map(Number);
+const current = NEW_VERSION.split(".").map(Number);
 
 let isLatest = false;
 
@@ -116,10 +120,10 @@ execSync(
 
 try {
   // Publish canonical packages
-  execSync("tsx scripts/publish-canonical.js");
+  execSync("tsx scripts/publish-canonical.ts");
 } catch {
   console.error("Failed to publish canonical packages");
 }
 
-execSync("tsx ./scripts/lite.js");
+execSync("tsx ./scripts/lite.ts");
 execSync(publishCmd + reTag.replace("@", "-lite@"));

@@ -1,7 +1,8 @@
 /** It is assumed that this is called only from the default branch. */
-const { execSync } = require("child_process");
+import { execSync } from "child_process";
+import updateSecurityMd from "./update-security-md";
 
-const BRANCH = process.env.BRANCH;
+const BRANCH = process.env.BRANCH!;
 
 // Apply changesets if any -- e.g., coming from pre-release branches
 try {
@@ -44,7 +45,7 @@ if (isPatch) {
   } catch {}
 } else {
   try {
-    require("./update-security-md")(`${newMajor}.${newMinor}`, `${oldMajor}.${oldMinor}`);
+    updateSecurityMd(`${newMajor}.${newMinor}`, `${oldMajor}.${oldMinor}`);
     /** Create new release branch for every Major or Minor release */
     execSync(`git checkout -b ${releaseBranch} && git push origin ${releaseBranch}`);
   } catch (err) {
@@ -75,10 +76,10 @@ try {
 
 try {
   // Publish canonical packages
-  execSync("tsx scripts/publish-canonical.js");
+  execSync("tsx scripts/publish-canonical.ts");
 } catch {
   console.error("Failed to publish canonical packages");
 }
 
-execSync("tsx ./scripts/lite.js");
+execSync("tsx ./scripts/lite.ts");
 execSync(`cd lib && pnpm build && npm publish ${provenance} --access public`);

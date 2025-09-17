@@ -1,6 +1,6 @@
-const { execSync } = require("child_process");
+import { execSync } from "child_process";
 
-module.exports = (newMajor_minor, oldMajor_minor) => {
+export default (newMajor_minor: string, oldMajor_minor: string) => {
   try {
     /** Update SECURITY.md */
     execSync(

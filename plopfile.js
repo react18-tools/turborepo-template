@@ -2,9 +2,12 @@
  * Generator function to add a new React component to the internal UI library.
  * @param {import('plop').NodePlopAPI} plop - Plop API.
  */
-function generator(plop) {
-  plop.setGenerator("rc", require("./scripts/rc"));
-  plop.setGenerator("hook", require("./scripts/hook"));
+async function generator(plop) {
+  const rc = await import("./scripts/rc.ts");
+  const hook = await import("./scripts/hook.ts");
+  
+  plop.setGenerator("rc", rc.default);
+  plop.setGenerator("hook", hook.default);
 }
 
 module.exports = generator;

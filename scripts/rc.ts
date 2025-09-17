@@ -1,5 +1,9 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import type { ActionType } from "plop";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const __dir = path.resolve(__dirname, "..");
 const TEMPLATE_DIR = "scripts/templates/";
@@ -13,14 +17,22 @@ const TEMPLATE_DIR = "scripts/templates/";
  * @property {boolean} createTestStub - Whether to generate a test stub file.
  * @property {string} description - Description of the component to be added as a JSDoc comment.
  */
+interface InquirerDataType {
+  pkgPath: string;
+  name: string;
+  isClient: boolean;
+  createScss: boolean;
+  createTestStub: boolean;
+  description: string;
+}
 
 /**
  * Adds export entries to package.json for a given target directory.
- * @param {Object} pkgJSON - The parsed contents of package.json.
- * @param {string} target - Relative path inside the `src` directory (e.g., "client/button").
- * @param {InquirerDataType} data - Collected CLI prompt data.
+ * @param pkgJSON - The parsed contents of package.json.
+ * @param target - Relative path inside the `src` directory (e.g., "client/button").
+ * @param data - Collected CLI prompt data.
  */
-function createExportsEntry(pkgJSON, target, data) {
+function createExportsEntry(pkgJSON: any, target: string, data: InquirerDataType) {
   const entry = {
     types: `./dist/${target}/index.d.ts`,
     import: `./dist/${target}/index.mjs`,
@@ -38,18 +50,18 @@ function createExportsEntry(pkgJSON, target, data) {
 
 /**
  * Ensures nested directories have `index.ts` files and proper exports.
- * @param {import('plop').ActionType[]} nestedRouteActions - Action array to be populated.
- * @param {string[]} rootSegments - Base path segments (e.g., `["lib", "src", "client"]`).
- * @param {string[]} currentDirSegments - Current nested path segments.
- * @param {InquirerDataType} data - CLI prompt data.
- * @param {Object} pkgJSON - Parsed package.json content.
+ * @param nestedRouteActions - Action array to be populated.
+ * @param rootSegments - Base path segments (e.g., `["lib", "src", "client"]`).
+ * @param currentDirSegments - Current nested path segments.
+ * @param data - CLI prompt data.
+ * @param pkgJSON - Parsed package.json content.
  */
 function updateIndexFilesIfNeeded(
-  nestedRouteActions,
-  rootSegments,
-  currentDirSegments,
-  data,
-  pkgJSON,
+  nestedRouteActions: ActionType[],
+  rootSegments: string[],
+  currentDirSegments: string[],
+  data: InquirerDataType,
+  pkgJSON: any,
 ) {
   const indexFilePath = path.resolve(__dir, ...rootSegments, ...currentDirSegments, "index.ts");
   const root = rootSegments.join("/");
@@ -78,10 +90,10 @@ function updateIndexFilesIfNeeded(
 
 /**
  * Converts a string to kebab-case format.
- * @param {string} str - Input string.
- * @returns {string} - Kebab-cased string.
+ * @param str - Input string.
+ * @returns - Kebab-cased string.
  */
-function toKebabCase(str) {
+function toKebabCase(str: string): string {
   return str
     .trim()
     .replace(/([a-z])([A-Z])/g, "$1-$2")
@@ -91,12 +103,15 @@ function toKebabCase(str) {
 
 /**
  * Initializes root-level files and exports for the target package.
- * @param {InquirerDataType} data - CLI input values.
- * @param {Object} pkgJSON - Parsed package.json.
- * @returns {{nestedRouteActions: import('plop').ActionType[], root: string}}
+ * @param data - CLI input values.
+ * @param pkgJSON - Parsed package.json.
+ * @returns
  */
-function createRootIndexAndDeclarations(data, pkgJSON) {
-  const nestedRouteActions = [];
+function createRootIndexAndDeclarations(
+  data: InquirerDataType,
+  pkgJSON: any,
+): { nestedRouteActions: ActionType[]; root: string } {
+  const nestedRouteActions: ActionType[] = [];
   const { isClient } = data;
   const srcDir = path.resolve(__dir, `${data.pkgPath}/src`);
   const [banner, target] = isClient ? ['"use client";\n\n', "client"] : ["", "server"];
@@ -151,11 +166,14 @@ function createRootIndexAndDeclarations(data, pkgJSON) {
 
 /**
  * Generates directory structure and nested index files.
- * @param {InquirerDataType} data
- * @param {Object} pkgJSON
- * @returns {{nestedRouteActions: import('plop').ActionType[], parentDir: string}}
+ * @param data
+ * @param pkgJSON
+ * @returns
  */
-function getNestedRouteActions(data, pkgJSON) {
+function getNestedRouteActions(
+  data: InquirerDataType,
+  pkgJSON: any,
+): { nestedRouteActions: ActionType[]; parentDir: string } {
   const name = data.name.replace(/\/+/g, "/").replace(/\/$/, "").trim();
   const { nestedRouteActions, root } = createRootIndexAndDeclarations(data, pkgJSON);
 
@@ -182,12 +200,12 @@ function getNestedRouteActions(data, pkgJSON) {
 
 /**
  * Adds or updates the component-level index file.
- * @param {InquirerDataType} data
- * @param {string} parentDir
- * @param {Object} pkgJSON
- * @returns {import('plop').ActionType}
+ * @param data
+ * @param parentDir
+ * @param pkgJSON
+ * @returns
  */
-function getIndexAction(data, parentDir, pkgJSON) {
+function getIndexAction(data: InquirerDataType, parentDir: string, pkgJSON: any): ActionType {
   const dirPath = path.resolve(__dir, parentDir, toKebabCase(data.name));
   const indFilePath = path.resolve(dirPath, "index.ts");
 
@@ -211,10 +229,10 @@ function getIndexAction(data, parentDir, pkgJSON) {
 
 /**
  * Main generator logic – builds all actions for Plop.
- * @param {InquirerDataType} data
- * @returns {import('plop').ActionType[]}
+ * @param data
+ * @returns
  */
-function getActions(data) {
+function getActions(data: InquirerDataType): ActionType[] {
   const packageJSONPath = path.resolve(__dirname, "..", data.pkgPath, "package.json");
   const pkgJSON = JSON.parse(fs.readFileSync(packageJSONPath, "utf8"));
   const { nestedRouteActions, parentDir } = getNestedRouteActions(data, pkgJSON);
@@ -222,7 +240,7 @@ function getActions(data) {
 
   fs.writeFileSync(packageJSONPath, JSON.stringify(pkgJSON, null, 2) + "\n");
 
-  const filesActions = [];
+  const filesActions: ActionType[] = [];
 
   if (data.createScss) {
     filesActions.push({
@@ -256,6 +274,7 @@ function getActions(data) {
     ...filesActions,
     {
       type: "append",
+      // @ts-expect-error -- improper type
       pattern: /(?<insertion> component exports)/,
       path: `${parentDir}index.ts`,
       template: 'export * from "./{{kebabCase name}}";',
@@ -266,7 +285,7 @@ function getActions(data) {
 /**
  * Plop generator configuration for adding React components.
  */
-module.exports = {
+export default {
   description: "Scaffold a new React component inside the selected package.",
   prompts: [
     {
@@ -304,5 +323,5 @@ module.exports = {
       message: "Provide a brief description (used in JSDoc comment):",
     },
   ],
-  actions: data => (data ? getActions(data) : []),
+  actions: (data: InquirerDataType) => (data ? getActions(data) : []),
 };

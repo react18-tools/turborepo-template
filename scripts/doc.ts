@@ -1,7 +1,10 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import featured from "./featured.json";
 
-const featured = require("./featured.json");
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 featured.sort((f1, f2) => f1.title.localeCompare(f2.title));
 
 const readMeLines = [

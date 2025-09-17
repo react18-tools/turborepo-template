@@ -64,7 +64,7 @@ This template offers the following pre-configured features. Additionally, your r
 
 This template is based on one of the official Turbo Repo starters but comes with a plethora of additional features specifically designed for developing and publishing JavaScript/TypeScript libraries, especially for React 18.
 
-To get started, simply click on the `"Use this template"` button to create a new repository based on this template, \*\*update [`sripts/rebrand.config.json`](./scripts/rebrand.config.json) if required, and install dependencies(Will automatically trigger rebrand.js). Customize it according to your requirements for your next JavaScript/TypeScript/React/Next.js library or project.
+To get started, simply click on the `"Use this template"` button to create a new repository based on this template, \*\*update [`sripts/rebrand.config.json`](./scripts/rebrand.config.json) if required, and install dependencies(Will automatically trigger rebrand.ts). Customize it according to your requirements for your next JavaScript/TypeScript/React/Next.js library or project.
 
 For detailed instructions and a checklist, please refer to [TODO.md](./TODO.md).
 

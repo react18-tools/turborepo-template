@@ -1,10 +1,9 @@
-const fs = require("node:fs");
-const path = require("node:path");
+import fs from "fs";
+import path from "path";
 // skipcq: JS-0258
-const { prompt } = require("enquirer");
-const { execSync } = require("child_process");
-
-const config = require("./rebrand.config.json");
+import { prompt } from "enquirer";
+import { execSync } from "child_process";
+import config from "./rebrand.config.json";
 
 const isFirstRebrand = config.repo === "turborepo-template" && config.owner === "react18-tools";
 
@@ -22,7 +21,7 @@ const packageName = isFirstRebrand ? repo : config.packageName || repo;
 
 /** avoiding IIFE as formettter keeps misformettting IIFEs */
 const rebrandFn = async () => {
-  const { shouldRebrand } = await prompt({
+  const { shouldRebrand } = await prompt<{ shouldRebrand: boolean }>({
     type: "confirm",
     name: "shouldRebrand",
     message: "Do you want to rebrand this repo?",
@@ -30,6 +29,8 @@ const rebrandFn = async () => {
   });
 
   if (!shouldRebrand) return;
+
+  const rootDir = process.cwd();
 
   // if .tkb is not moved - setup workflow was not triggered or could not create the required commit
   if (fs.existsSync(path.resolve(process.cwd(), "scripts", ".tkb"))) {
@@ -46,7 +47,13 @@ const rebrandFn = async () => {
     .split("-")
     .map(w => w[0].toUpperCase() + w.slice(1))
     .join(" ");
-  const { installExt, ...answers } = await prompt([
+  const { installExt, ...answers } = await prompt<{
+    packageName: string;
+    owner: string;
+    repo: string;
+    title: string;
+    installExt: boolean;
+  }>([
     {
       type: "input",
       name: "packageName",
@@ -94,18 +101,19 @@ const rebrandFn = async () => {
   );
 
   console.log("\x1b[32m", "rebranding...");
-  execSync("tsx ./scripts/rebrander.js", { stdio: "inherit" });
+  execSync("tsx ./scripts/rebrander.ts", { stdio: "inherit" });
 
   console.log("\x1b[32m", "...");
   console.log("\x1b[32m", "...");
   console.log("\x1b[32m", "...");
   console.log("\x1b[32m", "Clean up repo by removing things that you don't need");
 
-  const { pkgs } = await prompt({
+  const { pkgs } = await prompt<{ pkgs: string[] }>({
     type: "multiselect",
     name: "pkgs",
     message: "Select the examples or packages to remove",
     initial: ["examples/express", "packages/logger"],
+    // @ts-expect-error: not picked up correctly
     choices: [
       {
         name: "examples/express",
@@ -122,7 +130,7 @@ const rebrandFn = async () => {
 
   Object.assign(newConfig, { removedPackages: pkgs });
 
-  pkgs.forEach(pkg => execSync(`rm -rf ${pkg}`));
+  pkgs.forEach((pkg: string) => execSync(`rm -rf ${pkg}`));
 
   if (pkgs.length) {
     // packages might have already been deleted during previous rebrand
@@ -139,11 +147,12 @@ const rebrandFn = async () => {
   /**
    * feats: Rebrander, Docs
    */
-  const { feats } = await prompt({
+  const { feats } = await prompt<{ feats: string[] }>({
     type: "multiselect",
     name: "feats",
     message: "Select the features to remove - will help clean up and lighten the build ci/cd",
     initial: ["Rebrander"],
+    // @ts-expect-error: not picked up correctly
     choices: [
       {
         name: "Rebrander",
@@ -173,19 +182,19 @@ const rebrandFn = async () => {
   if (feats.includes("Rebrander")) {
     delete rootPackageJSON.scripts.rebrand;
     delete rootPackageJSON.devDependencies.enquirer;
-    ["./scripts/rebrand.js", "./scripts/rebrander.js"].forEach(dirOrfile =>
+    ["./scripts/rebrand.ts", "./scripts/rebrander.ts"].forEach(dirOrfile =>
       execSync("rm -rf " + dirOrfile),
     );
   } else {
     fs.writeFileSync(
-      path.resolve(rootDir, "scripts", "rebrander.js"),
+      path.resolve(rootDir, "scripts", "rebrander.ts"),
       fs
-        .readFileSync(path.resolve(rootDir, "scripts", "rebrander.js"), "utf-8")
+        .readFileSync(path.resolve(rootDir, "scripts", "rebrander.ts"), "utf-8")
         .replace("rm -rf ./lib/src/ && ", ""),
     );
 
     execSync(
-      `sed -i -e 's/const packageName = repo/const packageName = config.packageName/' scripts/rebrand.js`,
+      `sed -i -e 's/const packageName = repo/const packageName = config.packageName/' scripts/rebrand.ts`,
       { stdio: "inherit" },
     );
   }
@@ -201,7 +210,7 @@ const rebrandFn = async () => {
     [
       ".github/workflows/docs.yml",
       "./docs",
-      "./scripts/doc.js",
+      "./scripts/doc.ts",
       "./typedoc.config.js",
       "./tsconfig.docs.json",
     ].forEach(dirOrFile => execSync("rm -rf " + dirOrFile));
@@ -214,7 +223,7 @@ const rebrandFn = async () => {
 
   if (feats.includes("Generators")) {
     delete rootPackageJSON.devDependencies.plop;
-    ["./scripts/templates", "./scripts/hook.js", "./scripts/rc.js", "./plopfile.js"].forEach(
+    ["./scripts/templates", "./scripts/hook.ts", "./scripts/rc.ts", "./plopfile.js"].forEach(
       dirOrFile => execSync("rm -rf " + dirOrFile),
     );
     // update vitest scripts
@@ -227,8 +236,8 @@ const rebrandFn = async () => {
   }
 
   if (feats.includes("LiteMode")) {
-    ["./scripts/lite.js"].forEach(dirOrFile => execSync("rm -rf " + dirOrFile));
-    ["publish.js", "manual-publish.js"].forEach(src => {
+    ["./scripts/lite.ts"].forEach(dirOrFile => execSync("rm -rf " + dirOrFile));
+    ["publish.ts", "manual-publish.ts"].forEach(src => {
       const filePath = path.resolve(process.cwd(), "scripts", src);
       fs.writeFileSync(
         filePath,
@@ -237,7 +246,6 @@ const rebrandFn = async () => {
     });
   }
 
-  const rootDir = process.cwd();
   try {
     fs.writeFileSync(
       path.resolve(rootDir, "package.json"),

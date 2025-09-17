@@ -1,7 +1,9 @@
-const { execSync } = require("child_process");
+import { execSync } from "child_process";
 
 // Publish canonical packages
-[].forEach(pkg => {
+const canonicals: string[] = [];
+
+canonicals.forEach(pkg => {
   try {
     execSync(
       `sed -i -e "s/name.*/name\\": \\"${pkg.replace(/\//g, "\\\\/")}\\",/" lib/package.json`,

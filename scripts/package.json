@@ -1,7 +1,7 @@
 {
   "name": "@repo/scripts",
+  "type": "module",
   "version": "0.0.0",
   "description": "",
-  "main": "rebrand.js",
   "scripts": {}
 }

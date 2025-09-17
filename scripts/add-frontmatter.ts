@@ -63,7 +63,7 @@ function addFrontmatter(filePath, navOrder, parent = "") {
     "",
   ].filter(Boolean);
 
-  fs.writeFileSync(filePath, fmLines.join("\n") + "\n" + content, "utf8");
+  fs.writeFileSync(filePath, fmLines.join("\n") + "\n\n" + content, "utf8");
 }
 
 /**

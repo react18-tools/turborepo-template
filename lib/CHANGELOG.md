@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.10
+
+### Patch Changes
+
+- 94ba6ff: Export styles as /dist for backward compatibility
+
 ## 1.1.9
 
 ### Patch Changes

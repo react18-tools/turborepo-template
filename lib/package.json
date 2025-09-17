@@ -1,6 +1,6 @@
 {
   "name": "react18-loaders",
-  "author": "Mayank Kumar Chaudhari (https://mayank-chaudhari.vercel.app)",
+  "author": "Mayank Kumar Chaudhari (https:/mayank-chaudhari.vercel.app)",
   "private": false,
   "version": "1.1.8",
   "description": "A comprehensive library that unleashes the full potential of React 18 server components, providing customizable loading animation components alongside a fullscreen loader container. Designed to seamlessly integrate with React and Next.js.",
@@ -9,8 +9,8 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "repository": "github:react18-tools/turborepo-template",
-  "bugs": "https://github.com/react18-tools/turborepo-template/issues",
-  "homepage": "https://turborepo-template-three.vercel.app/",
+  "bugs": "https:/github.com/react18-tools/turborepo-template/issues",
+  "homepage": "https:/turborepo-template-three.vercel.app/",
   "sideEffects": false,
   "files": [
     "dist/**"
@@ -21,120 +21,19 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
-    "./client": {
-      "types": "./dist/client/index.d.ts",
-      "import": "./dist/client/index.mjs",
-      "require": "./dist/client/index.js"
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "import": "./dist/*/index.mjs",
+      "require": "./dist/*/index.js"
     },
-    "./dist/client": {
-      "types": "./dist/client/index.d.ts",
-      "import": "./dist/client/index.mjs",
-      "require": "./dist/client/index.js"
+    "./*/index.css": "./dist/*/index.css",
+    "./dist/*": {
+      "types": "./dist/*/index.d.ts",
+      "import": "./dist/*/index.mjs",
+      "require": "./dist/*/index.js"
     },
-    "./client/loader-container": {
-      "types": "./dist/client//loader-container/index.d.ts",
-      "import": "./dist/client//loader-container/index.mjs",
-      "require": "./dist/client//loader-container/index.js"
-    },
-    "./dist/client/loader-container": {
-      "types": "./dist/client//loader-container/index.d.ts",
-      "import": "./dist/client//loader-container/index.mjs",
-      "require": "./dist/client//loader-container/index.js"
-    },
-    "./server": {
-      "types": "./dist/server/index.d.ts",
-      "import": "./dist/server/index.mjs",
-      "require": "./dist/server/index.js"
-    },
-    "./dist/server": {
-      "types": "./dist/server/index.d.ts",
-      "import": "./dist/server/index.mjs",
-      "require": "./dist/server/index.js"
-    },
-    "./server/bars": {
-      "types": "./dist/server/bars/index.d.ts",
-      "import": "./dist/server/bars/index.mjs",
-      "require": "./dist/server/bars/index.js"
-    },
-    "./dist/server/bars": {
-      "types": "./dist/server/bars/index.d.ts",
-      "import": "./dist/server/bars/index.mjs",
-      "require": "./dist/server/bars/index.js"
-    },
-    "./server/bars/bars1": {
-      "types": "./dist/server/bars/bars1/index.d.ts",
-      "import": "./dist/server/bars/bars1/index.mjs",
-      "require": "./dist/server/bars/bars1/index.js"
-    },
-    "./dist/server/bars/bars1": {
-      "types": "./dist/server/bars/bars1/index.d.ts",
-      "import": "./dist/server/bars/bars1/index.mjs",
-      "require": "./dist/server/bars/bars1/index.js"
-    },
-    "./server/bars/2": {
-      "types": "./dist/server/bars/bars2/index.d.ts",
-      "import": "./dist/server/bars/bars2/index.mjs",
-      "require": "./dist/server/bars/bars2/index.js"
-    },
-    "./dist/server/bars/bars2": {
-      "types": "./dist/server/bars/bars2/index.d.ts",
-      "import": "./dist/server/bars/bars2/index.mjs",
-      "require": "./dist/server/bars/bars2/index.js"
-    },
-    "./server/common": {
-      "types": "./dist/server/common/index.d.ts",
-      "import": "./dist/server/common/index.mjs",
-      "require": "./dist/server/common/index.js"
-    },
-    "./dist/server/common": {
-      "types": "./dist/server/common/index.d.ts",
-      "import": "./dist/server/common/index.mjs",
-      "require": "./dist/server/common/index.js"
-    },
-    "./server/dots": {
-      "types": "./dist/server/dots/index.d.ts",
-      "import": "./dist/server/dots/index.mjs",
-      "require": "./dist/server/dots/index.js"
-    },
-    "./dist/server/dots": {
-      "types": "./dist/server/dots/index.d.ts",
-      "import": "./dist/server/dots/index.mjs",
-      "require": "./dist/server/dots/index.js"
-    },
-    "./server/dots1": {
-      "types": "./dist/server/dots1/index.d.ts",
-      "import": "./dist/server/dots1/index.mjs",
-      "require": "./dist/server/dots1/index.js"
-    },
-    "./dist/server/dots1": {
-      "types": "./dist/server/dots1/index.d.ts",
-      "import": "./dist/server/dots1/index.mjs",
-      "require": "./dist/server/dots1/index.js"
-    },
-    "./server/dots2": {
-      "types": "./dist/server/dots2/index.d.ts",
-      "import": "./dist/server/dots2/index.mjs",
-      "require": "./dist/server/dots2/index.js"
-    },
-    "./dist/server/dots2": {
-      "types": "./dist/server/dots2/index.d.ts",
-      "import": "./dist/server/dots2/index.mjs",
-      "require": "./dist/server/dots2/index.js"
-    },
-    "./hooks": {
-      "types": "./dist/hooks/index.d.ts",
-      "import": "./dist/hooks/index.mjs",
-      "require": "./dist/hooks/index.js"
-    },
-    "./dist/hooks": {
-      "types": "./dist/hooks/index.d.ts",
-      "import": "./dist/hooks/index.mjs",
-      "require": "./dist/hooks/index.js"
-    },
+    "./dist/*/index.css": "./dist/*/index.css",
     "./index.css": "./dist/index.css",
-    "./dist/index.css": "./dist/index.css",
-    "./dist": "./dist/index.css",
-    "./css": "./dist/index.css",
     "./styles": "./dist/index.css"
   },
   "scripts": {
@@ -176,11 +75,11 @@
   "funding": [
     {
       "type": "github",
-      "url": "https://github.com/sponsors/mayank1513"
+      "url": "https:/github.com/sponsors/mayank1513"
     },
     {
       "type": "individual",
-      "url": "https://pages.razorpay.com/mayank1513"
+      "url": "https:/pages.razorpay.com/mayank1513"
     }
   ],
   "keywords": [

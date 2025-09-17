@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.11
+
+### Patch Changes
+
+- 65723ce: Keep the dist/index.css export as well for backward compatibility
+
 ## 1.1.10
 
 ### Patch Changes

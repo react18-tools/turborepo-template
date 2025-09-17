@@ -26,12 +26,12 @@
       "import": "./dist/*/index.mjs",
       "require": "./dist/*/index.js"
     },
-    "./*/index.css": "./dist/*/index.css",
     "./dist/*": {
       "types": "./dist/*/index.d.ts",
       "import": "./dist/*/index.mjs",
       "require": "./dist/*/index.js"
     },
+    "./*/index.css": "./dist/*/index.css",
     "./dist/*/index.css": "./dist/*/index.css",
     "./index.css": "./dist/index.css",
     "./styles": "./dist/index.css",

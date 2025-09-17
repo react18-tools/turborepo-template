@@ -27,28 +27,6 @@ interface InquirerDataType {
 }
 
 /**
- * Adds export entries to package.json for a given target directory.
- * @param pkgJSON - The parsed contents of package.json.
- * @param target - Relative path inside the `src` directory (e.g., "client/button").
- * @param data - Collected CLI prompt data.
- */
-function createExportsEntry(pkgJSON: any, target: string, data: InquirerDataType) {
-  const entry = {
-    types: `./dist/${target}/index.d.ts`,
-    import: `./dist/${target}/index.mjs`,
-    require: `./dist/${target}/index.js`,
-  };
-  pkgJSON.exports = pkgJSON.exports ?? {};
-  pkgJSON.exports[`./${target}`] = entry;
-  pkgJSON.exports[`./dist/${target}`] = entry;
-
-  if (data.createScss) {
-    pkgJSON.exports[`./${target}/index.css`] = `./dist/${target}/index.css`;
-    pkgJSON.exports[`./dist/${target}/index.css`] = `./dist/${target}/index.css`;
-  }
-}
-
-/**
  * Ensures nested directories have `index.ts` files and proper exports.
  * @param nestedRouteActions - Action array to be populated.
  * @param rootSegments - Base path segments (e.g., `["lib", "src", "client"]`).
@@ -83,8 +61,6 @@ function updateIndexFilesIfNeeded(
       path: `${root + (length === 1 ? "" : `${currentDirSegments.slice(0, length - 1).join("/")}/`)}index.ts`,
       template: `export * from "./${currentDirSegments[length - 1]}"`,
     });
-
-    createExportsEntry(pkgJSON, dirPath.split("src/")[1], data);
   }
 }
 
@@ -124,22 +100,6 @@ function createRootIndexAndDeclarations(
       path: `${data.pkgPath}/src/index.ts`,
       template: `${banner}export * from "./${target}";\n`,
     });
-
-    pkgJSON.exports = {
-      ".": {
-        types: "./dist/index.d.ts",
-        import: "./dist/index.mjs",
-        require: "./dist/index.js",
-      },
-      ...(data.createScss
-        ? {
-            "./index.css": "./dist/index.css",
-            "./dist/index.css": "./dist/index.css",
-            "./styles": "./dist/index.css",
-            "./css": "./dist/index.css",
-          }
-        : {}),
-    };
   }
 
   // Create src/declaration.d.ts
@@ -158,7 +118,6 @@ function createRootIndexAndDeclarations(
       path: `${root}index.ts`,
       template: `${banner}/**\n * Server and client components must be exported from separate files.\n * This ensures correct behavior of the "use client" directive.\n */\n\n// ${target} component exports\n`,
     });
-    createExportsEntry(pkgJSON, target, data);
   }
 
   return { nestedRouteActions, root };
@@ -217,8 +176,6 @@ function getIndexAction(data: InquirerDataType, parentDir: string, pkgJSON: any)
       template: 'export * from "./{{kebabCase name}}";',
     };
   }
-
-  createExportsEntry(pkgJSON, dirPath.split("src")[1].slice(1).replace(/\\/g, "/"), data);
 
   return {
     type: "add",

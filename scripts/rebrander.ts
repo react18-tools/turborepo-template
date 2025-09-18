@@ -171,7 +171,7 @@ fs.writeFileSync(
 
 // update typedoc config
 execSync(
-  `sed -i -e 's/name:.*/name: "${title.replace(/\//g, "\\/")}",/' typedoc.config.js`,
+  `sed -i -e 's/name:.*/name: "${title.replace(/\\/g, "\\\\").replace(/\//g, "\\/")}",/' typedoc.config.js`,
 );
 
 // clean lib/src and craete commit

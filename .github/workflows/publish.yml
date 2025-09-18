@@ -35,16 +35,13 @@ jobs:
         run: |
           git config --global user.name "mayank1513"
           git config --global user.email "mayank.srmu@gmail.com"
-      - run: npm i -g pnpm && pnpm i && npm i -g tsx
-        name: Install dependencies
-        # fail and not publish if any of the unit tests are failing
       - name: Test
         run: pnpm test
         working-directory: ./lib
       # - name: Copy Readme file
       # run: cp ./README.md ./lib # will be uncommented while rebranding
       - name: Apply changesets, publish and create release, branches and tags
-        run: pnpm release
+        run: pnpm tsx ./scripts/publish.ts
         env:
           BRANCH: ${{ github.ref_name }}
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}

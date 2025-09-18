@@ -1,15 +1,20 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-import config from "./rebrand.config.json";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import packageJson from "../lib/package.json";
+import config from "./rebrand.config.json";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const ref = packageJson.name;
+// @ts-expect-error -- allow moving r18gs to peerDeps
 packageJson.peerDependencies.r18gs = `${packageJson.dependencies.r18gs.split(".")[0]}`;
+// @ts-expect-error -- allow deleting dep
 delete packageJson.dependencies.r18gs;
-if (Object.keys(packageJson.dependencies).length === 0) delete packageJson.dependencies;
+if (Object.keys(packageJson.dependencies).length === 0) {
+  // @ts-expect-error -- allow clean up
+  delete packageJson.dependencies;
+}
 packageJson.name = `${ref}-lite`;
 
 fs.writeFileSync(

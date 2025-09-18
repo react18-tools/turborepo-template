@@ -1,11 +1,17 @@
-import { HTMLProps, ReactNode, useCallback, useRef, useState } from "react";
-import styles from "./docs.module.scss";
-import readme from "../../../../../README.md?raw";
 import { Md } from "@m2d/react-markdown";
-import { toDocx } from "mdast2docx";
-import { AstArrayElement } from "@m2d/react-markdown/utils";
-import rehypeRaw from "rehype-raw";
+import type { AstArrayElement } from "@m2d/react-markdown/utils";
 import rebrandingConfig from "@repo/scripts/rebrand.config.json";
+import { toDocx } from "mdast2docx";
+import {
+  type HTMLProps,
+  type ReactNode,
+  useCallback,
+  useRef,
+  useState,
+} from "react";
+import rehypeRaw from "rehype-raw";
+import readme from "../../../../../README.md?raw";
+import styles from "./docs.module.scss";
 
 const { packageName } = rebrandingConfig;
 export interface DocsProps extends HTMLProps<HTMLDivElement> {
@@ -16,14 +22,14 @@ export interface DocsProps extends HTMLProps<HTMLDivElement> {
  * Renders readme
  */
 export const Docs = (props: DocsProps) => {
-  const className = [props.className, styles["docs"]].filter(Boolean).join(" ");
+  const className = [props.className, styles.docs].filter(Boolean).join(" ");
   const astRef = useRef<AstArrayElement[]>([]);
   const [error, setError] = useState("");
   const downloadAsDocx = useCallback(() => {
     const mdAst = astRef.current[0].mdast;
     if (mdAst) {
       toDocx(mdAst)
-        .then(docxBlob => {
+        .then((docxBlob) => {
           // download docx blob
           const url = URL.createObjectURL(docxBlob as Blob);
           const anchorElement = document.createElement("a");
@@ -34,7 +40,7 @@ export const Docs = (props: DocsProps) => {
           document.body.removeChild(anchorElement);
           URL.revokeObjectURL(url);
         })
-        .catch(err => {
+        .catch((err) => {
           console.error(err);
           setError(JSON.stringify(err, null, 2));
         });
@@ -45,7 +51,9 @@ export const Docs = (props: DocsProps) => {
 
   return (
     <div {...props} className={className} data-testid="docs">
-      <button onClick={downloadAsDocx}>Download as Docx</button>
+      <button onClick={downloadAsDocx} type="button">
+        Download as Docx
+      </button>
       {error && <pre>{error}</pre>}
       <Md astRef={astRef} rehypePlugins={[rehypeRaw]}>
         {readme}

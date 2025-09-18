@@ -7,9 +7,7 @@
     "start": "vite preview",
     "clean": "rm -rf dist",
     "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@repo/shared": "workspace:*",
@@ -21,7 +19,6 @@
     "react18-themes": "^3.2.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",

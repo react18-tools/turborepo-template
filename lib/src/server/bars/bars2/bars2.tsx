@@ -1,5 +1,5 @@
+import { Base, type BaseProps } from "../../common";
 import styles from "./bars2.module.scss";
-import { Base, BaseProps } from "../../common";
 
 /**
  * A simple loader with 3 dots.

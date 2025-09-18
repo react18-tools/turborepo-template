@@ -9,7 +9,12 @@ export interface CardProps {
 /** Display component */
 export function Card({ href, title, description }: CardProps) {
   return (
-    <a className={styles.card} href={href} rel="noopener noreferrer" target="_blank">
+    <a
+      className={styles.card}
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <h2>
         {title} <span>-&gt;</span>
       </h2>

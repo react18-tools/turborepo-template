@@ -1,7 +1,7 @@
-import { ReactNode } from "react";
-import styles from "./layout.module.scss";
 import { ForkMe } from "@mayank1513/fork-me/server";
 import config from "@repo/scripts/rebrand.config.json";
+import type { ReactNode } from "react";
+import styles from "./layout.module.scss";
 
 const { owner, repo } = config;
 interface LayoutProps {
@@ -23,7 +23,11 @@ export function Layout({ children }: LayoutProps) {
       />
       <footer>
         With 💖 by{" "}
-        <a href="https://mayank-chaudhari.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://mayank-chaudhari.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Mayank Chaudhari
         </a>
       </footer>

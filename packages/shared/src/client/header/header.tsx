@@ -1,8 +1,8 @@
 import { useState } from "react";
+import { Logo, type LogoProps } from "../../server";
+import { DrawerButton } from "../drawer-button";
 import styles from "./header.module.scss";
 import ThemeSwitch from "./theme-switch";
-import { DrawerButton } from "../drawer-button";
-import { Logo, LogoProps } from "../../server";
 
 /**
  * # Header
@@ -23,7 +23,8 @@ export function Header(logoProps: LogoProps) {
             href="https://mayank-chaudhari.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.author}>
+            className={styles.author}
+          >
             By Mayank Chaudhari
           </a>
           <ThemeSwitch />

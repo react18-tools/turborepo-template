@@ -4,8 +4,8 @@
  * i.e., server component re-exported from file with "use client" will behave as client component
  */
 
+export * from "./cards";
 // server component exports
 export * from "./landing-page";
-export * from "./logo";
-export * from "./cards";
 export * from "./layout";
+export * from "./logo";

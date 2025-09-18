@@ -1,8 +1,8 @@
-import { execSync } from "child_process";
-import fs from "fs";
-import path from "path";
+import { execSync } from "node:child_process";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import packageJSON from "../package.json";
-import { fileURLToPath } from "url";
 
 // Update pnpm to latest version
 try {
@@ -19,12 +19,14 @@ packageJSON.packageManager = `pnpm@${PNPM_VERSION}`;
 
 fs.writeFileSync(
   path.resolve(__dirname, "../package.json"),
-  JSON.stringify(packageJSON, null, 2) + "\n",
+  `${JSON.stringify(packageJSON, null, 2)}\n`,
 );
 
 // commit to repo
 try {
-  execSync("git add ./package.json && git commit -m 'Update package.json with pnpm version'");
+  execSync(
+    "git add ./package.json && git commit -m 'Update package.json with pnpm version'",
+  );
 } catch {
   // no changesets to be applied
 }

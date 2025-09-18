@@ -12,9 +12,9 @@ export default function MyButton() {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
-  }, []);
+  }, [setLoading]);
   return (
-    <button onClick={handleClick} className={styles.btn}>
+    <button onClick={handleClick} type="button" className={styles.btn}>
       Show Global Loader for 3 sec
     </button>
   );

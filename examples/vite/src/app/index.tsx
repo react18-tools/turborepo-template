@@ -1,15 +1,16 @@
-import React, { ReactNode, useCallback } from "react";
+// biome-ignore lint/correctness/noUnusedImports: refers to UMD
+import React, { type ReactNode, useCallback } from "react";
 import "./styles.css";
-import { Bars1 } from "react18-loaders/dist/server";
-import { LoaderContainer, useLoader } from "react18-loaders";
+import { Demo, Header } from "@repo/shared";
 import { LandingPage, Layout } from "@repo/shared/dist/server";
 import { Core } from "nextjs-darkmode";
-import { Demo, Header } from "@repo/shared";
+import { LoaderContainer, useLoader } from "react18-loaders";
+import { Bars1 } from "react18-loaders/dist/server";
 
 /** Vite App */
 function App(): ReactNode {
   const { setLoading } = useLoader();
-  const handleClick = useCallback(() => setLoading(true), []);
+  const handleClick = useCallback(() => setLoading(true), [setLoading]);
   return (
     <Layout>
       <Core t="background .5s" />
@@ -17,7 +18,9 @@ function App(): ReactNode {
       <LandingPage title="Vite Example">
         <Demo />
       </LandingPage>
-      <button onClick={handleClick}>Show loader</button>
+      <button onClick={handleClick} type="button">
+        Show loader
+      </button>
       <LoaderContainer>
         <Bars1 color="red" width={50} />
       </LoaderContainer>

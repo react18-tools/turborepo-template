@@ -24,12 +24,12 @@ importers:
       enquirer:
         specifier: ^2.4.1
         version: 2.4.1
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       plop:
         specifier: ^4.0.2
         version: 4.0.2(@types/node@24.5.1)
-      pre-commit:
-        specifier: ^1.2.2
-        version: 1.2.2
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
@@ -1911,9 +1911,6 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
-  buffer-from@1.1.2:
-    resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
-
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
 
@@ -2072,10 +2069,6 @@ packages:
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
-
-  concat-stream@1.6.2:
-    resolution: {integrity: sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==}
-    engines: {'0': node >= 0.8}
 
   confbox@0.1.8:
     resolution: {integrity: sha512-RMtmw0iFkeR4YV+fUOSucriAQNb9g8zFR52MWCtl+cCZOFRNL6zeB395vPzFhEjjn4fMxXudmELnl/KF/WrK6w==}
@@ -2962,6 +2955,11 @@ packages:
     resolution: {integrity: sha512-3gKm/gCSUipeLsRYZbbdA1BD83lBoWUkZ7G9VFrhWPAU76KwYo5KR8V28bpoPm/ygy0x5/GCbpRQdY7VLYCoIg==}
     hasBin: true
 
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
@@ -3829,10 +3827,6 @@ packages:
     resolution: {integrity: sha512-weP+BZ8MVNnlCm8c0Qdc1WSWq4Qn7I+9CJGm7Qali6g44e/PUzbjNqJX5NJ9ljlNMosfJvg1fKEGILklK9cwnw==}
     engines: {node: '>=18'}
 
-  os-shim@0.1.3:
-    resolution: {integrity: sha512-jd0cvB8qQ5uVt0lvCIexBaROw1KyKm5sbulg2fWOHjETisuCzWyt+eTZKEMs8v6HwzoGs8xik26jg7eCM6pS+A==}
-    engines: {node: '>= 0.4.0'}
-
   outdent@0.5.0:
     resolution: {integrity: sha512-/jHxFIzoMXdqPzTaCpFzAAWhpkSjZPF4Vsn6jAfNpmbH/ymsmd7Qc6VE9BGn0L6YMj6uwpQLxCECpus4ukKS9Q==}
 
@@ -4051,9 +4045,6 @@ packages:
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
-
-  pre-commit@1.2.2:
-    resolution: {integrity: sha512-qokTiqxD6GjODy5ETAIgzsRgnBWWQHQH2ghy86PU7mIn/wuWeTwF3otyNQZxWBwVn8XNr8Tdzj/QfUXpH+gRZA==}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -4424,9 +4415,6 @@ packages:
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
 
-  spawn-sync@1.0.15:
-    resolution: {integrity: sha512-9DWBgrgYZzNghseho0JOuh+5fg9u6QWhAWa51QC7+U5rCheZ/j1DrEZnyE0RBBRqZ9uEXGPgSSM0nky6burpVw==}
-
   spawndamnit@3.0.1:
     resolution: {integrity: sha512-MmnduQUuHCoFckZoWnXsTg7JaiLBJrKFj9UI2MbRPGaJeVpsLcVBu6P/IGZovziM/YBsellCmsprgNA+w0CzVg==}
 
@@ -4758,9 +4746,6 @@ packages:
     resolution: {integrity: sha512-3KS2b+kL7fsuk/eJZ7EQdnEmQoaho/r6KUef7hxvltNA5DR8NAUM+8wJMbJyZ4G9/7i3v5zPBIMN5aybAh2/Jg==}
     engines: {node: '>= 0.4'}
 
-  typedarray@0.0.6:
-    resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
-
   typedoc-plugin-markdown@4.8.1:
     resolution: {integrity: sha512-ug7fc4j0SiJxSwBGLncpSo8tLvrT9VONvPUQqQDTKPxCoFQBADLli832RGPtj6sfSVJebNSrHZQRUdEryYH/7g==}
     engines: {node: '>= 18'}
@@ -5054,10 +5039,6 @@ packages:
   which-typed-array@1.1.19:
     resolution: {integrity: sha512-rEvr90Bck4WZt9HHFC4DJMsjvu7x+r6bImz0/BrbWb7A2djJ8hnZMrWnHo9F8ssv0OMErasDhftrfROTyqSDrw==}
     engines: {node: '>= 0.4'}
-
-  which@1.2.14:
-    resolution: {integrity: sha512-16uPglFkRPzgiUXYMi1Jf8Z5EzN1iB4V0ZtMXcHZnwsBtQhhHeCqoWw7tsUY42hJGNDWtUsVLTjakIa5BgAxCw==}
-    hasBin: true
 
   which@1.3.1:
     resolution: {integrity: sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==}
@@ -6734,8 +6715,6 @@ snapshots:
       node-releases: 2.0.21
       update-browserslist-db: 1.1.3(browserslist@4.26.0)
 
-  buffer-from@1.1.2: {}
-
   buffer@5.7.1:
     dependencies:
       base64-js: 1.5.1
@@ -6875,13 +6854,6 @@ snapshots:
   component-emitter@1.3.1: {}
 
   concat-map@0.0.1: {}
-
-  concat-stream@1.6.2:
-    dependencies:
-      buffer-from: 1.1.2
-      inherits: 2.0.4
-      readable-stream: 2.3.8
-      typedarray: 0.0.6
 
   confbox@0.1.8: {}
 
@@ -8002,6 +7974,8 @@ snapshots:
 
   human-id@4.1.1: {}
 
+  husky@9.1.7: {}
+
   iconv-lite@0.6.3:
     dependencies:
       safer-buffer: 2.1.2
@@ -9055,8 +9029,6 @@ snapshots:
       string-width: 7.2.0
       strip-ansi: 7.1.2
 
-  os-shim@0.1.3: {}
-
   outdent@0.5.0: {}
 
   own-keys@1.0.1:
@@ -9261,12 +9233,6 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
-
-  pre-commit@1.2.2:
-    dependencies:
-      cross-spawn: 7.0.6
-      spawn-sync: 1.0.15
-      which: 1.2.14
 
   prelude-ls@1.2.1: {}
 
@@ -9729,11 +9695,6 @@ snapshots:
 
   space-separated-tokens@2.0.2: {}
 
-  spawn-sync@1.0.15:
-    dependencies:
-      concat-stream: 1.6.2
-      os-shim: 0.1.3
-
   spawndamnit@3.0.1:
     dependencies:
       cross-spawn: 7.0.6
@@ -10101,8 +10062,6 @@ snapshots:
       possible-typed-array-names: 1.1.0
       reflect.getprototypeof: 1.0.10
 
-  typedarray@0.0.6: {}
-
   typedoc-plugin-markdown@4.8.1(typedoc@0.28.13(typescript@5.9.2)):
     dependencies:
       typedoc: 0.28.13(typescript@5.9.2)
@@ -10447,10 +10406,6 @@ snapshots:
       get-proto: 1.0.1
       gopd: 1.2.0
       has-tostringtag: 1.0.2
-
-  which@1.2.14:
-    dependencies:
-      isexe: 2.0.0
 
   which@1.3.1:
     dependencies:

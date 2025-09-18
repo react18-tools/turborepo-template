@@ -1,5 +1,6 @@
 {
   "name": "turborepo-template",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -10,6 +11,7 @@
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "preinstall": "tsx scripts/update-pm.ts",
+    "prepare": "husky",
     "rebrand": "tsx scripts/rebrand.ts",
     "release": "tsx ./scripts/publish.ts",
     "sync": "turborepo-template-upgrade",
@@ -17,17 +19,13 @@
     "typecheck": "turbo typecheck",
     "upgrade": "tsx ./scripts/upgrade.ts"
   },
-  "pre-commit": [
-    "lint:fix",
-    "format"
-  ],
   "devDependencies": {
     "@changesets/cli": "^2.29.7",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^24.5.1",
     "enquirer": "^2.4.1",
+    "husky": "^9.1.7",
     "plop": "^4.0.2",
-    "pre-commit": "^1.2.2",
     "prettier": "^3.6.2",
     "tsx": "^4.20.5",
     "turbo": "^2.5.6",

@@ -1,12 +1,14 @@
-import fs from "fs";
-import path from "path";
+import { execSync } from "node:child_process";
+import fs from "node:fs";
+import path from "node:path";
 import Enquirer from "enquirer";
-const { prompt } = Enquirer;
-import { execSync } from "child_process";
-import config from "./rebrand.config.json";
 import rootPackageJSON from "../package.json";
+import config from "./rebrand.config.json";
 
-const isFirstRebrand = config.repo === "turborepo-template" && config.owner === "react18-tools";
+const { prompt } = Enquirer;
+
+const isFirstRebrand =
+  config.repo === "turborepo-template" && config.owner === "react18-tools";
 
 const ownerAndRepo = execSync(
   'git remote get-url --push origin | sed "s/https:\\/\\/github\\.com\\///" | sed "s/https:\\/\\/[^@]*@github\\.com\\///" | sed "s/\\.git//"',
@@ -41,12 +43,14 @@ const rebrandFn = async () => {
      sed -i '/\\.turborepo-template\\.lst/d' .github/workflows/upgrade.yml
      sed -i '/\\.turborepo-template\\.lst/d' .github/workflows/docs.yml`
       .split("\n")
-      .forEach(cmd => execSync(cmd.trim()));
+      .forEach((cmd) => {
+        execSync(cmd.trim());
+      });
   }
 
   const defaultInitialTitle = packageName
     .split("-")
-    .map(w => w[0].toUpperCase() + w.slice(1))
+    .map((w) => w[0].toUpperCase() + w.slice(1))
     .join(" ");
   const { installExt, ...answers } = await prompt<{
     packageName: string;
@@ -78,7 +82,9 @@ const rebrandFn = async () => {
       type: "input",
       name: "title",
       message: "What is the title of your project?",
-      initial: isFirstRebrand ? defaultInitialTitle : config.title || defaultInitialTitle,
+      initial: isFirstRebrand
+        ? defaultInitialTitle
+        : config.title || defaultInitialTitle,
     },
     {
       type: "confirm",
@@ -90,8 +96,12 @@ const rebrandFn = async () => {
 
   if (installExt) {
     console.log("\x1b[32m", "Installing recommended VS Code extensions...");
-    execSync("code --install-extension mayank1513.trello-kanban-task-board", { stdio: "inherit" });
-    execSync("code --install-extension esbenp.prettier-vscode", { stdio: "inherit" });
+    execSync("code --install-extension mayank1513.trello-kanban-task-board", {
+      stdio: "inherit",
+    });
+    execSync("code --install-extension esbenp.prettier-vscode", {
+      stdio: "inherit",
+    });
   }
 
   const newConfig = Object.assign({}, answers);
@@ -107,7 +117,10 @@ const rebrandFn = async () => {
   console.log("\x1b[32m", "...");
   console.log("\x1b[32m", "...");
   console.log("\x1b[32m", "...");
-  console.log("\x1b[32m", "Clean up repo by removing things that you don't need");
+  console.log(
+    "\x1b[32m",
+    "Clean up repo by removing things that you don't need",
+  );
 
   const { pkgs } = await prompt<{ pkgs: string[] }>({
     type: "multiselect",
@@ -131,7 +144,9 @@ const rebrandFn = async () => {
 
   Object.assign(newConfig, { removedPackages: pkgs });
 
-  pkgs.forEach((pkg: string) => execSync(`rm -rf ${pkg}`));
+  pkgs.forEach((pkg: string) => {
+    execSync(`rm -rf ${pkg}`);
+  });
 
   if (pkgs.length) {
     // packages might have already been deleted during previous rebrand
@@ -151,7 +166,8 @@ const rebrandFn = async () => {
   const { feats } = await prompt<{ feats: string[] }>({
     type: "multiselect",
     name: "feats",
-    message: "Select the features to remove - will help clean up and lighten the build ci/cd",
+    message:
+      "Select the features to remove - will help clean up and lighten the build ci/cd",
     initial: ["Rebrander"],
     // @ts-expect-error: not picked up correctly
     choices: [
@@ -183,9 +199,9 @@ const rebrandFn = async () => {
     delete rootPackageJSON.scripts.rebrand;
     // @ts-expect-error -- allow delete
     delete rootPackageJSON.devDependencies.enquirer;
-    ["./scripts/rebrand.ts", "./scripts/rebrander.ts"].forEach(dirOrfile =>
-      execSync("rm -rf " + dirOrfile),
-    );
+    ["./scripts/rebrand.ts", "./scripts/rebrander.ts"].forEach((dirOrFile) => {
+      execSync(`rm -rf ${dirOrFile}`);
+    });
   } else {
     fs.writeFileSync(
       path.resolve(rootDir, "scripts", "rebrander.ts"),
@@ -204,8 +220,8 @@ const rebrandFn = async () => {
     // @ts-expect-error -- allow delete
     delete rootPackageJSON.scripts.doc;
     // @ts-expect-error -- allow delete
-    delete rootPackageJSON.devDependencies["typedoc"];
-    Object.keys(rootPackageJSON.devDependencies).forEach(dep => {
+    delete rootPackageJSON.devDependencies.typedoc;
+    Object.keys(rootPackageJSON.devDependencies).forEach((dep) => {
       if (dep.startsWith("typedoc-plugin-")) {
         delete rootPackageJSON.devDependencies[dep];
       }
@@ -216,22 +232,38 @@ const rebrandFn = async () => {
       "./scripts/doc.ts",
       "./typedoc.config.js",
       "./tsconfig.docs.json",
-    ].forEach(dirOrFile => execSync("rm -rf " + dirOrFile));
-    const publishWorkflowFile = path.resolve(process.cwd(), ".github/workflows/publish.yml");
+    ].forEach((dirOrFile) => {
+      execSync(`rm -rf ${dirOrFile}`);
+    });
+    const publishWorkflowFile = path.resolve(
+      process.cwd(),
+      ".github/workflows/publish.yml",
+    );
     fs.writeFileSync(
       publishWorkflowFile,
-      fs.readFileSync(publishWorkflowFile, "utf8").split("\n").slice(0, -5).join("\n") + "\n",
+      `${fs
+        .readFileSync(publishWorkflowFile, "utf8")
+        .split("\n")
+        .slice(0, -5)
+        .join("\n")}\n`,
     );
   }
 
   if (feats.includes("Generators")) {
     // @ts-expect-error -- allow delete
     delete rootPackageJSON.devDependencies.plop;
-    ["./scripts/templates", "./scripts/hook.ts", "./scripts/rc.ts", "./plopfile.js"].forEach(
-      dirOrFile => execSync("rm -rf " + dirOrFile),
-    );
+    [
+      "./scripts/templates",
+      "./scripts/hook.ts",
+      "./scripts/rc.ts",
+      "./plopfile.js",
+    ].forEach((dirOrFile) => {
+      execSync(`rm -rf ${dirOrFile}`);
+    });
     // update vitest scripts
-    execSync(`sed -i -e 's/"src\\/\\*\\*\\/index\\.ts", //' lib/vitest.config.mts`);
+    execSync(
+      `sed -i -e 's/"src\\/\\*\\*\\/index\\.ts", //' lib/vitest.config.mts`,
+    );
 
     // update docs config if docs is there
     if (!feats.includes("Docs")) {
@@ -240,8 +272,10 @@ const rebrandFn = async () => {
   }
 
   if (feats.includes("LiteMode")) {
-    ["./scripts/lite.ts"].forEach(dirOrFile => execSync("rm -rf " + dirOrFile));
-    ["publish.ts", "manual-publish.ts"].forEach(src => {
+    ["./scripts/lite.ts"].forEach((dirOrFile) => {
+      execSync(`rm -rf ${dirOrFile}`);
+    });
+    ["publish.ts", "manual-publish.ts"].forEach((src) => {
       const filePath = path.resolve(process.cwd(), "scripts", src);
       fs.writeFileSync(
         filePath,
@@ -286,7 +320,10 @@ const rebrandFn = async () => {
     "To open TKB (Workspace) click on the `TKB (Workspace)` button on the vscode taskbar or follow these steps.",
   );
   console.log("\x1b[36m", ".");
-  console.log("\x1b[36m", "  1. Press `Ctrl/command` + `Shift` + `P` to open the command palette.");
+  console.log(
+    "\x1b[36m",
+    "  1. Press `Ctrl/command` + `Shift` + `P` to open the command palette.",
+  );
   console.log(
     "\x1b[36m",
     "  2. Type 'TrelloKanban: Workspace' and hit Enter to open the TKB (Workspace).",

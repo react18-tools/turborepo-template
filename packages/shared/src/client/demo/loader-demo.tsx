@@ -1,4 +1,5 @@
 import { Bars1 } from "react18-loaders/dist/server";
+
 // Using esbuild-raw-plugin, we embedded this code into
 // a .tsx file, enabling IDE IntelliSense support.
 

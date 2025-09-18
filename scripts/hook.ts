@@ -1,6 +1,6 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import type { ActionType } from "plop";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -21,7 +21,9 @@ interface InquirerDataType {
  */
 function getActions(data: InquirerDataType): ActionType[] {
   const actions: ActionType[] = [];
-  if (!fs.existsSync(path.resolve(__dir, `${data.pkgPath}/src/hooks`, "index.ts"))) {
+  if (
+    !fs.existsSync(path.resolve(__dir, `${data.pkgPath}/src/hooks`, "index.ts"))
+  ) {
     actions.push({
       type: "add",
       path: `${data.pkgPath}/src/hooks/index.ts`,
@@ -36,7 +38,7 @@ function getActions(data: InquirerDataType): ActionType[] {
     });
   }
 
-  ["", ".test"].forEach(suffix => {
+  ["", ".test"].forEach((suffix) => {
     actions.push({
       type: "add",
       path: `${data.pkgPath}/src/hooks/{{kebabCase name}}${suffix}.ts`,
@@ -65,7 +67,8 @@ export default {
     {
       type: "input",
       name: "description",
-      message: "Describe your custom hook. (This will be added as js-doc comment.)",
+      message:
+        "Describe your custom hook. (This will be added as js-doc comment.)",
     },
   ],
   actions: (data: InquirerDataType) => (data ? getActions(data) : []),

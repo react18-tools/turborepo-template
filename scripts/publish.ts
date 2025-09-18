@@ -1,9 +1,12 @@
 /** It is assumed that this is called only from the default branch. */
-import { execSync } from "child_process";
+import { execSync } from "node:child_process";
+import { exit } from "node:process";
+import { name, version } from "../lib/package.json";
 import updateSecurityMd from "./update-security-md";
-import { version, name } from "../lib/package.json";
 
-const BRANCH = process.env.BRANCH!;
+const BRANCH = process.env.BRANCH;
+
+if (!BRANCH) exit(1);
 
 // Apply changesets if any -- e.g., coming from pre-release branches
 try {
@@ -23,7 +26,8 @@ try {
 let LATEST_VERSION = "0.0.-1";
 
 try {
-  LATEST_VERSION = execSync(`npm view ${name} version`).toString().trim() ?? "0.0.-1";
+  LATEST_VERSION =
+    execSync(`npm view ${name} version`).toString().trim() ?? "0.0.-1";
 } catch {
   // empty
 }
@@ -47,13 +51,17 @@ if (isPatch) {
   try {
     updateSecurityMd(`${newMajor}.${newMinor}`, `${oldMajor}.${oldMinor}`);
     /** Create new release branch for every Major or Minor release */
-    execSync(`git checkout -b ${releaseBranch} && git push origin ${releaseBranch}`);
+    execSync(
+      `git checkout -b ${releaseBranch} && git push origin ${releaseBranch}`,
+    );
   } catch (err) {
     console.error("Error pushing to release branch: ", err);
   }
 }
 
-const { visibility } = JSON.parse(execSync("gh repo view --json visibility").toString());
+const { visibility } = JSON.parse(
+  execSync("gh repo view --json visibility").toString(),
+);
 const provenance = visibility.toLowerCase() === "public" ? "--provenance" : "";
 
 /** Create release */

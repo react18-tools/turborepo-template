@@ -1,15 +1,14 @@
 {
   "name": "turborepo-template",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "clean": "turbo clean",
     "dev": "turbo dev",
     "doc": "tsx scripts/doc.ts && typedoc && cp _config.yml docs && tsx scripts/add-frontmatter.ts",
-    "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,css,scss}\"",
-    "lint": "turbo lint",
-    "lint:fix": "turbo lint:fix",
+    "format": "biome check . --write",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write",
     "preinstall": "tsx scripts/update-pm.ts",
     "prepare": "husky",
     "rebrand": "tsx scripts/rebrand.ts",
@@ -20,13 +19,13 @@
     "upgrade": "tsx ./scripts/upgrade.ts"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.4",
     "@changesets/cli": "^2.29.7",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^24.5.2",
     "enquirer": "^2.4.1",
     "husky": "^9.1.7",
     "plop": "^4.0.2",
-    "prettier": "^3.6.2",
     "tsx": "^4.20.5",
     "turbo": "^2.5.6",
     "turborepo-template-upgrade": "^0.6.1",

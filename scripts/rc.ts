@@ -1,6 +1,6 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import type { ActionType } from "plop";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -39,13 +39,19 @@ function updateIndexFilesIfNeeded(
   rootSegments: string[],
   currentDirSegments: string[],
   data: InquirerDataType,
-  pkgJSON: any,
 ) {
-  const indexFilePath = path.resolve(__dir, ...rootSegments, ...currentDirSegments, "index.ts");
+  const indexFilePath = path.resolve(
+    __dir,
+    ...rootSegments,
+    ...currentDirSegments,
+    "index.ts",
+  );
   const root = rootSegments.join("/");
 
   if (!fs.existsSync(indexFilePath)) {
-    const content = `${data.isClient ? '"use client";\n' : ""}// ${currentDirSegments.join("/")} component exports\n`;
+    const content = `${data.isClient ? '"use client";\n' : ""}// ${currentDirSegments.join(
+      "/",
+    )} component exports\n`;
     const dirPath = `${root + currentDirSegments.join("/")}`;
 
     nestedRouteActions.push({
@@ -58,7 +64,12 @@ function updateIndexFilesIfNeeded(
     nestedRouteActions.push({
       type: "append",
       pattern: /(?<insertion> component exports)/,
-      path: `${root + (length === 1 ? "" : `${currentDirSegments.slice(0, length - 1).join("/")}/`)}index.ts`,
+      path: `${
+        root +
+        (length === 1
+          ? ""
+          : `${currentDirSegments.slice(0, length - 1).join("/")}/`)
+      }index.ts`,
       template: `export * from "./${currentDirSegments[length - 1]}"`,
     });
   }
@@ -83,14 +94,16 @@ function toKebabCase(str: string): string {
  * @param pkgJSON - Parsed package.json.
  * @returns
  */
-function createRootIndexAndDeclarations(
-  data: InquirerDataType,
-  pkgJSON: any,
-): { nestedRouteActions: ActionType[]; root: string } {
+function createRootIndexAndDeclarations(data: InquirerDataType): {
+  nestedRouteActions: ActionType[];
+  root: string;
+} {
   const nestedRouteActions: ActionType[] = [];
   const { isClient } = data;
   const srcDir = path.resolve(__dir, `${data.pkgPath}/src`);
-  const [banner, target] = isClient ? ['"use client";\n\n', "client"] : ["", "server"];
+  const [banner, target] = isClient
+    ? ['"use client";\n\n', "client"]
+    : ["", "server"];
   const root = `${data.pkgPath}/src/${target}/`;
 
   // Create src/index.ts
@@ -107,7 +120,8 @@ function createRootIndexAndDeclarations(
     nestedRouteActions.push({
       type: "add",
       path: `${data.pkgPath}/src/declaration.d.ts`,
-      template: 'declare module "*.module.css";\ndeclare module "*.module.scss";\n',
+      template:
+        'declare module "*.module.css";\ndeclare module "*.module.scss";\n',
     });
   }
 
@@ -129,12 +143,12 @@ function createRootIndexAndDeclarations(
  * @param pkgJSON
  * @returns
  */
-function getNestedRouteActions(
-  data: InquirerDataType,
-  pkgJSON: any,
-): { nestedRouteActions: ActionType[]; parentDir: string } {
+function getNestedRouteActions(data: InquirerDataType): {
+  nestedRouteActions: ActionType[];
+  parentDir: string;
+} {
   const name = data.name.replace(/\/+/g, "/").replace(/\/$/, "").trim();
-  const { nestedRouteActions, root } = createRootIndexAndDeclarations(data, pkgJSON);
+  const { nestedRouteActions, root } = createRootIndexAndDeclarations(data);
 
   if (!name.includes("/")) return { nestedRouteActions, parentDir: root };
 
@@ -150,7 +164,6 @@ function getNestedRouteActions(
       rootSegments,
       directories.slice(0, i),
       data,
-      pkgJSON,
     );
   }
 
@@ -164,7 +177,7 @@ function getNestedRouteActions(
  * @param pkgJSON
  * @returns
  */
-function getIndexAction(data: InquirerDataType, parentDir: string, pkgJSON: any): ActionType {
+function getIndexAction(data: InquirerDataType, parentDir: string): ActionType {
   const dirPath = path.resolve(__dir, parentDir, toKebabCase(data.name));
   const indFilePath = path.resolve(dirPath, "index.ts");
 
@@ -180,7 +193,9 @@ function getIndexAction(data: InquirerDataType, parentDir: string, pkgJSON: any)
   return {
     type: "add",
     path: `${parentDir}{{kebabCase name}}/index.ts`,
-    template: `${data.isClient ? '"use client";\n\n' : ""}// component exports\nexport * from "./{{kebabCase name}}";\n`,
+    template: `${
+      data.isClient ? '"use client";\n\n' : ""
+    }// component exports\nexport * from "./{{kebabCase name}}";\n`,
   };
 }
 
@@ -190,12 +205,8 @@ function getIndexAction(data: InquirerDataType, parentDir: string, pkgJSON: any)
  * @returns
  */
 function getActions(data: InquirerDataType): ActionType[] {
-  const packageJSONPath = path.resolve(__dirname, "..", data.pkgPath, "package.json");
-  const pkgJSON = JSON.parse(fs.readFileSync(packageJSONPath, "utf8"));
-  const { nestedRouteActions, parentDir } = getNestedRouteActions(data, pkgJSON);
-  const indexAction = getIndexAction(data, parentDir, pkgJSON);
-
-  fs.writeFileSync(packageJSONPath, JSON.stringify(pkgJSON, null, 2) + "\n");
+  const { nestedRouteActions, parentDir } = getNestedRouteActions(data);
+  const indexAction = getIndexAction(data, parentDir);
 
   const filesActions: ActionType[] = [];
 

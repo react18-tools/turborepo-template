@@ -7,12 +7,6 @@
     "test": {
       "outputs": ["coverage/**"]
     },
-    "lint": {
-      "dependsOn": ["^build"]
-    },
-    "lint:fix": {
-      "dependsOn": ["^build"]
-    },
     "typecheck": {
       "dependsOn": ["^build"]
     },

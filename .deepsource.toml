@@ -17,6 +17,3 @@ name = "javascript"
     "vitest",
     "browser"
   ]
-
-[[transformers]]
-name = "prettier"

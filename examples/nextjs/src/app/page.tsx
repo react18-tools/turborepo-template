@@ -1,7 +1,7 @@
-import MyButton from "./button";
-import { LandingPage } from "@repo/shared/dist/server";
 import { Demo } from "@repo/shared";
-import { ReactNode } from "react";
+import { LandingPage } from "@repo/shared/dist/server";
+import type { ReactNode } from "react";
+import MyButton from "./button";
 
 export const metadata = {
   title: "React 18 Loaders",

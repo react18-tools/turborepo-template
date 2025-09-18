@@ -1,6 +1,6 @@
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import featured from "./featured.json";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -14,10 +14,13 @@ const readMeLines = [
   "",
 ];
 
-featured.forEach(f => {
+featured.forEach((f) => {
   readMeLines.push(`- [${f.title}](${f.href}) - ${f.description}`);
 });
 
 readMeLines.push("");
 
-fs.writeFileSync(path.resolve(__dirname, "..", "FEATURED.md"), readMeLines.join("\n"));
+fs.writeFileSync(
+  path.resolve(__dirname, "..", "FEATURED.md"),
+  readMeLines.join("\n"),
+);

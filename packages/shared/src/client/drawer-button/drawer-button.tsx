@@ -1,5 +1,5 @@
 "use client";
-import { Dispatch, SetStateAction, useCallback } from "react";
+import { type Dispatch, type SetStateAction, useCallback } from "react";
 import styles from "./drawer-button.module.scss";
 
 interface DrawerButtonProps {
@@ -12,11 +12,13 @@ interface DrawerButtonProps {
  * Drawer button to toggle side navigation on mobile devices.
  */
 export function DrawerButton({ open, setOpen }: DrawerButtonProps) {
-  const handleClick = useCallback(() => setOpen(open => !open), []);
+  const handleClick = useCallback(() => setOpen((open) => !open), [setOpen]);
   return (
     <button
       className={[styles.drawerBtn, "mb", open ? styles.open : ""].join(" ")}
-      onClick={handleClick}>
+      onClick={handleClick}
+      type="button"
+    >
       <div />
       <div />
       <div />

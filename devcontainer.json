@@ -12,7 +12,7 @@
       "openFiles": ["TODO.md", "scripts/rebrand.config.json"]
     },
     "vscode": {
-      "extensions": ["mayank1513.trello-kanban-task-board", "esbenp.prettier-vscode"]
+      "extensions": ["mayank1513.trello-kanban-task-board"]
     }
   }
 }

@@ -1,5 +1,5 @@
+import { Base, type BaseProps } from "../../common";
 import styles from "./dots2.module.scss";
-import { Base, BaseProps } from "../../common";
 
 export interface Dots2Props extends BaseProps {
   /** Radius of the dots in pixels or a string with a length unit. */

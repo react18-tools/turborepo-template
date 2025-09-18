@@ -10,12 +10,9 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^24.5.0",
     "tsup": "^8.5.0",

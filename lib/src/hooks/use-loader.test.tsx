@@ -1,8 +1,8 @@
-import { cleanup, render, renderHook, act } from "@testing-library/react";
+import { act, cleanup, render, renderHook } from "@testing-library/react";
 import { afterEach, describe, test } from "vitest";
 import { LoaderContainer } from "../client";
-import { useLoader } from "./use-loader";
 import styles from "../client/loader-container/loader-container.module.scss";
+import { useLoader } from "./use-loader";
 
 describe.concurrent("loader-container", () => {
   afterEach(cleanup);

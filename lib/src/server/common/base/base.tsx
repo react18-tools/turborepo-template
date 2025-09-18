@@ -1,4 +1,4 @@
-import { HTMLProps } from "react";
+import type { HTMLProps } from "react";
 
 /** Interface declaring the common properties of the loaders */
 export interface BaseProps extends HTMLProps<HTMLDivElement> {

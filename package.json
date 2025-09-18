@@ -6,6 +6,7 @@
     "clean": "turbo clean",
     "dev": "turbo dev",
     "doc": "tsx scripts/doc.ts && typedoc && cp _config.yml docs && tsx scripts/add-frontmatter.ts",
+    "format": "biome check . --write",
     "lint": "biome check .",
     "lint:fix": "biome check . --write",
     "preinstall": "tsx scripts/update-pm.ts",

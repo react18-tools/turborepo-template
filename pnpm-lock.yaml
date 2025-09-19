@@ -2598,8 +2598,8 @@ packages:
     peerDependencies:
       git-json-resolver: ^1.2.0
 
-  git-json-resolver@1.3.6:
-    resolution: {integrity: sha512-FpdTRMS56pxYP7DZXf6rkUl2c0GLiMEpx/NeCdzS++Z0zCwsHl5fBGvp9zyk2iA0Jmhj0sVo/8Imv4oV2U6WNA==}
+  git-json-resolver@1.3.7:
+    resolution: {integrity: sha512-ml8lECMqvRtcnQc5bBMY/0ltydMlKrW4VIKJe0Nc/Kh9nCjPD+8VVBobaMrGIPiZuHQnKfyPu86qQ9LFdqa8ZA==}
     hasBin: true
     peerDependencies:
       fast-xml-parser: ^5.2.5
@@ -6818,11 +6818,11 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  git-json-resolver-semver@1.0.0(git-json-resolver@1.3.6(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)):
+  git-json-resolver-semver@1.0.0(git-json-resolver@1.3.7(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)):
     dependencies:
-      git-json-resolver: 1.3.6(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
+      git-json-resolver: 1.3.7(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
 
-  git-json-resolver@1.3.6(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
+  git-json-resolver@1.3.7(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
     optionalDependencies:
       json5: 2.2.3
       micromatch: 4.0.8
@@ -8696,8 +8696,8 @@ snapshots:
 
   turborepo-template-upgrade@0.6.2(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1):
     dependencies:
-      git-json-resolver: 1.3.6(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
-      git-json-resolver-semver: 1.0.0(git-json-resolver@1.3.6(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1))
+      git-json-resolver: 1.3.7(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
+      git-json-resolver-semver: 1.0.0(git-json-resolver@1.3.7(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1))
     transitivePeerDependencies:
       - fast-xml-parser
       - json5

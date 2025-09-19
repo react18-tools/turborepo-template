@@ -1,8 +1,16 @@
+import { execSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import packageJson from "../lib/package.json";
 import config from "./rebrand.config.json";
+
+// Set up npm authentication
+if (process.env.NODE_AUTH_TOKEN) {
+  execSync(
+    `npm config set //registry.npmjs.org/:_authToken ${process.env.NODE_AUTH_TOKEN}`,
+  );
+}
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

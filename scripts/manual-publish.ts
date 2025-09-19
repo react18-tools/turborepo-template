@@ -20,7 +20,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const BRANCH = process.env.BRANCH;
 const DEFAULT_BRANCH = process.env.DEFAULT_BRANCH;
 
-if (!BRANCH || DEFAULT_BRANCH) {
+if (!BRANCH || !DEFAULT_BRANCH) {
   exit(1);
 }
 
@@ -132,21 +132,19 @@ const reTag = isLatest
 const publishCmd = `cd lib && pnpm build && npm publish ${provenance} --access public${
   tag && ` --tag ${tag}`
 }`;
-execSync(publishCmd + reTag);
-
-/** Create GitHub release */
-execSync(
-  `gh release create ${NEW_VERSION} --generate-notes${
-    isLatestRelease ? " --latest" : ""
-  } -n "$(sed '1,/^## /d;/^## /,$d' lib/CHANGELOG.md)" --title "Release v${NEW_VERSION}"`,
-);
-
 try {
-  // Publish canonical packages
-  execSync("tsx scripts/publish-canonical.ts");
-} catch {
-  console.error("Failed to publish canonical packages");
-}
+  execSync(publishCmd + reTag);
+
+  /** Create GitHub release */
+  execSync(
+    `gh release create ${NEW_VERSION} --generate-notes${
+      isLatestRelease ? " --latest" : ""
+    } -n "$(sed '1,/^## /d;/^## /,$d' lib/CHANGELOG.md)" --title "Release v${NEW_VERSION}"`,
+  );
+} catch {}
+
+// Publish canonical packages
+execSync("tsx scripts/publish-canonical.ts");
 
 execSync("tsx ./scripts/lite.ts");
 execSync(publishCmd + reTag.replace("@", "-lite@"));

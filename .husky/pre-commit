@@ -2,5 +2,6 @@
 FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(ts|tsx|js|json|md)$')
 [ -z "$FILES" ] && exit 0
 
-echo "$FILES" | xargs biome check --write
+biome check --write $FILES
+
 git add $FILES

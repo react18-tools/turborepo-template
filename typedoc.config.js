@@ -16,8 +16,6 @@ module.exports = {
     "typedoc-plugin-missing-exports",
   ],
   hidePageHeader: true,
-  formatWithPrettier: true,
-  prettierConfigFile: "./.prettierrc",
   sanitizeComments: true,
   router: "module",
   mergeReadme: true,

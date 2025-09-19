@@ -24,7 +24,7 @@ const DOCS_DIR = "./docs";
  * @param {string} str
  * @returns {string}
  */
-function prettify(str) {
+function prettify(str: string) {
   return str.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
@@ -36,7 +36,7 @@ function prettify(str) {
  * @param {string} parent - Parent page title, if applicable
  * @param {boolean} isIndex - Whether the file is an index.md
  */
-function addFrontmatter(filePath, navOrder, parent = "") {
+function addFrontmatter(filePath: string, navOrder: number, parent = "") {
   const content = fs.readFileSync(filePath, "utf8");
 
   // Skip files with existing frontmatter
@@ -75,7 +75,7 @@ function addFrontmatter(filePath, navOrder, parent = "") {
  * @param {string} parent - Parent title (empty for root-level folders)
  * @returns {string} The title of this folder for child items to reference
  */
-function ensureIndexMd(dir, navOrder, parent = "") {
+function ensureIndexMd(dir: string, navOrder: number, parent = "") {
   const isRoot = dir === DOCS_DIR;
   const indexPath = path.join(dir, "index.md");
 
@@ -114,7 +114,7 @@ function ensureIndexMd(dir, navOrder, parent = "") {
  * @param {string} parent - Parent title
  * @returns {number} - Next available nav_order after processing this directory
  */
-function processDir(dir, startOrder = 1, parent = "") {
+function processDir(dir: string, startOrder = 1, parent = "") {
   let order = startOrder;
   const isRoot = dir === DOCS_DIR;
 

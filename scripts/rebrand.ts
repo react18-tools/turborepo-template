@@ -223,6 +223,7 @@ const rebrandFn = async () => {
     delete rootPackageJSON.devDependencies.typedoc;
     Object.keys(rootPackageJSON.devDependencies).forEach((dep) => {
       if (dep.startsWith("typedoc-plugin-")) {
+        // @ts-expect-error -- allow delete
         delete rootPackageJSON.devDependencies[dep];
       }
     });

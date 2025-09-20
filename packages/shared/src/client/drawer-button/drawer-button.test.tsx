@@ -5,7 +5,9 @@ import { DrawerButton } from "./drawer-button";
 describe.concurrent("drawer-button", () => {
   afterEach(cleanup);
 
-  const dummyFunc = () => {};
+  const dummyFunc = () => {
+    // empty
+  };
   test("check if h1 heading exists", () => {
     render(<DrawerButton open setOpen={dummyFunc} />);
   });

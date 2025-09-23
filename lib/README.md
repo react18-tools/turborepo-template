@@ -6,6 +6,7 @@
 [![Version](https://img.shields.io/npm/v/react18-loaders.svg?colorB=green)](https://www.npmjs.com/package/react18-loaders)
 [![Downloads](https://img.jsdelivr.com/img.shields.io/npm/d18m/react18-loaders.svg)](https://www.npmjs.com/package/react18-loaders)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/react18-loaders)
+[![NPM License](https://img.shields.io/npm/l/react18-loaders)](../LICENSE)
 
 React18 Loaders is a comprehensive library designed to unlock the full potential of React 18 server components. It provides customizable loading animation components and a fullscreen loader container, seamlessly integrating with React and Next.js.
 

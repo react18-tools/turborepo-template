@@ -131,6 +131,10 @@ export default MyComponent() {
 }
 ```
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=react18-tools/turborepo-template&type=Date)](https://www.star-history.com/#react18-tools/turborepo-template&Date)
+
 ## License
 
 This library is licensed under the MPL-2.0 open-source license.

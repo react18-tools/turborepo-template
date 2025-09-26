@@ -116,6 +116,10 @@ Looking for a hands-on course to get started with Turborepo? Check out [React an
 
 ![Repo Stats](https://repobeats.axiom.co/api/embed/2ef1a24385037998386148afe5a98ded6006f410.svg "Repobeats analytics image")
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=react18-tools/turborepo-template&type=Date)](https://www.star-history.com/#react18-tools/turborepo-template&Date)
+
 ## License
 
 Licensed under the MPL-2.0 open-source license.

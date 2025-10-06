@@ -99,9 +99,6 @@ const rebrandFn = async () => {
     execSync("code --install-extension mayank1513.trello-kanban-task-board", {
       stdio: "inherit",
     });
-    execSync("code --install-extension esbenp.prettier-vscode", {
-      stdio: "inherit",
-    });
   }
 
   const newConfig = Object.assign({}, answers);

@@ -26,6 +26,16 @@
       "description": "Run `yarn plop`, and follow prompts to generate server or client components for your library",
       "columnId": "column-todo"
     },
+    "_BfuX7quWBANpDK1bI7YM": {
+      "id": "_BfuX7quWBANpDK1bI7YM",
+      "description": "Update description and keywords in `lib/package.json`",
+      "columnId": "column-todo"
+    },
+    "1dRWJhy45E1Rq5wZAmPHt": {
+      "id": "1dRWJhy45E1Rq5wZAmPHt",
+      "description": "Update README as required",
+      "columnId": "column-todo"
+    },
     "RX4J5v4y5IOe_ucf8pMRT": {
       "id": "RX4J5v4y5IOe_ucf8pMRT",
       "description": "🌟 Enable [private vulnerability reporting] (For public repo - do this after updating visibility to public)",
@@ -46,11 +56,6 @@
       "description": "Add `NPM_AUTH_TOKEN` to repository secrets to automate package publishing\n  - Log in to your [`npm` account](https://www.npmjs.com/login) and create an automation token\n  - Create a new repository secret `NPM_AUTH_TOKEN`",
       "columnId": "column-todo"
     },
-    "_BfuX7quWBANpDK1bI7YM": {
-      "id": "_BfuX7quWBANpDK1bI7YM",
-      "description": "Update description in `lib/package.json`",
-      "columnId": "column-todo"
-    },
     "dC7QDBLH8BmHUfaYmIt81": {
       "id": "dC7QDBLH8BmHUfaYmIt81",
       "description": "(Optional) Add Repo Stats by visiting and setting up [repobeats](https://repobeats.axiom.co/)",
@@ -59,11 +64,6 @@
     "P_NrSJQ8m91Odgz8E1fS6": {
       "id": "P_NrSJQ8m91Odgz8E1fS6",
       "description": "Create your library and update examples",
-      "columnId": "column-todo"
-    },
-    "1dRWJhy45E1Rq5wZAmPHt": {
-      "id": "1dRWJhy45E1Rq5wZAmPHt",
-      "description": "Update README as required",
       "columnId": "column-todo"
     },
     "5vS1JNXoMhDl5IBljwh2v": {

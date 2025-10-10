@@ -22,7 +22,7 @@
     "@biomejs/biome": "2.2.4",
     "@changesets/cli": "^2.29.7",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^24.7.0",
+    "@types/node": "^24.7.1",
     "enquirer": "^2.4.1",
     "husky": "^9.1.7",
     "plop": "^4.0.4",
@@ -35,7 +35,7 @@
     "typedoc-plugin-missing-exports": "^4.1.0",
     "typedoc-plugin-rename-defaults": "^0.7.3"
   },
-  "packageManager": "pnpm@10.18.2",
+  "packageManager": "pnpm@10.18.1",
   "engines": {
     "node": ">=20"
   },

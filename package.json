@@ -27,7 +27,7 @@
     "husky": "^9.1.7",
     "plop": "^4.0.4",
     "tsx": "^4.20.6",
-    "turbo": "^2.5.8",
+    "turbo": "^2.6.0",
     "turborepo-template-upgrade": "^0.6.2",
     "typedoc": "^0.28.14",
     "typedoc-plugin-markdown": "^4.9.0",

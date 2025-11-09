@@ -1,5 +1,11 @@
 # react18-loaders
 
+## 1.1.12
+
+### Patch Changes
+
+- 9c94696: fix exports
+
 ## 1.1.11
 
 ### Patch Changes

@@ -5,7 +5,7 @@ import { Demo, Header } from "@repo/shared";
 import { LandingPage, Layout } from "@repo/shared/dist/server";
 import { Core } from "nextjs-darkmode";
 import { LoaderContainer, useLoader } from "react18-loaders";
-import { Bars1 } from "react18-loaders/dist/server";
+import { Bars1 } from "react18-loaders/server";
 
 /** Vite App */
 function App(): ReactNode {

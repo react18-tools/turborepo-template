@@ -3,10 +3,10 @@ import "react18-loaders/styles";
 import { GlobalLoader, Header } from "@repo/shared";
 import { Layout } from "@repo/shared/dist/server";
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import { Core } from "nextjs-darkmode-lite";
 import type { ReactNode } from "react";
 import { Particles } from "webgl-generative-particles/react";
+import { CustomLink } from "./custom-link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Core />
         <Layout>
-          <Header linkComponent={Link} />
+          <Header linkComponent={CustomLink} />
           {children}
         </Layout>
         <GlobalLoader />

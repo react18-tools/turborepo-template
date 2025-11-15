@@ -19,7 +19,7 @@
     "upgrade": "tsx ./scripts/upgrade.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.4",
+    "@biomejs/biome": "2.3.5",
     "@changesets/cli": "^2.29.7",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^24.10.1",

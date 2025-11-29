@@ -43,20 +43,20 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(json5@2.2.3)(micromatch@4.0.8)(picomatch@4.0.3)(yaml@2.8.1)
       typedoc:
-        specifier: ^0.28.14
-        version: 0.28.14(typescript@5.9.3)
+        specifier: ^0.28.15
+        version: 0.28.15(typescript@5.9.3)
       typedoc-plugin-markdown:
         specifier: ^4.9.0
-        version: 4.9.0(typedoc@0.28.14(typescript@5.9.3))
+        version: 4.9.0(typedoc@0.28.15(typescript@5.9.3))
       typedoc-plugin-mdn-links:
         specifier: ^5.0.10
-        version: 5.0.10(typedoc@0.28.14(typescript@5.9.3))
+        version: 5.0.10(typedoc@0.28.15(typescript@5.9.3))
       typedoc-plugin-missing-exports:
         specifier: ^4.1.2
-        version: 4.1.2(typedoc@0.28.14(typescript@5.9.3))
+        version: 4.1.2(typedoc@0.28.15(typescript@5.9.3))
       typedoc-plugin-rename-defaults:
         specifier: ^0.7.3
-        version: 0.7.3(typedoc@0.28.14(typescript@5.9.3))
+        version: 0.7.3(typedoc@0.28.15(typescript@5.9.3))
 
   examples/express:
     dependencies:
@@ -4218,8 +4218,8 @@ packages:
     peerDependencies:
       typedoc: '>=0.22.x <0.29.x'
 
-  typedoc@0.28.14:
-    resolution: {integrity: sha512-ftJYPvpVfQvFzpkoSfHLkJybdA/geDJ8BGQt/ZnkkhnBYoYW6lBgPQXu6vqLxO4X75dA55hX8Af847H5KXlEFA==}
+  typedoc@0.28.15:
+    resolution: {integrity: sha512-mw2/2vTL7MlT+BVo43lOsufkkd2CJO4zeOSuWQQsiXoV2VuEn7f6IZp2jsUDPmBMABpgR0R5jlcJ2OGEFYmkyg==}
     engines: {node: '>= 18', pnpm: '>= 10'}
     hasBin: true
     peerDependencies:
@@ -8726,24 +8726,24 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.1
 
-  typedoc-plugin-markdown@4.9.0(typedoc@0.28.14(typescript@5.9.3)):
+  typedoc-plugin-markdown@4.9.0(typedoc@0.28.15(typescript@5.9.3)):
     dependencies:
-      typedoc: 0.28.14(typescript@5.9.3)
+      typedoc: 0.28.15(typescript@5.9.3)
 
-  typedoc-plugin-mdn-links@5.0.10(typedoc@0.28.14(typescript@5.9.3)):
+  typedoc-plugin-mdn-links@5.0.10(typedoc@0.28.15(typescript@5.9.3)):
     dependencies:
-      typedoc: 0.28.14(typescript@5.9.3)
+      typedoc: 0.28.15(typescript@5.9.3)
 
-  typedoc-plugin-missing-exports@4.1.2(typedoc@0.28.14(typescript@5.9.3)):
+  typedoc-plugin-missing-exports@4.1.2(typedoc@0.28.15(typescript@5.9.3)):
     dependencies:
-      typedoc: 0.28.14(typescript@5.9.3)
+      typedoc: 0.28.15(typescript@5.9.3)
 
-  typedoc-plugin-rename-defaults@0.7.3(typedoc@0.28.14(typescript@5.9.3)):
+  typedoc-plugin-rename-defaults@0.7.3(typedoc@0.28.15(typescript@5.9.3)):
     dependencies:
       camelcase: 8.0.0
-      typedoc: 0.28.14(typescript@5.9.3)
+      typedoc: 0.28.15(typescript@5.9.3)
 
-  typedoc@0.28.14(typescript@5.9.3):
+  typedoc@0.28.15(typescript@5.9.3):
     dependencies:
       '@gerrit0/mini-shiki': 3.17.0
       lunr: 2.3.9

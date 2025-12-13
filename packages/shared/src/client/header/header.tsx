@@ -20,7 +20,7 @@ export function Header(logoProps: LogoProps) {
         <Logo {...logoProps} />
         <nav className={open ? styles.open : ""}>
           <a
-            href="https://mayank-chaudhari.vercel.app/"
+            href="https://mayankchaudhari.com/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.author}

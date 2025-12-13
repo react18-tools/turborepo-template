@@ -13,18 +13,18 @@
   },
   "dependencies": {
     "@repo/shared": "workspace:*",
-    "next": "^16.0.3",
+    "next": "^16.0.10",
     "nextjs-darkmode-lite": "^1.0.10",
     "nextjs-themes": "^4.0.6",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react18-loaders": "workspace:*",
     "webgl-generative-particles": "^0.0.1"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^24.10.1",
-    "@types/react": "^19.2.5",
+    "@types/node": "^25.0.1",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "typescript": "^5.9.3"
   }

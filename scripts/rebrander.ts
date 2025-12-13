@@ -94,7 +94,6 @@ const pageCode = fs
   .replace("React 18 Loaders", title);
 fs.writeFileSync(pageFilePath, pageCode);
 
-// Update TODO.md
 const touchupTodo = (content: string) =>
   content
     .replace(

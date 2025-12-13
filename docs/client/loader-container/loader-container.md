@@ -10,7 +10,7 @@ nav_order: 5
 
 ### LoaderContainerProps
 
-Defined in: [client/loader-container/loader-container.tsx:5](https://github.com/react18-tools/turborepo-template/blob/60264926c914cc8da4259a44f7ff21f915fd40b8/lib/src/client/loader-container/loader-container.tsx#L5)
+Defined in: [client/loader-container/loader-container.tsx:5](https://github.com/react18-tools/turborepo-template/blob/203b3299a1a50be3b444c3fc49080f97e1d7b92e/lib/src/client/loader-container/loader-container.tsx#L5)
 
 #### Extends
 
@@ -22,7 +22,7 @@ Defined in: [client/loader-container/loader-container.tsx:5](https://github.com/
 
 > `optional` **children**: `ReactNode`
 
-Defined in: [client/loader-container/loader-container.tsx:6](https://github.com/react18-tools/turborepo-template/blob/60264926c914cc8da4259a44f7ff21f915fd40b8/lib/src/client/loader-container/loader-container.tsx#L6)
+Defined in: [client/loader-container/loader-container.tsx:6](https://github.com/react18-tools/turborepo-template/blob/203b3299a1a50be3b444c3fc49080f97e1d7b92e/lib/src/client/loader-container/loader-container.tsx#L6)
 
 ###### Overrides
 
@@ -32,7 +32,7 @@ Defined in: [client/loader-container/loader-container.tsx:6](https://github.com/
 
 > `optional` **loading**: `boolean`
 
-Defined in: [client/loader-container/loader-container.tsx:7](https://github.com/react18-tools/turborepo-template/blob/60264926c914cc8da4259a44f7ff21f915fd40b8/lib/src/client/loader-container/loader-container.tsx#L7)
+Defined in: [client/loader-container/loader-container.tsx:7](https://github.com/react18-tools/turborepo-template/blob/203b3299a1a50be3b444c3fc49080f97e1d7b92e/lib/src/client/loader-container/loader-container.tsx#L7)
 
 ## Functions
 
@@ -40,7 +40,7 @@ Defined in: [client/loader-container/loader-container.tsx:7](https://github.com/
 
 > **LoaderContainer**(`__namedParameters`: [`LoaderContainerProps`](#loadercontainerprops)): `Element`
 
-Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/60264926c914cc8da4259a44f7ff21f915fd40b8/lib/src/client/loader-container/loader-container.tsx#L14)
+Defined in: [client/loader-container/loader-container.tsx:14](https://github.com/react18-tools/turborepo-template/blob/203b3299a1a50be3b444c3fc49080f97e1d7b92e/lib/src/client/loader-container/loader-container.tsx#L14)
 
 # LoaderContainer
 A full screen container for the loading animation.

@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@repo/shared": "workspace:*",
-    "next": "^16.0.10",
+    "next": "^16.1.1",
     "nextjs-darkmode-lite": "^1.0.10",
     "nextjs-themes": "^4.0.6",
     "react": "^19.2.3",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^25.0.1",
+    "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "typescript": "^5.9.3"

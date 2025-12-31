@@ -19,22 +19,22 @@
   "devDependencies": {
     "@repo/scripts": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@testing-library/react": "^16.3.0",
-    "@types/node": "^25.0.1",
+    "@testing-library/react": "^16.3.1",
+    "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.2",
-    "@vitest/coverage-v8": "^4.0.15",
+    "@vitest/coverage-v8": "^4.0.16",
     "esbuild-plugin-rdi": "^0.0.0",
     "esbuild-plugin-react18": "^0.2.6",
     "esbuild-plugin-react18-css": "^0.0.4",
-    "jsdom": "^27.3.0",
+    "jsdom": "^27.4.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
-    "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^4.0.15"
+    "vite-tsconfig-paths": "^6.0.3",
+    "vitest": "^4.0.16"
   },
   "dependencies": {
     "@m2d/md2docx": "^0.0.1",

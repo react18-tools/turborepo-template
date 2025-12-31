@@ -22,7 +22,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/morgan": "^1.9.10",
-    "@types/node": "^25.0.1",
+    "@types/node": "^25.0.3",
     "@types/supertest": "^6.0.3",
     "supertest": "^7.1.4",
     "tsup": "^8.5.1",

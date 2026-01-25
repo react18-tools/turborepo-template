@@ -27,11 +27,11 @@
     "husky": "^9.1.7",
     "plop": "^4.0.5",
     "tsx": "^4.21.0",
-    "turbo": "^2.7.5",
+    "turbo": "^2.7.6",
     "turborepo-template-upgrade": "^0.8.0",
     "typedoc": "^0.28.16",
     "typedoc-plugin-markdown": "^4.9.0",
-    "typedoc-plugin-mdn-links": "^5.1.0",
+    "typedoc-plugin-mdn-links": "^5.1.1",
     "typedoc-plugin-missing-exports": "^4.1.2",
     "typedoc-plugin-rename-defaults": "^0.7.3"
   },

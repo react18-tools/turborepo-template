@@ -16,3 +16,6 @@ coverage
 tsup.config.bundled*
 *.patch
 .merge-backups
+
+# PromptShield Artifact directory
+.promptshield

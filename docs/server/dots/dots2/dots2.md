@@ -11,7 +11,7 @@ nav_order: 21
 
 ### Dots2Props
 
-Defined in: [server/dots/dots2/dots2.tsx:4](https://github.com/react18-tools/turborepo-template/blob/21cbbc4b64aa3d7fb3cb7a39dbb008be2b1651ee/lib/src/server/dots/dots2/dots2.tsx#L4)
+Defined in: [server/dots/dots2/dots2.tsx:4](https://github.com/react18-tools/turborepo-template/blob/0c5a416c4ae930b41c37fbdd82a91474da8b2869/lib/src/server/dots/dots2/dots2.tsx#L4)
 
 Interface declaring the common properties of the loaders
 
@@ -23,9 +23,9 @@ Interface declaring the common properties of the loaders
 
 ##### color?
 
-> `optional` **color**: `string`
+> `optional` **color?**: `string`
 
-Defined in: [server/common/base/base.tsx:10](https://github.com/react18-tools/turborepo-template/blob/21cbbc4b64aa3d7fb3cb7a39dbb008be2b1651ee/lib/src/server/common/base/base.tsx#L10)
+Defined in: [server/common/base/base.tsx:10](https://github.com/react18-tools/turborepo-template/blob/0c5a416c4ae930b41c37fbdd82a91474da8b2869/lib/src/server/common/base/base.tsx#L10)
 
 Color of the dots - CSS compatible color
 
@@ -35,17 +35,17 @@ Color of the dots - CSS compatible color
 
 ##### dotRadius?
 
-> `optional` **dotRadius**: `string` \| `number`
+> `optional` **dotRadius?**: `string` \| `number`
 
-Defined in: [server/dots/dots2/dots2.tsx:6](https://github.com/react18-tools/turborepo-template/blob/21cbbc4b64aa3d7fb3cb7a39dbb008be2b1651ee/lib/src/server/dots/dots2/dots2.tsx#L6)
+Defined in: [server/dots/dots2/dots2.tsx:6](https://github.com/react18-tools/turborepo-template/blob/0c5a416c4ae930b41c37fbdd82a91474da8b2869/lib/src/server/dots/dots2/dots2.tsx#L6)
 
 Radius of the dots in pixels or a string with a length unit.
 
 ##### height?
 
-> `optional` **height**: `string` \| `number`
+> `optional` **height?**: `string` \| `number`
 
-Defined in: [server/common/base/base.tsx:8](https://github.com/react18-tools/turborepo-template/blob/21cbbc4b64aa3d7fb3cb7a39dbb008be2b1651ee/lib/src/server/common/base/base.tsx#L8)
+Defined in: [server/common/base/base.tsx:8](https://github.com/react18-tools/turborepo-template/blob/0c5a416c4ae930b41c37fbdd82a91474da8b2869/lib/src/server/common/base/base.tsx#L8)
 
 height of the loader element in pixels or a string with a length unit.
 
@@ -55,9 +55,9 @@ height of the loader element in pixels or a string with a length unit.
 
 ##### width?
 
-> `optional` **width**: `string` \| `number`
+> `optional` **width?**: `string` \| `number`
 
-Defined in: [server/common/base/base.tsx:6](https://github.com/react18-tools/turborepo-template/blob/21cbbc4b64aa3d7fb3cb7a39dbb008be2b1651ee/lib/src/server/common/base/base.tsx#L6)
+Defined in: [server/common/base/base.tsx:6](https://github.com/react18-tools/turborepo-template/blob/0c5a416c4ae930b41c37fbdd82a91474da8b2869/lib/src/server/common/base/base.tsx#L6)
 
 width of the loader element in pixels or a string with a length unit.
 
@@ -71,7 +71,7 @@ width of the loader element in pixels or a string with a length unit.
 
 > **Dots2**(`props`: [`Dots2Props`](#dots2props)): `Element`
 
-Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/21cbbc4b64aa3d7fb3cb7a39dbb008be2b1651ee/lib/src/server/dots/dots2/dots2.tsx#L15)
+Defined in: [server/dots/dots2/dots2.tsx:15](https://github.com/react18-tools/turborepo-template/blob/0c5a416c4ae930b41c37fbdd82a91474da8b2869/lib/src/server/dots/dots2/dots2.tsx#L15)
 
 A simple loader with 3 dots.
 

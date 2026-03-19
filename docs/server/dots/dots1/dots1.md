@@ -13,7 +13,7 @@ nav_order: 19
 
 > **Dots1**(`props`: [`BaseProps`](../../common/base/base.md#baseprops)): `Element`
 
-Defined in: [server/dots/dots1/dots1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/21cbbc4b64aa3d7fb3cb7a39dbb008be2b1651ee/lib/src/server/dots/dots1/dots1.tsx#L10)
+Defined in: [server/dots/dots1/dots1.tsx:10](https://github.com/react18-tools/turborepo-template/blob/0c5a416c4ae930b41c37fbdd82a91474da8b2869/lib/src/server/dots/dots1/dots1.tsx#L10)
 
 A simple loader with 3 dots.
 

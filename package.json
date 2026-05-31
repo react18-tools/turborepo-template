@@ -26,7 +26,7 @@
     "enquirer": "^2.4.1",
     "husky": "^9.1.7",
     "plop": "^4.0.5",
-    "tsx": "^4.22.3",
+    "tsx": "^4.22.4",
     "turbo": "^2.9.16",
     "turborepo-template-upgrade": "^0.8.0",
     "typedoc": "^0.28.19",
@@ -35,7 +35,7 @@
     "typedoc-plugin-missing-exports": "^4.1.3",
     "typedoc-plugin-rename-defaults": "^0.7.3"
   },
-  "packageManager": "pnpm@11.5.0",
+  "packageManager": "pnpm@10.33.4",
   "engines": {
     "node": ">=20"
   },

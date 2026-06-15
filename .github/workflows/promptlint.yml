@@ -1,0 +1,17 @@
+name: PromptShield Lint Scan
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  promptshield:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run PromptShield
+        uses: promptshield-io/action@v1

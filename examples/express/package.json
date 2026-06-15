@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@repo/logger": "workspace:*",
-    "body-parser": "^2.2.1",
-    "cors": "^2.8.5",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
     "express": "^5.2.1",
-    "morgan": "^1.10.1"
+    "morgan": "^1.11.0"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
@@ -22,10 +22,10 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/morgan": "^1.9.10",
-    "@types/node": "^25.0.3",
-    "@types/supertest": "^6.0.3",
-    "supertest": "^7.1.4",
+    "@types/node": "^25.9.3",
+    "@types/supertest": "^7.2.0",
+    "supertest": "^7.2.2",
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   }
 }

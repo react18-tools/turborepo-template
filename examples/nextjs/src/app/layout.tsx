@@ -1,5 +1,5 @@
 import "./styles.css";
-import "react18-loaders/styles";
+import "react18-loaders/dist/index.css";
 import { GlobalLoader, Header } from "@repo/shared";
 import { Layout } from "@repo/shared/dist/server";
 import { Inter } from "next/font/google";

@@ -3,6 +3,7 @@
   "extends": "./base.json",
   "Display": "Vite",
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "allowJs": false,
     "esModuleInterop": false,
     "jsx": "react",

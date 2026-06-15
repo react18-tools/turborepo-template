@@ -48,22 +48,22 @@
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@testing-library/react": "^16.3.1",
-    "@types/node": "^25.0.3",
-    "@types/react": "^19.2.7",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^25.9.3",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.2",
-    "@vitest/coverage-v8": "^4.0.16",
+    "@vitejs/plugin-react": "^6.0.2",
+    "@vitest/coverage-v8": "^4.1.8",
     "esbuild-plugin-rdi": "^0.0.0",
     "esbuild-plugin-react18": "0.2.6",
     "esbuild-plugin-react18-css": "^0.0.4",
-    "jsdom": "^27.4.0",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "jsdom": "^29.1.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3",
-    "vite-tsconfig-paths": "^6.0.3",
-    "vitest": "^4.0.16"
+    "typescript": "^6.0.3",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^4.1.8"
   },
   "dependencies": {
     "r18gs": "^3.0.1"

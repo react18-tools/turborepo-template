@@ -9,7 +9,6 @@
     "format": "biome check . --write",
     "lint": "biome check .",
     "lint:fix": "biome check . --write",
-    "preinstall": "tsx scripts/update-pm.ts",
     "prepare": "husky",
     "rebrand": "tsx scripts/rebrand.ts",
     "release": "tsx ./scripts/publish.ts",

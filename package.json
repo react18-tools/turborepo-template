@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.0",
-    "@changesets/cli": "^2.31.0",
+    "@changesets/cli": "^2.31.1",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "^25.9.5",
     "enquirer": "^2.4.1",
